@@ -1,9 +1,0 @@
-17:15:17 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
-17:15:18 Nhận diện được IP 127.0.0.1 nội bộ.
-17:15:18 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
-19:24:16 Khởi động Port 55960 thành công!
-19:24:17 Nhận diện được IP 127.0.0.1 nội bộ.
-19:24:17 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
-20:14:18 Khởi động Port 55960 thành công!
-20:14:19 Nhận diện được IP 127.0.0.1 nội bộ.
-20:14:19 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.

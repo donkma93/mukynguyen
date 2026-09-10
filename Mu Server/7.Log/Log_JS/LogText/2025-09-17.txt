@@ -1,9 +1,0 @@
-17:15:17 Đã xóa IP 127.0.0.1 cục bộ này.
-17:15:18 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
-17:15:18 Sub-1 Port 55901 đã được sát nhập thành công!
-19:24:17 [SocketManager] Server started at port [55970]
-19:24:17 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
-19:24:17 Sub-1 Port 55901 đã được sát nhập thành công!
-20:14:18 [SocketManager] Server started at port [55970]
-20:14:19 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
-20:14:19 Sub-1 Port 55901 đã được sát nhập thành công!

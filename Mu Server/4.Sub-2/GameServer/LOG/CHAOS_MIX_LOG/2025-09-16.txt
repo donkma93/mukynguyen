@@ -1,8 +1,0 @@
-16:04:31 [CustomMix][Th?t B?i][Account: 1, Name: ThangCuoi] Item: Linh H峄搉 S贸i Tinh, Level: 0, Skill: 1, Luck: 0, T韓h n?ng: 0, Ho鄋 h?o: 1, Th?n: 0, Hamorny: 000, Item 380: 000, Socket: 255, 255, 255, 255, 255, Rate: 0%, Money: 0, Serial: 00000058)
-16:18:58 [CustomMix][Th?t B?i][Account: 1, Name: ThangCuoi] Item: Linh H峄搉 S贸i Tinh, Level: 0, Skill: 1, Luck: 0, T韓h n?ng: 0, Ho鄋 h?o: 0, Th?n: 0, Hamorny: 000, Item 380: 000, Socket: 255, 255, 255, 255, 255, Rate: 0%, Money: 0, Serial: 0000005A)
-16:20:32 [CustomMix][Th?t B?i][Account: 1, Name: ThangCuoi] Item: Linh H峄搉 S贸i Tinh, Level: 0, Skill: 1, Luck: 0, T韓h n?ng: 0, Ho鄋 h?o: 1, Th?n: 0, Hamorny: 000, Item 380: 000, Socket: 255, 255, 255, 255, 255, Rate: 0%, Money: 0, Serial: 0000005E)
-16:35:54 [CustomMix][Th?t B?i][Account: 1, Name: ThangCuoi] Item: Linh H峄搉 S贸i Tinh, Level: 0, Skill: 1, Luck: 0, T韓h n?ng: 0, Ho鄋 h?o: 2, Th?n: 0, Hamorny: 000, Item 380: 000, Socket: 255, 255, 255, 255, 255, Rate: 0%, Money: 0, Serial: 000000C6)
-17:15:46 [Wing3Mix][Failure][1][ThangCuoi] - (ChaosSuccessRate: 0, ChaosMoney: 0)
-19:28:31 [Wing3Mix][Failure][1][ThangCuoi] - (ChaosSuccessRate: 0, ChaosMoney: 0)
-19:40:17 [Wing3Mix][Success][1][ThangCuoi] - (ChaosSuccessRate: 100, ChaosMoney: 20000000)
-19:45:26 [Wing3Mix][Success][1][ThangCuoi] - (ChaosSuccessRate: 100, ChaosMoney: 20000000)

@@ -1,1 +1,12 @@
 node_modules/
+
+# Log files
+*.log
+*.tlog
+
+# Mu server runtime logs (keep source under SRC/**/Log/)
+Mu Server/7.Log/
+Mu Server/**/LOG/
+
+# Machine-local client dashboard state
+Client/Dashboard.ini

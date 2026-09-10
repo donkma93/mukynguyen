@@ -1,2 +1,0 @@
-23:57:05 [SocketItemMountSeedSphereMix][Success][11][12323] - (ChaosSuccessRate: 0, ChaosMoney: 1000000)
-23:57:12 [SocketItemMountSeedSphereMix][Success][11][12323] - (ChaosSuccessRate: 0, ChaosMoney: 1000000)

@@ -1,4 +1,0 @@
-21:11:02 [CommandAddPoint][laclac24][elkf] - (Type: 0, Amount: 30000)
-21:11:05 [CommandAddPoint][laclac24][elkf] - (Type: 1, Amount: 20000)
-21:11:17 [CommandAddPoint][laclac24][elkf] - (Type: 3, Amount: 1000)
-22:40:06 [CommandAddPoint][thuythuy][thuythuy] - (Type: 0, Amount: 25600)

@@ -1,2 +1,0 @@
-19:59:56 [CMSItemDelivery][thuythuy][thuythuy] - Delivery: 4, Item: 616, Amount: 2
-19:59:56 [CommandReset][thuythuy][thuythuy] - (Reset: 2)

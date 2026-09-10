@@ -1,5 +1,0 @@
-08:05:45 [HornOfFenrirMix][Failure][donpv2][SUM_DonPV] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)
-08:05:55 [HornOfFenrirMix][Success][donpv2][SUM_DonPV] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)
-13:50:55 [HornOfFenrirMix][Success][donpv2][SUM_DonPV] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)
-13:51:09 [HornOfFenrirMix][Success][donpv2][SUM_DonPV] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)
-13:54:08 [HornOfFenrirUpgradeMix][Success][donpv2][SUM_DonPV] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)

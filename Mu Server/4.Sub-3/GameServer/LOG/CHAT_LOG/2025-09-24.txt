@@ -1,8 +1,0 @@
-13:54:04 [General][1][ThangCuoi] - (Message: /xoado)
-18:10:58 [General][1][ThangCuoi] - (Message: /reload custom)
-19:19:54 [General][1][ThangCuoi] - (Message: /code 2131231231)
-21:47:36 [General][1][ThangCuoi] - (Message: /reload monster)
-21:48:31 [General][1][ThangCuoi] - (Message: /reload monster)
-21:49:05 [General][1][ThangCuoi] - (Message: /spot 249)
-21:49:34 [General][1][ThangCuoi] - (Message: /reload monster)
-21:50:10 [General][1][ThangCuoi] - (Message: /xoado)

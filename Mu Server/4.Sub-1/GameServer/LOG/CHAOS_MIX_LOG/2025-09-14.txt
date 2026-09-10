@@ -1,7 +1,0 @@
-00:06:55 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 0, ChaosSuccessRate: 81, ChaosMoney: 2000000)
-00:07:12 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 1, ChaosSuccessRate: 71, ChaosMoney: 4000000)
-00:07:26 [SiegePotionMix][Success][1][ThangCuoi] - (Type: 1, ChaosSuccessRate: 0, ChaosMoney: 50000)
-00:07:39 [SiegePotionMix][Success][1][ThangCuoi] - (Type: 0, ChaosSuccessRate: 0, ChaosMoney: 100000)
-00:37:02 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 2, ChaosSuccessRate: 61, ChaosMoney: 6000000)
-00:39:51 [ChaosItemMix][Success][1][ThangCuoi] - (ChaosSuccessRate: 65, ChaosMoney: 650000)
-00:47:56 [ChaosItemMix][Failure][1][ThangCuoi] - (ChaosSuccessRate: 65, ChaosMoney: 650000)

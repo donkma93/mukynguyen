@@ -1,4 +1,0 @@
-08:01:40 [General][donpv2][SUM_DonPV] - (Message: /addstr 40000)
-08:04:38 [General][donpv2][SUM_DonPV] - (Message: /addene 10000)
-08:38:50 [General][donpv2][SUM_DonPV] - (Message: /code TANTHUVIP)
-08:38:55 [General][donpv2][SUM_DonPV] - (Message: /code TANTHUVIP)

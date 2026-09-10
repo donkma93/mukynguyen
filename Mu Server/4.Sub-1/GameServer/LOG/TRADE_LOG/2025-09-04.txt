@@ -1,2 +1,0 @@
-21:03:47 [ExchangeTradeItem][11][ThangCuoi] - (Account: bot1, Name: LaoPhatGia, Index: 1041, Level: 15, Serial: 0004986C, Option1: 1, Option2: 1, Option3: 7, NewOption: 063, JewelOfHarmonyOption: 000, ItemOptionEx: 000, SocketOption: 254, 254, 254, 254, 254)
-21:04:11 [ExchangeTradeItem][bot1][LaoPhatGia] - (Account: 11, Name: ThangCuoi, Index: 1041, Level: 15, Serial: 0004986C, Option1: 1, Option2: 1, Option3: 7, NewOption: 063, JewelOfHarmonyOption: 000, ItemOptionEx: 000, SocketOption: 254, 254, 254, 254, 254)

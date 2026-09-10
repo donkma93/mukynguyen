@@ -1,7 +1,0 @@
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Cụm Ngọc Ước Nguyện+2 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Đỏ+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Xanh Lá+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Xanh Dương+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - Sách Hỏa Âm+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
-00:06:01 11 - 12323: nhận mốc: 1 có giá trị là 100,000 - [W3]Cánh Cuồng Phong+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
