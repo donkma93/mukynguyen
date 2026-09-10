@@ -3420,7 +3420,10 @@ void gObjSecondProc()
 #endif
 				g_OfflineMode.OnAttackSecondProcHelper(lpObj);
 
-				gObjCheckMapTile(lpObj, 3);
+				if (lpObj->AttackCustomOffline == 0)
+				{
+					gObjCheckMapTile(lpObj, 3);
+				}
 
 				GCNewHealthBarSend(lpObj);
 
@@ -3618,7 +3621,7 @@ void gObjSecondProc()
 				lpObj->AutoSaveTime = GetTickCount();
 			}
 
-			if (lpObj->CheckSumTime > 0 && GetTickCount() - lpObj->CheckSumTime > 5000 && lpObj->IsFakeOnline != true)
+			if (lpObj->CheckSumTime > 0 && GetTickCount() - lpObj->CheckSumTime > 5000 && lpObj->IsFakeOnline != true && lpObj->AttackCustomOffline == 0)
 			{
 				LogAdd(LOG_BLACK, "[%s][%s] CheckSumTime Error", lpObj->Account, lpObj->Name);
 				GCCloseClientSend(n, 0);
@@ -3631,7 +3634,7 @@ void gObjSecondProc()
 
 		if (lpObj->Connected > OBJECT_OFFLINE && lpObj->Type == OBJECT_USER)
 		{
-			if (lpObj->ClientVerify == 0 && lpObj->IsFakeOnline == false && (GetTickCount() - lpObj->ConnectTickCount) > (DWORD)gServerInfo.m_MaxTimeConnectionVerify * 1000)
+			if (lpObj->ClientVerify == 0 && lpObj->IsFakeOnline == false && lpObj->AttackCustomOffline == 0 && (GetTickCount() - lpObj->ConnectTickCount) > (DWORD)gServerInfo.m_MaxTimeConnectionVerify * 1000)
 			{
 				LogAdd(LOG_BLACK, "[ObjectManager][%d] CloseClient [%s] Reason: Not verified", n, lpObj->IpAddr);
 				CloseClient(n);
@@ -3652,6 +3655,11 @@ void gObjSecondProc()
 							continue;
 						}
 						if (lpObj->IsFakeOnline == 1)
+						{
+							lpObj->ConnectTickCount = GetTickCount();
+							continue;
+						}
+						if (lpObj->AttackCustomOffline == 1)
 						{
 							lpObj->ConnectTickCount = GetTickCount();
 							continue;

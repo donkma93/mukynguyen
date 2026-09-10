@@ -11,6 +11,7 @@
 
 #include "Notice.h"
 #include "Party.h"
+#include "Protocol.h"
 #include "ServerInfo.h"
 #include "SkillManager.h"
 #include "SocketManager.h"
@@ -140,8 +141,10 @@ bool CCustomAttack::CommandCustomAttackOffline(LPOBJ lpObj, char* arg)
 {
 	if (lpObj->AttackCustom == 0)
 	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(696));
-		return 0;
+		if (this->CommandCustomAttack(lpObj, arg) == 0)
+		{
+			return 0;
+		}
 	}
 
 	if (gMap[lpObj->Map].CheckAttr(lpObj->X, lpObj->Y, 1) != 0)
@@ -150,23 +153,25 @@ bool CCustomAttack::CommandCustomAttackOffline(LPOBJ lpObj, char* arg)
 		return 0;
 	}
 
-	if (CA_MAP_RANGE(lpObj->Map) != 0 || DS_MAP_RANGE(lpObj->Map) != 0 || BC_MAP_RANGE(lpObj->Map) != 0 || CC_MAP_RANGE(lpObj->Map) != 0 || IT_MAP_RANGE(lpObj->Map) != 0 || DA_MAP_RANGE(lpObj->Map) != 0 || DG_MAP_RANGE(lpObj->Map) != 0 || IG_MAP_RANGE(lpObj->Map) != 0)
-	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(697));
-		return 0;
-	}
+	this->KeepAttackOnDisconnect(lpObj);
 
-	lpObj->Socket = INVALID_SOCKET;
-
-	lpObj->AttackCustomOffline = 1;
-
-	lpObj->AttackCustomOfflineTime = 0;
-
-#if(NEW_PROTOCOL_SYSTEM==0)
-	closesocket(lpObj->PerSocketContext->Socket);
-#endif
+	// result 2: client ve man hinh login, tat auto-reconnect
+	GCCloseClientSend(lpObj->Index, 2);
 
 	return 1;
+}
+
+void CCustomAttack::KeepAttackOnDisconnect(LPOBJ lpObj)
+{
+	if (lpObj->AttackCustom != 1)
+	{
+		return;
+	}
+
+	lpObj->AttackCustomOffline = 1;
+	lpObj->AttackCustomOfflineTime = 0;
+	lpObj->CheckSumTime = GetTickCount();
+	lpObj->ConnectTickCount = GetTickCount();
 }
 
 bool CCustomAttack::GetAttackSkill(LPOBJ lpObj, int* SkillNumber, int SetSkill)
@@ -331,10 +336,10 @@ void CCustomAttack::OnAttackAlreadyConnected(LPOBJ lpObj)
 {
 	if (lpObj->AttackCustomOffline != 0)
 	{
-		gObjDel(lpObj->Index);
 		lpObj->AttackCustomOffline = 0;
 		lpObj->AttackCustomOfflineTime = 0;
-		//lpObj->AttackCustomOfflineMoneyDelay = 0;
+		lpObj->AttackCustom = 0;
+		gObjDel(lpObj->Index);
 	}
 }
 
@@ -627,6 +632,9 @@ void CCustomAttack::OnAttackMonsterAndMsgProc(LPOBJ lpObj)
 				break;
 			case SKILL_DARK_SIDE:
 				this->SendRFSkillAttack(lpObj, MonsterIndex, lpSkill->m_index);
+				break;
+			default:
+				this->SendSkillAttack(lpObj, MonsterIndex, lpSkill->m_index);
 				break;
 			}
 		}

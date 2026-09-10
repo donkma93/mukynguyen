@@ -858,6 +858,12 @@ void CObjectManager::CharacterGameCloseSet(int aIndex, int type)
 		return;
 	}
 
+	if (lpObj->Connected == OBJECT_ONLINE && lpObj->AttackCustom == 1)
+	{
+		gCustomAttack.CommandCustomAttackOffline(lpObj, "");
+		return;
+	}
+
 	if (lpObj->Connected == OBJECT_ONLINE)
 	{
 		if (lpObj->Interface.use != 0 && lpObj->Interface.type == INTERFACE_TRADE)

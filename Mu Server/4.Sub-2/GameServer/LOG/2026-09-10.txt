@@ -18,3 +18,57 @@
 19:02:16 [ServerInfo] Util loaded successfully
 19:02:16 [ReadBotInfo] BotSystem loaded successfully
 19:02:16 [ServerInfo] CfgACuoi loaded successfully
+20:48:36 [ServerInfo] CashShop loaded successfully
+20:48:36 [ServerInfo] ChaosMix loaded successfully
+20:48:36 [ServerInfo] Character loaded successfully
+20:48:36 [FakeOnline] Load Data OK
+20:48:36 [ServerInfo] Custom loaded successfully
+20:48:36 [ServerInfo] Command loaded successfully
+20:48:36 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+20:48:36 [ServerInfo] Common loaded successfully
+20:48:36 [ServerInfo] Event loaded successfully
+20:48:36 [ServerInfo] EventItemBag loaded successfully
+20:48:36 [ServerInfo] Hack loaded successfully
+20:48:36 [ServerInfo] Item loaded successfully
+20:48:36 [ServerInfo] Monster loaded successfully
+20:48:36 [ServerInfo] Move loaded successfully
+20:48:36 [ServerInfo] Quest loaded successfully
+20:48:36 [ServerInfo] Shop loaded successfully
+20:48:36 [ServerInfo] Skill loaded successfully
+20:48:36 [ServerInfo] Util loaded successfully
+20:48:36 [ReadBotInfo] BotSystem loaded successfully
+20:48:36 [ServerInfo] CfgACuoi loaded successfully
+20:50:52 AddAccount: thuythuy - IP: 127.0.0.1
+20:50:52 Character: thuythuy logged
+20:53:11 Character: thuythuy logout
+20:53:11 ExitAccount: thuythuy - IP: 127.0.0.1
+20:53:12 AddAccount: thuythuy - IP: 127.0.0.1
+20:53:12 Character: thuythuy logged
+20:53:29 Character: thuythuy logout
+20:53:29 ExitAccount: thuythuy - IP: 127.0.0.1
+20:53:30 AddAccount: thuythuy - IP: 127.0.0.1
+20:53:30 Character: thuythuy logged
+20:53:46 Character: thuythuy logout
+20:53:46 ExitAccount: thuythuy - IP: 127.0.0.1
+21:02:17 [ServerInfo] CashShop loaded successfully
+21:02:17 [ServerInfo] ChaosMix loaded successfully
+21:02:17 [ServerInfo] Character loaded successfully
+21:02:17 [FakeOnline] Load Data OK
+21:02:17 [ServerInfo] Custom loaded successfully
+21:02:17 [ServerInfo] Command loaded successfully
+21:02:17 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+21:02:17 [ServerInfo] Common loaded successfully
+21:02:17 [ServerInfo] Event loaded successfully
+21:02:17 [ServerInfo] EventItemBag loaded successfully
+21:02:17 [ServerInfo] Hack loaded successfully
+21:02:17 [ServerInfo] Item loaded successfully
+21:02:17 [ServerInfo] Monster loaded successfully
+21:02:17 [ServerInfo] Move loaded successfully
+21:02:17 [ServerInfo] Quest loaded successfully
+21:02:17 [ServerInfo] Shop loaded successfully
+21:02:17 [ServerInfo] Skill loaded successfully
+21:02:17 [ServerInfo] Util loaded successfully
+21:02:17 [ReadBotInfo] BotSystem loaded successfully
+21:02:17 [ServerInfo] CfgACuoi loaded successfully
+21:03:09 AddAccount: thuythuy - IP: 127.0.0.1
+21:03:09 Character: thuythuy logged

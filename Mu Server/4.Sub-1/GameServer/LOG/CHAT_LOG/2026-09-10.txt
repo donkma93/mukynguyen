@@ -1,1 +1,7 @@
 19:03:48 [General][thuythuy][thuythuy] - (Message: /attack)
+20:49:33 [General][thuythuy][thuythuy] - (Message: /attack)
+20:49:44 [General][thuythuy][thuythuy] - (Message: /attack)
+20:49:52 [General][thuythuy][thuythuy] - (Message: /attack)
+21:02:47 [General][thuythuy][thuythuy] - (Message: /attack)
+21:02:50 [General][thuythuy][thuythuy] - (Message: /attack)
+21:02:53 [General][thuythuy][thuythuy] - (Message: /offattack)

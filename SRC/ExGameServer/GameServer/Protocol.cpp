@@ -1870,6 +1870,10 @@ void CGConnectAccountRecv(PMSG_CONNECT_ACCOUNT_RECV* lpMsg, int aIndex)
 						s_FakeOnline.OnAttackAlreadyConnected(&gObj[i]);
 						gObjDel(i);
 					}
+					if (sObj->AttackCustomOffline != 0)
+					{
+						gCustomAttack.OnAttackAlreadyConnected(&gObj[i]);
+					}
 					break;
 				}
 			}

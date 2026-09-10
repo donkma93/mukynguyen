@@ -60,6 +60,7 @@ public:
 	void ReadCustomAttackInfo(char* section,char* path);
 	bool CommandCustomAttack(LPOBJ lpObj,char* arg);
 	bool CommandCustomAttackOffline(LPOBJ lpObj,char* arg);
+	void KeepAttackOnDisconnect(LPOBJ lpObj);
 	bool GetAttackSkill(LPOBJ lpObj,int* SkillNumber,int SetSkill);
 	bool GetTargetMonster(LPOBJ lpObj,int SkillNumber,int* MonsterIndex);
 	void OnAttackClose(LPOBJ lpObj);

@@ -21,6 +21,7 @@
 #include "User.h"
 #include "Util.h"
 #include "BlackList.h"
+#include "CustomAttack.h"
 
 CSocketManager gSocketManager;
 
@@ -567,6 +568,13 @@ void CSocketManager::Disconnect(int index)
 	}
 
 	gObj[index].Socket = INVALID_SOCKET;
+
+	if (gObj[index].AttackCustom == 1 || gObj[index].AttackCustomOffline == 1)
+	{
+		gCustomAttack.KeepAttackOnDisconnect(&gObj[index]);
+		this->m_critical.unlock();
+		return;
+	}
 
 	gObjDel(index);
 
