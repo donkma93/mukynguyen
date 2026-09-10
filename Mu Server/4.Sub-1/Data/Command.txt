@@ -1,0 +1,124 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//=================================================================================================================
+//-	Index																	-> Index của Lệnh
+//-	Command																	-> Công thức lệnh
+//-	EnableVip0, EnableVip1, EnableVip2, EnableVip3							-> Bật/Tắt command (0: Tắt, 1: Bật) 
+//-	MoneyVip0, MoneyVip1, MoneyVip2, MoneyVip3								-> Zen cần để dùng lệnh
+//-	MinLevelVip0, MinLevelVip1, MinLevelVip2, MinLevelVip3					-> Min Level có thể dùng lệnh 
+//-	MaxLevelVip0, MaxLevelVip1, MaxLevelVip2, MaxLevelVip3					-> Max Level có thể dùng lệnh
+//-	MinResetVip0, MinResetVip1, MinResetVip2, MinResetVip3					-> Min Reset có thể dùng lệnh
+//-	MaxResetVip0, MaxResetVip1, MaxResetVip2, MaxResetVip3					-> Max Reset có thể dùng lệnh
+//-	Delay																	-> Delay lần sử dụng tiếp theo
+//-	GameMaster																-> Cấp độ Master được sử dụng (0: Người thường, 1: GameMaster, 2: Administrator)
+//-	WcoinC																	-> WcoinC cần để dùng lệnh
+//-	WcoinP																	-> WCoinP cần để dùng lệnh
+//-	GoblinPoint																-> GoblinPoint cần để dùng lệnh
+//=================================================================================================================
+//Lưu ý: Các config khác các bạn xem file GameServerInfo - Command.ini
+//=================================================================================================================
+
+//Index		Command				EnableVip0		EnableVip1		EnableVip2		EnableVip3		MoneyVip0		 MoneyVip1		MoneyVip2		MoneyVip3	  MinLevelVip0	   MinLevelVip1	  MinLevelVip2	   MinLevelVip3		MaxLevelVip0	MaxLevelVip1	MaxLevelVip2	MaxLevelVip3	MinResetVip0	MinResetVip1	MinResetVip2	MinResetVip3	MaxResetVip0	MaxResetVip1	MaxResetVip2	MaxResetVip3	  Delay			GameMaster		 WcoinC			 WcoinP			GoblinPoint
+0			"/move"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//move <Map>						- Chuyển Map-->
+1			"/post"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Post <Msg>						- Chat trên kênh thế giới-->
+2			"/addstr"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//addstr <points>					- Add points in Str-->
+3			"/addagi"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//addagi <points>					- Add points in Agi-->
+4			"/addvit"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//addvit <points>					- Add points in Vit-->
+5			"/addene"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//addene <points>					- Add points in Ene-->
+6			"/addcmd"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//addcmd <points>					- Add points in Com-->
+7			"/pkclear"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pkclear							- Xoá tội-->
+8			"/zen"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//zen <value>						- Add zen-->
+9			"/change"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//change							- Làm nhiệm vụ cho nhân vật-->
+10			"/bau"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//bau <num>						- Đổi hòm đồ chung-->
+11			"/reset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//reset |auto| |vip|				- Reset nhân vật-->
+12			"/gmm"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//gmmove <Name> <Map> <X> <Y>		- Lệnh GM (dịch chuyển nhân vật)-->
+13			"/gmp"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//gmpost <Msg>					- Lệnh GM (Chát trên chữ vàng)-->
+14			"/track"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//track <Name>					- Lệnh GM Đến 1 nhân vật nào đó-->
+15			"/trace"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//trace <Name>					- Lệnh GM chuyển nhân vật <Name> về chỗ mình-->
+16			"/dc"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//disconnect <Name>				- Disconnect Player-->
+17			"/phaohoa"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//phaohoa							- Pháo Hoa-->
+18			"/make"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//make <Group> <item> <level> <skill> <luck> <option> <exe> <set> <socket>-->
+19			"/skin"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//skin <name> <skin>				- Change player skin-->
+20			"/setmoney"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//setmoney <name> <value>			- Change player zen-->
+21			"/gmp"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//notice <msg>					- Lệnh GM Gửi tin nhắn đến tất cả các Sub-->
+22			"/mreset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//mreset							- Lệnh Reset Master (Biết mới mở)-->
+23			"/war"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//war <guild>						- Thách đấu guild khác-->
+24			"/soccer"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//soccer <guild>					- Challenge another guild to battle soccer-->
+25			"/pt"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pt |on| |off| |auto <pass>|		- Tự động nhận pt-->
+26			"/hide"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//hide							- Ẩn thân GameMaster-->
+27			"/ctc"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//ctc								- Lấy Ngai Vàng trong CTC Mini-->
+28			"/xoado"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//xoado							- Xoá hòm đồ-->
+29			"/setvip"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//setvip <account> <type> <days>	- Thêm ngày VIP cho tài khoản-->
+30			"/marry"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//marry to <player>				- Cưới nhân vật khác-->
+31			"/homdochung"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//homdochung						- Mở hòm đồ chung-->
+32			"/class"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				50000			0				0		//<!--//class <type>					- Đổi giới tính-->
+33			"/reward"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//reward <name> <type> <value>  	- Reward a player-->
+34			"/rewardall"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//rewardall <type> <value>		- Reward all players-->
+35			"/reload"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//reload <type>					- Reload config-->
+36			"/banchar"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//banchar <player> <Ngày>			- Khoá nhân vật-->
+37			"/banacc"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//banacc <account> <Ngày>			- Khoá account-->
+38			"/doiten"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				500000			0				0		//<!--//changename						- Đổi tên nhân vật-->
+39			"/veloz"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//veloz							- Start Quickly event-->
+40			"/info"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//info <player>					- Character status-->
+41			"/abrirevento"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//abrirevento						- Open event-->
+42			"/participar"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//participar						- Join in event-->
+43			"/eventget"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pegapega						- Start Run and Catch event-->
+44			"/dk"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//dk								- Go to Run and Catch event-->
+45			"/timgm"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//timgm							- Start Hide and Seek event-->
+46			"/makeset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//makeset <item> <level> <skill> <luck> <option> <exe> <set> <socket>-->
+47			"/drop"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//drop <Group> <item> <level> <skill> <luck> <option> <exe> <set> <socket>-->
+48			"/quest"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//quest							- Quest Command-->
+49			"/nhanqua"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//presente						- Gift command-->
+50			"/roletarussa"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//roletarussa						- Start Russian Roullete event-->
+51			"/top"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//top <type>						- Show top player -->
+52			"/taydiem"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//taydiem |str| |agi| |vit| |ene| |cmd|-->
+53			"/abuff"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//traloi	<msg>					- Trả lời event câu hỏi-->
+54			"/pick"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pick <type>						- Tự động nhặt Item-->
+55			"/help"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//help							- Tạo quái vật đi theo mình-->
+56			"/taymaster"			1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//taymaster						- Tẩy điểm đã cộng bảng Master-->
+57			"/startbc"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startbc							- Start Blood Castle event-->
+58			"/startds"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startds							- Start Devil Square event-->
+59			"/startcc"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startcc							- Start Chaos Castle event-->
+60			"/startit"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startit							- Start Illus.Temple event-->
+61			"/offpvp"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//offpvp							- Tắt giết người-->
+62			"/lock"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//lock <password>					- Khoá di chuyển đồ acc-->
+63			"/unlock"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//unlock <password>				- Mở khoá di chuyển đồ acc-->
+64			"/store"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//store <type>					- Open Custom Store-->
+65			"/offstore"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//offstore						- Open Custom Store-->
+66			"/attack"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//attack <skill> <buff>			- Start Custom Attack-->
+67			"/offattack"			1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//offattack						- Start Custom Attack Offline-->
+68			"/moveall"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//moveall <map><x><y>				- Dịch chuyển toàn bộ nhân vật đến ...-->
+69			"/moveguild"			1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//moveguild <guild><map><x><y>	- Move all guild to ...-->
+70			"/pvp"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pvp								- Start PvP Event-->
+71			"/startkillall"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//killall							- Start Kill All Event-->
+72			"/starttvt"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//starttvt						- Start Team vs Team Event-->
+73			"/spot"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//spot <monster> <qtd>			- Tạo quái ngay chỗ đứng của admin-->
+74			"/wc"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//setcoin <Char> <Coin> <Value>	- Lệnh Set tiền tệ cho người chơi-->
+75			"/pack"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pack <Type> <Qtd>				- Command for pack jewels-->
+76			"/unpack"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//unpack <Type> <Qtd>				- Command for unpack jewels-->
+77			"/setpass"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//
+78			"/startdrop"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startdrop						- Start Drop Event-->
+79			"/startking"			1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startking						- Start CTC Mini-->
+80			"/startinvasion"		0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startinvasion	<index>			- Start Invasion-->
+81			"/startarena"			0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//startarena <index>				- Start Custom Arena-->
+82			"/quyetdau"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Quyet Dau MU : /quyetdau TenNV SoTien
+83			"/dau"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Quyet Dau MU OK : /dau ok hoac  Quyet Dau MU NO OK : /dau no
+85			"/resetvip"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Quyet Dau MU OK : /dau ok hoac  Quyet Dau MU NO OK : /dau no
+87			"/gml"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Tang Level 	: /gml TenNhanVat XXX
+88			"/gmmn"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Tang Mốc nạp: /gmmn TenNhanVat XXX
+89			"/gmrs"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Tang Reset 	: /gmrs TenNhanVat XXX
+90			"/sts"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Section - Type - Dur
+91			"/tb"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		// 
+92			"/dbuff"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Del Buff
+93			"/code"			    	1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//Code Tân Thủ
+end

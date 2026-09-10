@@ -1,0 +1,49 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+//Index		Type	Name				Folder																							FileName				Scale
+1
+700			1		"NoName"			"Data\\Custom\\Monster\\IceMonster\\"				"Custom\\Monster\\IceMonster\\"				"MonsterMine_2"			1.00
+701			1		"NoName"			"Data\\Custom\\Monster\\IceMonster\\"				"Custom\\Monster\\IceMonster\\"				"MonsterMine_1"			1.00
+702			1		"NoName"			"Data\\Custom\\Monster\\IceMonster\\"				"Custom\\Monster\\IceMonster\\"				"MonsterMine_Boss"		1.00
+
+703			1		"NoName"			"Data\\Custom\\Monster\\Gold\\HellMain\\"			"Custom\\Monster\\Gold\\HellMain\\"			"monster106"			1.80
+704			1		"NoName"			"Data\\Custom\\Monster\\Gold\\Herohim\\"			"Custom\\Monster\\Gold\\Herohim\\"			"Monster88"				2.00
+705			1		"NoName"			"Data\\Custom\\Monster\\Gold\\Kundun\\"				"Custom\\Monster\\Gold\\Kundun\\"			"Monster65"				2.00
+706			1		"NoName"			"Data\\Custom\\Monster\\Gold\\Medusa\\"				"Custom\\Monster\\Gold\\Medusa\\"			"Monster193"			1.60
+707			1		"NoName"			"Data\\Custom\\Monster\\Gold\\Selupan\\"			"Custom\\Monster\\Gold\\Selupan\\"			"Monster151"			2.00
+
+708			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Monster373"			2.00
+709			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Monster374"			1.00
+710			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Monster375"			2.00
+711			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"monsterbbe1"			2.00
+712			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"monster617"			1.30
+713			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"monster616"			2.00
+717			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"MonterL_400"			1.40
+718			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Monster911"			1.60
+719			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"boss-chaos3"			2.00
+720			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"LordOfDarkness"		2.00
+721			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Boss100"				1.70
+722			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"USK_DestroyerBoss_Mob"	1.70
+723			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"Monster9281"			1.30
+724			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"USK_Green_Crab_Mob"	1.0
+725			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"USK_Green_Crab_Mob"	1.0
+726			1		"NoName"			"Data\\Custom\\Monster\\BOSS\\"						"Custom\\Monster\\BOSS\\"					"tesouro"				1.0
+
+727			1		"NoName"			"Data\\Custom\\Monster\\MonsterTru\\"				"Custom\\Monster\\MonsterTru\\"				"monster186"			1.0
+
+end
+
+
+2 
+// ID		Name 			SetID			L Weapon			R Weapon 				Wing			SKill			Size
+750			"BossDK"		29				22					22						36				42				1.35
+751			"BossDW"		30				2572				3087					37				3				1.35
+752			"BossElf"		31				2063				2070					38				235				1.35
+753			"BossMG"		32				23					-1						39				56				1.35
+754			"BossDL"		33				1039				-1						40				61				1.35
+755			"BossSM"		43				2579				2583					43				-1				1.35
+756			"BossRF"		73				35					35						50				-1				1.35
+end

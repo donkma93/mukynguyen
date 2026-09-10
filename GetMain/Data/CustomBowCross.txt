@@ -1,0 +1,17 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+//Type: 1 = Nỏ ; 0 = Cung;
+//Skill: 266,267,268,269,270,271,272,273,274,294,295,296,297,298,321,324,335,365,509
+//Nỏ
+//ID		ItemIndex		Type		Skill		ModelName				R		G		B
+
+0             2148			 0           321        "CungCustom1"		    150		083		010	  		//"Cung Rồng VIP (1)"	
+1             2149			 1           321        "CungCustom2"		    70      70		15   		//"Cung Rồng VIP (2)"	
+2             2150			 0           321        "CungCustom3"		    70		70		15	  		//"Cung Rồng VIP (3)"	
+3             2151			 0           321        "CungCustom4"		    70		70		15	  		//"Cung Rồng VIP (4)"	
+4             2152			 0           321        "CungCustom5"		    30      144     255	  		//"Cung Rồng VIP (5)"	
+
+end

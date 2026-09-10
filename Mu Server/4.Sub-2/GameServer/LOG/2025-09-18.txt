@@ -1,0 +1,303 @@
+07:51:00 [CTC Mini] Bắt Đầu Event Công Thành Chiến Mini
+08:21:00 [CTC Mini] Finish 2
+11:52:25 Character: ThangCuoi logout
+11:52:25 ExitAccount: 1 - IP: 192.168.1.7
+12:44:12 [ServerInfo] CashShop loaded successfully
+12:44:12 [ServerInfo] ChaosMix loaded successfully
+12:44:12 [ServerInfo] Character loaded successfully
+12:44:12 [FakeOnline] Load Data OK
+12:44:12 [ServerInfo] Custom loaded successfully
+12:44:12 [ServerInfo] Command loaded successfully
+12:44:12 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+12:44:12 [ServerInfo] Common loaded successfully
+12:44:12 [ServerInfo] Event loaded successfully
+12:44:12 [ServerInfo] EventItemBag loaded successfully
+12:44:12 [BProtect]Load Config Attack[6]/Skill[90]
+12:44:12 [ServerInfo] Hack loaded successfully
+12:44:12 [ServerInfo] Item loaded successfully
+12:44:12 [ServerInfo] Monster loaded successfully
+12:44:12 [ServerInfo] Move loaded successfully
+12:44:12 [ServerInfo] Quest loaded successfully
+12:44:12 [ServerInfo] Shop loaded successfully
+12:44:12 [ServerInfo] Skill loaded successfully
+12:44:12 [ServerInfo] Util loaded successfully
+12:44:12 [ReadBotInfo] BotSystem loaded successfully
+12:44:12 [ServerInfo] CfgSPK loaded successfully
+12:44:19 AddAccount: 1 - IP: 192.168.1.7
+12:44:25 Character: ThangCuoi logged
+12:58:02 Character: ThangCuoi logout
+12:58:14 Character: ThangCuoi logged
+12:58:17 Character: ThangCuoi logout
+12:58:20 ExitAccount: 1 - IP: 192.168.1.7
+13:02:54 AddAccount: 1 - IP: 192.168.1.7
+13:02:56 Character: ThangCuoi logged
+13:03:04 Character: ThangCuoi logout
+13:03:04 ExitAccount: 1 - IP: 192.168.1.7
+13:08:50 AddAccount: 1 - IP: 192.168.1.7
+13:08:51 Character: ThangCuoi logged
+13:09:54 Character: ThangCuoi logout
+13:10:12 Character: ThangCuoi logged
+13:10:14 Character: ThangCuoi logout
+13:10:23 Character: ThangCuoi logged
+13:18:38 Character: ThangCuoi logout
+13:18:47 Character: ThangCuoi logged
+13:18:49 Character: ThangCuoi logout
+13:19:22 ExitAccount: 1 - IP: 192.168.1.7
+13:25:10 AddAccount: 1 - IP: 192.168.1.7
+13:25:11 Character: ThangCuoi logged
+14:05:42 [ServerInfo] CashShop loaded successfully
+14:05:42 [ServerInfo] ChaosMix loaded successfully
+14:05:42 [ServerInfo] Character loaded successfully
+14:05:42 [FakeOnline] Load Data OK
+14:05:42 [ServerInfo] Custom loaded successfully
+14:05:42 [ServerInfo] Command loaded successfully
+14:05:42 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+14:05:42 [ServerInfo] Common loaded successfully
+14:05:42 [ServerInfo] Event loaded successfully
+14:05:42 [ServerInfo] EventItemBag loaded successfully
+14:05:42 [BProtect]Load Config Attack[6]/Skill[90]
+14:05:42 [ServerInfo] Hack loaded successfully
+14:05:42 [ServerInfo] Item loaded successfully
+14:05:42 [ServerInfo] Monster loaded successfully
+14:05:42 [ServerInfo] Move loaded successfully
+14:05:42 [ServerInfo] Quest loaded successfully
+14:05:42 [ServerInfo] Shop loaded successfully
+14:05:42 [ServerInfo] Skill loaded successfully
+14:05:42 [ServerInfo] Util loaded successfully
+14:05:42 [ReadBotInfo] BotSystem loaded successfully
+14:05:42 [ServerInfo] CfgSPK loaded successfully
+14:06:29 AddAccount: 1 - IP: 192.168.1.7
+14:06:31 Character: 1111111111 logged
+14:06:37 Character: 1111111111 logout
+14:06:38 Character: 1111111111 logged
+14:07:54 [ServerInfo] CashShop loaded successfully
+14:07:54 [ServerInfo] ChaosMix loaded successfully
+14:07:54 [ServerInfo] Character loaded successfully
+14:07:54 [FakeOnline] Load Data OK
+14:07:54 [ServerInfo] Custom loaded successfully
+14:07:54 [ServerInfo] Command loaded successfully
+14:07:54 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+14:07:54 [ServerInfo] Common loaded successfully
+14:07:54 [ServerInfo] Event loaded successfully
+14:07:54 [ServerInfo] EventItemBag loaded successfully
+14:07:54 [BProtect]Load Config Attack[6]/Skill[90]
+14:07:54 [ServerInfo] Hack loaded successfully
+14:07:54 [ServerInfo] Item loaded successfully
+14:07:54 [ServerInfo] Monster loaded successfully
+14:07:54 [ServerInfo] Move loaded successfully
+14:07:54 [ServerInfo] Quest loaded successfully
+14:07:54 [ServerInfo] Shop loaded successfully
+14:07:54 [ServerInfo] Skill loaded successfully
+14:07:54 [ServerInfo] Util loaded successfully
+14:07:54 [ReadBotInfo] BotSystem loaded successfully
+14:07:54 [ServerInfo] CfgSPK loaded successfully
+14:09:30 [ServerInfo] CashShop loaded successfully
+14:09:30 [ServerInfo] ChaosMix loaded successfully
+14:09:30 [ServerInfo] Character loaded successfully
+14:09:30 [FakeOnline] Load Data OK
+14:09:30 [ServerInfo] Custom loaded successfully
+14:09:30 [ServerInfo] Command loaded successfully
+14:09:30 GHRS Hôm Nay Là : 1000 Lần - (Thứ 5) - 23:59:59 Reset : +0 Lần
+14:09:30 [ServerInfo] Common loaded successfully
+14:09:30 [ServerInfo] Event loaded successfully
+14:09:30 [ServerInfo] EventItemBag loaded successfully
+14:09:30 [BProtect]Load Config Attack[6]/Skill[90]
+14:09:30 [ServerInfo] Hack loaded successfully
+14:09:30 [ServerInfo] Item loaded successfully
+14:09:30 [ServerInfo] Monster loaded successfully
+14:09:30 [ServerInfo] Move loaded successfully
+14:09:30 [ServerInfo] Quest loaded successfully
+14:09:30 [ServerInfo] Shop loaded successfully
+14:09:30 [ServerInfo] Skill loaded successfully
+14:09:30 [ServerInfo] Util loaded successfully
+14:09:30 [ReadBotInfo] BotSystem loaded successfully
+14:09:30 [ServerInfo] CfgSPK loaded successfully
+14:10:23 AddAccount: 1 - IP: 192.168.1.7
+14:10:24 Character: 1111111111 logged
+14:10:25 Character: 1111111111 logout
+14:11:01 Character: 1111111111 logged
+14:11:07 Character: 1111111111 logout
+14:11:43 Character: ThangCuoi logged
+14:11:45 Character: ThangCuoi logout
+14:12:20 Character: ThangCuoi logged
+14:12:26 Character: ThangCuoi logout
+14:12:38 Character: ThangCuoi logged
+14:46:59 Character: ThangCuoi logout
+14:47:00 Character: ThangCuoi logged
+14:47:04 Character: ThangCuoi logout
+14:47:14 Character: ThangCuoi logged
+14:58:49 Character: ThangCuoi logout
+14:59:01 Character: ThangCuoi logged
+14:59:06 Character: ThangCuoi logout
+14:59:11 Character: ThangCuoi logged
+14:59:19 Character: ThangCuoi logout
+14:59:47 Character: ThangCuoi logged
+15:07:27 Character: ThangCuoi logout
+15:07:29 Character: ThangCuoi logged
+15:09:05 Character: ThangCuoi logout
+15:09:07 Character: ThangCuoi logged
+15:09:38 Character: ThangCuoi logout
+15:09:39 Character: ThangCuoi logged
+15:09:58 Character: ThangCuoi logout
+15:09:59 Character: ThangCuoi logged
+15:10:15 Character: ThangCuoi logout
+15:10:17 Character: ThangCuoi logged
+15:11:41 Character: ThangCuoi logout
+15:11:43 Character: ThangCuoi logged
+15:17:24 Character: ThangCuoi logout
+15:17:24 ExitAccount: 1 - IP: 192.168.1.7
+15:21:25 AddAccount: 1 - IP: 192.168.1.7
+15:21:27 Character: ThangCuoi logged
+15:21:32 Character: ThangCuoi logout
+15:21:32 ExitAccount: 1 - IP: 192.168.1.7
+15:48:10 AddAccount: 1 - IP: 192.168.1.7
+15:48:11 Character: ThangCuoi logged
+15:49:38 Character: ThangCuoi logout
+15:49:38 ExitAccount: 1 - IP: 192.168.1.7
+16:04:12 AddAccount: 1 - IP: 192.168.1.7
+16:04:13 Character: ThangCuoi logged
+16:04:23 Character: ThangCuoi logout
+16:04:36 Character: ThangCuoi logged
+16:04:40 Character: ThangCuoi logout
+16:04:59 Character: ThangCuoi logged
+16:05:09 Character: ThangCuoi logout
+16:05:35 Character: ThangCuoi logged
+16:05:47 Character: ThangCuoi logout
+16:06:03 Character: ThangCuoi logged
+16:06:57 Character: ThangCuoi logout
+16:07:07 Character: ThangCuoi logged
+16:07:18 Character: ThangCuoi logout
+16:07:24 Character: ThangCuoi logged
+16:07:28 Character: ThangCuoi logout
+16:07:44 Character: ThangCuoi logged
+16:07:50 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:07:50 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:52 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:53 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:53 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:07:57 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:57 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:58 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:58 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:07:58 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:08:03 Character: ThangCuoi logout
+16:08:30 Character: ThangCuoi logged
+16:08:37 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:08:38 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:08:42 Character: ThangCuoi logout
+16:09:00 Character: ThangCuoi logged
+16:09:04 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:09:05 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:09:05 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:09:13 Character: ThangCuoi logout
+16:09:21 Character: ThangCuoi logged
+16:09:31 Character: ThangCuoi logout
+16:09:52 Character: ThangCuoi logged
+16:09:56 Character: ThangCuoi logout
+16:10:10 Character: ThangCuoi logged
+16:10:14 Character: ThangCuoi logout
+16:10:42 Character: ThangCuoi logged
+16:11:01 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:11:08 Character: ThangCuoi logout
+16:11:09 Character: ThangCuoi logged
+16:12:00 Character: ThangCuoi logout
+16:12:07 Character: ThangCuoi logged
+16:12:22 Character: ThangCuoi logout
+16:12:42 Character: ThangCuoi logged
+16:12:47 Character: ThangCuoi logout
+16:13:03 Character: ThangCuoi logged
+16:14:16 Character: ThangCuoi logout
+16:14:53 Character: ThangCuoi logged
+16:14:59 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:15:01 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:01 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:02 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:03 [1] LogCoin(ThangCuoi) WC : 100000, WP : 2111111, GP : 3333223, Rud: 1123340, ATM: 0
+16:15:09 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:09 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:10 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:10 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:17 Character: ThangCuoi logout
+16:15:19 Character: ThangCuoi logged
+16:15:24 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:15:27 Character: ThangCuoi logout
+16:15:44 Character: ThangCuoi logged
+16:15:53 Character: ThangCuoi logout
+16:16:04 Character: ThangCuoi logged
+16:16:08 Character: ThangCuoi logout
+16:16:24 Character: ThangCuoi logged
+16:16:32 [1] LogCoin(ThangCuoi) WC : 1, WP : 2, GP : 3, Rud: 0, ATM: 0
+16:16:39 Character: ThangCuoi logout
+16:22:27 Character: ThangCuoi logged
+16:22:31 Character: ThangCuoi logout
+16:22:46 Character: ThangCuoi logged
+16:38:58 Character: ThangCuoi logout
+16:38:58 ExitAccount: 1 - IP: 192.168.1.7
+16:39:11 AddAccount: 1 - IP: 192.168.1.7
+16:39:12 Character: ThangCuoi logged
+16:39:13 Character: ThangCuoi logout
+16:39:20 ExitAccount: 1 - IP: 192.168.1.7
+16:39:29 AddAccount: 1 - IP: 192.168.1.7
+16:39:30 Character: 123213 logged
+16:39:32 Character: 123213 logout
+16:39:47 Character: 123213 logged
+16:39:48 Character: 123213 logout
+16:39:49 Character: ThangCuoi logged
+16:39:57 Character: ThangCuoi logout
+16:40:27 Character: ThangCuoi logged
+16:40:46 Character: ThangCuoi logout
+16:40:53 Character: ThangCuoi logged
+16:40:57 Character: ThangCuoi logout
+16:40:59 Character: 123213 logged
+16:41:00 Character: 123213 logout
+16:41:25 Character: ThangCuoi logged
+16:41:27 Character: ThangCuoi logout
+16:41:30 ExitAccount: 1 - IP: 192.168.1.7
+16:44:48 AddAccount: 1 - IP: 192.168.1.7
+16:44:50 Character: ThangCuoi logged
+21:28:21 Character: ThangCuoi logout
+21:28:23 Character: ThangCuoi logged
+21:29:45 Character: ThangCuoi logout
+21:29:47 Character: 1111111111 logged
+21:30:30 Character: 1111111111 logout
+21:30:32 Character: 123213 logged
+21:31:24 Character: 123213 logout
+21:31:27 Character: 1111111111 logged
+21:31:38 Character: 1111111111 logout
+21:31:40 Character: 123213 logged
+21:31:51 Character: 123213 logout
+21:31:52 Character: 33333333 logged
+21:33:19 Character: 33333333 logout
+21:33:21 Character: 444444 logged
+21:34:17 Character: 444444 logout
+21:34:43 Character: ThangCuoi logged
+21:35:07 [1] LogCoin(ThangCuoi) WC : -50000, WP : 0, GP : 0, Rud: 0, ATM: 0
+21:35:07 Character: ThangCuoi logout
+21:35:09 Character: ThangCuoi logged
+21:35:56 Character: ThangCuoi logout
+21:35:58 Character: ThangCuoi logged
+21:45:50 Character: ThangCuoi logout
+21:45:50 ExitAccount: 1 - IP: 192.168.1.7
+21:45:56 AddAccount: 2 - IP: 192.168.1.7
+21:46:10 Character: 12321323 logged
+21:46:12 Character: 12321323 logout
+21:46:38 Character: 12321323 logged
+21:46:40 Character: 12321323 logout
+21:46:43 Character: 765465 logged
+21:47:19 Character: 765465 logout
+21:50:08 Character: 123123233 logged
+22:05:00 [KING OF MU] Start
+22:35:00 [KING OF MU] Finish - No Winner
+23:30:28 Character: 123123233 logout
+23:30:33 ExitAccount: 2 - IP: 192.168.1.7
+23:30:40 AddAccount: 1 - IP: 192.168.1.7
+23:30:43 Character: ThangCuoi logged
+23:52:57 Character: ThangCuoi logout
+23:52:57 ExitAccount: 1 - IP: 192.168.1.7
+23:54:42 AddAccount: 1 - IP: 192.168.1.7
+23:54:44 Character: ThangCuoi logged
+23:55:01 Character: ThangCuoi logout
+23:55:01 ExitAccount: 1 - IP: 192.168.1.7
+23:55:26 AddAccount: 1 - IP: 192.168.1.7
+23:55:29 Character: ThangCuoi logged
+23:59:59 Giới Hạn Reset: 1000 23:59:59 +0 (Thursday)

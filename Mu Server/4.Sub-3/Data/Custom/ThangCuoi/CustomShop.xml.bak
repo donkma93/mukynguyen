@@ -1,0 +1,170 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/thangtoccuoi/
+//					Zalo + SĐT : 0968.09.23.99
+//					Name : Thắng Cười
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Bật /Tắt
+	Firework		- Hiệu ứng pháo hoa khi nâng cấp
+	Notice			- Bật, tắt thông báo
+-->
+<CustomCashShop Enable="0" Firework="1" Notice="3">
+	
+	<MessageInfo>
+		<Message Index="0" Text="[Sâu Shop]Chức năng không được kích hoạt!!" />
+		<Message Index="1" Text="[Sâu Shop]Không có thông tin Mốc Nạp" />
+		<Message Index="2" Text="" />
+		<Message Index="3" Text="Bạn Cần Có [%s][%s] " />
+		<Message Index="4" Text="!" />
+		<Message Index="5" Text="Chúc mừng [%s] vừa mua Item [%s]" />
+		<Message Index="6" Text="Hãy sắp xếp lại thùng đồ cá nhân !" />
+	</MessageInfo>	
+	
+	<ConfigShop>
+		<DanhMuc NameShop="SHOP VŨ KHÍ">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="0" Price="10000" Type="5" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="20000" Type="0" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="2" Price="30000" Type="4" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="3" Price="40000" Type="0" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="50000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="60000" Type="5" Index="15" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="70000" Type="0" Index="32" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="0" Index="32" LvItem="14"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="0" Index="32" LvItem="14"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="5" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="0" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="4" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="0" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="4" Price="80000" Type="2" Index="8" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP KHIÊN">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="6" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="6" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="6" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="6" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="6" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP MŨ">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="0" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0"  />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0"  />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="10" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="6" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0"  />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="39" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="7" Index="59" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP ÁO">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="8" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="8" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="8" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="8" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="8" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP QUẦN">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="9" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="9" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="9" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="9" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="9" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP GĂNG">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="10" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="10" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="10" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="10" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="10" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP GIÀY">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="11" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="11" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="11" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="11" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="11" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP CÁNH">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="1" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="2" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="3" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="4" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="5" LvItem="15"  Dur="-1" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP NGỌC">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="136" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="137" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="138" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="139" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="12" Index="140" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+		<DanhMuc NameShop="SHOP BÙA">
+			
+			<ItemBan>
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="13" Index="43" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="13" Index="44" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="72" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="73" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="74" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="75" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="76" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="77" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="96" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="97" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+				<Item SizeBMD="0.5" PriceType="1" Price="1111" Type="14" Index="98" LvItem="0"  Dur="-1" Skill="0" Luck="0" Opt="7" Exc="0" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" />
+			</ItemBan>
+		</DanhMuc>
+		
+	</ConfigShop>
+	
+</CustomCashShop>
+

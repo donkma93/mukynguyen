@@ -1,0 +1,50 @@
+10:22:55 EXEC WZ_RankingBloodCastle '11','ThangCuoi','26000'
+10:22:55 Lỗi 23000. Vấn đề do thiếu Table SQL
+10:45:23 Khởi động Port 55960 thành công!
+10:45:23 Nhận diện được IP 127.0.0.1 nội bộ.
+10:45:23 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+10:56:23 EXEC WZ_RankingBloodCastle '11','ThangCuoi','26000'
+10:56:23 Lỗi 23000. Vấn đề do thiếu Table SQL
+11:15:33 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+11:21:29 Khởi động Port 55960 thành công!
+11:21:30 Nhận diện được IP 127.0.0.1 nội bộ.
+11:21:30 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+11:27:05 EXEC WZ_RankingBos '11','123123','1'
+11:27:05 Lỗi 23000. Vấn đề do thiếu Table SQL
+11:33:16 EXEC WZ_RankingBos '11','123123','1'
+11:33:16 Lỗi 23000. Vấn đề do thiếu Table SQL
+11:33:34 EXEC WZ_RankingBos '11','123123','1'
+11:33:34 Lỗi 23000. Vấn đề do thiếu Table SQL
+11:34:13 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+11:36:14 Khởi động Port 55960 thành công!
+11:36:24 Nhận diện được IP 127.0.0.1 nội bộ.
+11:36:24 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+11:59:57 Nhận diện được IP 127.0.0.1 nội bộ.
+11:59:57 Cụm Sub-2 và Port 55902 của nhóm 1 đã liên kết.
+12:58:17 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+13:12:12 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+13:14:15 Khởi động Port 55960 thành công!
+13:14:19 Nhận diện được IP 127.0.0.1 nội bộ.
+13:14:19 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+14:05:49 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+14:05:53 Nhận diện được IP 127.0.0.1 nội bộ.
+14:05:53 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:00:56 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:11:00 Khởi động Port 55960 thành công!
+21:11:07 Nhận diện được IP 127.0.0.1 nội bộ.
+21:11:07 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:27:59 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:28:01 Nhận diện được IP 127.0.0.1 nội bộ.
+23:28:01 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:29:42 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:29:44 Nhận diện được IP 127.0.0.1 nội bộ.
+23:29:44 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:33:55 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:34:01 Nhận diện được IP 127.0.0.1 nội bộ.
+23:34:01 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:36:10 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:38:03 Nhận diện được IP 127.0.0.1 nội bộ.
+23:38:03 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:55:29 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:55:53 Nhận diện được IP 127.0.0.1 nội bộ.
+23:55:53 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.

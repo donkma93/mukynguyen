@@ -1,0 +1,2 @@
+20:03:06 [SocketItemMountSeedSphereMix][Success][donpv][ELF_DonPV] - (ChaosSuccessRate: 0, ChaosMoney: 1000000)
+22:01:33 [HornOfFenrirMix][Success][thuythuy][thuythuy] - (ChaosSuccessRate: 90, ChaosMoney: 10000000)

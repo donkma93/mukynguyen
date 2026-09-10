@@ -1,0 +1,8 @@
+22:38:35 [General][donpv2][SUM_DonPV] - (Message: /addene 15000)
+22:52:24 [General][donpv2][DWPV] - (Message: /addagi 30000)
+22:52:30 [General][donpv2][DWPV] - (Message: /addstr 3000)
+22:52:34 [General][donpv2][DWPV] - (Message: /addene 32000)
+22:56:35 [General][donpv2][DWPV] - (Message: /sts 1)
+23:00:40 [General][donpv2][DWPV] - (Message: /autoreset)
+23:00:45 [General][donpv2][DWPV] - (Message: /reset)
+23:02:49 [General][donpv2][DWPV] - (Message: /addene 390)

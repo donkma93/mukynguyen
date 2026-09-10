@@ -1,0 +1,127 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+//===================================================================
+//-- Index chữ trong ghi chú đồ
+//====================================================================
+15      "Kích Hoạt Dòng Ẩn Khi Trang Bị (Đủ Sét)"
+199     "Kích Hoạt Dòng Ẩn Khi Nâng Cấp Đạt (Cấp Độ)"
+//<---SET 1 - 4--->
+1		"[+9]  Máu +10.000 & Phòng Thủ PvP +50"
+2		"[+11] Máu +30.000 & Phòng Thủ PvP +100"
+3		"[+13] Máu +50.000 & Phòng Thủ PvP +150"
+4		"[+15] Máu +70.000 & Phòng Thủ PvP +200"
+//Sét Cấp 5
+5		"[+9]  Máu +70.000 & Phòng Thủ PvP +200"
+6		"[+11] Máu +90.000 & Phòng Thủ PvP +250"
+7		"[+13] Máu +110.000 & Phòng Thủ PvP +300"
+8		"[+15] Máu +130.000 & Phòng Thủ PvP +350"
+//Sét Cấp 6
+9		"[+9]  Máu +130.000 & Phòng Thủ PvP +350"
+10		"[+11] Máu +150.000 & Phòng Thủ PvP +400"
+11		"[+13] Máu +170.000 & Phòng Thủ PvP +450"
+12		"[+15] Máu +190.000 & Phòng Thủ PvP +500"
+//Sét Cấp 7
+13		"[+9]  Máu +190.000 & Phòng Thủ PvP +500"
+14		"[+11] Máu +210.000 & Phòng Thủ PvP +550"
+16		"[+13] Máu +230.000 & Phòng Thủ PvP +600"
+17		"[+15] Máu +250.000 & Phòng Thủ PvP +650"
+//Sét Cấp 380
+18		"[+9]  Máu +250.000 & Phòng Thủ PvP +650"
+19		"[+11] Máu +270.000 & Phòng Thủ PvP +700"
+20		"[+13] Máu +290.000 & Phòng Thủ PvP +750"
+21		"[+15] Máu +310.000 & Phòng Thủ PvP +800"
+//Sét Cấp 400
+22		"[+9]  Máu +310.000 & Phòng Thủ PvP +800"
+23		"[+11] Máu +330.000 & Phòng Thủ PvP +850"
+24		"[+13] Máu +350.000 & Phòng Thủ PvP +900"
+25		"[+15] Máu +370.000 & Phòng Thủ PvP +950"
+//Sét Hỏa Ngục
+26		"[+9]  Máu +370.000 & Phòng Thủ PvP +950"
+27		"[+11] Máu +390.000 & Phòng Thủ PvP +1000"
+28		"[+13] Máu +410.000 & Phòng Thủ PvP +1050"
+29		"[+15] Máu +430.000 & Phòng Thủ PvP +1100"
+//Sét Ngũ Độc
+30		"[+9]  Máu +430.000 & Phòng Thủ PvP +1100"
+31		"[+11] Máu +450.000 & Phòng Thủ PvP +1150"
+32		"[+13] Máu +470.000 & Phòng Thủ PvP +1200"
+33		"[+15] Máu +490.000 & Phòng Thủ PvP +1250"
+//Sét Mộng Tuyết
+34		"[+9]  Máu +490.000 & Phòng Thủ PvP +1250"
+35		"[+11] Máu +510.000 & Phòng Thủ PvP +1300"
+36		"[+13] Máu +530.000 & Phòng Thủ PvP +1350"
+37		"[+15] Máu +550.000 & Phòng Thủ PvP +1400"
+//Sét Huyết Tộc
+38		"[+9]  Máu +550.000 & Phòng Thủ PvP +1400"
+39		"[+11] Máu +570.000 & Phòng Thủ PvP +1450"
+40		"[+13] Máu +590.000 & Phòng Thủ PvP +1500"
+41		"[+15] Máu +610.000 & Phòng Thủ PvP +1550"
+//Sét Vĩnh Hằng
+42		"[+9]  Máu +610.000 & Phòng Thủ PvP +1550"
+43		"[+11] Máu +630.000 & Phòng Thủ PvP +1600"
+44		"[+13] Máu +650.000 & Phòng Thủ PvP +1650"
+45		"[+15] Máu +670.000 & Phòng Thủ PvP +1700"
+////===================================================================================
+//Vũ Khí 1-7
+200		"[+9]  Tăng Thêm +1% Damege"
+201		"[+11] Tăng Thêm +3% Damege"
+202		"[+13] Tăng Thêm +5% Damege"
+203		"[+15] Tăng Thêm +7% Damege"
+//Vũ Khí Rồng 1 - 380 - 400
+204		"[+9]  Tăng Thêm +10% Damege"
+205		"[+11] Tăng Thêm +12% Damege"
+206		"[+13] Tăng Thêm +14% Damege"
+207		"[+15] Tăng Thêm +16% Damege"
+//Vũ Khí Custom
+208		"[+9]  Tăng Thêm +20% Damege"
+209		"[+11] Tăng Thêm +25% Damege"
+210		"[+13] Tăng Thêm +30% Damege"
+211		"[+15] Tăng Thêm +35% Damege"
+////===================================================================================
+//Khiên Sách all sever
+300		"[+9]  Máu +5.000 & Phòng Thủ PvP + 50"
+301		"[+11] Máu +15.000 & Phòng Thủ PvP + 100"
+302		"[+13] Máu +25.000 & Phòng Thủ PvP + 150"
+303		"[+15] Máu +35.000 & Phòng Thủ PvP + 200"
+//Khiên Custom
+304		"[+9]  Máu +40.000 & Phòng Thủ PvP + 1000"
+305		"[+11] Máu +60.000 & Phòng Thủ PvP + 1500"
+306		"[+13] Máu +80.000 & Phòng Thủ PvP + 2000"
+307		"[+15] Máu +100.000 & Phòng Thủ PvP + 2500"
+//===================================================================================
+//Wing 1
+400		"[+9]  Tăng Thêm +1% Damege"
+401		"[+11] Tăng Thêm +2% Damege"
+402		"[+13] Tăng Thêm +3% Damege"
+403		"[+15] Tăng Thêm +4% Damege"
+//Wing 2-2.5
+404		"[+9]  Tăng Thêm +4% Damege"
+405		"[+11] Tăng Thêm +5% Damege"
+406		"[+13] Tăng Thêm +6% Damege"
+407		"[+15] Tăng Thêm +7% Damege"
+//Wing 3-4-5
+408		"[+9]  Tăng Thêm +7% Damege"
+409		"[+11] Tăng Thêm +8% Damege"
+410		"[+13] Tăng Thêm +9% Damege"
+411		"[+15] Tăng Thêm +10% Damege"
+//Wing Custom  
+412 	"[+9]  Tăng Thêm +15% Damege"
+413 	"[+11] Tăng Thêm +20% Damege"
+414 	"[+13] Tăng Thêm +25% Damege"
+415 	"[+15] Tăng Thêm +30% Damege"
+//===================================================================================
+//Nhẫn
+500		"[+9] Tăng Thêm 1% GST"
+501		"[+11] Tăng Thêm 3% GST"
+502		"[+13] Tăng Thêm 5% GST"
+503		"[+15] Tăng Thêm 7% GST"
+//Dây Chuyền
+504		"[+9] Tăng Thêm +2% Damege"
+505		"[+11] Tăng Thêm +4% Damege"
+506		"[+13] Tăng Thêm +6% Damege"
+507		"[+15] Tăng Thêm +8% Damege"
+
+end
+

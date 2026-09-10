@@ -1,0 +1,78 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Maya Hand Right"		1000		0				1				0					0				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0			17		4			6			1		1		1		0			0			100		//Thiên Ma Kiếm
+0			18		4			6			1		1		1		0			0			100		//Lôi Phong Đao
+2			11		4			6			1		1		1		0			0			100		//Trượng Kim Cương
+4			19		4			6			1		1		1		0			0			100		//Nỏ Thánh Nữ
+5			9		4			6			1		1		1		0			0			100		//Gậy Triệu Hồn
+0			14		0			0			1		0		0		0			0			100		//Kiếm Điện
+5			5		0			0			1		0		0		0			0			100		//Gậy Ma Thuật
+4			14		0			0			1		0		0		0			0			100		//Nỏ Kim Ngân
+4			16		0			0			1		0		0		0			0			100		//Nỏ Thánh
+2			9		0			0			1		0		0		0			0			100		//Trượng Thép
+2			4		0			0			1		0		0		0			0			100		//Chùy Băng
+2			5		0			0			1		0		0		0			0			100		//Kiếm Băng
+6			15		4			6			1		0		1		0			0			100		//Khiên Triệu Hồn
+6			12		0			0			1		0		0		0			0			100		//Khiên Ngưu Vương
+6			16		0			0			1		0		0		0			0			100		//Khiên Thánh Nữ
+7			34		4			6			0		1		1		0			0			100		//Mũ Hắc Điểu
+9			34		4			6			0		1		1		0			0			100		//Quần Hắc Điểu
+10			34		4			6			0		1		1		0			0			100		//Tay Hắc Điểu
+11			34		4			6			0		1		1		0			0			100		//Giày Hắc Điểu
+7			35		4			6			0		1		1		0			0			100		//Mũ Ánh Trăng
+9			35		4			6			0		1		1		0			0			100		//Quần Ánh Trăng
+10			35		4			6			0		1		1		0			0			100		//Tay Ánh Trăng
+11			35		4			6			0		1		1		0			0			100		//Giày Ánh Trăng
+7			36		4			6			0		1		1		0			0			100		//Mũ Nữ Thần
+9			36		4			6			0		1		1		0			0			100		//Quần Nữ Thần
+10			36		4			6			0		1		1		0			0			100		//Tay Nữ Thần
+11			36		4			6			0		1		1		0			0			100		//Giày Nữ Thần
+9			37		4			6			0		1		1		0			0			100		//Quần Hỏa Thần
+10			37		4			6			0		1		1		0			0			100		//Tay Hỏa Thần
+11			37		4			6			0		1		1		0			0			100		//Giày Hỏa Thần
+7			38		4			6			0		1		1		0			0			100		//Mũ Hoàng Kim
+9			38		4			6			0		1		1		0			0			100		//Quần Hoàng Kim
+10			38		4			6			0		1		1		0			0			100		//Tay Hoàng Kim
+11			38		4			6			0		1		1		0			0			100		//Giày Hoàng Kim
+8			17		4			6			0		1		1		0			0			100		//Áo Phượng Hoàng
+9			17		4			6			0		1		1		0			0			100		//Quần Phượng Hoàng
+8			18		4			6			0		1		1		0			0			100		//Áo Triệu Hồn
+9			18		4			6			0		1		1		0			0			100		//Quần Triệu Hồn
+8			19		4			6			0		1		1		0			0			100		//Áo Giai Nhân
+9			19		4			6			0		1		1		0			0			100		//Quần Giai Nhân
+8			20		4			6			0		1		1		0			0			100		//Áo Lôi Phong
+9			20		4			6			0		1		1		0			0			100		//Quần Lôi Phong
+8			27		4			6			0		1		1		0			0			100		//Áo Hắc Vương
+9			27		4			6			0		1		1		0			0			100		//Quần Hắc Vương
+7			16		0			0			0		0		0		0			0			100		//Mũ Hắc Long
+9			16		0			0			0		0		0		0			0			100		//Quần Hắc Long
+10			16		0			0			0		0		0		0			0			100		//Tay Hắc Long
+11			16		0			0			0		0		0		0			0			100		//Giày Hắc Long
+10			17		0			0			0		0		0		0			0			100		//Tay Phượng Hoàng
+11			17		0			0			0		0		0		0			0			100		//Giày Phượng Hoàng
+9			3		0			0			0		0		0		0			0			100		//Quần Ma Thuật
+8			3		0			0			0		0		0		0			0			100		//Áo Ma Thuật
+10			18		0			0			0		0		0		0			0			100		//Tay Triệu Hồn
+11			18		0			0			0		0		0		0			0			100		//Giày Triệu Hồn
+8			14		0			0			0		0		0		0			0			100		//Áo Kim Ngân
+9			14		0			0			0		0		0		0			0			100		//Quần Kim Ngân
+10			19		0			0			0		0		0		0			0			100		//Tay Giai Nhân
+11			19		0			0			0		0		0		0			0			100		//Giày Giai Nhân
+10			15		0			0			0		0		0		0			0			100		//Tay Phong Vũ
+11			15		0			0			0		0		0		0			0			100		//Giày Phong Vũ
+10			26		0			0			0		0		0		0			0			100		//Tay Huyền Thiết
+9			26		0			0			0		0		0		0			0			100		//Quần Huyền Thiết
+11			26		0			0			0		0		0		0			0			100		//Giày Huyền Thiết
+end

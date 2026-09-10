@@ -1,0 +1,322 @@
+07:16:37 Character: ThangCuoi logout
+07:16:37 ExitAccount: 11 - IP: 192.168.1.7
+07:51:00 [CTC Mini] Bắt Đầu Event Công Thành Chiến Mini
+08:21:00 [CTC Mini] Finish 2
+09:19:01 AddAccount: 11 - IP: 192.168.1.7
+09:19:02 Character: ThangCuoi logged
+09:20:09 Character: ThangCuoi logout
+09:20:09 ExitAccount: 11 - IP: 192.168.1.7
+13:23:00 AddAccount: 11 - IP: 192.168.1.7
+13:23:01 Character: ThangCuoi logged
+13:24:11 [FakeOnline] Load Data OK
+13:24:11 [ServerInfo] Custom loaded successfully
+13:27:05 Character: ThangCuoi logout
+13:27:05 ExitAccount: 11 - IP: 192.168.1.7
+13:27:16 AddAccount: 11 - IP: 192.168.1.7
+13:27:16 Character: ThangCuoi logged
+13:27:20 Character: ThangCuoi logout
+13:27:20 ExitAccount: 11 - IP: 192.168.1.7
+13:27:36 AddAccount: 11 - IP: 192.168.1.7
+13:27:36 Character: ThangCuoi logged
+13:27:40 Character: ThangCuoi logout
+13:27:40 ExitAccount: 11 - IP: 192.168.1.7
+13:28:28 AddAccount: 11 - IP: 192.168.1.7
+13:28:28 Character: ThangCuoi logged
+13:28:31 Character: ThangCuoi logout
+13:28:31 ExitAccount: 11 - IP: 192.168.1.7
+13:32:07 AddAccount: 11 - IP: 192.168.1.7
+13:32:08 Character: ThangCuoi logged
+13:32:17 [11][ThangCuoi] Kill [bot24][AnhThoXay]
+13:32:19 Character: ThangCuoi logout
+13:32:19 ExitAccount: 11 - IP: 192.168.1.7
+13:34:06 AddAccount: 11 - IP: 192.168.1.7
+13:34:07 Character: ThangCuoi logged
+13:34:09 Character: ThangCuoi logout
+13:34:09 ExitAccount: 11 - IP: 192.168.1.7
+13:35:41 AddAccount: 11 - IP: 192.168.1.7
+13:35:42 Character: ThangCuoi logged
+13:35:44 Character: ThangCuoi logout
+13:35:44 ExitAccount: 11 - IP: 192.168.1.7
+13:37:58 AddAccount: 11 - IP: 192.168.1.7
+13:37:59 Character: ThangCuoi logged
+13:38:11 Character: ThangCuoi logout
+13:38:11 ExitAccount: 11 - IP: 192.168.1.7
+13:39:17 AddAccount: 11 - IP: 192.168.1.7
+13:39:18 Character: ThangCuoi logged
+13:39:32 Character: ThangCuoi logout
+13:39:32 ExitAccount: 11 - IP: 192.168.1.7
+13:39:46 AddAccount: 11 - IP: 192.168.1.7
+13:39:47 Character: ThangCuoi logged
+13:40:04 Character: ThangCuoi logout
+13:40:04 ExitAccount: 11 - IP: 192.168.1.7
+13:44:19 AddAccount: 11 - IP: 192.168.1.7
+13:44:19 Character: ThangCuoi logged
+13:44:58 Character: ThangCuoi logout
+13:44:58 ExitAccount: 11 - IP: 192.168.1.7
+13:45:07 AddAccount: 11 - IP: 192.168.1.7
+13:45:08 Character: ThangCuoi logged
+13:45:21 Character: ThangCuoi logout
+13:45:21 ExitAccount: 11 - IP: 192.168.1.7
+13:48:05 AddAccount: 11 - IP: 192.168.1.7
+13:48:06 Character: ThangCuoi logged
+17:16:02 Character: ThangCuoi logout
+17:16:02 ExitAccount: 11 - IP: 192.168.1.7
+17:16:16 AddAccount: 11 - IP: 192.168.1.7
+17:16:19 Character: ThangCuoi logged
+17:16:31 Character: ThangCuoi logout
+17:16:31 ExitAccount: 11 - IP: 192.168.1.7
+17:17:24 AddAccount: 11 - IP: 192.168.1.7
+17:17:26 Character: ThangCuoi logged
+17:17:39 Character: ThangCuoi logout
+17:17:39 ExitAccount: 11 - IP: 192.168.1.7
+17:17:58 AddAccount: 11 - IP: 192.168.1.7
+17:18:00 Character: ThangCuoi logged
+17:19:38 Character: ThangCuoi logout
+17:19:38 ExitAccount: 11 - IP: 192.168.1.7
+17:19:52 AddAccount: 11 - IP: 192.168.1.7
+17:19:54 Character: ThangCuoi logged
+17:23:49 Character: ThangCuoi logout
+17:23:49 ExitAccount: 11 - IP: 192.168.1.7
+17:24:03 AddAccount: 11 - IP: 192.168.1.7
+17:24:04 Character: ThangCuoi logged
+17:24:13 Character: ThangCuoi logout
+17:24:13 ExitAccount: 11 - IP: 192.168.1.7
+17:26:52 AddAccount: 11 - IP: 192.168.1.7
+17:26:55 Character: ThangCuoi logged
+17:36:48 Character: ThangCuoi logout
+17:36:48 ExitAccount: 11 - IP: 192.168.1.7
+17:42:04 AddAccount: 11 - IP: 192.168.1.7
+17:42:05 Character: ThangCuoi logged
+17:42:16 Character: ThangCuoi logout
+17:42:16 ExitAccount: 11 - IP: 192.168.1.7
+17:43:52 AddAccount: 11 - IP: 192.168.1.7
+17:43:53 Character: ThangCuoi logged
+17:52:03 [11][ThangCuoi] Kill [bot22][2Tay2Em]
+17:52:05 [11][ThangCuoi] Kill [bot24][AnhThoXay]
+17:52:06 [11][ThangCuoi] Kill [bot26][Akuma]
+17:52:26 [11][ThangCuoi] Kill [bot26][Akuma]
+18:00:36 Character: ThangCuoi logout
+18:00:36 ExitAccount: 11 - IP: 192.168.1.7
+18:02:47 AddAccount: 11 - IP: 192.168.1.7
+18:02:48 Character: ThangCuoi logged
+19:35:07 Character: ThangCuoi logout
+19:35:07 ExitAccount: 11 - IP: 192.168.1.7
+19:35:38 AddAccount: 11 - IP: 192.168.1.7
+19:35:40 Character: ThangCuoi logged
+19:35:54 Character: ThangCuoi logout
+19:35:54 ExitAccount: 11 - IP: 192.168.1.7
+19:36:20 AddAccount: 11 - IP: 192.168.1.7
+19:36:21 Character: ThangCuoi logged
+19:36:57 Character: ThangCuoi logout
+19:36:57 ExitAccount: 11 - IP: 192.168.1.7
+19:37:21 AddAccount: 11 - IP: 192.168.1.7
+19:37:22 Character: ThangCuoi logged
+19:37:36 Character: ThangCuoi logout
+19:37:36 ExitAccount: 11 - IP: 192.168.1.7
+19:42:44 AddAccount: 11 - IP: 192.168.1.7
+19:42:45 Character: ThangCuoi logged
+19:43:02 Character: ThangCuoi logout
+19:43:02 ExitAccount: 11 - IP: 192.168.1.7
+19:45:15 AddAccount: 11 - IP: 192.168.1.7
+19:45:15 Character: ThangCuoi logged
+20:13:45 Character: ThangCuoi logout
+20:13:45 ExitAccount: 11 - IP: 192.168.1.7
+20:15:47 AddAccount: 11 - IP: 192.168.1.7
+20:15:48 Character: ThangCuoi logged
+20:16:08 Character: ThangCuoi logout
+20:16:08 ExitAccount: 11 - IP: 192.168.1.7
+20:18:11 AddAccount: 11 - IP: 192.168.1.7
+20:18:12 Character: ThangCuoi logged
+20:18:31 Character: ThangCuoi logout
+20:18:31 ExitAccount: 11 - IP: 192.168.1.7
+20:19:39 AddAccount: 11 - IP: 192.168.1.7
+20:19:41 Character: ThangCuoi logged
+20:20:55 Character: ThangCuoi logout
+20:20:55 ExitAccount: 11 - IP: 192.168.1.7
+20:21:11 AddAccount: 11 - IP: 192.168.1.7
+20:21:12 Character: ThangCuoi logged
+20:21:22 Character: ThangCuoi logout
+20:21:22 ExitAccount: 11 - IP: 192.168.1.7
+20:21:46 AddAccount: 11 - IP: 192.168.1.7
+20:21:47 Character: ThangCuoi logged
+20:22:04 Character: ThangCuoi logout
+20:22:04 ExitAccount: 11 - IP: 192.168.1.7
+20:24:55 AddAccount: 11 - IP: 192.168.1.7
+20:24:56 Character: ThangCuoi logged
+20:25:03 Character: ThangCuoi logout
+20:25:03 ExitAccount: 11 - IP: 192.168.1.7
+20:25:36 AddAccount: 11 - IP: 192.168.1.7
+20:25:37 Character: ThangCuoi logged
+20:26:29 Character: ThangCuoi logout
+20:26:29 ExitAccount: 11 - IP: 192.168.1.7
+20:26:43 AddAccount: 11 - IP: 192.168.1.7
+20:26:44 Character: ThangCuoi logged
+20:26:47 Character: ThangCuoi logout
+20:26:47 ExitAccount: 11 - IP: 192.168.1.7
+20:27:32 AddAccount: 11 - IP: 192.168.1.7
+20:27:33 Character: ThangCuoi logged
+20:27:39 Character: ThangCuoi logout
+20:27:39 ExitAccount: 11 - IP: 192.168.1.7
+20:28:24 AddAccount: 11 - IP: 192.168.1.7
+20:28:25 Character: ThangCuoi logged
+20:28:34 Character: ThangCuoi logout
+20:28:34 ExitAccount: 11 - IP: 192.168.1.7
+20:28:49 AddAccount: 11 - IP: 192.168.1.7
+20:28:50 Character: ThangCuoi logged
+20:28:56 Character: ThangCuoi logout
+20:28:56 ExitAccount: 11 - IP: 192.168.1.7
+20:29:12 AddAccount: 11 - IP: 192.168.1.7
+20:29:13 Character: ThangCuoi logged
+20:29:22 Character: ThangCuoi logout
+20:29:22 ExitAccount: 11 - IP: 192.168.1.7
+20:29:39 AddAccount: 11 - IP: 192.168.1.7
+20:29:40 Character: ThangCuoi logged
+20:30:57 Character: ThangCuoi logout
+20:30:57 ExitAccount: 11 - IP: 192.168.1.7
+20:32:56 AddAccount: 11 - IP: 192.168.1.7
+20:32:57 Character: ThangCuoi logged
+20:33:05 Character: ThangCuoi logout
+20:33:05 ExitAccount: 11 - IP: 192.168.1.7
+20:33:25 AddAccount: 11 - IP: 192.168.1.7
+20:33:26 Character: ThangCuoi logged
+20:33:34 Character: ThangCuoi logout
+20:33:34 ExitAccount: 11 - IP: 192.168.1.7
+20:34:05 AddAccount: 11 - IP: 192.168.1.7
+20:34:06 Character: ThangCuoi logged
+20:34:21 Character: ThangCuoi logout
+20:34:21 ExitAccount: 11 - IP: 192.168.1.7
+20:39:50 AddAccount: 11 - IP: 192.168.1.7
+20:39:51 Character: ThangCuoi logged
+20:40:04 Character: ThangCuoi logout
+20:40:04 ExitAccount: 11 - IP: 192.168.1.7
+20:40:32 AddAccount: 11 - IP: 192.168.1.7
+20:40:33 Character: ThangCuoi logged
+20:46:12 Character: ThangCuoi logout
+20:46:12 ExitAccount: 11 - IP: 192.168.1.7
+20:46:42 AddAccount: 11 - IP: 192.168.1.7
+20:46:43 Character: ThangCuoi logged
+20:46:51 Character: ThangCuoi logout
+20:46:51 ExitAccount: 11 - IP: 192.168.1.7
+20:48:00 AddAccount: 11 - IP: 192.168.1.7
+20:48:02 Character: ThangCuoi logged
+20:48:31 Character: ThangCuoi logout
+20:48:31 ExitAccount: 11 - IP: 192.168.1.7
+20:49:08 AddAccount: 11 - IP: 192.168.1.7
+20:49:09 Character: ThangCuoi logged
+20:50:50 Character: ThangCuoi logout
+20:50:50 ExitAccount: 11 - IP: 192.168.1.7
+20:53:04 AddAccount: 11 - IP: 192.168.1.7
+20:53:05 Character: ThangCuoi logged
+20:53:08 Character: ThangCuoi logout
+20:53:08 ExitAccount: 11 - IP: 192.168.1.7
+20:53:29 AddAccount: 11 - IP: 192.168.1.7
+20:53:29 Character: ThangCuoi logged
+20:53:34 Character: ThangCuoi logout
+20:53:34 ExitAccount: 11 - IP: 192.168.1.7
+20:53:51 AddAccount: 11 - IP: 192.168.1.7
+20:53:51 Character: ThangCuoi logged
+20:54:18 Character: ThangCuoi logout
+20:54:18 ExitAccount: 11 - IP: 192.168.1.7
+20:54:33 AddAccount: 11 - IP: 192.168.1.7
+20:54:34 Character: ThangCuoi logged
+20:54:42 Character: ThangCuoi logout
+20:54:42 ExitAccount: 11 - IP: 192.168.1.7
+20:54:55 AddAccount: 11 - IP: 192.168.1.7
+20:54:56 Character: ThangCuoi logged
+20:55:06 Character: ThangCuoi logout
+20:55:06 ExitAccount: 11 - IP: 192.168.1.7
+20:55:21 AddAccount: 11 - IP: 192.168.1.7
+20:55:22 Character: ThangCuoi logged
+20:55:46 Character: ThangCuoi logout
+20:55:46 ExitAccount: 11 - IP: 192.168.1.7
+20:56:35 AddAccount: 11 - IP: 192.168.1.7
+20:56:36 Character: ThangCuoi logged
+20:56:44 Character: ThangCuoi logout
+20:56:44 ExitAccount: 11 - IP: 192.168.1.7
+20:58:24 AddAccount: 11 - IP: 192.168.1.7
+20:58:25 Character: ThangCuoi logged
+20:59:23 Character: ThangCuoi logout
+20:59:23 ExitAccount: 11 - IP: 192.168.1.7
+20:59:47 AddAccount: 11 - IP: 192.168.1.7
+20:59:48 Character: ThangCuoi logged
+21:00:30 Character: ThangCuoi logout
+21:00:30 ExitAccount: 11 - IP: 192.168.1.7
+21:01:18 AddAccount: 11 - IP: 192.168.1.7
+21:01:19 Character: ThangCuoi logged
+21:01:21 [11][ThangCuoi] Kill [bot30][NgonAnDi]
+21:01:21 [11][ThangCuoi] Kill [bot25][GaiMienTay]
+21:01:22 [11][ThangCuoi] Kill [bot21][BoDoi]
+21:01:53 Character: ThangCuoi logout
+21:01:53 ExitAccount: 11 - IP: 192.168.1.7
+21:08:05 AddAccount: 11 - IP: 192.168.1.7
+21:08:06 Character: ThangCuoi logged
+21:09:14 Character: ThangCuoi logout
+21:09:21 Character: 123333333 logged
+21:09:41 [bot26][Akuma] Kill [11][123333333]
+21:09:50 [bot27][SieuBuff] Kill [11][123333333]
+21:10:12 [11][123333333] Kill [bot27][SieuBuff]
+21:10:22 [bot27][SieuBuff] Kill [11][123333333]
+21:13:46 Character: 123333333 logout
+21:13:46 ExitAccount: 11 - IP: 192.168.1.7
+21:17:07 AddAccount: 11 - IP: 192.168.1.7
+21:17:08 Character: ThangCuoi logged
+21:17:16 Character: ThangCuoi logout
+21:17:16 ExitAccount: 11 - IP: 192.168.1.7
+21:17:56 AddAccount: 11 - IP: 192.168.1.7
+21:17:59 Character: ThangCuoi logged
+21:18:08 Character: ThangCuoi logout
+21:18:08 ExitAccount: 11 - IP: 192.168.1.7
+21:18:43 AddAccount: 11 - IP: 192.168.1.7
+21:18:43 Character: ThangCuoi logged
+21:18:59 Character: ThangCuoi logout
+21:18:59 ExitAccount: 11 - IP: 192.168.1.7
+21:19:30 AddAccount: 11 - IP: 192.168.1.7
+21:19:31 Character: ThangCuoi logged
+21:19:39 Character: ThangCuoi logout
+21:19:39 ExitAccount: 11 - IP: 192.168.1.7
+21:19:58 AddAccount: 11 - IP: 192.168.1.7
+21:19:59 Character: ThangCuoi logged
+21:20:06 Character: ThangCuoi logout
+21:20:06 ExitAccount: 11 - IP: 192.168.1.7
+21:21:07 AddAccount: 11 - IP: 192.168.1.7
+21:21:09 Character: ThangCuoi logged
+21:21:18 Character: ThangCuoi logout
+21:21:18 ExitAccount: 11 - IP: 192.168.1.7
+21:21:59 AddAccount: 11 - IP: 192.168.1.7
+21:22:00 Character: ThangCuoi logged
+21:25:08 Character: ThangCuoi logout
+21:25:08 ExitAccount: 11 - IP: 192.168.1.7
+21:26:30 AddAccount: 11 - IP: 192.168.1.7
+21:26:31 Character: 123333333 logged
+21:27:12 Character: 123333333 logout
+21:27:12 ExitAccount: 11 - IP: 192.168.1.7
+21:29:29 AddAccount: 11 - IP: 192.168.1.7
+21:29:34 Character: 123333333 logged
+21:29:44 Character: 123333333 logout
+21:29:44 ExitAccount: 11 - IP: 192.168.1.7
+21:30:48 AddAccount: 11 - IP: 192.168.1.7
+21:30:49 Character: ThangCuoi logged
+21:30:53 Character: ThangCuoi logout
+21:30:54 Character: 123333333 logged
+21:34:22 Character: 123333333 logout
+21:34:22 ExitAccount: 11 - IP: 192.168.1.7
+21:35:34 AddAccount: 11 - IP: 192.168.1.7
+21:35:36 Character: 123333333 logged
+21:37:17 Character: 123333333 logout
+21:37:17 ExitAccount: 11 - IP: 192.168.1.7
+21:37:27 AddAccount: 11 - IP: 192.168.1.7
+21:37:29 Character: 123333333 logged
+21:37:34 Character: 123333333 logout
+21:37:34 ExitAccount: 11 - IP: 192.168.1.7
+21:38:20 AddAccount: 11 - IP: 192.168.1.7
+21:38:21 Character: ThangCuoi logged
+21:38:24 Character: ThangCuoi logout
+21:38:25 Character: 123333333 logged
+21:38:54 [11][123333333] Kill [bot24][AnhThoXay]
+21:40:33 Character: 123333333 logout
+21:40:33 ExitAccount: 11 - IP: 192.168.1.7
+21:42:04 AddAccount: 11 - IP: 192.168.1.7
+21:42:06 Character: ThangCuoi logged
+22:05:00 [KING OF MU] Start
+22:35:00 [KING OF MU] Finish - No Winner
+23:59:59 Giới Hạn Reset: 1000 23:59:59 +0 (Sunday)

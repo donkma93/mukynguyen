@@ -1,0 +1,15 @@
+<!-- 
+1.IP
+	-IP Khi Amin Cài Sever Off Thì Lấy IP của Máy Tính Admin
+	-Khi Admin Đưa Lên Online Thì Lấy IP VPS
+2.Port & Code	
+    -Port Ở Đây Phải Đồng Bộ Với Ở Common Trong GS Sever
+	-Code Phải Đồng Bộ Với Ở Common Trong GS Sever 
+	VD: Sub 1 Common Code là 0 Thì Sub 2 Common Code Sẽ Là 1
+-->
+<ServerList>
+	<Server Code="0"  IP="127.0.0.2" Port="55901" Visible="1" Name="Sub-1 (Thường)" />
+	<Server Code="1"  IP="127.0.0.2" Port="55902" Visible="1" Name="Sub-2 (VIP)" />
+	<Server Code="2"  IP="127.0.0.2" Port="55903" Visible="1" Name="Sub-3 (Non-PK)" />
+	<Server Code="19" IP="127.0.0.2" Port="55919" Visible="0" Name="GameServer_CS" />
+</ServerList>

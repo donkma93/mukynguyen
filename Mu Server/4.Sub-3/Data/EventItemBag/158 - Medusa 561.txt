@@ -1,0 +1,17 @@
+0
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Medusa"				1000000		    0				  1				0					1				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+14			52		0		       0		  0		  0		 0		  0			      0         100        //Quà GM
+
+end

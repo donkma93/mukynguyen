@@ -1,0 +1,58 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Senior Mix"	    	1000	   	100			     	1				0					0				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+//0			20		0			0			1		1		0		1			0			100		//Cuồng Phong Đao
+//0			21		0			0			1		1		0		1			0			100		//Đao Sinh Mệnh
+//4			20		0			0			1		1		0		1			0			100		//Mỹ Nhân Cung
+//0			16		0			0			1		1		0		1			0			100		//Kiếm Hủy Diệt
+//0			31		0			0			1		1		0		1			0			100		//Ảo Ảnh Đao
+//2			11		0			0			1		1		0		1			0			100		//Trượng Kim Cương
+//3			10		0			0			1		1		0		1			0			100		//Đại Long Đao
+//4			19		0			0			1		1		0		1			0			100		//Nỏ Thánh Nữ
+//5			6		0			0			1		1		0		1			0			100		//Gậy Phục Sinh
+//5			9		0			0			1		1		0		1			0			100		//Gậy Triệu Hồn
+//5			11		0			0			1		1		0		0			0			100		//Gậy KunDun
+//0			20		0			0			1		1		0		0			0			100		//Cuồng Phong Đao
+//0			21		0			0			1		1		0		0			0			100		//Đao Sinh Mệnh
+//4			20		0			0			1		1		0		0			0			100		//Mỹ Nhân Cung
+//7			21		0			0			0		1		0		1			0			100		//Mũ Thần Long
+//8			21		0			0			0		1		0		1			0			100		//Áo Thần Long
+//9			21		0			0			0		1		0		1			0			100		//Quần Thần Long
+//10			21		0			0			0		1		0		1			0			100		//Tay Thần Long
+//11			21		0			0			0		1		0		1			0			100		//Giày Thần Long
+//7			24		0			0			0		1		0		1			0			100		//Mũ Thánh Nữ
+//8			24		0			0			0		1		0		1			0			100		//Áo Thánh Nữ
+//9			24		0			0			0		1		0		1			0			100		//Quần Thánh Nữ
+//10			24		0			0			0		1		0		1			0			100		//Tay Thánh Nữ
+//11			24		0			0			0		1		0		1			0			100		//Giày Thánh Nữ
+//7			22		0			0			0		1		0		1			0			100		//Mũ Ma Vương
+//8			22		0			0			0		1		0		1			0			100		//Áo Ma Vương
+//9			22		0			0			0		1		0		1			0			100		//Quần Ma Vương
+//10			22		0			0			0		1		0		1			0			100		//Tay Ma Vương
+//11			22		0			0			0		1		0		1			0			100		//Giày Ma Vương
+//7			28		0			0			0		1		0		1			0			100		//Mũ Chí Tôn
+//8			28		0			0			0		1		0		1			0			100		//Áo Chí Tôn
+//9			28		0			0			0		1		0		1			0			100		//Quần Chí Tôn
+//10			28		0			0			0		1		0		1			0			100		//Tay Chí Tôn
+//11			28		0			0			0		1		0		1			0			100		//Giày Chí Tôn
+//8			23		0			0			0		1		0		1			0			100		//Áo Cuồng Phong
+//9			23		0			0			0		1		0		1			0			100		//Quần Cuồng Phong
+//10			23		0			0			0		1		0		1			0			100		//Tay Cuồng Phong
+//11			23		0			0			0		1		0		1			0			100		//Giày Cuồng Phong
+//8			21		0			0			0		1		0		0			0			100		//Áo Thần Long
+//8			24		0			0			0		1		0		0			0			100		//Áo Thánh Nữ
+//8			22		0			0			0		1		0		0			0			100		//Áo Ma Vương
+//8			28		0			0			0		1		0		0			0			100		//Áo Chí Tôn
+//8			23		0			0			0		1		0		0			0			100		//Áo Cuồng Phong
+end

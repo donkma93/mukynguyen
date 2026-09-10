@@ -1,0 +1,29 @@
+00:07:34 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 123, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+04:18:36 [CommandSpot][1][ThangCuoi] - (Monster: 726, Qtd: 1)
+04:19:03 [CommandSpot][1][ThangCuoi] - (Monster: 727, Qtd: 1)
+04:19:36 [CommandSpot][1][ThangCuoi] - (Monster: 526, Qtd: 1)
+05:04:50 [Command Clear Iventory] Use for:[1][ThangCuoi]
+05:04:55 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 200, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+05:04:57 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 201, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+05:04:59 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 202, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+05:05:01 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 203, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+05:05:02 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 204, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+07:50:48 [Command Clear Iventory] Use for:[1][ThangCuoi]
+07:51:35 [Command Clear Iventory] Use for:[1][1111111111]
+07:51:42 [CommandMakeSet][1][1111111111] - (Type: 1, Level: 15, Skill: 1, Luck: 1, Option: 63, Exc: 63, Set: 0, GC: 0, 380: 0, Sockets: 0)
+09:09:58 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+09:10:02 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 1, Luck: 1, Option: 1, Exc: 1, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+09:10:06 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 1, Luck: 1, Option: 1, Exc: 2, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+09:10:16 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 1, Luck: 1, Option: 1, Exc: 2, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 3])
+09:10:21 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 1, Luck: 1, Option: 1, Exc: 1, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 3])
+09:10:26 [CommandMake][1][1111111111] - (Section: 13, Type: 37, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 3])
+09:11:50 [Command Clear Iventory] Use for:[1][1111111111]
+09:15:18 [CommandMake][1][1111111111] - (Section: 14, Type: 22, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+09:15:36 [CommandMake][1][1111111111] - (Section: 12, Type: 15, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+09:15:55 [Command Clear Iventory] Use for:[1][1111111111]
+09:22:45 [CommandMakeSet][1][1111111111] - (Type: 45, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0, GC: 0, 380: 0, Sockets: 0)
+09:41:59 [Command Clear Iventory] Use for:[1][1111111111]
+09:42:04 [CommandMakeSet][1][1111111111] - (Type: 15, Level: 15, Skill: 1, Luck: 1, Option: 63, Exc: 63, Set: 0, GC: 0, 380: 0, Sockets: 0)
+09:57:53 [CommandMakeSet][1][ThangCuoi] - (Type: 44, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0, GC: 0, 380: 0, Sockets: 0)
+10:19:06 [Command Clear Iventory] Use for:[1][1111111111]
+10:19:12 [CommandMakeSet][1][1111111111] - (Type: 46, Level: 15, Skill: 1, Luck: 1, Option: 63, Exc: 63, Set: 0, GC: 0, 380: 0, Sockets: 0)

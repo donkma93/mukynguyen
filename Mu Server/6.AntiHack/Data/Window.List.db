@@ -1,0 +1,9 @@
+//--------------------------------------------------------------
+// Type: 0 --> Check theo cửa sổ title. Chẳng hạn bật web có chữ hack --> Dis
+//		 2 --> Check theo file Exe trong Task Manager. Bật file tên hack có tên trong process là abc.exe --> Dis
+//		 3 --> Check theo DLL. Chẳng hạn sử dụng DLL CheatEngine.dll --> Dis
+//--------------------------------------------------------------
+// Type		Name
+
+
+end

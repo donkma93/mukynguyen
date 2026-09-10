@@ -1,0 +1,54 @@
+00:05:44 Đã xóa IP 127.0.0.1 cục bộ này.
+00:06:02 [SocketManager] Server started at port [55970]
+00:06:04 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+00:06:04 Sub-1 Port 55901 đã được sát nhập thành công!
+00:13:21 Đã xóa IP 127.0.0.1 cục bộ này.
+00:15:23 [SocketManager] Server started at port [55970]
+00:15:26 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+00:15:26 Sub-1 Port 55901 đã được sát nhập thành công!
+00:15:56 Đã xóa IP 127.0.0.1 cục bộ này.
+00:16:33 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+00:16:33 Sub-1 Port 55901 đã được sát nhập thành công!
+00:46:56 Đã xóa IP 127.0.0.1 cục bộ này.
+00:47:11 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+00:47:11 Sub-1 Port 55901 đã được sát nhập thành công!
+00:48:01 Đã xóa IP 127.0.0.1 cục bộ này.
+00:52:48 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+00:52:48 Sub-1 Port 55901 đã được sát nhập thành công!
+01:42:04 Đã xóa IP 127.0.0.1 cục bộ này.
+01:45:09 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+01:45:09 Sub-1 Port 55901 đã được sát nhập thành công!
+01:46:45 Đã xóa IP 127.0.0.1 cục bộ này.
+01:46:54 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+01:46:54 Sub-1 Port 55901 đã được sát nhập thành công!
+01:48:02 Đã xóa IP 127.0.0.1 cục bộ này.
+01:48:12 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+01:48:12 Sub-1 Port 55901 đã được sát nhập thành công!
+02:05:19 [SocketManager] Server started at port [55970]
+02:05:39 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+02:05:39 Sub-1 Port 55901 đã được sát nhập thành công!
+08:46:42 Đã xóa IP 127.0.0.1 cục bộ này.
+08:57:40 [SocketManager] Server started at port [55970]
+08:57:42 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+08:57:42 Sub-1 Port 55901 đã được sát nhập thành công!
+10:17:56 Đã xóa IP 127.0.0.1 cục bộ này.
+10:17:57 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+10:17:57 Sub-1 Port 55901 đã được sát nhập thành công!
+16:13:28 Đã xóa IP 127.0.0.1 cục bộ này.
+16:13:29 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+16:13:29 Sub-1 Port 55901 đã được sát nhập thành công!
+16:21:18 Đã xóa IP 127.0.0.1 cục bộ này.
+16:21:20 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+16:21:20 Sub-1 Port 55901 đã được sát nhập thành công!
+16:42:47 Đã xóa IP 127.0.0.1 cục bộ này.
+16:42:48 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+16:42:48 Sub-1 Port 55901 đã được sát nhập thành công!
+16:58:49 Đã xóa IP 127.0.0.1 cục bộ này.
+16:58:53 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+16:58:53 Sub-1 Port 55901 đã được sát nhập thành công!
+19:01:54 Đã xóa IP 127.0.0.1 cục bộ này.
+19:01:55 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:01:55 Sub-1 Port 55901 đã được sát nhập thành công!
+19:51:13 Đã xóa IP 127.0.0.1 cục bộ này.
+19:51:14 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:51:14 Sub-1 Port 55901 đã được sát nhập thành công!

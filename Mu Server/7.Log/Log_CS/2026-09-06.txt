@@ -1,0 +1,33 @@
+06:57:09 Khởi động Port 44405 thành công!
+06:57:17 Đã kết nối tới cụm Sub-1 nhóm 0.
+07:01:59 Khởi động Port 44405 thành công!
+07:01:59 Đã nhận diện JoinServer.
+07:02:02 Đã kết nối tới cụm Sub-1 nhóm 0.
+07:06:17 Khởi động Port 44405 thành công!
+07:06:18 Đã nhận diện JoinServer.
+07:06:21 Đã kết nối tới cụm Sub-1 nhóm 0.
+07:13:39 Khởi động Port 44405 thành công!
+07:13:39 Đã nhận diện JoinServer.
+07:13:42 Đã kết nối tới cụm Sub-1 (VIP) nhóm 0.
+07:13:45 Đã kết nối tới cụm Sub-2 (Thường) nhóm 1.
+07:13:47 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+07:39:21 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+07:39:22 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+07:40:15 JoinServer đã bị ngắt kết nối tới Sub-1 (VIP) nhóm 0!
+07:40:15 JoinServer đã bị ngắt kết nối tới Sub-2 (Thường) nhóm 1!
+07:40:15 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+07:40:37 Đã kết nối tới cụm Sub-1 (VIP) nhóm 0.
+07:40:39 Đã kết nối tới cụm Sub-2 (Thường) nhóm 1.
+07:40:41 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+08:43:47 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+08:43:47 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+13:47:04 Khởi động Port 44405 thành công!
+13:47:05 Đã nhận diện JoinServer.
+13:47:08 Đã kết nối tới cụm Sub-1 (VIP) nhóm 0.
+13:47:11 Đã kết nối tới cụm Sub-2 (Thường) nhóm 1.
+13:47:12 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+22:29:58 Khởi động Port 44405 thành công!
+22:29:58 Đã nhận diện JoinServer.
+22:30:02 Đã kết nối tới cụm Sub-1 (VIP) nhóm 0.
+22:30:06 Đã kết nối tới cụm Sub-2 (Thường) nhóm 1.
+22:30:06 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.

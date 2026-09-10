@@ -1,0 +1,125 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<ItemDrop>
+<!--	<RuleDrop MapNumber="-1" >
+		<Item Cat="14" Index="21" Level="0" LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="21" Level="3" LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="100" Level="0" LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="31" Level="0" LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="31" Level="1" LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="12" Index="15" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="12" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="13" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="14" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="16" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="22" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="16" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="32" DropRate="100" />
+		<Item Cat="13" Index="16" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="33" MonsterMaxLevel="45" DropRate="100" />
+		<Item Cat="13" Index="16" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="13" Index="16" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="13" Index="16" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="13" Index="16" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="13" Index="16" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="100" DropRate="100" />
+		<Item Cat="13" Index="16" Level="8"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="101" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="17" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="32" DropRate="100" />
+		<Item Cat="13" Index="17" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="33" MonsterMaxLevel="45" DropRate="100" />
+		<Item Cat="13" Index="17" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="13" Index="17" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="13" Index="17" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="13" Index="17" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="13" Index="17" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="100" DropRate="100" />
+		<Item Cat="13" Index="17" Level="8"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="101" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="49" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="13" Index="49" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="13" Index="49" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="13" Index="49" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="13" Index="49" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="101" DropRate="100" />
+		<Item Cat="13" Index="49" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="102" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="50" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="13" Index="50" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="13" Index="50" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="13" Index="50" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="13" Index="50" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="101" DropRate="100" />
+		<Item Cat="13" Index="50" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="102" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="66" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="466" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="145" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="17" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="32" DropRate="100" />
+		<Item Cat="14" Index="17" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="33" MonsterMaxLevel="45" DropRate="100" />
+		<Item Cat="14" Index="17" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="14" Index="17" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="14" Index="17" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="14" Index="17" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="14" Index="17" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="18" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="32" DropRate="100" />
+		<Item Cat="14" Index="18" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="33" MonsterMaxLevel="45" DropRate="100" />
+		<Item Cat="14" Index="18" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="14" Index="18" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="14" Index="18" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="14" Index="18" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="14" Index="18" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="29" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="32" DropRate="100" />
+		<Item Cat="14" Index="29" Level="2"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="33" MonsterMaxLevel="45" DropRate="100" />
+		<Item Cat="14" Index="29" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="46" MonsterMaxLevel="57" DropRate="100" />
+		<Item Cat="14" Index="29" Level="4"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="68" DropRate="100" />
+		<Item Cat="14" Index="29" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="69" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="14" Index="29" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="84" DropRate="100" />
+		<Item Cat="14" Index="29" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="85" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="88" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="89" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="90" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="101" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="32" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="110" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="32" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="12" Index="32" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="12" MonsterMaxLevel="49" DropRate="100" />
+		<Item Cat="12" Index="33" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="50" MonsterMaxLevel="69" DropRate="100" />
+		<Item Cat="12" Index="34" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="70" MonsterMaxLevel="97" DropRate="100" />
+		<Item Cat="14" Index="11" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="20" DropRate="100" />
+		<Item Cat="14" Index="11" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="20" MonsterMaxLevel="30" DropRate="100" />
+		<Item Cat="14" Index="11" Level="3"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="20" MonsterMaxLevel="30" DropRate="100" />
+		<Item Cat="14" Index="11" Level="5"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="20" MonsterMaxLevel="40" DropRate="100" />
+		<Item Cat="14" Index="11" Level="6"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="20" MonsterMaxLevel="50" DropRate="100" />
+		<Item Cat="14" Index="11" Level="7"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="30" MonsterMaxLevel="50" DropRate="100" />
+		<Item Cat="14" Index="63" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="12" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="122" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="121" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="12" Index="70" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="58" MonsterMaxLevel="76" DropRate="100" />
+		<Item Cat="12" Index="71" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="77" MonsterMaxLevel="101" DropRate="100" />
+		<Item Cat="12" Index="72" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="102" MonsterMaxLevel="121" DropRate="100" />
+		<Item Cat="12" Index="73" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="122" MonsterMaxLevel="131" DropRate="100" />
+		<Item Cat="12" Index="74" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="131" MonsterMaxLevel="-1" DropRate="100" />
+	</RuleDrop>
+	<RuleDrop MapNumber="10" >
+		<Item Cat="13" Index="14" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="14" Level="1"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="14" Index="67" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="77" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="1000000" />
+	</RuleDrop>
+	<RuleDrop MapNumber="34" >
+		<Item Cat="13" Index="32" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="97" MonsterMaxLevel="134" DropRate="100" />
+		<Item Cat="13" Index="33" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="97" MonsterMaxLevel="134" DropRate="100" />
+		<Item Cat="13" Index="34" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="97" MonsterMaxLevel="134" DropRate="100" />
+	</RuleDrop>
+	<RuleDrop MapNumber="37" >
+		<Item Cat="14" Index="41" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+	</RuleDrop>
+	<RuleDrop MapNumber="38" >
+		<Item Cat="14" Index="41" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+		<Item Cat="13" Index="38" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+	</RuleDrop>
+	<RuleDrop MapNumber="39" >
+		<Item Cat="14" Index="41" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="-1" MonsterMaxLevel="-1" DropRate="100" />
+	</RuleDrop>
+	<RuleDrop MapNumber="41" >
+		<Item Cat="13" Index="52" Level="0"  LevelOption="-1" SkillOption="-1" LuckOption="-1" JoLOption="-1" ExcOption="-1" SetOption="-1" SocketOption="-1" Duration="0" MonsterIndex="-1" MonsterMinLevel="25" MonsterMaxLevel="-1" DropRate="100" />
+	</RuleDrop>
+-->	
+	
+</ItemDrop>

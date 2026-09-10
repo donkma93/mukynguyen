@@ -1,0 +1,518 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//OptionValue	: Giá trị của OptionIndex
+//ItemIndexMin	: Index của item trong Item.txt
+//ItemIndexMax	: Index của item trong Item.txt
+//ItemLevel		: Level Item = hoặc lớn hơn số này mới có tác dụng
+//ItemOption1	: 1 Cần có Skill mới có tác dụng
+//ItemOption2	: 1 Cần có Luck mới có tác dụng
+//ItemOption3	: 1 Cần có OptionLife mới có tác dụng
+//ItemNewOption	: -61 toàn bộ item là exc đều có tác dụng
+//				: OptionExc = config mới có tác dụng (1,2,4,8,16,32,64) (VD sói hoàng kim OptionExc = 4)
+//OptionIndex
+//Add Physi Damage = 80
+//Add Magic Damage = 81
+//Add Defense Success Rate = 82
+//Add Defense = 83
+//Add Critical Damage Rate = 84
+//Add HP Recovery Rate = 85
+//Add Money Amount Drop Rate = 86
+//Mul Defense Success Rate = 87
+//Add Damage Reflect = 88							; Phản Sát Thương
+//Add Damage Reduction = 89                         ; Giảm sát thương
+//Mul MP = 90
+//Mul HP = 91
+//Add Excellent Damage Rate = 92
+//Add Physi Damage By Level = 93
+//Mul Physi Damage = 94
+//Add Magic Damage By Level = 95
+//Mul Magic Damage = 96
+//Add Speed = 97
+//Add Hunt HP = 98
+//Add Hunt MP = 99
+//Add Wing HP = 100
+//Add Wing MP = 101
+//Add Ignore Defense Rate = 102						; Bỏ qua tỷ lệ phòng thủ
+//Add BP = 103
+//Mul BP = 104
+//Add Wing Leadershio = 105
+//Add Sói tinh1 = 106
+//Add Sói tinh2 = 107
+//Add Sói tinh3 = 108
+//Add Full Damage Reflect Rate = 109
+//Add Defensive Full HP Restore Rate = 110
+//Add Defensive Full MP Restore Rate = 111
+//Add Quái Điểu = 112
+//Add Curse Damage = 113
+//Add Curse Damage By Level = 114
+//Mul Curse Damage = 115
+//Add Double Damage Rate = 116
+//Add Experience = 117								; Tăng EXP
+//Add Experience Combo = 118
+//Add HP = 119
+//Add MP = 120
+//Add HP By Level = 121
+//Add MP By Level = 122
+//Add Damage = 123
+//Add Damage By Level = 124
+//Mul Damage = 125
+//Add Defense By Level = 126
+//Mul Defense = 127
+//Add X3Dame Rate = 128
+//Add Res X2 Dame Rate = 129
+//Add Resignoredefense rate = 130
+//Add Ignore Shiles Rate = 131
+//Add Res Crit Dame Rate = 132
+//Add Res Exc Dame Rate = 133
+//Add Stuck Dame Rate = 134
+//Add Res Stun Rate = 135
+//=================================================================================================================
+//Index   OptionIndex   OptionValue   ItemMinIndex   ItemMaxIndex   ItemOption1   ItemOption2   ItemOption3   ItemNewOption   Comment
+0         0             0             0000           2559           1             *             *             *               //Vũ khí chung
+0         0             0             2580           2589           *             *             *             *               //Sách chung
+0         0             0             3072           3583           1             *             *             *               //Khiên chung
+0         49            0             6659           6659           *             *             *             *               //Quái Điểu
+0         62            0             6660           6660           *             *             *             *               //Dark Horse
+0         76            0             6693           6693           *             *             *             *               //Linh Hồn Sói Tinh
+1         84            5             0000           2559           *             1             *             *               //Vũ khí chung
+1         84            5             2560           2579           *             1             *             *               //Gậy chung
+1         84            5             2580           2589           *             1             *             *               //Sách chung
+1         84            5             2590           3071           *             1             *             *               //Gậy chung
+1         84            5             3072           3583           *             1             *             *               //Khiên chung
+1         84            5             3584           6143           *             1             *             *               //Giáp chung
+1         84            5             6144           6144           *             1             *             *               //Cánh Tiên Nữ
+1         84            5             6145           6145           *             1             *             *               //Cánh Thiên Đàng
+1         84            5             6146           6146           *             1             *             *               //Cánh Quỷ
+1         84            5             6147           6147           *             1             *             *               //Cánh Tinh Thần
+1         84            5             6148           6148           *             1             *             *               //Cánh Linh Hồn
+1         84            5             6149           6149           *             1             *             *               //Cánh Rồng
+1         84            5             6150           6150           *             1             *             *               //Cánh Bóng Đêm
+1         84            5             6180           6180           *             1             *             *               //Cánh Cuồng Phong
+1         84            5             6181           6181           *             1             *             *               //Cánh Thiên Sứ
+1         84            5             6182           6182           *             1             *             *               //Cánh Ngũ Sắc
+1         84            5             6183           6183           *             1             *             *               //Cánh Lôi Vũ
+1         84            5             6184           6184           *             1             *             *               //Áo Choàng Đế Vương
+1         84            5             6185           6185           *             1             *             *               //Cánh Vũ Linh
+1         84            5             6186           6186           *             1             *             *               //Cánh Hỏa Thiên
+1         84            5             6187           6187           *             1             *             *               //Cánh Phượng Hoàng
+1         84            5             6193           6193           *             1             *             *               //Áo Choàng Chiến Binh
+1         84            5             6194           6194           *             1             *             *               //Áo Choàng Uy Quyền
+1         84            5             6686           6686           *             1             *             *               //Áo Choàng
+
+1         84            5             6294           6294           *             1             *             *               //Cánh Hỗn Nguyên 
+1         84            5             6295           6295           *             1             *             *               //Cánh Ma Thuật
+1         84            5             6296           6296           *             1             *             *               //Cánh Hỏa Thần
+1         84            5             6299           6299           *             1             *             *               //Áo Choàng Tử Thần
+
+1         84            5             6300           6300           *             1             *             *               //Cánh SS13 - DW	
+1         84            5             6301           6301           *             1             *             *               //Cánh SS13 - DK	
+1         84            5             6302           6302           *             1             *             *               //Cánh SS13 - ELF	
+1         84            5             6303           6303           *             1             *             *               //Cánh SS13 - MG
+1         84            5             6304           6304           *             1             *             *               //Cánh SS13 - DL	
+1         84            5             6305           6305           *             1             *             *               //Cánh SS13 - SM
+1         84            5             6306           6306           *             1             *             *               //Cánh SS13 - RF	
+
+1         84            5             6297           6297           *             1             *             *               //Cánh Chinh Phục
+1         84            5             6298           6298           *             1             *             *               //Cánh Ác Quỷ
+//=================================================================================================================
+2         80            4             0000           2559           *             *             1             *               //Vũ khí chung
+2         81            4             2560           2579           *             *             1             *               //Gậy chung
+2         113           4             2580           2589           *             *             1             *               //Sách chung
+2         81            4             2590           3071           *             *             1             *               //Gậy chung
+2         82            5             3072           3583           *             *             1             *               //Khiên chung
+2         83            4             3584           6143           *             *             1             *               //Giáp chung
+2         85            1             6144           6144           *             *             1             *               //Cánh Tiên Nữ
+2         81            4             6145           6145           *             *             1             *               //Cánh Thiên Đàng
+2         80            4             6146           6146           *             *             1             *               //Cánh Quỷ
+2         80            4             6147           6147           *             *             1             *               //Cánh Tinh Thần
+2         85            1             6147           6147           *             *             1             32              //Cánh Tinh Thần
+2         85            1             6148           6148           *             *             1             *               //Cánh Linh Hồn
+2         81            4             6148           6148           *             *             1             32              //Cánh Linh Hồn
+2         85            1             6149           6149           *             *             1             *               //Cánh Rồng
+2         80            4             6149           6149           *             *             1             32              //Cánh Rồng
+2         81            4             6150           6150           *             *             1             *               //Cánh Bóng Đêm
+2         80            4             6150           6150           *             *             1             32              //Cánh Bóng Đêm
+2         85            1             6180           6180           *             *             1             *               //Cánh Cuồng Phong
+2         80            4             6180           6180           *             *             1             16              //Cánh Cuồng Phong
+2         83            4             6180           6180           *             *             1             32              //Cánh Cuồng Phong
+2         85            1             6181           6181           *             *             1             *               //Cánh Thiên Sứ
+2         81            4             6181           6181           *             *             1             16              //Cánh Thiên Sứ
+2         83            4             6181           6181           *             *             1             32              //Cánh Thiên Sứ
+2         85            1             6182           6182           *             *             1             *               //Cánh Ngũ Sắc
+2         80            4             6182           6182           *             *             1             16              //Cánh Ngũ Sắc
+2         83            4             6182           6182           *             *             1             32              //Cánh Ngũ Sắc
+2         85            1             6183           6183           *             *             1             *               //Cánh Lôi Vũ
+2         80            4             6183           6183           *             *             1             16              //Cánh Lôi Vũ
+2         81            4             6183           6183           *             *             1             32              //Cánh Lôi Vũ
+2         85            1             6184           6184           *             *             1             *               //Áo Choàng Đế Vương
+2         80            4             6184           6184           *             *             1             16              //Áo Choàng Đế Vương
+2         83            4             6184           6184           *             *             1             32              //Áo Choàng Đế Vương
+2         81            4             6185           6185           *             *             1             *               //Cánh Vũ Linh
+2         81            4             6186           6186           *             *             1             *               //Cánh Hỏa Thiên
+2         113           4             6186           6186           *             *             1             32              //Cánh Hỏa Thiên
+2         85            1             6187           6187           *             *             1             *               //Cánh Phượng Hoàng
+2         81            4             6187           6187           *             *             1             16              //Cánh Phượng Hoàng
+2         113           4             6187           6187           *             *             1             32              //Cánh Phượng Hoàng
+2         80            4             6193           6193           *             *             1             *               //Áo Choàng Chiến Binh
+2         85            1             6194           6194           *             *             1             *               //Áo Choàng Uy Quyền
+2         80            4             6194           6194           *             *             1             16              //Áo Choàng Uy Quyền
+2         83            4             6194           6194           *             *             1             32              //Áo Choàng Uy Quyền
+2         85            1             6664           6664           *             *             1             *               //Nhẫn Băng
+2         85            1             6665           6665           *             *             1             *               //Nhẫn Độc
+2         85            1             6677           6677           *             *             1             *               //Nhẫn Lửa
+2         85            1             6678           6678           *             *             1             *               //Nhẫn Đất
+2         85            1             6679           6679           *             *             1             *               //Nhẫn Gió
+2         90            1             6680           6680           *             *             1             *               //Nhẫn Phép Thuật
+2         85            1             6668           6668           *             *             1             *               //Dây Chuyền Sét
+2         85            1             6669           6669           *             *             1             *               //Dây Chuyền Lửa
+2         85            1             6681           6681           *             *             1             *               //Dây Chuyền Băng
+2         85            1             6682           6682           *             *             1             *               //Dây Chuyền Gió
+2         85            1             6683           6683           *             *             1             *               //Dây Chuyền Nước
+2         104           1             6684           6684           *             *             1             *               //Dây Chuyền Kỹ Năng
+2         80            4             6686           6686           *             *             1             *               //Áo Choàng
+2         85            1             6765           6771           *             *             1             *               //Nhẫn Ngọc Bích  => Dây Chuyền Ngọc Bích
+
+2         85            1             6294           6294           *             *             1             *                //Cánh Hỗn Nguyên 
+2         80            4             6294           6294           *             *             1             16               //Cánh Hỗn Nguyên 
+2         83            4             6294           6294           *             *             1             32               //Cánh Hỗn Nguyên 
+
+2         85            1             6295           6295           *             *             1             *                //Cánh Ma Thuật
+2         80            4             6295           6295           *             *             1             16               //Cánh Ma Thuật
+2         83            4             6295           6295           *             *             1             32               //Cánh Ma Thuật
+
+2         85            1             6296           6296           *             *             1             *                //Cánh Hỏa Thần
+2         80            4             6296           6296           *             *             1             16               //Cánh Hỏa Thần
+2         83            4             6296           6296           *             *             1             32               //Cánh Hỏa Thần
+
+2         85            1             6299           6299           *             *             1             *                //Áo Choàng Tử Thần
+2         80            4             6299           6299           *             *             1             16               //Áo Choàng Tử Thần
+2         83            4             6299           6299           *             *             1             32               //Áo Choàng Tử Thần
+
+2         85            1             6300           6300           *             *             1             *                //Cánh SS13 - DW	
+2         80            4             6300           6300           *             *             1             16               //Cánh SS13 - DW	
+2         83            4             6300           6300           *             *             1             32               //Cánh SS13 - DW	
+
+2         85            1             6301           6301           *             *             1             *                //Cánh SS13 - DK	
+2         80            4             6301           6301           *             *             1             16               //Cánh SS13 - DK	
+2         83            4             6301           6301           *             *             1             32               //Cánh SS13 - DK	
+
+2         85            1             6302           6302           *             *             1             *                //Cánh SS13 - ELF	
+2         80            4             6302           6302           *             *             1             16               //Cánh SS13 - ELF	
+2         83            4             6302           6302           *             *             1             32               //Cánh SS13 - ELF	
+
+2         85            1             6303           6303           *             *             1             *                //Cánh SS13 - MG
+2         80            4             6303           6303           *             *             1             16               //Cánh SS13 - MG
+2         83            4             6303           6303           *             *             1             32               //Cánh SS13 - MG
+
+2         85            1             6304           6304           *             *             1             *                //Cánh SS13 - DL	
+2         80            4             6304           6304           *             *             1             16               //Cánh SS13 - DL	
+2         83            4             6304           6304           *             *             1             32               //Cánh SS13 - DL	
+
+2         85            1             6305           6305           *             *             1             *                //Cánh SS13 - SM
+2         80            4             6305           6305           *             *             1             16               //Cánh SS13 - SM
+2         83            4             6305           6305           *             *             1             32               //Cánh SS13 - SM
+
+2         85            1             6306           6306           *             *             1             *               //Cánh SS13 - RF	
+2         80            4             6306           6306           *             *             1             16              //Cánh SS13 - RF	
+2         83            4             6306           6306           *             *             1             32              //Cánh SS13 - RF	
+
+2         85            1             6297           6297           *             *             1             *                //Cánh Chinh Phục
+2         80            4             6297           6297           *             *             1             16               //Cánh Chinh Phục
+2         83            4             6297           6297           *             *             1             32               //Cánh Chinh Phục
+
+2         85            1             6298           6298           *             *             1             *                //Cánh Ác Quỷ
+2         80            4             6298           6298           *             *             1             16               //Cánh Ác Quỷ
+2         83            4             6298           6298           *             *             1             32               //Cánh Ác Quỷ
+//=================================================================================================================
+3         99            12            0000           2559           *             *             *             1               //Vũ khí chung
+3         99            12            2560           2579           *             *             *             1               //Gậy chung
+3         99            12            2580           2589           *             *             *             1               //Sách chung
+3         99            12            2590           3071           *             *             *             1               //Gậy chung
+3         86            30            3072           3583           *             *             *             1               //Khiên chung
+3         86            30            3584           6143           *             *             *             1               //Giáp chung
+3         86            30            6664           6664           *             *             *             1               //Nhẫn Băng
+3         86            30            6665           6665           *             *             *             1               //Nhẫn Độc
+3         86            30            6677           6677           *             *             *             1               //Nhẫn Lửa
+3         86            30            6678           6678           *             *             *             1               //Nhẫn Đất
+3         86            30            6679           6679           *             *             *             1               //Nhẫn Gió
+3         86            30            6680           6680           *             *             *             1               //Nhẫn Phép Thuật
+3         99            12            6668           6668           *             *             *             1               //Dây Chuyền Sét
+3         99            12            6669           6669           *             *             *             1               //Dây Chuyền Lửa
+3         99            12            6681           6681           *             *             *             1               //Dây Chuyền Băng
+3         99            12            6682           6682           *             *             *             1               //Dây Chuyền Gió
+3         99            12            6683           6683           *             *             *             1               //Dây Chuyền Nước
+3         99            12            6684           6684           *             *             *             1               //Dây Chuyền Kỹ Năng
+3         100           5             6147           6147           *             *             *             1               //Cánh Tinh Thần
+3         100           5             6148           6148           *             *             *             1               //Cánh Linh Hồn
+3         100           5             6149           6149           *             *             *             1               //Cánh Rồng
+3         100           5             6150           6150           *             *             *             1               //Cánh Bóng Đêm
+3         100           5             6186           6186           *             *             *             1               //Cánh Hỏa Thiên
+3         100           5             6193           6193           *             *             *             1               //Áo Choàng Chiến Binh
+3         100           5             6686           6686           *             *             *             1               //Áo Choàng
+3         102           5             6180           6180           *             *             *             1               //Cánh Cuồng Phong
+3         102           5             6181           6181           *             *             *             1               //Cánh Thiên Sứ
+3         102           5             6182           6182           *             *             *             1               //Cánh Ngũ Sắc
+3         102           5             6183           6183           *             *             *             1               //Cánh Lôi Vũ
+3         102           5             6184           6184           *             *             *             1               //Áo Choàng Đế Vương
+3         102           5             6187           6187           *             *             *             1               //Cánh Phượng Hoàng
+3         102           5             6194           6194           *             *             *             1               //Áo Choàng Uy Quyền
+3         112           0             6659           6659           *             *             *             1               //Quái Điểu
+3         106           0             6693           6693           *             *             *             1               //Linh Hồn Sói Tinh
+3         90            4             6765           6765           *             *             *             *               //Nhẫn Ngọc Bích
+3         91            4             6766           6766           *             *             *             *               //Nhẫn Hồng Ngọc
+3         86            30            6767           6767           *             *             *             *               //Nhẫn Hoàng Ngọc
+3         89            4             6768           6768           *             *             *             *               //Nhẫn Thạch Anh Tím
+3         92            10            6769           6769           *             *             *             *               //Dây Chuyền Hồng Ngọc
+3         97            7             6770           6770           *             *             *             *               //Dây Chuyền Lục Bích
+3         99            12            6771           6771           *             *             *             *               //Dây Chuyền Ngọc Bích
+
+3         102           5             6294           6294           *             *             *             1               //Cánh Hỗn Nguyên 
+3         102           5             6295           6295           *             *             *             1               //Cánh Ma Thuật
+3         102           5             6296           6296           *             *             *             1               //Cánh Hỏa Thần
+3         102           5             6299           6299           *             *             *             1               //Áo Choàng Tử Thần
+
+3         102           5             6300           6300           *             *             *             1               //Cánh SS13 - DW	
+3         102           5             6301           6301           *             *             *             1               //Cánh SS13 - DK	
+3         102           5             6302           6302           *             *             *             1               //Cánh SS13 - ELF	
+3         102           5             6303           6303           *             *             *             1               //Cánh SS13 - MG
+3         102           5             6304           6304           *             *             *             1               //Cánh SS13 - DL	
+3         102           5             6305           6305           *             *             *             1               //Cánh SS13 - SM
+3         102           5             6306           6306           *             *             *             1               //Cánh SS13 - RF	
+
+3         102           5             6297           6297           *             *             *             1               //Cánh Chinh Phục
+3         102           5             6298           6298           *             *             *             1               //Cánh Ác Quỷ
+//=================================================================================================================
+4         99            12            0000           2559           *             *             *             2               //Vũ khí chung
+4         98            12            2560           2579           *             *             *             2               //Gậy chung
+4         98            12            2580           2589           *             *             *             2               //Sách chung
+4         98            12            2590           3071           *             *             *             2               //Gậy chung
+4         87            10            3072           3583           *             *             *             2               //Khiên chung
+4         87            10            3584           6143           *             *             *             2               //Giáp chung
+4         87            10            6664           6664           *             *             *             2               //Nhẫn Băng
+4         87            10            6665           6665           *             *             *             2               //Nhẫn Độc
+4         87            10            6677           6677           *             *             *             2               //Nhẫn Lửa
+4         87            10            6678           6678           *             *             *             2               //Nhẫn Đất
+4         87            10            6679           6679           *             *             *             2               //Nhẫn Gió
+4         87            10            6680           6680           *             *             *             2               //Nhẫn Phép Thuật
+4         98            12            6668           6668           *             *             *             2               //Dây Chuyền Sét
+4         98            12            6669           6669           *             *             *             2               //Dây Chuyền Lửa
+4         98            12            6681           6681           *             *             *             2               //Dây Chuyền Băng
+4         98            12            6682           6682           *             *             *             2               //Dây Chuyền Gió
+4         98            12            6683           6683           *             *             *             2               //Dây Chuyền Nước
+4         98            12            6684           6684           *             *             *             2               //Dây Chuyền Kỹ Năng
+4         101           5             6147           6147           *             *             *             2               //Cánh Tinh Thần
+4         101           5             6148           6148           *             *             *             2               //Cánh Linh Hồn
+4         101           5             6149           6149           *             *             *             2               //Cánh Rồng
+4         101           5             6150           6150           *             *             *             2               //Cánh Bóng Đêm
+4         101           5             6186           6186           *             *             *             2               //Cánh Hỏa Thiên
+4         101           5             6193           6193           *             *             *             2               //Áo Choàng Chiến Binh
+4         101           5             6686           6686           *             *             *             2               //Áo Choàng
+4         109           5             6180           6180           *             *             *             2               //Cánh Cuồng Phong
+4         109           5             6181           6181           *             *             *             2               //Cánh Thiên Sứ
+4         109           5             6182           6182           *             *             *             2               //Cánh Ngũ Sắc
+4         109           5             6183           6183           *             *             *             2               //Cánh Lôi Vũ
+4         109           5             6184           6184           *             *             *             2               //Áo Choàng Đế Vương
+4         109           5             6187           6187           *             *             *             2               //Cánh Phượng Hoàng
+4         109           5             6194           6194           *             *             *             2               //Áo Choàng Uy Quyền
+4         103           50            6659           6659           *             *             *             2               //Quái Điểu
+4         107           0             6693           6693           *             *             *             2               //Linh Hồn Sói Tinh
+
+4         109           5             6294           6294           *             *             *             2               //Cánh Hỗn Nguyên 
+4         109           5             6295           6295           *             *             *             2               //Cánh Ma Thuật
+4         109           5             6296           6296           *             *             *             2               //Cánh Hỏa Thần
+4         109           5             6299           6299           *             *             *             2               //Áo Choàng Tử Thần
+
+4         109           5             6300           6300           *             *             *             2               //Cánh SS13 - DW	
+4         109           5             6301           6301           *             *             *             2               //Cánh SS13 - DK	
+4         109           5             6302           6302           *             *             *             2               //Cánh SS13 - ELF	
+4         109           5             6303           6303           *             *             *             2               //Cánh SS13 - MG
+4         109           5             6304           6304           *             *             *             2               //Cánh SS13 - DL	
+4         109           5             6305           6305           *             *             *             2               //Cánh SS13 - SM
+4         109           5             6306           6306           *             *             *             2               //Cánh SS13 - RF	
+
+4         109           5             6297           6297           *             *             *             2               //Cánh Chinh Phục
+4         109           5             6298           6298           *             *             *             2               //Cánh Ác Quỷ
+//=================================================================================================================
+5         97            7             0000           2559           *             *             *             4               //Vũ khí chung
+5         97            7             2560           2579           *             *             *             4               //Gậy chung
+5         97            7             2580           2589           *             *             *             4               //Sách chung
+5         97            7             2590           3071           *             *             *             4               //Gậy chung
+5         88            5             3072           3583           *             *             *             4               //Khiên chung
+5         88            5             3584           6143           *             *             *             4               //Giáp chung
+5         88            5             6664           6664           *             *             *             4               //Nhẫn Băng
+5         88            5             6665           6665           *             *             *             4               //Nhẫn Độc
+5         88            5             6677           6677           *             *             *             4               //Nhẫn Lửa
+5         88            5             6678           6678           *             *             *             4               //Nhẫn Đất
+5         88            5             6679           6679           *             *             *             4               //Nhẫn Gió
+5         88            5             6680           6680           *             *             *             4               //Nhẫn Phép Thuật
+5         97            7             6668           6668           *             *             *             4               //Dây Chuyền Sét
+5         97            7             6669           6669           *             *             *             4               //Dây Chuyền Lửa
+5         97            7             6681           6681           *             *             *             4               //Dây Chuyền Băng
+5         97            7             6682           6682           *             *             *             4               //Dây Chuyền Gió
+5         97            7             6683           6683           *             *             *             4               //Dây Chuyền Nước
+5         97            7             6684           6684           *             *             *             4               //Dây Chuyền Kỹ Năng
+5         102           3             6147           6147           *             *             *             4               //Cánh Tinh Thần
+5         102           3             6148           6148           *             *             *             4               //Cánh Linh Hồn
+5         102           3             6149           6149           *             *             *             4               //Cánh Rồng
+5         102           3             6150           6150           *             *             *             4               //Cánh Bóng Đêm
+5         102           3             6186           6186           *             *             *             4               //Cánh Hỏa Thiên
+5         102           3             6193           6193           *             *             *             4               //Áo Choàng Chiến Binh
+5         102           3             6686           6686           *             *             *             4               //Áo Choàng
+5         110           5             6180           6180           *             *             *             4               //Cánh Cuồng Phong
+5         110           5             6181           6181           *             *             *             4               //Cánh Thiên Sứ
+5         110           5             6182           6182           *             *             *             4               //Cánh Ngũ Sắc
+5         110           5             6183           6183           *             *             *             4               //Cánh Lôi Vũ
+5         110           5             6184           6184           *             *             *             4               //Áo Choàng Đế Vương
+5         110           5             6187           6187           *             *             *             4               //Cánh Phượng Hoàng
+5         110           5             6194           6194           *             *             *             4               //Áo Choàng Uy Quyền
+5         97            5             6659           6659           *             *             *             4               //Quái Điểu
+5         108           0             6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+
+5         110           5             6294           6294           *             *             *             4               //Cánh Hỗn Nguyên 
+5         110           5             6295           6295           *             *             *             4               //Cánh Ma Thuật
+5         110           5             6296           6296           *             *             *             4               //Cánh Hỏa Thần
+5         110           5             6299           6299           *             *             *             4               //Áo Choàng Tử Thần
+
+5         110           5             6300           6300           *             *             *             4               //Cánh SS13 - DW	
+5         110           5             6301           6301           *             *             *             4               //Cánh SS13 - DK	
+5         110           5             6302           6302           *             *             *             4               //Cánh SS13 - ELF	
+5         110           5             6303           6303           *             *             *             4               //Cánh SS13 - MG
+5         110           5             6304           6304           *             *             *             4               //Cánh SS13 - DL	
+5         110           5             6305           6305           *             *             *             4               //Cánh SS13 - SM
+5         110           5             6306           6306           *             *             *             4               //Cánh SS13 - RF	
+
+5         110           5             6297           6297           *             *             *             4               //Cánh Chinh Phục
+5         110           5             6298           6298           *             *             *             4               //Cánh Ác Quỷ
+//=================================================================================================================
+6         94            2             0000           2559           *             *             *             8               //Vũ khí chung
+6         96            2             2560           2579           *             *             *             8               //Gậy chung
+6         115           2             2580           2589           *             *             *             8               //Sách chung
+6         96            2             2590           3071           *             *             *             8               //Gậy chung
+6         89            4             3072           3583           *             *             *             8               //Khiên chung
+6         89            4             3584           6143           *             *             *             8               //Giáp chung
+6         89            4             6664           6664           *             *             *             8               //Nhẫn Băng
+6         89            4             6665           6665           *             *             *             8               //Nhẫn Độc
+6         89            4             6677           6677           *             *             *             8               //Nhẫn Lửa
+6         89            4             6678           6678           *             *             *             8               //Nhẫn Đất
+6         89            4             6679           6679           *             *             *             8               //Nhẫn Gió
+6         89            4             6680           6680           *             *             *             8               //Nhẫn Phép Thuật
+6         96            2             6668           6668           *             *             *             8               //Dây Chuyền Sét
+6         94            2             6669           6669           *             *             *             8               //Dây Chuyền Lửa
+6         96            2             6681           6681           *             *             *             8               //Dây Chuyền Băng
+6         94            2             6682           6682           *             *             *             8               //Dây Chuyền Gió
+6         96            2             6683           6683           *             *             *             8               //Dây Chuyền Nước
+6         94            2             6684           6684           *             *             *             8               //Dây Chuyền Kỹ Năng
+6         103           50            6147           6147           *             *             *             8               //Cánh Tinh Thần
+6         103           50            6148           6148           *             *             *             8               //Cánh Linh Hồn
+6         103           50            6149           6149           *             *             *             8               //Cánh Rồng
+6         103           50            6150           6150           *             *             *             8               //Cánh Bóng Đêm
+6         103           50            6186           6186           *             *             *             8               //Cánh Hỏa Thiên
+6         103           50            6193           6193           *             *             *             8               //Áo Choàng Chiến Binh
+6         105           5             6686           6686           *             *             *             8               //Áo Choàng
+6         111           5             6180           6180           *             *             *             8               //Cánh Cuồng Phong
+6         111           5             6181           6181           *             *             *             8               //Cánh Thiên Sứ
+6         111           5             6182           6182           *             *             *             8               //Cánh Ngũ Sắc
+6         111           5             6183           6183           *             *             *             8               //Cánh Lôi Vũ
+6         111           5             6184           6184           *             *             *             8               //Áo Choàng Đế Vương
+6         111           5             6187           6187           *             *             *             8               //Cánh Phượng Hoàng
+6         111           5             6194           6194           *             *             *             8               //Áo Choàng Uy Quyền
+
+6         111           5             6294           6294           *             *             *             8               //Cánh Hỗn Nguyên 
+6         111           5             6295           6295           *             *             *             8               //Cánh Ma Thuật
+6         111           5             6296           6296           *             *             *             8               //Cánh Hỏa Thần
+6         111           5             6299           6299           *             *             *             8               //Áo Choàng Tử Thần
+
+6         111           5             6300           6300           *             *             *             8               //Cánh SS13 - DW	
+6         111           5             6301           6301           *             *             *             8               //Cánh SS13 - DK	
+6         111           5             6302           6302           *             *             *             8               //Cánh SS13 - ELF	
+6         111           5             6303           6303           *             *             *             8               //Cánh SS13 - MG
+6         111           5             6304           6304           *             *             *             8               //Cánh SS13 - DL	
+6         111           5             6305           6305           *             *             *             8               //Cánh SS13 - SM
+6         111           5             6306           6306           *             *             *             8               //Cánh SS13 - RF	
+
+6         111           5             6297           6297           *             *             *             8               //Cánh Chinh Phục
+6         111           5             6298           6298           *             *             *             8               //Cánh Ác Quỷ
+//=================================================================================================================
+7         93            20            0000           2559           *             *             *             16              //Vũ khí chung
+7         95            20            2560           2579           *             *             *             16              //Gậy chung
+7         114           20            2580           2589           *             *             *             16              //Sách chung
+7         95            20            2590           3071           *             *             *             16              //Gậy chung
+7         90            4             3072           3583           *             *             *             16              //Khiên chung
+7         90            4             3584           6143           *             *             *             16              //Giáp chung
+7         90            4             6664           6664           *             *             *             16              //Nhẫn Băng
+7         90            4             6665           6665           *             *             *             16              //Nhẫn Độc
+7         90            4             6677           6677           *             *             *             16              //Nhẫn Lửa
+7         90            4             6678           6678           *             *             *             16              //Nhẫn Đất
+7         90            4             6679           6679           *             *             *             16              //Nhẫn Gió
+7         90            4             6680           6680           *             *             *             16              //Nhẫn Phép Thuật
+7         95            20            6668           6668           *             *             *             16              //Dây Chuyền Sét
+7         93            20            6669           6669           *             *             *             16              //Dây Chuyền Lửa
+7         95            20            6681           6681           *             *             *             16              //Dây Chuyền Băng
+7         93            20            6682           6682           *             *             *             16              //Dây Chuyền Gió
+7         95            20            6683           6683           *             *             *             16              //Dây Chuyền Nước
+7         93            20            6684           6684           *             *             *             16              //Dây Chuyền Kỹ Năng
+7         97            5             6147           6147           *             *             *             16              //Cánh Tinh Thần
+7         97            5             6148           6148           *             *             *             16              //Cánh Linh Hồn
+7         97            5             6149           6149           *             *             *             16              //Cánh Rồng
+7         97            5             6150           6150           *             *             *             16              //Cánh Bóng Đêm
+7         97            5             6186           6186           *             *             *             16              //Cánh Hỏa Thiên
+7         97            5             6193           6193           *             *             *             16              //Áo Choàng Chiến Binh
+
+8         92            10            0000           2559           *             *             *             32              //Vũ khí chung
+8         92            10            2560           2579           *             *             *             32              //Gậy chung
+8         92            10            2580           2589           *             *             *             32              //Sách chung
+8         92            10            2590           3071           *             *             *             32              //Gậy chung
+8         91            4             3072           3583           *             *             *             32              //Khiên chung
+8         91            4             3584           6143           *             *             *             32              //Giáp chung
+8         91            4             6664           6664           *             *             *             32              //Nhẫn Băng
+8         91            4             6665           6665           *             *             *             32              //Nhẫn Độc
+8         91            4             6677           6677           *             *             *             32              //Nhẫn Lửa
+8         91            4             6678           6678           *             *             *             32              //Nhẫn Đất
+8         91            4             6679           6679           *             *             *             32              //Nhẫn Gió
+8         91            4             6680           6680           *             *             *             32              //Nhẫn Phép Thuật
+8         92            10            6668           6668           *             *             *             32              //Dây Chuyền Sét
+8         92            10            6669           6669           *             *             *             32              //Dây Chuyền Lửa
+8         92            10            6681           6681           *             *             *             32              //Dây Chuyền Băng
+8         92            10            6682           6682           *             *             *             32              //Dây Chuyền Gió
+8         92            10            6683           6683           *             *             *             32              //Dây Chuyền Nước
+8         92            10            6684           6684           *             *             *             32              //Dây Chuyền Kỹ Năng
+
+9         119           50            6656           6656           *             *             *             *               //Thần Hộ Mệnh
+9         125           10            6676           6676           *             *             *             *               //Nhẫn Phù Thủy
+9         93            12            6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+9         127           10            6695           6695           *             *             *             *               //Nhẫn Quỷ Xương
+9         123           20            6697           6697           *             *             *             *               //Nhẫn Giáng Sinh
+9         123           30            6732           6732           *             *             *             *               //Nhẫn Biến Gấu Trúc
+9         83            50            6736           6736           *             *             *             *               //Gấu Trúc
+9         83            50            6762           6762           *             *             *             *               //Thần Mã
+9         125           15            6763           6763           *             *             *             *               //Nhẫn Ma Thuật
+9         123           40            6778           6778           *             *             *             *               //Nhẫn Cốt Rồng
+9         97            10            6779           6779           *             *             *             *               //Cốt Rồng
+
+10        97            10            6676           6676           *             *             *             *               //Nhẫn Phù Thủy
+10        95            25            6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+10        121           1             6695           6695           *             *             *             *               //Nhẫn Quỷ Xương
+10        86            50            6732           6732           *             *             *             *               //Nhẫn Biến Gấu Trúc
+10        117           50            6736           6736           *             *             *             *               //Gấu Trúc
+10        86            50            6762           6762           *             *             *             *               //Thần Mã
+10        97            10            6763           6763           *             *             *             *               //Nhẫn Ma Thuật
+10        118           30            6778           6778           *             *             *             *               //Nhẫn Cốt Rồng
+10        117           30            6779           6779           *             *             *             *               //Cốt Rồng
+
+11        114           25            6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+11        118           30            6732           6732           *             *             *             *               //Nhẫn Biến Gấu Trúc
+
+12        121           2             6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+
+13        122           2             6693           6693           *             *             *             4               //Linh Hồn Sói Tinh
+end

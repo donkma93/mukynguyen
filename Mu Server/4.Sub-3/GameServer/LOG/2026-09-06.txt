@@ -1,0 +1,240 @@
+06:57:12 [ServerInfo] CashShop loaded successfully
+06:57:12 [ServerInfo] ChaosMix loaded successfully
+06:57:12 [ServerInfo] Character loaded successfully
+06:57:12 [FakeOnline] Load Data OK
+06:57:12 [ServerInfo] Custom loaded successfully
+06:57:12 [ServerInfo] Command loaded successfully
+06:57:12 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+06:57:12 [ServerInfo] Common loaded successfully
+06:57:12 [ServerInfo] Event loaded successfully
+06:57:12 [ServerInfo] EventItemBag loaded successfully
+06:57:12 [ServerInfo] Hack loaded successfully
+06:57:12 [ServerInfo] Item loaded successfully
+06:57:12 [ServerInfo] Monster loaded successfully
+06:57:12 [ServerInfo] Move loaded successfully
+06:57:12 [ServerInfo] Quest loaded successfully
+06:57:12 [ServerInfo] Shop loaded successfully
+06:57:12 [ServerInfo] Skill loaded successfully
+06:57:12 [ServerInfo] Util loaded successfully
+06:57:12 [ReadBotInfo] BotSystem loaded successfully
+06:57:12 [ServerInfo] CfgACuoi loaded successfully
+07:02:01 [ServerInfo] CashShop loaded successfully
+07:02:01 [ServerInfo] ChaosMix loaded successfully
+07:02:01 [ServerInfo] Character loaded successfully
+07:02:01 [FakeOnline] Load Data OK
+07:02:01 [ServerInfo] Custom loaded successfully
+07:02:01 [ServerInfo] Command loaded successfully
+07:02:01 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:02:01 [ServerInfo] Common loaded successfully
+07:02:01 [ServerInfo] Event loaded successfully
+07:02:01 [ServerInfo] EventItemBag loaded successfully
+07:02:01 [ServerInfo] Hack loaded successfully
+07:02:01 [ServerInfo] Item loaded successfully
+07:02:01 [ServerInfo] Monster loaded successfully
+07:02:01 [ServerInfo] Move loaded successfully
+07:02:01 [ServerInfo] Quest loaded successfully
+07:02:01 [ServerInfo] Shop loaded successfully
+07:02:01 [ServerInfo] Skill loaded successfully
+07:02:01 [ServerInfo] Util loaded successfully
+07:02:01 [ReadBotInfo] BotSystem loaded successfully
+07:02:01 [ServerInfo] CfgACuoi loaded successfully
+07:02:48 AddAccount: donpv - IP: 127.0.0.1
+07:02:54 Character: pvdl logged
+07:04:19 Character: pvdl logout
+07:04:22 Character: elfax logged
+07:04:48 Character: elfax logout
+07:04:48 ExitAccount: donpv - IP: 127.0.0.1
+07:06:19 [ServerInfo] CashShop loaded successfully
+07:06:19 [ServerInfo] ChaosMix loaded successfully
+07:06:19 [ServerInfo] Character loaded successfully
+07:06:19 [FakeOnline] Load Data OK
+07:06:19 [ServerInfo] Custom loaded successfully
+07:06:19 [ServerInfo] Command loaded successfully
+07:06:19 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:06:19 [ServerInfo] Common loaded successfully
+07:06:19 [ServerInfo] Event loaded successfully
+07:06:19 [ServerInfo] EventItemBag loaded successfully
+07:06:19 [ServerInfo] Hack loaded successfully
+07:06:19 [ServerInfo] Item loaded successfully
+07:06:20 [ServerInfo] Monster loaded successfully
+07:06:20 [ServerInfo] Move loaded successfully
+07:06:20 [ServerInfo] Quest loaded successfully
+07:06:20 [ServerInfo] Shop loaded successfully
+07:06:20 [ServerInfo] Skill loaded successfully
+07:06:20 [ServerInfo] Util loaded successfully
+07:06:20 [ReadBotInfo] BotSystem loaded successfully
+07:06:20 [ServerInfo] CfgACuoi loaded successfully
+07:06:36 AddAccount: donpv - IP: 127.0.0.1
+07:06:38 Character: elfkk logged
+07:07:45 Character: elfkk logout
+07:07:45 ExitAccount: donpv - IP: 127.0.0.1
+07:13:45 [ServerInfo] CashShop loaded successfully
+07:13:45 [ServerInfo] ChaosMix loaded successfully
+07:13:45 [ServerInfo] Character loaded successfully
+07:13:45 [FakeOnline] Load Data OK
+07:13:45 [ServerInfo] Custom loaded successfully
+07:13:45 [ServerInfo] Command loaded successfully
+07:13:45 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:13:45 [ServerInfo] Common loaded successfully
+07:13:45 [ServerInfo] Event loaded successfully
+07:13:45 [ServerInfo] EventItemBag loaded successfully
+07:13:45 [ServerInfo] Hack loaded successfully
+07:13:45 [ServerInfo] Item loaded successfully
+07:13:45 [ServerInfo] Monster loaded successfully
+07:13:45 [ServerInfo] Move loaded successfully
+07:13:45 [ServerInfo] Quest loaded successfully
+07:13:45 [ServerInfo] Shop loaded successfully
+07:13:46 [ServerInfo] Skill loaded successfully
+07:13:46 [ServerInfo] Util loaded successfully
+07:13:46 [ReadBotInfo] BotSystem loaded successfully
+07:13:46 [ServerInfo] CfgACuoi loaded successfully
+07:32:22 AddAccount: donpv - IP: 127.0.0.1
+07:32:22 Character: elfkk logged
+07:32:28 Character: elfkk logout
+07:32:28 ExitAccount: donpv - IP: 127.0.0.1
+07:32:35 AddAccount: donpv - IP: 127.0.0.1
+07:32:35 Character: elfkk logged
+07:32:52 AddAccount: laclac24 - IP: 127.0.0.1
+07:32:54 Character: elkf logged
+07:33:57 Character: elfkk logout
+07:33:57 ExitAccount: donpv - IP: 127.0.0.1
+07:34:00 Character: elkf logout
+07:34:00 ExitAccount: laclac24 - IP: 127.0.0.1
+07:35:48 AddAccount: donpv - IP: 127.0.0.1
+07:35:48 Character: awerty logged
+07:39:21 [ServerInfo] CashShop loaded successfully
+07:39:21 [ServerInfo] ChaosMix loaded successfully
+07:39:21 [ServerInfo] Character loaded successfully
+07:39:21 [FakeOnline] Load Data OK
+07:39:21 [ServerInfo] Custom loaded successfully
+07:39:21 [ServerInfo] Command loaded successfully
+07:39:21 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:39:21 [ServerInfo] Common loaded successfully
+07:39:21 [ServerInfo] Event loaded successfully
+07:39:21 [ServerInfo] EventItemBag loaded successfully
+07:39:21 [ServerInfo] Hack loaded successfully
+07:39:21 [ServerInfo] Item loaded successfully
+07:39:21 [ServerInfo] Monster loaded successfully
+07:39:21 [ServerInfo] Move loaded successfully
+07:39:21 [ServerInfo] Quest loaded successfully
+07:39:21 [ServerInfo] Shop loaded successfully
+07:39:21 [ServerInfo] Skill loaded successfully
+07:39:21 [ServerInfo] Util loaded successfully
+07:39:21 [ReadBotInfo] BotSystem loaded successfully
+07:39:21 [ServerInfo] CfgACuoi loaded successfully
+07:39:51 [ServerInfo] CashShop loaded successfully
+07:39:51 [ServerInfo] ChaosMix loaded successfully
+07:39:51 [ServerInfo] Character loaded successfully
+07:39:51 [FakeOnline] Load Data OK
+07:39:51 [ServerInfo] Custom loaded successfully
+07:39:51 [ServerInfo] Command loaded successfully
+07:39:51 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:39:51 [ServerInfo] Common loaded successfully
+07:39:51 [ServerInfo] Event loaded successfully
+07:39:51 [ServerInfo] EventItemBag loaded successfully
+07:39:51 [ServerInfo] Hack loaded successfully
+07:39:51 [ServerInfo] Item loaded successfully
+07:39:51 [ServerInfo] Monster loaded successfully
+07:39:51 [ServerInfo] Move loaded successfully
+07:39:51 [ServerInfo] Quest loaded successfully
+07:39:51 [ServerInfo] Shop loaded successfully
+07:39:51 [ServerInfo] Skill loaded successfully
+07:39:51 [ServerInfo] Util loaded successfully
+07:39:51 [ReadBotInfo] BotSystem loaded successfully
+07:39:51 [ServerInfo] CfgACuoi loaded successfully
+07:40:40 [ServerInfo] CashShop loaded successfully
+07:40:40 [ServerInfo] ChaosMix loaded successfully
+07:40:40 [ServerInfo] Character loaded successfully
+07:40:40 [FakeOnline] Load Data OK
+07:40:40 [ServerInfo] Custom loaded successfully
+07:40:40 [ServerInfo] Command loaded successfully
+07:40:40 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+07:40:40 [ServerInfo] Common loaded successfully
+07:40:40 [ServerInfo] Event loaded successfully
+07:40:40 [ServerInfo] EventItemBag loaded successfully
+07:40:40 [ServerInfo] Hack loaded successfully
+07:40:40 [ServerInfo] Item loaded successfully
+07:40:40 [ServerInfo] Monster loaded successfully
+07:40:40 [ServerInfo] Move loaded successfully
+07:40:40 [ServerInfo] Quest loaded successfully
+07:40:40 [ServerInfo] Shop loaded successfully
+07:40:40 [ServerInfo] Skill loaded successfully
+07:40:40 [ServerInfo] Util loaded successfully
+07:40:40 [ReadBotInfo] BotSystem loaded successfully
+07:40:40 [ServerInfo] CfgACuoi loaded successfully
+07:41:03 AddAccount: donpv - IP: 127.0.0.1
+07:41:05 Character: elfkk logged
+07:41:15 Character: elfkk logout
+07:41:18 Character: awerty logged
+07:43:01 Character: awerty logout
+07:43:01 ExitAccount: donpv - IP: 127.0.0.1
+07:51:00 [CTC Mini] Bắt Đầu Event Công Thành Chiến Mini
+07:59:36 AddAccount: donpv2 - IP: 127.0.0.1
+07:59:36 Character: SUM_DonPV logged
+07:59:39 AddAccount: donpv - IP: 127.0.0.1
+07:59:40 Character: DK_DonPV logged
+08:00:00 Character: SUM_DonPV logout
+08:00:00 ExitAccount: donpv2 - IP: 127.0.0.1
+08:00:02 Character: DK_DonPV logout
+08:00:02 ExitAccount: donpv - IP: 127.0.0.1
+08:21:00 [CTC Mini] Finish 2
+08:43:46 [ServerInfo] CashShop loaded successfully
+08:43:46 [ServerInfo] ChaosMix loaded successfully
+08:43:46 [ServerInfo] Character loaded successfully
+08:43:46 [FakeOnline] Load Data OK
+08:43:46 [ServerInfo] Custom loaded successfully
+08:43:46 [ServerInfo] Command loaded successfully
+08:43:46 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+08:43:46 [ServerInfo] Common loaded successfully
+08:43:46 [ServerInfo] Event loaded successfully
+08:43:46 [ServerInfo] EventItemBag loaded successfully
+08:43:46 [ServerInfo] Hack loaded successfully
+08:43:46 [ServerInfo] Item loaded successfully
+08:43:46 [ServerInfo] Monster loaded successfully
+08:43:46 [ServerInfo] Move loaded successfully
+08:43:46 [ServerInfo] Quest loaded successfully
+08:43:46 [ServerInfo] Shop loaded successfully
+08:43:46 [ServerInfo] Skill loaded successfully
+08:43:46 [ServerInfo] Util loaded successfully
+08:43:46 [ReadBotInfo] BotSystem loaded successfully
+08:43:46 [ServerInfo] CfgACuoi loaded successfully
+13:47:11 [ServerInfo] CashShop loaded successfully
+13:47:11 [ServerInfo] ChaosMix loaded successfully
+13:47:11 [ServerInfo] Character loaded successfully
+13:47:11 [FakeOnline] Load Data OK
+13:47:11 [ServerInfo] Custom loaded successfully
+13:47:11 [ServerInfo] Command loaded successfully
+13:47:11 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+13:47:11 [ServerInfo] Common loaded successfully
+13:47:11 [ServerInfo] Event loaded successfully
+13:47:11 [ServerInfo] EventItemBag loaded successfully
+13:47:11 [ServerInfo] Hack loaded successfully
+13:47:11 [ServerInfo] Item loaded successfully
+13:47:11 [ServerInfo] Monster loaded successfully
+13:47:11 [ServerInfo] Move loaded successfully
+13:47:11 [ServerInfo] Quest loaded successfully
+13:47:11 [ServerInfo] Shop loaded successfully
+13:47:11 [ServerInfo] Skill loaded successfully
+13:47:11 [ServerInfo] Util loaded successfully
+13:47:11 [ReadBotInfo] BotSystem loaded successfully
+13:47:11 [ServerInfo] CfgACuoi loaded successfully
+22:30:05 [ServerInfo] CashShop loaded successfully
+22:30:05 [ServerInfo] ChaosMix loaded successfully
+22:30:05 [ServerInfo] Character loaded successfully
+22:30:05 [FakeOnline] Load Data OK
+22:30:05 [ServerInfo] Custom loaded successfully
+22:30:05 [ServerInfo] Command loaded successfully
+22:30:05 GHRS Hôm Nay Là : 1000 Lần - (Chủ Nhật) - 23:59:59 Reset : +0 Lần
+22:30:05 [ServerInfo] Common loaded successfully
+22:30:05 [ServerInfo] Event loaded successfully
+22:30:05 [ServerInfo] EventItemBag loaded successfully
+22:30:05 [ServerInfo] Hack loaded successfully
+22:30:05 [ServerInfo] Item loaded successfully
+22:30:05 [ServerInfo] Monster loaded successfully
+22:30:05 [ServerInfo] Move loaded successfully
+22:30:05 [ServerInfo] Quest loaded successfully
+22:30:05 [ServerInfo] Shop loaded successfully
+22:30:05 [ServerInfo] Skill loaded successfully
+22:30:05 [ServerInfo] Util loaded successfully
+22:30:05 [ReadBotInfo] BotSystem loaded successfully
+22:30:05 [ServerInfo] CfgACuoi loaded successfully

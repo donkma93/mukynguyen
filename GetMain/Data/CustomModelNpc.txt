@@ -1,0 +1,20 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+0
+//MonID		Class	SetItemID	LevelItem  	Wing  	Action  Scale  	BoundingBoxMax		WeaponL 	WeponR	Type
+257			2		24			9			158		11		1.0		70					-1 			-1		0	// NPC Eff Buff
+534			2		13			0			-1		-1		1.1		-1					2063 		2065	1	// Bóng ma Efl
+535			1		1			0			-1		-1		1.1		-1					13 			-1		1	// Bóng ma DK
+536			0		18			0			-1		-1		1.1		-1					2569 		3087	1	// Bóng ma DW
+537			3		15			0			-1		-1		1.1		-1					31 			-1		1	// Bóng ma MG
+538			4		27			0			-1		-1		1.1		-1					1034 		-1		1	// Bóng ma DL
+539			5		40			0			-1		-1		1.1		-1					2578 		-1		1	// Bóng ma SM
+580			6		59			0			-1		-1		1.1		-1					52 			52		1	// Bóng ma RF
+
+249			1		9			9			2		-1		1.1		-1					1029 		-1		0	// Lính Canh
+
+
+end

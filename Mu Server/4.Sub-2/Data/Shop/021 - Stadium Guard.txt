@@ -1,0 +1,22 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//Group	Index	Level	Dur		Skill	Luck	Option	ExcOpt	Anc		JoH		Oex		Socket1	Socket2	Socket3	Socket4	Socket5	ItemName
+14		0		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Táo
+14		8		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Liều Giải Độc
+14		1		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Máu Nhỏ
+14		2		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Máu
+14		3		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Máu To
+14		4		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Phép Nhỏ
+14		5		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Phép
+14		6		0		120		0		0		0		0		0		0		0		255		255		255		255		255		//Bình Phép To
+end

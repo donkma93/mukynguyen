@@ -1,0 +1,81 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Nightmare"		         1000		  0			       	1			  	0					0				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0			20		5			7			1		1		1		0			0			100		//Cuồng Phong Đao
+0			21		5			7			1		1		1		0			0			100		//Đao Sinh Mệnh
+4			20		5			7			1		1		1		0			0			100		//Mỹ Nhân Cung
+2			12		5			7			1		1		1		0			0			100		//Trượng Đại Vương
+5			11		5			7			1		1		1		0			0			100		//Gậy KunDun
+0			16		0			0			1		0		0		0			0			100		//Kiếm Hủy Diệt
+3			10		0			0			1		0		0		0			0			100		//Đại Long Đao
+5			6		0			0			1		0		0		0			0			100		//Gậy Phục Sinh
+5			9		0			0			1		0		0		0			0			100		//Gậy Triệu Hồn
+2			10		0			0			1		0		0		0			0			100		//Trượng Bóng Tối
+0			31		0			0			1		0		0		0			0			100		//Ảo Ảnh Đao
+0			20		0			0			1		0		0		0			0			100		//Cuồng Phong Đao
+2			12		0			0			1		0		0		0			0			100		//Trượng Đại Vương
+4			20		0			0			1		0		0		0			0			100		//Mỹ Nhân Cung
+6			13		0			0			1		0		0		0			0			100		//Khiên Hỏa Long
+6			16		0			0			1		0		0		0			0			100		//Khiên Thánh Nữ
+8			34		5			7			0		1		1		0			0			100		//Áo Hắc Điểu
+8			35		5			7			0		1		1		0			0			100		//Áo Ánh Trăng
+8			36		5			7			0		1		1		0			0			100		//Áo Nữ Thần
+8			37		5			7			0		1		1		0			0			100		//Áo Hỏa Thần
+8			38		5			7			0		1		1		0			0			100		//Áo Hoàng Kim
+8			29		5			7			0		1		1		0			0			100		//Áo Quyền Năng
+8			30		5			7			0		1		1		0			0			100		//Áo Thần Ma
+8			31		5			7			0		1		1		0			0			100		//Áo Thái Bình
+8			32		5			7			0		1		1		0			0			100		//Áo Hồng Long
+8			33		5			7			0		1		1		0			0			100		//Áo Thái Dương
+7			21		5			7			0		1		1		0			0			100		//Mũ Thần Long
+8			21		5			7			0		1		1		0			0			100		//Áo Thần Long
+9			21		5			7			0		1		1		0			0			100		//Quần Thần Long
+7			22		5			7			0		1		1		0			0			100		//Mũ Ma Vương
+8			22		5			7			0		1		1		0			0			100		//Áo Ma Vương
+9			22		5			7			0		1		1		0			0			100		//Quần Ma Vương
+7			24		5			7			0		1		1		0			0			100		//Mũ Thánh Nữ
+8			24		5			7			0		1		1		0			0			100		//Áo Thánh Nữ
+9			24		5			7			0		1		1		0			0			100		//Quần Thánh Nữ
+8			23		5			7			0		1		1		0			0			100		//Áo Cuồng Phong
+9			23		5			7			0		1		1		0			0			100		//Quần Cuồng Phong
+10			23		5			7			0		1		1		0			0			100		//Tay Cuồng Phong
+11			23		5			7			0		1		1		0			0			100		//Giày Cuồng Phong
+7			27		5			7			0		1		1		0			0			100		//Mũ Hắc Vương
+8			27		5			7			0		1		1		0			0			100		//Áo Hắc Vương
+9			27		5			7			0		1		1		0			0			100		//Quần Hắc Vương
+8			16		0			0			0		0		0		0			0			100		//Áo Hắc Long
+7			17		0			0			0		0		0		0			0			100		//Mũ Phượng Hoàng
+8			17		0			0			0		0		0		0			0			100		//Áo Phượng Hoàng
+9			17		0			0			0		0		0		0			0			100		//Quần Phượng Hoàng
+7			18		0			0			0		0		0		0			0			100		//Mũ Triệu Hồn
+8			18		0			0			0		0		0		0			0			100		//Áo Triệu Hồn
+9			18		0			0			0		0		0		0			0			100		//Quần Triệu Hồn
+7			19		0			0			0		0		0		0			0			100		//Mũ Giai Nhân
+8			19		0			0			0		0		0		0			0			100		//Áo Giai Nhân
+9			19		0			0			0		0		0		0			0			100		//Quần Giai Nhân
+8			15		0			0			0		0		0		0			0			100		//Áo Phong Vũ
+9			15		0			0			0		0		0		0			0			100		//Quần Phong Vũ
+7			26		0			0			0		0		0		0			0			100		//Mũ Huyền Thiết
+8			26		0			0			0		0		0		0			0			100		//Áo Huyền Thiết
+10			21		0			0			0		0		0		0			0			100		//Tay Thần Long
+11			21		0			0			0		0		0		0			0			100		//Giày Thần Long
+10			22		0			0			0		0		0		0			0			100		//Tay Ma Vương
+11			22		0			0			0		0		0		0			0			100		//Giày Ma Vương
+10			24		0			0			0		0		0		0			0			100		//Tay Thánh Nữ
+11			24		0			0			0		0		0		0			0			100		//Giày Thánh Nữ
+10			20		0			0			0		0		0		0			0			100		//Tay Lôi Phong
+11			20		0			0			0		0		0		0			0			100		//Giày Lôi Phong
+10			27		0			0			0		0		0		0			0			100		//Tay Hắc Vương
+11			27		0			0			0		0		0		0			0			100		//Giày Hắc Vương
+end

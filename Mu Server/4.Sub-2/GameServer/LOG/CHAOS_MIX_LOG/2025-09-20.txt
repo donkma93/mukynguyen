@@ -1,0 +1,2 @@
+09:15:46 [FruitMix][Success][1][1111111111] - (ChaosSuccessRate: 90, ChaosMoney: 3000000)
+09:19:01 [FruitMix][Success][1][1111111111] - (ChaosSuccessRate: 90, ChaosMoney: 3000000)

@@ -1,0 +1,15 @@
+19:47:10 [SocketManager] Server started at port [55901]
+22:42:43 [SocketManager] WSARecv() failed with error: 10054
+22:42:53 [SocketManager] WSARecv() failed with error: 10054
+22:42:58 [SocketManager] WSARecv() failed with error: 10054
+22:43:03 [SocketManager] WSARecv() failed with error: 10054
+22:43:13 [SocketManager] WSARecv() failed with error: 10054
+22:43:18 [SocketManager] WSARecv() failed with error: 10054
+22:43:28 [SocketManager] WSARecv() failed with error: 10054
+22:43:38 [SocketManager] WSARecv() failed with error: 10054
+22:43:43 [SocketManager] WSARecv() failed with error: 10054
+22:43:48 [SocketManager] WSARecv() failed with error: 10054
+22:43:58 [SocketManager] WSARecv() failed with error: 10054
+22:44:03 [SocketManager] WSARecv() failed with error: 10054
+22:44:08 [SocketManager] WSARecv() failed with error: 10054
+22:44:18 [SocketManager] WSARecv() failed with error: 10054

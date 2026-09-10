@@ -1,0 +1,80 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<QuanHam Enable = "1" ThongBao="1" GioiHan="50" ThoiGian="0">
+	<Message>
+		<Msg Index="0"	Text="Chức Năng Này Đã Bị Tắt" />
+		<Msg Index="1"	Text="Bạn Cần %d %s Để Nâng Cấp" />
+		<Msg Index="2"	Text="Bạn Cần %d %s Để Nâng Cấp" />
+		<Msg Index="3"	Text="Chúc Mừng Bạn Vừa Nâng Cấp Quân Hàm Lên Cấp %d" />
+		<Msg Index="4"	Text="%s Vừa Nâng Cấp Quân Hàm Lên Cấp %d" />
+		<Msg Index="5"	Text="Bạn Đã Đạt Cấp Độ Tối Đa Là %d" />
+		<Msg Index="6"	Text="Bạn Hãy Chờ %d Giây Để Mua Tiếp!" />
+		<Msg Index="7"	Text="Ngân Hàng Không Đủ Ngọc" />
+	</Message>	
+	<ConfigQuanHam>	
+		<CapDo LvQuanHam="0"     WcoinC = "0"  	TangMau="0"  	    TangSD="0"       TangST="0"     TangPT="0"/>
+		<CapDo LvQuanHam="1"     WcoinC = "0"  	TangMau="10000"  	TangSD="5000"    TangST="500"   TangPT="500"/>
+		<CapDo LvQuanHam="2"     WcoinC = "0"  	TangMau="20000"  	TangSD="6000"    TangST="600"   TangPT="600"/>
+		<CapDo LvQuanHam="3"     WcoinC = "0"  	TangMau="30000"  	TangSD="7000"    TangST="700"   TangPT="700"/>
+		<CapDo LvQuanHam="4"     WcoinC = "0"  	TangMau="40000"  	TangSD="8000"    TangST="800"   TangPT="800"/>
+		<CapDo LvQuanHam="5"     WcoinC = "0"  	TangMau="50000"  	TangSD="9000"    TangST="900"   TangPT="900"/>
+		<CapDo LvQuanHam="6"     WcoinC = "0"  	TangMau="60000"  	TangSD="10000"   TangST="1000"  TangPT="1000"/>
+		<CapDo LvQuanHam="7"     WcoinC = "0"  	TangMau="70000"  	TangSD="11000"   TangST="1100"  TangPT="1100"/>
+		<CapDo LvQuanHam="8"     WcoinC = "0"  	TangMau="80000"  	TangSD="12000"   TangST="1200"  TangPT="1200"/>
+		<CapDo LvQuanHam="9"     WcoinC = "0"  	TangMau="90000"  	TangSD="13000"   TangST="1300"  TangPT="1300"/>
+		<CapDo LvQuanHam="10"    WcoinC = "0"  	TangMau="110000" 	TangSD="14000"   TangST="1400"  TangPT="1400"/>
+		<CapDo LvQuanHam="11"    WcoinC = "0"  	TangMau="120000" 	TangSD="15000"   TangST="1500"  TangPT="1500"/>
+		<CapDo LvQuanHam="12"    WcoinC = "0"  	TangMau="130000" 	TangSD="16000"   TangST="1600"  TangPT="1600"/>
+		<CapDo LvQuanHam="13"    WcoinC = "0"  	TangMau="140000" 	TangSD="17000"   TangST="1700"  TangPT="1700"/>
+		<CapDo LvQuanHam="14"    WcoinC = "0"  	TangMau="150000" 	TangSD="18000"   TangST="1800"  TangPT="1800"/>
+		<CapDo LvQuanHam="15"    WcoinC = "0"  	TangMau="160000" 	TangSD="19000"   TangST="1900"  TangPT="1900"/>
+		<CapDo LvQuanHam="16"    WcoinC = "0"  	TangMau="170000" 	TangSD="20000"   TangST="2000"  TangPT="2000"/>
+		<CapDo LvQuanHam="17"    WcoinC = "0"  	TangMau="180000" 	TangSD="21000"   TangST="2100"  TangPT="2100"/>
+		<CapDo LvQuanHam="18"    WcoinC = "0"  	TangMau="190000" 	TangSD="22000"   TangST="2200"  TangPT="2200"/>
+		<CapDo LvQuanHam="19"    WcoinC = "0"  	TangMau="200000" 	TangSD="23000"   TangST="2300"  TangPT="2300"/>
+		<CapDo LvQuanHam="20"    WcoinC = "0"  	TangMau="210000" 	TangSD="24000"   TangST="2400"  TangPT="2400"/>
+		<CapDo LvQuanHam="21"    WcoinC = "0"  	TangMau="220000" 	TangSD="25000"   TangST="2500"  TangPT="2500"/>
+		<CapDo LvQuanHam="22"    WcoinC = "0"  	TangMau="230000" 	TangSD="26000"   TangST="2600"  TangPT="2600"/>
+		<CapDo LvQuanHam="23"    WcoinC = "0"  	TangMau="240000" 	TangSD="27000"   TangST="2700"  TangPT="2700"/>
+		<CapDo LvQuanHam="24"    WcoinC = "0"  	TangMau="250000" 	TangSD="28000"   TangST="2800"  TangPT="2800"/>
+		<CapDo LvQuanHam="25"    WcoinC = "0"  	TangMau="260000" 	TangSD="29000"   TangST="2900"  TangPT="2900"/>
+		<CapDo LvQuanHam="26"    WcoinC = "0"  	TangMau="270000" 	TangSD="30000"   TangST="3000"  TangPT="3000"/>
+		<CapDo LvQuanHam="27"    WcoinC = "0"  	TangMau="280000" 	TangSD="31000"   TangST="3100"  TangPT="3100"/>
+		<CapDo LvQuanHam="28"    WcoinC = "0"  	TangMau="290000" 	TangSD="32000"   TangST="3200"  TangPT="3200"/>
+		<CapDo LvQuanHam="29"    WcoinC = "0"  	TangMau="300000" 	TangSD="33000"   TangST="3300"  TangPT="3300"/>
+		<CapDo LvQuanHam="30"    WcoinC = "0"  	TangMau="310000" 	TangSD="34000"   TangST="3400"  TangPT="3400"/>
+		<CapDo LvQuanHam="31"    WcoinC = "0"  	TangMau="320000" 	TangSD="35000"   TangST="3500"  TangPT="3500"/>
+		<CapDo LvQuanHam="32"    WcoinC = "0"  	TangMau="330000" 	TangSD="36000"   TangST="3600"  TangPT="3600"/>
+		<CapDo LvQuanHam="33"    WcoinC = "0"  	TangMau="340000" 	TangSD="37000"   TangST="3700"  TangPT="3700"/>
+		<CapDo LvQuanHam="34"    WcoinC = "0"  	TangMau="350000" 	TangSD="38000"   TangST="3800"  TangPT="3800"/>
+		<CapDo LvQuanHam="35"    WcoinC = "0"  	TangMau="360000" 	TangSD="39000"   TangST="3900"  TangPT="3900"/>
+		<CapDo LvQuanHam="36"    WcoinC = "0"  	TangMau="370000" 	TangSD="40000"   TangST="4000"  TangPT="4000"/>
+		<CapDo LvQuanHam="37"    WcoinC = "0"  	TangMau="380000" 	TangSD="41000"   TangST="4100"  TangPT="4100"/>
+		<CapDo LvQuanHam="38"    WcoinC = "0"  	TangMau="390000" 	TangSD="42000"   TangST="4200"  TangPT="4200"/>
+		<CapDo LvQuanHam="39"    WcoinC = "0"  	TangMau="400000" 	TangSD="43000"   TangST="4300"  TangPT="4300"/>
+		<CapDo LvQuanHam="40"    WcoinC = "0"  	TangMau="410000" 	TangSD="44000"   TangST="4400"  TangPT="4400"/>
+		<CapDo LvQuanHam="41"    WcoinC = "0"  	TangMau="420000" 	TangSD="45000"   TangST="4500"  TangPT="4500"/>
+		<CapDo LvQuanHam="42"    WcoinC = "0"  	TangMau="430000" 	TangSD="46000"   TangST="4600"  TangPT="4600"/>
+		<CapDo LvQuanHam="43"    WcoinC = "0"  	TangMau="440000" 	TangSD="47000"   TangST="4700"  TangPT="4700"/>
+		<CapDo LvQuanHam="44"    WcoinC = "0"  	TangMau="450000" 	TangSD="48000"   TangST="4800"  TangPT="4800"/>
+		<CapDo LvQuanHam="45"    WcoinC = "0"  	TangMau="460000" 	TangSD="49000"   TangST="4900"  TangPT="4900"/>
+		<CapDo LvQuanHam="46"    WcoinC = "0"  	TangMau="470000" 	TangSD="50000"   TangST="5000"  TangPT="5000"/>
+		<CapDo LvQuanHam="47"    WcoinC = "0"  	TangMau="480000" 	TangSD="51000"   TangST="5100"  TangPT="5100"/>
+		<CapDo LvQuanHam="48"    WcoinC = "0"  	TangMau="490000" 	TangSD="52000"   TangST="5200"  TangPT="5200"/>
+		<CapDo LvQuanHam="49"    WcoinC = "0"  	TangMau="500000" 	TangSD="53000"   TangST="5300"  TangPT="5300"/>
+		<CapDo LvQuanHam="50"    WcoinC = "0"  	TangMau="510000" 	TangSD="54000"   TangST="5400"  TangPT="5400"/>
+		<CapDo LvQuanHam="51"    WcoinC = "0"  	TangMau="0" 	    TangSD="0"       TangST="0"     TangPT="0"/>
+	</ConfigQuanHam>
+</QuanHam>

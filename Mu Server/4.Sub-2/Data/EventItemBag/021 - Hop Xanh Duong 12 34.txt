@@ -1,0 +1,37 @@
+0
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Blue Ribbon Box"		1000		100				1				0					1				0
+end
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+13			8		  0		       4		  0		  0		 1		  1			   0        100       //Nhẫn Băng
+13			23		  0		       4		  0		  0		 1		  1			   0        100       //Nhẫn Gió
+13			26		  0		       4		  0		  0		 1		  1			   0        100       //Dây Chuyền Gió
+13			9		  0		       4		  0		  0		 1		  1			   0        100       //Nhẫn Độc
+13			21		  0		       4		  0		  0		 1		  1			   0        100       //Nhẫn Lửa
+13			25		  0		       4		  0		  0		 1		  1			   0        100       //Dây Chuyền Băng
+
+13			8		  0		       4		  0		  0		 1		  3			   0        50        //Nhẫn Băng
+13			23		  0		       4		  0		  0		 1		  3			   0        50        //Nhẫn Gió
+13			26		  0		       4		  0		  0		 1		  3			   0        50        //Dây Chuyền Gió
+13			9		  0		       4		  0		  0		 1		  3			   0        50        //Nhẫn Độc
+13			21		  0		       4		  0		  0		 1		  3			   0        50        //Nhẫn Lửa
+13			25		  0		       4		  0		  0		 1		  3			   0        50        //Dây Chuyền Băng
+
+13			8		  0		       4		  0		  0		 1		  7			   0        30        //Nhẫn Băng
+13			23		  0		       4		  0		  0		 1		  7			   0        30        //Nhẫn Gió
+13			26		  0		       4		  0		  0		 1		  7			   0        30        //Dây Chuyền Gió
+13			9		  0		       4		  0		  0		 1		  7			   0        30        //Nhẫn Độc
+13			21		  0		       4		  0		  0		 1		  7			   0        30        //Nhẫn Lửa
+13			25		  0		       4		  0		  0		 1		  7			   0        30        //Dây Chuyền Băng
+end
+
+
+

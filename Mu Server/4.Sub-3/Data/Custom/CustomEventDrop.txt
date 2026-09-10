@@ -1,0 +1,38 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+0
+//Index   Year   Month   Day   DoW   Hour   Minute   Second
+0         *      *       *     *      10     00        0
+0         *      *       *     *      14     25        0
+0         *      *       *     *      20     00        0
+end
+
+1
+//Index     Name                DropMap      DropX   DropY   DropRange   AlarmTime   EventTime
+0         "Drop Item"              0          145      135      5            5           3
+end
+
+2
+//Index   ItemIndex   ItemLevel   DropCount   DropDelay        Comment
+0         6159        0                5           00          //Ngọc Hỗn Nguyên
+0         7190        0                5           20          //Ngọc Sáng Tạo
+0         7184        0                5           40          //Ngọc Sinh Mệnh
+0         7182        0                5           60          //Ngọc Tâm Linh
+0         7181        0                5           80          //Ngọc Ước Nguyện
+0         7179        8                5           100         //Box Kundun 1
+0         7179        9                3           120         //Box Kundun 2
+0         7179        10               3           140         //Box Kundun 3
+0         7179        11               3           160         //Box Kundun 4
+0         7179        12               3           180         //Box Kundun 5
+
+end

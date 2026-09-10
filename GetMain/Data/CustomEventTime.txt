@@ -1,0 +1,27 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+//	#ID				#Event Name					#Map				#Gate 	
+	0				"Huyết Lâu"			        "Davias"			"0"      //eMenu_OPT21,
+	1				"Quảng Trường Quỷ"		    "Noria"				"1"      //eMenu_OPT22,
+	2				"Hỗn Nguyên Lâu"    	    "Lorencia"		   	"2"      //eMenu_OPT23,
+	3				"Công Thành Chiến"	        "Guil War"			"3"      //eMenu_OPT24,
+//==================================Sự Kiện Boss===========================================
+	4				"Quyền Ma Vương"			"Elbeland"		    "4"      //eMenu_OPT25,
+	5				"Long Vương Quỷ"		    "Elbeland"			"5"      //eMenu_OPT26,
+	6				"Huyết Vương Quỷ"			"Devias"			"6"      //eMenu_OPT27,
+	7				"PhanTom"		            "Devias"			"7"      //eMenu_OPT28,
+	8				"Anubis"		    	    "Atlans"			"8"      //eMenu_OPT29,
+	9				"Thủy Hoàng Đế"		        "Atlans"			"9"      //eMenu_OPT30,
+	10				"Ngưu Vương"				"Aida"			    "10"     //eMenu_OPT31,
+	11				"Hầu Vương"			        "Aida"			    "11"     //eMenu_OPT32,
+	12				"Thú Địa Ngục"			    "Raklion"			"12"     //eMenu_OPT33,
+	13				"Viêm Địa Chúa"		        "Raklion"			"13"     //eMenu_OPT34,       
+	14				"Tà Thần Tướng"			    "Tarkan"		    "14"     //eMenu_OPT35,       
+	15				"Ma Thần Tướng"		        "Tarkan"			"15"     //eMenu_OPT36, 	
+    16				"Boss Guild"				"Refuge"			"16"     //eMenu_OPT37, 
+
+
+end					

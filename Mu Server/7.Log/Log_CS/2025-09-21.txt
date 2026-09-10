@@ -1,0 +1,51 @@
+17:46:36 Khởi động Port 44405 thành công!
+17:46:40 Đã nhận diện JoinServer.
+17:46:42 Đã kết nối tới cụm Sub-1 nhóm 0.
+18:30:31 Khởi động Port 44405 thành công!
+18:30:35 Đã nhận diện JoinServer.
+18:30:36 Đã kết nối tới cụm Sub-1 nhóm 0.
+18:31:50 Khởi động Port 44405 thành công!
+18:43:18 Khởi động Port 44405 thành công!
+18:43:22 Đã nhận diện JoinServer.
+18:43:23 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:01:13 Khởi động Port 44405 thành công!
+19:01:15 Đã nhận diện JoinServer.
+19:01:16 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:01:36 Khởi động Port 44405 thành công!
+19:01:38 Đã nhận diện JoinServer.
+19:01:39 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:05:09 Khởi động Port 44405 thành công!
+19:05:11 Đã nhận diện JoinServer.
+19:05:11 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:08:41 Khởi động Port 44405 thành công!
+19:08:43 Đã nhận diện JoinServer.
+19:08:43 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:09:42 Khởi động Port 44405 thành công!
+19:09:44 Đã nhận diện JoinServer.
+19:09:44 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:09:47 Khởi động Port 44405 thành công!
+19:09:49 Đã nhận diện JoinServer.
+19:09:52 Khởi động Port 44405 thành công!
+19:09:53 Đã nhận diện JoinServer.
+19:09:54 Khởi động Port 44405 thành công!
+19:09:56 Đã nhận diện JoinServer.
+19:09:57 Khởi động Port 44405 thành công!
+19:09:59 Đã nhận diện JoinServer.
+19:09:59 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:10:07 Khởi động Port 44405 thành công!
+19:10:08 Đã nhận diện JoinServer.
+19:17:52 Khởi động Port 44405 thành công!
+19:17:53 Đã nhận diện JoinServer.
+19:17:54 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:18:52 Khởi động Port 44405 thành công!
+19:18:54 Đã nhận diện JoinServer.
+19:18:55 Đã kết nối tới cụm Sub-1 nhóm 0.
+19:50:04 Khởi động Port 44405 thành công!
+19:50:05 Đã nhận diện JoinServer.
+19:50:06 Đã kết nối tới cụm Sub-1 nhóm 0.
+21:16:37 Khởi động Port 44405 thành công!
+21:16:39 Đã nhận diện JoinServer.
+21:16:40 Đã kết nối tới cụm Sub-1 nhóm 0.
+21:41:55 Khởi động Port 44405 thành công!
+21:41:56 Đã nhận diện JoinServer.
+21:41:57 Đã kết nối tới cụm Sub-1 nhóm 0.

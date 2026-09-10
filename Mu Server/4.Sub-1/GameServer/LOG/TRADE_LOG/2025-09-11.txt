@@ -1,0 +1,30 @@
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Cụm Ngọc Ước Nguyện+2 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Đỏ+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Xanh Lá+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Hộp Quà Xanh Dương+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - Sách Hỏa Âm+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:07 1 - ThangCuoi: nhận mốc: 1 có giá trị là 100,000 - [W3]Cánh Cuồng Phong+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 2 có giá trị là 200,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 2 có giá trị là 200,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 3 có giá trị là 300,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 3 có giá trị là 300,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 4 có giá trị là 400,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 4 có giá trị là 400,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Cụm Ngọc Ước Nguyện+2 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Hộp Quà Đỏ+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Hộp Quà Xanh Lá+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Hộp Quà Xanh Dương+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - Sách Hỏa Âm+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:08 1 - ThangCuoi: nhận mốc: 5 có giá trị là 500,000 - [W3]Cánh Cuồng Phong+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:13 1 - ThangCuoi: nhận mốc: 6 có giá trị là 600,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:13 1 - ThangCuoi: nhận mốc: 6 có giá trị là 600,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 7 có giá trị là 700,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 7 có giá trị là 700,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 8 có giá trị là 800,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 8 có giá trị là 800,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 9 có giá trị là 900,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:14 1 - ThangCuoi: nhận mốc: 9 có giá trị là 900,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:15 1 - ThangCuoi: nhận mốc: 10 có giá trị là 1,000,000 - Cụm Ngọc Ước Nguyện+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0
+20:12:15 1 - ThangCuoi: nhận mốc: 10 có giá trị là 1,000,000 - Cụm Ngọc Tâm Linh+1 Dur:255 Skill:0 Luck:1 Opt:7 Exc:63 Anc:0

@@ -1,0 +1,160 @@
+09:44:11 Khởi động Port 55858 thành công!
+09:44:11 Tải Cấu Hình thành công!
+09:44:11 Hệ thống chống DOS đã mở.
+09:44:11 DumpList đã được tải.
+09:44:11 ChecksumList đã được tải.
+09:44:11 InternalList đã được tải.
+09:44:11 WindowList đã được tải.
+09:44:11 BadWords đã được tải.
+09:44:11 BlackList đã được tải.
+09:44:11 WatchList đã được tải.
+09:50:37 Khởi động Port 55858 thành công!
+09:50:37 Tải Cấu Hình thành công!
+09:50:37 Hệ thống chống DOS đã mở.
+09:50:37 DumpList đã được tải.
+09:50:37 ChecksumList đã được tải.
+09:50:37 InternalList đã được tải.
+09:50:37 WindowList đã được tải.
+09:50:37 BadWords đã được tải.
+09:50:37 BlackList đã được tải.
+09:50:37 WatchList đã được tải.
+09:58:02 Khởi động Port 55858 thành công!
+09:58:02 Tải Cấu Hình thành công!
+09:58:02 Hệ thống chống DOS đã mở.
+09:58:02 DumpList đã được tải.
+09:58:02 ChecksumList đã được tải.
+09:58:02 InternalList đã được tải.
+09:58:02 WindowList đã được tải.
+09:58:02 BadWords đã được tải.
+09:58:02 BlackList đã được tải.
+09:58:02 WatchList đã được tải.
+10:07:17 Khởi động Port 55858 thành công!
+10:07:17 Tải Cấu Hình thành công!
+10:07:17 Hệ thống chống DOS đã mở.
+10:07:17 DumpList đã được tải.
+10:07:17 ChecksumList đã được tải.
+10:07:17 InternalList đã được tải.
+10:07:17 WindowList đã được tải.
+10:07:17 BadWords đã được tải.
+10:07:17 BlackList đã được tải.
+10:07:17 WatchList đã được tải.
+10:08:58 Khởi động Port 55858 thành công!
+10:08:58 Tải Cấu Hình thành công!
+10:08:58 Hệ thống chống DOS đã mở.
+10:08:58 DumpList đã được tải.
+10:08:58 ChecksumList đã được tải.
+10:08:58 InternalList đã được tải.
+10:08:58 WindowList đã được tải.
+10:08:58 BadWords đã được tải.
+10:08:58 BlackList đã được tải.
+10:08:58 WatchList đã được tải.
+10:44:42 Khởi động Port 55858 thành công!
+10:44:42 Tải Cấu Hình thành công!
+10:44:42 Hệ thống chống DOS đã mở.
+10:44:42 DumpList đã được tải.
+10:44:42 ChecksumList đã được tải.
+10:44:42 InternalList đã được tải.
+10:44:42 WindowList đã được tải.
+10:44:42 BadWords đã được tải.
+10:44:42 BlackList đã được tải.
+10:44:42 WatchList đã được tải.
+10:52:35 Khởi động Port 55858 thành công!
+10:52:35 Tải Cấu Hình thành công!
+10:52:35 Hệ thống chống DOS đã mở.
+10:52:35 DumpList đã được tải.
+10:52:35 ChecksumList đã được tải.
+10:52:35 InternalList đã được tải.
+10:52:35 WindowList đã được tải.
+10:52:35 BadWords đã được tải.
+10:52:35 BlackList đã được tải.
+10:52:35 WatchList đã được tải.
+12:09:25 Khởi động Port 55858 thành công!
+12:09:25 Tải Cấu Hình thành công!
+12:09:25 Hệ thống chống DOS đã mở.
+12:09:25 DumpList đã được tải.
+12:09:25 ChecksumList đã được tải.
+12:09:25 InternalList đã được tải.
+12:09:25 WindowList đã được tải.
+12:09:25 BadWords đã được tải.
+12:09:25 BlackList đã được tải.
+12:09:25 WatchList đã được tải.
+12:09:41 Khởi động Port 55858 thành công!
+12:09:41 Tải Cấu Hình thành công!
+12:09:41 Hệ thống chống DOS đã mở.
+12:09:41 DumpList đã được tải.
+12:09:41 ChecksumList đã được tải.
+12:09:41 InternalList đã được tải.
+12:09:41 WindowList đã được tải.
+12:09:41 BadWords đã được tải.
+12:09:41 BlackList đã được tải.
+12:09:41 WatchList đã được tải.
+17:40:11 Khởi động Port 55858 thành công!
+17:40:11 Tải Cấu Hình thành công!
+17:40:11 Hệ thống chống DOS đã mở.
+17:40:11 DumpList đã được tải.
+17:40:11 ChecksumList đã được tải.
+17:40:11 InternalList đã được tải.
+17:40:11 WindowList đã được tải.
+17:40:11 BadWords đã được tải.
+17:40:11 BlackList đã được tải.
+17:40:11 WatchList đã được tải.
+19:02:59 Khởi động Port 55858 thành công!
+19:02:59 Tải Cấu Hình thành công!
+19:02:59 Hệ thống chống DOS đã mở.
+19:02:59 DumpList đã được tải.
+19:02:59 ChecksumList đã được tải.
+19:02:59 InternalList đã được tải.
+19:02:59 WindowList đã được tải.
+19:02:59 BadWords đã được tải.
+19:02:59 BlackList đã được tải.
+19:02:59 WatchList đã được tải.
+19:04:47 Khởi động Port 55858 thành công!
+19:04:47 Tải Cấu Hình thành công!
+19:04:47 Hệ thống chống DOS đã mở.
+19:04:47 DumpList đã được tải.
+19:04:47 ChecksumList đã được tải.
+19:04:47 InternalList đã được tải.
+19:04:47 WindowList đã được tải.
+19:04:47 BadWords đã được tải.
+19:04:47 BlackList đã được tải.
+19:04:47 WatchList đã được tải.
+22:14:23 Khởi động Port 55858 thành công!
+22:14:23 Tải Cấu Hình thành công!
+22:14:23 Hệ thống chống DOS đã mở.
+22:14:23 DumpList đã được tải.
+22:14:23 ChecksumList đã được tải.
+22:14:23 InternalList đã được tải.
+22:14:23 WindowList đã được tải.
+22:14:23 BadWords đã được tải.
+22:14:23 BlackList đã được tải.
+22:14:23 WatchList đã được tải.
+22:18:49 Khởi động Port 55858 thành công!
+22:18:49 Tải Cấu Hình thành công!
+22:18:49 Hệ thống chống DOS đã mở.
+22:18:49 DumpList đã được tải.
+22:18:49 ChecksumList đã được tải.
+22:18:49 InternalList đã được tải.
+22:18:49 WindowList đã được tải.
+22:18:49 BadWords đã được tải.
+22:18:49 BlackList đã được tải.
+22:18:49 WatchList đã được tải.
+22:21:09 Khởi động Port 55858 thành công!
+22:21:09 Tải Cấu Hình thành công!
+22:21:09 Hệ thống chống DOS đã mở.
+22:21:09 DumpList đã được tải.
+22:21:09 ChecksumList đã được tải.
+22:21:09 InternalList đã được tải.
+22:21:09 WindowList đã được tải.
+22:21:09 BadWords đã được tải.
+22:21:09 BlackList đã được tải.
+22:21:09 WatchList đã được tải.
+23:40:21 Khởi động Port 55858 thành công!
+23:40:21 Tải Cấu Hình thành công!
+23:40:21 Hệ thống chống DOS đã mở.
+23:40:21 DumpList đã được tải.
+23:40:21 ChecksumList đã được tải.
+23:40:21 InternalList đã được tải.
+23:40:21 WindowList đã được tải.
+23:40:21 BadWords đã được tải.
+23:40:21 BlackList đã được tải.
+23:40:21 WatchList đã được tải.

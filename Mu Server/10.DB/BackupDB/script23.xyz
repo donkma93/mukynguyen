@@ -1,0 +1,1 @@
+ -S (local) -U sa -P vTuan@9ZY8 -Q "backup database MuOnlineNVT To DISK='C:\MuServer\DB\MuOnlineNVT2021-05-02-11-55.bak'"

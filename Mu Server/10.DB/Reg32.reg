@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\MuThangCuoi]
+"Driver"="C:\\WINDOWS\\system32\\SQLSRV32.dll"
+"Description"="MuThangCuoi"
+"Server"=".\\SQLEXPRESS"
+"Database"="MuThangCuoi"
+"LastUser"="sa"
+"Trusted_Connection"="Yes"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\MuOnline]
+"Driver"="C:\\WINDOWS\\system32\\SQLSRV32.dll"
+"Description"="MuOnline"
+"Server"=".\\SQLEXPRESS"
+"Database"="MuThangCuoi"
+"LastUser"="sa"
+"Trusted_Connection"="Yes"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+"MuThangCuoi"="SQL Server"
+"MuOnline"="SQL Server"

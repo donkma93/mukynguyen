@@ -1,0 +1,192 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass   SpecialValue  Drop Inv Comment
+0         7179        0           *              *              0				//Hộp May Mắn
+1         7179        1           *              *              0				//Ngôi Sao Giáng Sinh
+2         7179        3           *              *              0				//Trái Tim Tình Yêu
+3         7179        5           *              *              0				//Huy Chương Bạc	
+4         7179        6           *              *             	0				//Huy Chương Vàng
+5         7179        7           *              *              0				//Hộp Của Vua
+6         7179        8           *              *              0				//Hộp Kundun 1
+7         7179        9           *              *              0				//Hộp Kundun 2
+8         7179        10          *              *              0				//Hộp Kundun 3
+9         7179        11          *              *              0				//Hộp Kundun 4
+10        7179        12          *              *              0				//Hộp Kundun 5
+11        7179        13          *              *              0				//trái tim chúa tể
+12        7179        14          *              *              0				//Pháo Hoa Blue
+13        7179        15          *              *              0				//Pháo Hoa Red 
+14        7213        *           *              *              0				//Halloween Pumpkin
+15        7220        *           *              *              0				//Box GM
+16        7223        *           *              *              0				//Hộp Chaos Xanh
+17        7224        *           *              *              0				//Hộp Chaos Đỏ
+18        7225        *           *              *              0				//Hộp Chaos Tím
+19        6176        *           *              *              0				//Hộp quà đỏ
+20        6177        *           *              *              0				//Hộp quà xanh lá
+21        6178        *           *              *              0				//Hộp quà xanh dương
+22        7200        0           *              *              0				//Hộp socola hồng
+23        7201        0           *              *              0				//Hộp socola đỏ
+24        7291        *           *              *              0				//Hộp Quà Vàng
+25        7292        *           *              *              0				//Hộp Quà Bạc
+26        7399        *           *              *              0				//Rương Nhân Phẩm 1
+27        7400        *           *              *              0				//Rương Nhân Phẩm 2
+28        7401        *           *              *              0				//Rương Nhân Phẩm 3
+29        7402        *           *              *              0				//Rương Nhân Phẩm 4
+30        7403        *           *              *              0				//Rương Nhân Phẩm 5
+31        7341        *           *              *              0				//Trứng Muun
+41        *           *           *              15             0				//Ring 40
+42        *           *           *              16             0				//Ring 80
+//===================================Sự kiện Ingame==============================================
+60        *           *           *              0              0				//Huyết Lâu 1
+61        *           *           *              1              0				//Huyết Lâu 2
+62        *           *           *              2              0				//Huyết Lâu 3
+63        *           *           *              3              0				//Huyết Lâu 4
+64        *           *           *              4              0				//Huyết Lâu 5
+65        *           *           *              5              0				//Huyết Lâu 6
+66        *           *           *              6              0				//Huyết Lâu 7
+67        *           *           *              7              0				//Huyết Lâu 8
+//================================================================================================
+68        *           *           *              8              0				//Hỗn Nguyên Lâu 1
+69        *           *           *              9              0				//Hỗn Nguyên Lâu 2
+70        *           *           *              10             0				//Hỗn Nguyên Lâu 3
+71        *           *           *              11             0				//Hỗn Nguyên Lâu 4
+72        *           *           *              12             0				//Hỗn Nguyên Lâu 5
+73        *           *           *              13             0				//Hỗn Nguyên Lâu 6
+74        *           *           *              14             0				//Hỗn Nguyên Lâu 7
+//================================================================================================
+//75        *           *           *              17             0				//Senior Mix
+76        *           *           *              18             0				//Leo the Helper
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+77        *           *           *              19             0				//Bạch Long Điện 1
+78        *           *           *              20             0				//Bạch Long Điện 2
+79        *           *           *              21             0				//Bạch Long Điện 3
+80        *           *           *              22             0				//Bạch Long Điện 4
+81        *           *           *              23             0				//Bạch Long Điện 5
+82        *           *           *              24             0				//Bạch Long Điện 6
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+83        *           *           *              25             0				//Hoa Anh Đào Mix 1
+84        *           *           *              26             0				//Hoa Anh Đào Mix 2
+85        *           *           *              27             0				//Hoa Anh Đào Mix 3
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+86        *           *           *              28             0				//Santa Claus
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+87        *           *           *              29             0				//Đồng Xu May Mắn 1
+88        *           *           *              30             0				//Đồng Xu May Mắn 2
+89        *           *           *              31             0				//Đồng Xu May Mắn 3
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+90        *           *           *              32             0				//Chaos Card Mix 1 
+91        *           *           *              33             0				//Chaos Card Mix 2
+92        *           *           *              34             0				//Chaos Card Mix 3
+93        *           *           *              35             0				//Chaos Card Mix 4
+94        *           *           *              36             0				//Chaos Card Mix 5
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+95        *           *           *              37            	0				//Sự Kiện Double Goer Rương Bạc 1
+96        *           *           *              38             0				//Sự Kiện Double Goer Rương Bạc 2
+97        *           *           *              39             0				//Sự Kiện Double Goer Rương Bạc 3
+98        *           *           *              40             0				//Sự Kiện Double Goer Rương Bạc 4
+99        *           *           *              41             0				//Sự Kiện Double Goer Rương Bạc 5
+100       *           *           *              42             0				//Sự Kiện Double Goer Rương Vàng 1
+101       *           *           *              43             0				//Sự Kiện Double Goer Rương Vàng 2
+102       *           *           *              44             0				//Sự Kiện Double Goer Rương Vàng 3
+103       *           *           *              45             0				//Sự Kiện Double Goer Rương Vàng 4
+104       *           *           *              46             0				//Sự Kiện Double Goer Rương Vàng 5
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+105        *           *           *              47             0				//Sự Kiện Gaion Boss Phụ 1
+106        *           *           *              48             0				//Sự Kiện Gaion Boss Phụ 2
+107        *           *           *              49             0				//Sự Kiện Gaion Boss Phụ 3
+108        *           *           *              50             0				//Sự Kiện Gaion Boss Phụ 4
+109        *           *           *              51             0				//Sự Kiện Gaion Boss Phụ 5
+110        *           *           *              52             0				//Sự Kiện Gaion Boss Chính 1
+111        *           *           *              53             0				//Sự Kiện Gaion Boss Chính 2
+112        *           *           *              54             0				//Sự Kiện Gaion Boss Chính 3
+113        *           *           *              55             0				//Sự Kiện Gaion Boss Chính 4
+114        *           *           *              56             0				//Sự Kiện Gaion Boss Chính 5
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+115       *           *           *              57             0				//Crywolf
+//=========================================================================================================
+//Index   ItemIndex   ItemLevel   MonsterClass 	 SpecialValue	DropInventory   Comment
+116       *           *           *              60             0				//Online Lottery 
+117       *           *           *              61             1				///NhanQua Gift
+118       *           *           *              62             1				//BLOOD VIP Drop
+119       *           *           *              63             1				//DEVIL VIP Drop
+120       *           *           *              64             1				//CHAOS VIP Drop
+//============================================BOSS==========================================================
+
+129       *           *           43             *              0				//Rồng vàng con
+130       *           *           78             *              0				//Kim Tiểu Quỷ
+131       *           *           54             *              0				//Chiến Binh Vàng
+132       *           *           53             *              0				//Người Máy Vàng
+133       *           *           79             *              0				//Kim Thiết Vương
+134       *           *           80             *              0				//Kim Ngưu vương
+135       *           *           81             *              0				//Kim Ngưu Tinh
+136       *           *           82             *              0				//Kim Sát Thủ
+137       *           *           83             *              0				//Kim Xạ Vương
+138       *           *           502            *              0				//Thỏ Vàng
+139       *           *           493            *              0				//Kỵ Sỹ Hoàng Kim
+140       *           *           494            *              0				//Ác Quỷ Hoàng Kim Giáp
+141       *           *           495            *              0				//Quỷ Đá Hoàng Kim Giáp
+142       *           *           496            *              0				//Hoàng Kim Giáp Binh
+143       *           *           497            *              0				//Hoàng Kim Mộc Giáp
+144       *           *           498            *              0				//Xích Quỷ Hoàng Kim
+145       *           *           499            *              0				//Chiến Binh Hoàng Kim
+146       *           *           500            *              0				//Hỏa Diệm Hoàng Kim
+147       *           *           501            *              0				//Kim Long
+//==========================================================================================================
+148       *           *           340            *              0				//nữ tư tế
+149       *           *           349            *              0				//Tướng ma Balgass
+150       *           *           362            *              0				//Maya Hand Left
+151       *           *           363            *              0				//Maya Hand Right
+152       *           *           361            *              0				//Nightmare
+//==========================================================================================================
+153       *           *           365            *              0				//Năm Mới
+154       *           *           135            *              0				//Phù Thủy Trắng
+155       *           *           55             *              0				//Xương Sọ
+156       *           *           42             *              0				//Rồng Đỏ
+157       *           *           275            *              0				//Kundun
+158       *           *           561            *              0				//Medusa
+159       *           *           295            *              0				//Erohim
+160       *           *           309            *              0				//Qủy Vương
+161       *           *           476            *              0				//Ông Già Noel
+162       *           *           459            *              0				//Selupan
+163       *           *           463            *              0				//Mùa Hè
+164       *           *           413            *              0				//Thỏ Trắng
+165       *           *           700            *              0 		        //Tieu Thach	
+166       *           *           701            *              0 		        //Dai Thach	
+167       *           *           702            *              0 		        //Hon Thach	
+168       *           *           703            *              0 		        //"Quỷ Vương GOLD
+169       *           *           704            *              0 		        //"Erohim GOLD	
+170       *           *           705            *              0 		        //"Kundun GOLD	
+171       *           *           706            *              0 		        //"Medusa GOLD	
+172       *           *           707            *              0 		        //"Selupan GOLD
+173       *           *           708            *              0 		        //Quyền Ma Vuong	    
+174       *           *           709            *              0 		        //Long Ma Vuong		
+175       *           *           710            *              0 		        //Huyết Ma Vuong	    
+176       *           *           711            *              0 		        //Phantom		    
+177       *           *           712            *              0 		        //Anubis		
+178       *           *           713            *              0 		        //Thủy Hoàng Đế	
+179       *           *           717            *              0 		        //Ngưu Vương		
+180       *           *           718            *              0 		        //Hầu Vương		
+181       *           *           719            *              0 		        //Ma Thú Địa Ngục	
+182       *           *           720            *              0 		        //Viêm Địa Chúa	
+183       *           *           721            *              0 		        //Tà Thần Tướng	
+184       *           *           722            *              0 		        //Ma Thần Tướng	
+185       *           *           723            *              0 		        //Chiến Thần		
+//=======================================================================================>		
+end

@@ -1,0 +1,51 @@
+19:44:28 Khởi động Port 55960 thành công!
+19:45:25 Khởi động Port 55960 thành công!
+19:48:59 Khởi động Port 55960 thành công!
+20:14:06 Khởi động Port 55960 thành công!
+20:22:33 Khởi động Port 55960 thành công!
+20:22:41 Khởi động Port 55960 thành công!
+20:22:57 Khởi động Port 55960 thành công!
+20:24:02 Khởi động Port 55960 thành công!
+20:29:27 Khởi động Port 55960 thành công!
+20:39:30 Khởi động Port 55960 thành công!
+20:40:24 Nhận diện được IP 127.0.0.1 nội bộ.
+20:40:24 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+20:40:55 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+20:45:22 Nhận diện được IP 127.0.0.1 nội bộ.
+20:45:22 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+20:53:42 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+20:54:10 Nhận diện được IP 127.0.0.1 nội bộ.
+20:54:10 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+20:59:51 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+20:59:52 Nhận diện được IP 127.0.0.1 nội bộ.
+20:59:52 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:29:49 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:29:52 Nhận diện được IP 127.0.0.1 nội bộ.
+21:29:52 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:36:42 EXEC WZ_RankingBos '11','ThangCuoi','1'
+21:36:42 Lỗi 23000. Vấn đề do thiếu Table SQL
+21:39:39 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:39:48 Nhận diện được IP 127.0.0.1 nội bộ.
+21:39:48 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:43:33 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:44:10 Nhận diện được IP 127.0.0.1 nội bộ.
+21:44:10 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:44:36 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:47:18 Nhận diện được IP 127.0.0.1 nội bộ.
+21:47:18 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+21:47:32 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:51:24 Nhận diện được IP 127.0.0.1 nội bộ.
+21:51:24 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+22:17:26 EXEC WZ_RankingBos '11','ThangVeo','1'
+22:17:26 Lỗi 23000. Vấn đề do thiếu Table SQL
+22:39:27 EXEC WZ_RankingBos '11','ThangVeo','1'
+22:39:27 Lỗi 23000. Vấn đề do thiếu Table SQL
+22:47:26 EXEC WZ_RankingBos '11','ThangVeo','1'
+22:47:26 Lỗi 23000. Vấn đề do thiếu Table SQL
+22:50:44 EXEC WZ_RankingBos '11','ThangVeo','1'
+22:50:44 Lỗi 23000. Vấn đề do thiếu Table SQL
+22:51:13 EXEC WZ_RankingBos '11','ThangVeo','1'
+22:51:13 Lỗi 23000. Vấn đề do thiếu Table SQL
+23:29:34 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:29:36 Nhận diện được IP 127.0.0.1 nội bộ.
+23:29:36 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.

@@ -1,0 +1,8 @@
+09:29:37 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 0, ChaosSuccessRate: 81, ChaosMoney: 2000000)
+09:29:45 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 1, ChaosSuccessRate: 71, ChaosMoney: 4000000)
+09:29:53 [PlusItemLevelMix][Failure][1][ThangCuoi] - (Type: 2, ChaosSuccessRate: 61, ChaosMoney: 6000000, ChaosAmulet: 0)
+09:30:38 [PlusItemLevelMix][Success][1][ThangCuoi] - (Type: 2, ChaosSuccessRate: 61, ChaosMoney: 6000000)
+09:39:30 [PlusItemLevelMix][Failure][1][ThangCuoi] - (Type: 3, ChaosSuccessRate: 41, ChaosMoney: 8000000, ChaosAmulet: 0)
+09:41:06 [PlusItemLevelMix][Failure][1][ThangCuoi] - (Type: 4, ChaosSuccessRate: 21, ChaosMoney: 10000000, ChaosAmulet: 0)
+09:43:24 [ChaosItemMix][Success][1][ThangCuoi] - (ChaosSuccessRate: 100, ChaosMoney: 1000000)
+09:45:09 [ChaosItemMix][Success][1][ThangCuoi] - (ChaosSuccessRate: 100, ChaosMoney: 1000000)

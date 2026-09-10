@@ -1,0 +1,725 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<ThangCuoi> 
+	<Message>
+		<Msg Index="0"   Text="Sự Kiện %s Còn %d Phút Nữa Sẽ Bắt Đầu" />
+		<Msg Index="1"   Text="Bạn Đã Đạt Đủ %d Reset Hôm Nay" />
+		<Msg Index="2"   Text="Giới Hạn Reset Hôm Nay Là %s Lần Nhé %s" />
+		<Msg Index="3"   Text="Tài Khoản: Thường" />
+		<Msg Index="4"   Text="Tài Khoản: Bạc" />
+		<Msg Index="5"   Text="Tài Khoản: Vàng" />
+		<Msg Index="6"   Text="Tài Khoản: Kim Cương" />
+		<Msg Index="7"   Text="Chúc Mừng %s Đã Là 1 Game Thủ Của Mu Online" />
+		<Msg Index="8"   Text="%s Đã Trực Tuyến" />
+		<Msg Index="9"   Text="Nhân Vật %s Vừa Tham Gia" />
+		<Msg Index="10"  Text="Đã Cộng %d WC Vào Tài Khoản Của Bạn" />
+		<Msg Index="11"  Text="Đã Cộng %d WP Vào Tài Khoản Của Bạn" />
+		<Msg Index="12"  Text="Đã Cộng %d GP Vào Tài Khoản Của Bạn" />
+		<Msg Index="13"  Text="Đã Trừ %d %s Vào Tài Khoản Của Bạn" />
+		<Msg Index="14"  Text="Sự Kiện Huyết Lâu Còn %d Phút Nữa Sẽ Bắt Đầu" />
+		<Msg Index="15"  Text="Sự Kiện Huyết Lâu Đã Đóng Lại" />
+		<Msg Index="16"  Text="Sự Kiện Huyết Lâu %d Sẽ Bắt Đầu Sau %d Phút Nữa" />
+		<Msg Index="17"  Text="Sự Kiện Huyết Lâu Đã Bắt Đầu" />
+		<Msg Index="18"  Text="Sự Kiện Huyết Lâu Đã Kết Thúc" />
+		<Msg Index="19"  Text="Tất Cả Quái Vật Đã Bị Tiêu Diệt" />
+		<Msg Index="20"  Text="Tất Cả Boss Đã Bị Tiêu Diệt" />
+		<Msg Index="21"  Text="Bạn Chưa Đủ Điều Kiện Để Tham Gia Huyết Lâu" />
+		<Msg Index="22"  Text="%s Đã Rớt Vũ Khí Angel" />
+		<Msg Index="23"  Text="%s Đã Nhặt Vũ Khí Angel" />
+		<Msg Index="24"  Text="%s Phá Hủy Cánh Cổng Huyết Lâu" />
+		<Msg Index="25"  Text="%s Phá Hủy Bức Tượng" />
+		<Msg Index="26"  Text="Bạn Tiêu Diệt %d / %d Quái" />
+		<Msg Index="27"  Text="%s Đã Nhận Quà!" />
+		<Msg Index="28"  Text="Chào Mừng Bạn Đến Với MU" />
+		<Msg Index="29"  Text="Phát Hiện Món Đồ Có Dấu Hiệu Trùng Lập Hãy Gọi Ngay Cho Admin" />
+		<Msg Index="30"  Text="Bạn Đã Hồi Sinh Tối Đa %d/%d" />
+		<Msg Index="31"  Text="Bạn Chưa Đủ %d Cấp Độ" />
+		<Msg Index="32"  Text="Bạn Chưa Đủ %d Reset" />
+		<Msg Index="33"  Text="Bạn Chưa Đủ %d Chaos" />
+		<Msg Index="34"  Text="Bạn Chưa Đủ %d Bless" />
+		<Msg Index="35"  Text="Bạn Chưa Đủ %d Soul" />
+		<Msg Index="36"  Text="Bạn Chưa Đủ %d Life" />
+		<Msg Index="37"  Text="Bạn Chưa Đủ %d Cre" />
+		<Msg Index="38"  Text="Cứ Từ Từ... Đừng Vội" />
+		<Msg Index="39"  Text="%s Đã Tái Sinh Lần %d" />
+		<Msg Index="40"  Text="Bạn Thiếu %d Reset Để Giao Dịch" />
+		<Msg Index="41"  Text="Bạn Thiếu %d Point Để Giao Dịch" />
+		<Msg Index="42"  Text="Giao Dịch Thành Công" />
+		<Msg Index="43"  Text="%s Reset Thành Công Lần Thứ %s" />
+		<Msg Index="44"  Text="Đã Cộng %d Ruud Vào Tài Khoản Của Bạn" />
+		<Msg Index="45"  Text="Đã Cộng %d ATM Vào Tài Khoản Của Bạn" />
+		<Msg Index="46"  Text="Không Thể Dùng Lúc Này" />
+		<Msg Index="47"  Text="Vui Lòng Chờ Giây Lát" />
+		<Msg Index="48"  Text="Vượt Quá %d Mức Chênh Lệch" />
+		<Msg Index="49"  Text="%s Đã Nhận %s Từ Vòng Quay May Mắn" />
+		<Msg Index="50"  Text="Bạn Còn Thiếu %d WC Nữa Để Quay" />
+		<Msg Index="51"  Text="Bạn Nhận Được %d WC" />
+		<Msg Index="52"  Text="Bạn Nhận Được %d WP" />
+		<Msg Index="53"  Text="Bạn Nhận Được %d PCP" />
+		<Msg Index="54"  Text="Bạn Nhận Được %d Ruud" />
+		<Msg Index="55"  Text="Bạn Đã Mở Rộng Ô Đồ Thứ %d" />
+		<Msg Index="56"  Text="Bạn Không Đủ Coin Để Mua. Cần %d" />
+		<Msg Index="57"  Text="Slot %d Đã Được Mở Khóa Rồi Mà" />
+		<Msg Index="58"  Text="58" />
+		<Msg Index="59"  Text="59" />
+		<Msg Index="60"  Text="Hỗn Nguyên Lâu Sẽ Đóng Cửa Sau %d Phút Nữa" />
+		<Msg Index="61"  Text="Hỗn Nguyên Lâu Đã Đóng Cửa" />
+		<Msg Index="62"  Text="Hỗn Nguyên Lâu %d Sắp Khai Mở Trong %d Phút Nữa" />
+		<Msg Index="63"  Text="Hỗn Nguyên Lâu Đã Bắt Đầu" />
+		<Msg Index="64"  Text="Hỗn Nguyên Lâu Đã Kết Thúc" />
+		<Msg Index="65"  Text="Không Xài Được Lệnh Này Ở Bản Đồ Này" />
+		<Msg Index="66"  Text="Bạn Cần Đủ %d Zen" />
+		<Msg Index="67"  Text="Yêu Cầu 2 Món Cùng Loại" />
+		<Msg Index="68"  Text="Chỉ Yêu Cầu Vũ Khí" />
+		<Msg Index="69"  Text="Chưa Đặt Đúng Vị Trí" />
+		<Msg Index="70"  Text="Yêu Cầu item Cùng Loại" />
+		<Msg Index="71"  Text="Yêu Cầu item Cùng Cấp" />
+		<Msg Index="72"  Text="Không Thể Cộng Đồ Này" />
+		<Msg Index="73"  Text="Không Thể Cộng Đồ Thần" />
+		<Msg Index="74"  Text="Thùng Đồ Đã Đầy" />
+		<Msg Index="75"  Text="Cộng Hưởng Thất Bại" />
+		<Msg Index="76"  Text="Cộng Hưởng Thành Công" />
+		<Msg Index="77"  Text="Bạn Không Phải Là VIP" />
+		<Msg Index="78"  Text="(%s)(%s) Đã Mở Cộng Hưởng" />
+		<Msg Index="79"  Text="Tôi Đã Sẵn Sàng" />
+		<Msg Index="80"  Text="Cần %d WP Mới Đủ %d WP Cho Giao Dịch" />
+		<Msg Index="81"  Text="Cần %d WC Mới Đủ %d WC Cho Giao Dịch" />
+		<Msg Index="82"  Text="Cần %d Zen Mới Đủ %d Zen Cho Giao Dịch" />
+		<Msg Index="83"  Text="Bạn Cần %d Zen Mới Gõ /post Được Nhé" />
+		<Msg Index="84"  Text="Phải Đủ %d Cấp Mới Xài Được /post Nhé" />
+		<Msg Index="85"  Text="Bạn Cần Tới %d Reset Mới Được post Bài" />
+		<Msg Index="86"  Text="Chờ %d Giây Nữa Rồi Mới post Tiếp Nhé" />
+		<Msg Index="87"  Text="Bạn Không Đủ Quyền Xài Lệnh Này Nhé" />
+		<Msg Index="88"  Text="%s %s" />
+		<Msg Index="89"  Text="Lệnh Này Chỉ Có Chúa Tể Mới Xài Được Nhé" />
+		<Msg Index="90"  Text="Không Có Quyền Xài Lệnh /add Đâu Nhé" />
+		<Msg Index="91"  Text="Đã Cộng %d Điểm, Point Dư Còn %d Điểm" />
+		<Msg Index="92"  Text="Không Còn Điểm Để Cộng Rồi Nhé" />
+		<Msg Index="93"  Text="Bạn Đâu Phải Sát Thủ Đâu Mà Rửa Tội" />
+		
+		<Msg Index="94"  Text="%s Đã Tiêu Diệt Kỵ Sĩ Hoàng Kim Giáp "/>
+		<Msg Index="95"  Text="%s Đã Tiêu Diệt Ác Quỷ Hoàng Kim Giáp"/>
+		<Msg Index="96"  Text="%s Đã Tiêu Diệt Quỷ Đá Hoàng Kim Giáp"/>
+		<Msg Index="97"  Text="%s Đã Tiêu Diệt Hoàng Kim Giáp Binh "/>
+		<Msg Index="98"  Text="%s Đã Tiêu Diệt Hoàng Kim Mộc Giáp "/>
+		<Msg Index="99"  Text="%s Đã Tiêu Diệt Xích Quỷ Hoàng Kim "/>
+		<Msg Index="100" Text="%s Đã Tiêu Diệt Chiến Binh Hoàng Kim "/>
+		<Msg Index="101" Text="%s Đã Tiêu Diệt Hỏa Diệm Hoàng Kim "/>
+		<Msg Index="102" Text="%s Đã Tiêu Diệt Kim Long "/>
+		<Msg Index="103" Text="%s Đã Tiêu Diệt Thỏ Hoàng Kim Giáp"/>
+		
+		<Msg Index="104" Text="%s Đã Tiêu Diệt Tiểu Linh Thạch"/>
+		<Msg Index="105" Text="%s Đã Tiêu Diệt Đại Linh Thạch"/>
+		<Msg Index="106" Text="%s Đã Tiêu Diệt Hồn Thạch"/>
+		<Msg Index="107" Text="%s Đã Tiêu Diệt Rồng Đỏ"	/>
+		<Msg Index="108" Text="%s Đã Tiêu Diệt Kundun" />
+		<Msg Index="109" Text="%s Đã Tiêu Diệt Quỷ Vương"/>
+		<Msg Index="110" Text="%s Đã Tiêu Diệt Selupan"/>
+		<Msg Index="111" Text="%s Đã Tiêu Diệt Medusa"/>
+		
+		<Msg Index="112" Text="%s Đã Tiêu Diệt Quyền Ma Vuong"/>
+		<Msg Index="113" Text="%s Đã Tiêu Diệt Long Vương Quỷ"/>
+		<Msg Index="114" Text="%s Đã Tiêu Diệt Huyết Vương Quỷ"/>
+		<Msg Index="115" Text="%s Đã Tiêu Diệt Phantom"/>
+		<Msg Index="116" Text="%s Đã Tiêu Diệt Anubis"/>
+		<Msg Index="117" Text="%s Đã Tiêu Diệt Thủy Hoàng Đế"/>
+		<Msg Index="118" Text="%s Đã Tiêu Diệt Ngưu Vương"/>
+		<Msg Index="119" Text="%s Đã Tiêu Diệt Hầu Vương"/>
+		<Msg Index="120" Text="%s Đã Tiêu Diệt Ma Thú Địa Ngục"/>
+		<Msg Index="121" Text="%s Đã Tiêu Diệt Viêm Địa Chúa"/>
+		<Msg Index="122" Text="%s Đã Tiêu Diệt Tà Thần Tướng"/>
+		<Msg Index="123" Text="%s Đã Tiêu Diệt Ma Thần Tướng"/>
+		<Msg Index="124" Text="%s Đã Tiêu Diệt Chiến Thần"/>
+		
+		<Msg Index="125" Text="%s Đã Tiêu Diệt Erohim Gold" />
+		<Msg Index="126" Text="%s Đã Tiêu Diệt KunDun Gold" />
+		<Msg Index="127" Text="%s Đã Tiêu Diệt Medusa Gold" />
+		<Msg Index="128" Text="%s Đã Tiêu Diệt Selupan Gold" />
+		<Msg Index="129" Text="%s Đã Tiêu Diệt Quyền Ma Vương" />
+		<Msg Index="130" Text="%s Đã Tiêu Diệt Long Ma Vương" />
+		<Msg Index="131" Text="%s Đã Tiêu Diệt Huyết Ma Vương" />
+		<Msg Index="132" Text="%s Đã Tiêu Diệt PhaRaoh" />
+		<Msg Index="133" Text="%s Đã Tiêu Diệt Thần Anubis" />
+		<Msg Index="134" Text="%s Đã Tiêu Diệt Thủy Hoàng Đế" />
+		<Msg Index="135" Text="%s Đã Tiêu Diệt Pegasus Blue" />
+		<Msg Index="136" Text="%s Đã Tiêu Diệt Pegasus Green" />
+		<Msg Index="137" Text="%s Đã Tiêu Diệt Pegasus Red" />
+		<Msg Index="138" Text="%s Đã Tiêu Diệt Ngưu Vương" />
+		<Msg Index="139" Text="%s Đã Tiêu Diệt Hầu Vương" />
+		<Msg Index="140" Text="%s Đã Tiêu Diệt Ma Thú Đại Ngục" />
+		<Msg Index="141" Text="%s Đã Tiêu Diệt Viêm Địa Chúa" />
+		<Msg Index="142" Text="%s Đã Tiêu Diệt Tà Thần Tướng" />
+		<Msg Index="143" Text="%s Đã Tiêu Diệt Ma Thần Tướng" />
+		<Msg Index="144" Text="%s Đã Tiêu Diệt Cua Giả" />
+		<Msg Index="145" Text="%s Đã Tiêu Diệt Cua Thật. Xuất Hiện Kho Báu Hoàng Tộc" />
+		<Msg Index="146" Text="%s Đã Tiêu Diệt Kho Báu Hoàng Tộc. Nhận Vật Phẩm Bí Ẩn" />
+		<Msg Index="147" Text="%s Đã đấm Quỷ Vương bay Màu" />
+		<Msg Index="148" Text="%s Đã Tiêu Diệt Medusa" />
+		<Msg Index="149" Text="%s Đã Tiêu Diệt Medusa Gold" />
+		<Msg Index="150" Text="%s Đã Tiêu Diệt Rồng Đỏ" />
+		<Msg Index="151" Text="%s Đã Tiêu Diệt Chiến Thần Vô Song" />
+		<Msg Index="152" Text="%s Đã Tiêu Diệt KunDun" />
+		<Msg Index="153" Text="153" />
+		<Msg Index="154" Text="154" />
+		<Msg Index="155" Text="155" />
+		<Msg Index="156" Text="156" />
+		<Msg Index="157" Text="157" />
+		<Msg Index="158" Text="158" />
+		<Msg Index="159" Text="159" />
+		<Msg Index="160" Text="160" />
+		<Msg Index="161" Text="161" />
+		<Msg Index="162" Text="162" />
+		<Msg Index="163" Text="163" />
+		<Msg Index="164" Text="164" />
+		<Msg Index="165" Text="165" />
+		<Msg Index="166" Text="166" />
+		<Msg Index="167" Text="167" />
+		<Msg Index="168" Text="168" />
+		<Msg Index="169" Text="169" />
+		<Msg Index="170" Text="170" />
+		<Msg Index="171" Text="Bạn Tiêu Diệt %d / %d Quái" />
+		<Msg Index="172" Text="%s Đã Tiêu Diệt Đủ %d Quái Ngọc Đã Vào Hòm Đồ" />
+		<Msg Index="173" Text="Không Được Reset Quá %d Lần Đâu" />
+		<Msg Index="174" Text="Không Được Reset Khi Còn Mặc Đồ Đâu" />
+		<Msg Index="175" Text="Không Tìm Thấy Mục Tiêu Để Track" />
+		<Msg Index="176" Text="Đã Tắt Nhận Lời Mời" />
+		<Msg Index="177" Text="Tạo Đồ Thành Công Rồi Nhé" />
+		<Msg Index="178" Text="Đã Bật Nhận Lời Mời Kết Bạn" />
+		<Msg Index="179" Text="Relife Thành Công Đã Relife %d Lần Rồi" />
+		<Msg Index="180" Text="Thiếu Vật Phẩm Nên Không Relife Được" />
+		<Msg Index="181" Text="Bạn Cần Thêm %d Reset Để Relife" />
+		<Msg Index="182" Text="Cần %d Zen Để Relife Nhé" />
+		<Msg Index="183" Text="Relife Quá Giới Hạn %d Rồi Đó" />
+		<Msg Index="184" Text="Tự Cộng Điểm: Bật (%d)" />
+		<Msg Index="185" Text="Tự Cộng Điểm: Tắt" />
+		<Msg Index="186" Text="Auto Reset : Bật" />
+		<Msg Index="187" Text="Auto Reset : Tắt" />
+		<Msg Index="188" Text="Thời Điểm Này Không Relife Được Đâu" />
+		<Msg Index="189" Text="Bạn Còn Thiếu %d Cấp Để Relife" />
+		<Msg Index="190" Text="Không Reset Được lúc Này Đâu" />
+		<Msg Index="191" Text="Cần Đạt %d Cấp Để Reset Nhé" />
+		<Msg Index="192" Text="Cần %d Zen Để Reset Nữa Nhé" />
+		<Msg Index="193" Text="Bạn Không Có Quyền Sử Dụng Reset" />
+		<Msg Index="194" Text="Chuyển Qua Rương Số %d Rồi Đó" />
+		<Msg Index="195" Text="Nhập Giá Trị Sai Rồi Tối Đa 10 Nhé" />
+		<Msg Index="196" Text="Thời Điểm Này Không Mở Kho Được Nhé" />
+		<Msg Index="197" Text="Bạn Đã Hoàn Thành Nhiệm Vụ. Xin Chúc Mừng!" />
+		<Msg Index="198" Text="Bạn Đã Làm nhiệm Vụ Cuối Cùng Rồi" />
+		<Msg Index="199" Text="Đã Xóa Án Tích Thành Công Mong Bạn Không Phạm Tội Lần 2" />
+		<Msg Index="200" Text="Sự Kiện"/>
+		<Msg Index="201" Text="Bắt Đầu" />
+		<Msg Index="202" Text="Kết Thúc" />
+		<Msg Index="203" Text="%s Nâng Cấp Thành Công %s" />
+		<Msg Index="204" Text="%s Đã Trả Đồ Cho Gobin Chaos" />
+		<Msg Index="205" Text="%s Nâng Cấp Thành Công Sói Tinh - Hoàng Kim" />
+		<Msg Index="206" Text="%s Nâng Cấp Xịt Sói Tinh - Hoàng Kim" />
+		<Msg Index="207" Text="Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ Của Chúng Tôi" />
+		<Msg Index="208" Text="Chế Độ Tự Đồng Ý Tạo Nhóm Đã Bật" />
+		<Msg Index="209" Text="Mỗi Ngày Chỉ Được Reset %d Lần Thôi" />
+		<Msg Index="210" Text="Mỗi Tuần Chỉ Được Reset %d Lần" />
+		<Msg Index="211" Text="Mỗi Tháng Được Reset %d Lần Nhé" />
+		<Msg Index="212" Text="Mỗi Ngày Chỉ Được relife %d Lần" />
+		<Msg Index="213" Text="Mỗi Tuần Được relife %d Lần Nhé" />
+		<Msg Index="214" Text="Relife Trong Tháng Chỉ %d Lần Thôi" />
+		<Msg Index="215" Text="Sự Kiện Quảng Trường Quỷ Sẽ Đóng Cửa Sau %d Phút" />
+		<Msg Index="216" Text="Sự Kiện Quảng Trường Quỷ Đóng Cửa" />
+		<Msg Index="217" Text="Sự Kiện Quảng Trường Quỷ %d Bắt Đầu Sau %d Phút" />
+		<Msg Index="218" Text="Sự Kiện Quảng Trường Quỷ Bắt Đầu" />
+		<Msg Index="219" Text="Sự Kiện Quảng Trường Quỷ Kết Thúc" />
+		<Msg Index="220" Text="Bạn Không Đủ Điều Kiện Để Tham Gia Quảng Trường" />
+		<Msg Index="221" Text="Sát Nhân Thì Không Thể Reset" />
+		<Msg Index="222" Text="%s Với %s Vô Đấu Trường Phệt Nhau Rồi Nhé" />
+		<Msg Index="223" Text="Đấu Trường Full Slot Hết Rồi Nhé" />
+		<Msg Index="224" Text="%s Đập %s Gãy Người Trong Đấu Trường" />
+		<Msg Index="225" Text="Người Chơi Không Online" />
+		<Msg Index="226" Text="Bạn Không Thể Thách Đấu Trong Thời Điểm Này" />
+		<Msg Index="227" Text="Đứa Đó Tự Động Từ Chối Kèo Thách Đấu Của Bạn Rồi" />
+		<Msg Index="228" Text="Đã gửi Lời Thách Đấu Tới Đối Phương Rồi Nhé" />
+		<Msg Index="229" Text="Thằng Kia Bị Kéo Vô Thách Đấu Rồi Đó" />
+		<Msg Index="230" Text="Bạn Đang Chiến Guild, Không Thách Đấu Được" />
+		<Msg Index="231" Text="Người Ta Đang Chiến Guild, Không Kèo Được" />
+		<Msg Index="232" Text="Không Thách Đấu Tại Bản Đồ Này Nhé" />
+		<Msg Index="233" Text="Đang Công Thành Chiến, Khỏi Kèo Đi" />
+		<Msg Index="234" Text="Không Tìm Thấy Tên Người Chơi Đó Nhé" />
+		<Msg Index="235" Text="Bạn Đang Trong Trạng Thái combat Rồi" />
+		<Msg Index="236" Text="Đối Phương Đang combat, Chờ chút" />
+		<Msg Index="237" Text="Đối Phương Từ Chối Lời Mời Rồi Nhé" />
+		<Msg Index="238" Text="Bạch Long Điện Sắp Đóng Cửa Trong %d Phút" />
+		<Msg Index="239" Text="Bạch Long Điện Đóng Cửa Rồi" />
+		<Msg Index="240" Text="Bạch Long Điện %d Bắt Đầu Sau %d Giây" />
+		<Msg Index="241" Text="Bạch Long Điện Bắt Đầu Rồi" />
+		<Msg Index="242" Text="Bạch Long Điện Kết Thúc" />
+		<Msg Index="243" Text="Bạn Không Đủ mạnh Để Vô Bạch Long Điện" />
+		<Msg Index="244" Text="Bạn Chưa Có vé Vô Bạch Long Điện Đâu Nhé" />
+		<Msg Index="245" Text="Thằng %s Làm Rớt Long Châu Rồi kìa" />
+		<Msg Index="246" Text="Thằng %s Nhặt Được Long Châu Ngon Lành Luôn" />
+		<Msg Index="247" Text="Ông Nội Moss ló Đầu Ra Rồi" />
+		<Msg Index="248" Text="Ông Nội Moss Lặn Mất Tăm" />
+		<Msg Index="249" Text="Giờ Này Không Move Được Đâu" />
+		<Msg Index="250" Text="Assassins Không Được Phép Move Nhé" />
+		<Msg Index="251" Text="Trang Bị Không Hợp Lệ, Move Cái Gì" />
+		<Msg Index="252" Text="Bạn Phải Đủ %d Cấp Mới Được Move Nhé" />
+		<Msg Index="253" Text="Phải Là Thành Viên Gens Mới Move Được Nhé" />
+		<Msg Index="254" Text="Bạn Cần %d Reset Để Move Chỗ Đó" />
+		<Msg Index="255" Text="Phải Đạt Max %d Reset Mới Move Được Nhé" />
+		<Msg Index="256" Text="Phải Max %d Cấp Mới Được Move Được Nhé" />
+		<Msg Index="257" Text="Move Cần Tới %d Zen Bạn Nhé" />
+		<Msg Index="258" Text="Ông Senior im re, Không Chịu Xuất Hiện" />
+		<Msg Index="259" Text="Senior Nghỉ Chơi Trong Công Thành Chiến" />
+		<Msg Index="260" Text="Phải Ở Bang Chủ Sở Hữu Lâu Đài Mới Dùng Được Senior" />
+		<Msg Index="261" Text="Chỉ Chủ Guild Mới Xài Senior Được Thôi Nhé" />
+		<Msg Index="262" Text="Guardsman Bị Cho Nghỉ Luôn Rồi" />
+		<Msg Index="263" Text="Bạn Đã Vô Bang Hội Thành Công Rồi Nhé" />
+		<Msg Index="264" Text="Bạn Chưa Đủ Điều Kiện Để tạo Guild Nhé" />
+		<Msg Index="265" Text="Shop Trống lốc Như ruộng hoang" />
+		<Msg Index="266" Text="Đang cưỡi pet Thì Move Kiểu Gì Bạn ơi" />
+		<Msg Index="267" Text="Bạn yếu xìu, Chưa Đủ trình Vô Double Goer Đâu Nhé" />
+		<Msg Index="268" Text="Dịch chuyển Thất Bại, Chịu khó chạy bộ Nhé" />
+		<Msg Index="269" Text="Giờ Không Đi Máp khác Được Đâu Nhé" />
+		<Msg Index="270" Text="Ice Walker Vừa Rồi Lên Từ BĂng Tuyết" />
+		<Msg Index="271" Text="Ice Walker Bị Đánh Tan xác Rồi Nhé" />
+		<Msg Index="272" Text="Phải Đủ 40 Cấp Mới Ném Được Món Này Nhé" />
+		<Msg Index="273" Text="Bạn Sẽ Được Move Trong %d Giây Nữa Nhé" />
+		<Msg Index="274" Text="Tới 80 Cấp Mới Được ném Món Này Nhé" />
+		<Msg Index="275" Text="1 Phút Nữa Chiến Trường Sẽ Tiếp tục" />
+		<Msg Index="276" Text="Phải Đeo Cánh Mới bay Được Tới Máp Này Nhé" />
+		<Msg Index="277" Text="Cổng Hatchery Lại Đóng Nữa Rồi" />
+		<Msg Index="278" Text="Chỉ Cộng Được Có %d Điểm Thôi à Nhé" />
+		<Msg Index="279" Text="Bạn Bị Câm Lặng Trong %d Giây Nhé" />
+		<Msg Index="280" Text="280 - Goc 276 - Chua co Mess" />
+		<Msg Index="281" Text="Nightmare lòi Ra Rồi Đánh lẹ Để Mở Cổng Refinement Tower" />
+		<Msg Index="282" Text="Nightmare Tiêu Rồi Cổng Refinement Tower Mở Toang Hoang" />
+		<Msg Index="283" Text="Hết Giờ Bạn Sẽ Bị Tống Cổ Ra Khỏi Sự Kiện" />
+		<Msg Index="284" Text="Selupan Xuất Hiện Cổng Hatchery Sẽ Đóng Sau %d Phút Nhé" />
+		<Msg Index="285" Text="Cổng Hatchery Đóng Cửa Rồi" />
+		<Msg Index="286" Text="%s Tiêu Diệt Selupan, Rơi Cả Đống Đồ xịn" />
+		<Msg Index="287" Text="Cổng Hatchery Sẽ Mở Lại Sau %d Phút Nữa" />
+		<Msg Index="288" Text="Cổng Kanturu Vừa Mở Ra" />
+		<Msg Index="289" Text="Cổng Hatchery Mở Rồi Đó Nhé" />
+		<Msg Index="290" Text="Vật Phẩm Này Đâu Phải Của Bạn Đâu Mà Nhặt" />
+		<Msg Index="291" Text="Đang Giao Dịch Mà Đòi Thoát Là Không Được Nhé" />
+		<Msg Index="292" Text="Đang Mở Rương Mà Đòi Thoát, Chịu Sao Nổi" />
+		<Msg Index="293" Text="Đang Nghịch Chaos Machine, Thoát Gì Mà Thoát" />
+		<Msg Index="294" Text="PET Còn Đang Luyện, Đừng Thoát Nhé" />
+		<Msg Index="295" Text="Đang Combat Thoát Gì sớm vậy" />
+		<Msg Index="296" Text="Lên Cấp Rồi Đó Nhé, Chúc Mừng" />
+		<Msg Index="297" Text="Master Đã Đạt Cấp Độ Tối Đa!" />
+		<Msg Index="298" Text="Tháp Tinh Luyện Sẽ Đóng Cửa Sau 60 Phút Nữa Nhé" />
+		<Msg Index="299" Text="Còn 20 Phút Nữa Là Đóng Cửa Tháp Tinh Luyện Nhé" />
+		<Msg Index="300" Text="Tự Nói Chuyện Với Mình Là Sao?" />
+		<Msg Index="301" Text="Sự Kiện Vua MU Kết Thúc, Hẹn Bạn Lần Sau Nhé" />
+		<Msg Index="302" Text="Sự Kiện Vua MU Sẽ Bắt Đầu Sau %d Phút Nữa Nhé" />
+		<Msg Index="303" Text="Bang Hội %s Đã Chiếm Được Lâu Đài Trong Sự Kiện Vua MU" />
+		<Msg Index="304" Text="Vua MU Sẽ Khởi Động Sau %d Giây Nữa Nhé" />
+		<Msg Index="305" Text="Bạn Cần xóa Hết item trên Người Trước Đã" />
+		<Msg Index="306" Text="Bạn Đâu Có Vô Bang Hội Đâu Mà Tham Gia" />
+		<Msg Index="307" Text="Bang Hội Bạn Đã Chiếm Được Lâu Đài Rồi" />
+		<Msg Index="308" Text="Bạn đứng Sai Chỗ Rồi Nhé" />
+		<Msg Index="309" Text="Bang Hội Cần Ít Nhất %d Thành Viên Mới Tham Chiến Được" />
+		<Msg Index="310" Text="Xin lỗi Nhé, Bang Hội Bạn Đang Giữ Lâu Đài Rồi" />
+		<Msg Index="311" Text="[Vua MU] Sự Kiện Sẽ Kết Thúc Sau %d Phút Nữa" />
+		<Msg Index="312" Text="Bạn Vừa Cưới %s, Chúc Mừng 2 Bạn Nhé" />
+		<Msg Index="313" Text="Bạn Vừa xóa Hết Đồ Trong Túi" />
+		<Msg Index="314" Text="Bản Quyền Thuộc Về Webzen. Phát Triển Bởi DONPV" />
+		<Msg Index="315" Text="%s Đã Tiễn %s Về Thành" />
+		<Msg Index="316" Text="%s Đã Hạ Sát %s" />
+		<Msg Index="317" Text="%s Đổi Đồ Exc Nhận Được %d WCoinC Và %d WCoinP, Hãy Chăm Chỉ Hơn Nhé!" />
+		<Msg Index="318" Text="Bạn Đâu Thể Cưới Chính Mình Được Đâu" />
+		<Msg Index="319" Text="Thêm VIP Thành Công Rồi Nhé" />
+		<Msg Index="320" Text="Tài Khoản Này Tìm Không Thấy" />
+		<Msg Index="321" Text="%s – Giờ Thì Bạn Không Cần Tôi Giúp Nữa Rồi" />
+		<Msg Index="322" Text="%s – Gói VIP Của Bạn Không Dùng Được Buff Này Nhé" />
+		<Msg Index="323" Text="%s – Cần %d Zen Để Dùng Nhé" />
+		<Msg Index="324" Text="%s – Cần %d PCPoints Mới Buff Được" />
+		<Msg Index="325" Text="%s – Phải Thuộc Phe Vanert Mới Xài Được Nhé" />
+		<Msg Index="326" Text="%s – Bạn Phải Thuộc Phe Duprian Mới Dùng Được" />
+		<Msg Index="327" Text="%s – Bạn Phải Là Người Của nhà Duprian Mới Nhận Được" />
+		<Msg Index="328" Text="%s – Cái Này Dành Cho Phe Vanert Nhé" />
+		<Msg Index="329" Text="%s – Phải Có %d Điểm Gia Tộc Mới Dùng Được" />
+		<Msg Index="330" Text="%s – Thời gian Buff: %d Phút" />
+		<Msg Index="331" Text="%s – Đã Trừ %d Zen Rồi Nhé" />
+		<Msg Index="332" Text="%s – Đã Trừ %d PCPoint(s) Rồi" />
+		<Msg Index="333" Text="%s – Buff Đã Được áp Dụng Thành Công" />
+		<Msg Index="334" Text="Bạn Đã Có Người Rước Rồi Nhé" />
+		<Msg Index="335" Text="Người Ta Có vợ/Chồng Rồi Nhé, Đừng Chen Ngang" />
+		<Msg Index="336" Text="Xài Như Vậy Nè: [/marry to 'Tên'; | /marry divorce | /marry Track or Trace]" />
+		<Msg Index="337" Text="Tuần Đầu Mới Cưới Mà Đòi Ly Hôn, Trẻ Con À" />
+		<Msg Index="338" Text="Bạn Vừa Ly Hôn, Giờ Là Người Tự Do Rồi Đó" />
+		<Msg Index="339" Text="Bạn Còn Độc Thân Mà, Ly Hôn Gì TRời" />
+		<Msg Index="340" Text="Theo Dõi Thành Công Rồi Đó Nhé" />
+		<Msg Index="341" Text="Đã Truy Tìm Xong Xuôi Luôn" />
+		<Msg Index="342" Text="%s Vừa Kết DuYên Với %s" />
+		<Msg Index="343" Text="%s Và %s Đường Ai Lấy Đi Rồi" />
+		<Msg Index="344" Text="[Hệ Thống Kết Hôn] Nhân Vật" />
+		<Msg Index="345" Text="Giữa %s Và %s Kết tóc se tơ" />
+		<Msg Index="346" Text="[Hệ Thống Kết Hôn] Không Hỗ Trợ Tình Huynh Đệ Kiểu Đó Nhé" />
+		<Msg Index="347" Text="Bạn Cần Đạt Ít Nhất Cấp %d Mới Xài Lệnh Này Được" />
+		<Msg Index="348" Text="Người Kia Cũng Phải Cấp %d Trở Lên Mới Được" />
+		<Msg Index="349" Text="Lệnh: [/class dw, dk, elf, mg, dl, su]" />
+		<Msg Index="350" Text="Phải Chọn class khác Với Bạn Mới Đổi Được Nhé" />
+		<Msg Index="351" Text="Lệnh Này Chỉ Dùng Trong Thành phố Thôi Nhé" />
+		<Msg Index="352" Text="Chưa Biết: %d %d" />
+		<Msg Index="353" Text="Buff cleanned" />
+		<Msg Index="354" Text="Người Chơi Đang Online : %d Người" />
+		<Msg Index="355" Text="355" />
+		<Msg Index="356" Text="356" />
+		<Msg Index="357" Text="357" />
+		<Msg Index="358" Text="358" />
+		<Msg Index="359" Text="359" />
+		<Msg Index="360" Text="Bạn Cần Có Ít Nhất %d Zen Để Xài Lệnh Này" />
+		<Msg Index="361" Text="Phải đứng Đúng Vị Trí Ở Devias2 Nhé Nhé" />
+		<Msg Index="362" Text="Người Kia Cũng Phải đứng Đúng Chỗ Ở Devias2 Nữa" />
+		<Msg Index="363" Text="Thông tin: [Cấp Tối thiểu: %d | Phí Truy Tìm: %d Zen]" />
+		<Msg Index="364" Text="Không Ly Hôn Được Khi Người Ta Đang offline" />
+		<Msg Index="365" Text="Người Kia Đang offline Mất Rồi" />
+		<Msg Index="366" Text="Class Này Chưa Mở Đâu Nhé" />
+		<Msg Index="367" Text="Nhân Vật %s Hiện Không online Nhé" />
+		<Msg Index="368" Text="Thằng Balgass Nhập Phe Với hạm Đội Kundun, Chuẩn Bị Đánh Pháo Đài Crywolf" />
+		<Msg Index="369" Text="Binh Lính Của Balgass Đã Sẵn Sàng Để Xông Vô Crywolf Rồi Đó" />
+		<Msg Index="370" Text="Một Đám Lính Balgass Đang Đi Diễu Hành Tới Pháo Đài Crywolf" />
+		<Msg Index="371" Text="Hạm Đội Balgass Đang Lù Lù Tiến Gần Tới Crywolf" />
+		<Msg Index="372" Text="Không Có Elf CAnh Bàn Thờ Nên Tượng Sói Linh Thiêng Bị Bỏ Trống" />
+		<Msg Index="373" Text="Balgass Sống Dai Như Đỉa, Còn Sống Tới Cuối Trận" />
+		<Msg Index="374" Text="Thất Thủ Rồi Balgass Đã Chiếm Tượng Sói Mất Tiêu" />
+		<Msg Index="375" Text="Phòng Thủ Thành Công Giữ Được Tượng Sói Rồi Nhé" />
+		<Msg Index="376" Text="Chuẩn Bị Kết Nối Bàn Thờ Sói Sau %d Giây Nữa Nhé" />
+		<Msg Index="377" Text="Chuẩn Bị Kết Nối Bàn Thờ Sói Sau %d Phút Nữa Nhé" />
+		<Msg Index="378" Text="Hạm Đội Balgass Sẽ Tấn Công Trong %d Giây Nữa" />
+		<Msg Index="379" Text="Hạm Đội Balgass Sẽ Tấn Công Trong %d Phút Nữa" />
+		<Msg Index="380" Text="Không Có Elf Giữ Bàn Thờ, Tượng Sói Linh Thiêng Bị Bỏ Mặc Luôn" />
+		<Msg Index="381" Text="Balgass Tới nơi Rồi Bảo Vệ Tượng Sói mau Lên" />
+		<Msg Index="382" Text="Binh Đoàn Balgass Bắt Đầu đánh Vô Tượng Sói" />
+		<Msg Index="383" Text="Hạm Đội Balgass Bị Đập Tan Nát Nhờ Các Anh Hùng Đó Nhé" />
+		<Msg Index="384" Text="Hạng MvP: %d" />
+		<Msg Index="385" Text="Kinh Nghiệm MvP: %d" />
+		<Msg Index="386" Text="Thằng Balgass Bị %s Tiễn Về TRời" />
+		<Msg Index="387" Text="Balgass Đã Bị diệt Rồi Nhé" />
+		<Msg Index="388" Text="Dark Elf %d Đã Bị %s đánh Cho bAnh xác" />
+		<Msg Index="389" Text="Điểm MvP: %d" />
+		<Msg Index="390" Text="Đã Kết Nối Với Bàn Thờ %d Rồi" />
+		<Msg Index="391" Text="%s Đã Nối Xong Với Bàn Thờ %d Nhé" />
+		<Msg Index="392" Text="Bàn Thờ %d Đã Được Kết Nối Ngon Lành" />
+		<Msg Index="393" Text="Chưa Tới Thời Điểm Để Kết Nối Bàn Thờ %d Nhé" />
+		<Msg Index="394" Text="Bàn Thờ %d Bị Kết Nối Quá 2 Lần Rồi" />
+		<Msg Index="395" Text="Vị Trí Kết Nối Với Bàn Thờ %d Sai Rồi" />
+		<Msg Index="396" Text="%s Đang Cố Gắng Gài Vô Bàn Thờ %d" />
+		<Msg Index="397" Text="5 Giây Nữa Sẽ Tự Động Kết Nối Với Bàn Thờ" />
+		<Msg Index="398" Text="Đứng Yên, Đừng Di Chuyển Khi Đang Kết Nối" />
+		<Msg Index="399" Text="Kết Nối Với Bàn Thờ %d Bị Hủy Ngang" />
+		<Msg Index="400" Text="Khiên Bảo Vệ Tượng Sói Đã Tan biến Rồi" />
+		<Msg Index="401" Text="Số Lần Kết Nối: %d, Máu Tượng: %d" />
+		<Msg Index="402" Text="Khiên Bảo Vệ Tượng Sói Đã Được Dựng Lại Rồi" />
+		<Msg Index="403" Text="Cần Elf Cấp 260 Trở Lên Mới Kết Nối Được Nhé" />
+		<Msg Index="404" Text="Không Tìm Thấy Nhân Vật Nào Hết" />
+		<Msg Index="405" Text="Lệnh: [/Phần Thưởng Loại Giá Trị]" />
+		<Msg Index="406" Text="Loại Phần Thưởng Này Chưa Hỗ Trợ" />
+		<Msg Index="407" Text="Số Thưởng vượt Quá Mức Cho Phép Rồi" />
+		<Msg Index="408" Text="Thêm Phần Thưởng Thành Công Rồi Đó Nhé" />
+		<Msg Index="409" Text="Không Tự Thưởng Cho Mình Được Nhé" />
+		<Msg Index="410" Text="Lệnh: [/Tải Lại Loại | Ví dụ: /Tải Lại Chung]" />
+		<Msg Index="411" Text="Tải Lại Thành Công, Chiến Tiếp Thôi" />
+		<Msg Index="412" Text="Lệnh: [/Loại Giá Trị giải Thưởng]" />
+		<Msg Index="413" Text="Tên Phải Dài Từ 4 Đến 10 Ký Tự Mới Hợp Lệ" />
+		<Msg Index="414" Text="Tài Khoản Bạn Không Được Bật Chức Năng Này" />
+		<Msg Index="415" Text="Đợi %d Giây Nữa Mới Dùng Lại Được Nhé" />
+		<Msg Index="416" Text="Công Thành Chiến Kết Thúc Rồi Nhé" />
+		<Msg Index="417" Text="Bắt Đầu Đăng Ký Công Thành Chiến" />
+		<Msg Index="418" Text="Bắt Đầu Đăng Ký Huy Hiệu Công Thành Chiến" />
+		<Msg Index="419" Text="Bắt Đầu Giai đoạn Chọn Guild Tham Chiến" />
+		<Msg Index="420" Text="Chọn Guild Tham Gia Công Thành Đã Xong" />
+		<Msg Index="421" Text="Bắt Đầu Chuẩn Bị Cho Công Thành Chiến" />
+		<Msg Index="422" Text="Công Thành Chiến Sẽ Nổ Ra Sau %d Phút Nữa" />
+		<Msg Index="423" Text="Trận Công Lâu Đài Đang diễn Ra kìa" />
+		<Msg Index="424" Text="Bang Hội %s Bảo Vệ Thành Công Lâu Đài" />
+		<Msg Index="425" Text="Guild %s Giờ Là Chủ Mới Của Lâu Đài" />
+		<Msg Index="426" Text="Chủ Lâu Đài Chưa Được xác định Nhé" />
+		<Msg Index="427" Text="Chỉ Người Giữ Tượng Mới Được Vô Đó" />
+		<Msg Index="428" Text="Tên Này Có Người Đăng Ký Mất Rồi" />
+		<Msg Index="429" Text="Đổi Tên Thất Bại Rồi, Thử Lại Nhé" />
+		<Msg Index="430" Text="Nhân Vật %s Giờ Đã Thành Tên Mới Là %s" />
+		<Msg Index="431" Text="Bạn Phải Rời Bang Hội Trước Khi Đổi Tên" />
+		<Msg Index="432" Text="%s Được Phong Lên Làm Phó Hội. Cùng Bang Chủ Dẫn Dắt Anh Em!" />
+		<Msg Index="433" Text="%s Được Phong Làm Lãnh Đạo Trận Chiến.Cùng Chủ Hội Và Phó Hội Dẫn Dắt Anh Em!" />
+		<Msg Index="434" Text="%s Bị Giáng Xuống Làm Hội viên" />
+		<Msg Index="435" Text="Kiểu Bang Hội %s Đã Đổi Thành %d" />
+		<Msg Index="436" Text="Bang Hội Vừa Nhập Phe Với Liên Minh %s" />
+		<Msg Index="437" Text="Bang Hội Giờ Là Kẻ Thù Với %s" />
+		<Msg Index="438" Text="Guild %s Đã Vô Liên Minh %s" />
+		<Msg Index="439" Text="Bang Hội rút Khỏi Phe Rồi" />
+		<Msg Index="440" Text="Guild %s Đã Rời Khỏi Liên Minh %s" />
+		<Msg Index="441" Text="Bang Hội Không Còn Liên Minh Với %s Nữa" />
+		<Msg Index="442" Text="Bang Hội Không Còn Là Kẻ Thù Với %s Nữa" />
+		<Msg Index="443" Text="Liên Minh %s Bị Bể Rồi, Ai Về Nhà Lấy" />
+		<Msg Index="444" Text="Bây Giờ Chưa Xài Được Lệnh Này Nhé" />
+		<Msg Index="445" Text="Bạn Và Đối Thủ Phải Cùng Cấp %d Mới Được PK Tay Đôi" />
+		<Msg Index="446" Text="Lỗi Cấm, vui Lòng Kiểm Tra Lại" />
+		<Msg Index="447" Text="Tài Khoản Đã Bị Cấm Thành Công" />
+		<Msg Index="448" Text="Không Được Triệu Hồi Life Stone Ngoài Công Thành" />
+		<Msg Index="449" Text="Chỉ Phe Tấn Công Mới Gọi Life Stone Được" />
+		<Msg Index="450" Text="Triệu Hồi Life Stone Rồi Nhé" />
+		<Msg Index="451" Text="Không Được Triệu Hồi Life Stone Trong Tháp Rồng" />
+		<Msg Index="452" Text="Triệu Hồi Life Stone Thành Công" />
+		<Msg Index="453" Text="Life Stone Triệu Hồi Thất Bại" />
+		<Msg Index="454" Text="Nhân Vật Bị Cấm Thành Công" />
+		<Msg Index="455" Text="Sự Kiện Kết Thúc – Không Ai Chiến Thắng" />
+		<Msg Index="456" Text="Chạy Tới Tọa Độ x %d y %d Cho Nhanh Nhé" />
+		<Msg Index="457" Text="Sự Kiện Đã Hủy" />
+		<Msg Index="458" Text="458" />
+		<Msg Index="459" Text="459" />
+		<Msg Index="460" Text="Bắt Đầu Tại %s Rồi" />
+		<Msg Index="461" Text="Sự Kiện Còn %d Phút Nữa Là Kết Thúc" />
+		<Msg Index="462" Text="Sự Kiện Sẽ Kết Thúc Sau %d Giây Nữa" />
+		<Msg Index="463" Text="Chiến Thắng Thuộc Về %s" />
+		<Msg Index="464" Text="Không Được Gọi Binh Lính Ngoài Công Thành Chiến" />
+		<Msg Index="465" Text="Chỉ Phe Thủ Thành Mới Gọi Lính Được" />
+		<Msg Index="466" Text="Chỉ Chủ Bang Và Phó Bang Mới Gọi Lính Được" />
+		<Msg Index="467" Text="Quá Số Lượng Lính Cho Phép Rồi" />
+		<Msg Index="468" Text="Triệu Hồi Lính Thành Công" />
+		<Msg Index="469" Text="Gọi Lính Không Thành Công" />
+		<Msg Index="470" Text="[Sự Kiện] Đóng Lại Trong %d Giây Nữa" />
+		<Msg Index="471" Text="[Sự Kiện] Hết Thời gian Tham Gia Rồi Nhé" />
+		<Msg Index="472" Text="[Sự Kiện] Đã Hủy vì Lý Do Bất Khả Kháng" />
+		<Msg Index="473" Text="[Sự Kiện] %s Vừa Khởi Động Một Sự Kiện Mới" />
+		<Msg Index="474" Text="[Sự Kiện] Nhập /Thamgia Để Vô liền" />
+		<Msg Index="475" Text="[Sự Kiện] Đã Thêm Người Chơi %s Vào Danh Sách" />
+		<Msg Index="476" Text="Còn %d Giây Nữa Là Kết Thúc Tìm GM" />
+		<Msg Index="477" Text="Hết Giờ Tìm GM Mà Không Ai Thắng Hết" />
+		<Msg Index="478" Text="Tìm GM Bị Hủy Rồi Nhé" />
+		<Msg Index="479" Text="Tìm GM %s Đã Bắt Đầu Ở Máp %s: %d/%d" />
+		<Msg Index="480" Text="Máy Chủ Đã Tắt" />
+		<Msg Index="481" Text="Máy Chủ Sẽ Tự Tắt Sau %d Giây" />
+		<Msg Index="482" Text="Vật Phẩm Bị Trùng, Báo admin xử Lý Nhé" />
+		<Msg Index="483" Text="Khoá Chat Của Bạn Đã Hết hạn" />
+		<Msg Index="484" Text="Bạn Sẽ Bị Thoát Game Sau %d Giây Nữa" />
+		<Msg Index="485" Text="Bật Tự Vệ Với %s" />
+		<Msg Index="486" Text="Tắt Tự Vệ Với %s" />
+		<Msg Index="487" Text="Máy Chủ Sẽ Tự Tắt Sau 1 Phút" />
+		<Msg Index="488" Text="Máy Chủ Sẽ Tự Tắt Sau 3 Phút" />
+		<Msg Index="489" Text="Máy Chủ Sẽ Tự Tắt Sau 5 Phút" />
+		<Msg Index="490" Text="Trận Chiến Sẽ Bắt Đầu Sau 10 Giây Nữa" />
+		<Msg Index="491" Text="Thằng %s lụm Được %d Viên ngọc quý" />
+		<Msg Index="492" Text="492" />
+		<Msg Index="493" Text="493" />
+		<Msg Index="494" Text="494" />
+		<Msg Index="495" Text="495" />
+		<Msg Index="496" Text="496" />
+		<Msg Index="497" Text="497" />
+		<Msg Index="498" Text="498" />
+		<Msg Index="499" Text="Nhớ gỡ Errtel Ra Trước Khi Đặt Nhé" />
+		<Msg Index="500" Text="Sự Kiện Vua MU Đã Chính Thức Bắt Đầu Rồi Đó" />
+		<Msg Index="501" Text="501" />
+		<Msg Index="502" Text="Xin Chúc Mừng Bạn Đã Được Tặng Một Món quà" />
+		<Msg Index="503" Text="Bạn Nhận Hết quà Rồi Đó Nhé" />
+		<Msg Index="504" Text="[Sống Hoặc Chết] Sự Kiện Đóng Cửa Rồi" />
+		<Msg Index="505" Text="Sự Kiện [Sống Hoặc Chết] Bắt Đầu Rồi Nhé" />
+		<Msg Index="506" Text="[Sống Hoặc Chết] Hết Giờ" />
+		<Msg Index="507" Text="[Sống Hoặc Chết] Hủy Luôn Rồi Nhé" />
+		<Msg Index="508" Text="[Sống Hoặc Chết] Đã Mở (Tối Đa %d Người Vô Tham Gia)" />
+		<Msg Index="509" Text="[Sống Hoặc Chết] Gõ Lệnh /Thamgia Đi Nhé" />
+		<Msg Index="510" Text="[Sống Hoặc Chết] Người Chơi %d: %s Đã Được Thêm Vào" />
+		<Msg Index="511" Text="[Sống Hoặc Chết] %s Đã giành Chiến Thắng" />
+		<Msg Index="512" Text="[Sống Hoặc Chết] Đặt đạn Vô ổ súng..." />
+		<Msg Index="513" Text="[Sống Hoặc Chết] Quay ổ đạn..." />
+		<Msg Index="514" Text="[Sống Hoặc Chết] Bóp cò..." />
+		<Msg Index="515" Text="[Sống Hoặc Chết] NỔ SÚNG" />
+		<Msg Index="516" Text="[Sống Hoặc Chết] HeadShot %s Bị Loại" />
+		<Msg Index="517" Text="[Sống Hoặc Chết] %s Thoát Chết Trong gang tấc" />
+		<Msg Index="518" Text="[Vua Của MU] Phát Thưởng lớn Luôn" />
+		<Msg Index="519" Text="[Vua MU] Bang Hội %s Thắng Sự Kiện Rồi Nhé" />
+		<Msg Index="520" Text="[Vua Của MU] Thời gian Giữ Lâu Đài: %d Phút" />
+		<Msg Index="521" Text="[Vua MU] Tất Cả Thành Viên online Của Bang Hội đều Nhận quà:" />
+		<Msg Index="522" Text="[Vua MU] 10 WC Quá Đã" />
+		<Msg Index="523" Text="[Vua MU] Nhân Vật Đóng góp nhiều Nhất:" />
+		<Msg Index="524" Text="[Vua MU] %d°: %s (Bang Hội: %s)" />
+		<Msg Index="525" Text="[Vua MU] Nhận 10 WC mỗi Lần" />
+		<Msg Index="526" Text="[Vua MU] Không Có Ai Thắng Hết" />
+		<Msg Index="527" Text="527" />
+		<Msg Index="528" Text="528" />
+		<Msg Index="529" Text="529" />
+		<Msg Index="530" Text="530" />
+		<Msg Index="531" Text="531" />
+		<Msg Index="532" Text="532" />
+		<Msg Index="533" Text="Lệnh: [/top Loại class | Ví dụ: /top rr dk]" />
+		<Msg Index="534" Text="Class Hỗ Trợ: dk, dw, fe, mg, dl, su" />
+		<Msg Index="535" Text="Không Có Kết quả Nào Hết trƠn" />
+		<Msg Index="536" Text="%d° Hạng: %s (%d Điểm)" />
+		<Msg Index="537" Text="Điểm Đã Được Reset Lại Nhé" />
+		<Msg Index="538" Text="%s Đạt hạng %s Luôn Rồi" />
+		<Msg Index="539" Text="Bạn Đạt hạng %s Rồi Đó Nhé" />
+		<Msg Index="540" Text="Tui Bị Khoá Mất Tiêu Rồi =(" />
+		<Msg Index="541" Text="Bạn Cần Có 64 mảnh giống Nhéu Trong Kho Mới Đổi Được Nhé" />
+		<Msg Index="542" Text="Cảm Ơn Bạn, tui Đã Nhận Đồ Và trả Thưởng Xong" />
+		<Msg Index="543" Text="Xin lỗi Nhé, tui Không thích mấy Món Đồ Này" />
+		<Msg Index="544" Text="Bạn Đã Đổi Đồ Thành Công Để lấy Phần Thưởng" />
+		<Msg Index="545" Text="545" />
+		<Msg Index="546" Text="546" />
+		<Msg Index="547" Text="547" />
+		<Msg Index="548" Text="548" />
+		<Msg Index="549" Text="549" />
+		<Msg Index="550" Text="550" />
+		<Msg Index="551" Text="Reset Hôm Nay +%d Lần - Giới Hạn Reset Hôm Nay Là : %d Lần" />
+		<Msg Index="552" Text="[PickUp %s] Bật Rồi Nhé" />
+		<Msg Index="553" Text="[PickUp %s] Đã Bị Tắt" />
+		<Msg Index="554" Text="[PickUp] Đã Tắt Luôn Rồi Nhé" />
+		<Msg Index="555" Text="Reset Điểm Master Thành Công" />
+		<Msg Index="556" Text="Lỗi Rồi Reset Điểm Master Không Được" />
+		<Msg Index="557" Text="[VIP] Bạn Không Có Đủ Điều Kiện Để Mua" />
+		<Msg Index="558" Text="[VIP] Bạn Vừa Đăng Ký Gói %s" />
+		<Msg Index="559" Text="[VIP] Gói Bạn Chọn Thấp Hơn Gói Hiện Tại Đó" />
+		<Msg Index="560" Text="560" />
+		<Msg Index="561" Text="561" />
+		<Msg Index="562" Text="562" />
+		<Msg Index="563" Text="Bật MuHelper Rồi Thì Không Xài Tấn Công tùy Chỉnh Được Nhé" />
+		<Msg Index="564" Text="Không Được Xài MuHelper Cùng lúc Với Tấn Công tùy Chỉnh" />
+		<Msg Index="565" Text="Không Được Dùng vượt Cấp: %d" />
+		<Msg Index="566" Text="Dùng Hết: %d WC" />
+		<Msg Index="567" Text="Dùng Hết: %d WP" />
+		<Msg Index="568" Text="Dùng Hết: %d GP" />
+		<Msg Index="569" Text="Phe Liên Minh Đã giành Chiến Thắng Sự Kiện" />
+		<Msg Index="570" Text="Phe Phantom giành Chiến Thắng Sự Kiện Rồi" />
+		<Msg Index="571" Text="[GvGEvent] Bạn Thiếu Vật Phẩm Để Vô Sự Kiện" />
+		<Msg Index="572" Text="[GvGEvent] Phải Có Bang Mới Vô Được Nhé" />
+		<Msg Index="573" Text="[GvGEvent] Chủ Bang Phải Vô Trước" />
+		<Msg Index="574" Text="[GvGEvent] Guild %s Vừa ghi Được %d Điểm" />
+		<Msg Index="575" Text="[GvGEvent] Bị Hủy Giữa chừng Rồi Nhé" />
+		<Msg Index="576" Text="[GvGEvent] Bang Hội %s Đã Thắng Sự Kiện Luôn Rồi" />
+		<Msg Index="577" Text="[Đổi Coin] Cần: %d WC Để Đổi" />
+		<Msg Index="578" Text="[Đổi Coin] Cần: %d WP Để Đổi" />
+		<Msg Index="579" Text="[Đổi Coin] Cần: %d GP Để Đổi" />
+		<Msg Index="580" Text="Tìm GM Đi Rồi Giao Dịch liền Tay Nhé" />
+		<Msg Index="581" Text="%s Đã Thắng Sự Kiện Tìm GM, Quá ghê" />
+		<Msg Index="582" Text="Sự Kiện Tìm GM Kết Thúc Sau %d Phút" />
+		<Msg Index="583" Text="[PEGAPEGA] Đã Đóng Lại Rồi Nhé" />
+		<Msg Index="584" Text="[PEGAPEGA] Sự Kiện Bắt Đầu Rồi Mà Bị Từ Chối Luôn" />
+		<Msg Index="585" Text="[PEGAPEGA] Hết Giờ Rồi Nhé" />
+		<Msg Index="586" Text="[PEGAPEGA] Bị Hủy Ngang Luôn Rồi" />
+		<Msg Index="587" Text="[PEGAPEGA] Sự Kiện Đã Mở Rồi" />
+		<Msg Index="588" Text="[PEGAPEGA] Nhập /muon Để Tham Gia Nhé" />
+		<Msg Index="589" Text="[PEGAPEGA] Thêm Người Chơi %s Vào Danh Sách" />
+		<Msg Index="590" Text="[PEGAPEGA] %s Là Người Chiến Thắng Chung cuộc" />
+		<Msg Index="591" Text="[PEGAPEGA] %s Bị bắt Rồi Nhé" />
+		<Msg Index="592" Text="[Nhiệm Vụ %d] Phải Cấp %d Trở Lên Mới Làm Được" />
+		<Msg Index="593" Text="[Nhiệm Vụ %d] Phải Có %d Lần Reset Trở Lên Nhé" />
+		<Msg Index="594" Text="[Nhiệm Vụ %d] Cần %d Lần Master Reset Mới Đủ Điều Kiện" />
+		<Msg Index="595" Text="[Nhiệm Vụ %d] Phải Có Ít Nhất %d Zen Nhé" />
+		<Msg Index="596" Text="596" />
+		<Msg Index="597" Text="[Nhiệm Vụ %d] Cần Gói VIP phù Hợp Để Làm" />
+		<Msg Index="598" Text="[Nhiệm Vụ %d] Cần Vật Phẩm: %s" />
+		<Msg Index="599" Text="599" />
+		<Msg Index="600" Text="[Nhiệm Vụ] Xin Chúc Mừng, Bạn Đã hoàn tất toàn bộ nhiệm Vụ" />
+		<Msg Index="601" Text="[PvP] %s Đấu %s, Bắt Đầu Quánh lộn" />
+		<Msg Index="602" Text="[PvP] %s %d x %d %s" />
+		<Msg Index="603" Text="[PvP] %s Đã giành Chiến Thắng Rồi Nhé" />
+		<Msg Index="604" Text="[PvP] Bắt Đầu Rồi bà con ơi" />
+		<Msg Index="605" Text="[MaTaMaTa] Đóng Cửa Rồi Nhé" />
+		<Msg Index="606" Text="[MaTaMaTa] Sự Kiện Bắt Đầu Rồi kìa" />
+		<Msg Index="607" Text="[MaTaMaTa] Hết Giờ Mất Tiêu" />
+		<Msg Index="608" Text="[MaTaMaTa] Bị Hủy Rồi Nhé" />
+		<Msg Index="609" Text="[MaTaMaTa] Đã Mở Tối Đa %d Người Vô Nhé" />
+		<Msg Index="610" Text="[MaTaMaTa] Gõ /muon Để Vô Chơi" />
+		<Msg Index="611" Text="[MaTaMaTa] Người Chơi Số %d: %s Đã Được Thêm" />
+		<Msg Index="612" Text="[MaTaMaTa] Hạng 1 - %s (%d Điểm)" />
+		<Msg Index="613" Text="[MaTaMaTa] Hạng 2 - %s (%d Điểm)" />
+		<Msg Index="614" Text="[MaTaMaTa] Hạng 3 - %s (%d Điểm)" />
+		<Msg Index="615" Text="[MaTaMaTa] Bạn Đang Ở hạng %d (%d Điểm)" />
+		<Msg Index="616" Text="[MaTaMaTa] Tổng Điểm Hiện Tại: %d" />
+		<Msg Index="617" Text="Tên Mới chứa Ký Tự Không Cho Phép Nhé" />
+		<Msg Index="618" Text="Phải Có %d Master Reset Mới Được Làm Nhé" />
+		<Msg Index="619" Text="Không Cho Phép nếu Bạn Đang Có Từ %d Master Trở Lên" />
+		<Msg Index="620" Text="Lệnh: [/goi (bless, soul, chaos...) (10,20,30)]" />
+		<Msg Index="621" Text="Lệnh: [/Tach (bless, soul, chaos...) (10,20,30)]" />
+		<Msg Index="622" Text="Bạn Thiếu Vật Phẩm Cần thiết Rồi Nhé" />
+		<Msg Index="623" Text="Lệnh thực Hiện Thành Công" />
+		<Msg Index="624" Text="Kho đầy nhóc Rồi, dọn bớt Đi" />
+		<Msg Index="625" Text="Sự Kiện TvTEvent Sẽ Đóng Sau %d Phút" />
+		<Msg Index="626" Text="Vô Đội Đi Rồi Mới Được Tham Gia TvT" />
+		<Msg Index="627" Text="TvTEvent Đã Đóng Cửa Nhé" />
+		<Msg Index="628" Text="TvTEvent Sẽ Bắt Đầu Sau %d Phút" />
+		<Msg Index="629" Text="TvTEvent Chính Thức Bắt Đầu Rồi" />
+		<Msg Index="630" Text="TvTEvent Đã Kết Thúc Rồi Nhé" />
+		<Msg Index="631" Text="Bạn Không Được Tham Gia TvTEvent Lần Này" />
+		<Msg Index="632" Text="TvTEvent Chưa Mở Cửa Nhé" />
+		<Msg Index="633" Text="Bạn Thiếu Đồ Để Vô TvTEvent" />
+		<Msg Index="634" Text="Bạn Chưa Đủ Điều Kiện Mua Đâu Nhé" />
+		<Msg Index="635" Text="Không Dùng Lệnh Này Khi Đang Giao Dịch" />
+		<Msg Index="636" Text="Được giảm Giá %d Zen Khi Xài Lệnh" />
+		<Msg Index="637" Text="Xài Mất: %d WC, %d WP, %d GP" />
+		<Msg Index="638" Text="Muốn Dùng Tiếp Thì gõ Lại Lệnh Nhé" />
+		<Msg Index="639" Text="Trong Bang Đang Có Người Mở Rương Bang Rồi" />
+		<Msg Index="640" Text="Bạn Không Có Quyền Dùng Rương Bang Đâu" />
+		<Msg Index="641" Text="%s Vừa Cấm Nhân Vật %s Trong vòng %d Ngày" />
+		<Msg Index="642" Text="%s Vừa Khoá Tài Khoản Của %s Trong %d Ngày" />
+		<Msg Index="643" Text="643" />
+		<Msg Index="644" Text="[Giao Dịch] Cần Ít Nhất: %d Zen" />
+		<Msg Index="645" Text="[Giao Dịch] Cần Ít Nhất: %d WC" />
+		<Msg Index="646" Text="[Giao Dịch] Cần Ít Nhất: %d WP" />
+		<Msg Index="647" Text="[Giao Dịch] Cần Ít Nhất: %d GP" />
+		<Msg Index="648" Text="[Giao Dịch] %s Không Có Đủ Giá Trị Yêu Cầu" />
+		<Msg Index="649" Text="[Nhiệm Vụ %d] Cần %d WC Để Làm nhiệm Vụ" />
+		<Msg Index="650" Text="[Nhiệm Vụ %d] Cần %d Vàng Để thực Hiện" />
+		<Msg Index="651" Text="[Nhiệm Vụ %d] Cần %d PcPoint Để Làm" />
+		<Msg Index="652" Text="[Nhiệm Vụ %d] Hết Chỗ Trong Kho Để Nhận Thưởng Rồi" />
+		<Msg Index="653" Text="[Đổi Coin] Đổi Thành Công, Quá Đã" />
+		<Msg Index="654" Text="Đánh %d con Quái Nữa Là Xong nhiệm Vụ Nhé" />
+		<Msg Index="655" Text="Hoàn Thành nhiệm Vụ Rồi Đó, Quá Ngon" />
+		<Msg Index="656" Text="[Nhiệm Vụ %d] Bạn Chưa Có bằng sáng chế Yêu Cầu" />
+		<Msg Index="657" Text="[Nhiệm Vụ %d] Cần %d lượt hạ gục Mới Được Làm Tiếp" />
+		<Msg Index="658" Text="658" />
+		<Msg Index="659" Text="Bạn Không Vô Được phòng Này Rời Khỏi Sau %d Giây" />
+		<Msg Index="660" Text="[Nhiệm Vụ] Bạn Đã hoàn Thành nhiệm Vụ Này Rồi Nhé" />
+		<Msg Index="661" Text="Bên Kia Chênh Lệch Quá %d Cấp, Không Công bằng Đâu" />
+		<Msg Index="662" Text="[Sự Kiện XUÂN] Binh Đoàn Thỏ Trắng Đã rút Rồi" />
+		<Msg Index="663" Text="[Sự Kiện HÈ] Kết Thúc, hẹn năm Sau" />
+		<Msg Index="664" Text="Vào Trận Đấu Guild vs Guild Tại đây" />
+		<Msg Index="665" Text="[GvGEvent] Đã Đóng Cửa Rồi" />
+		<Msg Index="666" Text="[GvGEvent] Bắt Đầu Sau %d Phút Nữa" />
+		<Msg Index="667" Text="[GvGEvent] Khởi Động Rồi Đó Nhé" />
+		<Msg Index="668" Text="[GvGEvent] Kết Thúc Rồi, Nghỉ ngơi Đi" />
+		<Msg Index="669" Text="[GvGEvent] Bạn Không Được Vô Sự Kiện Này" />
+		<Msg Index="670" Text="[GvGEvent] Sự Kiện Chưa Mở Nhé" />
+		<Msg Index="671" Text="[OffAtTack] Đã Bật" />
+		<Msg Index="672" Text="[OffAtTack] Đã Tắt" />
+		<Msg Index="673" Text="[Khoá] Đã Bật – Item Bị Khoá Luôn Rồi" />
+		<Msg Index="674" Text="[Khoá] Mật khẩu Chỉ Được Tối Đa 8 Ký Tự Thôi Nhé" />
+		<Msg Index="675" Text="[Khoá] Bật Rồi Gõ /moKhoa Để Mở Khoá Nhé" />
+		<Msg Index="676" Text="[Khoá] Tắt Rồi Nhé" />
+		<Msg Index="677" Text="[Khoá] Mật khẩu Sai Rồi Nhé" />
+		<Msg Index="678" Text="678" />
+		<Msg Index="679" Text="Chỉ Dùng Lệnh Này Trong vùng an toàn Thôi Nhé" />
+		<Msg Index="680" Text="Shop cá Nhân Trống trƠn hoặc Không Có Giá" />
+		<Msg Index="681" Text="CHÚ Ý : Tất Cả Vật Phẩm Trong shop Này bán bằng Jewel of Bless" />
+		<Msg Index="682" Text="CHÚ Ý : Tất Cả Vật Phẩm Trong shop Này bán bằng Jewel of Soul" />
+		<Msg Index="683" Text="CHÚ Ý : Tất Cả Vật Phẩm Trong shop Này bán bằng Jewel of Chaos" />
+		<Msg Index="684" Text="CHÚ Ý : Shop Này bán Đồ bằng WCoinC" />
+		<Msg Index="685" Text="CHÚ Ý : Shop Này bán Đồ bằng WCoinP" />
+		<Msg Index="686" Text="CHÚ Ý : Shop Này bán bằng Điểm Yêu Tinh" />
+		<Msg Index="687" Text="Bạn Cần Mở Shop cá Nhân Trước Đã Nhé" />
+		<Msg Index="688" Text="Lệnh Này Sẽ thực Hiện Sau %d Phút Nữa" />
+		<Msg Index="689" Text="Hết Giờ Mở Shop Rồi Nhé" />
+		<Msg Index="690" Text="[AtTack] Đã Tắt" />
+		<Msg Index="691" Text="[AtTack] Không Sử Dụng Được Ở Vị Trí Này" />
+		<Msg Index="692" Text="[AtTack] Bạn Chưa Có kỹ Năng Cần Thiết" />
+		<Msg Index="693" Text="[AtTack] Thời gian Sử Dụng Còn: %d Phút" />
+		<Msg Index="694" Text="[AtTack] Hết Giờ" />
+		<Msg Index="695" Text="[AtTack] Đã Bật" />
+		<Msg Index="696" Text="[OffAtTack] Phải Bật AtTack Trước Đã" />
+		<Msg Index="697" Text="[OffAtTack] Không Sử Dụng Được Ở Máp Này" />
+		<Msg Index="698" Text="Bang Hội Này Không Tồn Tại Nhé" />
+		<Msg Index="699" Text="[PvP] Hết Giờ Rồi" />
+		<Msg Index="700" Text="[PvP] Sự Kiện Bị Hủy Rồi Nhé" />
+
+
+	</Message>
+</ThangCuoi>

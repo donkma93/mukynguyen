@@ -1,0 +1,17 @@
+14:15:13 [CommandSpot][1][ThangCuoi] - (Monster: 43, Qtd: 1)
+14:15:20 [CommandSpot][1][ThangCuoi] - (Monster: 501, Qtd: 1)
+14:16:12 [CommandSpot][1][ThangCuoi] - (Monster: 501, Qtd: 1)
+14:16:20 [CommandSpot][1][ThangCuoi] - (Monster: 501, Qtd: 1)
+14:16:23 [CommandSpot][1][ThangCuoi] - (Monster: 501, Qtd: 1)
+14:16:27 [CommandSpot][1][ThangCuoi] - (Monster: 501, Qtd: 1)
+14:23:15 [CommandAddPoint][2][123123233] - (Type: 3, Amount: 5000)
+19:43:50 [Command Clear Iventory] Use for:[1][ThangCuoi]
+19:59:10 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 200, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+19:59:12 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 201, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+19:59:14 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 202, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+19:59:16 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 203, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+19:59:18 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 204, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+20:26:37 [CommandMake][2][456456] - (Section: 0, Type: 5, Level: 0, Skill: 19, Luck: 1, Option: 1, Exc: 63, Set: 63,GC:0,380:0, Sockets: 0, [Amount: 1])
+20:32:02 [Command Clear Iventory] Use for:[2][456456]
+20:54:04 [CommandGift][1][1111111111] - (Active Gift: 2 TanThuDK)
+21:47:46 [Command Clear Iventory] Use for:[1][ThangCuoi]

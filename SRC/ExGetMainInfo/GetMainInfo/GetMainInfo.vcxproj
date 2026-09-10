@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="10.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99FEE110-4599-4DF9-A022-7CD4A72F9649}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GetMainInfo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>GetMain 5.2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\GetMain\</OutDir>
+    <TargetName>GetMainInfo</TargetName>
+    <IntDir>..\..\..\Build-Log\GetMainSPK\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;GAMESERVER_PREMIUM=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <StackCommitSize>4097152</StackCommitSize>
+      <StackReserveSize>4097152</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\CCRC32.H" />
+    <ClInclude Include="CustomBow.h" />
+    <ClInclude Include="CustomEventTime.h" />
+    <ClInclude Include="CustomGloves.h" />
+    <ClInclude Include="CustomIconBuff.h" />
+    <ClInclude Include="CustomItem.h" />
+    <ClInclude Include="CustomJewel.h" />
+    <ClInclude Include="CustomMonster.h" />
+    <ClInclude Include="CustomMonsterGlow.h" />
+    <ClInclude Include="CustomNpcName.h" />
+    <ClInclude Include="CustomNpcNew.h" />
+    <ClInclude Include="CustomPet.h" />
+    <ClInclude Include="CustomWing.h" />
+    <ClInclude Include="ItemTooltip.h" />
+    <ClInclude Include="MemScript.h" />
+    <ClInclude Include="pugiconfig.hpp" />
+    <ClInclude Include="pugixml.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ThemidaSDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\CCRC32.Cpp" />
+    <ClCompile Include="CustomBow.cpp" />
+    <ClCompile Include="CustomEventTime.cpp" />
+    <ClCompile Include="CustomGloves.cpp" />
+    <ClCompile Include="CustomIconBuff.cpp" />
+    <ClCompile Include="CustomItem.cpp" />
+    <ClCompile Include="CustomJewel.cpp" />
+    <ClCompile Include="CustomMonster.cpp" />
+    <ClCompile Include="CustomMonsterGlow.cpp" />
+    <ClCompile Include="CustomNpcName.cpp" />
+    <ClCompile Include="CustomNpcNew.cpp" />
+    <ClCompile Include="CustomPet.cpp" />
+    <ClCompile Include="CustomWing.cpp" />
+    <ClCompile Include="GetMainInfo.cpp" />
+    <ClCompile Include="ItemTooltip.cpp" />
+    <ClCompile Include="MemScript.cpp" />
+    <ClCompile Include="pugixml.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GetMainInfo.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

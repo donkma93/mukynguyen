@@ -1,0 +1,26 @@
+14:14:31 [Command Clear Iventory] Use for:[1][ThangCuoi]
+16:54:55 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 63, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+16:54:59 [Command Clear Iventory] Use for:[1][ThangCuoi]
+16:55:33 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 53, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+16:55:37 [CommandMake][1][ThangCuoi] - (Section: 14, Type: 53, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+16:56:57 [CommandMake][1][ThangCuoi] - (Section: 13, Type: 53, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+16:56:59 [CommandMake][1][ThangCuoi] - (Section: 14, Type: 53, Level: 0, Skill: 0, Luck: 0, Option: 0, Exc: 0, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+21:09:42 [Command Clear Iventory] Use for:[1][ThangCuoi]
+21:35:35 [CommandSpot][1][ThangCuoi] - (Monster: 526, Qtd: 1)
+21:35:40 [CommandReAdd][1] [ThangCuoi] - OK
+21:35:45 [CommandAddPoint][1][ThangCuoi] - (Type: 1, Amount: 10000)
+21:35:57 [CommandMake][1][ThangCuoi] - (Section: 0, Type: 28, Level: 15, Skill: 1, Luck: 1, Option: 63, Exc: 63, Set: 0,GC:0,380:0, Sockets: 0, [Amount: 1])
+21:42:32 [CommandAddPoint][1][ThangCuoi] - (Type: 1, Amount: 5000)
+21:44:41 [CommandReMaster][1][ThangCuoi] - Used
+21:45:44 [CommandAddPoint][1][ThangCuoi] - (Type: 1, Amount: 15000)
+21:45:49 [CommandAddPoint][1][ThangCuoi] - (Type: 1, Amount: 20000)
+21:49:23 [CommandReAdd][1] [123213] - OK
+21:49:28 [CommandAddPoint][1][123213] - (Type: 1, Amount: 5000)
+21:50:04 [CommandAddPoint][1][123213] - (Type: 1, Amount: 10000)
+21:53:04 [CommandAddPoint][1][123213] - (Type: 1, Amount: 5000)
+22:40:28 [CommandAddPoint][1][123213] - (Type: 1, Amount: 5000)
+22:41:18 [CommandSpot][1][123213] - (Monster: 526, Qtd: 1)
+23:19:23 [CommandSpot][1][123213] - (Monster: 526, Qtd: 1)
+23:45:25 [CommandSpot][1][123213] - (Monster: 526, Qtd: 1)
+23:49:00 [CommandSpot][1][ThangCuoi] - (Monster: 526, Qtd: 1)
+23:53:52 [CommandSpot][1][123213] - (Monster: 526, Qtd: 1)

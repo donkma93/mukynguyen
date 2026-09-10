@@ -1,0 +1,602 @@
+﻿2026-09-05 10:52:23 ==> Mu ThangCuoi start-all
+2026-09-05 10:52:23 LocalDB...
+2026-09-05 10:52:23 keep-localdb-alive.ps1 already running (PID 48764)
+2026-09-05 10:52:24 Starting DataServer
+2026-09-05 10:52:27 Starting JoinServer
+2026-09-05 10:52:29 Starting ConnectServer
+2026-09-05 10:52:32 Starting GameServer
+2026-09-05 10:52:35 Starting StartAntiServer
+2026-09-05 10:52:35 watchdog-mu-server.ps1 already running (PID 48764)
+2026-09-05 10:52:37 Status:
+2026-09-05 10:52:37 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   28420 9/5/2026 10:52:30 AM
+DataServer      51724 9/5/2026 10:52:25 AM
+GameServer      27000 9/5/2026 10:52:32 AM
+JoinServer      37152 9/5/2026 10:52:28 AM
+StartAntiServer 38584 9/5/2026 10:52:35 AM
+2026-09-05 10:52:37 Client: 127.0.0.2:44405
+2026-09-05 19:01:36 ==> Mu ThangCuoi start-all
+2026-09-05 19:01:36 LocalDB...
+2026-09-05 19:05:39 ==> Mu ThangCuoi start-all
+2026-09-05 19:05:39 SQL Server Express...
+2026-09-05 19:05:39 MSSQL$SQLEXPRESS is running
+2026-09-05 19:05:40 DataServer already running
+2026-09-05 19:05:43 JoinServer already running
+2026-09-05 19:05:45 ConnectServer already running
+2026-09-05 19:05:47 GameServer already running
+2026-09-05 19:05:50 StartAntiServer already running
+2026-09-05 19:05:50 Starting watchdog-mu-server.ps1
+2026-09-05 19:05:52 Status:
+2026-09-05 19:05:52 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   23668 9/5/2026 7:04:43 PM
+DataServer      25568 9/5/2026 7:04:38 PM
+GameServer      23308 9/5/2026 7:04:45 PM
+JoinServer      24984 9/5/2026 7:04:41 PM
+StartAntiServer 14084 9/5/2026 7:04:47 PM
+2026-09-05 19:05:52 Client: 127.0.0.2:44405
+2026-09-05 22:14:08 ==> Mu ThangCuoi start-all
+2026-09-05 22:14:08 SQL Server Express...
+2026-09-05 22:14:08 MSSQL$SQLEXPRESS is running
+2026-09-05 22:14:09 Starting DataServer
+2026-09-05 22:14:12 Starting JoinServer
+2026-09-05 22:14:14 Starting ConnectServer
+2026-09-05 22:14:16 Starting GameServer
+2026-09-05 22:14:19 Starting StartAntiServer
+2026-09-05 22:14:19 Starting watchdog-mu-server.ps1
+2026-09-05 22:14:21 Status:
+2026-09-05 22:14:21 
+ProcessName      Id StartTime           
+-----------      -- ---------           
+ConnectServer 31548 9/5/2026 10:14:14 PM
+DataServer    31640 9/5/2026 10:14:09 PM
+GameServer    25652 9/5/2026 10:14:16 PM
+JoinServer    23012 9/5/2026 10:14:12 PM
+2026-09-05 22:14:21 Client: 127.0.0.2:44405
+2026-09-05 22:18:36 ==> Mu ThangCuoi start-all
+2026-09-05 22:18:36 SQL Server Express...
+2026-09-05 22:18:36 MSSQL$SQLEXPRESS is running
+2026-09-05 22:18:37 Starting DataServer
+2026-09-05 22:18:40 Starting JoinServer
+2026-09-05 22:18:42 Starting ConnectServer
+2026-09-05 22:18:44 Starting GameServer
+2026-09-05 22:18:47 Starting StartAntiServer
+2026-09-05 22:18:47 Starting watchdog-mu-server.ps1
+2026-09-05 22:18:49 Status:
+2026-09-05 22:18:49 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   28472 9/5/2026 10:18:42 PM
+DataServer      33068 9/5/2026 10:18:37 PM
+GameServer      30072 9/5/2026 10:18:44 PM
+JoinServer      32608 9/5/2026 10:18:40 PM
+StartAntiServer 24832 9/5/2026 10:18:49 PM
+2026-09-05 22:18:49 Client: 127.0.0.2:44405
+2026-09-05 22:19:07 ==> Mu ThangCuoi stop-all
+2026-09-05 22:19:07 Stopping helper PID 29564
+2026-09-05 22:19:07 Stopping GameServer PID 30072
+2026-09-05 22:19:07 Stopping StartAntiServer PID 24832
+2026-09-05 22:19:07 Stopping ConnectServer PID 28472
+2026-09-05 22:19:07 Stopping JoinServer PID 32608
+2026-09-05 22:19:07 Stopping DataServer PID 33068
+2026-09-05 22:19:08 All Mu server processes stopped.
+2026-09-05 22:20:57 ==> Mu ThangCuoi start-all
+2026-09-05 22:20:57 SQL Server Express...
+2026-09-05 22:20:57 MSSQL$SQLEXPRESS is running
+2026-09-05 22:20:58 DataServer already running
+2026-09-05 22:21:01 JoinServer already running
+2026-09-05 22:21:03 Starting ConnectServer
+2026-09-05 22:21:05 Starting GameServer
+2026-09-05 22:21:08 Starting StartAntiServer
+2026-09-05 22:21:08 Starting watchdog-mu-server.ps1
+2026-09-05 22:21:11 Status:
+2026-09-05 22:21:11 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   33696 9/5/2026 10:21:03 PM
+DataServer      18364 9/5/2026 10:19:37 PM
+GameServer      30576 9/5/2026 10:21:05 PM
+JoinServer      32600 9/5/2026 10:20:16 PM
+StartAntiServer 23864 9/5/2026 10:21:09 PM
+2026-09-05 22:21:11 Client: 127.0.0.2:44405
+2026-09-05 23:40:03 ==> Mu ThangCuoi stop-all
+2026-09-05 23:40:03 Stopping helper PID 30760
+2026-09-05 23:40:03 Stopping GameServer PID 20268
+2026-09-05 23:40:03 Stopping StartAntiServer PID 23864
+2026-09-05 23:40:03 Stopping ConnectServer PID 33696
+2026-09-05 23:40:03 Stopping JoinServer PID 32600
+2026-09-05 23:40:03 Stopping DataServer PID 18364
+2026-09-05 23:40:04 All Mu server processes stopped.
+2026-09-05 23:40:08 ==> Mu ThangCuoi start-all
+2026-09-05 23:40:08 SQL Server Express...
+2026-09-05 23:40:08 MSSQL$SQLEXPRESS is running
+2026-09-05 23:40:09 Starting DataServer
+2026-09-05 23:40:12 Starting JoinServer
+2026-09-05 23:40:14 Starting ConnectServer
+2026-09-05 23:40:16 Starting GameServer
+2026-09-05 23:40:19 Starting StartAntiServer
+2026-09-05 23:40:19 Starting watchdog-mu-server.ps1
+2026-09-05 23:40:21 Status:
+2026-09-05 23:40:21 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   25432 9/5/2026 11:40:14 PM
+DataServer      24092 9/5/2026 11:40:09 PM
+GameServer      25392 9/5/2026 11:40:16 PM
+JoinServer      20152 9/5/2026 11:40:12 PM
+StartAntiServer 25540 9/5/2026 11:40:21 PM
+2026-09-05 23:40:21 Client: 127.0.0.2:44405
+2026-09-05 23:42:45 ==> Mu ThangCuoi stop-all
+2026-09-05 23:42:45 Stopping GameServer PID 25392
+2026-09-05 23:42:45 Stopping StartAntiServer PID 25540
+2026-09-05 23:42:45 Stopping ConnectServer PID 25432
+2026-09-05 23:42:45 Stopping JoinServer PID 20152
+2026-09-05 23:42:45 Stopping DataServer PID 24092
+2026-09-05 23:42:46 All Mu server processes stopped.
+2026-09-06 06:57:02 ==> Mu ThangCuoi start-all
+2026-09-06 06:57:02 SQL Server Express...
+2026-09-06 06:57:02 MSSQL$SQLEXPRESS is running
+2026-09-06 06:57:03 Starting DataServer
+2026-09-06 06:57:06 Starting JoinServer
+2026-09-06 06:57:08 Starting ConnectServer
+2026-09-06 06:57:10 Starting GameServer
+2026-09-06 06:57:14 Starting StartAntiServer
+2026-09-06 06:57:14 Starting watchdog-mu-server.ps1
+2026-09-06 06:57:16 Status:
+2026-09-06 06:57:16 
+ProcessName      Id StartTime          
+-----------      -- ---------          
+ConnectServer  5304 9/6/2026 6:57:09 AM
+DataServer     7024 9/6/2026 6:57:04 AM
+GameServer    26100 9/6/2026 6:57:11 AM
+JoinServer    22444 9/6/2026 6:57:07 AM
+2026-09-06 06:57:16 Client: 127.0.0.2:44405
+2026-09-06 06:58:31 ==> Mu ThangCuoi stop-all
+2026-09-06 06:58:31 Stopping helper PID 24148
+2026-09-06 06:58:31 Stopping GameServer PID 26100
+2026-09-06 06:58:31 Stopping StartAntiServer PID 22252
+2026-09-06 06:58:31 Stopping ConnectServer PID 5304
+2026-09-06 06:58:31 Stopping JoinServer PID 22444
+2026-09-06 06:58:31 Stopping DataServer PID 7024
+2026-09-06 06:58:32 All Mu server processes stopped.
+2026-09-06 07:01:03 ==> Mu ThangCuoi stop-all
+2026-09-06 07:01:04 All Mu server processes stopped.
+2026-09-06 07:01:52 ==> Mu ThangCuoi start-all
+2026-09-06 07:01:52 SQL Server Express...
+2026-09-06 07:01:52 MSSQL$SQLEXPRESS is running
+2026-09-06 07:01:52 Checking ODBC DSNs...
+2026-09-06 07:01:53 Starting DataServer
+2026-09-06 07:01:56 Starting JoinServer
+2026-09-06 07:01:58 Starting ConnectServer
+2026-09-06 07:02:00 Starting GameServer
+2026-09-06 07:02:03 Starting StartAntiServer
+2026-09-06 07:02:03 Starting watchdog-mu-server.ps1
+2026-09-06 07:02:05 Status:
+2026-09-06 07:02:05 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer    6748 9/6/2026 7:01:58 AM
+DataServer      23296 9/6/2026 7:01:53 AM
+GameServer       7796 9/6/2026 7:02:01 AM
+JoinServer      23660 9/6/2026 7:01:56 AM
+StartAntiServer 24652 9/6/2026 7:02:04 AM
+2026-09-06 07:02:05 Client: 127.0.0.2:44405
+2026-09-06 07:05:04 ==> Mu ThangCuoi stop-all
+2026-09-06 07:05:04 Stopping helper PID 10908
+2026-09-06 07:05:04 Stopping GameServer PID 7796
+2026-09-06 07:05:04 Stopping StartAntiServer PID 24652
+2026-09-06 07:05:04 Stopping ConnectServer PID 6748
+2026-09-06 07:05:04 Stopping JoinServer PID 23660
+2026-09-06 07:05:04 Stopping DataServer PID 23296
+2026-09-06 07:05:05 All Mu server processes stopped.
+2026-09-06 07:05:30 ==> Mu ThangCuoi stop-all
+2026-09-06 07:05:31 All Mu server processes stopped.
+2026-09-06 07:06:11 ==> Mu ThangCuoi start-all
+2026-09-06 07:06:11 SQL Server Express...
+2026-09-06 07:06:11 MSSQL$SQLEXPRESS is running
+2026-09-06 07:06:11 Checking ODBC DSNs...
+2026-09-06 07:06:12 Starting DataServer
+2026-09-06 07:06:15 Starting JoinServer
+2026-09-06 07:06:17 Starting ConnectServer
+2026-09-06 07:06:19 Starting GameServer
+2026-09-06 07:06:22 Starting StartAntiServer
+2026-09-06 07:06:22 Starting watchdog-mu-server.ps1
+2026-09-06 07:06:24 Status:
+2026-09-06 07:06:24 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   22048 9/6/2026 7:06:17 AM
+DataServer      20056 9/6/2026 7:06:12 AM
+GameServer      23064 9/6/2026 7:06:19 AM
+JoinServer      21064 9/6/2026 7:06:15 AM
+StartAntiServer 20916 9/6/2026 7:06:22 AM
+2026-09-06 07:06:24 Client: 127.0.0.2:44405
+2026-09-06 07:10:57 ==> Mu ThangCuoi stop-all
+2026-09-06 07:10:57 Stopping helper PID 3312
+2026-09-06 07:10:57 Stopping GameServer PID 23064
+2026-09-06 07:10:57 Stopping StartAntiServer PID 20916
+2026-09-06 07:10:57 Stopping ConnectServer PID 22048
+2026-09-06 07:10:57 Stopping JoinServer PID 21064
+2026-09-06 07:10:57 Stopping DataServer PID 20056
+2026-09-06 07:10:58 All Mu server processes stopped.
+2026-09-06 07:13:32 ==> Mu ThangCuoi start-all
+2026-09-06 07:13:32 SQL Server Express...
+2026-09-06 07:13:32 MSSQL$SQLEXPRESS is running
+2026-09-06 07:13:32 Checking ODBC DSNs...
+2026-09-06 07:13:34 Starting DataServer
+2026-09-06 07:13:37 Starting JoinServer
+2026-09-06 07:13:39 Starting ConnectServer
+2026-09-06 07:13:41 Starting GameServer (Sub-1 VIP)
+2026-09-06 07:13:43 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-06 07:13:45 Starting GameServer (Sub-3 Non-PK)
+2026-09-06 07:13:47 Starting StartAntiServer
+2026-09-06 07:13:47 Starting watchdog-mu-server.ps1
+2026-09-06 07:13:49 Status:
+2026-09-06 07:13:49 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   21512 9/6/2026 7:13:39 AM
+DataServer      24260 9/6/2026 7:13:34 AM
+GameServer      19180 9/6/2026 7:13:45 AM
+GameServer      22264 9/6/2026 7:13:41 AM
+GameServer      23228 9/6/2026 7:13:43 AM
+JoinServer      22684 9/6/2026 7:13:37 AM
+StartAntiServer 21064 9/6/2026 7:13:47 AM
+2026-09-06 07:13:49 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 07:40:27 ==> Mu ThangCuoi start-all
+2026-09-06 07:40:27 SQL Server Express...
+2026-09-06 07:40:27 MSSQL$SQLEXPRESS is running
+2026-09-06 07:40:27 Checking ODBC DSNs...
+2026-09-06 07:40:28 DataServer already running
+2026-09-06 07:40:31 JoinServer already running
+2026-09-06 07:40:33 ConnectServer already running
+2026-09-06 07:40:35 Starting GameServer (Sub-1 VIP)
+2026-09-06 07:40:38 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-06 07:40:40 Starting GameServer (Sub-3 Non-PK)
+2026-09-06 07:40:42 StartAntiServer already running
+2026-09-06 07:40:42 Starting watchdog-mu-server.ps1
+2026-09-06 07:40:44 Status:
+2026-09-06 07:40:44 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   21512 9/6/2026 7:13:39 AM
+DataServer      24260 9/6/2026 7:13:34 AM
+GameServer       4704 9/6/2026 7:40:38 AM
+GameServer      12304 9/6/2026 7:40:36 AM
+GameServer      25488 9/6/2026 7:40:40 AM
+JoinServer      22684 9/6/2026 7:13:37 AM
+StartAntiServer 21064 9/6/2026 7:13:47 AM
+2026-09-06 07:40:44 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 08:43:10 ==> Mu ThangCuoi start-all
+2026-09-06 08:43:10 SQL Server Express...
+2026-09-06 08:43:10 MSSQL$SQLEXPRESS is running
+2026-09-06 08:43:10 Checking ODBC DSNs...
+2026-09-06 08:43:11 DataServer already running
+2026-09-06 08:43:14 JoinServer already running
+2026-09-06 08:43:16 ConnectServer already running
+2026-09-06 08:43:18 GameServer (Sub-1 VIP) already running
+2026-09-06 08:43:20 GameServer (Sub-2 ThÆ°á»ng) already running
+2026-09-06 08:43:23 GameServer (Sub-3 Non-PK) already running
+2026-09-06 08:43:25 StartAntiServer already running
+2026-09-06 08:43:25 watchdog-mu-server.ps1 already running
+2026-09-06 08:43:27 Status:
+2026-09-06 08:43:27 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   21512 9/6/2026 7:13:39 AM
+DataServer      24260 9/6/2026 7:13:34 AM
+GameServer       4704 9/6/2026 7:40:38 AM
+GameServer      12304 9/6/2026 7:40:36 AM
+GameServer      25488 9/6/2026 7:40:40 AM
+JoinServer      22684 9/6/2026 7:13:37 AM
+StartAntiServer 21064 9/6/2026 7:13:47 AM
+2026-09-06 08:43:27 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 08:43:40 ==> Mu ThangCuoi start-all
+2026-09-06 08:43:40 SQL Server Express...
+2026-09-06 08:43:40 MSSQL$SQLEXPRESS is running
+2026-09-06 08:43:40 Checking ODBC DSNs...
+2026-09-06 08:43:41 DataServer already running
+2026-09-06 08:43:44 JoinServer already running
+2026-09-06 08:43:46 ConnectServer already running
+2026-09-06 08:43:48 GameServer (Sub-1 VIP) already running
+2026-09-06 08:43:50 GameServer (Sub-2 ThÆ°á»ng) already running
+2026-09-06 08:43:53 GameServer (Sub-3 Non-PK) already running
+2026-09-06 08:43:55 StartAntiServer already running
+2026-09-06 08:43:55 watchdog-mu-server.ps1 already running
+2026-09-06 08:43:57 Status:
+2026-09-06 08:43:57 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   21512 9/6/2026 7:13:39 AM
+DataServer      24260 9/6/2026 7:13:34 AM
+GameServer      12120 9/6/2026 8:43:42 AM
+GameServer      16568 9/6/2026 8:43:44 AM
+GameServer      18120 9/6/2026 8:43:46 AM
+JoinServer      22684 9/6/2026 7:13:37 AM
+StartAntiServer 21064 9/6/2026 7:13:47 AM
+2026-09-06 08:43:57 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 11:43:11 ==> Mu ThangCuoi stop-all
+2026-09-06 11:43:11 Stopping helper PID 15412
+2026-09-06 11:43:11 Stopping GameServer PID 12120
+2026-09-06 11:43:11 Stopping GameServer PID 16568
+2026-09-06 11:43:11 Stopping GameServer PID 18120
+2026-09-06 11:43:11 Stopping StartAntiServer PID 21064
+2026-09-06 11:43:11 Stopping ConnectServer PID 21512
+2026-09-06 11:43:11 Stopping JoinServer PID 22684
+2026-09-06 11:43:11 Stopping DataServer PID 24260
+2026-09-06 11:43:12 All Mu server processes stopped.
+2026-09-06 13:46:57 ==> Mu ThangCuoi start-all
+2026-09-06 13:46:57 SQL Server Express...
+2026-09-06 13:46:57 MSSQL$SQLEXPRESS is running
+2026-09-06 13:46:57 Checking ODBC DSNs...
+2026-09-06 13:46:59 Starting DataServer
+2026-09-06 13:47:02 Starting JoinServer
+2026-09-06 13:47:04 Starting ConnectServer
+2026-09-06 13:47:06 Starting GameServer (Sub-1 VIP)
+2026-09-06 13:47:08 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-06 13:47:10 Starting GameServer (Sub-3 Non-PK)
+2026-09-06 13:47:12 Starting StartAntiServer
+2026-09-06 13:47:12 Starting watchdog-mu-server.ps1
+2026-09-06 13:47:14 Status:
+2026-09-06 13:47:14 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   29892 9/6/2026 1:47:04 PM
+DataServer      28748 9/6/2026 1:46:59 PM
+GameServer       3372 9/6/2026 1:47:06 PM
+GameServer      30152 9/6/2026 1:47:10 PM
+GameServer      32536 9/6/2026 1:47:08 PM
+JoinServer      31612 9/6/2026 1:47:02 PM
+StartAntiServer  5152 9/6/2026 1:47:12 PM
+2026-09-06 13:47:14 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 15:45:16 ==> Mu ThangCuoi stop-all
+2026-09-06 15:45:16 Stopping helper PID 27304
+2026-09-06 15:45:16 Stopping GameServer PID 3372
+2026-09-06 15:45:16 Stopping GameServer PID 30152
+2026-09-06 15:45:16 Stopping GameServer PID 32536
+2026-09-06 15:45:16 Stopping StartAntiServer PID 5152
+2026-09-06 15:45:16 Stopping ConnectServer PID 29892
+2026-09-06 15:45:16 Stopping JoinServer PID 31612
+2026-09-06 15:45:16 Stopping DataServer PID 28748
+2026-09-06 15:45:17 All Mu server processes stopped.
+2026-09-06 22:29:51 ==> Mu ThangCuoi start-all
+2026-09-06 22:29:51 SQL Server Express...
+2026-09-06 22:29:51 MSSQL$SQLEXPRESS is running
+2026-09-06 22:29:51 Checking ODBC DSNs...
+2026-09-06 22:29:52 Starting DataServer
+2026-09-06 22:29:56 Starting JoinServer
+2026-09-06 22:29:58 Starting ConnectServer
+2026-09-06 22:30:00 Starting GameServer (Sub-1 VIP)
+2026-09-06 22:30:02 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-06 22:30:04 Starting GameServer (Sub-3 Non-PK)
+2026-09-06 22:30:06 Starting StartAntiServer
+2026-09-06 22:30:06 Starting watchdog-mu-server.ps1
+2026-09-06 22:30:08 Status:
+2026-09-06 22:30:08 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   34964 9/6/2026 10:29:58 PM
+DataServer      25656 9/6/2026 10:29:53 PM
+GameServer      24356 9/6/2026 10:30:00 PM
+GameServer      31604 9/6/2026 10:30:04 PM
+GameServer      33836 9/6/2026 10:30:02 PM
+JoinServer      21792 9/6/2026 10:29:56 PM
+StartAntiServer  4600 9/6/2026 10:30:06 PM
+2026-09-06 22:30:08 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-06 23:29:27 ==> Mu ThangCuoi stop-all
+2026-09-06 23:29:27 Stopping helper PID 35944
+2026-09-06 23:29:27 Stopping GameServer PID 24356
+2026-09-06 23:29:27 Stopping GameServer PID 31604
+2026-09-06 23:29:27 Stopping GameServer PID 33836
+2026-09-06 23:29:27 Stopping StartAntiServer PID 4600
+2026-09-06 23:29:27 Stopping ConnectServer PID 34964
+2026-09-06 23:29:27 Stopping JoinServer PID 21792
+2026-09-06 23:29:27 Stopping DataServer PID 25656
+2026-09-06 23:29:28 All Mu server processes stopped.
+2026-09-07 19:48:44 ==> Mu ThangCuoi start-all
+2026-09-07 19:48:44 SQL Server Express...
+2026-09-07 19:48:44 MSSQL$SQLEXPRESS is running
+2026-09-07 19:48:44 Checking ODBC DSNs...
+2026-09-07 19:48:46 Starting DataServer
+2026-09-07 19:48:49 Starting JoinServer
+2026-09-07 19:48:51 Starting ConnectServer
+2026-09-07 19:48:53 Starting GameServer (Sub-1 VIP)
+2026-09-07 19:48:55 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-07 19:48:57 Starting GameServer (Sub-3 Non-PK)
+2026-09-07 19:48:59 Starting StartAntiServer
+2026-09-07 19:48:59 Starting watchdog-mu-server.ps1
+2026-09-07 19:49:01 Status:
+2026-09-07 19:49:01 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   27068 9/7/2026 7:48:51 PM
+DataServer      25864 9/7/2026 7:48:46 PM
+GameServer      14356 9/7/2026 7:48:57 PM
+GameServer      24752 9/7/2026 7:48:55 PM
+GameServer      28260 9/7/2026 7:48:53 PM
+JoinServer      12944 9/7/2026 7:48:49 PM
+StartAntiServer 26560 9/7/2026 7:48:59 PM
+2026-09-07 19:49:01 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-07 19:54:26 ==> Mu ThangCuoi stop-all
+2026-09-07 19:54:26 Stopping helper PID 23220
+2026-09-07 19:54:26 Stopping GameServer PID 14356
+2026-09-07 19:54:26 Stopping GameServer PID 24752
+2026-09-07 19:54:26 Stopping GameServer PID 28260
+2026-09-07 19:54:26 Stopping StartAntiServer PID 26560
+2026-09-07 19:54:26 Stopping ConnectServer PID 27068
+2026-09-07 19:54:26 Stopping JoinServer PID 12944
+2026-09-07 19:54:26 Stopping DataServer PID 25864
+2026-09-07 19:54:27 All Mu server processes stopped.
+2026-09-07 19:54:41 ==> Mu ThangCuoi start-all
+2026-09-07 19:54:41 SQL Server Express...
+2026-09-07 19:54:41 MSSQL$SQLEXPRESS is running
+2026-09-07 19:54:41 Checking ODBC DSNs...
+2026-09-07 19:54:43 Starting DataServer
+2026-09-07 19:54:46 Starting JoinServer
+2026-09-07 19:54:48 Starting ConnectServer
+2026-09-07 19:54:50 Starting GameServer (Sub-1 VIP)
+2026-09-07 19:54:52 Starting GameServer (Sub-2 Thường)
+2026-09-07 19:54:54 Starting GameServer (Sub-3 Non-PK)
+2026-09-07 19:54:56 Starting StartAntiServer
+2026-09-07 19:54:56 Starting watchdog-mu-server.ps1
+2026-09-07 19:54:58 Status:
+2026-09-07 19:54:58 
+ProcessName        Id StartTime
+-----------        -- ---------
+ConnectServer   24756 07/09/2026 7:54:48 CH
+DataServer      19948 07/09/2026 7:54:43 CH
+GameServer      16904 07/09/2026 7:54:50 CH
+GameServer      26660 07/09/2026 7:54:52 CH
+GameServer      27740 07/09/2026 7:54:54 CH
+JoinServer      11592 07/09/2026 7:54:46 CH
+StartAntiServer 26020 07/09/2026 7:54:56 CH
+2026-09-07 19:54:58 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 Thường, Sub-3 Non-PK)
+2026-09-07 21:03:31 ==> Mu ThangCuoi stop-all
+2026-09-07 21:03:31 Stopping helper PID 26228
+2026-09-07 21:03:31 Stopping GameServer PID 5920
+2026-09-07 21:03:31 Stopping GameServer PID 12312
+2026-09-07 21:03:31 Stopping GameServer PID 18636
+2026-09-07 21:03:31 Stopping StartAntiServer PID 26020
+2026-09-07 21:03:31 Stopping ConnectServer PID 4836
+2026-09-07 21:03:31 Stopping JoinServer PID 11592
+2026-09-07 21:03:31 Stopping DataServer PID 19948
+2026-09-07 21:03:32 All Mu server processes stopped.
+2026-09-07 21:54:18 ==> Mu ThangCuoi start-all
+2026-09-07 21:54:18 SQL Server Express...
+2026-09-07 21:54:18 MSSQL$SQLEXPRESS is running
+2026-09-07 21:54:18 Checking ODBC DSNs...
+2026-09-07 21:54:19 Starting DataServer
+2026-09-07 21:54:22 Starting JoinServer
+2026-09-07 21:54:24 Starting ConnectServer
+2026-09-07 21:54:26 Starting GameServer (Sub-1 VIP)
+2026-09-07 21:54:28 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-07 21:54:30 Starting GameServer (Sub-3 Non-PK)
+2026-09-07 21:54:32 Starting StartAntiServer
+2026-09-07 21:54:32 Starting watchdog-mu-server.ps1
+2026-09-07 21:54:34 Status:
+2026-09-07 21:54:34 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   28656 9/7/2026 9:54:24 PM
+DataServer      27960 9/7/2026 9:54:19 PM
+GameServer      23724 9/7/2026 9:54:28 PM
+GameServer      26320 9/7/2026 9:54:26 PM
+GameServer      28296 9/7/2026 9:54:30 PM
+JoinServer      27352 9/7/2026 9:54:22 PM
+StartAntiServer  4832 9/7/2026 9:54:32 PM
+2026-09-07 21:54:34 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-07 22:06:23 ==> Mu ThangCuoi stop-all
+2026-09-07 22:06:24 Stopping helper PID 23840
+2026-09-07 22:06:24 Stopping GameServer PID 23724
+2026-09-07 22:06:24 Stopping GameServer PID 26320
+2026-09-07 22:06:24 Stopping GameServer PID 28296
+2026-09-07 22:06:24 Stopping StartAntiServer PID 4832
+2026-09-07 22:06:24 Stopping ConnectServer PID 28656
+2026-09-07 22:06:24 Stopping JoinServer PID 27352
+2026-09-07 22:06:24 Stopping DataServer PID 27960
+2026-09-07 22:06:25 All Mu server processes stopped.
+2026-09-08 19:47:01 ==> Mu ThangCuoi start-all
+2026-09-08 19:47:01 SQL Server Express...
+2026-09-08 19:47:01 MSSQL$SQLEXPRESS is running
+2026-09-08 19:47:01 Checking ODBC DSNs...
+2026-09-08 19:47:03 Starting DataServer
+2026-09-08 19:47:06 Starting JoinServer
+2026-09-08 19:47:08 Starting ConnectServer
+2026-09-08 19:47:10 Starting GameServer (Sub-1 VIP)
+2026-09-08 19:47:12 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-08 19:47:14 Starting GameServer (Sub-3 Non-PK)
+2026-09-08 19:47:16 Starting StartAntiServer
+2026-09-08 19:47:16 Starting watchdog-mu-server.ps1
+2026-09-08 19:47:18 Status:
+2026-09-08 19:47:18 
+ProcessName        Id StartTime          
+-----------        -- ---------          
+ConnectServer   20756 9/8/2026 7:47:08 PM
+DataServer       3720 9/8/2026 7:47:03 PM
+GameServer       5972 9/8/2026 7:47:10 PM
+GameServer       9304 9/8/2026 7:47:12 PM
+GameServer      11968 9/8/2026 7:47:14 PM
+JoinServer      22340 9/8/2026 7:47:06 PM
+StartAntiServer  5304 9/8/2026 7:47:16 PM
+2026-09-08 19:47:18 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-08 23:10:25 ==> Mu ThangCuoi stop-all
+2026-09-08 23:10:25 Stopping helper PID 21032
+2026-09-08 23:10:25 Stopping GameServer PID 5972
+2026-09-08 23:10:25 Stopping GameServer PID 9304
+2026-09-08 23:10:25 Stopping GameServer PID 11968
+2026-09-08 23:10:25 Stopping StartAntiServer PID 5304
+2026-09-08 23:10:25 Stopping ConnectServer PID 20756
+2026-09-08 23:10:25 Stopping JoinServer PID 22340
+2026-09-08 23:10:25 Stopping DataServer PID 3720
+2026-09-08 23:10:26 All Mu server processes stopped.
+2026-09-09 22:03:48 ==> Mu ThangCuoi start-all
+2026-09-09 22:03:48 SQL Server Express...
+2026-09-09 22:03:48 MSSQL$SQLEXPRESS is running
+2026-09-09 22:03:48 Checking ODBC DSNs...
+2026-09-09 22:03:50 Starting DataServer
+2026-09-09 22:03:53 Starting JoinServer
+2026-09-09 22:03:55 Starting ConnectServer
+2026-09-09 22:03:57 Starting GameServer (Sub-1 VIP)
+2026-09-09 22:03:59 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-09 22:04:01 Starting GameServer (Sub-3 Non-PK)
+2026-09-09 22:04:03 Starting StartAntiServer
+2026-09-09 22:04:03 Starting watchdog-mu-server.ps1
+2026-09-09 22:04:05 Status:
+2026-09-09 22:04:06 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   14332 9/9/2026 10:03:55 PM
+DataServer       7708 9/9/2026 10:03:50 PM
+GameServer       5564 9/9/2026 10:03:59 PM
+GameServer      22724 9/9/2026 10:04:03 PM
+GameServer      23504 9/9/2026 10:04:01 PM
+JoinServer       5508 9/9/2026 10:03:54 PM
+StartAntiServer 17520 9/9/2026 10:04:04 PM
+2026-09-09 22:04:06 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-09 22:09:36 ==> Mu ThangCuoi stop-all
+2026-09-09 22:09:36 Stopping helper PID 10852
+2026-09-09 22:09:36 Stopping GameServer PID 5564
+2026-09-09 22:09:36 Stopping GameServer PID 22724
+2026-09-09 22:09:36 Stopping GameServer PID 23504
+2026-09-09 22:09:36 Stopping StartAntiServer PID 17520
+2026-09-09 22:09:36 Stopping ConnectServer PID 14332
+2026-09-09 22:09:36 Stopping JoinServer PID 5508
+2026-09-09 22:09:36 Stopping DataServer PID 7708
+2026-09-09 22:09:37 All Mu server processes stopped.
+2026-09-10 19:02:02 ==> Mu ThangCuoi start-all
+2026-09-10 19:02:02 SQL Server Express...
+2026-09-10 19:02:02 MSSQL$SQLEXPRESS is running
+2026-09-10 19:02:02 Checking ODBC DSNs...
+2026-09-10 19:02:03 Starting DataServer
+2026-09-10 19:02:07 Starting JoinServer
+2026-09-10 19:02:09 Starting ConnectServer
+2026-09-10 19:02:11 Starting GameServer (Sub-1 VIP)
+2026-09-10 19:02:13 Starting GameServer (Sub-2 ThÆ°á»ng)
+2026-09-10 19:02:15 Starting GameServer (Sub-3 Non-PK)
+2026-09-10 19:02:17 Starting StartAntiServer
+2026-09-10 19:02:17 Starting watchdog-mu-server.ps1
+2026-09-10 19:02:19 Status:
+2026-09-10 19:02:19 
+ProcessName        Id StartTime           
+-----------        -- ---------           
+ConnectServer   18060 9/10/2026 7:02:09 PM
+DataServer      23340 9/10/2026 7:02:04 PM
+GameServer       9136 9/10/2026 7:02:15 PM
+GameServer      12776 9/10/2026 7:02:13 PM
+GameServer      25880 9/10/2026 7:02:11 PM
+JoinServer      21472 9/10/2026 7:02:07 PM
+StartAntiServer 21664 9/10/2026 7:02:17 PM
+2026-09-10 19:02:19 Client: 127.0.0.2:44405 (3 Sub Servers: Sub-1 VIP, Sub-2 ThÆ°á»ng, Sub-3 Non-PK)
+2026-09-10 19:03:58 ==> Mu ThangCuoi stop-all
+2026-09-10 19:03:58 Stopping helper PID 21116
+2026-09-10 19:03:58 Stopping GameServer PID 9136
+2026-09-10 19:03:58 Stopping GameServer PID 12776
+2026-09-10 19:03:58 Stopping GameServer PID 25880
+2026-09-10 19:03:59 Stopping StartAntiServer PID 21664
+2026-09-10 19:03:59 Stopping ConnectServer PID 18060
+2026-09-10 19:03:59 Stopping JoinServer PID 21472
+2026-09-10 19:03:59 Stopping DataServer PID 23340
+2026-09-10 19:04:00 All Mu server processes stopped.

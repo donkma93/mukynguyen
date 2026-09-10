@@ -1,0 +1,1115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Global Debug|Win32">
+      <Configuration>Global Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Global Debug|x64">
+      <Configuration>Global Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Global Release|Win32">
+      <Configuration>Global Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Global Release|x64">
+      <Configuration>Global Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83C6A8DE-5418-41B5-BD9C-471F99FEAAA0}</ProjectGuid>
+    <RootNamespace>Main</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Main</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'">
+    <OutDir>..\..\Client\</OutDir>
+    <IntDir>..\..\..\Build-Log\Main_Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_ROOT);$(DXSDK_DIR)DXSDK61\Include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(BOOST_ROOT)stage\lib;$(DXSDK_DIR)DXSDK61\Lib;</LibraryPath>
+    <SourcePath>$(VC_SourcePath)</SourcePath>
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+    <PublicModuleDirectories>
+    </PublicModuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_ROOT);$(DXSDK_DIR)DXSDK61\Include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;$(BOOST_ROOT)stage\lib;$(DXSDK_DIR)DXSDK61\Lib;</LibraryPath>
+    <SourcePath>$(VC_SourcePath)</SourcePath>
+    <PublicIncludeDirectories />
+    <PublicModuleDirectories />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">
+    <OutDir>..\..\Client\</OutDir>
+    <IntDir>..\..\..\Build-Log\Main_Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(CommonExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(CommonExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\tmp/Global_Debug/Main.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Main5.2\;$(SolutionDir)..\Dependencies\include;$(SolutionDir)..\Dependencies\include\asio;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_FOREIGN_DEBUG;_LANGUAGE_FOREIGN;_LANGUAGE_ENG;_ALLOW_RTCc_IN_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Main.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Custom</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/libpath:""NPGGuard"" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx9.lib;Gdi32.lib;imm32.lib;vfw32.lib;dsound.lib;dxguid.lib;jpeglib.lib;opengl32.lib;glu32.lib;winmm.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;version.lib;glprocs.lib;Jpeglib.lib;ShareMemory.lib;SimpleModulus.lib;wzAudio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependencies\lib;$(MU_SDK)\DXSDK\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName)</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\tmp/Global_Debug/Main.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\tmp/Global_Release/Main.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Main5.2\;$(SolutionDir)..\Dependencies\include;$(SolutionDir)..\Dependencies\include\asio</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_FOREIGN_NDEBUG;_LANGUAGE_FOREIGN;_LANGUAGE_ENG;LDS_PATCH_GLOBAL_100520;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>
+      </RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Main.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>$(IntDir)</BrowseInformationFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>imm32.lib;vfw32.lib;dsound.lib;dxguid.lib;jpeglib.lib;opengl32.lib;glu32.lib;winmm.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;version.lib;glprocs.lib;Jpeglib.lib;ShareMemory.lib;SimpleModulus.lib;wzAudio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Dependencies\lib;$(MU_SDK)\DXSDK\Lib;%(AdditionalLibraryDirectories);$(BOOST_ROOT)stage\lib</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName)</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\tmp/Global_Release/Main.bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="..\Addon\256.ico" />
+    <Image Include="..\Addon\48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Main5.2\resource.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'">source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main5.2\ChaosMachine.cpp" />
+    <ClCompile Include="Main5.2\CharacterDashboardBridge.cpp" />
+    <ClCompile Include="Main5.2\MuHelper\MuHelper.cpp" />
+    <ClCompile Include="Main5.2\MuHelper\MuHelperData.cpp" />
+    <ClCompile Include="Main5.2\NewUiAutoReset.cpp" />
+    <ClCompile Include="Main5.2\NewUIMasterSkillTree.cpp" />
+    <ClCompile Include="Main5.2\NewUIMuHelperConfig.cpp" />
+    <ClCompile Include="Main5.2\NewUIMuHelperSkillList.cpp" />
+    <ClCompile Include="Main5.2\ProtectSend\cProtectFile.cpp" />
+    <ClCompile Include="Main5.2\ProtectSend\SendMessage.cpp" />
+    <ClCompile Include="Main5.2\ServerInfo.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\Camera3D.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomBow.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomGloves.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomIconBuff.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomJewel.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomMonster.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomMonsterGlow.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomNpcName.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomNpcNew.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomPet.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomPreview.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomReadGuildClient.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CustomWing.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\HealthyBar.cpp" />
+    <ClCompile Include="Main5.2\MemScript.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ItemTooltip.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIAccountLevel.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUICastleEvent.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIChangeClass.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIChangePass.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_DanhHieu.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIEventTime.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_GiftCode.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_HonHoan.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_JewelBank.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIMainMap.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIMenu.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_MocNap.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUINewShop.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIQQ.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_QuanHam.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIRanking.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_Relife.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIRenderCoin.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIRenderColorItem.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIRenderDameBoss.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIRenderInvasion.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIResetChange.cpp" />
+    <ClCompile Include="Main5.2\CCRC32.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\CProtect.cpp" />
+    <ClCompile Include="Main5.2\NewUIInventoryExtension.cpp" />
+    <ClCompile Include="Main5.2\BlackWin.cpp" />
+    <ClCompile Include="Main5.2\BoneManager.cpp" />
+    <ClCompile Include="Main5.2\Button.cpp" />
+    <ClCompile Include="Main5.2\CameraMove.cpp" />
+    <ClCompile Include="Main5.2\CBTMessageBox.cpp" />
+    <ClCompile Include="Main5.2\CComGem.cpp" />
+    <ClCompile Include="Main5.2\CDirection.cpp" />
+    <ClCompile Include="Main5.2\ChangeRingManager.cpp" />
+    <ClCompile Include="Main5.2\CharacterManager.cpp" />
+    <ClCompile Include="Main5.2\CharInfoBalloon.cpp" />
+    <ClCompile Include="Main5.2\CharInfoBalloonMng.cpp" />
+    <ClCompile Include="Main5.2\CharMakeWin.cpp" />
+    <ClCompile Include="Main5.2\CharSelMainWin.cpp" />
+    <ClCompile Include="Main5.2\CKANTURUDirection.cpp" />
+    <ClCompile Include="Main5.2\CMVP1stDirection.cpp" />
+    <ClCompile Include="Main5.2\CreditWin.cpp" />
+    <ClCompile Include="Main5.2\CSChaosCastle.cpp" />
+    <ClCompile Include="Main5.2\CSEventMatch.cpp" />
+    <ClCompile Include="Main5.2\CSItemOption.cpp" />
+    <ClCompile Include="Main5.2\CSMapServer.cpp" />
+    <ClCompile Include="Main5.2\CSParts.cpp" />
+    <ClCompile Include="Main5.2\CSPetSystem.cpp" />
+    <ClCompile Include="Main5.2\CSQuest.cpp" />
+    <ClCompile Include="Main5.2\CSWaterTerrain.cpp" />
+    <ClCompile Include="Main5.2\DSplaysound.cpp" />
+    <ClCompile Include="Main5.2\DSwaveIO.cpp" />
+    <ClCompile Include="Main5.2\DuelMgr.cpp" />
+    <ClCompile Include="Main5.2\Event.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\callstackdmp.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\checkintegrity.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\ExceptionHandler.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\html_log.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\peimage.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\stdleaf.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\sysinfo.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\xortrans.cpp" />
+    <ClCompile Include="Main5.2\ExternalObject\Leaf\xstreambuf.cpp" />
+    <ClCompile Include="Main5.2\GambleSystem.cpp" />
+    <ClCompile Include="Main5.2\GameCensorship.cpp" />
+    <ClCompile Include="Main5.2\GameShop\FileDownloader\DownloadInfo.cpp" />
+    <ClCompile Include="Main5.2\GameShop\FileDownloader\FileDownloader.cpp" />
+    <ClCompile Include="Main5.2\GameShop\FileDownloader\FTPConnecter.cpp" />
+    <ClCompile Include="Main5.2\GameShop\FileDownloader\HTTPConnecter.cpp" />
+    <ClCompile Include="Main5.2\GameShop\InGameShopSystem.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSBuyConfirm.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSBuyPackageItem.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSBuySelectItem.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSCommon.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSDeleteItemConfirm.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSGiftStorageItemInfo.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSSendGift.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSSendGiftConfirm.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSStorageItemInfo.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSUseBuffConfirm.cpp" />
+    <ClCompile Include="Main5.2\GameShop\MsgBoxIGSUseItemConfirm.cpp" />
+    <ClCompile Include="Main5.2\GameShop\NewUIInGameShop.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\BannerInfo.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\BannerInfoList.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\BannerListManager.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\FTPFileDownLoader.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\interface\PathMethod\Path.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\interface\WZResult\WZResult.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ListManager.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopCategory.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopCategoryList.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopList.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopListManager.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopPackage.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopPackageList.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopProduct.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\ShopProductList.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\StringMethod.cpp" />
+    <ClCompile Include="Main5.2\GameShop\ShopListManager\StringToken.cpp" />
+    <ClCompile Include="Main5.2\GaugeBar.cpp" />
+    <ClCompile Include="Main5.2\GIPetManager.cpp" />
+    <ClCompile Include="Main5.2\GlobalBitmap.cpp" />
+    <ClCompile Include="Main5.2\GM3rdChangeUp.cpp" />
+    <ClCompile Include="Main5.2\GMAida.cpp" />
+    <ClCompile Include="Main5.2\GMBattleCastle.cpp" />
+    <ClCompile Include="Main5.2\GMCryingWolf2nd.cpp" />
+    <ClCompile Include="Main5.2\GMCrywolf1st.cpp" />
+    <ClCompile Include="Main5.2\GMDoppelGanger1.cpp" />
+    <ClCompile Include="Main5.2\GMDoppelGanger2.cpp" />
+    <ClCompile Include="Main5.2\GMDoppelGanger3.cpp" />
+    <ClCompile Include="Main5.2\GMDoppelGanger4.cpp" />
+    <ClCompile Include="Main5.2\GMDuelArena.cpp" />
+    <ClCompile Include="Main5.2\GMEmpireGuardian1.cpp" />
+    <ClCompile Include="Main5.2\GMEmpireGuardian2.cpp" />
+    <ClCompile Include="Main5.2\GMEmpireGuardian3.cpp" />
+    <ClCompile Include="Main5.2\GMEmpireGuardian4.cpp" />
+    <ClCompile Include="Main5.2\GMHellas.cpp" />
+    <ClCompile Include="Main5.2\GMHuntingGround.cpp" />
+    <ClCompile Include="Main5.2\GMKarutan1.cpp" />
+    <ClCompile Include="Main5.2\GMNewTown.cpp" />
+    <ClCompile Include="Main5.2\GMSantaTown.cpp" />
+    <ClCompile Include="Main5.2\GMSwampOfQuiet.cpp" />
+    <ClCompile Include="Main5.2\GMUnitedMarketPlace.cpp" />
+    <ClCompile Include="Main5.2\GM_kanturu_1st.cpp" />
+    <ClCompile Include="Main5.2\GM_Kanturu_2nd.cpp" />
+    <ClCompile Include="Main5.2\GM_Kanturu_3rd.cpp" />
+    <ClCompile Include="Main5.2\GM_PK_Field.cpp" />
+    <ClCompile Include="Main5.2\GM_Raklion.cpp" />
+    <ClCompile Include="Main5.2\GOBoid.cpp" />
+    <ClCompile Include="Main5.2\GuildCache.cpp" />
+    <ClCompile Include="Main5.2\GuildManager.cpp" />
+    <ClCompile Include="Main5.2\Input.cpp" />
+    <ClCompile Include="Main5.2\ItemAddOptioninfo.cpp" />
+    <ClCompile Include="Main5.2\ItemManager.cpp" />
+    <ClCompile Include="Main5.2\KeyGenerater.cpp" />
+    <ClCompile Include="Main5.2\LoadData.cpp" />
+    <ClCompile Include="Main5.2\LoadingScene.cpp" />
+    <ClCompile Include="Main5.2\Local.cpp" />
+    <ClCompile Include="Main5.2\LoginMainWin.cpp" />
+    <ClCompile Include="Main5.2\LoginWin.cpp" />
+    <ClCompile Include="Main5.2\MapManager.cpp" />
+    <ClCompile Include="Main5.2\MatchEvent.cpp" />
+    <ClCompile Include="Main5.2\Math\ZzzMathLib.cpp" />
+    <ClCompile Include="Main5.2\MixMgr.cpp" />
+    <ClCompile Include="Main5.2\MonkSystem.cpp" />
+    <ClCompile Include="Main5.2\MoveCommandData.cpp" />
+    <ClCompile Include="Main5.2\MovieScene.cpp" />
+    <ClCompile Include="Main5.2\MsgWin.cpp" />
+    <ClCompile Include="Main5.2\MultiLanguage.cpp" />
+    <ClCompile Include="Main5.2\NewBloodCastleSystem.cpp" />
+    <ClCompile Include="Main5.2\NewChaosCastleSystem.cpp" />
+    <ClCompile Include="Main5.2\NewUI3DRenderMng.cpp" />
+    <ClCompile Include="Main5.2\NewUIBattleSoccerScore.cpp" />
+    <ClCompile Include="Main5.2\NewUIBloodCastleEnter.cpp" />
+    <ClCompile Include="Main5.2\NewUIBloodCastleTime.cpp" />
+    <ClCompile Include="Main5.2\NewUIBuffWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIButton.cpp" />
+    <ClCompile Include="Main5.2\NewUICastleWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUICatapultWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIChaosCastleTime.cpp" />
+    <ClCompile Include="Main5.2\NewUICharacterInfoWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIChatInputBox.cpp" />
+    <ClCompile Include="Main5.2\NewUIChatLogWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUICommandWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUICommon.cpp" />
+    <ClCompile Include="Main5.2\NewUICommonMessageBox.cpp" />
+    <ClCompile Include="Main5.2\NewUICryWolf.cpp" />
+    <ClCompile Include="Main5.2\NewUICursedTempleEnter.cpp" />
+    <ClCompile Include="Main5.2\NewUICursedTempleResult.cpp" />
+    <ClCompile Include="Main5.2\NewUICursedTempleSystem.cpp" />
+    <ClCompile Include="Main5.2\NewUICustomMessageBox.cpp" />
+    <ClCompile Include="Main5.2\NewUIDoppelGangerFrame.cpp" />
+    <ClCompile Include="Main5.2\NewUIDoppelGangerWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIDuelWatchMainFrameWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIDuelWatchUserListWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIDuelWatchWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIDuelWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIEmpireGuardianNPC.cpp" />
+    <ClCompile Include="Main5.2\NewUIEmpireGuardianTimer.cpp" />
+    <ClCompile Include="Main5.2\NewUIEnterDevilSquare.cpp" />
+    <ClCompile Include="Main5.2\NewUIExchangeLuckyCoin.cpp" />
+    <ClCompile Include="Main5.2\NewUIFriendWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGatemanWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGateSwitchWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGensRanking.cpp" />
+    <ClCompile Include="Main5.2\NewUIGoldBowmanLena.cpp" />
+    <ClCompile Include="Main5.2\NewUIGoldBowmanWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGroup.cpp" />
+    <ClCompile Include="Main5.2\NewUIGuardWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGuildInfoWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIGuildMakeWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIHelpWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIHeroPositionInfo.cpp" />
+    <ClCompile Include="Main5.2\NewUIHotKey.cpp" />
+    <ClCompile Include="Main5.2\NewUIInventoryCtrl.cpp" />
+    <ClCompile Include="Main5.2\NewUIItemEnduranceInfo.cpp" />
+    <ClCompile Include="Main5.2\NewUIItemExplanationWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIItemMng.cpp" />
+    <ClCompile Include="Main5.2\NewUIKanturuEvent.cpp" />
+    <ClCompile Include="Main5.2\NewUILuckyItemWnd.cpp" />
+    <ClCompile Include="Main5.2\NewUIMainFrameWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIManager.cpp" />
+    <ClCompile Include="Main5.2\NewUIMessageBox.cpp" />
+    <ClCompile Include="Main5.2\NewUIMiniMap.cpp" />
+    <ClCompile Include="Main5.2\NewUIMixInventory.cpp" />
+    <ClCompile Include="Main5.2\NewUIMoveCommandWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIMuHelper.cpp" />
+    <ClCompile Include="Main5.2\NewUIMyInventory.cpp" />
+    <ClCompile Include="Main5.2\NewUIMyQuestInfoWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIMyShopInventory.cpp" />
+    <ClCompile Include="Main5.2\NewUINameWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUINPCDialogue.cpp" />
+    <ClCompile Include="Main5.2\NewUINPCQuest.cpp" />
+    <ClCompile Include="Main5.2\NewUINPCShop.cpp" />
+    <ClCompile Include="Main5.2\NewUIOptionWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIPartyInfoWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIPartyListWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIPetInfoWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIPurchaseShopInventory.cpp" />
+    <ClCompile Include="Main5.2\NewUIQuestProgress.cpp" />
+    <ClCompile Include="Main5.2\NewUIQuestProgressByEtc.cpp" />
+    <ClCompile Include="Main5.2\NewUIQuickCommandWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIRegistrationLuckyCoin.cpp" />
+    <ClCompile Include="Main5.2\NewUIRenderNumber.cpp" />
+    <ClCompile Include="Main5.2\NewUIScrollBar.cpp" />
+    <ClCompile Include="Main5.2\NewUISeigeWarfare.cpp" />
+    <ClCompile Include="Main5.2\NewUISetItemExplanation.cpp" />
+    <ClCompile Include="Main5.2\NewUISiegeWarBase.cpp" />
+    <ClCompile Include="Main5.2\NewUISiegeWarCommander.cpp" />
+    <ClCompile Include="Main5.2\NewUISiegeWarObserver.cpp" />
+    <ClCompile Include="Main5.2\NewUISiegeWarSoldier.cpp" />
+    <ClCompile Include="Main5.2\NewUISlideWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIStorageInventory.cpp" />
+    <ClCompile Include="Main5.2\NewUIStorageInventoryExt.cpp" />
+    <ClCompile Include="Main5.2\NewUISystem.cpp" />
+    <ClCompile Include="Main5.2\NewUITextBox.cpp" />
+    <ClCompile Include="Main5.2\NewUITrade.cpp" />
+    <ClCompile Include="Main5.2\NewUIUnitedMarketPlaceWindow.cpp" />
+    <ClCompile Include="Main5.2\NewUIWindowMenu.cpp" />
+    <ClCompile Include="Main5.2\npcBreeder.cpp" />
+    <ClCompile Include="Main5.2\npcCatapult.cpp" />
+    <ClCompile Include="Main5.2\npcGateSwitch.cpp" />
+    <ClCompile Include="Main5.2\Observer.cpp" />
+    <ClCompile Include="Main5.2\OptionWin.cpp" />
+    <ClCompile Include="Main5.2\PartyManager.cpp" />
+    <ClCompile Include="Main5.2\PersonalShopTitleImp.cpp" />
+    <ClCompile Include="Main5.2\PhysicsManager.cpp" />
+    <ClCompile Include="Main5.2\PList.cpp" />
+    <ClCompile Include="Main5.2\PortalMgr.cpp" />
+    <ClCompile Include="Main5.2\ProtectSysKey.cpp" />
+    <ClCompile Include="Main5.2\QuestMng.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_VongQuay.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ACuoi_TuLuyen.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\NewUIViewItem.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\PetProtocol.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\Reconnect.cpp" />
+    <ClCompile Include="Main5.2\ServerGroup.cpp" />
+    <ClCompile Include="Main5.2\ServerListManager.cpp" />
+    <ClCompile Include="Main5.2\ServerMsgWin.cpp" />
+    <ClCompile Include="Main5.2\ServerSelWin.cpp" />
+    <ClCompile Include="Main5.2\ShadowVolume.cpp" />
+    <ClCompile Include="Main5.2\SideHair.cpp" />
+    <ClCompile Include="Main5.2\SkillEffectMgr.cpp" />
+    <ClCompile Include="Main5.2\SkillManager.cpp" />
+    <ClCompile Include="Main5.2\Slider.cpp" />
+    <ClCompile Include="Main5.2\SMD.cpp" />
+    <ClCompile Include="Main5.2\SMD2BMD.cpp" />
+    <ClCompile Include="Main5.2\SocketSystem.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\RenderCape.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\TrayModeNew.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\UIFormSystemRender.cpp" />
+    <ClCompile Include="Main5.2\Sprite.cpp" />
+    <ClCompile Include="Main5.2\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Global Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Global Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main5.2\SummonSystem.cpp" />
+    <ClCompile Include="Main5.2\SysMenuWin.cpp" />
+    <ClCompile Include="Main5.2\TestEventMap.cpp" />
+    <ClCompile Include="Main5.2\TextureScript.cpp" />
+    <ClCompile Include="Main5.2\Time\CTimCheck.cpp" />
+    <ClCompile Include="Main5.2\Time\Timer.cpp" />
+    <ClCompile Include="Main5.2\UIControls.cpp" />
+    <ClCompile Include="Main5.2\UIDefaultBase.cpp" />
+    <ClCompile Include="Main5.2\UIGateKeeper.cpp" />
+    <ClCompile Include="Main5.2\UIGuardsMan.cpp" />
+    <ClCompile Include="Main5.2\UIGuildInfo.cpp" />
+    <ClCompile Include="Main5.2\UIGuildMaster.cpp" />
+    <ClCompile Include="Main5.2\UIJewelHarmony.cpp" />
+    <ClCompile Include="Main5.2\UIManager.cpp" />
+    <ClCompile Include="Main5.2\UIMapName.cpp" />
+    <ClCompile Include="Main5.2\UIMng.cpp" />
+    <ClCompile Include="Main5.2\UIPopup.cpp" />
+    <ClCompile Include="Main5.2\UISenatus.cpp" />
+    <ClCompile Include="Main5.2\UIWindows.cpp" />
+    <ClCompile Include="Main5.2\UsefulDef.cpp" />
+    <ClCompile Include="Main5.2\Utilities\Log\DebugAngel.cpp" />
+    <ClCompile Include="Main5.2\Utilities\Log\ErrorReport.cpp" />
+    <ClCompile Include="Main5.2\Utilities\Log\muConsoleDebug.cpp" />
+    <ClCompile Include="Main5.2\Utilities\Log\WindowsConsole.cpp" />
+    <ClCompile Include="Main5.2\Utilities\Memory\MemoryLock.cpp" />
+    <ClCompile Include="Main5.2\Win.cpp" />
+    <ClCompile Include="Main5.2\WinEx.cpp" />
+    <ClCompile Include="Main5.2\Winmain.cpp" />
+    <ClCompile Include="Main5.2\WSclient.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Main5.2\WSctlc.cpp" />
+    <ClCompile Include="Main5.2\w_BasePet.cpp" />
+    <ClCompile Include="Main5.2\w_Buff.cpp" />
+    <ClCompile Include="Main5.2\w_BuffScriptLoader.cpp" />
+    <ClCompile Include="Main5.2\w_BuffStateSystem.cpp" />
+    <ClCompile Include="Main5.2\w_BuffStateValueControl.cpp" />
+    <ClCompile Include="Main5.2\w_BuffTimeControl.cpp" />
+    <ClCompile Include="Main5.2\w_CharacterInfo.cpp" />
+    <ClCompile Include="Main5.2\w_CursedTemple.cpp" />
+    <ClCompile Include="Main5.2\w_MapProcess.cpp" />
+    <ClCompile Include="Main5.2\w_ObjectInfo.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionCollecter.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionCollecter_Add.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionDemon.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionRound.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionStand.cpp" />
+    <ClCompile Include="Main5.2\w_PetActionUnicorn.cpp" />
+    <ClCompile Include="Main5.2\w_PetProcess.cpp" />
+    <ClCompile Include="Main5.2\ZzzAI.cpp" />
+    <ClCompile Include="Main5.2\ZzzBMD.cpp" />
+    <ClCompile Include="Main5.2\ZzzCharacter.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffect.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Main5.2\ZzzEffectBlurSpark.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectFireLeave.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectJoint.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectMagicSkill.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectNoUse.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectParticle.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectPoint.cpp" />
+    <ClCompile Include="Main5.2\ZzzEffectPointer.cpp" />
+    <ClCompile Include="Main5.2\zzzeffectsprite.cpp" />
+    <ClCompile Include="Main5.2\ZzzInfomation.cpp" />
+    <ClCompile Include="Main5.2\ZzzInterface.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Main5.2\ZzzInventory.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Main5.2\ZzzLodTerrain.cpp" />
+    <ClCompile Include="Main5.2\zzzMixInvetory.cpp" />
+    <ClCompile Include="Main5.2\ZzzObject.cpp" />
+    <ClCompile Include="Main5.2\ZzzOpenData.cpp" />
+    <ClCompile Include="Main5.2\ZzzOpenglUtil.cpp" />
+    <ClCompile Include="Main5.2\zzzpath.cpp" />
+    <ClCompile Include="Main5.2\ZzzScene.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">true</IntrinsicFunctions>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|Win32'">Speed</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed Condition="'$(Configuration)|$(Platform)'=='Global Release|x64'">Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ClCompile Include="Main5.2\ZzzTexture.cpp" />
+    <ClCompile Include="Main5.2\_GlobalFunctions.cpp" />
+    <ClCompile Include="Main5.2\Util.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\StructSendGs.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\SystemPKSend.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\WideData.cpp" />
+    <ClCompile Include="Main5.2\ThangCuoi\ZzzToolKit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afxres.h" />
+    <ClInclude Include="Main5.2\ChaosMachine.h" />
+    <ClInclude Include="Main5.2\CharacterDashboardBridge.h" />
+    <ClInclude Include="Main5.2\MuHelper\MuHelper.h" />
+    <ClInclude Include="Main5.2\MuHelper\MuHelperData.h" />
+    <ClInclude Include="Main5.2\NewUiAutoReset.h" />
+    <ClInclude Include="Main5.2\NewUIMasterSkillTree.h" />
+    <ClInclude Include="Main5.2\NewUIMuHelperConfig.h" />
+    <ClInclude Include="Main5.2\NewUIMuHelperSkillList.h" />
+    <ClInclude Include="Main5.2\Nprotect.h" />
+    <ClInclude Include="Main5.2\ProtectSend\cProtectFile.h" />
+    <ClInclude Include="Main5.2\ProtectSend\SendMessage.h" />
+    <ClInclude Include="Main5.2\SpinLock.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\Camera3D.h" />
+    <ClInclude Include="Main5.2\MemScript.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomBow.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomGloves.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomIconBuff.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomJewel.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomMonster.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomMonsterGlow.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomNpcName.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomNpcNew.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomPet.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomPreview.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomReadGuildClient.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CustomWing.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ItemTooltip.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIAccountLevel.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUICastleEvent.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIChangeClass.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIChangePass.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_DanhHieu.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIEventTime.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_GiftCode.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_HonHoan.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_JewelBank.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIMainMap.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIMenu.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_MocNap.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUINewShop.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIQQ.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_QuanHam.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIRanking.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_Relife.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIRenderCoin.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIRenderColorItem.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIRenderDameBoss.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIRenderInvasion.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIResetChange.h" />
+    <ClInclude Include="Main5.2\CCRC32.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\CProtect.h" />
+    <ClInclude Include="Main5.2\NewUIInventoryExtension.h" />
+    <ClInclude Include="Main5.2\BaseCls.h" />
+    <ClInclude Include="Main5.2\BlackWin.h" />
+    <ClInclude Include="Main5.2\BoneManager.h" />
+    <ClInclude Include="Main5.2\Button.h" />
+    <ClInclude Include="Main5.2\CameraMove.h" />
+    <ClInclude Include="Main5.2\CBTMessageBox.h" />
+    <ClInclude Include="Main5.2\CComGem.h" />
+    <ClInclude Include="Main5.2\CDirection.h" />
+    <ClInclude Include="Main5.2\ChangeRingManager.h" />
+    <ClInclude Include="Main5.2\CharacterManager.h" />
+    <ClInclude Include="Main5.2\CharInfoBalloon.h" />
+    <ClInclude Include="Main5.2\CharInfoBalloonMng.h" />
+    <ClInclude Include="Main5.2\CharMakeWin.h" />
+    <ClInclude Include="Main5.2\CharSelMainWin.h" />
+    <ClInclude Include="Main5.2\CKANTURUDirection.h" />
+    <ClInclude Include="Main5.2\CMVP1stDirection.h" />
+    <ClInclude Include="Main5.2\CreditWin.h" />
+    <ClInclude Include="Main5.2\CSChaosCastle.h" />
+    <ClInclude Include="Main5.2\CSEventMatch.h" />
+    <ClInclude Include="Main5.2\CSItemOption.h" />
+    <ClInclude Include="Main5.2\CSMapServer.h" />
+    <ClInclude Include="Main5.2\CSParts.h" />
+    <ClInclude Include="Main5.2\CSPetSystem.h" />
+    <ClInclude Include="Main5.2\CSQuest.h" />
+    <ClInclude Include="Main5.2\CSWaterTerrain.h" />
+    <ClInclude Include="Main5.2\Defined_Global.h" />
+    <ClInclude Include="Main5.2\DSPlaySound.h" />
+    <ClInclude Include="Main5.2\DSwaveIO.h" />
+    <ClInclude Include="Main5.2\DSWavRead.h" />
+    <ClInclude Include="Main5.2\DuelMgr.h" />
+    <ClInclude Include="Main5.2\Event.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\callstackdmp.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\checkintegrity.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\ExceptionHandler.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\html_log.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\peimage.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\rdtsc.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\regkey.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\stdleaf.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\sysinfo.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\xortrans.h" />
+    <ClInclude Include="Main5.2\ExternalObject\Leaf\xstreambuf.h" />
+    <ClInclude Include="Main5.2\ExternalObject\ResourceGuard\MuRGReport.h" />
+    <ClInclude Include="Main5.2\ExternalObject\ResourceGuard\ResourceGuard.h" />
+    <ClInclude Include="Main5.2\ExternalObject\ResourceGuard\RGReportConsole.h" />
+    <ClInclude Include="Main5.2\ExternalObject\ResourceGuard\RGReportObj.h" />
+    <ClInclude Include="Main5.2\GambleSystem.h" />
+    <ClInclude Include="Main5.2\GameCensorship.h" />
+    <ClInclude Include="Main5.2\GameShop\FileDownloader\FTPConnecter.h" />
+    <ClInclude Include="Main5.2\GameShop\FileDownloader\HTTPConnecter.h" />
+    <ClInclude Include="Main5.2\GameShop\FileDownloader\Include.h" />
+    <ClInclude Include="Main5.2\GameShop\InGameShopSystem.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSBuyConfirm.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSBuyPackageItem.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSBuySelectItem.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSCommon.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSDeleteItemConfirm.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSGiftStorageItemInfo.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSSendGift.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSSendGiftConfirm.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSStorageItemInfo.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSUseBuffConfirm.h" />
+    <ClInclude Include="Main5.2\GameShop\MsgBoxIGSUseItemConfirm.h" />
+    <ClInclude Include="Main5.2\GameShop\NewUIInGameShop.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\BannerInfo.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\BannerInfoList.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\BannerListManager.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\FTPFileDownLoader.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\Include.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\DownloadInfo.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\FileDownloader.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\FTPConnecter.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\HTTPConnecter.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\IConnecter.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\IDownloaderStateEvent.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\Include.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\PathMethod\Path.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\WZResult\ErrorCodeDefine.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\interface\WZResult\WZResult.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ListManager.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopCategory.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopCategoryList.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopList.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopListManager.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopPackage.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopPackageList.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopProduct.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\ShopProductList.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\StringMethod.h" />
+    <ClInclude Include="Main5.2\GameShop\ShopListManager\StringToken.h" />
+    <ClInclude Include="Main5.2\GaugeBar.h" />
+    <ClInclude Include="Main5.2\GIPetManager.h" />
+    <ClInclude Include="Main5.2\GlobalBitmap.h" />
+    <ClInclude Include="Main5.2\GlobalText.h" />
+    <ClInclude Include="Main5.2\GM3rdChangeUp.h" />
+    <ClInclude Include="Main5.2\GMAida.h" />
+    <ClInclude Include="Main5.2\GMBattleCastle.h" />
+    <ClInclude Include="Main5.2\GMCryingWolf2nd.h" />
+    <ClInclude Include="Main5.2\GMCrywolf1st.h" />
+    <ClInclude Include="Main5.2\GMDoppelGanger1.h" />
+    <ClInclude Include="Main5.2\GMDoppelGanger2.h" />
+    <ClInclude Include="Main5.2\GMDoppelGanger3.h" />
+    <ClInclude Include="Main5.2\GMDoppelGanger4.h" />
+    <ClInclude Include="Main5.2\GMDuelArena.h" />
+    <ClInclude Include="Main5.2\GMEmpireGuardian1.h" />
+    <ClInclude Include="Main5.2\GMEmpireGuardian2.h" />
+    <ClInclude Include="Main5.2\GMEmpireGuardian3.h" />
+    <ClInclude Include="Main5.2\GMEmpireGuardian4.h" />
+    <ClInclude Include="Main5.2\GMGmArea.h" />
+    <ClInclude Include="Main5.2\GMHellas.h" />
+    <ClInclude Include="Main5.2\GMHuntingGround.h" />
+    <ClInclude Include="Main5.2\GMKarutan1.h" />
+    <ClInclude Include="Main5.2\GMNewTown.h" />
+    <ClInclude Include="Main5.2\GMSantaTown.h" />
+    <ClInclude Include="Main5.2\GMSwampOfQuiet.h" />
+    <ClInclude Include="Main5.2\GMUnitedMarketPlace.h" />
+    <ClInclude Include="Main5.2\GM_Kanturu_1st.h" />
+    <ClInclude Include="Main5.2\GM_Kanturu_2nd.h" />
+    <ClInclude Include="Main5.2\GM_Kanturu_3rd.h" />
+    <ClInclude Include="Main5.2\GM_PK_Field.h" />
+    <ClInclude Include="Main5.2\GM_Raklion.h" />
+    <ClInclude Include="Main5.2\GOBoid.h" />
+    <ClInclude Include="Main5.2\GuildCache.h" />
+    <ClInclude Include="Main5.2\GuildManager.h" />
+    <ClInclude Include="Main5.2\iexplorer.h" />
+    <ClInclude Include="Main5.2\Input.h" />
+    <ClInclude Include="Main5.2\ItemAddOptioninfo.h" />
+    <ClInclude Include="Main5.2\ItemManager.h" />
+    <ClInclude Include="Main5.2\KeyGenerater.h" />
+    <ClInclude Include="Main5.2\LoadData.h" />
+    <ClInclude Include="Main5.2\LoadingScene.h" />
+    <ClInclude Include="Main5.2\Local.h" />
+    <ClInclude Include="Main5.2\LoginMainWin.h" />
+    <ClInclude Include="Main5.2\LoginWin.h" />
+    <ClInclude Include="Main5.2\MapManager.h" />
+    <ClInclude Include="Main5.2\MatchEvent.h" />
+    <ClInclude Include="Main5.2\Math\ZzzMathLib.h" />
+    <ClInclude Include="Main5.2\MixMgr.h" />
+    <ClInclude Include="Main5.2\MonkSystem.h" />
+    <ClInclude Include="Main5.2\MoveCommandData.h" />
+    <ClInclude Include="Main5.2\MovieScene.h" />
+    <ClInclude Include="Main5.2\MsgWin.h" />
+    <ClInclude Include="Main5.2\MultiLanguage.h" />
+    <ClInclude Include="Main5.2\NewBloodCastleSystem.h" />
+    <ClInclude Include="Main5.2\NewChaosCastleSystem.h" />
+    <ClInclude Include="Main5.2\NewUI3DRenderMng.h" />
+    <ClInclude Include="Main5.2\NewUIBase.h" />
+    <ClInclude Include="Main5.2\NewUIBattleSoccerScore.h" />
+    <ClInclude Include="Main5.2\NewUIBloodCastleEnter.h" />
+    <ClInclude Include="Main5.2\NewUIBloodCastleTime.h" />
+    <ClInclude Include="Main5.2\NewUIBuffWindow.h" />
+    <ClInclude Include="Main5.2\NewUIButton.h" />
+    <ClInclude Include="Main5.2\NewUICastleWindow.h" />
+    <ClInclude Include="Main5.2\NewUICatapultWindow.h" />
+    <ClInclude Include="Main5.2\NewUIChaosCastleTime.h" />
+    <ClInclude Include="Main5.2\NewUICharacterInfoWindow.h" />
+    <ClInclude Include="Main5.2\NewUIChatInputBox.h" />
+    <ClInclude Include="Main5.2\NewUIChatLogWindow.h" />
+    <ClInclude Include="Main5.2\NewUICommandWindow.h" />
+    <ClInclude Include="Main5.2\NewUICommon.h" />
+    <ClInclude Include="Main5.2\NewUICommonMessageBox.h" />
+    <ClInclude Include="Main5.2\NewUICryWolf.h" />
+    <ClInclude Include="Main5.2\NewUICursedTempleEnter.h" />
+    <ClInclude Include="Main5.2\NewUICursedTempleResult.h" />
+    <ClInclude Include="Main5.2\NewUICursedTempleSystem.h" />
+    <ClInclude Include="Main5.2\NewUICustomMessageBox.h" />
+    <ClInclude Include="Main5.2\NewUIDoppelGangerFrame.h" />
+    <ClInclude Include="Main5.2\NewUIDoppelGangerWindow.h" />
+    <ClInclude Include="Main5.2\NewUIDuelWatchMainFrameWindow.h" />
+    <ClInclude Include="Main5.2\NewUIDuelWatchUserListWindow.h" />
+    <ClInclude Include="Main5.2\NewUIDuelWatchWindow.h" />
+    <ClInclude Include="Main5.2\NewUIDuelWindow.h" />
+    <ClInclude Include="Main5.2\NewUIEmpireGuardianNPC.h" />
+    <ClInclude Include="Main5.2\NewUIEmpireGuardianTimer.h" />
+    <ClInclude Include="Main5.2\NewUIEnterDevilSquare.h" />
+    <ClInclude Include="Main5.2\NewUIExchangeLuckyCoin.h" />
+    <ClInclude Include="Main5.2\NewUIFriendWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGatemanWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGateSwitchWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGensRanking.h" />
+    <ClInclude Include="Main5.2\NewUIGoldBowmanLena.h" />
+    <ClInclude Include="Main5.2\NewUIGoldBowmanWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGroup.h" />
+    <ClInclude Include="Main5.2\NewUIGuardWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGuildInfoWindow.h" />
+    <ClInclude Include="Main5.2\NewUIGuildMakeWindow.h" />
+    <ClInclude Include="Main5.2\NewUIHelpWindow.h" />
+    <ClInclude Include="Main5.2\NewUIHeroPositionInfo.h" />
+    <ClInclude Include="Main5.2\NewUIHotKey.h" />
+    <ClInclude Include="Main5.2\NewUIInventoryCtrl.h" />
+    <ClInclude Include="Main5.2\NewUIItemEnduranceInfo.h" />
+    <ClInclude Include="Main5.2\NewUIItemExplanationWindow.h" />
+    <ClInclude Include="Main5.2\NewUIItemMng.h" />
+    <ClInclude Include="Main5.2\NewUIKanturuEvent.h" />
+    <ClInclude Include="Main5.2\NewUILuckyItemWnd.h" />
+    <ClInclude Include="Main5.2\NewUIMainFrameWindow.h" />
+    <ClInclude Include="Main5.2\NewUIManager.h" />
+    <ClInclude Include="Main5.2\NewUIMessageBox.h" />
+    <ClInclude Include="Main5.2\NewUIMiniMap.h" />
+    <ClInclude Include="Main5.2\NewUIMixInventory.h" />
+    <ClInclude Include="Main5.2\NewUIMoveCommandWindow.h" />
+    <ClInclude Include="Main5.2\NewUIMuHelper.h" />
+    <ClInclude Include="Main5.2\NewUIMyInventory.h" />
+    <ClInclude Include="Main5.2\NewUIMyQuestInfoWindow.h" />
+    <ClInclude Include="Main5.2\NewUIMyShopInventory.h" />
+    <ClInclude Include="Main5.2\NewUINameWindow.h" />
+    <ClInclude Include="Main5.2\NewUINPCDialogue.h" />
+    <ClInclude Include="Main5.2\NewUINPCQuest.h" />
+    <ClInclude Include="Main5.2\NewUINPCShop.h" />
+    <ClInclude Include="Main5.2\NewUIOptionWindow.h" />
+    <ClInclude Include="Main5.2\NewUIPartyInfoWindow.h" />
+    <ClInclude Include="Main5.2\NewUIPartyListWindow.h" />
+    <ClInclude Include="Main5.2\NewUIPetInfoWindow.h" />
+    <ClInclude Include="Main5.2\NewUIPurchaseShopInventory.h" />
+    <ClInclude Include="Main5.2\NewUIQuestProgress.h" />
+    <ClInclude Include="Main5.2\NewUIQuestProgressByEtc.h" />
+    <ClInclude Include="Main5.2\NewUIQuickCommandWindow.h" />
+    <ClInclude Include="Main5.2\NewUIRegistrationLuckyCoin.h" />
+    <ClInclude Include="Main5.2\NewUIRenderNumber.h" />
+    <ClInclude Include="Main5.2\NewUIScrollBar.h" />
+    <ClInclude Include="Main5.2\NewUISeigeWarfare.h" />
+    <ClInclude Include="Main5.2\NewUISetItemExplanation.h" />
+    <ClInclude Include="Main5.2\NewUISiegeWarBase.h" />
+    <ClInclude Include="Main5.2\NewUISiegeWarCommander.h" />
+    <ClInclude Include="Main5.2\NewUISiegeWarObserver.h" />
+    <ClInclude Include="Main5.2\NewUISiegeWarSoldier.h" />
+    <ClInclude Include="Main5.2\NewUISlideWindow.h" />
+    <ClInclude Include="Main5.2\NewUIStorageInventory.h" />
+    <ClInclude Include="Main5.2\NewUIStorageInventoryExt.h" />
+    <ClInclude Include="Main5.2\NewUISystem.h" />
+    <ClInclude Include="Main5.2\NewUITextBox.h" />
+    <ClInclude Include="Main5.2\NewUITrade.h" />
+    <ClInclude Include="Main5.2\NewUIUnitedMarketPlaceWindow.h" />
+    <ClInclude Include="Main5.2\NewUIWindowMenu.h" />
+    <ClInclude Include="Main5.2\npcBreeder.h" />
+    <ClInclude Include="Main5.2\npcCatapult.h" />
+    <ClInclude Include="Main5.2\npcGateSwitch.h" />
+    <ClInclude Include="Main5.2\nvapi.h" />
+    <ClInclude Include="Main5.2\NvApiDriverSettings.h" />
+    <ClInclude Include="Main5.2\Observer.h" />
+    <ClInclude Include="Main5.2\OptionWin.h" />
+    <ClInclude Include="Main5.2\PartyManager.h" />
+    <ClInclude Include="Main5.2\PersonalShopTitleImp.h" />
+    <ClInclude Include="Main5.2\PhysicsManager.h" />
+    <ClInclude Include="Main5.2\PList.h" />
+    <ClInclude Include="Main5.2\PortalMgr.h" />
+    <ClInclude Include="Main5.2\ProtectSysKey.h" />
+    <ClInclude Include="Main5.2\ProtocolAsio.h" />
+    <ClInclude Include="Main5.2\QuestMng.h" />
+    <ClInclude Include="Main5.2\ReadScript.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_VongQuay.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ACuoi_TuLuyen.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\NewUIViewItem.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\PetProtocol.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\Reconnect.h" />
+    <ClInclude Include="Main5.2\resource.h" />
+    <ClInclude Include="Main5.2\ServerGroup.h" />
+    <ClInclude Include="Main5.2\ServerInfo.h" />
+    <ClInclude Include="Main5.2\ServerListManager.h" />
+    <ClInclude Include="Main5.2\ServerMsgWin.h" />
+    <ClInclude Include="Main5.2\ServerSelWin.h" />
+    <ClInclude Include="Main5.2\ShadowVolume.h" />
+    <ClInclude Include="Main5.2\SideHair.h" />
+    <ClInclude Include="Main5.2\SimpleModulus.h" />
+    <ClInclude Include="Main5.2\Singleton.h" />
+    <ClInclude Include="Main5.2\SkillEffectMgr.h" />
+    <ClInclude Include="Main5.2\SkillManager.h" />
+    <ClInclude Include="Main5.2\Slider.h" />
+    <ClInclude Include="Main5.2\SMD.h" />
+    <ClInclude Include="Main5.2\SocketSystem.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\RenderCape.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\TrayModeNew.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\UIFormSystemRender.h" />
+    <ClInclude Include="Main5.2\Sprite.h" />
+    <ClInclude Include="Main5.2\stdafx.h" />
+    <ClInclude Include="Main5.2\StreamPacketEngine.h" />
+    <ClInclude Include="Main5.2\stringset.h" />
+    <ClInclude Include="Main5.2\SummonSystem.h" />
+    <ClInclude Include="Main5.2\SysMenuWin.h" />
+    <ClInclude Include="Main5.2\TestEventMap.h" />
+    <ClInclude Include="Main5.2\TextureScript.h" />
+    <ClInclude Include="Main5.2\Time\CTimCheck.h" />
+    <ClInclude Include="Main5.2\Time\Timer.h" />
+    <ClInclude Include="Main5.2\UIBaseDef.h" />
+    <ClInclude Include="Main5.2\UIControls.h" />
+    <ClInclude Include="Main5.2\UIDefaultBase.h" />
+    <ClInclude Include="Main5.2\UIGateKeeper.h" />
+    <ClInclude Include="Main5.2\UIGuardsMan.h" />
+    <ClInclude Include="Main5.2\UIGuildInfo.h" />
+    <ClInclude Include="Main5.2\UIGuildMaster.h" />
+    <ClInclude Include="Main5.2\UIJewelHarmony.h" />
+    <ClInclude Include="Main5.2\UIManager.h" />
+    <ClInclude Include="Main5.2\UIMapName.h" />
+    <ClInclude Include="Main5.2\UIMng.h" />
+    <ClInclude Include="Main5.2\UIPopup.h" />
+    <ClInclude Include="Main5.2\UISenatus.h" />
+    <ClInclude Include="Main5.2\UIWindows.h" />
+    <ClInclude Include="Main5.2\UsefulDef.h" />
+    <ClInclude Include="Main5.2\Utilities\Log\DebugAngel.h" />
+    <ClInclude Include="Main5.2\Utilities\Log\ErrorReport.h" />
+    <ClInclude Include="Main5.2\Utilities\Log\muConsoleDebug.h" />
+    <ClInclude Include="Main5.2\Utilities\Log\WindowsConsole.h" />
+    <ClInclude Include="Main5.2\Utilities\Memory\HashTable.h" />
+    <ClInclude Include="Main5.2\Utilities\Memory\MemoryLock.h" />
+    <ClInclude Include="Main5.2\Win.h" />
+    <ClInclude Include="Main5.2\WinEx.h" />
+    <ClInclude Include="Main5.2\Winmain.h" />
+    <ClInclude Include="Main5.2\WSclient.h" />
+    <ClInclude Include="Main5.2\wsclientinline.h" />
+    <ClInclude Include="Main5.2\wsctlc.h" />
+    <ClInclude Include="Main5.2\wsctlc_addon.h" />
+    <ClInclude Include="Main5.2\w_BaseMap.h" />
+    <ClInclude Include="Main5.2\w_BasePet.h" />
+    <ClInclude Include="Main5.2\w_Buff.h" />
+    <ClInclude Include="Main5.2\w_BuffScriptLoader.h" />
+    <ClInclude Include="Main5.2\w_BuffStateSystem.h" />
+    <ClInclude Include="Main5.2\w_BuffStateValueControl.h" />
+    <ClInclude Include="Main5.2\w_BuffTimeControl.h" />
+    <ClInclude Include="Main5.2\w_CharacterInfo.h" />
+    <ClInclude Include="Main5.2\w_CursedTemple.h" />
+    <ClInclude Include="Main5.2\w_MapHeaders.h" />
+    <ClInclude Include="Main5.2\w_MapProcess.h" />
+    <ClInclude Include="Main5.2\w_ObjectInfo.h" />
+    <ClInclude Include="Main5.2\w_PetAction.h" />
+    <ClInclude Include="Main5.2\w_PetActionCollecter.h" />
+    <ClInclude Include="Main5.2\w_PetActionCollecter_Add.h" />
+    <ClInclude Include="Main5.2\w_PetActionDemon.h" />
+    <ClInclude Include="Main5.2\w_PetActionRound.h" />
+    <ClInclude Include="Main5.2\w_PetActionStand.h" />
+    <ClInclude Include="Main5.2\w_PetActionUnicorn.h" />
+    <ClInclude Include="Main5.2\w_PetProcess.h" />
+    <ClInclude Include="Main5.2\w_WindowMessageHandler.h" />
+    <ClInclude Include="Main5.2\ZzzAI.h" />
+    <ClInclude Include="Main5.2\ZzzBMD.h" />
+    <ClInclude Include="Main5.2\ZzzCharacter.h" />
+    <ClInclude Include="Main5.2\ZzzEffect.h" />
+    <ClInclude Include="Main5.2\ZzzInfomation.h" />
+    <ClInclude Include="Main5.2\ZzzInterface.h" />
+    <ClInclude Include="Main5.2\ZzzInventory.h" />
+    <ClInclude Include="Main5.2\ZzzLodTerrain.h" />
+    <ClInclude Include="Main5.2\zzzMixInventory.h" />
+    <ClInclude Include="Main5.2\ZzzObject.h" />
+    <ClInclude Include="Main5.2\ZzzOpenData.h" />
+    <ClInclude Include="Main5.2\ZzzOpenglUtil.h" />
+    <ClInclude Include="Main5.2\ZzzPath.h" />
+    <ClInclude Include="Main5.2\ZzzScene.h" />
+    <ClInclude Include="Main5.2\ZzzTexture.h" />
+    <ClInclude Include="Main5.2\_define.h" />
+    <ClInclude Include="Main5.2\_enum.h" />
+    <ClInclude Include="Main5.2\_GlobalFunctions.h" />
+    <ClInclude Include="Main5.2\_struct.h" />
+    <ClInclude Include="Main5.2\_TextureIndex.h" />
+    <ClInclude Include="Main5.2\_types.h" />
+    <ClInclude Include="Main5.2\Util.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\StructSendGs.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\SystemPKSend.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\WideData.h" />
+    <ClInclude Include="Main5.2\ThangCuoi\ZzzToolKit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="script\Mu_Chs.py" />
+    <None Include="script\Mu_Eng.py" />
+    <None Include="script\Mu_Jpn.py" />
+    <None Include="script\Mu_Kor_Blue.py" />
+    <None Include="script\Mu_Kor_Red.py" />
+    <None Include="script\Mu_Kor_Red_Test.py" />
+    <None Include="script\Mu_Phi.py" />
+    <None Include="script\Mu_Tai.py" />
+    <None Include="script\Mu_Tha.py" />
+    <None Include="script\Mu_Vie.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

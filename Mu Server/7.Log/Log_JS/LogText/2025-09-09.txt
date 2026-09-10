@@ -1,0 +1,36 @@
+20:48:45 Đã xóa IP 127.0.0.1 cục bộ này.
+20:48:50 [SocketManager] Server started at port [55970]
+20:48:51 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+20:48:51 Sub-1 Port 55901 đã được sát nhập thành công!
+20:49:42 Đã xóa IP 127.0.0.1 cục bộ này.
+21:06:16 [SocketManager] Server started at port [55970]
+21:06:19 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+21:06:19 Sub-1 Port 55901 đã được sát nhập thành công!
+21:30:41 [SocketManager] Server started at port [55970]
+21:30:44 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+21:30:44 Sub-1 Port 55901 đã được sát nhập thành công!
+21:42:45 Đã xóa IP 127.0.0.1 cục bộ này.
+21:44:00 [SocketManager] Server started at port [55970]
+21:44:02 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+21:44:02 Sub-1 Port 55901 đã được sát nhập thành công!
+21:44:12 EXEC WZ_CONNECT_MEMB '11','Sub-1','192.168.1.7'
+21:44:12 [QueryManager] State (42S02), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'SPK5.2.dbo.MEMB_STAT'.
+21:55:28 EXEC WZ_CONNECT_MEMB '111','Sub-1','192.168.1.7'
+21:55:28 [QueryManager] State (42S02), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'SPK5.2.dbo.MEMB_STAT'.
+21:56:53 EXEC WZ_DISCONNECT_MEMB '11'
+21:56:53 [QueryManager] State (42S02), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'SPK5.2.dbo.MEMB_STAT'.
+21:56:55 EXEC WZ_DISCONNECT_MEMB '111'
+21:56:55 [QueryManager] State (42S02), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid object name 'SPK5.2.dbo.MEMB_STAT'.
+21:56:57 Đã xóa IP 127.0.0.1 cục bộ này.
+21:58:11 [SocketManager] Server started at port [55970]
+21:58:14 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+21:58:14 Sub-1 Port 55901 đã được sát nhập thành công!
+22:26:51 Đã xóa IP 127.0.0.1 cục bộ này.
+22:27:34 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+22:27:34 Sub-1 Port 55901 đã được sát nhập thành công!
+23:34:03 [SocketManager] Server started at port [55970]
+23:34:06 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+23:34:06 Sub-1 Port 55901 đã được sát nhập thành công!
+23:50:57 Đã xóa IP 127.0.0.1 cục bộ này.
+23:51:02 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+23:51:02 Sub-1 Port 55901 đã được sát nhập thành công!

@@ -1,0 +1,21 @@
+00:16:32 Khởi động Port 44405 thành công!
+00:16:33 Đã nhận diện JoinServer.
+00:16:35 Đã kết nối tới cụm Sub-1 nhóm 0.
+01:39:23 Khởi động Port 44405 thành công!
+01:39:25 Đã nhận diện JoinServer.
+01:39:27 Đã kết nối tới cụm Sub-1 nhóm 0.
+01:45:07 Khởi động Port 44405 thành công!
+01:45:09 Đã nhận diện JoinServer.
+01:45:12 Đã kết nối tới cụm Sub-1 nhóm 0.
+02:59:55 Đã kết nối tới cụm Sub-2 nhóm 1.
+03:03:22 JoinServer đã bị ngắt kết nối tới Sub-1 nhóm 0!
+03:03:24 JoinServer đã bị ngắt kết nối tới Sub-2 nhóm 1!
+03:04:00 Đã kết nối tới cụm Sub-1 nhóm 0.
+03:04:01 Đã kết nối tới cụm Sub-2 nhóm 1.
+23:20:20 JoinServer đã bị ngắt kết nối tới Sub-2 nhóm 1!
+23:28:17 JoinServer đã bị ngắt kết nối tới Sub-1 nhóm 0!
+23:29:06 Đã kết nối tới cụm Sub-1 nhóm 0.
+23:37:05 Đã kết nối tới cụm Sub-2 nhóm 1.
+23:43:13 JoinServer đã bị ngắt kết nối tới Sub-1 nhóm 0!
+23:46:14 JoinServer đã bị ngắt kết nối tới Sub-2 nhóm 1!
+23:46:16 Đã kết nối tới cụm Sub-1 nhóm 0.

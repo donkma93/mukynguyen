@@ -1,0 +1,67 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//------------------------------------------------------------------------------
+// Developer Project: takumi12 
+// Developer System: Kind
+//------------------------------------------------------------------------------
+// Item Start
+//------------------------------------------------------------------------------
+// Descripcion: Paquete de bienvenida para nuevos jugadores.
+// -----------------------------------------------------------------------------
+// Class: 0 = Dark Wizard
+// Class: 1 = Dark Knight
+// Class: 2 = Muse Elf
+// Class: 3 = Magic Gladiator
+// Class: 4 = Dark Lord
+// Class: 5 = Summoner
+// Class: 6 = Rage Fighter
+// ------------------------------------------------------------------------------
+//0 1 2 3 4 5		Socket Fire          +50
+//10 11 12 13 14	Socket Agua          +50
+//16 17 18 19 20	Socket Ice           +50
+//21 22 23 24 25 26	Socket Wing          +50
+//29 30 31 32		Socket Electricidad  +50
+//36				Socket Tierra        +50
+// Type: Skill Buff [1] || Buff Ticket [0]
+0
+//Class	Type	Index  Level  Luck    Dur   Skill   Option   ExcOp	SetOp	JoH	OEx	Socket1	Socket2	Socket3	Socket4	Socket5 	Time
+0		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72	//Dark Wizard
+1		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Dark Knight
+2		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Muse Elf
+3		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Magic Gladiator
+4		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Dark Lord
+5		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Summoner
+6		13		80     0      0	      255     0	     0	     0		0       0   0       255		255		255		255		255		72  //Rage Fighter
+
+end
+
+1
+//  0		0		29		30		0		259200
+//  1		0		29		30		0		259200
+//  2		0		29		30		0		259200
+//  3		0		29		30		0		259200
+//  4		0		29		30		0		259200
+//  5		0		29		30		0		259200
+//  6		0		29		30		0		259200
+end
+
+2
+//Class		Level		Reset		Point		Zen			WCoinC		WcoinP		WCoinG		Ruud		ATM
+//0			400			1			365000		1000000		0			0			0			0			0
+//1			400			1			365000		1000000		0			0			0			0			0
+//2			400			1			365000		1000000		0			0			0			0			0
+//3			400			1			365000		1000000		0			0			0			0			0
+//4			400			1			365000		1000000		0			0			0			0			0
+//5			400			1			365000		1000000		0			0			0			0			0
+//6			400			1			365000		1000000		0			0			0			0			0
+end

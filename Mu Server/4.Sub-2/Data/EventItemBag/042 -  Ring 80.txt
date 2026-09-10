@@ -1,0 +1,80 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Starter Ring 80"		1000		100				1				0					1				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0			3		0			9			1		1		1		0			0			100		//Kiếm Nhật
+0			5		0			9			1		1		1		0			0			100		//Khoái Đao
+0			9		0			9			1		1		1		0			0			100		//Kiếm Rồng Lửa
+0			10		0			9			1		1		1		0			0			100		//Kiếm Ánh Sáng
+0			13		0			9			1		1		1		0			0			100		//Hỏa Đao
+3			8		0			9			1		1		1		0			0			100		//Lưỡi Hái
+4			4		0			9			1		1		1		0			0			100		//Cung Hổ
+4			9		0			9			1		1		1		0			0			100		//Nỏ Vàng
+4			11		0			9			1		1		1		0			0			100		//Nỏ Ánh Sáng
+4			5		0			9			1		1		1		0			0			100		//Cung Bạc
+4			12		0			9			1		1		1		0			0			100		//Nỏ Rắn
+5			0		0			9			1		1		1		0			0			100		//Gậy Xương
+5			2		0			9			1		1		1		0			0			100		//Gậy Rắn
+5			3		0			9			1		1		1		0			0			100		//Gậy Sét
+5			4		0			9			1		1		1		0			0			100		//Gậy Đầu Lâu
+7			0		0			9			1		1		1		0			0			100		//Mũ Đồng
+7			2		0			9			1		1		1		0			0			100		//Mũ Vải Thô
+7			4		0			9			1		1		1		0			0			100		//Mũ Xương
+7			5		0			9			1		1		1		0			0			100		//Mũ Da
+7			6		0			9			1		1		1		0			0			100		//Mũ Trâu Xanh
+7			7		0			9			1		1		1		0			0			100		//Mũ Nhân Sư
+7			8		0			9			1		1		1		0			0			100		//Mũ Thiên Kim
+7			10		0			9			1		1		1		0			0			100		//Mũ Trinh Nữ
+7			11		0			9			1		1		1		0			0			100		//Mũ Lụa
+7			12		0			9			1		1		1		0			0			100		//Mũ Thiên Thanh
+8			0		0			9			1		1		1		0			0			100		//Áo Đồng
+8			2		0			9			1		1		1		0			0			100		//Áo Vải Thô
+8			4		0			9			1		1		1		0			0			100		//Áo Xương
+8			5		0			9			1		1		1		0			0			100		//Áo Da
+8			6		0			9			1		1		1		0			0			100		//Áo Trâu Xanh
+8			7		0			9			1		1		1		0			0			100		//Áo Nhân Sư
+8			8		0			9			1		1		1		0			0			100		//Áo Thiên Kim
+8			10		0			9			1		1		1		0			0			100		//Áo Trinh Nữ
+8			11		0			9			1		1		1		0			0			100		//Áo Lụa
+8			12		0			9			1		1		1		0			0			100		//Áo Thiên Thanh
+9			0		0			9			1		1		1		0			0			100		//Quần Đồng
+9			2		0			9			1		1		1		0			0			100		//Quần Vải Thô
+9			4		0			9			1		1		1		0			0			100		//Quần Xương
+9			5		0			9			1		1		1		0			0			100		//Quần Da
+9			6		0			9			1		1		1		0			0			100		//Quần Trâu Xanh
+9			7		0			9			1		1		1		0			0			100		//Quần Nhân Sư
+9			8		0			9			1		1		1		0			0			100		//Quần Thiên Kim
+9			10		0			9			1		1		1		0			0			100		//Quần Trinh Nữ
+9			11		0			9			1		1		1		0			0			100		//Quần Lụa
+9			12		0			9			1		1		1		0			0			100		//Quần Thiên Thanh
+10			0		0			9			1		1		1		0			0			100		//Tay Đồng
+10			2		0			9			1		1		1		0			0			100		//Tay Vải Thô
+10			4		0			9			1		1		1		0			0			100		//Tay Xương
+10			5		0			9			1		1		1		0			0			100		//Tay Da
+10			6		0			9			1		1		1		0			0			100		//Tay Trâu Xanh
+10			7		0			9			1		1		1		0			0			100		//Tay Nhân Sư
+10			8		0			9			1		1		1		0			0			100		//Tay Thiên Kim
+10			10		0			9			1		1		1		0			0			100		//Tay Trinh Nữ
+10			11		0			9			1		1		1		0			0			100		//Tay Lụa
+10			12		0			9			1		1		1		0			0			100		//Tay Thiên Thanh
+11			0		0			9			1		1		1		0			0			100		//Giày Đồng
+11			2		0			9			1		1		1		0			0			100		//Giày Vải Thô
+11			4		0			9			1		1		1		0			0			100		//Giày Xương
+11			5		0			9			1		1		1		0			0			100		//Giày Da
+11			6		0			9			1		1		1		0			0			100		//Giày Trâu Xanh
+11			7		0			9			1		1		1		0			0			100		//Giày Nhân Sư
+11			8		0			9			1		1		1		0			0			100		//Giày Thiên Kim
+11			10		0			9			1		1		1		0			0			100		//Giày Trinh Nữ
+11			11		0			9			1		1		1		0			0			100		//Giày Lụa
+11			12		0			9			1		1		1		0			0			100		//Giày Thiên Thanh
+end

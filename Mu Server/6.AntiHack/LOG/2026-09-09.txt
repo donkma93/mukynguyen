@@ -1,0 +1,10 @@
+22:04:04 Khởi động Port 55858 thành công!
+22:04:04 Tải Cấu Hình thành công!
+22:04:04 Hệ thống chống DOS đã mở.
+22:04:04 DumpList đã được tải.
+22:04:04 ChecksumList đã được tải.
+22:04:04 InternalList đã được tải.
+22:04:04 WindowList đã được tải.
+22:04:04 BadWords đã được tải.
+22:04:04 BlackList đã được tải.
+22:04:04 WatchList đã được tải.

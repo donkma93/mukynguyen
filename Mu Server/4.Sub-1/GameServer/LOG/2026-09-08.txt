@@ -1,0 +1,42 @@
+19:47:10 [ServerInfo] CashShop loaded successfully
+19:47:10 [ServerInfo] ChaosMix loaded successfully
+19:47:10 [ServerInfo] Character loaded successfully
+19:47:10 [FakeOnline] Load Data OK
+19:47:10 [ServerInfo] Custom loaded successfully
+19:47:10 [ServerInfo] Command loaded successfully
+19:47:10 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+19:47:10 [ServerInfo] Common loaded successfully
+19:47:10 [ServerInfo] Event loaded successfully
+19:47:10 [ServerInfo] EventItemBag loaded successfully
+19:47:10 [ServerInfo] Hack loaded successfully
+19:47:10 [ServerInfo] Item loaded successfully
+19:47:10 [ServerInfo] Monster loaded successfully
+19:47:10 [ServerInfo] Move loaded successfully
+19:47:10 [ServerInfo] Quest loaded successfully
+19:47:10 [ServerInfo] Shop loaded successfully
+19:47:10 [ServerInfo] Skill loaded successfully
+19:47:10 [ServerInfo] Util loaded successfully
+19:47:10 [ReadBotInfo] BotSystem loaded successfully
+19:47:10 [ServerInfo] CfgACuoi loaded successfully
+19:59:54 AddAccount: thuythuy - IP: 127.0.0.1
+19:59:56 Character: thuythuy logged
+20:00:07 Character: thuythuy logout
+20:00:07 ExitAccount: thuythuy - IP: 127.0.0.1
+22:05:00 [KING OF MU] Start
+22:35:00 [KING OF MU] Finish - No Winner
+22:40:53 AddAccount: thuythuy - IP: 127.0.0.1
+22:40:55 Character: thuythuy logged
+22:41:42 Character: thuythuy logout
+22:41:42 ExitAccount: thuythuy - IP: 127.0.0.1
+22:45:15 AddAccount: thuythuy - IP: 127.0.0.1
+22:45:16 Character: thuythuy logged
+22:53:26 Character: thuythuy logout
+22:53:26 ExitAccount: thuythuy - IP: 127.0.0.1
+22:55:25 AddAccount: thuythuy - IP: 127.0.0.1
+22:55:26 Character: thuythuy logged
+22:56:30 Character: thuythuy logout
+22:56:30 ExitAccount: thuythuy - IP: 127.0.0.1
+22:58:45 AddAccount: thuythuy - IP: 127.0.0.1
+22:58:46 Character: thuythuy logged
+23:09:11 Character: thuythuy logout
+23:09:11 ExitAccount: thuythuy - IP: 127.0.0.1

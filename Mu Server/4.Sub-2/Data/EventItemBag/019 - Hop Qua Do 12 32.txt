@@ -1,0 +1,28 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Red Ribbon Box"		1000		100				1				0					1				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0			20		0              4          1       1      1        1		    0           100        //[Cấp7] Cuồng Phong Đao
+0			21		0              4          1       1      1        1		    0           100        //[Cấp7] Đao Sinh Mệnh
+0			34		0              4          1       1      1        1		    0           100        //[Cấp7] N.Đ Quyền Lực
+2           12		0              4          1       1      1        1		    0           100        //[Cấp7] Trượng Đại Vương
+4           19		0              4          1       1      1        1		    0           100        //[Cấp7] Nỏ Thánh Nữ
+5           34		0              4          0       1      1        1		    0           100        //[Cấp7] Gậy Hồng Ngọc
+5           23		0              4          1       1      1        1		    0           100        //[Cấp7] Sách Ma Công
+5           13		0              4          0       1      1        1		    0           100        //[Cấp7] gậy thiên sứ
+6           15		0              4          0       1      1        1		    0           100        //[Cấp7] Khiên Triệu Hồn
+6           13		0              4          1       1      1        1		    0           100        //[Cấp7] Khiên Hỏa Long
+6           21		0              4          1       1      1        1		    0           100        //[Cấp7] Khiên Thập Tự
+
+
+end

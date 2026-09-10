@@ -1,0 +1,81 @@
+09:43:57 [SocketManager] Server started at port [55970]
+09:44:04 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+09:44:04 Sub-1 Port 55901 đã được sát nhập thành công!
+09:50:26 [SocketManager] Server started at port [55970]
+09:50:33 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+09:50:33 Sub-1 Port 55901 đã được sát nhập thành công!
+09:57:52 [SocketManager] Server started at port [55970]
+09:57:58 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+09:57:58 Sub-1 Port 55901 đã được sát nhập thành công!
+10:07:06 [SocketManager] Server started at port [55970]
+10:07:13 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+10:07:13 Sub-1 Port 55901 đã được sát nhập thành công!
+10:08:44 [SocketManager] Server started at port [55970]
+10:08:53 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+10:08:53 Sub-1 Port 55901 đã được sát nhập thành công!
+10:44:33 [SocketManager] Server started at port [55970]
+10:44:39 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+10:44:39 Sub-1 Port 55901 đã được sát nhập thành công!
+10:52:28 [SocketManager] Server started at port [55970]
+10:52:32 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+10:52:32 Sub-1 Port 55901 đã được sát nhập thành công!
+11:38:23 Đã xóa IP 127.0.0.1 cục bộ này.
+11:38:26 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+11:38:26 Sub-1 Port 55901 đã được sát nhập thành công!
+12:09:08 Đã xóa IP 127.0.0.1 cục bộ này.
+12:09:11 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+12:09:11 Sub-1 Port 55901 đã được sát nhập thành công!
+12:09:16 Đã xóa IP 127.0.0.1 cục bộ này.
+12:09:23 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+12:09:23 Sub-1 Port 55901 đã được sát nhập thành công!
+12:09:36 [SocketManager] Server started at port [55970]
+12:09:39 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+12:09:39 Sub-1 Port 55901 đã được sát nhập thành công!
+17:40:05 Đã xóa IP 127.0.0.1 cục bộ này.
+17:40:09 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+17:40:09 Sub-1 Port 55901 đã được sát nhập thành công!
+17:40:12 Đã xóa IP 127.0.0.1 cục bộ này.
+19:02:52 Không Thể Kết Nối Tới Data SQL
+19:02:52 Có Thể Chưa Chạy Reg32 Và Reg64 Hoặc Tên DB Không Đúng
+19:02:52 Hãy Kiểm Tra Lại Cấu Hình Tên ODBC Phải Khớp DB SQL
+19:02:52 Hoặc Liên Hệ Zalo SĐT: 0968.092.399 (Thắng Cười) Để Được Hỗ Trợ
+19:04:41 [SocketManager] Server started at port [55970]
+19:04:45 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:04:45 Sub-1 Port 55901 đã được sát nhập thành công!
+19:05:08 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:05:08 Đã xóa IP 127.0.0.1 cục bộ này.
+19:05:52 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:05:52 Đã xóa IP 127.0.0.1 cục bộ này.
+19:49:51 Đã xóa IP 127.0.0.1 cục bộ này.
+19:49:53 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:49:53 Sub-1 Port 55901 đã được sát nhập thành công!
+20:10:05 Đã xóa IP 127.0.0.1 cục bộ này.
+20:10:07 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+20:10:07 Sub-1 Port 55901 đã được sát nhập thành công!
+22:14:12 Không Thể Kết Nối Tới Data SQL
+22:14:12 Có Thể Chưa Chạy Reg32 Và Reg64 Hoặc Tên DB Không Đúng
+22:14:12 Hãy Kiểm Tra Lại Cấu Hình Tên ODBC Phải Khớp DB SQL
+22:14:12 Hoặc Liên Hệ Zalo SĐT: 0968.092.399 (Thắng Cười) Để Được Hỗ Trợ
+22:15:59 JoinServer loaded successfully
+22:17:25 [SocketManager] Server started at port [55970]
+22:17:32 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+22:17:32 Sub-1 Port 55901 đã được sát nhập thành công!
+22:18:25 Đã xóa IP 127.0.0.1 cục bộ này.
+22:18:40 Không Thể Kết Nối Tới Data SQL
+22:18:40 Có Thể Chưa Chạy Reg32 Và Reg64 Hoặc Tên DB Không Đúng
+22:18:40 Hãy Kiểm Tra Lại Cấu Hình Tên ODBC Phải Khớp DB SQL
+22:18:40 Hoặc Liên Hệ Zalo SĐT: 0968.092.399 (Thắng Cười) Để Được Hỗ Trợ
+22:20:16 [SocketManager] Server started at port [55970]
+22:21:06 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+22:21:06 Sub-1 Port 55901 đã được sát nhập thành công!
+23:17:43 Đã xóa IP 127.0.0.1 cục bộ này.
+23:17:50 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+23:17:50 Sub-1 Port 55901 đã được sát nhập thành công!
+23:20:05 Đã xóa IP 127.0.0.1 cục bộ này.
+23:20:08 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+23:20:08 Sub-1 Port 55901 đã được sát nhập thành công!
+23:40:03 Đã xóa IP 127.0.0.1 cục bộ này.
+23:40:12 Không Thể Kết Nối Tới Data SQL
+23:40:12 Có Thể Chưa Chạy Reg32 Và Reg64 Hoặc Tên DB Không Đúng
+23:40:12 Hãy Kiểm Tra Lại Cấu Hình Tên ODBC Phải Khớp DB SQL
+23:40:12 Hoặc Liên Hệ Zalo SĐT: 0968.092.399 (Thắng Cười) Để Được Hỗ Trợ

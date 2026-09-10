@@ -1,0 +1,21 @@
+22:04:04 [ServerInfo] CashShop loaded successfully
+22:04:04 [ServerInfo] ChaosMix loaded successfully
+22:04:04 [ServerInfo] Character loaded successfully
+22:04:04 [FakeOnline] Load Data OK
+22:04:04 [ServerInfo] Custom loaded successfully
+22:04:04 [ServerInfo] Command loaded successfully
+22:04:04 GHRS Hôm Nay Là : 1000 Lần - (Thứ 4) - 23:59:59 Reset : +0 Lần
+22:04:04 [ServerInfo] Common loaded successfully
+22:04:04 [ServerInfo] Event loaded successfully
+22:04:04 [ServerInfo] EventItemBag loaded successfully
+22:04:04 [ServerInfo] Hack loaded successfully
+22:04:04 [ServerInfo] Item loaded successfully
+22:04:04 [ServerInfo] Monster loaded successfully
+22:04:04 [ServerInfo] Move loaded successfully
+22:04:04 [ServerInfo] Quest loaded successfully
+22:04:04 [ServerInfo] Shop loaded successfully
+22:04:04 [ServerInfo] Skill loaded successfully
+22:04:04 [ServerInfo] Util loaded successfully
+22:04:04 [ReadBotInfo] BotSystem loaded successfully
+22:04:04 [ServerInfo] CfgACuoi loaded successfully
+22:05:00 [KING OF MU] Start

@@ -1,0 +1,6 @@
+19:24:16 Khởi động Port 44405 thành công!
+19:24:18 Đã nhận diện JoinServer.
+19:24:18 Đã kết nối tới cụm Sub-1 nhóm 0.
+20:14:18 Khởi động Port 44405 thành công!
+20:14:19 Đã nhận diện JoinServer.
+20:14:20 Đã kết nối tới cụm Sub-1 nhóm 0.

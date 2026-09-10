@@ -1,0 +1,60 @@
+06:57:16 Khởi động Port 55858 thành công!
+06:57:16 Tải Cấu Hình thành công!
+06:57:16 Hệ thống chống DOS đã mở.
+06:57:16 DumpList đã được tải.
+06:57:16 ChecksumList đã được tải.
+06:57:16 InternalList đã được tải.
+06:57:16 WindowList đã được tải.
+06:57:16 BadWords đã được tải.
+06:57:16 BlackList đã được tải.
+06:57:16 WatchList đã được tải.
+07:02:04 Khởi động Port 55858 thành công!
+07:02:04 Tải Cấu Hình thành công!
+07:02:04 Hệ thống chống DOS đã mở.
+07:02:04 DumpList đã được tải.
+07:02:04 ChecksumList đã được tải.
+07:02:04 InternalList đã được tải.
+07:02:04 WindowList đã được tải.
+07:02:04 BadWords đã được tải.
+07:02:04 BlackList đã được tải.
+07:02:04 WatchList đã được tải.
+07:06:23 Khởi động Port 55858 thành công!
+07:06:23 Tải Cấu Hình thành công!
+07:06:23 Hệ thống chống DOS đã mở.
+07:06:23 DumpList đã được tải.
+07:06:23 ChecksumList đã được tải.
+07:06:23 InternalList đã được tải.
+07:06:23 WindowList đã được tải.
+07:06:23 BadWords đã được tải.
+07:06:23 BlackList đã được tải.
+07:06:23 WatchList đã được tải.
+07:13:47 Khởi động Port 55858 thành công!
+07:13:47 Tải Cấu Hình thành công!
+07:13:47 Hệ thống chống DOS đã mở.
+07:13:48 DumpList đã được tải.
+07:13:48 ChecksumList đã được tải.
+07:13:48 InternalList đã được tải.
+07:13:48 WindowList đã được tải.
+07:13:48 BadWords đã được tải.
+07:13:48 BlackList đã được tải.
+07:13:48 WatchList đã được tải.
+13:47:12 Khởi động Port 55858 thành công!
+13:47:12 Tải Cấu Hình thành công!
+13:47:12 Hệ thống chống DOS đã mở.
+13:47:12 DumpList đã được tải.
+13:47:12 ChecksumList đã được tải.
+13:47:12 InternalList đã được tải.
+13:47:12 WindowList đã được tải.
+13:47:12 BadWords đã được tải.
+13:47:12 BlackList đã được tải.
+13:47:12 WatchList đã được tải.
+22:30:06 Khởi động Port 55858 thành công!
+22:30:06 Tải Cấu Hình thành công!
+22:30:06 Hệ thống chống DOS đã mở.
+22:30:06 DumpList đã được tải.
+22:30:06 ChecksumList đã được tải.
+22:30:06 InternalList đã được tải.
+22:30:06 WindowList đã được tải.
+22:30:06 BadWords đã được tải.
+22:30:06 BlackList đã được tải.
+22:30:06 WatchList đã được tải.

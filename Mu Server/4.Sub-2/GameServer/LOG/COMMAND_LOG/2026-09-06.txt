@@ -1,0 +1,8 @@
+22:38:35 [CommandAddPoint][donpv2][SUM_DonPV] - (Type: 3, Amount: 15000)
+22:52:24 [CommandAddPoint][donpv2][DWPV] - (Type: 1, Amount: 30000)
+22:52:30 [CommandAddPoint][donpv2][DWPV] - (Type: 0, Amount: 3000)
+22:52:34 [CommandAddPoint][donpv2][DWPV] - (Type: 3, Amount: 32000)
+22:56:04 [CommandChange][donpv2][DWPV] - (ChangeUp: 0)
+22:56:04 [CommandChange][donpv2][DWPV] - (ChangeUp: 1)
+23:00:45 [CommandReset][donpv2][DWPV] - (Reset: 1)
+23:02:49 [CommandAddPoint][donpv2][DWPV] - (Type: 3, Amount: 390)

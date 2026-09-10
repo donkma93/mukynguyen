@@ -1,0 +1,2 @@
+19:03:02 Tài khoản vừa đăng nhập. (Tài khoản: thuythuy, IP: 127.0.0.1, Nhóm Sub: 0)
+19:03:53 [AccountInfo] Account disconnected (Account: thuythuy, IpAddress: 127.0.0.1, GameServerCode: 0)

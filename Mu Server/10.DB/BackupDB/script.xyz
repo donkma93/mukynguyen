@@ -1,0 +1,1 @@
+ -S stringsqlserv -U usrname -P pawd -Q "backup database datbas To DISK='bacpth'"

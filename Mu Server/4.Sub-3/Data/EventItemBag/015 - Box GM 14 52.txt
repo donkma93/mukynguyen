@@ -1,0 +1,58 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		   ItemDropRate	   ItemDropCount	 SetItemDropRate		ItemDropType	Fireworks
+"Box GM"	          2000000000	    	100				1				0					     1				0
+end
+
+1
+//=============================================Đồ Cấp 5========================================================================
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option    Excellent       SetOption	    Tỉ Lệ	NameItem
+0			22		0			4			1		1		1		1			0			100		//[Cấp8] Đao Quyền Năng
+0			23		0			4			1		1		1		1			0			100		//[Cấp8] Đao Hồng Long
+0			35		0			4			1		1		1		1			0			100		//[Cấp8] Vuốt Phượng Hoàng
+2			14		0			4			1		1		1		1			0			100		//[Cấp8] Trượng Thái Dương
+4			21		0			4			1		1		1		1			0			100		//[Cấp8] Cung Thái Bình
+5			12		0			4			1		1		1		1			0			100		//[Cấp8] Gậy Thần Ma
+5			19		0			4			1		1		1		1			0			100		//[Cấp8] Khuyển Bão Điện
+
+7			29		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Quyền Năng
+8			29		0			4			0		1		1		1			0			100		//[Cấp8] Áo Quyền Năng
+9			29		0			4			0		1		1		1			0			100		//[Cấp8] Quần Quyền Năng
+10			29		0			4			0		1		1		1			0			100		//[Cấp8] Găng Quyền Năng
+11			29		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Quyền Năng
+7			30		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Thần Ma
+8			30		0			4			0		1		1		1			0			100		//[Cấp8] Áo Thần Ma
+9			30		0			4			0		1		1		1			0			100		//[Cấp8] Quần Thần Ma
+10			30		0			4			0		1		1		1			0			100		//[Cấp8] Găng Thần Ma
+11			30		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Thần Ma
+7			31		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Thái Bình
+8			31		0			4			0		1		1		1			0			100		//[Cấp8] Áo Thái Bình
+9			31		0			4			0		1		1		1			0			100		//[Cấp8] Quần Thái Bình
+10			31		0			4			0		1		1		1			0			100		//[Cấp8] Găng Thái Bình
+11			31		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Thái Bình
+8			32		0			4			0		1		1		1			0			100		//[Cấp8] Áo Hồng Long
+9			32		0			4			0		1		1		1			0			100		//[Cấp8] Quần Hồng Long
+10			32		0			4			0		1		1		1			0			100		//[Cấp8] Găng Hồng Long
+11			32		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Hồng Long
+7			33		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Thái Dương
+8			33		0			4			0		1		1		1			0			100		//[Cấp8] Áo Thái Dương
+9			33		0			4			0		1		1		1			0			100		//[Cấp8] Quần Thái Dương
+10			33		0			4			0		1		1		1			0			100		//[Cấp8] Găng Thái Dương
+11			33		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Thái Dương
+7			43		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Bão Điện
+8			43		0			4			0		1		1		1			0			100		//[Cấp8] Áo Bão Điện
+9			43		0			4			0		1		1		1			0			100		//[Cấp8] Quần Bão Điện
+10			43		0			4			0		1		1		1			0			100		//[Cấp8] Găng Bão Điện
+11			43		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Bão Điện
+7			73		0			4			0		1		1		1			0			100		//[Cấp8] Mũ Bạch Long
+8			73		0			4			0		1		1		1			0			100		//[Cấp8] Áo Bạch Long
+9			73		0			4			0		1		1		1			0			100		//[Cấp8] Quần Bạch Long
+11			73		0			4			0		1		1		1			0			100		//[Cấp8] Giầy Bạch Long
+
+end

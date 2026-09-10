@@ -1,0 +1,55 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//	Index	Map		MaxLife		DamageMin   	DamageMax   	Defense		AttackRate   	DefenseRate   	ExperienceRate	KillMessage   	InfoMessage   	WCoinC 	WCoinP 	WCoinG 	Ruud	SummonMonster	SummonMonterCount   SummonMonsterRate		DameBossCount	KillBossCount
+//boss vang fam ngoc
+	493		*		100	   		100				100				100			100				100				100		 		94         		38				3000		0		0		0		*				*		    		100						1				1
+	494		*		100	   		100				100				100			100				100				100		 		95         		38				3000		0		0		0		*				*		    		100						1				1
+	495		*		100	   		100				100				100			100				100				100		 		96         		38				3000		0		0		0		*				*		    		100						1				1
+	496		*		100	   		100				100				100			100				100				100		 		97         		38				3000		0		0		0		*				*		    		100						1				1
+	497		*		100	   		100				100				100			100				100				100		 		98         		38				3000		0		0		0		*				*		    		100						1				1
+	498		*		100	   		100				100				100			100				100				100		 		99         		38				3000		0		0		0		*				*		    		100						1				1
+	499		*		100	   		100				100				100			100				100				100		 		100         	38				3000		0		0		0		*				*		    		100						1				1
+	500		*		100	   		100				100				100			100				100				100		 		101         	38				3000		0		0		0		*				*		    		100						1				1
+	501		*		100	   		100				100				100			100				100				100		 		102         	38				3000		0		0		0		*				*		    		100						1				1
+	502		*		100	   		100				100				100			100				100				100		 		103         	38				3000		0		0		0		*				*		    		100						1				1
+//	Index	Map		MaxLife		DamageMin   	DamageMax   	Defense		AttackRate   	DefenseRate   	ExperienceRate	KillMessage   	InfoMessage   	WCoinC 	WCoinP 	WCoinG 	Ruud	SummonMonster	SummonMonterCount   SummonMonsterRate		DameBossCount	KillBossCount
+// boss nhiem vu
+	700 	*		200	   		100				100				100			100				100				100		 		104         	38				0		    0		0		0		*				*		    		100						1				1
+	701 	*		200	   		100				100				100			100				100				100		 		105         	38				0		    0		0		0		*				*		    		100						1				1
+	702 	*		200	   		100				100				100			100				100				100		 		106         	38				0		    0		0		0		*				*		    		100						1				1
+	42		*		200	   		100				100				100			100				100				100		 		107         	38				0		    0		0		0		*				*		    		100						1				1
+	275 	*		200	   		100				100				100			100				100				100		 		108         	38				0		    0		0		0		*				*		    		100						1				1
+	309 	*		200	   		100				100				100			100				100				100		 		109         	38				0		    0		0		0		*				*		    		100						1				1
+	459 	*		200	   		100				100				100			100				100				100		 		110         	38				0		    0		0		0		*				*		    		100						1				1
+	561 	*		200	   		100				100				100			100				100				100		 		111         	38				0		    0		0		0		*				*		    		100						1				1
+//	Index	Map		MaxLife		DamageMin   	DamageMax   	Defense		AttackRate   	DefenseRate   	ExperienceRate	KillMessage   	InfoMessage   	WCoinC 	WCoinP 	WCoinG 	Ruud	SummonMonster	SummonMonterCount   SummonMonsterRate		DameBossCount	KillBossCount
+// boss vip
+	708 	*		100	   		100				100				100			100				100				100		 		112         	38				15000		0		0		0		*				*		    		100						1				1
+	709 	*		100	   		100				100				100			100				100				100		 		113         	38				15000		0		0		0		*				*		    		100						1				1
+	710 	*		100	   		100				100				100			100				100				100		 		114         	38				15000		0		0		0		*				*		    		100						1				1
+	711 	*		100	   		100				100				100			100				100				100		 		115         	38				15000		0		0		0		*				*		    		100						1				1
+	712 	*		100	   		100				100				100			100				100				100		 		116         	38				15000		0		0		0		*				*		    		100						1				1
+	713 	*		100	   		100				100				100			100				100				100		 		117         	38				15000		0		0		0		*				*		    		100						1				1
+	717 	*		100	   		100				100				100			100				100				100		 		118         	38				15000		0		0		0		*				*		    		100						1				1
+	718 	*		100	   		100				100				100			100				100				100		 		119         	38				15000		0		0		0		*				*		    		100						1				1
+	719 	*		100	   		100				100				100			100				100				100		 		120         	38				15000		0		0		0		*				*		    		100						1				1
+	720 	*		100	   		100				100				100			100				100				100		 		121         	38				15000		0		0		0		*				*		    		100						1				1
+	721 	*		100	   		100				100				100			100				100				100		 		122         	38				15000		0		0		0		*				*		    		100						1				1
+	722 	*		100	   		100				100				100			100				100				100		 		123         	38				15000		0		0		0		*				*		    		100						1				1
+//boss guild
+	723 	*		500 	   	100				100				100			100				100				100		 		124         	38				0			0		0		0		*				*		    		100						1				1
+
+//Tượng Test Dame
+	526		*		1000000	   	100				100				100			100				100				100		 		*				*				0		    0		0		0		*				*		    		100						1				1
+
+end

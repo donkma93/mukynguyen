@@ -1,0 +1,295 @@
+07:51:00 [CTC Mini] Bắt Đầu Event Công Thành Chiến Mini
+08:21:00 [CTC Mini] Finish 2
+14:47:44 AddAccount: 11 - IP: 192.168.1.7
+14:47:45 Character: ThangCuoi logged
+14:48:42 Character: ThangCuoi logout
+14:48:42 ExitAccount: 11 - IP: 192.168.1.7
+15:53:49 AddAccount: 11 - IP: 192.168.1.7
+15:53:49 Character: ThangCuoi logged
+19:58:23 Character: ThangCuoi logout
+19:58:23 ExitAccount: 11 - IP: 192.168.1.7
+20:05:01 AddAccount: 11 - IP: 192.168.1.7
+20:05:02 Character: ThangCuoi logged
+20:05:28 Character: ThangCuoi logout
+20:05:28 ExitAccount: 11 - IP: 192.168.1.7
+20:07:24 AddAccount: 11 - IP: 192.168.1.7
+20:07:25 Character: ThangCuoi logged
+20:07:51 Character: ThangCuoi logout
+20:07:51 ExitAccount: 11 - IP: 192.168.1.7
+20:34:28 AddAccount: 11 - IP: 192.168.1.7
+20:34:29 Character: ThangCuoi logged
+20:42:40 [ServerInfo] Character loaded successfully
+20:48:42 Character: ThangCuoi logout
+20:48:42 ExitAccount: 11 - IP: 192.168.1.7
+20:48:51 [ServerInfo] CashShop loaded successfully
+20:48:51 [ServerInfo] ChaosMix loaded successfully
+20:48:51 [ServerInfo] Character loaded successfully
+20:48:51 [FakeOnline] Load Data OK
+20:48:51 [ServerInfo] Custom loaded successfully
+20:48:51 [ServerInfo] Command loaded successfully
+20:48:51 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+20:48:51 [ServerInfo] Common loaded successfully
+20:48:51 [ServerInfo] Event loaded successfully
+20:48:51 [ServerInfo] EventItemBag loaded successfully
+20:48:51 [ServerInfo] Hack loaded successfully
+20:48:51 [ServerInfo] Item loaded successfully
+20:48:51 [ServerInfo] Monster loaded successfully
+20:48:51 [ServerInfo] Move loaded successfully
+20:48:51 [ServerInfo] Quest loaded successfully
+20:48:51 [ServerInfo] Shop loaded successfully
+20:48:51 [ServerInfo] Skill loaded successfully
+20:48:51 [ServerInfo] Util loaded successfully
+20:48:51 [ReadBotInfo] BotSystem loaded successfully
+20:48:51 [ServerInfo] CfgSPK loaded successfully
+20:48:56 AddAccount: 11 - IP: 192.168.1.7
+20:48:57 Character: ThangCuoi logged
+20:49:41 Character: ThangCuoi logout
+20:49:41 ExitAccount: 11 - IP: 192.168.1.7
+21:06:19 [ServerInfo] CashShop loaded successfully
+21:06:19 [ServerInfo] ChaosMix loaded successfully
+21:06:19 [ServerInfo] Character loaded successfully
+21:06:19 [FakeOnline] Load Data OK
+21:06:19 [ServerInfo] Custom loaded successfully
+21:06:19 [ServerInfo] Command loaded successfully
+21:06:19 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+21:06:19 [ServerInfo] Common loaded successfully
+21:06:19 [ServerInfo] Event loaded successfully
+21:06:19 [ServerInfo] EventItemBag loaded successfully
+21:06:19 [ServerInfo] Hack loaded successfully
+21:06:19 [ServerInfo] Item loaded successfully
+21:06:19 [ServerInfo] Monster loaded successfully
+21:06:19 [ServerInfo] Move loaded successfully
+21:06:19 [ServerInfo] Quest loaded successfully
+21:06:19 [ServerInfo] Shop loaded successfully
+21:06:19 [ServerInfo] Skill loaded successfully
+21:06:19 [ServerInfo] Util loaded successfully
+21:06:19 [ReadBotInfo] BotSystem loaded successfully
+21:06:19 [ServerInfo] CfgSPK loaded successfully
+21:06:31 AddAccount: 11 - IP: 192.168.1.7
+21:06:32 Character: ThangCuoi logged
+21:10:33 Character: ThangCuoi logout
+21:10:33 ExitAccount: 11 - IP: 192.168.1.7
+21:11:25 AddAccount: 11 - IP: 192.168.1.7
+21:11:25 Character: ThangCuoi logged
+21:14:05 Character: ThangCuoi logout
+21:14:05 ExitAccount: 11 - IP: 192.168.1.7
+21:30:44 [ServerInfo] CashShop loaded successfully
+21:30:44 [ServerInfo] ChaosMix loaded successfully
+21:30:44 [ServerInfo] Character loaded successfully
+21:30:44 [FakeOnline] Load Data OK
+21:30:44 [ServerInfo] Custom loaded successfully
+21:30:44 [ServerInfo] Command loaded successfully
+21:30:44 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+21:30:44 [ServerInfo] Common loaded successfully
+21:30:44 [ServerInfo] Event loaded successfully
+21:30:44 [ServerInfo] EventItemBag loaded successfully
+21:30:44 [ServerInfo] Hack loaded successfully
+21:30:44 [ServerInfo] Item loaded successfully
+21:30:44 [ServerInfo] Monster loaded successfully
+21:30:44 [ServerInfo] Move loaded successfully
+21:30:44 [ServerInfo] Quest loaded successfully
+21:30:44 [ServerInfo] Shop loaded successfully
+21:30:44 [ServerInfo] Skill loaded successfully
+21:30:44 [ServerInfo] Util loaded successfully
+21:30:44 [ReadBotInfo] BotSystem loaded successfully
+21:30:44 [ServerInfo] CfgSPK loaded successfully
+21:32:18 AddAccount: 11 - IP: 192.168.1.7
+21:36:26 Character: 2222222222 logged
+21:36:27 Character: 2222222222 logout
+21:36:35 Character: ThangCuoi logged
+21:42:44 Character: ThangCuoi logout
+21:42:44 ExitAccount: 11 - IP: 192.168.1.7
+21:44:02 [ServerInfo] CashShop loaded successfully
+21:44:02 [ServerInfo] ChaosMix loaded successfully
+21:44:02 [ServerInfo] Character loaded successfully
+21:44:02 [FakeOnline] Load Data OK
+21:44:02 [ServerInfo] Custom loaded successfully
+21:44:02 [ServerInfo] Command loaded successfully
+21:44:02 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+21:44:02 [ServerInfo] Common loaded successfully
+21:44:02 [ServerInfo] Event loaded successfully
+21:44:02 [ServerInfo] EventItemBag loaded successfully
+21:44:02 [ServerInfo] Hack loaded successfully
+21:44:02 [ServerInfo] Item loaded successfully
+21:44:02 [ServerInfo] Monster loaded successfully
+21:44:02 [ServerInfo] Move loaded successfully
+21:44:02 [ServerInfo] Quest loaded successfully
+21:44:02 [ServerInfo] Shop loaded successfully
+21:44:02 [ServerInfo] Skill loaded successfully
+21:44:02 [ServerInfo] Util loaded successfully
+21:44:02 [ReadBotInfo] BotSystem loaded successfully
+21:44:02 [ServerInfo] CfgSPK loaded successfully
+21:44:12 AddAccount: 11 - IP: 192.168.1.7
+21:44:18 Character: 12323 logged
+21:48:44 [ServerInfo] Character loaded successfully
+21:55:28 AddAccount: 111 - IP: 192.168.1.7
+21:55:31 Character: 12322 logged
+21:55:41 Character: 12323 logout
+21:56:12 Character: 12323 logged
+21:56:20 [11][12323] Kill [111][12322]
+21:56:53 Character: 12323 logout
+21:56:53 ExitAccount: 11 - IP: 192.168.1.7
+21:56:55 Character: 12322 logout
+21:56:55 ExitAccount: 111 - IP: 192.168.1.7
+21:58:13 [ServerInfo] CashShop loaded successfully
+21:58:13 [ServerInfo] ChaosMix loaded successfully
+21:58:13 [ServerInfo] Character loaded successfully
+21:58:13 [FakeOnline] Load Data OK
+21:58:13 [ServerInfo] Custom loaded successfully
+21:58:13 [ServerInfo] Command loaded successfully
+21:58:13 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+21:58:13 [ServerInfo] Common loaded successfully
+21:58:13 [ServerInfo] Event loaded successfully
+21:58:13 [ServerInfo] EventItemBag loaded successfully
+21:58:13 [ServerInfo] Hack loaded successfully
+21:58:13 [ServerInfo] Item loaded successfully
+21:58:13 [ServerInfo] Monster loaded successfully
+21:58:13 [ServerInfo] Move loaded successfully
+21:58:13 [ServerInfo] Quest loaded successfully
+21:58:13 [ServerInfo] Shop loaded successfully
+21:58:13 [ServerInfo] Skill loaded successfully
+21:58:13 [ServerInfo] Util loaded successfully
+21:58:13 [ReadBotInfo] BotSystem loaded successfully
+21:58:13 [ServerInfo] CfgSPK loaded successfully
+21:58:35 AddAccount: 11 - IP: 192.168.1.7
+21:58:38 Character: 12323 logged
+21:59:35 Character: 12323 logout
+21:59:35 ExitAccount: 11 - IP: 192.168.1.7
+22:00:10 AddAccount: 11 - IP: 192.168.1.7
+22:00:11 Character: 12323 logged
+22:00:21 Character: 12323 logout
+22:00:21 ExitAccount: 11 - IP: 192.168.1.7
+22:05:00 [KING OF MU] Start
+22:05:56 AddAccount: 11 - IP: 192.168.1.7
+22:05:59 Character: 12323 logged
+22:06:13 Character: 12323 logout
+22:06:13 ExitAccount: 11 - IP: 192.168.1.7
+22:10:20 AddAccount: 11 - IP: 192.168.1.7
+22:10:21 Character: 12323 logged
+22:12:02 Character: 12323 logout
+22:12:02 ExitAccount: 11 - IP: 192.168.1.7
+22:15:11 AddAccount: 11 - IP: 192.168.1.7
+22:15:12 Character: 12323 logged
+22:15:39 Character: 12323 logout
+22:15:39 ExitAccount: 11 - IP: 192.168.1.7
+22:19:30 AddAccount: 11 - IP: 192.168.1.7
+22:19:31 Character: 12323 logged
+22:20:20 Character: 12323 logout
+22:20:20 ExitAccount: 11 - IP: 192.168.1.7
+22:25:24 AddAccount: 11 - IP: 192.168.1.7
+22:25:25 Character: 12323 logged
+22:26:49 Character: 12323 logout
+22:26:49 ExitAccount: 11 - IP: 192.168.1.7
+22:27:34 [ServerInfo] CashShop loaded successfully
+22:27:34 [ServerInfo] ChaosMix loaded successfully
+22:27:34 [ServerInfo] Character loaded successfully
+22:27:34 [FakeOnline] Load Data OK
+22:27:34 [ServerInfo] Custom loaded successfully
+22:27:34 [ServerInfo] Command loaded successfully
+22:27:34 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+22:27:34 [ServerInfo] Common loaded successfully
+22:27:34 [ServerInfo] Event loaded successfully
+22:27:34 [ServerInfo] EventItemBag loaded successfully
+22:27:34 [ServerInfo] Hack loaded successfully
+22:27:34 [ServerInfo] Item loaded successfully
+22:27:34 [ServerInfo] Monster loaded successfully
+22:27:34 [ServerInfo] Move loaded successfully
+22:27:34 [ServerInfo] Quest loaded successfully
+22:27:34 [ServerInfo] Shop loaded successfully
+22:27:34 [ServerInfo] Skill loaded successfully
+22:27:34 [ServerInfo] Util loaded successfully
+22:27:34 [ReadBotInfo] BotSystem loaded successfully
+22:27:34 [ServerInfo] CfgSPK loaded successfully
+22:27:41 AddAccount: 11 - IP: 192.168.1.7
+22:27:43 Character: 12323 logged
+22:28:10 Character: 12323 logout
+22:28:10 ExitAccount: 11 - IP: 192.168.1.7
+23:34:05 [ServerInfo] CashShop loaded successfully
+23:34:05 [ServerInfo] ChaosMix loaded successfully
+23:34:05 [ServerInfo] Character loaded successfully
+23:34:05 [FakeOnline] Load Data OK
+23:34:05 [ServerInfo] Custom loaded successfully
+23:34:05 [ServerInfo] Command loaded successfully
+23:34:05 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+23:34:05 [ServerInfo] Common loaded successfully
+23:34:05 [ServerInfo] Event loaded successfully
+23:34:05 [ServerInfo] EventItemBag loaded successfully
+23:34:06 [ServerInfo] Hack loaded successfully
+23:34:06 [ServerInfo] Item loaded successfully
+23:34:06 [ServerInfo] Monster loaded successfully
+23:34:06 [ServerInfo] Move loaded successfully
+23:34:06 [ServerInfo] Quest loaded successfully
+23:34:06 [ServerInfo] Shop loaded successfully
+23:34:06 [ServerInfo] Skill loaded successfully
+23:34:06 [ServerInfo] Util loaded successfully
+23:34:06 [ReadBotInfo] BotSystem loaded successfully
+23:34:06 [ServerInfo] CfgSPK loaded successfully
+23:34:38 AddAccount: 11 - IP: 192.168.1.7
+23:34:40 Character: 12323 logged
+23:36:17 Character: 12323 logout
+23:36:17 ExitAccount: 11 - IP: 192.168.1.7
+23:36:39 AddAccount: 11 - IP: 192.168.1.7
+23:36:40 Character: 12323 logged
+23:36:55 Character: 12323 logout
+23:36:55 ExitAccount: 11 - IP: 192.168.1.7
+23:42:20 AddAccount: 11 - IP: 192.168.1.7
+23:42:21 Character: 12323 logged
+23:42:28 AddAccount: 111 - IP: 192.168.1.7
+23:42:31 Character: 23232 logged
+23:43:16 [Set BC Start] At 23:45:00
+23:46:40 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+23:46:40 [ServerInfo] Common loaded successfully
+23:50:52 [ServerInfo] CashShop loaded successfully
+23:50:52 [ServerInfo] ChaosMix loaded successfully
+23:50:52 [ServerInfo] Character loaded successfully
+23:50:52 [ServerInfo] Command loaded successfully
+23:50:52 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+23:50:52 [ServerInfo] Common loaded successfully
+23:50:52 [FakeOnline] Load Data OK
+23:50:52 [ServerInfo] Custom loaded successfully
+23:50:52 [ServerInfo] Event loaded successfully
+23:50:52 [ServerInfo] EventItemBag loaded successfully
+23:50:52 [ServerInfo] Hack loaded successfully
+23:50:52 [ServerInfo] Item loaded successfully
+23:50:53 [ServerInfo] Monster loaded successfully
+23:50:53 [ServerInfo] Move loaded successfully
+23:50:53 [ServerInfo] Quest loaded successfully
+23:50:53 [ServerInfo] Shop loaded successfully
+23:50:53 [ServerInfo] Skill loaded successfully
+23:50:53 [ServerInfo] Util loaded successfully
+23:50:53 [ReadBotInfo] BotSystem loaded successfully
+23:50:53 [ServerInfo] CfgSPK loaded successfully
+23:50:56 Character: 23232 logout
+23:50:56 ExitAccount: 111 - IP: 192.168.1.7
+23:51:02 [ServerInfo] CashShop loaded successfully
+23:51:02 [ServerInfo] ChaosMix loaded successfully
+23:51:02 [ServerInfo] Character loaded successfully
+23:51:02 [FakeOnline] Load Data OK
+23:51:02 [ServerInfo] Custom loaded successfully
+23:51:02 [ServerInfo] Command loaded successfully
+23:51:02 GHRS Hôm Nay Là : 1000 Lần - (Thứ 3) - 23:59:59 Reset : +0 Lần
+23:51:02 [ServerInfo] Common loaded successfully
+23:51:02 [ServerInfo] Event loaded successfully
+23:51:02 [ServerInfo] EventItemBag loaded successfully
+23:51:02 [ServerInfo] Hack loaded successfully
+23:51:02 [ServerInfo] Item loaded successfully
+23:51:02 [ServerInfo] Monster loaded successfully
+23:51:02 [ServerInfo] Move loaded successfully
+23:51:02 [ServerInfo] Quest loaded successfully
+23:51:02 [ServerInfo] Shop loaded successfully
+23:51:02 [ServerInfo] Skill loaded successfully
+23:51:02 [ServerInfo] Util loaded successfully
+23:51:02 [ReadBotInfo] BotSystem loaded successfully
+23:51:02 [ServerInfo] CfgSPK loaded successfully
+23:51:09 AddAccount: 111 - IP: 192.168.1.7
+23:51:11 Character: 23232 logged
+23:51:25 AddAccount: 11 - IP: 192.168.1.7
+23:51:27 Character: 12323 logged
+23:51:35 [Set BC Start] At 23:53:00
+23:51:43 [Set DS Start] At 23:53:00
+23:56:26 [Set BC Start] At 23:58:00
+23:56:35 [Set DS Start] At 23:58:00
+23:57:10 Character: 12323 logout
+23:57:10 ExitAccount: 11 - IP: 192.168.1.7
+23:57:11 Character: 23232 logout
+23:57:11 ExitAccount: 111 - IP: 192.168.1.7

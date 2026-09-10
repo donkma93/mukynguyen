@@ -1,0 +1,10 @@
+19:02:07 [SocketManager] Server started at port [55970]
+19:02:12 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:02:12 Sub-1 (Thường) Port 55901 đã được sát nhập thành công!
+19:02:16 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:02:16 Sub-2 (VIP) Port 55902 đã được sát nhập thành công!
+19:02:16 Nhận diện IP 127.0.0.1 cục bộ đang chạy.
+19:02:16 Sub-3 (Non-PK) Port 55903 đã được sát nhập thành công!
+19:03:58 Đã xóa IP 127.0.0.1 cục bộ này.
+19:03:58 Đã xóa IP 127.0.0.1 cục bộ này.
+19:03:59 Đã xóa IP 127.0.0.1 cục bộ này.

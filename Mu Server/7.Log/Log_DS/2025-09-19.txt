@@ -1,0 +1,6 @@
+20:42:48 Khởi động Port 55960 thành công!
+20:42:52 Nhận diện được IP 127.0.0.1 nội bộ.
+20:42:52 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+23:57:17 Khởi động Port 55960 thành công!
+23:57:20 Nhận diện được IP 127.0.0.1 nội bộ.
+23:57:20 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.

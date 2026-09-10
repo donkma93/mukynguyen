@@ -1,0 +1,10 @@
+22:03:50 Khởi động Port 55960 thành công!
+22:04:02 Nhận diện được IP 127.0.0.1 nội bộ.
+22:04:03 Nhận diện được IP 127.0.0.1 nội bộ.
+22:04:04 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+22:04:04 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+22:04:04 Nhận diện được IP 127.0.0.1 nội bộ.
+22:04:05 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+22:09:36 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:09:36 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:09:36 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.

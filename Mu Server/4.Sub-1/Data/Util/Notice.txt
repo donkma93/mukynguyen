@@ -1,0 +1,17 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//Message                                                            					  	Type   Count   Opacity   Delay   Red   Green   Blue   Speed   RepeatTime
+"Liên Hệ Cho Admin Để Được Hỗ Trợ Chung Gian Miễn Phí"                     		              0      0       0         0       0     1       0      0       300 
+"Bật Tắt Camera Nút F10 - Khôi Phục Camera Gốc F11"                     		              0      0       0         0       0     1       0      0       400 
+"Mọi Hành Vi Gian Lận Game Nếu Bị Admin Phát Hiện Xóa Windows Không Giải Thích"               0      0       0         0       0     1       0      0       500 
+end  

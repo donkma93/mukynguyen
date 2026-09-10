@@ -1,0 +1,112 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Green Mistery Box"		1000		100				1				0					1				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+7			45		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			45		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			45		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			45		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			45		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			46		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			46		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			46		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			46		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			46		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			52		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			52		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			52		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			52		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			52		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			49		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			49		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			49		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			49		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			49		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			50		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			50		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			50		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			50		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			50		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			53		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			53		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			53		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			53		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			53		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			47		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			47		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			47		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			47		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			48		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			48		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			48		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			48		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			51		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			51		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			51		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+10			51		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			51		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+7			77		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+8			77		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+9			77		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+11			77		7			11			1		1		1		5			0			100		//[Cấp8] Đao Quyền Năng
+
+7			45		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			45		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			45		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			45		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			45		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			46		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			46		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			46		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			46		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			46		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			52		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			52		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			52		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			52		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			52		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			49		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			49		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			49		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			49		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			49		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			50		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			50		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			50		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			50		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			50		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			53		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			53		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			53		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			53		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			53		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			47		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			47		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			47		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			47		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			48		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			48		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			48		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			48		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			51		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			51		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			51		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+10			51		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			51		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+7			77		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+8			77		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+9			77		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+11			77		7			11			1		1		1		7			0			30		//[Cấp8] Đao Quyền Năng
+
+
+end

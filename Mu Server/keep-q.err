@@ -1,0 +1,1 @@
+Sqlcmd: '1=1 BEGIN SELECT 1; WAITFOR DELAY '00:00:15'; END': Unexpected argument. Enter '-?' for help.

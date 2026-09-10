@@ -1,0 +1,19 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//SkillIndex  	MinSpeed  MaxSpeed  MaxDelay     MaxCount   Comment
+230       	000        125        1000       30         //Red Storm
+230       	126        250        1000       30         //Red Storm
+230       	251        500        1000       30         //Red Storm
+230       	501        1000       1000       30         //Red Storm
+230       	1001       *          1000       30         //Red Storm
+end

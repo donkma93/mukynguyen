@@ -1,0 +1,326 @@
+19:48:57 [ServerInfo] CashShop loaded successfully
+19:48:57 [ServerInfo] ChaosMix loaded successfully
+19:48:57 [ServerInfo] Character loaded successfully
+19:48:57 [FakeOnline] Load Data OK
+19:48:57 [ServerInfo] Custom loaded successfully
+19:48:57 [ServerInfo] Command loaded successfully
+19:48:57 GHRS Hôm Nay Là : 1000 Lần - (Thứ 2) - 23:59:59 Reset : +0 Lần
+19:48:57 [ServerInfo] Common loaded successfully
+19:48:57 [ServerInfo] Event loaded successfully
+19:48:57 [ServerInfo] EventItemBag loaded successfully
+19:48:57 [ServerInfo] Hack loaded successfully
+19:48:57 [ServerInfo] Item loaded successfully
+19:48:57 [ServerInfo] Monster loaded successfully
+19:48:57 [ServerInfo] Move loaded successfully
+19:48:57 [ServerInfo] Quest loaded successfully
+19:48:57 [ServerInfo] Shop loaded successfully
+19:48:57 [ServerInfo] Skill loaded successfully
+19:48:57 [ServerInfo] Util loaded successfully
+19:48:57 [ReadBotInfo] BotSystem loaded successfully
+19:48:57 [ServerInfo] CfgACuoi loaded successfully
+19:54:52 [ServerInfo] CashShop loaded successfully
+19:54:52 [ServerInfo] ChaosMix loaded successfully
+19:54:52 [ServerInfo] Character loaded successfully
+19:54:52 [FakeOnline] Load Data OK
+19:54:52 [ServerInfo] Custom loaded successfully
+19:54:52 [ServerInfo] Command loaded successfully
+19:54:52 GHRS Hôm Nay Là : 1000 Lần - (Thứ 2) - 23:59:59 Reset : +0 Lần
+19:54:52 [ServerInfo] Common loaded successfully
+19:54:52 [ServerInfo] Event loaded successfully
+19:54:52 [ServerInfo] EventItemBag loaded successfully
+19:54:52 [ServerInfo] Hack loaded successfully
+19:54:52 [ServerInfo] Item loaded successfully
+19:54:52 [ServerInfo] Monster loaded successfully
+19:54:52 [ServerInfo] Move loaded successfully
+19:54:52 [ServerInfo] Quest loaded successfully
+19:54:52 [ServerInfo] Shop loaded successfully
+19:54:52 [ServerInfo] Skill loaded successfully
+19:54:52 [ServerInfo] Util loaded successfully
+19:54:52 [ReadBotInfo] BotSystem loaded successfully
+19:54:52 [ServerInfo] CfgACuoi loaded successfully
+20:02:12 [ServerInfo] CashShop loaded successfully
+20:02:12 [ServerInfo] ChaosMix loaded successfully
+20:02:12 [ServerInfo] Character loaded successfully
+20:02:12 [FakeOnline] Load Data OK
+20:02:12 [ServerInfo] Custom loaded successfully
+20:02:12 [ServerInfo] Command loaded successfully
+20:02:12 GHRS Hôm Nay Là : 1000 Lần - (Thứ 2) - 23:59:59 Reset : +0 Lần
+20:02:12 [ServerInfo] Common loaded successfully
+20:02:12 [ServerInfo] Event loaded successfully
+20:02:12 [ServerInfo] EventItemBag loaded successfully
+20:02:12 [ServerInfo] Hack loaded successfully
+20:02:12 [ServerInfo] Item loaded successfully
+20:02:12 [ServerInfo] Monster loaded successfully
+20:02:12 [ServerInfo] Move loaded successfully
+20:02:12 [ServerInfo] Quest loaded successfully
+20:02:12 [ServerInfo] Shop loaded successfully
+20:02:12 [ServerInfo] Skill loaded successfully
+20:02:12 [ServerInfo] Util loaded successfully
+20:02:12 [ReadBotInfo] BotSystem loaded successfully
+20:02:12 [ServerInfo] CfgACuoi loaded successfully
+20:14:53 [ServerInfo] CashShop loaded successfully
+20:14:53 [ServerInfo] ChaosMix loaded successfully
+20:14:53 [ServerInfo] Character loaded successfully
+20:14:53 [FakeOnline] Load Data OK
+20:14:53 [ServerInfo] Custom loaded successfully
+20:14:53 [ServerInfo] Command loaded successfully
+20:14:53 GHRS Hôm Nay Là : 1000 Lần - (Thứ 2) - 23:59:59 Reset : +0 Lần
+20:14:53 [ServerInfo] Common loaded successfully
+20:14:54 [ServerInfo] Event loaded successfully
+20:14:54 [ServerInfo] EventItemBag loaded successfully
+20:14:54 [ServerInfo] Hack loaded successfully
+20:14:54 [ServerInfo] Item loaded successfully
+20:14:54 [ServerInfo] Monster loaded successfully
+20:14:54 [ServerInfo] Move loaded successfully
+20:14:54 [ServerInfo] Quest loaded successfully
+20:14:54 [ServerInfo] Shop loaded successfully
+20:14:54 [ServerInfo] Skill loaded successfully
+20:14:54 [ServerInfo] Util loaded successfully
+20:14:54 [ReadBotInfo] BotSystem loaded successfully
+20:14:54 [ServerInfo] CfgACuoi loaded successfully
+20:15:13 AddAccount: thuythuy - IP: 127.0.0.1
+20:15:13 Character: thuythuy logged
+20:15:17 AddAccount: donpv - IP: 127.0.0.1
+20:15:17 Character: ELF_DonPV logged
+20:55:14 AddAccount:  - IP: 43.30.162.179
+20:55:14 AddAccount: bot - IP: 52.96.203.212
+20:55:14 AddAccount: bot1 - IP: 221.40.179.99
+20:55:14 AddAccount: bot10 - IP: 99.125.132.59
+20:55:14 AddAccount: bot11 - IP: 125.65.13.157
+20:55:14 AddAccount: bot12 - IP: 158.13.213.201
+20:55:14 AddAccount: bot13 - IP: 5.190.88.68
+20:55:14 AddAccount: bot14 - IP: 7.170.238.17
+20:55:14 AddAccount: bot15 - IP: 44.133.252.11
+20:55:14 AddAccount: bot16 - IP: 16.41.239.139
+20:55:14 AddAccount: bot17 - IP: 120.17.11.199
+20:55:14 AddAccount: bot18 - IP: 242.40.43.34
+20:55:14 AddAccount: bot19 - IP: 193.253.221.30
+20:55:14 AddAccount: bot2 - IP: 175.83.205.163
+20:55:14 AddAccount: bot20 - IP: 63.250.121.46
+20:55:14 AddAccount: bot21 - IP: 65.203.31.154
+20:55:14 AddAccount: bot22 - IP: 81.129.164.33
+20:55:14 AddAccount: bot23 - IP: 26.150.7.108
+20:55:14 AddAccount: bot24 - IP: 191.240.250.227
+20:55:14 AddAccount: bot25 - IP: 220.32.93.214
+20:55:14 AddAccount: bot26 - IP: 233.79.45.229
+20:55:14 AddAccount: bot27 - IP: 188.218.239.168
+20:55:14 AddAccount: bot28 - IP: 108.110.255.122
+20:55:14 AddAccount: bot29 - IP: 81.172.129.175
+20:55:14 AddAccount: bot3 - IP: 7.23.151.203
+20:55:14 AddAccount: bot30 - IP: 112.19.84.175
+20:55:14 AddAccount: bot31 - IP: 58.194.91.185
+20:55:14 AddAccount: bot32 - IP: 93.174.70.124
+20:55:14 AddAccount: bot33 - IP: 196.133.46.188
+20:55:14 AddAccount: bot34 - IP: 80.222.191.224
+20:55:14 AddAccount: bot35 - IP: 32.59.239.50
+20:55:14 AddAccount: bot36 - IP: 201.136.7.82
+20:55:14 AddAccount: bot37 - IP: 221.111.99.222
+20:55:14 AddAccount: bot38 - IP: 250.7.34.252
+20:55:14 AddAccount: bot39 - IP: 122.39.147.27
+20:55:14 AddAccount: bot4 - IP: 107.251.34.157
+20:55:14 AddAccount: bot40 - IP: 71.191.233.166
+20:55:14 AddAccount: bot41 - IP: 76.242.123.44
+20:55:14 AddAccount: bot42 - IP: 22.163.50.105
+20:55:14 AddAccount: bot43 - IP: 108.250.136.253
+20:55:14 AddAccount: bot44 - IP: 120.178.133.146
+20:55:14 AddAccount: bot45 - IP: 191.28.214.53
+20:55:14 AddAccount: bot46 - IP: 172.193.248.231
+20:55:14 AddAccount: bot47 - IP: 188.140.232.36
+20:55:14 AddAccount: bot48 - IP: 156.18.135.205
+20:55:14 AddAccount: bot49 - IP: 251.156.66.62
+20:55:14 AddAccount: bot5 - IP: 170.104.159.194
+20:55:14 AddAccount: bot50 - IP: 180.40.54.1
+20:55:14 AddAccount: bot6 - IP: 203.115.157.107
+20:55:14 AddAccount: bot7 - IP: 67.189.25.150
+20:55:14 AddAccount: bot8 - IP: 248.15.138.77
+20:55:14 AddAccount: bot9 - IP: 224.8.11.148
+20:55:26 Character: ELF_DonPV logout
+20:55:26 ExitAccount: donpv - IP: 127.0.0.1
+20:55:28 AddAccount: donpv - IP: 127.0.0.1
+20:55:28 Character: ELF_DonPV logged
+20:55:46 AddAccount:  - IP: 140.52.102.123
+20:55:46 AddAccount: bot - IP: 194.74.61.96
+20:55:46 ExitAccount: bot - IP: 52.96.203.212
+20:55:46 AddAccount: bot1 - IP: 39.167.227.115
+20:55:46 ExitAccount: bot1 - IP: 221.40.179.99
+20:55:46 AddAccount: bot10 - IP: 245.176.28.37
+20:55:46 ExitAccount: bot10 - IP: 99.125.132.59
+20:55:46 AddAccount: bot11 - IP: 170.42.111.61
+20:55:46 ExitAccount: bot11 - IP: 125.65.13.157
+20:55:46 AddAccount: bot12 - IP: 255.244.144.35
+20:55:46 ExitAccount: bot12 - IP: 158.13.213.201
+20:55:46 AddAccount: bot13 - IP: 180.214.240.152
+20:55:46 ExitAccount: bot13 - IP: 5.190.88.68
+20:55:46 AddAccount: bot14 - IP: 228.222.60.37
+20:55:46 ExitAccount: bot14 - IP: 7.170.238.17
+20:55:46 AddAccount: bot15 - IP: 51.201.10.27
+20:55:46 ExitAccount: bot15 - IP: 44.133.252.11
+20:55:46 AddAccount: bot16 - IP: 217.148.228.135
+20:55:46 ExitAccount: bot16 - IP: 16.41.239.139
+20:55:46 AddAccount: bot17 - IP: 214.218.37.225
+20:55:46 ExitAccount: bot17 - IP: 120.17.11.199
+20:55:46 AddAccount: bot18 - IP: 142.119.179.169
+20:55:46 ExitAccount: bot18 - IP: 242.40.43.34
+20:55:46 AddAccount: bot19 - IP: 160.64.49.186
+20:55:46 ExitAccount: bot19 - IP: 193.253.221.30
+20:55:46 AddAccount: bot2 - IP: 230.149.162.224
+20:55:46 ExitAccount: bot2 - IP: 175.83.205.163
+20:55:46 AddAccount: bot20 - IP: 103.173.87.29
+20:55:46 ExitAccount: bot20 - IP: 63.250.121.46
+20:55:46 AddAccount: bot21 - IP: 143.52.80.25
+20:55:46 ExitAccount: bot21 - IP: 65.203.31.154
+20:55:46 AddAccount: bot22 - IP: 130.178.207.213
+20:55:46 ExitAccount: bot22 - IP: 81.129.164.33
+20:55:46 AddAccount: bot23 - IP: 26.207.205.56
+20:55:46 ExitAccount: bot23 - IP: 26.150.7.108
+20:55:46 AddAccount: bot24 - IP: 117.91.5.209
+20:55:46 ExitAccount: bot24 - IP: 191.240.250.227
+20:55:46 AddAccount: bot25 - IP: 165.54.11.12
+20:55:46 ExitAccount: bot25 - IP: 220.32.93.214
+20:55:46 AddAccount: bot26 - IP: 166.172.178.20
+20:55:46 ExitAccount: bot26 - IP: 233.79.45.229
+20:55:46 AddAccount: bot27 - IP: 246.178.79.235
+20:55:46 ExitAccount: bot27 - IP: 188.218.239.168
+20:55:46 AddAccount: bot28 - IP: 150.128.17.37
+20:55:46 ExitAccount: bot28 - IP: 108.110.255.122
+20:55:46 AddAccount: bot29 - IP: 36.27.163.248
+20:55:46 ExitAccount: bot29 - IP: 81.172.129.175
+20:55:46 AddAccount: bot3 - IP: 156.239.123.54
+20:55:46 ExitAccount: bot3 - IP: 7.23.151.203
+20:55:46 AddAccount: bot30 - IP: 85.234.135.63
+20:55:46 ExitAccount: bot30 - IP: 112.19.84.175
+20:55:46 AddAccount: bot31 - IP: 102.249.108.157
+20:55:46 ExitAccount: bot31 - IP: 58.194.91.185
+20:55:46 AddAccount: bot32 - IP: 249.98.247.37
+20:55:46 ExitAccount: bot32 - IP: 93.174.70.124
+20:55:46 AddAccount: bot33 - IP: 23.160.201.168
+20:55:46 ExitAccount: bot33 - IP: 196.133.46.188
+20:55:46 AddAccount: bot34 - IP: 219.109.27.203
+20:55:46 ExitAccount: bot34 - IP: 80.222.191.224
+20:55:46 AddAccount: bot35 - IP: 106.182.13.246
+20:55:46 ExitAccount: bot35 - IP: 32.59.239.50
+20:55:46 AddAccount: bot36 - IP: 61.36.26.12
+20:55:46 ExitAccount: bot36 - IP: 201.136.7.82
+20:55:46 AddAccount: bot37 - IP: 117.22.12.102
+20:55:46 ExitAccount: bot37 - IP: 221.111.99.222
+20:55:46 AddAccount: bot38 - IP: 70.34.141.54
+20:55:46 ExitAccount: bot38 - IP: 250.7.34.252
+20:55:46 AddAccount: bot39 - IP: 187.41.42.6
+20:55:46 ExitAccount: bot39 - IP: 122.39.147.27
+20:55:46 AddAccount: bot4 - IP: 194.233.86.142
+20:55:46 ExitAccount: bot4 - IP: 107.251.34.157
+20:55:46 AddAccount: bot40 - IP: 5.189.149.65
+20:55:46 ExitAccount: bot40 - IP: 71.191.233.166
+20:55:46 AddAccount: bot41 - IP: 162.134.128.38
+20:55:46 ExitAccount: bot41 - IP: 76.242.123.44
+20:55:46 AddAccount: bot42 - IP: 160.97.156.233
+20:55:46 ExitAccount: bot42 - IP: 22.163.50.105
+20:55:46 AddAccount: bot43 - IP: 178.61.40.51
+20:55:46 ExitAccount: bot43 - IP: 108.250.136.253
+20:55:46 AddAccount: bot44 - IP: 201.82.109.109
+20:55:46 ExitAccount: bot44 - IP: 120.178.133.146
+20:55:46 AddAccount: bot45 - IP: 134.130.196.213
+20:55:46 ExitAccount: bot45 - IP: 191.28.214.53
+20:55:46 AddAccount: bot46 - IP: 147.49.96.135
+20:55:46 ExitAccount: bot46 - IP: 172.193.248.231
+20:55:46 AddAccount: bot47 - IP: 158.44.97.90
+20:55:46 ExitAccount: bot47 - IP: 188.140.232.36
+20:55:46 AddAccount: bot48 - IP: 209.103.142.101
+20:55:46 ExitAccount: bot48 - IP: 156.18.135.205
+20:55:46 AddAccount: bot49 - IP: 126.82.253.188
+20:55:46 ExitAccount: bot49 - IP: 251.156.66.62
+20:55:46 AddAccount: bot5 - IP: 202.249.137.6
+20:55:46 ExitAccount: bot5 - IP: 170.104.159.194
+20:55:46 AddAccount: bot50 - IP: 17.217.240.131
+20:55:46 ExitAccount: bot50 - IP: 180.40.54.1
+20:55:46 AddAccount: bot6 - IP: 228.252.233.17
+20:55:46 ExitAccount: bot6 - IP: 203.115.157.107
+20:55:46 AddAccount: bot7 - IP: 34.59.16.34
+20:55:46 ExitAccount: bot7 - IP: 67.189.25.150
+20:55:46 AddAccount: bot8 - IP: 65.248.191.203
+20:55:46 ExitAccount: bot8 - IP: 248.15.138.77
+20:55:46 AddAccount: bot9 - IP: 19.90.22.164
+20:55:46 ExitAccount: bot9 - IP: 224.8.11.148
+20:55:59 ExitAccount: bot - IP: 194.74.61.96
+20:55:59 ExitAccount: bot1 - IP: 39.167.227.115
+20:55:59 ExitAccount: bot10 - IP: 245.176.28.37
+20:55:59 ExitAccount: bot11 - IP: 170.42.111.61
+20:55:59 ExitAccount: bot12 - IP: 255.244.144.35
+20:55:59 ExitAccount: bot13 - IP: 180.214.240.152
+20:55:59 ExitAccount: bot14 - IP: 228.222.60.37
+20:55:59 ExitAccount: bot15 - IP: 51.201.10.27
+20:55:59 ExitAccount: bot16 - IP: 217.148.228.135
+20:55:59 ExitAccount: bot17 - IP: 214.218.37.225
+20:55:59 ExitAccount: bot18 - IP: 142.119.179.169
+20:55:59 ExitAccount: bot19 - IP: 160.64.49.186
+20:55:59 ExitAccount: bot2 - IP: 230.149.162.224
+20:55:59 ExitAccount: bot20 - IP: 103.173.87.29
+20:55:59 ExitAccount: bot21 - IP: 143.52.80.25
+20:55:59 ExitAccount: bot22 - IP: 130.178.207.213
+20:55:59 ExitAccount: bot23 - IP: 26.207.205.56
+20:55:59 ExitAccount: bot24 - IP: 117.91.5.209
+20:55:59 ExitAccount: bot25 - IP: 165.54.11.12
+20:55:59 ExitAccount: bot26 - IP: 166.172.178.20
+20:55:59 ExitAccount: bot27 - IP: 246.178.79.235
+20:55:59 ExitAccount: bot28 - IP: 150.128.17.37
+20:55:59 ExitAccount: bot29 - IP: 36.27.163.248
+20:55:59 ExitAccount: bot3 - IP: 156.239.123.54
+20:55:59 ExitAccount: bot30 - IP: 85.234.135.63
+20:55:59 ExitAccount: bot31 - IP: 102.249.108.157
+20:55:59 ExitAccount: bot32 - IP: 249.98.247.37
+20:55:59 ExitAccount: bot33 - IP: 23.160.201.168
+20:55:59 ExitAccount: bot34 - IP: 219.109.27.203
+20:55:59 ExitAccount: bot35 - IP: 106.182.13.246
+20:55:59 ExitAccount: bot36 - IP: 61.36.26.12
+20:55:59 ExitAccount: bot37 - IP: 117.22.12.102
+20:55:59 ExitAccount: bot38 - IP: 70.34.141.54
+20:55:59 ExitAccount: bot39 - IP: 187.41.42.6
+20:55:59 ExitAccount: bot4 - IP: 194.233.86.142
+20:55:59 ExitAccount: bot40 - IP: 5.189.149.65
+20:55:59 ExitAccount: bot41 - IP: 162.134.128.38
+20:55:59 ExitAccount: bot42 - IP: 160.97.156.233
+20:55:59 ExitAccount: bot43 - IP: 178.61.40.51
+20:55:59 ExitAccount: bot44 - IP: 201.82.109.109
+20:55:59 ExitAccount: bot45 - IP: 134.130.196.213
+20:55:59 ExitAccount: bot46 - IP: 147.49.96.135
+20:55:59 ExitAccount: bot47 - IP: 158.44.97.90
+20:55:59 ExitAccount: bot48 - IP: 209.103.142.101
+20:55:59 ExitAccount: bot49 - IP: 126.82.253.188
+20:55:59 ExitAccount: bot5 - IP: 202.249.137.6
+20:55:59 ExitAccount: bot50 - IP: 17.217.240.131
+20:55:59 ExitAccount: bot6 - IP: 228.252.233.17
+20:55:59 ExitAccount: bot7 - IP: 34.59.16.34
+20:55:59 ExitAccount: bot8 - IP: 65.248.191.203
+20:55:59 ExitAccount: bot9 - IP: 19.90.22.164
+20:55:59 [FakeOnline] Load Data OK
+20:56:15 Character: ELF_DonPV logout
+20:56:15 ExitAccount: donpv - IP: 127.0.0.1
+20:56:17 AddAccount: donpv - IP: 127.0.0.1
+20:56:17 Character: ELF_DonPV logged
+20:56:34 [FakeOnline] Load Data OK
+20:56:42 [BotOnline] Loaded Thành Công ..\Data\Custom\BotSystem\BotOnline.txt 
+20:56:56 [BotOnline] Loaded Thành Công ..\Data\Custom\BotSystem\BotOnline.txt 
+20:57:47 [FakeOnline] Load Data OK
+21:03:21 Character: ELF_DonPV logout
+21:03:21 ExitAccount: donpv - IP: 127.0.0.1
+21:54:28 [ServerInfo] CashShop loaded successfully
+21:54:28 [ServerInfo] ChaosMix loaded successfully
+21:54:28 [ServerInfo] Character loaded successfully
+21:54:28 [FakeOnline] Load Data OK
+21:54:28 [ServerInfo] Custom loaded successfully
+21:54:28 [ServerInfo] Command loaded successfully
+21:54:28 GHRS Hôm Nay Là : 1000 Lần - (Thứ 2) - 23:59:59 Reset : +0 Lần
+21:54:28 [ServerInfo] Common loaded successfully
+21:54:28 [ServerInfo] Event loaded successfully
+21:54:28 [ServerInfo] EventItemBag loaded successfully
+21:54:28 [ServerInfo] Hack loaded successfully
+21:54:28 [ServerInfo] Item loaded successfully
+21:54:28 [ServerInfo] Monster loaded successfully
+21:54:28 [ServerInfo] Move loaded successfully
+21:54:28 [ServerInfo] Quest loaded successfully
+21:54:28 [ServerInfo] Shop loaded successfully
+21:54:28 [ServerInfo] Skill loaded successfully
+21:54:28 [ServerInfo] Util loaded successfully
+21:54:28 [ReadBotInfo] BotSystem loaded successfully
+21:54:28 [ServerInfo] CfgACuoi loaded successfully
+22:05:00 [KING OF MU] Start

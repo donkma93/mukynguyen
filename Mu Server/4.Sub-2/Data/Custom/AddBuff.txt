@@ -1,0 +1,37 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+0
+//EffectID	Timer		Power1		Power2      Power3		Power4
+1			30			100       	200         300         400 // Buff Công Elf
+2			30			100       	200         300         400 // Buff Thủ Elf
+4			30			100       	200         300         400 // Buff ManasShield của DW
+5			30			100       	200         300         400 // Buff Chí Mạng
+8			30			100       	200         300         400 // Buff Tăng Máu DK
+71			30			100       	200         300         400 // Buff Phản Dame Sum
+82			30			100       	200         300         400 // Tăng Lực Tấn Công Thấp Nhất
+129			30			100       	200         300         400 // Buff Bỏ Qua Phòng Thủ - Xuyên Thấu
+130			30			100       	200         300         400 // Buff Tăng Thể Lực
+131			30			100       	200         300         400 // Buff Tỉ lệ phòng thủ
+
+end
+1
+//EffectID	Timer		Power1		Power2      Power3		Power4
+44			30			100       	200         300         400 // Buff Tăng Nhanh Nhẹn (xShop)    
+45			30			100       	200         300         400 // Buff Tăng Phòng Thủ (xShop)    
+46			30			100       	200         300         400 // Buff Tăng Sát Thương (xShop)   
+47			30			100       	200         300         400 // Buff Tăng Sát Thương Phép Thuật (xShop)   
+48			30			100       	200         300         400 // Buff Tăng Thể Lực - Máu (xShop)          
+49			30			100       	200         300         400 // Buff Tăng Năng Lượng - Mana (xShop)   
+89			30			100       	200         300         400 // Buff Tăng Chí Mạng (xShop)
+90			30			100       	200         300         400 // Buff Tăng Sát Thương Hoàn Hảo (xShop)
+end

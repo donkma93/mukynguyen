@@ -1,0 +1,21 @@
+//=======================================================
+//FACEBOOK: https://www.facebook.com/mukynguyen/
+//Zalo + SĐT : 0968092399
+//Hỗ Trợ Config Sever Muonline MU KỶ NGUYÊN
+//=======================================================
+//===============================================================================================================
+// CustomGloves Config File
+//===============================================================================================================
+//GlovesID	Model				LeftIndex	LeftModel				RightIndex	RightModel        		ColorR	ColorG	ColorB	name
+60			"Sword41"			406			"Sword41_L"				407			"Sword41_R"				150		170		119		//Vuốt Thiên Tử Cấp 1
+//61		"Sword42"		    408			"Sword42_L"				409			"Sword42_R"				253		255		119		//Vuốt Thiên Tử Cấp 2
+81			"GloveDragon"		416			"GloveDragonL"			417			"GloveDragonR"			255		48		48		//Vuốt Huyết Long
+
+
+100			"VuotCustom1"		420			"VuotCustom1L"			421			"VuotCustom1R"			150		083		010	   	//"Vuốt Rồng VIP (1)"	
+101			"VuotCustom2"		422			"VuotCustom2L"			423			"VuotCustom2R"			70  	70		15	   	//"Vuốt Rồng VIP (2)"	
+102			"VuotCustom3"		424			"VuotCustom3L"			425			"VuotCustom3R"			70		70		15	   	//"Vuốt Rồng VIP (3)"	
+103			"VuotCustom4"		426			"VuotCustom4L"			427			"VuotCustom4R"			70		70		15	   	//"Vuốt Rồng VIP (4)"	
+104			"VuotCustom5"		428			"VuotCustom5L"			429			"VuotCustom5R"			30      144     255	   	//"Vuốt Rồng VIP (5)"	
+
+end 

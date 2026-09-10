@@ -1,0 +1,440 @@
+06:57:04 Không Thể Kết Nối Tới Data SQL
+06:57:04 Có Thể Chưa Chạy Reg32 Và Reg64 Hoặc Tên DB Không Đúng
+06:57:04 Hãy Kiểm Tra Lại Cấu Hình Tên ODBC Phải Khớp DB SQL
+06:57:04 Hoặc Liên Hệ Zalo SĐT: 0968.092.399 (Thắng Cười) Để Được Hỗ Trợ
+07:01:54 Khởi động Port 55960 thành công!
+07:02:01 Nhận diện được IP 127.0.0.1 nội bộ.
+07:02:01 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+07:02:02 EXEC EX_RANKING_ALL
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_TP
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_GD
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_PK
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_ET
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_MT
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:02 EXEC EX_RANKING_WQ
+07:02:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_ALL
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_TP
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_GD
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_PK
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_ET
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_MT
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:17 EXEC EX_RANKING_WQ
+07:02:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_ALL
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_TP
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_GD
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_PK
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_ET
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_MT
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:32 EXEC EX_RANKING_WQ
+07:02:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_ALL
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_TP
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_GD
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_PK
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_ET
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_MT
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:47 EXEC EX_RANKING_WQ
+07:02:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:02:54 SELECT Account FROM ThangCuoi_MocNap WHERE Account='donpv'
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 INSERT INTO ThangCuoi_MocNap (Account, NhanMocNap, TienNap) VALUES ('donpv', 0, 0)
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 SELECT AccountID FROM ThangCuoi_JewelBank WHERE AccountID='donpv'
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 INSERT INTO ThangCuoi_JewelBank (AccountID, ItemBank0, ItemBank1, ItemBank2, ItemBank3, ItemBank4, ItemBank5, ItemBank6, ItemBank7, ItemBank8, ItemBank9) VALUES ('donpv', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 UPDATE MEMB_STAT SET Name='pvdl' WHERE memb___id='donpv'
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 SELECT NhanMocNap, TienNap FROM ThangCuoi_MocNap where Account='donpv'
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 SELECT * FROM ThangCuoi_JewelBank WHERE AccountID='donpv'
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=2000000000,Life=36648.000000,MaxLife=36648.000000,Mana=33416.000000,MaxMana=33416.000000,BP=18582.000000,MaxBP=16500.000000,Shield=110158.000000,MaxShield=110158.000000,MapNumber=0,MapPosX=69,MapPosY=188,MapDir=0,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:02:54 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:02:54 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:02:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:02:54 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 SELECT WC, WP, WG, RD, AT FROM CashShopData WHERE AccountID='donpv'
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 INSERT INTO CashShopData (AccountID,WC,WP,WG,RD,AT) VALUES ('donpv',0,0,0,0,0)
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:02:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_ALL
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_TP
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_GD
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_PK
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_ET
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_MT
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:02 EXEC EX_RANKING_WQ
+07:03:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_ALL
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_TP
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_GD
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_PK
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_ET
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_MT
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:17 EXEC EX_RANKING_WQ
+07:03:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_ALL
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_TP
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_GD
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_PK
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_ET
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_MT
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:32 EXEC EX_RANKING_WQ
+07:03:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_ALL
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_TP
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_GD
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_PK
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_ET
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_MT
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:47 EXEC EX_RANKING_WQ
+07:03:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:03:54 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=1999992000,Life=367248.000000,MaxLife=37248.000000,Mana=33816.000000,MaxMana=33816.000000,BP=17655.000000,MaxBP=16500.000000,Shield=186342.000000,MaxShield=144342.000000,MapNumber=4,MapPosX=56,MapPosY=89,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:03:54 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:03:54 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:03:54 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:03:54 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:03:54 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=1999992000,Life=367248.000000,MaxLife=37248.000000,Mana=33816.000000,MaxMana=33816.000000,BP=17655.000000,MaxBP=16500.000000,Shield=186435.000000,MaxShield=144435.000000,MapNumber=4,MapPosX=56,MapPosY=89,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:02 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:02 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:02 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:02 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_ALL
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_TP
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_GD
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_PK
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_ET
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_MT
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:02 EXEC EX_RANKING_WQ
+07:04:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:03 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=1999992000,Life=367248.000000,MaxLife=37248.000000,Mana=33816.000000,MaxMana=33816.000000,BP=17655.000000,MaxBP=16500.000000,Shield=186342.000000,MaxShield=144342.000000,MapNumber=4,MapPosX=56,MapPosY=89,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:03 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:03 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:03 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:03 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:03 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=1999992000,Life=367248.000000,MaxLife=37248.000000,Mana=33816.000000,MaxMana=33816.000000,BP=17655.000000,MaxBP=16500.000000,Shield=186435.000000,MaxShield=144435.000000,MapNumber=4,MapPosX=56,MapPosY=89,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:05 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:05 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:05 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:05 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:05 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_ALL
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_TP
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_GD
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_PK
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_ET
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_MT
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:17 EXEC EX_RANKING_WQ
+07:04:17 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:19 UPDATE Character SET cLevel=400,Class=66,LevelUpPoint=20000,Experience=-472819216,Strength=22000,Dexterity=12000,Vitality=18000,Energy=22000,Leadership=8000,Inventory=?,MagicList=?,Money=1999992000,Life=367248.000000,MaxLife=37248.000000,Mana=33816.000000,MaxMana=33816.000000,BP=17655.000000,MaxBP=16500.000000,Shield=186435.000000,MaxShield=144435.000000,MapNumber=4,MapPosX=54,MapPosY=89,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=1 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:19 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:19 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='pvdl'
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:19 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:19 UPDATE QuestSystem SET Start=0, Number=0, Kill_1=0, Kill_2=0, Kill_3=0, Kill_4=0, Kill_5=0, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'pvdl'
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:19 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 SELECT Account FROM ThangCuoi_MocNap WHERE Account='donpv'
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 INSERT INTO ThangCuoi_MocNap (Account, NhanMocNap, TienNap) VALUES ('donpv', 0, 0)
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 SELECT AccountID FROM ThangCuoi_JewelBank WHERE AccountID='donpv'
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 INSERT INTO ThangCuoi_JewelBank (AccountID, ItemBank0, ItemBank1, ItemBank2, ItemBank3, ItemBank4, ItemBank5, ItemBank6, ItemBank7, ItemBank8, ItemBank9) VALUES ('donpv', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 UPDATE MEMB_STAT SET Name='elfax' WHERE memb___id='donpv'
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 SELECT NhanMocNap, TienNap FROM ThangCuoi_MocNap where Account='donpv'
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 SELECT * FROM ThangCuoi_JewelBank WHERE AccountID='donpv'
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 UPDATE Character SET cLevel=400,Class=32,LevelUpPoint=362,Experience=-472819216,Strength=59,Dexterity=25,Vitality=20,Energy=15,Leadership=0,Inventory=?,MagicList=?,Money=2000000000,Life=479.000000,MaxLife=479.000000,Mana=628.000000,MaxMana=628.000000,BP=30.000000,MaxBP=31.000000,Shield=10810.000000,MaxShield=10810.000000,MapNumber=7,MapPosX=65,MapPosY=181,MapDir=0,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=0 WHERE AccountID='donpv' AND Name='elfax'
+07:04:22 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:22 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='elfax'
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:22 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:22 UPDATE QuestSystem SET Start=255, Number=65535, Kill_1=65535, Kill_2=65535, Kill_3=65535, Kill_4=65535, Kill_5=65535, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'elfax'
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 SELECT WC, WP, WG, RD, AT FROM CashShopData WHERE AccountID='donpv'
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 INSERT INTO CashShopData (AccountID,WC,WP,WG,RD,AT) VALUES ('donpv',0,0,0,0,0)
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:22 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_ALL
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_TP
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_GD
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_PK
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_ET
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_MT
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:32 EXEC EX_RANKING_WQ
+07:04:32 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_ALL
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_TP
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_GD
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_PK
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_ET
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_MT
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:47 EXEC EX_RANKING_WQ
+07:04:47 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:04:48 UPDATE Character SET cLevel=400,Class=32,LevelUpPoint=362,Experience=-472819216,Strength=59,Dexterity=25,Vitality=20,Energy=15,Leadership=0,Inventory=?,MagicList=?,Money=2000000000,Life=479.000000,MaxLife=479.000000,Mana=628.000000,MaxMana=628.000000,BP=31.000000,MaxBP=31.000000,Shield=10810.000000,MaxShield=10810.000000,MapNumber=7,MapPosX=22,MapPosY=18,MapDir=4,PkCount=0,PkLevel=3,PkTime=0,Quest=?,EffectList=?,FruitAddPoint=0,FruitSubPoint=0,ExtInventory=0 WHERE AccountID='donpv' AND Name='elfax'
+07:04:48 Lỗi 22001. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 01000. Vấn đề do thiếu Table SQL
+07:04:48 UPDATE Character SET rHonHoan=255 WHERE AccountID='donpv' AND Name='elfax'
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 UPDATE ThangCuoi_MocNap SET NhanMocNap='-1' WHERE Account='donpv'
+07:04:48 Lỗi 42S02. Vấn đề do thiếu Table SQL
+07:04:48 UPDATE QuestSystem SET Start=255, Number=65535, Kill_1=65535, Kill_2=65535, Kill_3=65535, Kill_4=65535, Kill_5=65535, CurQuest = CASE WHEN Number > CurQuest THEN Number ELSE CurQuest END WHERE Name = 'elfax'
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:04:48 Lỗi 42S22. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_ALL
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_TP
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_GD
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_PK
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_ET
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_MT
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:02 EXEC EX_RANKING_WQ
+07:05:02 Lỗi 42000. Vấn đề do thiếu Table SQL
+07:05:04 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:06:12 Khởi động Port 55960 thành công!
+07:06:20 Nhận diện được IP 127.0.0.1 nội bộ.
+07:06:20 Cụm Sub-1 và Port 55901 của nhóm 0 đã liên kết.
+07:10:57 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:13:34 Khởi động Port 55960 thành công!
+07:13:41 Nhận diện được IP 127.0.0.1 nội bộ.
+07:13:41 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+07:13:44 Nhận diện được IP 127.0.0.1 nội bộ.
+07:13:44 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+07:13:46 Nhận diện được IP 127.0.0.1 nội bộ.
+07:13:46 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+07:39:10 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:10 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:10 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:17 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:17 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+07:39:19 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:19 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+07:39:21 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:21 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+07:39:42 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:42 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:42 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:39:47 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:47 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+07:39:49 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:49 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+07:39:51 Nhận diện được IP 127.0.0.1 nội bộ.
+07:39:51 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+07:40:04 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:40:04 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:40:04 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+07:40:36 Nhận diện được IP 127.0.0.1 nội bộ.
+07:40:36 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+07:40:38 Nhận diện được IP 127.0.0.1 nội bộ.
+07:40:38 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+07:40:40 Nhận diện được IP 127.0.0.1 nội bộ.
+07:40:40 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+08:43:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+08:43:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+08:43:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+08:43:42 Nhận diện được IP 127.0.0.1 nội bộ.
+08:43:42 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+08:43:44 Nhận diện được IP 127.0.0.1 nội bộ.
+08:43:44 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+08:43:46 Nhận diện được IP 127.0.0.1 nội bộ.
+08:43:46 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+11:43:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+11:43:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+11:43:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+13:46:59 Khởi động Port 55960 thành công!
+13:47:07 Nhận diện được IP 127.0.0.1 nội bộ.
+13:47:07 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+13:47:10 Nhận diện được IP 127.0.0.1 nội bộ.
+13:47:10 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+13:47:11 Nhận diện được IP 127.0.0.1 nội bộ.
+13:47:11 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+15:45:16 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+15:45:16 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+15:45:16 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:29:53 Khởi động Port 55960 thành công!
+22:30:01 Nhận diện được IP 127.0.0.1 nội bộ.
+22:30:01 Cụm Sub-1 (VIP) và Port 55901 của nhóm 0 đã liên kết.
+22:30:05 Nhận diện được IP 127.0.0.1 nội bộ.
+22:30:05 Nhận diện được IP 127.0.0.1 nội bộ.
+22:30:05 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+22:30:05 Cụm Sub-2 (Thường) và Port 55902 của nhóm 1 đã liên kết.
+23:29:27 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:29:27 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+23:29:27 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.

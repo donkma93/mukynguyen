@@ -1,0 +1,33 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+0
+//WarningTime   EventTime
+5               30              
+end
+
+1
+//Year   Month   Day   DoW   Hour   Minute   Second
+*        *       *     *     22     5       0
+end
+
+//Reward Guild
+2
+//WC	WP	GP
+10	0	0
+end
+
+//Reward Characters 
+3
+//WC	WP	GP
+8	0	0
+end

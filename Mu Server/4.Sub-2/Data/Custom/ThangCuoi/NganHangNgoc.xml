@@ -1,0 +1,28 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Enable			: bật tắt khóa bank ngọc
+	JewelMaxCount	: Giới hạn rút viên lẻ
+	MAX_PAGES		: tối đa qua trang
+	MAX_COUNTS		: giới hạn tối đa rút lẻ 
+-->
+<ThangCuoi   Enable = "1" 	 MaxPages = "2" 	MaxCount = "10"> 
+	<Message>
+		<Msg Index="0"	Text="Chức Năng Này Đã Bị Tắt" />
+		<Msg Index="1"	Text="Bạn Đã Full Hòm Đồ" />
+		<Msg Index="2"	Text="Bạn Còn Có %d %s!" />
+		<Msg Index="3"	Text="Bạn Không Đủ %s Để Rút!" />
+	</Message>
+</ThangCuoi>

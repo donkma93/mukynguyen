@@ -1,0 +1,293 @@
+12:01:31 [ServerInfo] CashShop loaded successfully
+12:01:31 [ServerInfo] ChaosMix loaded successfully
+12:01:31 [ServerInfo] Character loaded successfully
+12:01:31 [FakeOnline] Load Data OK
+12:01:31 [ServerInfo] Custom loaded successfully
+12:01:32 [ServerInfo] Command loaded successfully
+12:01:32 Giới Hạn Reset : 1000 23:59:59 | Hôm Nay Saturday Tăng: +0
+12:01:32 [ServerInfo] Common loaded successfully
+12:01:32 [ServerInfo] Event loaded successfully
+12:01:32 [ServerInfo] EventItemBag loaded successfully
+12:01:32 [ServerInfo] Hack loaded successfully
+12:01:32 [ServerInfo] Item loaded successfully
+12:01:32 [ServerInfo] Monster loaded successfully
+12:01:32 [ServerInfo] Move loaded successfully
+12:01:32 [ServerInfo] Quest loaded successfully
+12:01:32 [ServerInfo] Shop loaded successfully
+12:01:32 [ServerInfo] Skill loaded successfully
+12:01:32 [ServerInfo] Util loaded successfully
+12:01:32 [ReadBotInfo] BotSystem loaded successfully
+12:01:32 [ServerInfo] CfgSPK loaded successfully
+12:02:18 AddAccount: 11 - IP: 192.168.1.7
+12:02:19 Character: ThangCuoi logged
+12:03:02 AddAccount: bot1 - IP: 42.84.48.90
+12:03:02 AddAccount: bot10 - IP: 206.73.202.219
+12:03:02 AddAccount: bot11 - IP: 32.30.192.201
+12:03:02 AddAccount: bot12 - IP: 243.254.137.209
+12:03:02 AddAccount: bot13 - IP: 223.48.121.65
+12:03:02 AddAccount: bot14 - IP: 171.70.202.146
+12:03:02 AddAccount: bot15 - IP: 143.182.105.181
+12:03:02 Character: LaoPhatGia logged
+12:03:02 AddAccount: bot16 - IP: 196.97.207.108
+12:03:02 AddAccount: bot17 - IP: 7.53.61.4
+12:03:02 Character: BoMayChap logged
+12:03:02 AddAccount: bot18 - IP: 138.55.139.83
+12:03:02 Character: CongAnXom logged
+12:03:02 AddAccount: bot19 - IP: 67.52.17.98
+12:03:02 AddAccount: bot2 - IP: 228.69.235.97
+12:03:02 Character: ChuTichXa logged
+12:03:02 AddAccount: bot20 - IP: 146.125.241.243
+12:03:02 AddAccount: bot21 - IP: 152.148.220.212
+12:03:02 Character: LenhHoXung logged
+12:03:02 AddAccount: bot22 - IP: 98.119.163.75
+12:03:02 Character: SieuChuoi logged
+12:03:02 AddAccount: bot23 - IP: 132.202.19.75
+12:03:02 AddAccount: bot24 - IP: 66.121.134.251
+12:03:02 Character: MGChien logged
+12:03:02 AddAccount: bot25 - IP: 222.189.130.157
+12:03:02 AddAccount: bot26 - IP: 45.163.180.144
+12:03:02 AddAccount: bot27 - IP: 172.29.172.227
+12:03:02 AddAccount: bot28 - IP: 80.212.206.242
+12:03:02 AddAccount: bot29 - IP: 114.247.15.163
+12:03:02 AddAccount: bot3 - IP: 224.162.56.182
+12:03:02 AddAccount: bot30 - IP: 117.119.165.3
+12:03:02 AddAccount: bot4 - IP: 38.62.210.44
+12:03:02 AddAccount: bot5 - IP: 189.101.1.119
+12:03:02 AddAccount: bot6 - IP: 217.104.246.205
+12:03:02 AddAccount: bot7 - IP: 27.82.45.229
+12:03:02 AddAccount: bot8 - IP: 240.208.145.44
+12:03:02 AddAccount: bot9 - IP: 11.188.10.107
+12:03:02 Character: ElfChien logged
+12:03:02 Character: TocBac logged
+12:03:02 Character: 12333 logged
+12:03:02 Character: 233322 logged
+12:03:02 Character: TaoBemHet logged
+12:03:02 Character: ChuaTeMu logged
+12:03:02 Character: BoDoi logged
+12:03:02 Character: 2Tay2Em logged
+12:03:02 Character: ChuQuaHat logged
+12:03:02 Character: AnhThoXay logged
+12:03:03 Character: GaiMienTay logged
+12:03:03 Character: Akuma logged
+12:03:03 Character: SieuBuff logged
+12:03:03 Character: KingKong logged
+12:03:03 Character: TestDK logged
+12:03:03 Character: Coco logged
+12:03:03 Character: NgonAnDi logged
+12:03:03 Character: DWcodon logged
+12:03:03 Character: Onehit logged
+12:03:03 Character: DaiCa logged
+12:03:03 Character: Elfbuff logged
+12:03:03 Character: MGTocDo logged
+12:03:03 Character: AnTaoDi logged
+12:15:31 Character: ThangCuoi logout
+12:15:31 ExitAccount: 11 - IP: 192.168.1.7
+12:15:35 [ServerInfo] CashShop loaded successfully
+12:15:35 [ServerInfo] ChaosMix loaded successfully
+12:15:35 [ServerInfo] Character loaded successfully
+12:15:35 [FakeOnline] Load Data OK
+12:15:35 [ServerInfo] Custom loaded successfully
+12:15:35 [ServerInfo] Command loaded successfully
+12:15:35 Giới Hạn Reset : 1000 23:59:59 | Hôm Nay Saturday Tăng: +0
+12:15:35 [ServerInfo] Common loaded successfully
+12:15:35 [ServerInfo] Event loaded successfully
+12:15:35 [ServerInfo] EventItemBag loaded successfully
+12:15:35 [ServerInfo] Hack loaded successfully
+12:15:35 [ServerInfo] Item loaded successfully
+12:15:35 [ServerInfo] Monster loaded successfully
+12:15:35 [ServerInfo] Move loaded successfully
+12:15:35 [ServerInfo] Quest loaded successfully
+12:15:35 [ServerInfo] Shop loaded successfully
+12:15:35 [ServerInfo] Skill loaded successfully
+12:15:35 [ServerInfo] Util loaded successfully
+12:15:35 [ReadBotInfo] BotSystem loaded successfully
+12:15:35 [ServerInfo] CfgSPK loaded successfully
+12:15:42 AddAccount: 11 - IP: 192.168.1.7
+12:15:43 Character: 2333333 logged
+12:15:45 Character: 2333333 logout
+12:15:47 Character: 2333333 logged
+12:27:17 Character: 2333333 logout
+12:27:19 Character: ThangCuoi logged
+12:37:15 Character: ThangCuoi logout
+12:37:15 ExitAccount: 11 - IP: 192.168.1.7
+12:43:01 AddAccount: 11 - IP: 192.168.1.7
+12:43:02 Character: ThangCuoi logged
+12:43:11 Character: ThangCuoi logout
+12:43:11 ExitAccount: 11 - IP: 192.168.1.7
+12:44:22 AddAccount: 11 - IP: 192.168.1.7
+12:44:23 Character: ThangCuoi logged
+12:49:12 AddAccount: bot1 - IP: 220.246.176.109
+12:49:12 AddAccount: bot10 - IP: 228.41.97.94
+12:49:12 AddAccount: bot11 - IP: 190.39.224.137
+12:49:12 AddAccount: bot12 - IP: 125.247.68.35
+12:49:12 AddAccount: bot13 - IP: 153.167.242.67
+12:49:12 AddAccount: bot14 - IP: 77.216.28.114
+12:49:12 AddAccount: bot15 - IP: 214.202.115.143
+12:49:12 Character: LaoPhatGia logged
+12:49:12 AddAccount: bot16 - IP: 215.61.232.80
+12:49:12 AddAccount: bot17 - IP: 116.134.173.224
+12:49:12 Character: BoMayChap logged
+12:49:12 AddAccount: bot18 - IP: 52.197.13.80
+12:49:12 AddAccount: bot19 - IP: 84.5.159.254
+12:49:12 Character: CongAnXom logged
+12:49:12 AddAccount: bot2 - IP: 105.249.188.179
+12:49:12 Character: ChuTichXa logged
+12:49:12 AddAccount: bot20 - IP: 90.123.95.80
+12:49:12 AddAccount: bot21 - IP: 31.196.140.185
+12:49:12 Character: LenhHoXung logged
+12:49:12 AddAccount: bot22 - IP: 33.187.185.170
+12:49:12 Character: SieuChuoi logged
+12:49:12 AddAccount: bot23 - IP: 185.112.166.63
+12:49:12 AddAccount: bot24 - IP: 211.180.208.213
+12:49:12 Character: MGChien logged
+12:49:12 AddAccount: bot25 - IP: 172.122.51.204
+12:49:12 AddAccount: bot26 - IP: 121.236.152.79
+12:49:12 AddAccount: bot27 - IP: 184.189.14.67
+12:49:12 AddAccount: bot28 - IP: 123.255.225.33
+12:49:12 AddAccount: bot29 - IP: 68.87.248.51
+12:49:12 AddAccount: bot3 - IP: 167.55.166.101
+12:49:12 AddAccount: bot30 - IP: 115.174.14.141
+12:49:12 AddAccount: bot4 - IP: 197.255.46.232
+12:49:12 AddAccount: bot5 - IP: 48.197.161.60
+12:49:12 AddAccount: bot6 - IP: 20.217.66.156
+12:49:12 AddAccount: bot7 - IP: 20.31.34.115
+12:49:12 AddAccount: bot8 - IP: 73.98.226.34
+12:49:12 AddAccount: bot9 - IP: 116.165.103.3
+12:49:12 Character: ElfChien logged
+12:49:12 Character: TocBac logged
+12:49:12 Character: 12333 logged
+12:49:12 Character: 233322 logged
+12:49:12 Character: TaoBemHet logged
+12:49:12 Character: ChuaTeMu logged
+12:49:12 Character: BoDoi logged
+12:49:12 Character: 2Tay2Em logged
+12:49:12 Character: ChuQuaHat logged
+12:49:12 Character: AnhThoXay logged
+12:49:12 Character: GaiMienTay logged
+12:49:12 Character: Akuma logged
+12:49:12 Character: SieuBuff logged
+12:49:12 Character: KingKong logged
+12:49:12 Character: TestDK logged
+12:49:12 Character: Coco logged
+12:49:12 Character: NgonAnDi logged
+12:49:12 Character: DWcodon logged
+12:49:12 Character: Onehit logged
+12:49:12 Character: DaiCa logged
+12:49:12 Character: Elfbuff logged
+12:49:12 Character: MGTocDo logged
+12:49:12 Character: AnTaoDi logged
+18:18:43 Character: ThangCuoi logout
+18:18:43 ExitAccount: 11 - IP: 192.168.1.7
+19:21:01 AddAccount: 11 - IP: 192.168.1.7
+19:21:04 Character: ThangCuoi logged
+19:21:11 Character: ThangCuoi logout
+19:21:11 ExitAccount: 11 - IP: 192.168.1.7
+19:22:27 AddAccount: 11 - IP: 192.168.1.7
+19:22:28 Character: ThangCuoi logged
+19:22:30 Character: ThangCuoi logout
+19:22:30 ExitAccount: 11 - IP: 192.168.1.7
+19:46:08 AddAccount: 11 - IP: 192.168.1.7
+19:46:09 Character: ThangCuoi logged
+19:46:21 Character: ThangCuoi logout
+19:46:21 ExitAccount: 11 - IP: 192.168.1.7
+20:02:52 [ServerInfo] CashShop loaded successfully
+20:02:52 [ServerInfo] ChaosMix loaded successfully
+20:02:52 [ServerInfo] Character loaded successfully
+20:02:52 [FakeOnline] Load Data OK
+20:02:52 [ServerInfo] Custom loaded successfully
+20:02:52 [ServerInfo] Command loaded successfully
+20:02:52 Giới Hạn Reset : 1000 23:59:59 | Hôm Nay Saturday Tăng: +0
+20:02:52 [ServerInfo] Common loaded successfully
+20:02:52 [ServerInfo] Event loaded successfully
+20:02:52 [ServerInfo] EventItemBag loaded successfully
+20:02:52 [ServerInfo] Hack loaded successfully
+20:02:52 [ServerInfo] Item loaded successfully
+20:02:52 [ServerInfo] Monster loaded successfully
+20:02:52 [ServerInfo] Move loaded successfully
+20:02:52 [ServerInfo] Quest loaded successfully
+20:02:52 [ServerInfo] Shop loaded successfully
+20:02:52 [ServerInfo] Skill loaded successfully
+20:02:52 [ServerInfo] Util loaded successfully
+20:02:52 [ReadBotInfo] BotSystem loaded successfully
+20:02:52 [ServerInfo] CfgSPK loaded successfully
+21:45:54 AddAccount: 11 - IP: 192.168.1.7
+21:45:54 Character: ThangCuoi logged
+21:46:22 Character: ThangCuoi logout
+21:46:22 ExitAccount: 11 - IP: 192.168.1.7
+21:48:56 AddAccount: 11 - IP: 192.168.1.7
+21:48:57 Character: ThangCuoi logged
+21:49:06 Character: ThangCuoi logout
+21:49:06 ExitAccount: 11 - IP: 192.168.1.7
+22:05:00 [KING OF MU] Start
+22:06:38 AddAccount: 11 - IP: 192.168.1.7
+22:06:38 Character: ThangCuoi logged
+22:10:45 Character: ThangCuoi logout
+22:10:45 ExitAccount: 11 - IP: 192.168.1.7
+22:11:51 AddAccount: 11 - IP: 192.168.1.7
+22:11:52 Character: ThangCuoi logged
+22:12:04 Character: ThangCuoi logout
+22:12:04 ExitAccount: 11 - IP: 192.168.1.7
+22:35:00 [KING OF MU] Finish - No Winner
+22:54:38 AddAccount: 11 - IP: 192.168.1.7
+22:54:39 Character: ThangCuoi logged
+22:54:44 AddAccount: bot1 - IP: 103.216.91.36
+22:54:44 AddAccount: bot10 - IP: 181.249.89.78
+22:54:44 AddAccount: bot11 - IP: 156.162.201.174
+22:54:44 Character: LaoPhatGia logged
+22:54:44 AddAccount: bot12 - IP: 3.23.106.143
+22:54:44 AddAccount: bot13 - IP: 140.20.138.247
+22:54:44 Character: BoMayChap logged
+22:54:44 AddAccount: bot14 - IP: 73.68.203.16
+22:54:44 AddAccount: bot15 - IP: 10.179.219.170
+22:54:44 Character: CongAnXom logged
+22:54:44 AddAccount: bot16 - IP: 48.182.195.189
+22:54:44 AddAccount: bot17 - IP: 227.143.207.48
+22:54:44 AddAccount: bot18 - IP: 176.97.70.252
+22:54:44 AddAccount: bot19 - IP: 88.40.85.176
+22:54:44 AddAccount: bot2 - IP: 168.194.172.14
+22:54:44 AddAccount: bot20 - IP: 138.190.142.219
+22:54:44 AddAccount: bot21 - IP: 28.189.230.87
+22:54:44 AddAccount: bot22 - IP: 113.106.82.172
+22:54:44 AddAccount: bot23 - IP: 57.77.41.118
+22:54:44 Character: ChuTichXa logged
+22:54:44 AddAccount: bot24 - IP: 106.39.231.233
+22:54:44 AddAccount: bot25 - IP: 194.149.232.86
+22:54:44 Character: LenhHoXung logged
+22:54:44 AddAccount: bot26 - IP: 253.120.67.30
+22:54:44 AddAccount: bot27 - IP: 222.193.105.236
+22:54:44 AddAccount: bot28 - IP: 37.125.90.52
+22:54:44 AddAccount: bot29 - IP: 180.30.175.46
+22:54:44 AddAccount: bot3 - IP: 171.13.106.6
+22:54:44 AddAccount: bot30 - IP: 120.32.247.128
+22:54:44 AddAccount: bot4 - IP: 60.204.211.173
+22:54:44 AddAccount: bot5 - IP: 27.155.158.141
+22:54:44 Character: SieuChuoi logged
+22:54:44 AddAccount: bot6 - IP: 118.148.76.206
+22:54:44 AddAccount: bot7 - IP: 134.148.232.192
+22:54:44 Character: MGChien logged
+22:54:44 AddAccount: bot8 - IP: 149.141.130.176
+22:54:44 AddAccount: bot9 - IP: 240.69.9.203
+22:54:44 Character: ElfChien logged
+22:54:44 Character: TocBac logged
+22:54:44 Character: 12333 logged
+22:54:44 Character: 233322 logged
+22:54:44 Character: TaoBemHet logged
+22:54:44 Character: ChuaTeMu logged
+22:54:44 Character: BoDoi logged
+22:54:44 Character: 2Tay2Em logged
+22:54:44 Character: ChuQuaHat logged
+22:54:44 Character: AnhThoXay logged
+22:54:44 Character: GaiMienTay logged
+22:54:44 Character: Akuma logged
+22:54:44 Character: SieuBuff logged
+22:54:44 Character: KingKong logged
+22:54:44 Character: TestDK logged
+22:54:44 Character: Coco logged
+22:54:44 Character: NgonAnDi logged
+22:54:44 Character: DWcodon logged
+22:54:44 Character: Onehit logged
+22:54:44 Character: DaiCa logged
+22:54:44 Character: Elfbuff logged
+22:54:44 Character: MGTocDo logged
+22:54:44 Character: AnTaoDi logged
+23:59:59 Giới Hạn Reset: 1000 23:59:59 +0 (Saturday)

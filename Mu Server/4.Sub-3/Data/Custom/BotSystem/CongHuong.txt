@@ -1,0 +1,59 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//OnlyVip  = This bot is only for VIP users
+//Class    = 0,1,2	DW,SM,GM
+//	   = 16,17,18	DK,BK,BM
+//	   = 32,33,34	Elf,ME,HE
+//	   = 48,49,50	MG,DM
+//	   = 64,65,66	DL,LE
+//	   = 80,81,82	SU,BS,DS
+
+1
+//BotIndex	Class	  Tỉ Lệ		    Name			Map		X		Y		Dir
+0			16			0	  	 "Cong_Huong"	    0		130		121		3
+end
+
+//=================================================================================================================
+//=================================================================================================================
+// - 0 = Sword	1 = Shield	2 = Helm	3 = Armor	
+// - 4 = Pants	5 = Gloves	6 = Boots	7 = Wings	8 = Pet
+// - BotIndex	Slot	Type	Index	Level	Opt
+2
+//HE===============================================================================================================
+0		1	4	-1	-1	-1
+0		2	7	17	15	63
+0		3	8	17	15	63
+0		4	9	17	15	63
+0		5	10	17	15	63
+0		6	11	17	15	63
+0		7	12	5	15	63
+0		8	13	65	0	0
+
+end
+
+3
+//BotIndex	AllowLevel	AllowOpt	AllowLuck	AllowSkill	AllowExc	AllowItems
+0			0			1			1			1			1			0
+end
+
+//Conditions
+//===============================================================================================================================
+//Data
+//===============================================================================================================================
+//AcceptOnlySameType = Only Accept for example Swords with Swords, and not Swords with Axes
+//OnlyIfDestinyLower = Only Accept if destiny item level is lower or equals than source item level +10 and -10
+//===============================================================================================================================
+4
+//BotIndex	OnlyVip		WcoinC	Zen		WcoinP	AcceptOnlySameType	OnlyIfDestinyLower	AcceptAncient	MaxItemLevel	MaxItemExcCount
+0			0			20000	0		0		1					1					1				15				3
+end
