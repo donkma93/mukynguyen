@@ -859,6 +859,8 @@ void ProtocolCore(BYTE head, BYTE* lpMsg, int size, int aIndex, int encrypt, int
 		case 0x39: gCastleStartGuild.CGPacketCTCMini((CTCMINI_CGPACKET*)lpMsg, aIndex);						break;
 		case 0x52: gMasterSkillTree.CGMasterSkillRecv((PMSG_MASTER_SKILL_RECV*)lpMsg, aIndex);				break;
 		case 0xE8: gCustomEventTime.GCReqEventTime(aIndex, (PMSG_CUSTOM_EVENTTIME_RECV*)lpMsg);				break;
+		case 0xEE: gCustomEventTime.GCReqDashboardEvents(aIndex);											break;
+		case 0xEA: gCustomEventTime.GCReqOnlinePlayers(aIndex);												break;
 		case 0xEB: gCustomStore.CGOffTradeRecv((PMSG_OFFTRADE_RECV*)lpMsg, aIndex);							break;
 		case 0xED: gItemManager.CGItemBuyConfirmRecv((PMSG_ITEM_BUY_NEW*)lpMsg, aIndex);					break;
 		case 0xF0: gCustomBuyVip.BuyVip(aIndex, (BUYPREMIUM_REQ*)lpMsg);									break;

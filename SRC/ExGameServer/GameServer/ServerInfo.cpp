@@ -23,6 +23,7 @@
 #include "CustomCombo.h"
 #include "CustomDeathMessage.h"  
 #include "CustomEventDrop.h"
+#include "CustomEventTime.h"
 #include "CustomExchangeCoin.h"
 #include "CustomJewel.h"
 #include "CustomMix.h"
@@ -260,6 +261,7 @@ void CServerInfo::ReadCustomInfo()
 	gCustomStore.ReadCustomStoreInfo("GameServerInfo",".\\Data\\GameServerInfo - Custom.ini");
 	gCustomArena.Load(gPath.GetFullPath("Custom\\CustomArena.txt"));
 	gCustomEventDrop.Load(gPath.GetFullPath("Custom\\CustomEventDrop.txt"));
+	gCustomEventTime.Load(gPath.GetFullPath("Custom\\CustomEventTime.txt"));
 	gCustomMove.Load(gPath.GetFullPath("Custom\\CustomMove.txt"));
 	gCustomQuest.Load(gPath.GetFullPath("Custom\\CustomQuest.txt"));
 	gCustomTop.Load(gPath.GetFullPath("Custom\\CustomTop.txt"));

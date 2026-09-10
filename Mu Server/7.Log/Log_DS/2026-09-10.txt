@@ -15,3 +15,84 @@
 20:48:36 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
 20:48:38 Nhận diện được IP 127.0.0.1 nội bộ.
 20:48:38 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:01:51 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:01:51 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:01:51 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:02:15 Nhận diện được IP 127.0.0.1 nội bộ.
+21:02:15 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:02:17 Nhận diện được IP 127.0.0.1 nội bộ.
+21:02:17 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:02:19 Nhận diện được IP 127.0.0.1 nội bộ.
+21:02:19 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:06:41 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:06:41 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:06:41 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:06:57 Nhận diện được IP 127.0.0.1 nội bộ.
+21:06:57 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:06:59 Nhận diện được IP 127.0.0.1 nội bộ.
+21:06:59 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:07:01 Nhận diện được IP 127.0.0.1 nội bộ.
+21:07:01 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:31:06 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:31:06 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:31:06 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:31:22 Nhận diện được IP 127.0.0.1 nội bộ.
+21:31:22 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:31:24 Nhận diện được IP 127.0.0.1 nội bộ.
+21:31:24 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:31:26 Nhận diện được IP 127.0.0.1 nội bộ.
+21:31:26 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:42:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:42:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:42:38 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:42:41 Nhận diện được IP 127.0.0.1 nội bộ.
+21:42:41 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:42:43 Nhận diện được IP 127.0.0.1 nội bộ.
+21:42:43 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:42:45 Nhận diện được IP 127.0.0.1 nội bộ.
+21:42:45 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:51:03 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:51:03 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:51:03 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:51:06 Nhận diện được IP 127.0.0.1 nội bộ.
+21:51:06 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:51:08 Nhận diện được IP 127.0.0.1 nội bộ.
+21:51:08 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:51:10 Nhận diện được IP 127.0.0.1 nội bộ.
+21:51:10 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+21:56:55 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:56:55 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:56:55 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+21:56:58 Nhận diện được IP 127.0.0.1 nội bộ.
+21:56:58 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+21:57:01 Nhận diện được IP 127.0.0.1 nội bộ.
+21:57:01 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+21:57:03 Nhận diện được IP 127.0.0.1 nội bộ.
+21:57:03 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+22:23:47 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:23:47 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:23:47 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:23:50 Nhận diện được IP 127.0.0.1 nội bộ.
+22:23:50 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+22:23:52 Nhận diện được IP 127.0.0.1 nội bộ.
+22:23:52 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+22:23:54 Nhận diện được IP 127.0.0.1 nội bộ.
+22:23:54 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+22:31:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:31:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:31:11 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:31:14 Nhận diện được IP 127.0.0.1 nội bộ.
+22:31:14 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+22:31:16 Nhận diện được IP 127.0.0.1 nội bộ.
+22:31:16 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+22:31:18 Nhận diện được IP 127.0.0.1 nội bộ.
+22:31:18 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.
+22:36:01 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:36:01 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:36:01 Đã xóa IP 127.0.0.1 khỏi danh sách kết nối.
+22:36:04 Nhận diện được IP 127.0.0.1 nội bộ.
+22:36:04 Cụm Sub-1 (Thường) và Port 55901 của nhóm 0 đã liên kết.
+22:36:06 Nhận diện được IP 127.0.0.1 nội bộ.
+22:36:06 Cụm Sub-2 (VIP) và Port 55902 của nhóm 1 đã liên kết.
+22:36:08 Nhận diện được IP 127.0.0.1 nội bộ.
+22:36:08 Cụm Sub-3 (Non-PK) và Port 55903 của nhóm 2 đã liên kết.

@@ -8,3 +8,21 @@
 20:48:35 Đã kết nối tới cụm Sub-1 (Thường) nhóm 0.
 20:48:37 Đã kết nối tới cụm Sub-2 (VIP) nhóm 1.
 20:48:39 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+21:02:01 JoinServer đã bị ngắt kết nối tới Sub-1 (Thường) nhóm 0!
+21:02:01 JoinServer đã bị ngắt kết nối tới Sub-2 (VIP) nhóm 1!
+21:02:01 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+21:02:16 Đã kết nối tới cụm Sub-1 (Thường) nhóm 0.
+21:02:19 Đã kết nối tới cụm Sub-2 (VIP) nhóm 1.
+21:02:20 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+21:06:51 JoinServer đã bị ngắt kết nối tới Sub-1 (Thường) nhóm 0!
+21:06:51 JoinServer đã bị ngắt kết nối tới Sub-2 (VIP) nhóm 1!
+21:06:51 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+21:06:58 Đã kết nối tới cụm Sub-1 (Thường) nhóm 0.
+21:07:00 Đã kết nối tới cụm Sub-2 (VIP) nhóm 1.
+21:07:02 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.
+21:31:15 JoinServer đã bị ngắt kết nối tới Sub-1 (Thường) nhóm 0!
+21:31:15 JoinServer đã bị ngắt kết nối tới Sub-2 (VIP) nhóm 1!
+21:31:15 JoinServer đã bị ngắt kết nối tới Sub-3 (Non-PK) nhóm 2!
+21:31:23 Đã kết nối tới cụm Sub-1 (Thường) nhóm 0.
+21:31:25 Đã kết nối tới cụm Sub-2 (VIP) nhóm 1.
+21:31:27 Đã kết nối tới cụm Sub-3 (Non-PK) nhóm 2.

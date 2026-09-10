@@ -53,6 +53,7 @@ namespace SEASON3B
 
 #define MAX_EVENTTIME 42
 
+#pragma pack(push, 1)
 struct PMSG_CUSTOM_EVENTTIME_RECV
 {
 	PSWMSG_HEAD h;
@@ -64,7 +65,10 @@ struct CUSTOM_EVENTTIME_DATA
 {
 	int index;
 	int time;
+	char Name[40];
+	char Map[40];
 };
+#pragma pack(pop)
 
 struct CUSTOM_EVENT_INFO
 {

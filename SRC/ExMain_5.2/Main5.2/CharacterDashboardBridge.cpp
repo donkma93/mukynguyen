@@ -13,7 +13,6 @@ namespace
     HANDLE g_eventMapping = NULL;
     CharacterDashboard::EventRegistry* g_eventRegistry = NULL;
     DWORD g_lastPublishTick = 0;
-    DWORD g_lastEventRequestTick = 0;
 
     void LockRegistry(HANDLE mutex)
     {
@@ -63,7 +62,13 @@ namespace
             CharacterDashboard::PlayerStatus* slot = &g_dashboardRegistry->players[i];
             if (slot->processId == processId)
             {
-                return slot;
+                if (characterName == NULL || characterName[0] == '\0' || lstrcmpiA(slot->name, characterName) == 0)
+                {
+                    return slot;
+                }
+                slot->flags = CharacterDashboard::PlayerOffline;
+                slot->processId = 1;
+                continue;
             }
             if (slot->processId == 0 && freeSlot == NULL)
             {
@@ -251,8 +256,11 @@ void UpdateCharacterDashboard()
     g_lastPublishTick = now;
 
     const bool online = Hero != NULL && CharacterAttribute != NULL && Hero->ID[0] != '\0' &&
-        gMapManager.WorldActive >= 0 && gMapManager.WorldActive != WD_54CHARACTERSCENE &&
-        gMapManager.WorldActive != WD_55LOGINSCENE;
+        gMapManager.WorldActive >= 0 &&
+        gMapManager.WorldActive != WD_54CHARACTERSCENE &&
+        gMapManager.WorldActive != WD_55LOGINSCENE &&
+        gMapManager.WorldActive != WD_73NEW_LOGIN_SCENE &&
+        gMapManager.WorldActive != WD_74NEW_CHARACTER_SCENE;
     HANDLE mutex = CreateMutex(NULL, FALSE, CharacterDashboard::kMutexName);
     LockRegistry(mutex);
     CharacterDashboard::PlayerStatus* slot = GetMySlot(online ? Hero->ID : NULL, online);
@@ -300,15 +308,8 @@ void UpdateCharacterDashboard()
         CloseHandle(mutex);
     }
 
-    // The original client requests event times only while its own event window
-    // is rendered.  The dashboard must work independently of that window, so
-    // request the schedule after entering the world, at a restrained interval.
-    if (online && now - g_lastEventRequestTick >= 2000)
-    {
-        g_lastEventRequestTick = now;
-        SendRequestDataSend(0xF3, 0xE8);
-    }
-    PublishEvents(now);
+    // Event names/times for the standalone dashboard come from GameServer
+    // directly.  Main no longer publishes GetMain CustomEventTime.txt.
 }
 
 void ShutdownCharacterDashboard()

@@ -16,6 +16,23 @@ CServerDisplayer gServerDisplayer;
 CServerDisplayer::CServerDisplayer()
 {
 	this->EventBc = -1;
+	this->EventDs = -1;
+	this->EventCc = -1;
+	this->EventIt = -1;
+	this->EventCustomBonus = -1;
+	this->EventMoss = -1;
+	this->EventKing = -1;
+	this->EventDrop = -1;
+	this->EventTvT = -1;
+	this->EventGvG = -1;
+	this->EventCs = -1;
+	this->EventCsState = -1;
+	this->EventCastleDeep = -1;
+	this->EventCryWolf = -1;
+	this->EventCryWolfState = -1;
+	this->EventCTCMini = -1;
+	memset(this->EventInvasion, 0xFF, sizeof(this->EventInvasion));
+	memset(this->EventCustomArena, 0xFF, sizeof(this->EventCustomArena));
 	AddFontResourceExA("..\\..\\..\\Tool\\Font.ttf", FR_PRIVATE, 0);
 
 	for (int n = 0; n < MAX_LOG_TEXT_LINE; n++)

@@ -6,6 +6,9 @@
 #include <windowsx.h>
 #include <algorithm>
 #include <atomic>
+#include <cctype>
+#include <map>
+#include <set>
 #include <thread>
 #include <vector>
 #include <string>
@@ -16,12 +19,14 @@
 
 namespace
 {
-    // Keep the panel close to the compact in-game reference window.
-    const int kWindowWidth = 350;
-    const int kWindowHeight = 405;
-    const int kTitleHeight = 42;
-    const int kTabHeight = 38;
-    const int kRowHeight = 68;
+    const int kWindowWidth = 380;
+    const int kWindowHeight = 430;
+    const int kWindowHeightMax = 780;
+    const int kTitleHeight = 52;
+    const int kTabHeight = 46;
+    const int kRowHeight = 85;
+    const int kEventRowHeight = 46;
+    const int kResizeGrip = 8;
 
     HANDLE g_mapping = NULL;
     CharacterDashboard::Registry* g_registry = NULL;
@@ -32,15 +37,24 @@ namespace
     HICON g_gameLogo = NULL;
     char g_iniPath[MAX_PATH] = { 0 };
     HANDLE g_eventStopEvent = NULL;
+    HANDLE g_eventQueryNowEvent = NULL;
     std::thread g_eventQueryThread;
     std::atomic<bool> g_eventQueryRunning(false);
     int g_activeTab = 0;
     int g_playerScroll = 0;
     int g_eventScroll = 0;
     std::vector<CharacterDashboard::PlayerStatus> g_rows;
+    std::map<std::string, CharacterDashboard::PlayerStatus> g_knownPlayers;
+    std::map<std::string, DWORD> g_serverOnlineTick;
+    std::set<std::string> g_serverSeenThisRound;
     std::vector<CharacterDashboard::EventStatus> g_events;
+    void RememberPlayer(const CharacterDashboard::PlayerStatus& row, bool liveOnline);
     DWORD g_eventSnapshotTick = 0;
+    char g_lastEventError[160] = "Waiting for the server event schedule...";
     bool g_isMaximized = false;
+    bool g_heightDragging = false;
+    int g_heightDragOriginY = 0;
+    int g_heightDragOrigin = 0;
     RECT g_restoreBounds = { 0 };
     int g_drawWidth = kWindowWidth;
     int g_drawHeight = kWindowHeight;
@@ -52,6 +66,8 @@ namespace
     {
         LONG index;
         LONG secondsUntilStart;
+        char name[40];
+        char mapName[40];
     };
 #pragma pack(pop)
 
@@ -131,7 +147,7 @@ namespace
             GetPrivateProfileStringA(section, "Map", "", row.mapName, sizeof(row.mapName), g_iniPath);
             row.processId = 1; // A saved snapshot is not tied to a running process.
             row.lastUpdateTick = GetTickCount();
-            row.flags = GetPrivateProfileIntA(section, "State", CharacterDashboard::PlayerOffline, g_iniPath);
+            row.flags = CharacterDashboard::PlayerOffline;
             row.level = GetPrivateProfileIntA(section, "Level", 0, g_iniPath);
             row.reset = GetPrivateProfileIntA(section, "Reset", 0, g_iniPath);
             row.masterReset = GetPrivateProfileIntA(section, "MasterReset", 0, g_iniPath);
@@ -141,6 +157,7 @@ namespace
             row.maximumSd = GetPrivateProfileIntA(section, "MaximumSd", 0, g_iniPath);
             row.positionX = static_cast<LONG>(GetPrivateProfileIntA(section, "PositionX", 0, g_iniPath));
             row.positionY = static_cast<LONG>(GetPrivateProfileIntA(section, "PositionY", 0, g_iniPath));
+            RememberPlayer(row, false);
         }
     }
 
@@ -183,6 +200,86 @@ namespace
         {
             WritePrivateProfileStringA("EventServer", "Port", "55901", g_iniPath);
         }
+        if (GetPrivateProfileIntA("EventServer", "Port2", 0, g_iniPath) == 0)
+        {
+            WritePrivateProfileStringA("EventServer", "Port2", "55902", g_iniPath);
+        }
+        if (GetPrivateProfileIntA("EventServer", "Port3", 0, g_iniPath) == 0)
+        {
+            WritePrivateProfileStringA("EventServer", "Port3", "55903", g_iniPath);
+        }
+    }
+
+    std::string NameKey(const char* name)
+    {
+        std::string key = name != NULL ? name : "";
+        for (size_t i = 0; i < key.size(); ++i)
+        {
+            key[i] = static_cast<char>(tolower(static_cast<unsigned char>(key[i])));
+        }
+        return key;
+    }
+
+    void RememberPlayer(const CharacterDashboard::PlayerStatus& row, bool liveOnline)
+    {
+        if (row.name[0] == '\0')
+        {
+            return;
+        }
+        const std::string key = NameKey(row.name);
+        CharacterDashboard::PlayerStatus stored = row;
+        std::map<std::string, CharacterDashboard::PlayerStatus>::iterator existing = g_knownPlayers.find(key);
+        if (existing != g_knownPlayers.end())
+        {
+            stored = existing->second;
+            memcpy(stored.name, row.name, sizeof(stored.name));
+            if (row.mapName[0] != '\0')
+            {
+                memcpy(stored.mapName, row.mapName, sizeof(stored.mapName));
+            }
+            if (row.level != 0) stored.level = row.level;
+            if (row.reset != 0 || row.masterReset != 0)
+            {
+                stored.reset = row.reset;
+                stored.masterReset = row.masterReset;
+            }
+            if (row.positionX != 0 || row.positionY != 0)
+            {
+                stored.positionX = row.positionX;
+                stored.positionY = row.positionY;
+            }
+            if (row.currentHp != 0) stored.currentHp = row.currentHp;
+            if (row.maximumHp != 0) stored.maximumHp = row.maximumHp;
+            if (row.currentSd != 0) stored.currentSd = row.currentSd;
+            if (row.maximumSd != 0) stored.maximumSd = row.maximumSd;
+            if (row.processId != 0) stored.processId = row.processId;
+        }
+        else
+        {
+            stored.processId = row.processId != 0 ? row.processId : 1;
+        }
+
+        const DWORD now = GetTickCount();
+        if (liveOnline)
+        {
+            g_serverOnlineTick[key] = now;
+            g_serverSeenThisRound.insert(key);
+            stored.flags = CharacterDashboard::PlayerOnline;
+            stored.lastUpdateTick = now;
+        }
+        else
+        {
+            std::map<std::string, DWORD>::iterator serverTick = g_serverOnlineTick.find(key);
+            const bool serverOnline = serverTick != g_serverOnlineTick.end() &&
+                static_cast<DWORD>(now - serverTick->second) < 8000;
+            if (!serverOnline)
+            {
+                stored.flags = CharacterDashboard::PlayerOffline;
+                stored.processId = 1;
+            }
+        }
+        memcpy(stored.name, row.name, sizeof(stored.name));
+        g_knownPlayers[key] = stored;
     }
 
     bool WaitForSocket(SOCKET socket, bool read, long timeoutMilliseconds)
@@ -192,6 +289,26 @@ namespace
         FD_SET(socket, &sockets);
         timeval timeout = { timeoutMilliseconds / 1000, (timeoutMilliseconds % 1000) * 1000 };
         return select(0, read ? &sockets : NULL, read ? NULL : &sockets, NULL, &timeout) > 0;
+    }
+
+    void SetEventError(const char* text)
+    {
+        strcpy_s(g_lastEventError, text);
+    }
+
+    void XorEncodeMuPacket(BYTE* buffer, int size)
+    {
+        static const BYTE kXorFilter[32] = {
+            0xE7, 0x6D, 0x3A, 0x89, 0xBC, 0xB2, 0x9F, 0x73,
+            0x23, 0xA8, 0xFE, 0xB6, 0x49, 0x5D, 0x39, 0x5D,
+            0x8A, 0xCB, 0x63, 0x8D, 0xEA, 0x7D, 0x2B, 0x5F,
+            0xC3, 0xB1, 0xE9, 0x83, 0x29, 0x51, 0xE8, 0x56
+        };
+        const int start = (buffer[0] == 0xC2 || buffer[0] == 0xC4) ? 3 : 2;
+        for (int i = start + 1; i < size; ++i)
+        {
+            buffer[i] = static_cast<BYTE>(buffer[i] ^ (buffer[i - 1] ^ kXorFilter[i % 32]));
+        }
     }
 
     bool SendExact(SOCKET socket, const BYTE* data, int length)
@@ -205,7 +322,7 @@ namespace
                 offset += result;
                 continue;
             }
-            if (result == SOCKET_ERROR && WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, false, 800))
+            if (result == SOCKET_ERROR && WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, false, 2000))
             {
                 continue;
             }
@@ -225,7 +342,7 @@ namespace
                 offset += result;
                 continue;
             }
-            if (result == SOCKET_ERROR && WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, true, 800))
+            if (result == SOCKET_ERROR && WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, true, 2000))
             {
                 continue;
             }
@@ -238,10 +355,10 @@ namespace
     {
         switch (index)
         {
-        case 0: strcpy_s(event.name, "Blood Castle"); strcpy_s(event.mapName, "Blood Castle"); break;
-        case 1: strcpy_s(event.name, "Devil Square"); strcpy_s(event.mapName, "Devil Square"); break;
-        case 2: strcpy_s(event.name, "Chaos Castle"); strcpy_s(event.mapName, "Chaos Castle"); break;
-        case 3: strcpy_s(event.name, "Castle Event"); strcpy_s(event.mapName, "Castle Siege"); break;
+        case 0: strcpy_s(event.name, "Huyết Lâu"); strcpy_s(event.mapName, "Devias"); break;
+        case 1: strcpy_s(event.name, "Quảng Trường Quỷ"); strcpy_s(event.mapName, "Noria"); break;
+        case 2: strcpy_s(event.name, "Hỗn Nguyên Lâu"); strcpy_s(event.mapName, "Lorencia"); break;
+        case 3: strcpy_s(event.name, "Công Thành Chiến"); strcpy_s(event.mapName, "Guild War"); break;
         default:
             sprintf_s(event.name, "Invasion %ld", index - 3);
             strcpy_s(event.mapName, "Server");
@@ -256,7 +373,7 @@ namespace
         const unsigned short port = static_cast<unsigned short>(GetPrivateProfileIntA("EventServer", "Port", 55901, g_iniPath));
 
         addrinfo hints = { 0 };
-        hints.ai_family = AF_UNSPEC;
+        hints.ai_family = AF_INET;
         hints.ai_socktype = SOCK_STREAM;
         hints.ai_protocol = IPPROTO_TCP;
         char portText[8] = { 0 };
@@ -264,6 +381,7 @@ namespace
         addrinfo* result = NULL;
         if (getaddrinfo(address, portText, &hints, &result) != 0 || result == NULL)
         {
+            SetEventError("Cannot resolve GameServer address.");
             return false;
         }
 
@@ -278,7 +396,7 @@ namespace
             u_long nonBlocking = 1;
             ioctlsocket(socket, FIONBIO, &nonBlocking);
             const int connectResult = connect(socket, candidate->ai_addr, static_cast<int>(candidate->ai_addrlen));
-            if (connectResult == 0 || (WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, false, 800)))
+            if (connectResult == 0 || (WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, false, 2000)))
             {
                 int connectError = 0;
                 int connectErrorSize = sizeof(connectError);
@@ -294,20 +412,23 @@ namespace
         freeaddrinfo(result);
         if (socket == INVALID_SOCKET)
         {
+            SetEventError("Cannot connect to GameServer. Check Dashboard.ini EventServer.");
             return false;
         }
 
-        const BYTE request[] = { 0xC1, 0x04, 0xF3, 0xE8 };
+        BYTE request[] = { 0xC1, 0x04, 0xF3, 0xEE };
+        XorEncodeMuPacket(request, sizeof(request));
         if (!SendExact(socket, request, sizeof(request)))
         {
             closesocket(socket);
+            SetEventError("Failed to send event request to GameServer.");
             return false;
         }
 
         // A raw GameServer connection first emits its normal F1 welcome
         // packet.  It is unrelated to the Event request, so skip it (and any
         // other control packet) until the F3:E8 response arrives.
-        for (int packetNumber = 0; packetNumber < 4; ++packetNumber)
+        for (int packetNumber = 0; packetNumber < 8; ++packetNumber)
         {
             BYTE header[3] = { 0 };
             if (!ReceiveExact(socket, header, sizeof(header)))
@@ -328,7 +449,7 @@ namespace
             {
                 break;
             }
-            if (!longPacket || packet[3] != 0xF3 || packet[4] != 0xE8)
+            if (!longPacket || packet[3] != 0xF3 || packet[4] != 0xEE)
             {
                 continue;
             }
@@ -336,23 +457,139 @@ namespace
             LONG count = 0;
             memcpy(&count, packet.data() + 5, sizeof(count));
             count = std::max<LONG>(0, std::min<LONG>(count, CharacterDashboard::kMaxEvents));
-            if (packetSize < 10 + count * static_cast<LONG>(sizeof(DirectEventWire)))
+            const int recSize = 4 + 40 + 40;
+            if (packetSize < 9 + count * recSize)
             {
                 break;
             }
             events.clear();
             for (LONG i = 0; i < count; ++i)
             {
-                DirectEventWire wire = { 0 };
-                memcpy(&wire, packet.data() + 10 + i * sizeof(DirectEventWire), sizeof(wire));
-                if (wire.secondsUntilStart < 0)
+                const BYTE* rec = packet.data() + 9 + i * recSize;
+                CharacterDashboard::EventStatus event = { 0 };
+                memcpy(&event.secondsUntilStart, rec, 4);
+                memcpy(event.name, rec + 4, 40);
+                event.name[sizeof(event.name) - 1] = 0;
+                memcpy(event.mapName, rec + 44, 40);
+                event.mapName[sizeof(event.mapName) - 1] = 0;
+                if (event.name[0] == '\0' || event.secondsUntilStart < 0 || event.secondsUntilStart > 86400 * 40)
                 {
                     continue;
                 }
-                CharacterDashboard::EventStatus event = { 0 };
-                BuildDirectEventName(wire.index, event);
-                event.secondsUntilStart = wire.secondsUntilStart;
                 events.push_back(event);
+            }
+            closesocket(socket);
+            if (events.empty())
+            {
+                SetEventError("GameServer returned no scheduled events.");
+            }
+            else
+            {
+                SetEventError("");
+            }
+            return true;
+        }
+        closesocket(socket);
+        SetEventError("GameServer did not send an event schedule.");
+        return false;
+    }
+
+    bool QueryPlayersFromGameServer(const char* address, unsigned short port)
+    {
+        char portText[16] = { 0 };
+        sprintf_s(portText, "%u", port);
+        addrinfo hints = { 0 };
+        hints.ai_family = AF_INET;
+        hints.ai_socktype = SOCK_STREAM;
+        hints.ai_protocol = IPPROTO_TCP;
+        addrinfo* result = NULL;
+        if (getaddrinfo(address, portText, &hints, &result) != 0 || result == NULL)
+        {
+            return false;
+        }
+        SOCKET socket = INVALID_SOCKET;
+        for (addrinfo* item = result; item != NULL; item = item->ai_next)
+        {
+            socket = ::socket(item->ai_family, item->ai_socktype, item->ai_protocol);
+            if (socket == INVALID_SOCKET)
+            {
+                continue;
+            }
+            u_long nonBlocking = 1;
+            ioctlsocket(socket, FIONBIO, &nonBlocking);
+            const int connectResult = connect(socket, item->ai_addr, static_cast<int>(item->ai_addrlen));
+            if (connectResult == 0 || (WSAGetLastError() == WSAEWOULDBLOCK && WaitForSocket(socket, false, 2000)))
+            {
+                break;
+            }
+            closesocket(socket);
+            socket = INVALID_SOCKET;
+        }
+        freeaddrinfo(result);
+        if (socket == INVALID_SOCKET)
+        {
+            return false;
+        }
+        BYTE request[] = { 0xC1, 0x04, 0xF3, 0xEA };
+        XorEncodeMuPacket(request, sizeof(request));
+        if (!SendExact(socket, request, sizeof(request)))
+        {
+            closesocket(socket);
+            return false;
+        }
+        for (int packetNumber = 0; packetNumber < 8; ++packetNumber)
+        {
+            BYTE header[4] = { 0 };
+            if (!ReceiveExact(socket, header, sizeof(header)))
+            {
+                break;
+            }
+            const bool shortPacket = header[0] == 0xC1 || header[0] == 0xC3;
+            const bool longPacket = header[0] == 0xC2 || header[0] == 0xC4;
+            const int packetSize = shortPacket ? header[1] :
+                longPacket ? ((static_cast<int>(header[1]) << 8) | header[2]) : 0;
+            if (packetSize < (shortPacket ? 3 : 5) || packetSize > 4096)
+            {
+                break;
+            }
+            std::vector<BYTE> packet(packetSize);
+            memcpy(packet.data(), header, sizeof(header));
+            if (!ReceiveExact(socket, packet.data() + sizeof(header), packetSize - static_cast<int>(sizeof(header))))
+            {
+                break;
+            }
+            if (!longPacket || packet[3] != 0xF3 || packet[4] != 0xEA)
+            {
+                continue;
+            }
+            LONG count = 0;
+            memcpy(&count, packet.data() + 5, sizeof(count));
+            const int recSize = 11 + 32 + 2 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4;
+            if (count < 0 || packetSize < 9 + count * recSize)
+            {
+                break;
+            }
+            for (LONG i = 0; i < count; ++i)
+            {
+                const BYTE* rec = packet.data() + 9 + i * recSize;
+                CharacterDashboard::PlayerStatus row = { 0 };
+                memcpy(row.name, rec, 11);
+                row.name[10] = 0;
+                memcpy(row.mapName, rec + 11, 32);
+                row.mapName[31] = 0;
+                short level = 0;
+                memcpy(&level, rec + 43, sizeof(level));
+                memcpy(&row.reset, rec + 45, sizeof(row.reset));
+                memcpy(&row.masterReset, rec + 49, sizeof(row.masterReset));
+                memcpy(&row.positionX, rec + 53, sizeof(row.positionX));
+                memcpy(&row.positionY, rec + 57, sizeof(row.positionY));
+                memcpy(&row.currentHp, rec + 61, sizeof(row.currentHp));
+                memcpy(&row.maximumHp, rec + 65, sizeof(row.maximumHp));
+                memcpy(&row.currentSd, rec + 69, sizeof(row.currentSd));
+                memcpy(&row.maximumSd, rec + 73, sizeof(row.maximumSd));
+                row.level = level;
+                row.processId = 1;
+                RememberPlayer(row, true);
             }
             closesocket(socket);
             return true;
@@ -394,6 +631,7 @@ namespace
         {
             return;
         }
+        HANDLE waits[2] = { g_eventStopEvent, g_eventQueryNowEvent };
         while (WaitForSingleObject(g_eventStopEvent, 0) == WAIT_TIMEOUT)
         {
             std::vector<CharacterDashboard::EventStatus> events;
@@ -401,7 +639,43 @@ namespace
             {
                 PublishDirectEvents(events);
             }
-            WaitForSingleObject(g_eventStopEvent, 5000);
+            char address[64] = { 0 };
+            GetPrivateProfileStringA("EventServer", "Address", "127.0.0.1", address, sizeof(address), g_iniPath);
+            const unsigned short ports[3] = {
+                static_cast<unsigned short>(GetPrivateProfileIntA("EventServer", "Port", 55901, g_iniPath)),
+                static_cast<unsigned short>(GetPrivateProfileIntA("EventServer", "Port2", 55902, g_iniPath)),
+                static_cast<unsigned short>(GetPrivateProfileIntA("EventServer", "Port3", 55903, g_iniPath))
+            };
+            g_serverSeenThisRound.clear();
+            for (int i = 0; i < 3; ++i)
+            {
+                if (ports[i] != 0)
+                {
+                    QueryPlayersFromGameServer(address, ports[i]);
+                }
+            }
+            for (std::map<std::string, DWORD>::iterator it = g_serverOnlineTick.begin(); it != g_serverOnlineTick.end(); )
+            {
+                if (g_serverSeenThisRound.find(it->first) == g_serverSeenThisRound.end())
+                {
+                    std::map<std::string, CharacterDashboard::PlayerStatus>::iterator known = g_knownPlayers.find(it->first);
+                    if (known != g_knownPlayers.end())
+                    {
+                        known->second.flags = CharacterDashboard::PlayerOffline;
+                        known->second.processId = 1;
+                    }
+                    it = g_serverOnlineTick.erase(it);
+                }
+                else
+                {
+                    ++it;
+                }
+            }
+            const DWORD wait = WaitForMultipleObjects(2, waits, FALSE, 2000);
+            if (wait == WAIT_OBJECT_0)
+            {
+                break;
+            }
         }
         WSACleanup();
     }
@@ -414,7 +688,8 @@ namespace
         }
         EnsureEventServerSettings();
         g_eventStopEvent = CreateEventA(NULL, TRUE, FALSE, NULL);
-        if (g_eventStopEvent == NULL)
+        g_eventQueryNowEvent = CreateEventA(NULL, FALSE, TRUE, NULL);
+        if (g_eventStopEvent == NULL || g_eventQueryNowEvent == NULL)
         {
             g_eventQueryRunning = false;
             return;
@@ -429,12 +704,21 @@ namespace
             return;
         }
         SetEvent(g_eventStopEvent);
+        if (g_eventQueryNowEvent != NULL)
+        {
+            SetEvent(g_eventQueryNowEvent);
+        }
         if (g_eventQueryThread.joinable())
         {
             g_eventQueryThread.join();
         }
         CloseHandle(g_eventStopEvent);
         g_eventStopEvent = NULL;
+        if (g_eventQueryNowEvent != NULL)
+        {
+            CloseHandle(g_eventQueryNowEvent);
+            g_eventQueryNowEvent = NULL;
+        }
     }
 
     void LoadGameLogo()
@@ -496,7 +780,7 @@ namespace
         FillRect(dc, &rect, brush.brush);
     }
 
-    void Text(HDC dc, int x, int y, const char* value, COLORREF colour, HFONT font, UINT format = 0)
+    void Text(HDC dc, int x, int y, const char* value, COLORREF colour, HFONT font, UINT format = 0, int width = 0)
     {
         if (value == NULL)
         {
@@ -522,15 +806,21 @@ namespace
         SetBkMode(dc, TRANSPARENT);
         SetTextColor(dc, colour);
         HGDIOBJ old = SelectObject(dc, font);
-        RECT rect = { x, y, g_drawWidth - 18, y + 24 };
-        DrawTextW(dc, wideText.data(), -1, &rect, DT_SINGLELINE | DT_VCENTER | DT_NOPREFIX | format);
+        RECT rect = { x, y, width > 0 ? x + width : g_drawWidth - 18, y + 24 };
+        DrawTextW(dc, wideText.data(), -1, &rect, DT_SINGLELINE | DT_VCENTER | DT_NOPREFIX | DT_END_ELLIPSIS | format);
         SelectObject(dc, old);
     }
 
     bool IsOnline(const CharacterDashboard::PlayerStatus& status, DWORD now)
     {
-        return status.flags == CharacterDashboard::PlayerOnline &&
-            static_cast<DWORD>(now - status.lastUpdateTick) < 3000;
+        const std::string key = NameKey(status.name);
+        std::map<std::string, DWORD>::iterator serverTick = g_serverOnlineTick.find(key);
+        if (serverTick != g_serverOnlineTick.end() &&
+            static_cast<DWORD>(now - serverTick->second) < 8000)
+        {
+            return true;
+        }
+        return false;
     }
 
     bool HasSameVisualState(const CharacterDashboard::PlayerStatus& left,
@@ -568,29 +858,17 @@ namespace
         {
             WaitForSingleObject(mutex, 50);
         }
+        const DWORD now = GetTickCount();
+        std::set<std::string> liveNames;
         for (DWORD i = 0; i < CharacterDashboard::kMaxPlayers; ++i)
         {
             const CharacterDashboard::PlayerStatus& row = g_registry->players[i];
-            if (row.processId != 0 && row.name[0] != '\0')
+            if (row.name[0] == '\0')
             {
-                // Older running clients may still leave an entry behind after
-                // a restart.  Never render or persist a second copy of the
-                // same character; the newest/online entry wins.
-                std::vector<CharacterDashboard::PlayerStatus>::iterator existing = std::find_if(nextRows.begin(), nextRows.end(),
-                    [&row](const CharacterDashboard::PlayerStatus& candidate)
-                    {
-                        return lstrcmpiA(candidate.name, row.name) == 0;
-                    });
-                if (existing == nextRows.end())
-                {
-                    nextRows.push_back(row);
-                }
-                else if ((!IsOnline(*existing, GetTickCount()) && IsOnline(row, GetTickCount())) ||
-                    row.lastUpdateTick > existing->lastUpdateTick)
-                {
-                    *existing = row;
-                }
+                continue;
             }
+            RememberPlayer(row, IsOnline(row, now));
+            liveNames.insert(NameKey(row.name));
         }
         if (mutex != NULL)
         {
@@ -598,11 +876,24 @@ namespace
             CloseHandle(mutex);
         }
 
-        const DWORD now = GetTickCount();
+        for (std::map<std::string, CharacterDashboard::PlayerStatus>::iterator it = g_knownPlayers.begin();
+            it != g_knownPlayers.end(); ++it)
+        {
+            if (liveNames.find(it->first) == liveNames.end() && !IsOnline(it->second, now))
+            {
+                it->second.flags = CharacterDashboard::PlayerOffline;
+                it->second.processId = 1;
+            }
+            nextRows.push_back(it->second);
+        }
         std::sort(nextRows.begin(), nextRows.end(), [now](const CharacterDashboard::PlayerStatus& left,
             const CharacterDashboard::PlayerStatus& right)
         {
-            return IsOnline(left, now) != IsOnline(right, now) ? IsOnline(left, now) : left.name < right.name;
+            if (IsOnline(left, now) != IsOnline(right, now))
+            {
+                return IsOnline(left, now);
+            }
+            return _stricmp(left.name, right.name) < 0;
         });
         bool changed = g_rows.size() != nextRows.size();
         if (!changed)
@@ -625,13 +916,17 @@ namespace
         }
 
         const int contentHeight = static_cast<int>(g_rows.size()) * kRowHeight;
-        const int viewportHeight = kWindowHeight - kTitleHeight - kTabHeight - 24;
+        const int viewportHeight = g_drawHeight - kTitleHeight - kTabHeight - 24;
         g_playerScroll = std::max(0, std::min(g_playerScroll, contentHeight - viewportHeight));
         return changed;
     }
 
     LONG SecondsUntilEvent(const CharacterDashboard::EventStatus& event, DWORD now)
     {
+        if (event.secondsUntilStart < 0)
+        {
+            return -1;
+        }
         const DWORD elapsed = static_cast<DWORD>(now - g_eventSnapshotTick) / 1000;
         return event.secondsUntilStart <= static_cast<LONG>(elapsed) ? 0 : event.secondsUntilStart - elapsed;
     }
@@ -682,8 +977,8 @@ namespace
         }
         g_events.swap(nextEvents);
         g_eventSnapshotTick = nextTick;
-        const int contentHeight = static_cast<int>(g_events.size()) * 37;
-        const int viewportHeight = kWindowHeight - kTitleHeight - kTabHeight - 36;
+        const int contentHeight = static_cast<int>(g_events.size()) * kEventRowHeight;
+        const int viewportHeight = g_drawHeight - kTitleHeight - kTabHeight - 36;
         g_eventScroll = std::max(0, std::min(g_eventScroll, contentHeight - viewportHeight));
         return changed;
     }
@@ -729,20 +1024,46 @@ namespace
         DrawGauge(dc, 184, top + 46, 140, 9, row.currentSd, row.maximumSd, online, Rgb(65, 144, 231));
     }
 
-    void DrawControl(HDC dc, int left, int right, const char* caption, COLORREF colour, HFONT font)
+    HPEN MakeSharpPen(COLORREF colour, int width)
     {
-        RECT rect = { left, 7, right, kTitleHeight - 8 };
+        LOGBRUSH brush = { BS_SOLID, colour, 0 };
+        return ExtCreatePen(PS_GEOMETRIC | PS_SOLID | PS_ENDCAP_SQUARE | PS_JOIN_MITER, width, &brush, 0, NULL);
+    }
+
+    void DrawWindowButton(HDC dc, int left, int right, int kind, COLORREF colour)
+    {
+        RECT rect = { left, 8, right, kTitleHeight - 9 };
         PaintBrush fill(Rgb(45, 14, 16));
-        PaintBrush border(Rgb(137, 49, 39));
+        PaintBrush border(Rgb(168, 62, 48));
         FillRect(dc, &rect, fill.brush);
         FrameRect(dc, &rect, border.brush);
-        RECT highlight = { left + 1, 8, right - 1, 9 };
-        Fill(dc, highlight, Rgb(185, 73, 52));
-        SetBkMode(dc, TRANSPARENT);
-        SetTextColor(dc, colour);
-        HGDIOBJ old = SelectObject(dc, font);
-        DrawTextA(dc, caption, -1, &rect, DT_SINGLELINE | DT_CENTER | DT_VCENTER | DT_NOPREFIX);
-        SelectObject(dc, old);
+        RECT highlight = { left + 1, 9, right - 1, 11 };
+        Fill(dc, highlight, Rgb(198, 86, 58));
+
+        const int cx = (left + right) / 2;
+        const int cy = (rect.top + rect.bottom) / 2;
+        HPEN pen = MakeSharpPen(colour, 2);
+        HGDIOBJ oldPen = SelectObject(dc, pen);
+        HGDIOBJ oldBrush = SelectObject(dc, GetStockObject(NULL_BRUSH));
+        if (kind == 0)
+        {
+            MoveToEx(dc, cx - 6, cy, NULL);
+            LineTo(dc, cx + 7, cy);
+        }
+        else if (kind == 1)
+        {
+            Rectangle(dc, cx - 6, cy - 5, cx + 7, cy + 6);
+        }
+        else
+        {
+            MoveToEx(dc, cx - 5, cy - 5, NULL);
+            LineTo(dc, cx + 6, cy + 6);
+            MoveToEx(dc, cx + 5, cy - 5, NULL);
+            LineTo(dc, cx - 6, cy + 6);
+        }
+        SelectObject(dc, oldBrush);
+        SelectObject(dc, oldPen);
+        DeleteObject(pen);
     }
 
     void DrawTabIcon(HDC dc, int centerX, int centerY, bool eventTab, COLORREF colour)
@@ -792,7 +1113,12 @@ namespace
 
     void FormatEventTime(LONG seconds, char* output, size_t outputSize)
     {
-        if (seconds <= 0)
+        if (seconds < 0)
+        {
+            strcpy_s(output, outputSize, "OFF");
+            return;
+        }
+        if (seconds == 0)
         {
             strcpy_s(output, outputSize, "NOW");
             return;
@@ -815,8 +1141,8 @@ namespace
     {
         const int headerTop = kTitleHeight + kTabHeight + 10;
         Text(dc, 25, headerTop, "EVENT", Rgb(216, 159, 91), small);
-        Text(dc, 145, headerTop, "MAP", Rgb(216, 159, 91), small);
-        Text(dc, 253, headerTop, "START", Rgb(216, 159, 91), small);
+        Text(dc, 150, headerTop, "MAP", Rgb(216, 159, 91), small);
+        Text(dc, 262, headerTop, "START", Rgb(216, 159, 91), small);
         RECT line = { 19, headerTop + 18, g_drawWidth - 19, headerTop + 19 };
         Fill(dc, line, Rgb(103, 42, 33));
 
@@ -824,27 +1150,28 @@ namespace
         const int firstRow = headerTop + 25 - g_eventScroll;
         for (size_t i = 0; i < g_events.size(); ++i)
         {
-            const int top = firstRow + static_cast<int>(i) * 37;
+            const int top = firstRow + static_cast<int>(i) * kEventRowHeight;
             if (top + 34 < kTitleHeight + kTabHeight || top >= g_drawHeight - 18)
             {
                 continue;
             }
             const LONG seconds = SecondsUntilEvent(g_events[i], now);
             const bool urgent = seconds > 0 && seconds <= 300;
-            RECT background = { 18, top, g_drawWidth - 18, top + 32 };
+            RECT background = { 18, top, g_drawWidth - 18, top + kEventRowHeight - 5 };
             Fill(dc, background, urgent ? Rgb(63, 25, 24) : Rgb(22, 25, 32));
             FrameRect(dc, &background, reinterpret_cast<HBRUSH>(GetStockObject(DKGRAY_BRUSH)));
-            Text(dc, 25, top + 7, g_events[i].name, urgent ? Rgb(255, 196, 152) : Rgb(235, 236, 240), bold);
-            Text(dc, 145, top + 8, g_events[i].mapName, Rgb(170, 189, 214), small);
+            Text(dc, 25, top + 9, g_events[i].name, urgent ? Rgb(255, 196, 152) : Rgb(235, 236, 240), bold, 0, 120);
+            Text(dc, 150, top + 10, g_events[i].mapName, Rgb(170, 189, 214), small, 0, 100);
             char timeText[32] = { 0 };
             FormatEventTime(seconds, timeText, sizeof(timeText));
-            Text(dc, 253, top + 7, timeText, seconds == 0 ? Rgb(87, 221, 131) :
-                urgent ? Rgb(255, 124, 114) : Rgb(231, 204, 132), regular);
+            Text(dc, 262, top + 9, timeText, seconds == 0 ? Rgb(87, 221, 131) :
+                urgent ? Rgb(255, 124, 114) : Rgb(231, 204, 132), regular, 0, 100);
         }
 
         if (g_events.empty())
         {
-            Text(dc, 0, 190, "Waiting for the server event schedule...", Rgb(144, 149, 160), regular, DT_CENTER);
+            Text(dc, 0, 190, g_lastEventError[0] ? g_lastEventError : "Waiting for the server event schedule...",
+                Rgb(144, 149, 160), regular, DT_CENTER);
         }
     }
 
@@ -853,10 +1180,10 @@ namespace
         RECT client = { 0, 0, g_drawWidth, g_drawHeight };
         Fill(dc, client, Rgb(10, 12, 16));
 
-        PaintFont title(16, FW_BOLD, L"Segoe UI");
-        PaintFont bold(13, FW_SEMIBOLD, L"Segoe UI");
-        PaintFont regular(12, FW_NORMAL, L"Segoe UI");
-        PaintFont small(10, FW_NORMAL, L"Segoe UI");
+        PaintFont title(20, FW_BOLD, L"Segoe UI");
+        PaintFont bold(16, FW_SEMIBOLD, L"Segoe UI");
+        PaintFont regular(15, FW_NORMAL, L"Segoe UI");
+        PaintFont small(13, FW_NORMAL, L"Segoe UI");
 
         // Compact MU-inspired chrome: a dark red metal header, brass pin-lines
         // and a small crest keep the information-dense window readable.
@@ -890,15 +1217,10 @@ namespace
             SelectObject(dc, oldFont);
         }
 
-        Text(dc, 54, 7, "DASHBOARD", Rgb(252, 236, 196), bold.font);
-        Text(dc, 55, 22, "LIVE CHARACTER MONITOR", Rgb(213, 156, 92), small.font);
-        RECT liveDot = { client.right - 145, 18, client.right - 140, 23 };
-        PaintBrush liveBrush(Rgb(74, 207, 125));
-        FillRect(dc, &liveDot, liveBrush.brush);
-        Text(dc, client.right - 136, 15, "LIVE", Rgb(141, 220, 163), small.font);
-        DrawControl(dc, client.right - 96, client.right - 66, "-", Rgb(211, 205, 197), regular.font);
-        DrawControl(dc, client.right - 63, client.right - 33, "[]", Rgb(211, 205, 197), small.font);
-        DrawControl(dc, client.right - 30, client.right - 4, "X", Rgb(245, 143, 131), regular.font);
+        Text(dc, 54, 14, "MU - DASHBOARD", Rgb(252, 236, 196), title.font);
+        DrawWindowButton(dc, client.right - 96, client.right - 66, 0, Rgb(236, 232, 224));
+        DrawWindowButton(dc, client.right - 63, client.right - 33, 1, Rgb(236, 232, 224));
+        DrawWindowButton(dc, client.right - 30, client.right - 4, 2, Rgb(255, 168, 156));
 
         RECT tabs = { 0, kTitleHeight, client.right, kTitleHeight + kTabHeight };
         Fill(dc, tabs, Rgb(13, 16, 21));
@@ -931,23 +1253,28 @@ namespace
         }
         RECT footer = { 15, g_drawHeight - 15, client.right - 15, g_drawHeight - 13 };
         Fill(dc, footer, Rgb(73, 26, 25));
+        RECT grip = { client.right / 2 - 18, client.bottom - 6, client.right / 2 + 18, client.bottom - 3 };
+        Fill(dc, grip, Rgb(120, 70, 48));
+    }
+
+    int ClampWindowHeight(int height)
+    {
+        return std::max(kWindowHeight, std::min(kWindowHeightMax, height));
     }
 
     void ToggleMaximize(HWND window)
     {
+        RECT current = { 0 };
+        GetWindowRect(window, &current);
         if (!g_isMaximized)
         {
-            GetWindowRect(window, &g_restoreBounds);
-            MONITORINFO monitor = { sizeof(monitor) };
-            GetMonitorInfo(MonitorFromWindow(window, MONITOR_DEFAULTTONEAREST), &monitor);
-            SetWindowPos(window, HWND_TOPMOST, monitor.rcWork.left, monitor.rcWork.top,
-                monitor.rcWork.right - monitor.rcWork.left, monitor.rcWork.bottom - monitor.rcWork.top, SWP_SHOWWINDOW);
+            g_restoreBounds = current;
+            SetWindowPos(window, HWND_TOPMOST, current.left, current.top, kWindowWidth, kWindowHeightMax, SWP_SHOWWINDOW);
             g_isMaximized = true;
         }
         else
         {
-            SetWindowPos(window, HWND_TOPMOST, g_restoreBounds.left, g_restoreBounds.top,
-                g_restoreBounds.right - g_restoreBounds.left, g_restoreBounds.bottom - g_restoreBounds.top, SWP_SHOWWINDOW);
+            SetWindowPos(window, HWND_TOPMOST, current.left, current.top, kWindowWidth, kWindowHeight, SWP_SHOWWINDOW);
             g_isMaximized = false;
         }
     }
@@ -978,18 +1305,68 @@ namespace
             }
             else
             {
-                g_eventScroll -= GET_WHEEL_DELTA_WPARAM(wParam) / WHEEL_DELTA * 37;
+                g_eventScroll -= GET_WHEEL_DELTA_WPARAM(wParam) / WHEEL_DELTA * kEventRowHeight;
             }
             RefreshRows();
             RefreshEvents();
             InvalidateRect(window, NULL, FALSE);
             return 0;
+        case WM_SETCURSOR:
+        {
+            POINT point = { 0 };
+            GetCursorPos(&point);
+            ScreenToClient(window, &point);
+            RECT client = { 0 };
+            GetClientRect(window, &client);
+            if (point.y >= client.bottom - kResizeGrip)
+            {
+                SetCursor(LoadCursor(NULL, IDC_SIZENS));
+                return TRUE;
+            }
+            break;
+        }
+        case WM_LBUTTONDOWN:
+        {
+            const int y = GET_Y_LPARAM(lParam);
+            RECT client = { 0 };
+            GetClientRect(window, &client);
+            if (y >= client.bottom - kResizeGrip)
+            {
+                POINT screen = { GET_X_LPARAM(lParam), y };
+                ClientToScreen(window, &screen);
+                RECT windowRect = { 0 };
+                GetWindowRect(window, &windowRect);
+                g_heightDragging = true;
+                g_heightDragOriginY = screen.y;
+                g_heightDragOrigin = windowRect.bottom - windowRect.top;
+                SetCapture(window);
+                return 0;
+            }
+            break;
+        }
+        case WM_MOUSEMOVE:
+            if (g_heightDragging)
+            {
+                POINT screen = { GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam) };
+                ClientToScreen(window, &screen);
+                RECT windowRect = { 0 };
+                GetWindowRect(window, &windowRect);
+                const int newHeight = ClampWindowHeight(g_heightDragOrigin + (screen.y - g_heightDragOriginY));
+                SetWindowPos(window, HWND_TOPMOST, windowRect.left, windowRect.top, kWindowWidth, newHeight, SWP_NOACTIVATE);
+                g_isMaximized = (newHeight >= kWindowHeightMax);
+                return 0;
+            }
+            break;
         case WM_NCHITTEST:
         {
             POINT point = { GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam) };
             ScreenToClient(window, &point);
             RECT client = { 0 };
             GetClientRect(window, &client);
+            if (point.y >= client.bottom - kResizeGrip)
+            {
+                return HTCLIENT;
+            }
             if (point.y < kTitleHeight && point.x < client.right - 100)
             {
                 return HTCAPTION;
@@ -998,6 +1375,12 @@ namespace
         }
         case WM_LBUTTONUP:
         {
+            if (g_heightDragging)
+            {
+                g_heightDragging = false;
+                ReleaseCapture();
+                return 0;
+            }
             const int x = GET_X_LPARAM(lParam);
             const int y = GET_Y_LPARAM(lParam);
             RECT client = { 0 };
@@ -1020,6 +1403,10 @@ namespace
                 if (g_activeTab != nextTab)
                 {
                     g_activeTab = nextTab;
+                    if (g_activeTab == 1 && g_eventQueryNowEvent != NULL)
+                    {
+                        SetEvent(g_eventQueryNowEvent);
+                    }
                     InvalidateRect(window, NULL, FALSE);
                 }
             }
@@ -1049,7 +1436,7 @@ namespace
         }
         case WM_DESTROY:
             KillTimer(window, 1);
-            ClearPersistedRows();
+            SavePersistedRows();
             PostQuitMessage(0);
             return 0;
         }

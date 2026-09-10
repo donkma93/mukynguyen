@@ -55,7 +55,10 @@ void CCustomEventTime::ClearCustomEventTime() // OK
 {
 	for (int n = 0; n < MAX_EVENTTIME; n++)
 	{
+		gCustomEventTime[n].index = -1;
 		gCustomEventTime[n].time = -1;
+		gCustomEventTime[n].Name[0] = 0;
+		gCustomEventTime[n].Map[0] = 0;
 	}
 	this->count = 0;
 	this->EventTimeEnable = 0;
@@ -79,8 +82,10 @@ int CCustomEventTime::CopyEventTimeDisplay(CUSTOM_EVENTTIME_DISPLAY* output, int
 
 		CUSTOM_EVENTTIME_DISPLAY& event = output[written++];
 		ZeroMemory(&event, sizeof(event));
-		strncpy(event.Name, this->m_CustomEventInfo[i].Name, sizeof(event.Name) - 1);
-		strncpy(event.Map, this->m_CustomEventInfo[i].Map, sizeof(event.Map) - 1);
+		const char* name = this->gCustomEventTime[i].Name[0] ? this->gCustomEventTime[i].Name : this->m_CustomEventInfo[i].Name;
+		const char* map = this->gCustomEventTime[i].Map[0] ? this->gCustomEventTime[i].Map : this->m_CustomEventInfo[i].Map;
+		strncpy(event.Name, name, sizeof(event.Name) - 1);
+		strncpy(event.Map, map, sizeof(event.Map) - 1);
 		event.SecondsUntilStart = this->gCustomEventTime[i].time;
 	}
 	return written;
@@ -152,8 +157,10 @@ void CCustomEventTime::DrawEventTimePanelWindow(int x, int y)
 			g_pUIForm->RenderHover(x + 15, y + 63 + (i * 12), GetW, iLineHeight, 0x0080C080);
 		}
 
-		IsToolKit.ThisFont(x + 25, y + 63 + (i * 12), Color, 0, 150, 0, RT3_SORT_LEFT, this->m_CustomEventInfo[i].Name);
-		IsToolKit.ThisFont(x + 100, y + 63 + (i * 12), Color, 0, 150, 0, RT3_SORT_CENTER, this->m_CustomEventInfo[i].Map);
+		const char* name = this->gCustomEventTime[i].Name[0] ? this->gCustomEventTime[i].Name : this->m_CustomEventInfo[i].Name;
+		const char* map = this->gCustomEventTime[i].Map[0] ? this->gCustomEventTime[i].Map : this->m_CustomEventInfo[i].Map;
+		IsToolKit.ThisFont(x + 25, y + 63 + (i * 12), Color, 0, 150, 0, RT3_SORT_LEFT, name);
+		IsToolKit.ThisFont(x + 100, y + 63 + (i * 12), Color, 0, 150, 0, RT3_SORT_CENTER, map);
 		IsToolKit.ThisFont(x + 200, y + 63 + (i * 12), Color, 0, 150, 0, RT3_SORT_CENTER, text2);
 
 		for (int m = 0; m < gCETime.RegLineEvent; m++)
@@ -179,13 +186,26 @@ void CCustomEventTime::GCReqEventTime(const BYTE* lpMsg)
 
 	this->count			= DataSPK->count;
 	this->RegLineEvent	= DataSPK->RegLineEvent;
+	if (this->count < 0 || this->count > MAX_EVENTTIME)
+	{
+		this->count = 0;
+		return;
+	}
+	if (this->RegLineEvent > MAX_EVENTTIME)
+	{
+		this->RegLineEvent = MAX_EVENTTIME;
+	}
 
-	for (auto n = 0; n < DataSPK->count; ++n)
+	for (auto n = 0; n < this->count; ++n)
 	{
 		auto lpInfo = reinterpret_cast<const CUSTOM_EVENTTIME_DATA*>(lpMsg + sizeof(PMSG_CUSTOM_EVENTTIME_RECV) + sizeof(CUSTOM_EVENTTIME_DATA) * n);
 
 		this->gCustomEventTime[n].index = lpInfo->index;
 		this->gCustomEventTime[n].time = lpInfo->time;
+		strncpy(this->gCustomEventTime[n].Name, lpInfo->Name, sizeof(this->gCustomEventTime[n].Name) - 1);
+		this->gCustomEventTime[n].Name[sizeof(this->gCustomEventTime[n].Name) - 1] = 0;
+		strncpy(this->gCustomEventTime[n].Map, lpInfo->Map, sizeof(this->gCustomEventTime[n].Map) - 1);
+		this->gCustomEventTime[n].Map[sizeof(this->gCustomEventTime[n].Map) - 1] = 0;
 
 		if (lpInfo->index >= 28 && lpInfo->time != -1)
 		{
