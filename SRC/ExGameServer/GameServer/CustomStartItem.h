@@ -18,6 +18,11 @@ struct STATS_INFO
 	int WcoinG;
 	int WcoinR;
 	int WcoinT;
+	int Strength;
+	int Dexterity;
+	int Vitality;
+	int Energy;
+	int Leadership;
 };
 
 struct CUSTOM_START_ITEM_INFO

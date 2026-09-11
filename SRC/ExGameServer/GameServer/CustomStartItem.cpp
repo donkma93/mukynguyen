@@ -150,6 +150,11 @@ void CCustomStartItem::Load(char* path)
 					info.WcoinG = lpMemScript->GetAsNumber();
 					info.WcoinR = lpMemScript->GetAsNumber();
 					info.WcoinT = lpMemScript->GetAsNumber();
+					info.Strength = lpMemScript->GetAsNumber();
+					info.Dexterity = lpMemScript->GetAsNumber();
+					info.Vitality = lpMemScript->GetAsNumber();
+					info.Energy = lpMemScript->GetAsNumber();
+					info.Leadership = lpMemScript->GetAsNumber();
 
 					this->m_StatsInfo.push_back(info);
 				}
@@ -604,6 +609,11 @@ void CCustomStartItem::GiftItem(LPOBJ lpObj)
 		lpObj->Level = it->Level;
 		lpObj->Reset = it->Resets;
 		lpObj->LevelUpPoint = it->LevelUpPoints;
+		if (it->Strength > 0) { lpObj->Strength = it->Strength; }
+		if (it->Dexterity > 0) { lpObj->Dexterity = it->Dexterity; }
+		if (it->Vitality > 0) { lpObj->Vitality = it->Vitality; }
+		if (it->Energy > 0) { lpObj->Energy = it->Energy; }
+		if (it->Leadership > 0) { lpObj->Leadership = it->Leadership; }
 		GDSetCoinSend(lpObj->Index, it->WCoinC, it->WcoinP, it->WcoinG, it->WcoinR, it->WcoinT, "Tao Nv");
 		GCMoneySend(lpObj->Index,lpObj->Money = it->Zen);				
 		GDResetInfoSaveSend(lpObj->Index,0,0,0);
@@ -614,8 +624,12 @@ void CCustomStartItem::GiftItem(LPOBJ lpObj)
 
 	for (std::vector<CUSTOM_START_ITEM_INFO>::iterator it = lpInfo->ItemStart.begin(); it != lpInfo->ItemStart.end(); it++)
 	{
-		int Hours = it->ItemTime * 3600;
-		DWORD tiempoitem = (DWORD)time(0) + Hours;
+		DWORD tiempoitem = 0;
+
+		if (it->ItemTime > 0)
+		{
+			tiempoitem = (DWORD)time(0) + (it->ItemTime * 3600);
+		}
 
 		BYTE ItemSocketOption[MAX_SOCKET_OPTION] = { 0xFF,0xFF,0xFF,0xFF,0xFF };
 
@@ -630,7 +644,7 @@ void CCustomStartItem::GiftItem(LPOBJ lpObj)
 			ItemSocketOption[4] = (BYTE)((qtd > 4) ? ((it->ItemSocket5 != 255) ? it->ItemSocket5 : 255) : 255);
 		}
 		regalo++;
-		GDCreateItemSend(lpObj->Index, 0xEB, 0, 0, it->ItemIndex, it->ItemLevel, 0, it->ItemSkill, it->ItemLuck, it->ItemOption, -1, it->ItemExcellent, it->ItemAncient, it->ItemJOH, it->ItemOpEx, ItemSocketOption, 0xFF, tiempoitem);
+		GDCreateItemSend(lpObj->Index, 0xEB, 0, 0, it->ItemIndex, it->ItemLevel, it->ItemDurability, it->ItemSkill, it->ItemLuck, it->ItemOption, -1, it->ItemExcellent, it->ItemAncient, it->ItemJOH, it->ItemOpEx, ItemSocketOption, 0xFF, tiempoitem);
 	}
 
 	CustomStartBuff_INFO * t = &this->m_CustomStartBuffInfo[lpObj->Class];
@@ -654,5 +668,7 @@ void CCustomStartItem::GiftItem(LPOBJ lpObj)
 		lpObj->ItemStart += 1;
 
 		GDSaveTheGiftData(lpObj->Index);
+
+		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, "Ban nhan set tan thu +9 va canh mini. Hay trang bi de train!");
 	}
 }
