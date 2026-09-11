@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\SRC ThangCuoi\Build-Log\GameServer-bin\GameServer.exe</FullPath>
+      <FullPath>E:\SRC ThangCuoi\build-output\GameServer-startitem\GameServer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
