@@ -964,42 +964,9 @@ void CSItemOption::CheckItemSetOptions(void)
 	BYTE byOptionList[30] = { 0, };
 	ITEM* itemRight = NULL;
 
-	ZeroMemory(m_bySetOptionList, sizeof(BYTE) * 16);
-
-	for (int i = 0; i < MAX_EQUIPMENT_INDEX; ++i)
-	{
-		if (i == EQUIPMENT_WING || i == EQUIPMENT_HELPER)
-		{
-			continue;
-		}
-
-		ITEM* ip = &CharacterMachine->Equipment[i];
-
-		if (ip->Durability <= 0)
-		{
-			continue;
-		}
-
-		if ((i == EQUIPMENT_WEAPON_LEFT || i == EQUIPMENT_RING_LEFT)
-			&& itemRight != nullptr && itemRight->Type == ip->Type && (itemRight->ExtOption % 0x04) == (ip->ExtOption % 0x04))
-		{
-			continue;
-		}
-
-		if (ip->Type > -1)
-		{
-			checkItemType(byOptionList, ip->Type, ip->ExtOption);
-		}
-
-		if (i == EQUIPMENT_WEAPON_RIGHT || i == EQUIPMENT_RING_RIGHT)
-		{
-			itemRight = ip;
-		}
-	}
-
-	calcSetOptionList(byOptionList);
-	getAllAddStateOnlyAddValue(&CharacterAttribute->AddStrength, &CharacterAttribute->AddDexterity, &CharacterAttribute->AddEnergy, &CharacterAttribute->AddVitality, &CharacterAttribute->AddCharisma);
-
+	// Server Add* (F3:E0/E1 ViewAddPoint) already includes ancient set bonuses.
+	// Do not mutate CharacterAttribute->Add* with getAllAddStateOnlyAddValue —
+	// that would double-count set Str/Vit after equip.
 	DWORD AllStrength = CharacterAttribute->ViewStrength + CharacterAttribute->AddStrength;
 	DWORD AllDexterity = CharacterAttribute->ViewDexterity + CharacterAttribute->AddDexterity;
 	DWORD AllEnergy = CharacterAttribute->ViewEnergy + CharacterAttribute->AddEnergy;

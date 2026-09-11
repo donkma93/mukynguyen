@@ -3064,11 +3064,11 @@ void GCLevelUpSend(LPOBJ lpObj)
 	pMsg.ViewMaxReset		= (DWORD)(gResetLitmit.GioiHanRS);
 	pMsg.MuHelperLevel		= (DWORD)(gServerInfo.m_HelperActiveLevel);
 
-	//pMsg.ViewAddPoint[0] = (DWORD)lpObj->AddStrength;
-	//pMsg.ViewAddPoint[1] = (DWORD)lpObj->AddDexterity;
-	//pMsg.ViewAddPoint[2] = (DWORD)lpObj->AddVitality;
-	//pMsg.ViewAddPoint[3] = (DWORD)lpObj->AddEnergy;
-	//pMsg.ViewAddPoint[4] = (DWORD)lpObj->AddLeadership;
+	pMsg.ViewAddPoint[0] = (DWORD)lpObj->AddStrength;
+	pMsg.ViewAddPoint[1] = (DWORD)lpObj->AddDexterity;
+	pMsg.ViewAddPoint[2] = (DWORD)lpObj->AddVitality;
+	pMsg.ViewAddPoint[3] = (DWORD)lpObj->AddEnergy;
+	pMsg.ViewAddPoint[4] = (DWORD)lpObj->AddLeadership;
 
 	pMsg.ManaClassReg[0] = GET_MAX_WORD_VALUE(lpObj->DWDamageMultiplierRate);       // DW
 	pMsg.ManaClassReg[1] = GET_MAX_WORD_VALUE(lpObj->DKDamageMultiplierRate);       // DK
@@ -3275,11 +3275,11 @@ void GCNewCharacterInfoSend(LPOBJ lpObj)
 	pMsg.ViewMaxReset		= (DWORD)(gResetLitmit.GioiHanRS);
 	pMsg.InventoryExtensions = (BYTE)lpObj->ExtInventory;
 
-	//pMsg.ViewAddPoint[0]	= (DWORD)lpObj->AddStrength;
-	//pMsg.ViewAddPoint[1]	= (DWORD)lpObj->AddDexterity;
-	//pMsg.ViewAddPoint[2]	= (DWORD)lpObj->AddVitality;
-	//pMsg.ViewAddPoint[3]	= (DWORD)lpObj->AddEnergy;
-	//pMsg.ViewAddPoint[4]	= (DWORD)lpObj->AddLeadership;
+	pMsg.ViewAddPoint[0] = (DWORD)lpObj->AddStrength;
+	pMsg.ViewAddPoint[1] = (DWORD)lpObj->AddDexterity;
+	pMsg.ViewAddPoint[2] = (DWORD)lpObj->AddVitality;
+	pMsg.ViewAddPoint[3] = (DWORD)lpObj->AddEnergy;
+	pMsg.ViewAddPoint[4] = (DWORD)lpObj->AddLeadership;
 
 	pMsg.ManaClassReg[0] = GET_MAX_WORD_VALUE(lpObj->DWDamageMultiplierRate);       // DW
 	pMsg.ManaClassReg[1] = GET_MAX_WORD_VALUE(lpObj->DKDamageMultiplierRate);       // DK

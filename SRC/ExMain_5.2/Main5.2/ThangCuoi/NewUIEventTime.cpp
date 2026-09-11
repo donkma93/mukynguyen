@@ -109,12 +109,16 @@ void CCustomEventTime::DrawEventTimePanelWindow(int x, int y)
 	int iLineHeight = ((FontHeight / gPosWide.x_fScreenRate_y));
 	for (int i = 0; i < gCETime.RegLineEvent; i++)
 	{
-		if (this->gCustomEventTime[i].time <= -1)
+		if (this->gCustomEventTime[i].time < -1)
 		{
 			continue;
 		}
 
-		if (this->gCustomEventTime[i].time == 0)
+		if (this->gCustomEventTime[i].time < 0)
+		{
+			wsprintf(text2, "Offline");
+		}
+		else if (this->gCustomEventTime[i].time == 0)
 		{
 			wsprintf(text2, GlobalText[3856]);
 		}
@@ -135,9 +139,9 @@ void CCustomEventTime::DrawEventTimePanelWindow(int x, int y)
 				wsprintf(text2, GlobalText[3858], hours, minutes, seconds);
 			}
 		}
-		if (this->gCustomEventTime[i].time <= -1)
+		if (this->gCustomEventTime[i].time < 0)
 		{
-			Color = 0xFF0000FF;
+			Color = 0x808080FF;
 		}
 		else if (this->gCustomEventTime[i].time == 0)
 		{

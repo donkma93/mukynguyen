@@ -63,7 +63,7 @@ void GCNewCharacterInfoRecv(const BYTE* lpMsg)
     CharacterAttribute->AddDexterity        = DataSPK->ViewAddPoint[1];
     CharacterAttribute->AddVitality         = DataSPK->ViewAddPoint[2];
     CharacterAttribute->AddEnergy           = DataSPK->ViewAddPoint[3];
-    CharacterAttribute->AddCharisma         = DataSPK->ViewAddPoint[3];
+    CharacterAttribute->AddCharisma         = DataSPK->ViewAddPoint[4];
 
 
     CharacterAttribute->ManaClassReg[0] = DataSPK->ManaClassReg[0]; // DK

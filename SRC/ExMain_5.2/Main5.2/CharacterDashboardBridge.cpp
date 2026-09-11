@@ -3,15 +3,12 @@
 #include "MapManager.h"
 #include "ZzzCharacter.h"
 #include "wsclientinline.h"
-#include "ThangCuoi/NewUIEventTime.h"
 #include "..\\..\\CharacterDashboard\\SharedProtocol.h"
 
 namespace
 {
     HANDLE g_dashboardMapping = NULL;
     CharacterDashboard::Registry* g_dashboardRegistry = NULL;
-    HANDLE g_eventMapping = NULL;
-    CharacterDashboard::EventRegistry* g_eventRegistry = NULL;
     DWORD g_lastPublishTick = 0;
 
     void LockRegistry(HANDLE mutex)
@@ -124,55 +121,6 @@ namespace
             CloseHandle(processInfo.hProcess);
         }
     }
-
-    void PublishEvents(DWORD now)
-    {
-        if (g_eventRegistry == NULL)
-        {
-            return;
-        }
-
-        CUSTOM_EVENTTIME_DISPLAY sourceEvents[CharacterDashboard::kMaxEvents];
-        ZeroMemory(sourceEvents, sizeof(sourceEvents));
-        const int eventCount = gCETime.CopyEventTimeDisplay(sourceEvents, CharacterDashboard::kMaxEvents);
-
-        HANDLE mutex = CreateMutex(NULL, FALSE, CharacterDashboard::kMutexName);
-        LockRegistry(mutex);
-        bool changed = g_eventRegistry->eventCount != static_cast<DWORD>(eventCount);
-        if (!changed)
-        {
-            for (int i = 0; i < eventCount; ++i)
-            {
-                const CharacterDashboard::EventStatus& current = g_eventRegistry->events[i];
-                if (current.secondsUntilStart != sourceEvents[i].SecondsUntilStart ||
-                    strncmp(current.name, sourceEvents[i].Name, sizeof(current.name)) != 0 ||
-                    strncmp(current.mapName, sourceEvents[i].Map, sizeof(current.mapName)) != 0)
-                {
-                    changed = true;
-                    break;
-                }
-            }
-        }
-
-        if (changed)
-        {
-            ZeroMemory(g_eventRegistry->events, sizeof(g_eventRegistry->events));
-            for (int i = 0; i < eventCount; ++i)
-            {
-                CharacterDashboard::EventStatus& destination = g_eventRegistry->events[i];
-                strncpy(destination.name, sourceEvents[i].Name, sizeof(destination.name) - 1);
-                strncpy(destination.mapName, sourceEvents[i].Map, sizeof(destination.mapName) - 1);
-                destination.secondsUntilStart = sourceEvents[i].SecondsUntilStart;
-            }
-            g_eventRegistry->eventCount = eventCount;
-            g_eventRegistry->lastUpdateTick = now;
-        }
-        UnlockRegistry(mutex);
-        if (mutex != NULL)
-        {
-            CloseHandle(mutex);
-        }
-    }
 }
 
 void InitializeCharacterDashboard()
@@ -198,30 +146,8 @@ void InitializeCharacterDashboard()
         return;
     }
 
-    g_eventMapping = CreateFileMapping(INVALID_HANDLE_VALUE, NULL, PAGE_READWRITE, 0,
-        sizeof(CharacterDashboard::EventRegistry), CharacterDashboard::kEventMappingName);
-    if (g_eventMapping != NULL)
-    {
-        g_eventRegistry = reinterpret_cast<CharacterDashboard::EventRegistry*>(MapViewOfFile(
-            g_eventMapping, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(CharacterDashboard::EventRegistry)));
-        if (g_eventRegistry != NULL)
-        {
-            HANDLE mutex = CreateMutex(NULL, FALSE, CharacterDashboard::kMutexName);
-            LockRegistry(mutex);
-            if (g_eventRegistry->magic != CharacterDashboard::kEventMagic ||
-                g_eventRegistry->version != CharacterDashboard::kVersion)
-            {
-                ZeroMemory(g_eventRegistry, sizeof(CharacterDashboard::EventRegistry));
-                g_eventRegistry->magic = CharacterDashboard::kEventMagic;
-                g_eventRegistry->version = CharacterDashboard::kVersion;
-            }
-            UnlockRegistry(mutex);
-            if (mutex != NULL)
-            {
-                CloseHandle(mutex);
-            }
-        }
-    }
+    // Events are owned exclusively by CharacterDashboard.exe (queried from
+    // GameServer).  Main must not open or write EventRegistry shared memory.
 
     HANDLE mutex = CreateMutex(NULL, FALSE, CharacterDashboard::kMutexName);
     LockRegistry(mutex);
@@ -307,9 +233,6 @@ void UpdateCharacterDashboard()
     {
         CloseHandle(mutex);
     }
-
-    // Event names/times for the standalone dashboard come from GameServer
-    // directly.  Main no longer publishes GetMain CustomEventTime.txt.
 }
 
 void ShutdownCharacterDashboard()
@@ -338,16 +261,6 @@ void ShutdownCharacterDashboard()
 
     UnmapViewOfFile(g_dashboardRegistry);
     CloseHandle(g_dashboardMapping);
-    if (g_eventRegistry != NULL)
-    {
-        UnmapViewOfFile(g_eventRegistry);
-    }
-    if (g_eventMapping != NULL)
-    {
-        CloseHandle(g_eventMapping);
-    }
     g_dashboardRegistry = NULL;
     g_dashboardMapping = NULL;
-    g_eventRegistry = NULL;
-    g_eventMapping = NULL;
 }

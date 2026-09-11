@@ -175,33 +175,36 @@ void CCustomEventTime::GCReqEventTime(int Index, PMSG_CUSTOM_EVENTTIME_RECV* lpM
 		return;
 	}
 
-	CUSTOM_EVENTTIME_DATA info[30];
+	// Main client (H board) expects CUSTOM_EVENTTIME_DATA with Name/Map.
+	// Legacy packets (index+time only) mis-align the client parser and leave the list empty.
+	CUSTOM_EVENTTIME_DATA info[MAX_EVENTTIME];
 	memset(info, 0, sizeof(info));
 
-	int lastLine = 3;
-	for (int n = 0; n < 30; ++n)
+	int count = 0;
+	int indexes[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 34, 35, 36, 37, 38, 39, 40, 41 };
+	for (int i = 0; i < (int)(sizeof(indexes) / sizeof(indexes[0])) && count < MAX_EVENTTIME; ++i)
 	{
-		this->FillEventData(n, &info[n]);
-		if (info[n].Name[0] != 0)
+		CUSTOM_EVENTTIME_DATA row{};
+		this->FillEventData(indexes[i], &row);
+		if (row.Name[0] == 0)
 		{
-			lastLine = n;
+			continue;
 		}
+		// Keep time < 0 rows so the H board still lists offline events.
+		info[count++] = row;
 	}
 
 	BYTE send[4096];
-	PMSG_CUSTOM_EVENTTIME_SEND_LEGACY pMsg{};
+	PMSG_CUSTOM_EVENTTIME_SEND pMsg{};
 	pMsg.header.set(0xF3, 0xE8, 0);
 	int size = sizeof(pMsg);
-	pMsg.count = 30;
-	pMsg.RegLineEvent = (BYTE)(lastLine + 1);
+	pMsg.count = count;
+	pMsg.RegLineEvent = (BYTE)count;
 
-	for (int n = 0; n < 30; ++n)
+	for (int n = 0; n < count; ++n)
 	{
-		CUSTOM_EVENTTIME_DATA_LEGACY legacy{};
-		legacy.index = info[n].index;
-		legacy.time = info[n].time;
-		memcpy(&send[size], &legacy, sizeof(legacy));
-		size += sizeof(legacy);
+		memcpy(&send[size], &info[n], sizeof(info[n]));
+		size += sizeof(info[n]);
 	}
 
 	pMsg.header.size[0] = SET_NUMBERHB(size);
