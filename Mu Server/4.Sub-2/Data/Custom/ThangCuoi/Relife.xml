@@ -28,7 +28,7 @@ DieuKienNgoc: nguyên liệu ngọc. sẽ khấu trừ trực tiếp vào bank!
 -->
 <TaiSinh>
 	<Enabled>
-		<Config BatTat = "1" TaiSinh ="1" ThoiGian="3" ChonLaiNv="1" GioiHan="10"/>
+		<Config BatTat = "0" TaiSinh ="1" ThoiGian="3" ChonLaiNv="1" GioiHan="10"/>
 	</Enabled>
 	
 	<DieuKienLevel>

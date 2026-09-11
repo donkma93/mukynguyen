@@ -1935,12 +1935,6 @@ void CCommandManager::DGCommandResetRecv(SDHP_COMMAND_RESET_RECV* lpMsg)
 
 	lpObj->CommandManagerTransaction[0] = 0;
 
-	if (lpObj->Reset >= gResetLitmit.GioiHanRS)
-	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(1), gResetLitmit.GioiHanRS);
-		return;
-	}
-
 	if (lpMsg->ResetDay >= ((DWORD)gServerInfo.m_CommandResetLimitDay[lpObj->AccountLevel]))
 	{
 		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(209), gServerInfo.m_CommandResetLimitDay[lpObj->AccountLevel]);
@@ -4697,13 +4691,6 @@ void CCommandManager::CommandResetVipAutoProc(LPOBJ lpObj)
 
 	if (lpObj->Money < gResetTableVip.GetResetMoney(lpObj))
 	{
-		return;
-	}
-
-
-	if (lpObj->Reset >= gResetLitmit.GioiHanRS)
-	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(1), gResetLitmit.GioiHanRS);
 		return;
 	}
 

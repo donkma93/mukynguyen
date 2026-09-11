@@ -3061,7 +3061,7 @@ void GCLevelUpSend(LPOBJ lpObj)
 	pMsg.ViewMaxSD			= (DWORD)(lpObj->MaxShield + lpObj->AddShield);
 	pMsg.ViewExperience		= lpObj->Experience;
 	pMsg.ViewNextExperience = lpObj->NextExperience;
-	pMsg.ViewMaxReset		= (DWORD)(gResetLitmit.GioiHanRS);
+	pMsg.ViewMaxReset		= (DWORD)(gServerInfo.m_CommandResetLimit[lpObj->AccountLevel]);
 	pMsg.MuHelperLevel		= (DWORD)(gServerInfo.m_HelperActiveLevel);
 
 	pMsg.ViewAddPoint[0] = (DWORD)lpObj->AddStrength;
@@ -3272,7 +3272,7 @@ void GCNewCharacterInfoSend(LPOBJ lpObj)
 	pMsg.ViewVitality		= (DWORD)lpObj->Vitality;
 	pMsg.ViewEnergy			= (DWORD)lpObj->Energy;
 	pMsg.ViewLeadership		= (DWORD)lpObj->Leadership;
-	pMsg.ViewMaxReset		= (DWORD)(gResetLitmit.GioiHanRS);
+	pMsg.ViewMaxReset		= (DWORD)(gServerInfo.m_CommandResetLimit[lpObj->AccountLevel]);
 	pMsg.InventoryExtensions = (BYTE)lpObj->ExtInventory;
 
 	pMsg.ViewAddPoint[0] = (DWORD)lpObj->AddStrength;

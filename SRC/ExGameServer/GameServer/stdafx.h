@@ -62,7 +62,7 @@
 
 //MC bot
 
-#define	TEST_GHRS							1 
+#define	TEST_GHRS							0
 //----------------------------
 //	 ZG-Defines			     -
 //	 1:ON  (CPP AND HEADER!) -

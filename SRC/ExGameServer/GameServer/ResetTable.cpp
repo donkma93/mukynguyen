@@ -214,7 +214,7 @@ void CResetTable::SendResetInfo(LPOBJ lpObj, int reset, int accountlevel)
 	pMsg.h.set(0xF3, 0xF6, sizeof(pMsg));
 
 	pMsg.m_Reset = reset + 1;
-	pMsg.GHRS = gResetLitmit.GioiHanRS;
+	pMsg.GHRS = gServerInfo.m_CommandResetLimit[lpObj->AccountLevel];
 	pMsg.Level = GetResetLevel(lpObj);
 	pMsg.Money = GetResetMoney(lpObj);
 	if (gServerInfo.m_CommandResetType == 1)

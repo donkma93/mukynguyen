@@ -1154,7 +1154,7 @@ void DGCharacterInfoRecv(SDHP_CHARACTER_INFO_RECV* lpMsg)
 	pMsg.ViewVitality = lpObj->Vitality;
 	pMsg.ViewEnergy = lpObj->Energy;
 	pMsg.ViewLeadership = lpObj->Leadership;
-	pMsg.ViewMaxReset = (DWORD)(gResetLitmit.GioiHanRS);
+	pMsg.ViewMaxReset = (DWORD)(gServerInfo.m_CommandResetLimit[lpObj->AccountLevel]);
 	pMsg.ViewExperience = lpObj->Experience;
 	pMsg.ViewNextExperience = lpObj->NextExperience;
 	pMsg.MuHelperLevel = (DWORD)(gServerInfo.m_HelperActiveLevel);
@@ -1244,8 +1244,6 @@ void DGCharacterInfoRecv(SDHP_CHARACTER_INFO_RECV* lpMsg)
 	//gNotice.GCNoticeSend(lpObj->Index, 0, 0, 0, 0, 0, 0, gMessageNew.GetMessage(7), lpObj->Name);
 
 	gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage((3 + lpObj->AccountLevel)), lpObj->AccountExpireDate);
-
-	gNotice.GCNoticeSend(lpObj->Index, 0, 0, 0, 0, 0, 0, gMessageNew.GetMessage(2), IsToolKit.QN(gResetLitmit.GioiHanRS), lpObj->Name);
 
 
 #if(MEMBER_ONLINE)

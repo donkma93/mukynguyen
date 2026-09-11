@@ -36,11 +36,12 @@ function Test-HelperRunning([string]$scriptName) {
   })
 }
 
-function Ensure-SqlExpress {
-  $sqlService = Get-Service -Name 'MSSQL$SQLEXPRESS' -ErrorAction SilentlyContinue
-  if ($sqlService -and $sqlService.Status -ne 'Running') {
-    Write-Log 'Starting MSSQL$SQLEXPRESS'
-    Start-Service -Name 'MSSQL$SQLEXPRESS' -ErrorAction SilentlyContinue
+function Ensure-LocalDb {
+  try {
+    $localDb = Get-Command sqllocaldb -ErrorAction Stop
+    & $localDb.Source start MSSQLLocalDB | Out-Null
+  } catch {
+    Write-Log ("LocalDB start warn: {0}" -f $_.Exception.Message)
   }
 }
 
@@ -66,7 +67,18 @@ function Ensure-GameServerProc([string]$label, [string]$exe, [string]$wd) {
 Write-Log 'Watchdog started'
 while ($true) {
   try {
-    Ensure-SqlExpress
+    Ensure-LocalDb
+    if (-not (Test-HelperRunning 'keep-localdb-alive.ps1')) {
+      $ps = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
+      $helper = Join-Path $base 'keep-localdb-alive.ps1'
+      if (Test-Path -LiteralPath $helper) {
+        Write-Log 'Starting keep-localdb-alive.ps1'
+        [void](Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{
+          CommandLine      = ('"{0}" -NoProfile -ExecutionPolicy Bypass -WindowStyle Minimized -File "{1}"' -f $ps, $helper)
+          CurrentDirectory = $base
+        })
+      }
+    }
     Ensure-Proc 'DataServer'      (Join-Path $base '2.DataServer\DataServer.exe')       (Join-Path $base '2.DataServer')
     Ensure-Proc 'JoinServer'      (Join-Path $base '3.JoinServer\JoinServer.exe')       (Join-Path $base '3.JoinServer')
     Ensure-Proc 'ConnectServer'   (Join-Path $base '1.ConnectServer\ConnectServer.exe') (Join-Path $base '1.ConnectServer')

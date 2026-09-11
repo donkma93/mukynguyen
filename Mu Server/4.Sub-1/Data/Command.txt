@@ -40,7 +40,7 @@
 8			"/zen"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//zen <value>						- Add zen-->
 9			"/change"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//change							- Làm nhiệm vụ cho nhân vật-->
 10			"/bau"					0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//bau <num>						- Đổi hòm đồ chung-->
-11			"/reset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//reset |auto| |vip|				- Reset nhân vật-->
+11			"/reset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				200				200				200				200				0				0				0				0				0		//<!--//reset |auto| |vip|				- Reset nhan vat, max 200-->
 12			"/gmm"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//gmmove <Name> <Map> <X> <Y>		- Lệnh GM (dịch chuyển nhân vật)-->
 13			"/gmp"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//gmpost <Msg>					- Lệnh GM (Chát trên chữ vàng)-->
 14			"/track"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//track <Name>					- Lệnh GM Đến 1 nhân vật nào đó-->
@@ -51,7 +51,7 @@
 19			"/skin"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//skin <name> <skin>				- Change player skin-->
 20			"/setmoney"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//setmoney <name> <value>			- Change player zen-->
 21			"/gmp"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//notice <msg>					- Lệnh GM Gửi tin nhắn đến tất cả các Sub-->
-22			"/mreset"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//mreset							- Lệnh Reset Master (Biết mới mở)-->
+22			"/mreset"				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//mreset							- TAT: chi cay Master Level, khong Master Reset-->
 23			"/war"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//war <guild>						- Thách đấu guild khác-->
 24			"/soccer"				1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//soccer <guild>					- Challenge another guild to battle soccer-->
 25			"/pt"					1				1				1				1				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0				0		//<!--//pt |on| |off| |auto <pass>|		- Tự động nhận pt-->

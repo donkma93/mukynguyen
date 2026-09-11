@@ -1419,7 +1419,9 @@ void CServerInfo::ReadCommonInfo(char* section, char* path)
 {
 	char GameServerInfo[100] = { 0 };
 
+#if(TEST_GHRS)
 	gResetLitmit.ReadResetInfo();
+#endif
 
 	this->m_MaxConnectionPerHID = GetPrivateProfileInt(section, "MaxConnectionPerHID", 0, path);
 	this->m_MaxTimeConnectionVerify = GetPrivateProfileInt(section, "MaxTimeConnectionVerify", 0, path);

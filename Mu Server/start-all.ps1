@@ -85,35 +85,66 @@ function Ensure-Helper([string]$scriptName) {
 }
 
 Write-StartLog '==> Mu ThangCuoi start-all'
-Write-StartLog 'SQL Server Express...'
+Write-StartLog 'SQL LocalDB...'
 try {
-  $sqlService = Get-Service -Name 'MSSQL$SQLEXPRESS' -ErrorAction Stop
-  if ($sqlService.Status -ne 'Running') {
-    Start-Service -Name 'MSSQL$SQLEXPRESS' -ErrorAction Stop
-    $sqlService.WaitForStatus('Running', [TimeSpan]::FromSeconds(20))
-  }
-  Write-StartLog 'MSSQL$SQLEXPRESS is running'
+  $localDb = Get-Command sqllocaldb -ErrorAction Stop
+  & $localDb.Source start MSSQLLocalDB | Out-Null
+  $state = (& $localDb.Source info MSSQLLocalDB | Select-String '^\s*State:\s*(.+)$').Matches.Groups[1].Value.Trim()
+  Write-StartLog ("MSSQLLocalDB state: {0}" -f $state)
 } catch {
-  Write-StartLog ("SQL Server Express warn: {0}" -f $_.Exception.Message)
+  Write-StartLog ("LocalDB warn: {0}" -f $_.Exception.Message)
 }
 
-function Ensure-OdbcDsn([string]$dsnName, [string]$database = 'MuThangCuoi', [string]$server = '.\SQLEXPRESS') {
+function Set-UserOdbcDsnLocalDb([string]$dsnName, [string]$database = 'MuThangCuoi') {
+  $server = '(localdb)\MSSQLLocalDB'
+  $driverName = 'ODBC Driver 17 for SQL Server'
+  $driverDll64 = 'C:\Windows\System32\msodbcsql17.dll'
+  $driverDll32 = 'C:\Windows\SysWOW64\msodbcsql17.dll'
   try {
     $existing = Get-OdbcDsn -Name $dsnName -DsnType User -ErrorAction SilentlyContinue
     if (-not $existing) {
-      Add-OdbcDsn -Name $dsnName -DriverName 'SQL Server' -DsnType User -SetPropertyValue @("Server=$server", "Database=$database", "Trusted_Connection=Yes", "Description=$dsnName") -ErrorAction SilentlyContinue
+      Add-OdbcDsn -Name $dsnName -DriverName $driverName -DsnType User -SetPropertyValue @(
+        "Server=$server",
+        "Database=$database",
+        "Trusted_Connection=Yes",
+        "Description=$dsnName LocalDB"
+      ) -ErrorAction Stop
       Write-StartLog ("Created ODBC User DSN: {0} -> {1} ({2})" -f $dsnName, $server, $database)
     } else {
-      Set-OdbcDsn -Name $dsnName -DsnType User -SetPropertyValue @("Server=$server", "Database=$database", "Trusted_Connection=Yes") -ErrorAction SilentlyContinue
+      Set-OdbcDsn -Name $dsnName -DsnType User -SetPropertyValue @(
+        "Server=$server",
+        "Database=$database",
+        "Trusted_Connection=Yes"
+      ) -ErrorAction SilentlyContinue
+      Write-StartLog ("Updated ODBC User DSN: {0} -> {1} ({2})" -f $dsnName, $server, $database)
     }
   } catch {
     Write-StartLog ("ODBC check notice for {0}: {1}" -f $dsnName, $_.Exception.Message)
   }
+
+  # DataServer/JoinServer are 32-bit; keep Wow6432Node User DSN in sync.
+  try {
+    $wowIni = 'HKCU:\Software\Wow6432Node\ODBC\ODBC.INI'
+    $wowDsn = Join-Path $wowIni $dsnName
+    $wowSources = Join-Path $wowIni 'ODBC Data Sources'
+    if (-not (Test-Path $wowIni)) { New-Item $wowIni -Force | Out-Null }
+    if (-not (Test-Path $wowSources)) { New-Item $wowSources -Force | Out-Null }
+    if (-not (Test-Path $wowDsn)) { New-Item $wowDsn -Force | Out-Null }
+    $dll = if (Test-Path $driverDll32) { $driverDll32 } else { $driverDll64 }
+    New-ItemProperty -Path $wowDsn -Name 'Driver' -Value $dll -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $wowDsn -Name 'Server' -Value $server -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $wowDsn -Name 'Database' -Value $database -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $wowDsn -Name 'Trusted_Connection' -Value 'Yes' -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $wowDsn -Name 'Description' -Value "$dsnName LocalDB" -PropertyType String -Force | Out-Null
+    New-ItemProperty -Path $wowSources -Name $dsnName -Value $driverName -PropertyType String -Force | Out-Null
+  } catch {
+    Write-StartLog ("ODBC 32-bit DSN notice for {0}: {1}" -f $dsnName, $_.Exception.Message)
+  }
 }
 
-Write-StartLog 'Checking ODBC DSNs...'
-Ensure-OdbcDsn 'MuThangCuoi' 'MuThangCuoi' '.\SQLEXPRESS'
-Ensure-OdbcDsn 'MuOnline' 'MuThangCuoi' '.\SQLEXPRESS'
+Write-StartLog 'Checking ODBC DSNs (LocalDB)...'
+Set-UserOdbcDsnLocalDb 'MuThangCuoi' 'MuThangCuoi'
+Set-UserOdbcDsnLocalDb 'MuOnline' 'MuThangCuoi'
 
 Start-Sleep -Seconds 1
 
