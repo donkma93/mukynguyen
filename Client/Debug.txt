@@ -1,0 +1,4 @@
+LoadBitmap Failed: Data\Custom\ThangCuoi\HealthWarning\logo18.tga
+LoadBitmap Failed: Data\Custom\ThangCuoi\HealthWarning\logo18.tga
+LoadBitmap Failed: Data\Custom\ThangCuoi\HealthWarning\logo18.jpg
+LoadBitmap Failed: Data\Custom\ThangCuoi\HealthWarning\logo18.tga
