@@ -1,0 +1,79 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Hướng dẫn:
+BatTat: Bật tắt Relife ( để 1 = Bật )
+TaiSinh: Bật kiểm tra Relife
+ThoiGian: Chống DoubleClick nhanh. Thời gian tính bằng giây
+GioiHan: Đặt giới hạn mốc Relife
+ChonLaiNv: Bật tắt chế độ chọn lại nv sau khi Relife ( An toàn nên bật 1 )
+LevelReq: Yêu cầu cấp độ nhân vật. Max 400
+AfterRelifeLevel: Cấp độ trả về sau khi Relife.
+AfterRelifeReset: Reset trả về sau khi relife
+DieuKienResets: Yêu cầu bao nhiêu Reset để được Relife
+DiemTaiSinh: Số điểm dư sau khi Reset
+DieuKienNgoc: nguyên liệu ngọc. sẽ khấu trừ trực tiếp vào bank!
+-->
+<TaiSinh>
+	<Enabled>
+		<Config BatTat = "0" TaiSinh ="1" ThoiGian="3" ChonLaiNv="1" GioiHan="10"/>
+	</Enabled>
+	
+	<DieuKienLevel>
+		<Config LevelReq ="400" AfterRelifeLevel ="10" AfterRelifeReset ="1"/>
+	</DieuKienLevel>
+	
+	<DieuKienResets>
+		<Config Lan0  ="500" 
+				Lan1  ="1000" 
+				Lan2  ="2000" 
+				Lan3  ="2500" 
+				Lan4  ="3000" 
+				Lan5  ="3500" 
+				Lan6  ="4000" 
+				Lan7  ="4500" 
+				Lan8  ="5000" 
+				Lan9  ="5500"
+		/>
+	</DieuKienResets>
+	
+	<DiemTaiSinh>
+		<Config Lan0 ="35000"
+				Lan1 ="40000"
+				Lan2 ="45000"
+				Lan3 ="50000"
+				Lan4 ="55000"
+				Lan5 ="60000"
+				Lan6 ="65000"
+				Lan7 ="70000"
+				Lan8 ="75000"
+				Lan9 ="80000"
+		/>
+	</DiemTaiSinh>
+	
+	<DieuKienNgoc>
+		<Config SlotChaos_0	="500" 	    SlotBless_0 ="500"  	SlotSoul_0 ="500"  	SlotLife_0 ="500"  	SlotCre_0 ="500" 
+				SlotChaos_1	="1000" 	SlotBless_1 ="1000" 	SlotSoul_1 ="1000" 	SlotLife_1 ="1000" 	SlotCre_1 ="1000"
+				SlotChaos_2	="1500" 	SlotBless_2 ="1500" 	SlotSoul_2 ="1500" 	SlotLife_2 ="1500" 	SlotCre_2 ="1500"
+				SlotChaos_3	="2000" 	SlotBless_3 ="2000" 	SlotSoul_3 ="2000" 	SlotLife_3 ="2000" 	SlotCre_3 ="2000"
+				SlotChaos_4	="2500" 	SlotBless_4 ="2500" 	SlotSoul_4 ="2500" 	SlotLife_4 ="2500" 	SlotCre_4 ="2500"
+				SlotChaos_5	="3000" 	SlotBless_5 ="3000" 	SlotSoul_5 ="3000" 	SlotLife_5 ="3000" 	SlotCre_5 ="3000"
+				SlotChaos_6	="3500" 	SlotBless_6 ="3500" 	SlotSoul_6 ="3500" 	SlotLife_6 ="3500" 	SlotCre_6 ="3500"
+				SlotChaos_7	="4000" 	SlotBless_7 ="4000" 	SlotSoul_7 ="4000" 	SlotLife_7 ="4000" 	SlotCre_7 ="4000"
+				SlotChaos_8	="4500" 	SlotBless_8 ="4500" 	SlotSoul_8 ="4500" 	SlotLife_8 ="4500" 	SlotCre_8 ="4500"
+				SlotChaos_9	="5000" 	SlotBless_9 ="5000" 	SlotSoul_9 ="5000" 	SlotLife_9 ="5000" 	SlotCre_9 ="5000"
+		/>
+	</DieuKienNgoc>
+</TaiSinh>

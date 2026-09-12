@@ -1,0 +1,325 @@
+<!-- ==================================================================================
+===============================FACEBOOK: https://www.facebook.com/mukynguyen/
+===============================Zalo + SĐT : BQT MU KỶ NGUYÊN
+===============================Name : MU KỶ NGUYÊN
+=======Cung Cấp Sever Mu Online========
+-Phiên Bản
++DLL Clasic Cutsom Có Đủ
++5.2 FPS 120 Siêu Mượt
+======Hỗ Trợ=========
++Config Sever Theo Ý Muốn
++Dịch Vụ VPS Hosting Tên Miền Antihack
+==================================================================================-->
+<!--
+	=============================Skill all class nếu dùng cho botfake========================================	
+
+	DK 	:	Dam gio=43          ///Gồng=48                 ///Phun lửa=49       ///Xoay kiếm=41  ///địa chấn=19	
+
+	DW  : 	Mua Bang Tuyet=39   ///MNS=16                  ///Lửa=5             ///Linh hồn=9    ///Lốc xoáy=8
+
+	EE 	:	Liên Hoàn Tiễn=235  ///tăng sát thương=28      ///tăng phòng thủ=27 ///              ///
+
+	DL	:	HLX=61		        ///Tăng sát thương=64      ///Chaostic=238		///Hỏa âm=78     ///hỗn loạn = 238
+
+	MG	:	Chém sức mạnh=56	///Chém lửa=55		       ///Sét=237			///              ///
+
+	RFE	:	GầmThét=264		    ///Xuyên thấu=266	       ///Tăng thể lực=267	///Hộ thân=268   ///Vật Ngã=262    ///AALH=263		///Ngọa hổ=260			
+
+	Sum	:	Giật sét=215		///Sốc Điện=230	           ///Phản hồi=217	    ///Cuồng nổ=218  ///Hút Máu 214	
+======================================================Ghi Chú Cần Đọc===========================================================
+-	SkillID = Skill để Train, PK
+	
+-	UseBuffs = Skill dùng để Buff tối đa  3 Skill
+	
+-	GateNumber = Index Gate để Move Map , MapX, MapY : Toa do X,Y
+
+-	PhamViTrain = phạm Vi đánh Quái Max (6)
+
+-	MoveRange = là phạm vi di chuyển tự động trong máp (Lưu Ý) : nếu cho phép di chuyển Ranage thì cần tăng TimeReturn cao lên
+
+-	TimeReturn = thời gian quay lại tọa độ vị trí cũ (MapX,MapY) Tính bằng Giây
+
+-    TuNhatItem = Tự Động nhặt item
+
+-    TuDongReset = Tự Động Reset
+		
+-	PartyMode   
+	0 là tắt không Party,  
+    1 (Tự động chấp nhận yêu cầu Party), 
+    2 (Tự động Party người chơi xung quanh), 			
+    3 (Chỉ Gửi Yêu Cầu party nếu là Fake Online)
+	
+-	PVPMode
+	1 (Tự động đánh trả khi bị đánh),        
+	2 (Kill tât cả người chơi trong phạm vi)	   
+	0 Là tắt
+	
+-    PostKhiDie  
+	1 (Tự động Chat Post khi bị giết)
+	0 là Tắt  
+
+
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<MSGThongBao IndexMesMin="3021" IndexMesMax="3031" MoveRange="7"/>
+<FakeDapDo FakeDapDo_Rate ="95" FakeDapDo_Speed ="1000" FakeDapDo_Map="0" FakeDapDo_Index="7223" FakeDapDo_Level_Min = "8" FakeDapDo_Level_Max = "12"/>
+<FakeOnlineData>
+
+<Info Account="bot" Password="1" Name="Dark"
+	SkillID="263"	UseBuffs_0="266"	UseBuffs_1="267"  UseBuffs_2="268"  
+	GateNumber="17" MapX="123" MapY="132" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot1" Password="1" Name="hoanglong"
+	SkillID="43"	UseBuffs_0="48"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot2" Password="1231231" Name="tiger"
+	SkillID="43"	UseBuffs_0="48"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot3" Password="1231231" Name="Vuto"
+	SkillID="235"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot4" Password="1231231" Name="DWcodon"
+	SkillID="39"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot5" Password="1231231" Name="Onehit"
+	SkillID="215"	UseBuffs_0="218"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot6" Password="1231231" Name="DaiCa"
+	SkillID="43"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot7" Password="1231231" Name="Elfbuff"
+	SkillID="235"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot8" Password="1231231" Name="MGTocDo"
+	SkillID="235"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot9" Password="1231231" Name="AnTaoDi"
+	SkillID="61"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="130" MapY="113" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot10" Password="1231231" Name="BoMayChap"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot11" Password="1231231" Name="CongAnXom"
+	SkillID="78"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot12" Password="1231231" Name="ChuTichXa"
+	SkillID="9"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot13" Password="1231231" Name="LenhHoXung"
+	SkillID="9"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot14" Password="1231231" Name="SieuChuoi"
+	SkillID="214"	UseBuffs_0="217"	UseBuffs_1="218"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot15" Password="1231231" Name="MGChien"
+	SkillID="56"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot16" Password="1231231" Name="ElfChien"
+	SkillID="235"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot17" Password="1231231" Name="TocBac"
+	SkillID="39"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot18" Password="1231231" Name="12333"
+	SkillID="0"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot19" Password="1231231" Name="Number"
+	SkillID="0"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="133" MapY="142" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot20" Password="1231231" Name="ChuaTeMu"
+	SkillID="238"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot21" Password="1231231" Name="BoDoi"
+	SkillID="237"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot22" Password="1231231" Name="2Tay2Em"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot23" Password="1231231" Name="ChuQuaHat"
+	SkillID="43"	UseBuffs_0="48"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot24" Password="1231231" Name="AnhThoXay"
+	SkillID="262"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot25" Password="1231231" Name="GaiMienTay"
+	SkillID="235"	UseBuffs_0="27"	UseBuffs_1="28"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot26" Password="1231231" Name="Akuma"
+	SkillID="39"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot27" Password="1231231" Name="SieuBuff"
+	SkillID="235"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot28" Password="1231231" Name="KingKong"
+	SkillID="43"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot29" Password="1231231" Name="TestDK"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+
+<Info Account="bot30" Password="1231231" Name="NgonAnDi"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>
+	
+<Info Account="bot31" Password="1231231" Name="Bulon"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot32" Password="1231231" Name="Giet"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot33" Password="1231231" Name="Conmemay"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot34" Password="1231231" Name="Ngaoda"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot35" Password="1231231" Name="Chim"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot36" Password="1231231" Name="Hack"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot37" Password="1231231" Name="Cukem"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot38" Password="1231231" Name="bedau"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot39" Password="1231231" Name="okok"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot40" Password="1231231" Name="nyny"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot41" Password="1231231" Name="nylan"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot42" Password="1231231" Name="mrking"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot43" Password="1231231" Name="king"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot44" Password="1231231" Name="vanmuoi"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot45" Password="1231231" Name="kienlon"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot46" Password="1231231" Name="classa"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot47" Password="1231231" Name="sala"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot48" Password="1231231" Name="nhutan"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot49" Password="1231231" Name="queen"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+
+<Info Account="bot50" Password="1231231" Name="kingof"
+	SkillID="41"	UseBuffs_0="0"	UseBuffs_1="0"  UseBuffs_2="0"  
+	GateNumber="17" MapX="143" MapY="126" 
+	PhamViTrain="12"  MoveRange="5" TimeReturn="15" TuNhatItem="0" TuDongReset="0" PartyMode = "1" PVPMode="1"  PostKhiDie = "0" MoveSafeZone="0" FakeDapDo ="1"/>	
+		
+-->
+</FakeOnlineData>

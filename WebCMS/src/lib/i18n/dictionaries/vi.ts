@@ -168,7 +168,7 @@ const vi = {
         "Tỷ lệ thành công lấy từ cấu hình ép đồ đang chạy trên máy chủ.",
       sourceNote: "Số liệu lấy từ cấu hình máy chủ hiện tại. Đổi cấu hình trên máy chủ thì trang này cập nhật theo.",
       unavailable: "Không đọc được cấu hình ép đồ. Thử lại sau.",
-      alHint: "Cột Thường, VIP 1, VIP 2, VIP 3 là cấp tài khoản trên máy chủ.",
+      alHint: "Cột Thường và VIP là cấp tài khoản trên máy chủ.",
       plusTitle: "Nâng cấp đồ từ cộng 10 lên cộng 15",
       plusHint: "Tỷ lệ phần trăm thành công theo từng cấp VIP.",
       jewelTitle: "Ngọc Soul, Life, Harmony và Luck",

@@ -2131,30 +2131,7 @@ void CCommandManager::DGCommandResetRecv(SDHP_COMMAND_RESET_RECV* lpMsg)
 
 	if (gServerInfo.m_CommandResetMove[lpObj->AccountLevel] != 0)
 	{
-		switch (lpObj->Class)
-		{
-		case CLASS_DW:
-			gObjMoveGate(lpObj->Index, 17);
-			break;
-		case CLASS_DK:
-			gObjMoveGate(lpObj->Index, 17);
-			break;
-		case CLASS_FE:
-			gObjMoveGate(lpObj->Index, 27);
-			break;
-		case CLASS_MG:
-			gObjMoveGate(lpObj->Index, 17);
-			break;
-		case CLASS_DL:
-			gObjMoveGate(lpObj->Index, 17);
-			break;
-		case CLASS_SU:
-			gObjMoveGate(lpObj->Index, 267);
-			break;
-		case CLASS_RF:
-			gObjMoveGate(lpObj->Index, 17);
-			break;
-		}
+		gObjMoveGate(lpObj->Index, 17); // Lorencia, regardless of character class
 	}
 
 	gResetTable.SendResetInfo(lpObj, lpObj->Reset, lpObj->AccountLevel);

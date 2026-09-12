@@ -113,6 +113,7 @@ export async function POST(req: Request) {
       rHonHoan: num(body.rHonHoan),
       rNewVip: num(body.rNewVip),
       rHuyChuong: num(body.rHuyChuong),
+      ResetPointBonusApplied: body.resetPointBonusApplied === true,
     });
 
     if (!updated) {

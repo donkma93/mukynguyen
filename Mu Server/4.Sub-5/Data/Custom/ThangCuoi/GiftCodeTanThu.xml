@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GiftCode Enable="1">
+    <Message>
+        <Msg Index="0" Text="Tính Năng Đã Ngưng Sử Dụng, Liên Hệ BQT!"/>
+        <Msg Index="1" Text="Bạn Không Có Cấp Độ Tối Thiểu Cần Thiết Để Nhận Món Quà Này."/>
+        <Msg Index="2" Text="Bạn Đã vượt Quá Cấp Độ Tối Đa Để Nhận Món Quà Này."/>
+        <Msg Index="3" Text="Bạn Không Có Reset Tối Thiểu Cần Thiết Để Nhận Món Quà Này."/>
+        <Msg Index="4" Text="Bạn Đã vượt Quá reset Tối Đa Để Nhận Món Quà Này."/>
+        <Msg Index="5" Text="Bạn Nên Để Trống Thùng Đồ Trước Khi Nhận Code!!"/>
+        <Msg Index="6" Text="Mã GiftCode Này Không Tồn Tại!"/>
+        <Msg Index="7" Text="GiftCode Này Đã Được Sử Dụng. Vui Lòng Thử Lại!"/>
+        <Msg Index="9" Text="Chúc Mừng Bạn Đã Nhận Quà Thành Công!"/>
+    </Message>
+
+<DieuKien>
+    <!-- Default Codes -->
+    <YeuCau Index="1" Class="0" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuDW" GioiHan="0"/>
+    <YeuCau Index="2" Class="1" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuDK" GioiHan="0"/>
+    <YeuCau Index="3" Class="2" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuELF" GioiHan="0"/>
+    <YeuCau Index="4" Class="3" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuMG" GioiHan="0"/>
+    <YeuCau Index="5" Class="4" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuDL" GioiHan="0"/>
+    <YeuCau Index="6" Class="5" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuSM" GioiHan="0"/>
+    <YeuCau Index="7" Class="6" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="0" WP="0" WG="0" Code="TanThuRF" GioiHan="0"/>
+    <YeuCau Index="8" Class="-1" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="10000" Zen="0" WC="5000000" WP="0" WG="0" Code="TanThu" GioiHan="0"/>
+    <YeuCau Index="100" Class="-1" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="0" WC="1000000" WP="0" WG="0" Code="DONPV" GioiHan="1"/>
+    <YeuCau Index="101" Class="0" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="102" Class="1" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="103" Class="2" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="104" Class="3" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="105" Class="4" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="106" Class="5" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+    <YeuCau Index="107" Class="6" Vip0="1" Vip1="1" Vip2="1" Vip3="1" MinLv="0" MaxLv="400" MinRS="0" MaxRS="10000" Count="1" Point="0" Zen="10000000" WC="100000" WP="0" WG="0" Code="TANTHUVIP" GioiHan="1"/>
+
+</DieuKien>
+
+<QuaGift>
+<!-- Default Set Tan Thu -->
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "3619"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "4131"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "4643"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "5155"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "5667"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "1"  SLIteem="1"    ItemIndex = "2569"  Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "3600"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "4112"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "4624"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "5136"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "5648"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "2"  SLIteem="1"   ItemIndex = "17"    Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "3620"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "4132"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "4644"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "5156"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "5668"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "3"  SLIteem="1"   ItemIndex = "2065"  Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "4"  SLIteem="1"   ItemIndex = "4133"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "4"  SLIteem="1"   ItemIndex = "4645"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "4"  SLIteem="1"   ItemIndex = "5157"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "4"  SLIteem="1"   ItemIndex = "5669"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "4"  SLIteem="1"   ItemIndex = "31"    Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "3611"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "4123"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "4635"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "5147"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "5659"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "5"  SLIteem="1"   ItemIndex = "1035"  Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "3624"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "4136"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "4648"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "5160"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "5672"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "6"  SLIteem="1"   ItemIndex = "2576"  Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "3643"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "4155"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "4667"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "5691"  Level = "9" Dur = "255" Skill = "0" Luck = "1" Option = "1" Exc = "32" Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "32"    Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index = "7"  SLIteem="1"   ItemIndex = "32"    Level = "9" Dur = "255" Skill = "1" Luck = "1" Option = "1" Exc = "1"  Anc = "0" SocketCount = "0" Time = "604800"/>	
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="3619" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="4131" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="4643" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="5155" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="5667" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="101" SLIteem="1" ItemIndex="2569" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="3600" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="4112" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="4624" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="5136" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="5648" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="102" SLIteem="1" ItemIndex="17" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="3620" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="4132" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="4644" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="5156" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="5668" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="103" SLIteem="1" ItemIndex="2065" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="104" SLIteem="1" ItemIndex="4133" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="104" SLIteem="1" ItemIndex="4645" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="104" SLIteem="1" ItemIndex="5157" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="104" SLIteem="1" ItemIndex="5669" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="104" SLIteem="1" ItemIndex="31" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="3611" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="4123" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="4635" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="5147" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="5659" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="105" SLIteem="1" ItemIndex="1035" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="3624" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="4136" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="4648" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="5160" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="5672" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="106" SLIteem="1" ItemIndex="2576" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="3643" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="4155" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="4667" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="5691" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="32" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+	<CaiDatQua Index="107" SLIteem="1" ItemIndex="32" Level="9" Dur="255" Skill="1" Luck="1" Option="1" Exc="32" Anc="0" SocketCount="0" Time="604800"/>
+
+</QuaGift>
+
+<BuffGift>
+</BuffGift>
+
+</GiftCode>

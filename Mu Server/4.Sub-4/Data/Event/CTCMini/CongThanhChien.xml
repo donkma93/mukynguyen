@@ -1,0 +1,43 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<CTCMini>
+	<EventTime>
+        <Time Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="7" Minute="51" Second="-1" />
+	</EventTime>
+
+	<NPCTalk>
+        <NPC Class="380" Map="0" X="139" Y="140" ClassTru="727" ClassGate="525"/>
+	</NPCTalk>	
+	
+	<CauHinhTime>
+	    <Config  Enabled="1" TimeChuanBi = "2"	TimeSuKien = "30"  SoTruCanChiem="2" GuildMinPlayer="1"/>
+	</CauHinhTime>
+
+	<CauHinhGate>
+	    <Config Gate1="384" Gate2 = "385" Gate3 = "386" Gate4="387" Gate5="388"/>
+	</CauHinhGate>	
+
+	<PhaCong>
+	    <Config	WCoin="2000" WCoinP="0"  GobinP="0" Ruud="0" BonusAllGuild="0" />
+    </PhaCong>	
+
+	<PhaTru>
+	    <Config	WCoin="2000" WCoinP="0"  GobinP="0" Ruud="0" BonusAllGuild="0" />
+    </PhaTru>
+
+	<GuidWin>
+	    <Config	WCoin="5000" WCoinP="0"  GobinP="0" Ruud="0" IndexItemBag="0" />
+    </GuidWin>	
+	
+</CTCMini>

@@ -17,10 +17,10 @@
 		<Msg Index="0"   Text="Sự Kiện %s Còn %d Phút Nữa Sẽ Bắt Đầu" />
 		<Msg Index="1"   Text="Bạn Đã Đạt Đủ %d Reset Hôm Nay" />
 		<Msg Index="2"   Text="Giới Hạn Reset Hôm Nay Là %s Lần Nhé %s" />
-		<Msg Index="3"   Text="Tài Khoản: Thường" />
-		<Msg Index="4"   Text="Tài Khoản: Bạc" />
-		<Msg Index="5"   Text="Tài Khoản: Vàng" />
-		<Msg Index="6"   Text="Tài Khoản: Kim Cương" />
+		<Msg Index="3"   Text="Bạn đang dùng tài khoản THƯỜNG." />
+		<Msg Index="4"   Text="Bạn đang dùng tài khoản VIP. Hết hạn: %s" />
+		<Msg Index="5"   Text="Bạn đang dùng tài khoản VIP. Hết hạn: %s" />
+		<Msg Index="6"   Text="Bạn đang dùng tài khoản VIP. Hết hạn: %s" />
 		<Msg Index="7"   Text="Chúc Mừng %s Đã Là 1 Game Thủ Của Mu Online" />
 		<Msg Index="8"   Text="%s Đã Trực Tuyến" />
 		<Msg Index="9"   Text="Nhân Vật %s Vừa Tham Gia" />

@@ -303,11 +303,23 @@ export type CharacterUpdateInput = {
   rHonHoan?: number;
   rNewVip?: number;
   rHuyChuong?: number;
+  ResetPointBonusApplied?: boolean;
 };
+
+const RESET_POINT_BONUS = 300;
+const RESET_START_LEVEL = 10;
+// Matches gLevelExperience[9] in the running GameServer's level experience table.
+const RESET_START_EXPERIENCE = 14_580;
+const RESET_LORENCIA_MAP = 0;
+const RESET_LORENCIA_X = 142;
+const RESET_LORENCIA_Y = 126;
 
 export async function updateCharacterStats(name: string, input: CharacterUpdateInput) {
   const current = await getCharacterByName(name);
   if (!current) throw new Error("Nhân vật không tồn tại");
+  if (await isAccountOnline(current.AccountID)) {
+    throw new Error("Nhân vật đang Online — hãy thoát game rồi mới cập nhật chỉ số");
+  }
 
   const next = {
     Class: input.Class ?? current.Class,
@@ -342,7 +354,18 @@ export async function updateCharacterStats(name: string, input: CharacterUpdateI
   next.Vitality = clamp(next.Vitality, 0, 65000);
   next.Energy = clamp(next.Energy, 0, 65000);
   next.Leadership = clamp(next.Leadership, 0, 65000);
-  next.ResetCount = clamp(next.ResetCount, 0, 1_000_000);
+  next.ResetCount = clamp(next.ResetCount, 0, 200);
+  const addedResetPoints = Math.max(0, next.ResetCount - current.ResetCount) * RESET_POINT_BONUS;
+  if (addedResetPoints > 0) {
+    next.cLevel = RESET_START_LEVEL;
+    next.MapNumber = RESET_LORENCIA_MAP;
+    next.MapPosX = RESET_LORENCIA_X;
+    next.MapPosY = RESET_LORENCIA_Y;
+  }
+  if (input.ResetPointBonusApplied) {
+    next.LevelUpPoint = current.LevelUpPoint;
+  }
+  next.LevelUpPoint = clamp(next.LevelUpPoint + addedResetPoints, 0, 2_000_000_000);
   next.MasterResetCount = clamp(next.MasterResetCount, 0, 1_000_000);
   next.Money = clamp(Number(next.Money), 0, 9_000_000_000_000_000);
   next.MapNumber = clamp(Number(next.MapNumber), 0, 255);
@@ -369,6 +392,7 @@ export async function updateCharacterStats(name: string, input: CharacterUpdateI
     .input("ene", sql.Int, next.Energy)
     .input("cmd", sql.Int, next.Leadership)
     .input("reset", sql.Int, next.ResetCount)
+    .input("experience", sql.Int, addedResetPoints > 0 ? RESET_START_EXPERIENCE : null)
     .input("mreset", sql.Int, next.MasterResetCount)
     .input("money", sql.BigInt, next.Money)
     .input("map", sql.SmallInt, next.MapNumber)
@@ -385,6 +409,7 @@ export async function updateCharacterStats(name: string, input: CharacterUpdateI
       UPDATE dbo.Character
       SET Class = @cls,
           cLevel = @cLevel,
+          Experience = COALESCE(@experience, Experience),
           LevelUpPoint = @lup,
           Strength = @str,
           Dexterity = @dex,

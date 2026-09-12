@@ -1,0 +1,28 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+// Skill: 232 - Chém băng
+// Skill: 41 - Chém Xoáy
+
+0
+//MonsterClass	Skill1	Skill2
+750				41 		232 		//DK
+751				39 		0			//DW	
+752				235 	0			//ELF
+753				56 		0			//MG
+754				78 		0			//DL	
+755				214 	0			//SM	
+756				232 	0			//RF
+
+719				232 	0			//RF
+
+end

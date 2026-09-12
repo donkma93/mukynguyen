@@ -1243,7 +1243,18 @@ void DGCharacterInfoRecv(SDHP_CHARACTER_INFO_RECV* lpMsg)
 
 	//gNotice.GCNoticeSend(lpObj->Index, 0, 0, 0, 0, 0, 0, gMessageNew.GetMessage(7), lpObj->Name);
 
-	gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage((3 + lpObj->AccountLevel)), lpObj->AccountExpireDate);
+	{
+		int accMsg = (lpObj->AccountLevel > 0) ? 4 : 3;
+		char* expireText = lpObj->AccountExpireDate;
+		if (expireText == 0 || expireText[0] == 0)
+		{
+			expireText = "khong xac dinh";
+		}
+		// Account level is announced once after the character has loaded.
+		// Sending both notice styles here displayed the same VIP message twice
+		// whenever the player changed server.
+		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(accMsg), expireText);
+	}
 
 
 #if(MEMBER_ONLINE)

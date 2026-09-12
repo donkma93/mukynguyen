@@ -2,9 +2,17 @@
 #include "NewUIAccountLevel.h"
 #include "WSclientinline.h"
 #include "ZzzToolKit.h"
+#include "StructSendGs.h"
 #include "WideData.h"
 
 AccountLevelID gGetID;
+
+namespace
+{
+	constexpr int kVipPackageCount = 3;
+	constexpr int kVipDays[kVipPackageCount] = { 7, 15, 30 };
+	constexpr int kVipWCoinC[kVipPackageCount] = { 5000, 9000, 15000 };
+}
 
 SEASON3B::CNewUIAccountLevel::CNewUIAccountLevel()
 {
@@ -66,7 +74,7 @@ void SEASON3B::CNewUIAccountLevel::InitButtons()
 	int buttonWidth = 52;
 	int spacing = 28;
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < kVipPackageCount; i++)
 	{
 		g_pUIForm->SetButtonInfo(&m_Btn[i], IMAGE_IGS_BUTTON, startX + i * (buttonWidth + spacing), m_Pos.y + 145, 52, 26, 1, 0, 1, 1u, GlobalText[3819 + i], "", 0);
 	}
@@ -148,17 +156,6 @@ bool SEASON3B::CNewUIAccountLevel::Render()
 	g_pUIForm->RenderHover(m_Pos.x + 17, m_Pos.y + 70, 250, iLineHeight, 0x320000FF);
 	g_pUIForm->RenderHover(m_Pos.x + 17, m_Pos.y + 70 + iLineHeight, 250, 35, 0x00000080);
 
-	unsigned long IsMainCoin = 0;
-
-	for (int i = 0; i < 3; i++)
-	{
-		if (CheckMouseIn(m_Pos.x + 17, m_Pos.y + 83 + (i * 10), WINDOW_WIDTH - 50, 9))
-		{
-			IsMainCoin = (i == 0) ? 10000 : (i == 1) ? 15000 : 20000;
-			g_pUIForm->RenderHover(m_Pos.x + 17, m_Pos.y + 83 + (i * 10), WINDOW_WIDTH - 50, 9, 0x0080C080);
-		}
-	}
-
 	char CreateSpace[255];
 	g_pRenderText->SetBgColor(NULL);
 	sprintf(CreateSpace, GlobalText[3831], Hero->ID);
@@ -170,28 +167,24 @@ bool SEASON3B::CNewUIAccountLevel::Render()
 	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 55, GlobalText[3832], 270, 0, 1);
 
 	g_pRenderText->SetTextColor(255, 238, 204, 255);
-	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 83,  GlobalText[3819], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 93,  GlobalText[3820], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 103, GlobalText[3821], 61, 0, RT3_SORT_CENTER);
+	for (int i = 0; i < kVipPackageCount; i++)
+	{
+		const float rowY = m_Pos.y + 83 + (i * 10);
+		char days[24];
+		sprintf_s(days, GlobalText[3857], kVipDays[i]);
 
-	g_pRenderText->RenderText(m_Pos.x + 80, m_Pos.y + 83,  GlobalText[3823], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 80, m_Pos.y + 93,  GlobalText[3824], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 80, m_Pos.y + 103, GlobalText[3825], 61, 0, RT3_SORT_CENTER);
-
-	g_pRenderText->RenderText(m_Pos.x + 144, m_Pos.y + 83,  GlobalText[3826], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 144, m_Pos.y + 93,  GlobalText[3827], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 144, m_Pos.y + 103, GlobalText[3828], 61, 0, RT3_SORT_CENTER);
-
-	g_pRenderText->RenderText(m_Pos.x + 207, m_Pos.y + 83,  GlobalText[3829], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 207, m_Pos.y + 93,  GlobalText[3829], 61, 0, RT3_SORT_CENTER);
-	g_pRenderText->RenderText(m_Pos.x + 207, m_Pos.y + 103, GlobalText[3829], 61, 0, RT3_SORT_CENTER);
+		g_pRenderText->RenderText(m_Pos.x + 17, rowY, GlobalText[3819 + i], 61, 0, RT3_SORT_CENTER);
+		g_pRenderText->RenderText(m_Pos.x + 80, rowY, GlobalText[3823], 61, 0, RT3_SORT_CENTER);
+		g_pRenderText->RenderText(m_Pos.x + 144, rowY, GlobalText[3826], 61, 0, RT3_SORT_CENTER);
+		g_pRenderText->RenderText(m_Pos.x + 207, rowY, days, 61, 0, RT3_SORT_CENTER);
+	}
 
 	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 70, GlobalText[3815], 61, 0, RT3_SORT_CENTER);
 	g_pRenderText->RenderText(m_Pos.x + 80, m_Pos.y + 70, GlobalText[3816], 61, 0, RT3_SORT_CENTER);
 	g_pRenderText->RenderText(m_Pos.x + 144, m_Pos.y + 70, GlobalText[3817], 61, 0, RT3_SORT_CENTER);
 	g_pRenderText->RenderText(m_Pos.x + 207, m_Pos.y + 70, GlobalText[3818], 61, 0, RT3_SORT_CENTER);
 
-	sprintf(CreateSpace, GlobalText[3830], IsToolKit.QN(IsMainCoin));
+	sprintf(CreateSpace, GlobalText[3830], IsToolKit.QN(pGetCoin.ThisCoin[0]));
 	g_pRenderText->SetTextColor(0, 128, 255, 255);
 	g_pRenderText->RenderText(m_Pos.x + 17, m_Pos.y + 125, CreateSpace, 250, 0, 1);
 
@@ -199,13 +192,20 @@ bool SEASON3B::CNewUIAccountLevel::Render()
 	m_Btn[1].Render();
 	m_Btn[2].Render();
 
+	for (int i = 0; i < kVipPackageCount; i++)
+	{
+		char price[32];
+		sprintf_s(price, "%s WC", IsToolKit.QN(kVipWCoinC[i]));
+		g_pRenderText->RenderText(m_Pos.x + 35 + i * 80, m_Pos.y + 175, price, 52, 0, RT3_SORT_CENTER);
+	}
+
 	DisableAlphaBlend();
 	return true;
 }
 
 bool SEASON3B::CNewUIAccountLevel::BtnProcess()
 {
-	for (int M = 0; M < 3; M++)
+	for (int M = 0; M < kVipPackageCount; M++)
 	{
 		if (m_Btn[M].UpdateMouseEvent())
 		{

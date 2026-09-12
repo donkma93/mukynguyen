@@ -1,0 +1,106 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Green Ribbon Box"	 	1000	    	100			 	1				0					1				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+7           21		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Thần Long
+8           21		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Thần Long
+9           21		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Thần Long
+10          21		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Thần Long
+11          21		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Thần Long
+
+7           22		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Ma Vương
+8           22		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Ma Vương
+9           22		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Ma Vương
+10          22		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Ma Vương
+11          22		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Ma Vương
+
+7           24		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Thánh Nữ
+8           24		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Thánh Nữ
+9           24		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Thánh Nữ
+10          24		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Thánh Nữ
+11          24		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Thánh Nữ
+
+7           28		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Chí Tôn
+8           28		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Chí Tôn
+9           28		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Chí Tôn
+10          28		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Chí Tôn
+11          28		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Chí Tôn
+
+8           23		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Cuồng Phong
+9           23		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Cuồng Phong
+10          23		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Cuồng Phong
+11          23		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Cuồng Phong
+
+7           42		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Phục Ma
+8           42		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Phục Ma
+9           42		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Phục Ma
+10          42		0              4          0       1      1        1		    0         100        //[Cấp7] Găng Phục Ma
+11          42		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Phục Ma
+
+7           61		0              4          0       1      1        1		    0         100        //[Cấp7] Mũ Quyền Lực
+8           61		0              4          0       1      1        1		    0         100        //[Cấp7] Áo Quyền Lực
+9           61		0              4          0       1      1        1		    0         100        //[Cấp7] Quần Quyền Lực
+11          61		0              4          0       1      1        1		    0         100        //[Cấp7] Giầy Quyền Lực
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

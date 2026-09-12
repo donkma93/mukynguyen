@@ -15,6 +15,14 @@
 
 using namespace SEASON3B;
 
+namespace
+{
+	constexpr float kServerDropdownOffsetX = 60.0f;
+	constexpr float kServerDropdownWidth = 118.0f;
+	constexpr float kServerDropdownHeight = 18.0f;
+	constexpr float kServerDropdownItemHeight = 18.0f;
+}
+
 CNewUIHeroPositionInfo::CNewUIHeroPositionInfo()
 {
 	m_pNewUIMng = NULL;
@@ -390,10 +398,10 @@ bool CNewUIHeroPositionInfo::UpdateMouseEvent()
 		return false;
 	}
 
-	float dropX = m_Pos.x + WidenX + 60.0f;
+	float dropX = m_Pos.x + WidenX + kServerDropdownOffsetX;
 	float dropY = m_Pos.y + 2.0f;
-	float dropW = 110.0f;
-	float dropH = 20.0f;
+	float dropW = kServerDropdownWidth;
+	float dropH = kServerDropdownHeight;
 
 	if (CheckMouseIn(dropX, dropY, dropW, dropH))
 	{
@@ -409,12 +417,12 @@ bool CNewUIHeroPositionInfo::UpdateMouseEvent()
 	if (m_bServerDropdownOpen)
 	{
 		float itemY = dropY + dropH + 2.0f;
-		WORD subPorts[3] = { 55901, 55902, 55903 };
+		WORD subPorts[5] = { 55901, 55902, 55903, 55904, 55905 };
 
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < 5; i++)
 		{
-			float curItemY = itemY + (i * 22.0f);
-			if (CheckMouseIn(dropX, curItemY, dropW, 22.0f))
+			float curItemY = itemY + (i * kServerDropdownItemHeight);
+			if (CheckMouseIn(dropX, curItemY, dropW, kServerDropdownItemHeight))
 			{
 				if (SEASON3B::IsRelease(VK_LBUTTON) && GetTickCount() > m_dwLastSwitchClick + 250)
 				{
@@ -536,28 +544,38 @@ void CNewUIHeroPositionInfo::SetButtonInfo(CNewUIButton* m_Btn, int imgindex, in
 
 void CNewUIHeroPositionInfo::RenderServerDropdown()
 {
-	float dropX = m_Pos.x + WidenX + 60.0f;
+	float dropX = m_Pos.x + WidenX + kServerDropdownOffsetX;
 	float dropY = m_Pos.y + 2.0f;
-	float dropW = 110.0f;
-	float dropH = 20.0f;
+	float dropW = kServerDropdownWidth;
+	float dropH = kServerDropdownHeight;
 
 	WORD curPort = g_pReconnect->s_Data.GameServerPort;
-	const char* curName = "▼ Đổi Máy Chủ";
+	const char* curName = "▼ Server";
 	BYTE curR = 255, curG = 255, curB = 255;
 
 	if (curPort == 55901)
 	{
-		curName = "▼ Sub-1 (VIP)";
+		curName = "▼ S1 Boss";
 		curR = 255; curG = 215; curB = 0;   // Gold
 	}
 	else if (curPort == 55902)
 	{
-		curName = "▼ Sub-2 (Thường)";
+		curName = "▼ S2 Thường";
 		curR = 255; curG = 255; curB = 255; // White
 	}
 	else if (curPort == 55903)
 	{
-		curName = "▼ Sub-3 (Non-PK)";
+		curName = "▼ S3 VIP";
+		curR = 0; curG = 220; curB = 255;   // Cyan
+	}
+	else if (curPort == 55904)
+	{
+		curName = "▼ S4 R0-190";
+		curR = 90; curG = 255; curB = 120;  // Green
+	}
+	else if (curPort == 55905)
+	{
+		curName = "▼ S5 Non-PvP";
 		curR = 255; curG = 165; curB = 0;   // Orange
 	}
 
@@ -578,20 +596,20 @@ void CNewUIHeroPositionInfo::RenderServerDropdown()
 	if (m_bServerDropdownOpen)
 	{
 		float menuY = dropY + dropH + 2.0f;
-		float menuH = 3 * 22.0f;
+		float menuH = 5 * kServerDropdownItemHeight;
 
 		g_pUIForm->RenderBack((int)dropX, (int)menuY, (int)dropW, (int)menuH, 0.92f);
 
-		const char* subNames[3] = { "Sub-1 (VIP)", "Sub-2 (Thường)", "Sub-3 (Non-PK)" };
-		BYTE subColors[3][3] = { {255, 215, 0}, {255, 255, 255}, {255, 165, 0} };
-		WORD subPorts[3] = { 55901, 55902, 55903 };
+		const char* subNames[5] = { "S1 Boss", "S2 Thường", "S3 VIP", "S4 R0-190", "S5 Non-PvP" };
+		BYTE subColors[5][3] = { {255, 215, 0}, {255, 255, 255}, {0, 220, 255}, {90, 255, 120}, {255, 165, 0} };
+		WORD subPorts[5] = { 55901, 55902, 55903, 55904, 55905 };
 
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < 5; i++)
 		{
-			float curItemY = menuY + (i * 22.0f);
-			if (CheckMouseIn(dropX, curItemY, dropW, 22.0f))
+			float curItemY = menuY + (i * kServerDropdownItemHeight);
+			if (CheckMouseIn(dropX, curItemY, dropW, kServerDropdownItemHeight))
 			{
-				g_pUIForm->RenderHover(dropX + 2, curItemY + 1, dropW - 4, 20.0f, 0x0080C080);
+				g_pUIForm->RenderHover(dropX + 2, curItemY + 1, dropW - 4, kServerDropdownItemHeight - 2, 0x0080C080);
 			}
 
 			char itemLabel[64];
@@ -605,7 +623,7 @@ void CNewUIHeroPositionInfo::RenderServerDropdown()
 			}
 
 			g_pRenderText->SetTextColor(subColors[i][0], subColors[i][1], subColors[i][2], 255);
-			g_pRenderText->RenderText((int)dropX, (int)curItemY + 5, itemLabel, (int)dropW, 0, RT3_SORT_CENTER);
+			g_pRenderText->RenderText((int)dropX, (int)curItemY + 3, itemLabel, (int)dropW, 0, RT3_SORT_CENTER);
 		}
 	}
 }
@@ -644,4 +662,3 @@ void CNewUIHeroPositionInfo::ExecuteSwitchSub(WORD targetPort)
 
 	SocketClient.Close();
 }
-

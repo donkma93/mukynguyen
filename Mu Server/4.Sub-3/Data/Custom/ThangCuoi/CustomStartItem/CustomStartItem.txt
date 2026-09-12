@@ -36,23 +36,23 @@
 0
 //Class	Type	Index  Level  Luck    Dur   Skill   Option   ExcOp	SetOp	JoH	OEx	Socket1	Socket2	Socket3	Socket4	Socket5 	Time
 // Time = 0: vinh vien. Set Cap 1 +9 + canh mini khi tao nhan vat moi.
-// DW - Set Vai Tho + Gay Xuong + Mini Canh Tien Nu
+// DW - Set Vai Tho + Gay Xuong + Mini Canh Thien Dang (12,133: DW+MG)
 0		7		2      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mu Vai Tho
 0		8		2      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Ao Vai Tho
 0		9		2      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Quan Vai Tho
 0		10		2      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Gang Vai Tho
 0		11		2      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Giay Vai Tho
 0		5		0      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Gay Xuong
-0		12		132    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Tien Nu
-// DK - Set Da + Doan Dao + Mini Canh Thien Dang
+0		12		133    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Thien Dang
+// DK - Set Da + Doan Dao + Mini Canh Quy (12,134: DK+MG)
 1		7		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mu Da
 1		8		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Ao Da
 1		9		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Quan Da
 1		10		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Gang Da
 1		11		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Giay Da
 1		0		1      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Doan Dao
-1		12		133    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Thien Dang
-// ELF - Set Trinh Nu + Cung Nho + Ten + Mini Canh Quy
+1		12		134    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Quy
+// ELF - Set Trinh Nu + Cung Nho + Ten + Mini Canh Tien Nu (12,132: ELF)
 2		7		10     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mu Trinh Nu
 2		8		10     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Ao Trinh Nu
 2		9		10     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Quan Trinh Nu
@@ -60,7 +60,7 @@
 2		11		10     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Giay Trinh Nu
 2		4		0      9      1       0       1      0       0		0       0   0       255		255		255		255		255		0	//Cung Nho
 2		4		15     0      0       255     0      0       0		0       0   0       255		255		255		255		255		0	//Ten Cung
-2		12		134    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Quy
+2		12		132    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Tien Nu
 // MG - Set Dong (khong mu) + Truong Kiem + Mini Canh Thien Dang
 3		8		0      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Ao Dong
 3		9		0      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Quan Dong
@@ -84,7 +84,7 @@
 5		11		39     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Giay Thuat Si
 5		5		14     9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Gay Phep Thuat
 5		12		131    0      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mini Canh Vu Linh
-// RF - Set Da + 2 Vuot Dia Long + Mini Ao Choang RF
+// RF - Set Da (khong gang) + 2 Chuy Thu + Mini Ao Choang RF (12,135: RF)
 6		7		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Mu Da
 6		8		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Ao Da
 6		9		5      9      1       0       0      0       0		0       0   0       255		255		255		255		255		0	//Quan Da
@@ -107,11 +107,11 @@ end
 
 2
 //Class	Level	Reset	Point	Zen		WCoinC	WcoinP	WCoinG	Ruud	ATM	Str	Dex	Vit	Ene	Lead
-0		1		0		0		50000	0		0		0		0		0	70	40	40	50	0
-1		1		0		0		50000	0		0		0		0		0	120	50	50	20	0
-2		1		0		0		50000	0		0		0		0		0	60	110	40	30	0
-3		1		0		0		50000	0		0		0		0		0	140	60	50	40	0
-4		1		0		0		50000	0		0		0		0		0	140	60	40	30	25
-5		1		0		0		50000	0		0		0		0		0	100	50	40	60	0
-6		1		0		0		50000	0		0		0		0		0	120	60	50	30	0
+0		400		0		30000	30000000	0		0		0		0		0	70	40	40	50	0
+1		400		0		30000	30000000	0		0		0		0		0	120	50	50	20	0
+2		400		0		30000	30000000	0		0		0		0		0	60	110	40	30	0
+3		400		0		30000	30000000	0		0		0		0		0	140	60	50	40	0
+4		400		0		30000	30000000	0		0		0		0		0	140	60	40	30	25
+5		400		0		30000	30000000	0		0		0		0		0	100	50	40	60	0
+6		400		0		30000	30000000	0		0		0		0		0	120	60	50	30	0
 end

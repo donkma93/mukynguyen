@@ -1,0 +1,157 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Selupan"				1000000			0				1				0					0				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0           26         0          4          1       1      1           0           0        100      //[Cấp9] Hỏa Long Kiếm	
+0           27         0          4          1       1      1           0           0        100      //[Cấp9] Ngọc Bích Kiếm
+0           28         0          4          1       1      1           0           0        100      //[Cấp9] Bá Vương Kiếm
+0           81         0          4          1       1      1           0           0        100      //[Cấp9] Vuốt Huyết Long
+2           17         0          4          1       1      1           0           0        100      //[Cấp9] Lôi Phong Trượng
+4           23         0          4          1       1      1           0           0        100      //[Cấp9] Cung Thiên Vũ
+5           30         0          4          0       1      1           0           0        100      //[Cấp9] Gậy Giác Đấu	
+5           31         0          4          0       1      1           0           0        100      //[Cấp9] Gậy Quỷ Vương	
+5           32         0          4          0       1      1           0           0        100      //[Cấp9] Gậy Chiêm Tinh
+6           17         0          4          1       1      1           0           0        100      //[Cấp9] Khiên Vinh Quang
+6           18         0          4          1       1      1           0           0        100      //[Cấp9] Khiên Giác Đấu
+6           19         0          4          1       1      1           0           0        100      //[Cấp9] Khiên Băng Tinh
+6           20         0          4          1       1      1           0           0        100      //[Cấp9] Khiên Bạch Dương
+
+7           45         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Thần Thoại
+8           45         0          4          0       1      1           0           0        100      //[Cấp9] Áo Thần Thoại
+9           45         0          4          0       1      1           0           0        100      //[Cấp9] Quần Thần Thoại
+10          45         0          4          0       1      1           0           0        100      //[Cấp9] Găng Thần Thoại
+11          45         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Thần Thoại
+
+7           46         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Hoàng Long
+8           46         0          4          0       1      1           0           0        100      //[Cấp9] Áo Hoàng Long
+9           46         0          4          0       1      1           0           0        100      //[Cấp9] Quần Hoàng Long
+10          46         0          4          0       1      1           0           0        100      //[Cấp9] Găng Hoàng Long
+11          46         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Hoàng Long
+
+8           47         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Bóng Ma
+9           47         0          4          0       1      1           0           0        100      //[Cấp9] Áo Bóng Ma
+10          47         0          4          0       1      1           0           0        100      //[Cấp9] Quần Bóng Ma
+11          47         0          4          0       1      1           0           0        100      //[Cấp9] Găng Bóng Ma
+
+8           48         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Hủy Diệt
+9           48         0          4          0       1      1           0           0        100      //[Cấp9] Áo Hủy Diệt
+10          48         0          4          0       1      1           0           0        100      //[Cấp9] Quần Hủy Diệt
+11          48         0          4          0       1      1           0           0        100      //[Cấp9] Găng Hủy Diệt
+
+7           49         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Thiên Vũ
+8           49         0          4          0       1      1           0           0        100      //[Cấp9] Áo Thiên Vũ
+9           49         0          4          0       1      1           0           0        100      //[Cấp9] Quần Thiên Vũ
+10          49         0          4          0       1      1           0           0        100      //[Cấp9] Găng Thiên Vũ
+11          49         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Thiên Vũ
+
+7           50         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Anh Vũ
+8           50         0          4          0       1      1           0           0        100      //[Cấp9] Áo Anh Vũ
+9           50         0          4          0       1      1           0           0        100      //[Cấp9] Quần Anh Vũ
+10          50         0          4          0       1      1           0           0        100      //[Cấp9] Găng Anh Vũ
+11          50         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Anh Vũ
+
+7           51         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Đế Vương
+8           51         0          4          0       1      1           0           0        100      //[Cấp9] Áo Đế Vương
+9           51         0          4          0       1      1           0           0        100      //[Cấp9] Quần Đế Vương
+10          51         0          4          0       1      1           0           0        100      //[Cấp9] Găng Đế Vương
+11          51         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Đế Vương
+
+7           52         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Quỷ Vương
+8           52         0          4          0       1      1           0           0        100      //[Cấp9] Áo Quỷ Vương
+9           52         0          4          0       1      1           0           0        100      //[Cấp9] Quần Quỷ Vương
+10          52         0          4          0       1      1           0           0        100      //[Cấp9] Găng Quỷ Vương
+11          52         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Quỷ Vương
+
+7           53         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Chiêm Tinh
+8           53         0          4          0       1      1           0           0        100      //[Cấp9] Áo Chiêm Tinh
+9           53         0          4          0       1      1           0           0        100      //[Cấp9] Quần Chiêm Tinh
+10          53         0          4          0       1      1           0           0        100      //[Cấp9] Găng Chiêm Tinh
+11          53         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Chiêm Tinh
+
+7           77         0          4          0       1      1           0           0        100      //[Cấp9] Mũ Huyết Long
+8           77         0          4          0       1      1           0           0        100      //[Cấp9] Áo Huyết Long
+9           77         0          4          0       1      1           0           0        100      //[Cấp9] Quần Huyết Long
+11          77         0          4          0       1      1           0           0        100      //[Cấp9] Giầy Huyết Long
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0           26         0          4          1       0      1           0           0        100      //[Cấp9] Hỏa Long Kiếm	
+0           27         0          4          1       0      1           0           0        100      //[Cấp9] Ngọc Bích Kiếm
+0           28         0          4          1       0      1           0           0        100      //[Cấp9] Bá Vương Kiếm
+0           81         0          4          1       0      1           0           0        100      //[Cấp9] Vuốt Huyết Long
+2           17         0          4          1       0      1           0           0        100      //[Cấp9] Lôi Phong Trượng
+4           23         0          4          1       0      1           0           0        100      //[Cấp9] Cung Thiên Vũ
+5           30         0          4          0       0      1           0           0        100      //[Cấp9] Gậy Giác Đấu	
+5           31         0          4          0       0      1           0           0        100      //[Cấp9] Gậy Quỷ Vương	
+5           32         0          4          0       0      1           0           0        100      //[Cấp9] Gậy Chiêm Tinh
+6           17         0          4          1       0      1           0           0        100      //[Cấp9] Khiên Vinh Quang
+6           18         0          4          1       0      1           0           0        100      //[Cấp9] Khiên Giác Đấu
+6           19         0          4          1       0      1           0           0        100      //[Cấp9] Khiên Băng Tinh
+6           20         0          4          1       0      1           0           0        100      //[Cấp9] Khiên Bạch Dương
+
+7           45         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Thần Thoại
+8           45         0          4          0       0      1           0           0        100      //[Cấp9] Áo Thần Thoại
+9           45         0          4          0       0      1           0           0        100      //[Cấp9] Quần Thần Thoại
+10          45         0          4          0       0      1           0           0        100      //[Cấp9] Găng Thần Thoại
+11          45         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Thần Thoại
+
+7           46         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Hoàng Long
+8           46         0          4          0       0      1           0           0        100      //[Cấp9] Áo Hoàng Long
+9           46         0          4          0       0      1           0           0        100      //[Cấp9] Quần Hoàng Long
+10          46         0          4          0       0      1           0           0        100      //[Cấp9] Găng Hoàng Long
+11          46         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Hoàng Long
+
+8           47         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Bóng Ma
+9           47         0          4          0       0      1           0           0        100      //[Cấp9] Áo Bóng Ma
+10          47         0          4          0       0      1           0           0        100      //[Cấp9] Quần Bóng Ma
+11          47         0          4          0       0      1           0           0        100      //[Cấp9] Găng Bóng Ma
+
+8           48         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Hủy Diệt
+9           48         0          4          0       0      1           0           0        100      //[Cấp9] Áo Hủy Diệt
+10          48         0          4          0       0      1           0           0        100      //[Cấp9] Quần Hủy Diệt
+11          48         0          4          0       0      1           0           0        100      //[Cấp9] Găng Hủy Diệt
+
+7           49         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Thiên Vũ
+8           49         0          4          0       0      1           0           0        100      //[Cấp9] Áo Thiên Vũ
+9           49         0          4          0       0      1           0           0        100      //[Cấp9] Quần Thiên Vũ
+10          49         0          4          0       0      1           0           0        100      //[Cấp9] Găng Thiên Vũ
+11          49         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Thiên Vũ
+
+7           50         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Anh Vũ
+8           50         0          4          0       0      1           0           0        100      //[Cấp9] Áo Anh Vũ
+9           50         0          4          0       0      1           0           0        100      //[Cấp9] Quần Anh Vũ
+10          50         0          4          0       0      1           0           0        100      //[Cấp9] Găng Anh Vũ
+11          50         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Anh Vũ
+
+7           51         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Đế Vương
+8           51         0          4          0       0      1           0           0        100      //[Cấp9] Áo Đế Vương
+9           51         0          4          0       0      1           0           0        100      //[Cấp9] Quần Đế Vương
+10          51         0          4          0       0      1           0           0        100      //[Cấp9] Găng Đế Vương
+11          51         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Đế Vương
+
+7           52         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Quỷ Vương
+8           52         0          4          0       0      1           0           0        100      //[Cấp9] Áo Quỷ Vương
+9           52         0          4          0       0      1           0           0        100      //[Cấp9] Quần Quỷ Vương
+10          52         0          4          0       0      1           0           0        100      //[Cấp9] Găng Quỷ Vương
+11          52         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Quỷ Vương
+
+7           53         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Chiêm Tinh
+8           53         0          4          0       0      1           0           0        100      //[Cấp9] Áo Chiêm Tinh
+9           53         0          4          0       0      1           0           0        100      //[Cấp9] Quần Chiêm Tinh
+10          53         0          4          0       0      1           0           0        100      //[Cấp9] Găng Chiêm Tinh
+11          53         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Chiêm Tinh
+
+7           77         0          4          0       0      1           0           0        100      //[Cấp9] Mũ Huyết Long
+8           77         0          4          0       0      1           0           0        100      //[Cấp9] Áo Huyết Long
+9           77         0          4          0       0      1           0           0        100      //[Cấp9] Quần Huyết Long
+11          77         0          4          0       0      1           0           0        100      //[Cấp9] Giầy Huyết Long
+
+end

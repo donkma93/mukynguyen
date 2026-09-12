@@ -1417,6 +1417,7 @@ end
 	487			63			30			225			189			-1				//Vocanus<!--Cruel Blood Assassin-->
 	487			63			30			213			183			-1				//Vocanus<!--Cruel Blood Assassin-->
 	482			63			30			091			012			-1				//Vocanus<!--Resurrected Gladiator-->
+
 end
 
 

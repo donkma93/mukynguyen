@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+//OptionIndex
+//
+//ADD_PHYSI_DAMAGE = 80,
+//ADD_MAGIC_DAMAGE = 81,
+//ADD_DEFENSE_SUCCESS_RATE = 82,                   ;Tỉ Lệ Phòng Thủ
+//ADD_DEFENSE = 83,                                ;Phòng Thủ - Sức Chống Đỡ
+//ADD_CRITICAL_DAMAGE_RATE = 84,                   ;Sát Thương % Chí Mạng
+//ADD_HP_RECOVERY_RATE = 85,                       ;Tự Động Phục Hồi % HP
+//ADD_MONEY_AMOUNT_DROP_RATE = 86,                 ;Tăng Lượng Zen % Rơi 
+//MUL_DEFENSE_SUCCESS_RATE = 87,                   ;Khả Năng % Tránh Đòn
+//ADD_DAMAGE_REFLECT = 88,                         ;Phản Hổi %  Sát Thương
+//ADD_DAMAGE_REDUCTION = 89,                       ;Giảm % Sát Thương
+//MUL_MP = 90,                                     :Gia Tăng Lượng % MP
+//MUL_HP = 91,                                     ;Gia Tăng Lượng % HP
+//ADD_EXCELLENT_DAMAGE_RATE = 92,                  ;Tăng Tỉ Lệ  % Sát Thương Hoàn Hảo
+//ADD_PHYSI_DAMAGE_BY_LEVEL = 93,                  ;Gia Tăng Sức Tấn Công / Cấp Độ
+//MUL_PHYSI_DAMAGE = 94,                           ;Gia Tăng % Sức Sát Thương
+//ADD_MAGIC_DAMAGE_BY_LEVEL = 95,                  ;Gia Tăng Phép Thuật / Cấp Độ
+//MUL_MAGIC_DAMAGE = 96,                           ;Sức Sát Thương % Phép Thuật
+//ADD_SPEED = 97,                                  ;Gia Tăng Tốc Độ Tấn Công
+//ADD_HUNT_HP = 98,                                ;Phục Hồi % Mana Khi Giết Qoái
+//ADD_HUNT_MP = 99,                                ;Phục Hồi % HP Khi Giết Qoái
+//ADD_WING_HP = 100,
+//ADD_WING_MP = 101,                               
+//ADD_IGNORE_DEFENSE_RATE = 102,                   ;Loại Bỏ % Phòng Thủ
+//ADD_BP = 103,
+//MUL_BP = 104,
+//ADD_WING_LEADERSHIP = 105,
+//ADD_FENRIR1 = 106,
+//ADD_FENRIR2 = 107,
+//ADD_FENRIR3 = 108,
+//ADD_FULL_DAMAGE_REFLECT_RATE = 109,
+//ADD_DEFENSIVE_FULL_HP_RESTORE_RATE = 110,
+//ADD_DEFENSIVE_FULL_MP_RESTORE_RATE = 111,
+//ADD_DINORANT1 = 112,
+//ADD_CURSE_DAMAGE = 113,
+//ADD_CURSE_DAMAGE_BY_LEVEL = 114,
+//MUL_CURSE_DAMAGE = 115,
+//ADD_DOUBLE_DAMAGE_RATE = 116,                    ;Tỉ Lệ % Sát Thương X2 
+//ADD_EXPERIENCE_RATE = 117,                       ; Tăng EXP
+//ADD_COMBO_EXPERIENCE_RATE = 118,
+//ADD_HP = 119,                                    ;Máu + 1000
+//ADD_MP = 120,                                    ;Mana + 1000
+//ADD_HP_BY_LEVEL = 121,
+//ADD_MP_BY_LEVEL = 122,
+//ADD_DAMAGE = 123,
+//ADD_DAMAGE_BY_LEVEL = 124,
+//MUL_DAMAGE = 125,
+//ADD_DEFENSE_BY_LEVEL = 126,
+//MUL_DEFENSE = 127,
+//ADD_DMG = 128  								   ; % dame 
+//ADD_TRIPLE_DAMAGE_RATE = 129,                    ;Tỉ Lệ % Sát Thương X3 
+//ADD_RESISTE_DOUBLE_RATE = 130,                   ;Kháng Sát Thương X2 
+//ADD_RESISTE_IGNOREDEFENSE_RATE = 131,            ;Kháng Loại Bỏ PT
+//ADD_RESISTE_IGNORESD_RATE = 132,                 ;Kháng Loại Bỏ SD
+//ADD_RESISTE_CRITICA_DAMEGE_RATE = 133,           ;Kháng ST CHÍ Mạng
+//ADD_RESISTE_EXCELLENT_DAMEGE_RATE = 134,         ;Kháng ST Hoàn Hảo 
+//ADD_RESISTE_STUN_RATE = 135,                     ;Kháng Đóng Băng
+
+//Check Set thì để ItemMinIndex = -1 ItemMaxIndex = ID 1 món bất kỳ trong Set
+//ItemSet = 1 Để Check Khi Mặc Đủ Sét
+//ItemSet = -1 Bất Kì 1 Món Đeo Lên Sẽ Kick Hoạt
+//ItemMinIndex = 0 - 9999 Là MinIdex = 0 Đến 9999 MaxIdex Sẽ Được Kick Hoạt, 9999/9999 Là Chỉ 1 Món Đó Được Kick Hoạt
+//ItemMaxIndex = 9999 Ví dụ
+//ItemLevelMin = Level Thấp Nhất Tùy ý
+//ItemLevelMax = 15 Nếu Để Kick Hoạt Cộng Dồn, Min = 9, Max = 10 Sẽ Không Cộng Dồn,Kick Hoat 1 Dòng
+//ItemExc = 1 Nếu Để Item Hoàn Hảo Mới Kick Hoạt Opt Dòng
+//OptionIndex = Số OptionIndex Bên Trên 
+//OptionValue = Số OptionValue Để Sét Theo Tỉ lệ %
+-->
+	<ItemOptionInfoBEX>	
+	<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!--Bộ Cấp 1-4: ItemExc=-1 de set tan thu +9 (khong can Excellent) van kich hoat HP/PvP khi mac du set -->
+	<List ItemSet="1" ItemMinIndex="4096"	 ItemMaxIndex="4111"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="-1" OptionIndex1="119" OptionValue1="10000" OptionIndex2="83"  OptionValue2="50"  OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4121"	 ItemMaxIndex="4122"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="-1" OptionIndex1="119" OptionValue1="10000" OptionIndex2="83"  OptionValue2="50"  OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4135"	 ItemMaxIndex="4135"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="-1" OptionIndex1="119" OptionValue1="10000" OptionIndex2="83"  OptionValue2="50"  OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="1" ItemMinIndex="4096"	 ItemMaxIndex="4111"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="-1" OptionIndex1="119" OptionValue1="30000" OptionIndex2="83"  OptionValue2="100" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4121"	 ItemMaxIndex="4122"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="-1" OptionIndex1="119" OptionValue1="30000" OptionIndex2="83"  OptionValue2="100" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4135"	 ItemMaxIndex="4135"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="-1" OptionIndex1="119" OptionValue1="30000" OptionIndex2="83"  OptionValue2="100" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="1" ItemMinIndex="4096"	 ItemMaxIndex="4111"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="-1" OptionIndex1="119" OptionValue1="50000" OptionIndex2="83"  OptionValue2="150" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4121"	 ItemMaxIndex="4122"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="-1" OptionIndex1="119" OptionValue1="50000" OptionIndex2="83"  OptionValue2="150" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4135"	 ItemMaxIndex="4135"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="-1" OptionIndex1="119" OptionValue1="50000" OptionIndex2="83"  OptionValue2="150" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="1" ItemMinIndex="4096"	 ItemMaxIndex="4111"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="-1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4121"	 ItemMaxIndex="4122"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="-1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="1" ItemMinIndex="4135"	 ItemMaxIndex="4135"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="-1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<!--====================================================================================================================================================================================================================================-->
+	<!--Bộ Cấp 5-->
+	<List ItemSet="1" ItemMinIndex="4112"	 ItemMaxIndex="4112"  ItemLevelMin="9"   ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="1" ItemMinIndex="4123"	 ItemMaxIndex="4123"  ItemLevelMin="9"   ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="1" ItemMinIndex="4130"	 ItemMaxIndex="4133"  ItemLevelMin="9"   ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="1" ItemMinIndex="4136"	 ItemMaxIndex="4136"  ItemLevelMin="9"   ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="1" ItemMinIndex="4155"	 ItemMaxIndex="4155"  ItemLevelMin="9"   ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="70000" OptionIndex2="83"  OptionValue2="200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+
+	<List ItemSet="1" ItemMinIndex="4112"	 ItemMaxIndex="4112"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="90000" OptionIndex2="83"  OptionValue2="250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4123"	 ItemMaxIndex="4123"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="90000" OptionIndex2="83"  OptionValue2="250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4130"	 ItemMaxIndex="4133"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="90000" OptionIndex2="83"  OptionValue2="250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4136"	 ItemMaxIndex="4136"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="90000" OptionIndex2="83"  OptionValue2="250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4155"	 ItemMaxIndex="4155"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="90000" OptionIndex2="83"  OptionValue2="250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4112"	 ItemMaxIndex="4112"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="100000" OptionIndex2="83"  OptionValue2="300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4123"	 ItemMaxIndex="4123"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="100000" OptionIndex2="83"  OptionValue2="300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4130"	 ItemMaxIndex="4133"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="100000" OptionIndex2="83"  OptionValue2="300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4136"	 ItemMaxIndex="4136"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="100000" OptionIndex2="83"  OptionValue2="300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4155"	 ItemMaxIndex="4155"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="100000" OptionIndex2="83"  OptionValue2="300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4112"	 ItemMaxIndex="4112"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4123"	 ItemMaxIndex="4123"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4130"	 ItemMaxIndex="4133"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4136"	 ItemMaxIndex="4136"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4155"	 ItemMaxIndex="4155"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<!--====================================================================================================================================================================================================================================-->
+	<!--Bộ Cấp 6-->
+	<List ItemSet="1" ItemMinIndex="4113"	 ItemMaxIndex="4116"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4134"	 ItemMaxIndex="4134"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4137"	 ItemMaxIndex="4137"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4156"	 ItemMaxIndex="4156"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="130000" OptionIndex2="83"  OptionValue2="350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4113"	 ItemMaxIndex="4116"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="150000" OptionIndex2="83"  OptionValue2="400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4134"	 ItemMaxIndex="4134"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="150000" OptionIndex2="83"  OptionValue2="400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4137"	 ItemMaxIndex="4137"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="150000" OptionIndex2="83"  OptionValue2="400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4156"	 ItemMaxIndex="4156"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="150000" OptionIndex2="83"  OptionValue2="400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4113"	 ItemMaxIndex="4116"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="450" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4134"	 ItemMaxIndex="4134"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="450" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4137"	 ItemMaxIndex="4137"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="450" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4156"	 ItemMaxIndex="4156"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="450" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4113"	 ItemMaxIndex="4116"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4134"	 ItemMaxIndex="4134"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4137"	 ItemMaxIndex="4137"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4156"	 ItemMaxIndex="4156"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<!--====================================================================================================================================================================================================================================-->
+	<!--Bộ Cấp 7-->
+	<List ItemSet="1" ItemMinIndex="4117"	 ItemMaxIndex="4120"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4124"	 ItemMaxIndex="4124"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4138"	 ItemMaxIndex="4138"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4157"	 ItemMaxIndex="4157"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="190000" OptionIndex2="83"  OptionValue2="500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4117"	 ItemMaxIndex="4120"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="210000" OptionIndex2="83"  OptionValue2="550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4124"	 ItemMaxIndex="4124"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="210000" OptionIndex2="83"  OptionValue2="550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4138"	 ItemMaxIndex="4138"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="210000" OptionIndex2="83"  OptionValue2="550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4157"	 ItemMaxIndex="4157"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="210000" OptionIndex2="83"  OptionValue2="550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4117"	 ItemMaxIndex="4120"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="230000" OptionIndex2="83"  OptionValue2="600" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4124"	 ItemMaxIndex="4124"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="230000" OptionIndex2="83"  OptionValue2="600" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4138"	 ItemMaxIndex="4138"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="230000" OptionIndex2="83"  OptionValue2="600" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4157"	 ItemMaxIndex="4157"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="230000" OptionIndex2="83"  OptionValue2="600" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4117"	 ItemMaxIndex="4120"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4124"	 ItemMaxIndex="4124"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4138"	 ItemMaxIndex="4138"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4157"	 ItemMaxIndex="4157"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<!--====================================================================================================================================================================================================================================-->
+	<!--Bộ Cấp 380-->
+	<List ItemSet="1" ItemMinIndex="4125"	 ItemMaxIndex="4129"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4139"	 ItemMaxIndex="4139"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4169"	 ItemMaxIndex="4169"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="250000" OptionIndex2="83"  OptionValue2="650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4125"	 ItemMaxIndex="4129"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="270000" OptionIndex2="83"  OptionValue2="700" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4139"	 ItemMaxIndex="4139"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="270000" OptionIndex2="83"  OptionValue2="700" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4169"	 ItemMaxIndex="4169"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="270000" OptionIndex2="83"  OptionValue2="700" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4125"	 ItemMaxIndex="4129"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="290000" OptionIndex2="83"  OptionValue2="750" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4139"	 ItemMaxIndex="4139"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="290000" OptionIndex2="83"  OptionValue2="750" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4169"	 ItemMaxIndex="4169"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="290000" OptionIndex2="83"  OptionValue2="750" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="1" ItemMinIndex="4125"	 ItemMaxIndex="4129"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="310000" OptionIndex2="83"  OptionValue2="800" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4139"	 ItemMaxIndex="4139"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="310000" OptionIndex2="83"  OptionValue2="800" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4169"	 ItemMaxIndex="4169"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="310000" OptionIndex2="83"  OptionValue2="800" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<!--====================================================================================================================================================================================================================================-->
+	<!--Bộ Cấp 400-->
+	<List ItemSet="1" ItemMinIndex="4140"	 ItemMaxIndex="4149"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="310000" OptionIndex2="83"  OptionValue2="800" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4173"	 ItemMaxIndex="4173"  ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="119" OptionValue1="310000" OptionIndex2="83"  OptionValue2="800" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4140"	 ItemMaxIndex="4149"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="330000" OptionIndex2="83"  OptionValue2="850" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4173"	 ItemMaxIndex="4173"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="330000" OptionIndex2="83"  OptionValue2="850" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4140"	 ItemMaxIndex="4149"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="350000" OptionIndex2="83"  OptionValue2="900" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4173"	 ItemMaxIndex="4173"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="350000" OptionIndex2="83"  OptionValue2="900" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4140"	 ItemMaxIndex="4149"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="370000" OptionIndex2="83"  OptionValue2="950" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4173"	 ItemMaxIndex="4173"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="370000" OptionIndex2="83"  OptionValue2="950" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+<!--=====================================================================================Sét Custom===============================================================================================================================================-->
+	<List ItemSet="1" ItemMinIndex="4196"	 ItemMaxIndex="4196"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="119" OptionValue1="370000" OptionIndex2="83"  OptionValue2="950" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4196"	 ItemMaxIndex="4196"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="390000" OptionIndex2="83"  OptionValue2="1000" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4196"	 ItemMaxIndex="4196"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="410000" OptionIndex2="83"  OptionValue2="1050" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4196"	 ItemMaxIndex="4196"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="430000" OptionIndex2="83"  OptionValue2="1100" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4197"	 ItemMaxIndex="4197"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="119" OptionValue1="430000" OptionIndex2="83"  OptionValue2="1100" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4197"	 ItemMaxIndex="4197"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="450000" OptionIndex2="83"  OptionValue2="1150" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4197"	 ItemMaxIndex="4197"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="470000" OptionIndex2="83"  OptionValue2="1200" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4197"	 ItemMaxIndex="4197"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="490000" OptionIndex2="83"  OptionValue2="1250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4198"	 ItemMaxIndex="4198"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="119" OptionValue1="490000" OptionIndex2="83"  OptionValue2="1250" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4198"	 ItemMaxIndex="4198"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="510000" OptionIndex2="83"  OptionValue2="1300" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4198"	 ItemMaxIndex="4198"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="530000" OptionIndex2="83"  OptionValue2="1350" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4198"	 ItemMaxIndex="4198"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="550000" OptionIndex2="83"  OptionValue2="1400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4199"	 ItemMaxIndex="4199"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="119" OptionValue1="550000" OptionIndex2="83"  OptionValue2="1400" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4199"	 ItemMaxIndex="4199"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="570000" OptionIndex2="83"  OptionValue2="1450" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4199"	 ItemMaxIndex="4199"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="590000" OptionIndex2="83"  OptionValue2="1500" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4199"	 ItemMaxIndex="4199"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="610000" OptionIndex2="83"  OptionValue2="1550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="1" ItemMinIndex="4200"	 ItemMaxIndex="4200"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="119" OptionValue1="610000" OptionIndex2="83"  OptionValue2="1550" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4200"	 ItemMaxIndex="4200"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="119" OptionValue1="630000" OptionIndex2="83"  OptionValue2="1600" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="1" ItemMinIndex="4200"	 ItemMaxIndex="4200"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="119" OptionValue1="650000" OptionIndex2="83"  OptionValue2="1650" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="1" ItemMinIndex="4200"	 ItemMaxIndex="4200"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="119" OptionValue1="670000" OptionIndex2="83"  OptionValue2="1700" OptionIndex3="89"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+
+
+<!--====================================================================================================================================================================================================================================-->
+	<!--Vũ Khí Cấp 1-7-->
+	<List ItemSet="-1" ItemMinIndex="0"       ItemMaxIndex="18"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="20"      ItemMaxIndex="21"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="24"      ItemMaxIndex="25"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="31"      ItemMaxIndex="34"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="512"     ItemMaxIndex="520"     ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1024"    ItemMaxIndex="1036"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1039"    ItemMaxIndex="1039"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1048"    ItemMaxIndex="1048"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1536"    ItemMaxIndex="1547"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2048"    ItemMaxIndex="2065"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2067"    ItemMaxIndex="2068"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2070"    ItemMaxIndex="2070"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2560"    ItemMaxIndex="2569"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2571"    ItemMaxIndex="2571"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2573"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2578"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2581"    ItemMaxIndex="2583"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2593"    ItemMaxIndex="2594"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="1" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="0"       ItemMaxIndex="18"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="20"      ItemMaxIndex="21"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="24"      ItemMaxIndex="25"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="31"      ItemMaxIndex="34"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="512"     ItemMaxIndex="520"     ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1024"    ItemMaxIndex="1036"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1039"    ItemMaxIndex="1039"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1048"    ItemMaxIndex="1048"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1536"    ItemMaxIndex="1547"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2048"    ItemMaxIndex="2065"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2067"    ItemMaxIndex="2068"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2070"    ItemMaxIndex="2070"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2560"    ItemMaxIndex="2569"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2571"    ItemMaxIndex="2571"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2573"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2578"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2581"    ItemMaxIndex="2583"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2593"    ItemMaxIndex="2594"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="3" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="0"       ItemMaxIndex="18"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="20"      ItemMaxIndex="21"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="24"      ItemMaxIndex="25"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="31"      ItemMaxIndex="34"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="512"     ItemMaxIndex="520"     ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1024"    ItemMaxIndex="1036"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1039"    ItemMaxIndex="1039"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1048"    ItemMaxIndex="1048"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1536"    ItemMaxIndex="1547"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2048"    ItemMaxIndex="2065"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2067"    ItemMaxIndex="2068"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2070"    ItemMaxIndex="2070"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2560"    ItemMaxIndex="2569"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2571"    ItemMaxIndex="2571"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2573"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2578"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2581"    ItemMaxIndex="2583"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2593"    ItemMaxIndex="2594"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="5" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="0"       ItemMaxIndex="18"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="20"      ItemMaxIndex="21"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="24"      ItemMaxIndex="25"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="31"      ItemMaxIndex="34"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="512"     ItemMaxIndex="520"     ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1024"    ItemMaxIndex="1036"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1039"    ItemMaxIndex="1039"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1048"    ItemMaxIndex="1048"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="1536"    ItemMaxIndex="1547"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2048"    ItemMaxIndex="2065"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2067"    ItemMaxIndex="2068"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2070"    ItemMaxIndex="2070"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2560"    ItemMaxIndex="2569"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2571"    ItemMaxIndex="2571"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2573"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2573"    ItemMaxIndex="2578"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2581"    ItemMaxIndex="2583"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="2593"    ItemMaxIndex="2594"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="7" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />  
+
+	<!--Vũ Khí Rồng Cấp 1-->
+	<List ItemSet="-1" ItemMinIndex="19"	  ItemMaxIndex="19"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="60"	  ItemMaxIndex="60"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="47"	  ItemMaxIndex="47"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="1037"    ItemMaxIndex="1037"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2066"    ItemMaxIndex="2066"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2570"    ItemMaxIndex="2570"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2596"    ItemMaxIndex="2596"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="19"	  ItemMaxIndex="19"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="60"	  ItemMaxIndex="60"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="47"	  ItemMaxIndex="47"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1037"    ItemMaxIndex="1037"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2066"    ItemMaxIndex="2066"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2570"    ItemMaxIndex="2570"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2596"    ItemMaxIndex="2596"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="19"	  ItemMaxIndex="19"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="60"	  ItemMaxIndex="60"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="47"	  ItemMaxIndex="47"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1037"    ItemMaxIndex="1037"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2066"    ItemMaxIndex="2066"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2570"    ItemMaxIndex="2570"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2596"    ItemMaxIndex="2596"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="19"	  ItemMaxIndex="19"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="60"	  ItemMaxIndex="60"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="47"	  ItemMaxIndex="47"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1037"    ItemMaxIndex="1037"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2066"    ItemMaxIndex="2066"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2570"    ItemMaxIndex="2570"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2596"    ItemMaxIndex="2596"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<!--Vũ Khí 380-->
+	<List ItemSet="-1" ItemMinIndex="22"	  ItemMaxIndex="22"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="35"	  ItemMaxIndex="35"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="1038"	  ItemMaxIndex="1038"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2069"    ItemMaxIndex="2069"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2572"    ItemMaxIndex="2572"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2579"    ItemMaxIndex="2579"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="22"	  ItemMaxIndex="22"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="35"	  ItemMaxIndex="35"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1038"	  ItemMaxIndex="1038"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2069"    ItemMaxIndex="2069"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2572"    ItemMaxIndex="2572"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2579"    ItemMaxIndex="2579"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="22"	  ItemMaxIndex="22"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="35"	  ItemMaxIndex="35"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1038"	  ItemMaxIndex="1038"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2069"    ItemMaxIndex="2069"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2572"    ItemMaxIndex="2572"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2579"    ItemMaxIndex="2579"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="22"	  ItemMaxIndex="22"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="35"	  ItemMaxIndex="35"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1038"	  ItemMaxIndex="1038"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2069"    ItemMaxIndex="2069"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2572"    ItemMaxIndex="2572"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2579"    ItemMaxIndex="2579"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<!--Vũ Khí Rồng cấp 2
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="10"  ItemLevelMax="10" ItemExc="1" OptionIndex1="128" OptionValue1="11" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="12"  ItemLevelMax="12" ItemExc="1" OptionIndex1="128" OptionValue1="13" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="14"  ItemLevelMax="14" ItemExc="1" OptionIndex1="128" OptionValue1="15" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="51"	  ItemMaxIndex="51"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="61"	  ItemMaxIndex="61"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="86"	  ItemMaxIndex="86"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1049"    ItemMaxIndex="1049"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2078"    ItemMaxIndex="2078"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2609"    ItemMaxIndex="2609"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+-->
+	<!--Vũ Khí 400-->
+	<List ItemSet="-1" ItemMinIndex="26" 	  ItemMaxIndex="28"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="81" 	  ItemMaxIndex="81"      ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="1040" 	  ItemMaxIndex="1042"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2071"    ItemMaxIndex="2072"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2590"    ItemMaxIndex="2592"    ItemLevelMin="9"  ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="10" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="26" 	  ItemMaxIndex="28"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="81" 	  ItemMaxIndex="81"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1040" 	  ItemMaxIndex="1042"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2071"    ItemMaxIndex="2072"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2590"    ItemMaxIndex="2592"    ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="12" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="26" 	  ItemMaxIndex="28"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="81" 	  ItemMaxIndex="81"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1040" 	  ItemMaxIndex="1042"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2071"    ItemMaxIndex="2072"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2590"    ItemMaxIndex="2592"    ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="14" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="26" 	  ItemMaxIndex="28"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="81" 	  ItemMaxIndex="81"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="1040" 	  ItemMaxIndex="1042"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2071"    ItemMaxIndex="2072"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="2590"    ItemMaxIndex="2592"    ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="16" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" /> 
+	<!--Vũ Khí Custom-->
+	<List ItemSet="-1" ItemMinIndex="100"	  ItemMaxIndex="104"      ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="100"	  ItemMaxIndex="104"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="100"	  ItemMaxIndex="104"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="100"	  ItemMaxIndex="104"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="612"	  ItemMaxIndex="616"      ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="612"	  ItemMaxIndex="616"      ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="612"	  ItemMaxIndex="616"      ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="612"	  ItemMaxIndex="616"      ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="1124"	  ItemMaxIndex="1128"     ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="1124"	  ItemMaxIndex="1128"     ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="1124"	  ItemMaxIndex="1128"     ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="1124"	  ItemMaxIndex="1128"     ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="200"	  ItemMaxIndex="204"     ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="200"	  ItemMaxIndex="204"     ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="200"	  ItemMaxIndex="204"     ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="200"	  ItemMaxIndex="204"     ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="2148"	  ItemMaxIndex="2152"     ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2148"	  ItemMaxIndex="2152"     ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2148"	  ItemMaxIndex="2152"     ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2148"	  ItemMaxIndex="2152"     ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="2660"	  ItemMaxIndex="2664"     ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="128" OptionValue1="20" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2660"	  ItemMaxIndex="2664"     ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="25" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2660"	  ItemMaxIndex="2664"     ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="30" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="2660"	  ItemMaxIndex="2664"     ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="35" OptionIndex2="116"  OptionValue2="0" OptionIndex3="84"  OptionValue3="0" OptionIndex4="116"  OptionValue4="0" />    
+<!--====================================================================================================================================================================================================================================-->
+	<!--Khiên All -->
+	<List ItemSet="-1" ItemMinIndex="3072"	 ItemMaxIndex="3093"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="83" OptionValue1="50"  OptionIndex2="119"  OptionValue2="5000"  OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3072"	 ItemMaxIndex="3093"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="83" OptionValue1="100" OptionIndex2="119"  OptionValue2="15000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3072"	 ItemMaxIndex="3093"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="83" OptionValue1="150" OptionIndex2="119"  OptionValue2="25000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3072"	 ItemMaxIndex="3093"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="83" OptionValue1="200" OptionIndex2="119"  OptionValue2="35000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<!--Sách-->
+	<List ItemSet="-1" ItemMinIndex="2581"	 ItemMaxIndex="2583"  ItemLevelMin="9"   ItemLevelMin="9"  ItemExc="1" OptionIndex1="83" OptionValue1="50"  OptionIndex2="119"  OptionValue2="5000"  OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2581"	 ItemMaxIndex="2583"  ItemLevelMin="11"  ItemLevelMin="11" ItemExc="1" OptionIndex1="83" OptionValue1="100" OptionIndex2="119"  OptionValue2="15000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2581"	 ItemMaxIndex="2583"  ItemLevelMin="13"  ItemLevelMin="13" ItemExc="1" OptionIndex1="83" OptionValue1="150" OptionIndex2="119"  OptionValue2="25000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="2581"	 ItemMaxIndex="2583"  ItemLevelMin="15"  ItemLevelMin="15" ItemExc="1" OptionIndex1="83" OptionValue1="200" OptionIndex2="119"  OptionValue2="35000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<!--Khiên Custom -->
+	<List ItemSet="-1" ItemMinIndex="3172"	 ItemMaxIndex="3176"  ItemLevelMin="9"   ItemLevelMax="9"  ItemExc="1" OptionIndex1="83" OptionValue1="1000" OptionIndex2="119"  OptionValue2="40000"  OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3172"	 ItemMaxIndex="3176"  ItemLevelMin="11"  ItemLevelMax="11" ItemExc="1" OptionIndex1="83" OptionValue1="1500" OptionIndex2="119"  OptionValue2="60000"  OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3172"	 ItemMaxIndex="3176"  ItemLevelMin="13"  ItemLevelMax="13" ItemExc="1" OptionIndex1="83" OptionValue1="2000" OptionIndex2="119"  OptionValue2="80000"  OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="3172"	 ItemMaxIndex="3176"  ItemLevelMin="15"  ItemLevelMax="15" ItemExc="1" OptionIndex1="83" OptionValue1="2500" OptionIndex2="119"  OptionValue2="100000" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />   
+
+<!--====================================================================================================================================================================================================================================-->
+	<!--Wing 1-->
+	<List ItemSet="-1" ItemMinIndex="6144"	 ItemMaxIndex="6146" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="1" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="6185"	 ItemMaxIndex="6185" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="1" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="6144"	 ItemMaxIndex="6146" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="2" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6185"	 ItemMaxIndex="6185" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="2" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6144"	 ItemMaxIndex="6146" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="3" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6185"	 ItemMaxIndex="6185" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="3" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6144"	 ItemMaxIndex="6146" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6185"	 ItemMaxIndex="6185" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<!--Wing 2-->
+	<List ItemSet="-1" ItemMinIndex="6147"	 ItemMaxIndex="6150" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="6186"	 ItemMaxIndex="6186" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="6193"	 ItemMaxIndex="6193" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="6686"	 ItemMaxIndex="6686" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="6147"	 ItemMaxIndex="6150" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6186"	 ItemMaxIndex="6186" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6193"	 ItemMaxIndex="6193" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6686"	 ItemMaxIndex="6686" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6147"	 ItemMaxIndex="6150" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6186"	 ItemMaxIndex="6186" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6193"	 ItemMaxIndex="6193" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6686"	 ItemMaxIndex="6686" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6147"	 ItemMaxIndex="6150" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6186"	 ItemMaxIndex="6186" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6193"	 ItemMaxIndex="6193" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6686"	 ItemMaxIndex="6686" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<!--Wing 2.5-->
+	<List ItemSet="-1" ItemMinIndex="6294"	 ItemMaxIndex="6296" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6299"	 ItemMaxIndex="6299" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="4" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="6294"	 ItemMaxIndex="6296" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6299"	 ItemMaxIndex="6299" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="5" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6294"	 ItemMaxIndex="6296" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6299"	 ItemMaxIndex="6299" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="6" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6294"	 ItemMaxIndex="6296" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6299"	 ItemMaxIndex="6299" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+	<!--Wing 3-->
+	<List ItemSet="-1" ItemMinIndex="6180"	 ItemMaxIndex="6184" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6187"	 ItemMaxIndex="6187" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6194"	 ItemMaxIndex="6194" ItemLevelMin="9" ItemLevelMax="9" ItemExc="0" OptionIndex1="128" OptionValue1="7" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="6180"	 ItemMaxIndex="6184" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="8" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6187"	 ItemMaxIndex="6187" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="8" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6194"	 ItemMaxIndex="6194" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="8" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="6180"	 ItemMaxIndex="6184" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="9" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6187"	 ItemMaxIndex="6187" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="9" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6194"	 ItemMaxIndex="6194" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="9" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="6180"	 ItemMaxIndex="6184" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="10" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6187"	 ItemMaxIndex="6187" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="10" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6194"	 ItemMaxIndex="6194" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="10" OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<!--Wing 4-->
+	<List ItemSet="-1" ItemMinIndex="6300"	 ItemMaxIndex="6306" ItemLevelMin="9"  ItemLevelMax="9"  ItemExc="0" OptionIndex1="128" OptionValue1="7"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6300"	 ItemMaxIndex="6306" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="8"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6300"	 ItemMaxIndex="6306" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="9"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+	<List ItemSet="-1" ItemMinIndex="6300"	 ItemMaxIndex="6306" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="10"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+	<!--Wing 5-->
+	<List ItemSet="-1" ItemMinIndex="6297"	 ItemMaxIndex="6298" ItemLevelMin="9"  ItemLevelMax="9"  ItemExc="0" OptionIndex1="128" OptionValue1="7"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6297"	 ItemMaxIndex="6298" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="8"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6297"	 ItemMaxIndex="6298" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="9"  OptionIndex2="119"  OptionValue2="0"  OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+	<List ItemSet="-1" ItemMinIndex="6297"	 ItemMaxIndex="6298" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="10" OptionIndex2="119"  OptionValue2="0"  OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+	<!--Wing Custom-->
+	<List ItemSet="-1" ItemMinIndex="6344"	 ItemMaxIndex="6348" ItemLevelMin="9"  ItemLevelMax="9"  ItemExc="0" OptionIndex1="128" OptionValue1="15"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6344"	 ItemMaxIndex="6348" ItemLevelMin="11" ItemLevelMax="11" ItemExc="0" OptionIndex1="128" OptionValue1="20"  OptionIndex2="119"  OptionValue2="0" OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6344"	 ItemMaxIndex="6348" ItemLevelMin="13" ItemLevelMax="13" ItemExc="0" OptionIndex1="128" OptionValue1="25"  OptionIndex2="119"  OptionValue2="0"  OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+	<List ItemSet="-1" ItemMinIndex="6344"	 ItemMaxIndex="6348" ItemLevelMin="15" ItemLevelMax="15" ItemExc="0" OptionIndex1="128" OptionValue1="30" OptionIndex2="119"  OptionValue2="0"  OptionIndex3="132"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />
+
+<!--====================================================================================================================================================================================================================================-->
+	<!--Ring-->
+	<List ItemSet="-1" ItemMinIndex="6664"	 ItemMaxIndex="6665" ItemLevelMin="9" ItemLevelMax="9" ItemExc="1" OptionIndex1="89" OptionValue1="1" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />    
+	<List ItemSet="-1" ItemMinIndex="6677"	 ItemMaxIndex="6680" ItemLevelMin="9" ItemLevelMax="9" ItemExc="1" OptionIndex1="89" OptionValue1="1" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />    
+
+	<List ItemSet="-1" ItemMinIndex="6664"	 ItemMaxIndex="6665" ItemLevelMin="11" ItemLevelMax="11" ItemExc="1" OptionIndex1="89" OptionValue1="3" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6677"	 ItemMaxIndex="6680" ItemLevelMin="11" ItemLevelMax="11" ItemExc="1" OptionIndex1="89" OptionValue1="3" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6664"	 ItemMaxIndex="6665" ItemLevelMin="13" ItemLevelMax="13" ItemExc="1" OptionIndex1="89" OptionValue1="5" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6677"	 ItemMaxIndex="6680" ItemLevelMin="13" ItemLevelMax="13" ItemExc="1" OptionIndex1="89" OptionValue1="5" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+
+	<List ItemSet="-1" ItemMinIndex="6664"	 ItemMaxIndex="6665" ItemLevelMin="15" ItemLevelMax="15" ItemExc="1" OptionIndex1="89" OptionValue1="7" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+	<List ItemSet="-1" ItemMinIndex="6677"	 ItemMaxIndex="6680" ItemLevelMin="15" ItemLevelMax="15" ItemExc="1" OptionIndex1="89" OptionValue1="7" OptionIndex2="130"  OptionValue2="0" OptionIndex3="134"  OptionValue3="0" OptionIndex4="133"  OptionValue4="0" />  
+<!--====================================================================================================================================================================================================================================-->
+	<!--Pen-->
+	<List ItemSet="-1" ItemMinIndex="6668"	 ItemMaxIndex="6669" ItemLevelMin="9" ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="2"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+	<List ItemSet="-1" ItemMinIndex="6681"	 ItemMaxIndex="6684" ItemLevelMin="9" ItemLevelMax="9" ItemExc="1" OptionIndex1="128" OptionValue1="2"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" />   
+
+	<List ItemSet="-1" ItemMinIndex="6668"	 ItemMaxIndex="6669" ItemLevelMin="11" ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="4"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6681"	 ItemMaxIndex="6684" ItemLevelMin="11" ItemLevelMax="11" ItemExc="1" OptionIndex1="128" OptionValue1="4"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="6668"	 ItemMaxIndex="6669" ItemLevelMin="13" ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="6"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6681"	 ItemMaxIndex="6684" ItemLevelMin="13" ItemLevelMax="13" ItemExc="1" OptionIndex1="128" OptionValue1="6"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+	<List ItemSet="-1" ItemMinIndex="6668"	 ItemMaxIndex="6669" ItemLevelMin="15" ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="8"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+	<List ItemSet="-1" ItemMinIndex="6681"	 ItemMaxIndex="6684" ItemLevelMin="15" ItemLevelMax="15" ItemExc="1" OptionIndex1="128" OptionValue1="8"  OptionIndex2="92"  OptionValue2="0" OptionIndex3="116"  OptionValue3="0" OptionIndex4="129"  OptionValue4="0" /> 
+
+<!--====================================================================================================================================================================================================================================-->
+
+
+	</ItemOptionInfoBEX>

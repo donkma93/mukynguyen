@@ -1,0 +1,20 @@
+// CustomEventTime.txt - names/maps sent to the dashboard from GameServer
+// Index   Event Name                 Map                Gate
+	0				"Blood Castle"			"Devias"			"0"
+	1				"Devil Square"			"Noria"				"1"
+	2				"Chaos Castle"			"Lorencia"			"2"
+	3				"Castle Siege Mini"		"Guild War"			"3"
+	4				"Skeleton King"			"Elbeland"			"4"
+	5				"Dragon King"			"Elbeland"			"5"
+	6				"Blood King"			"Devias"			"6"
+	7				"Phantom"				"Devias"			"7"
+	8				"Anubis"				"Atlans"			"8"
+	9				"Hydra"					"Atlans"			"9"
+	10				"Ox King"				"Aida"				"10"
+	11				"Monkey King"			"Aida"				"11"
+	12				"Hellbeast"				"Raklion"			"12"
+	13				"Fire Lord"				"Raklion"			"13"
+	14				"Dark General"			"Tarkan"			"14"
+	15				"Demon General"			"Tarkan"			"15"
+	16				"Guild Boss"			"Refuge"			"16"
+end

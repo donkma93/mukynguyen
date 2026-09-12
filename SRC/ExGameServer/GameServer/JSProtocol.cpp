@@ -300,7 +300,7 @@ void JGAccountLevelRecv(SDHP_ACCOUNT_LEVEL_RECV* lpMsg)
 	{
 		gObj[lpMsg->index].AccountLevel = lpMsg->AccountLevel;
 		memcpy(gObj[lpMsg->index].AccountExpireDate, lpMsg->AccountExpireDate, sizeof(gObj[lpMsg->index].AccountExpireDate));
-		gNotice.GCNoticeSend(lpMsg->index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage((3 + gObj[lpMsg->index].AccountLevel)), gObj[lpMsg->index].AccountExpireDate);
+		gNotice.GCNoticeSend(lpMsg->index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage((gObj[lpMsg->index].AccountLevel > 0) ? 4 : 3), gObj[lpMsg->index].AccountExpireDate);
 	}
 }
 
@@ -322,7 +322,7 @@ void JGAccountLevelRecv2(SDHP_ACCOUNT_LEVEL_RECV* lpMsg)
 			}
 		}
 
-		gNotice.GCNoticeSend(lpMsg->index, 0, 0, 0, 0, 0, 0, gMessageNew.GetMessage(3 + lpMsg->AccountLevel), lpMsg->AccountExpireDate);
+		gNotice.GCNoticeSend(lpMsg->index, 0, 0, 0, 0, 0, 0, gMessageNew.GetMessage((lpMsg->AccountLevel > 0) ? 4 : 3), lpMsg->AccountExpireDate);
 	}
 }
 

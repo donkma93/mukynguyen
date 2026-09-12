@@ -1,0 +1,83 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=====================File config Drop Item Sever===================
+//=====================Không Biết Config Liên Hệ Người Bán sever Để Được Hỗ Trợ Nhé !
+//=================================================================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Red Chocolate Box"		1000		100				1				0					0				0
+end
+
+1
+//Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
+0			0		3			7			1		1		1		0			0			100		//Chùy Thủ
+0			2		3			7			1		1		1		0			0			100		//Trường Kiếm
+0			4		3			7			1		1		1		0			0			100		//Đao Sát Thủ
+0			3		3			7			1		1		1		0			0			100		//Kiếm Nhật
+0			10		3			7			1		1		1		0			0			100		//Kiếm Ánh Sáng
+0			11		3			7			1		1		1		0			0			100		//Kiếm Ma Thuật
+0			13		3			7			1		1		1		0			0			100		//Hỏa Đao
+1			1		3			7			1		1		1		0			0			100		//Rìu Nhẹ
+1			2		3			7			1		1		1		0			0			100		//Rìu Lưỡi Hái
+1			5		3			7			1		1		1		0			0			100		//Rìu Chiến
+1			6		3			7			1		1		1		0			0			100		//Rìu Lưỡi Bạc
+1			7		3			7			1		1		1		0			0			100		//Rìu Lưỡi Vàng
+2			0		3			7			1		1		1		0			0			100		//Chùy
+2			1		3			7			1		1		1		0			0			100		//Chùy Gai
+2			3		3			7			1		1		1		0			0			100		//Bùa Chiến
+3			7		3			7			1		1		1		0			0			100		//Kích Hai Đầu
+3			4		3			7			1		1		1		0			0			100		//Xà Giáo
+4			8		3			7			1		1		1		0			0			100		//Nỏ
+4			9		3			7			1		1		1		0			0			100		//Nỏ Vàng
+4			11		3			7			1		1		1		0			0			100		//Nỏ Ánh Sáng
+4			4		3			7			1		1		1		0			0			100		//Cung Hổ
+4			12		3			7			1		1		1		0			0			100		//Nỏ Rắn
+5			0		3			7			1		1		1		0			0			100		//Gậy Xương
+5			3		3			7			1		1		1		0			0			100		//Gậy Sét
+6			4		3			7			1		1		1		0			0			100		//Khiên Sắt
+6			1		3			7			1		1		1		0			0			100		//Khiên Sừng
+6			2		3			7			1		1		1		0			0			100		//Khiên Diều
+6			5		3			7			1		1		1		0			0			100		//Khiên Kim Long
+6			8		3			7			1		1		1		0			0			100		//Khiên Trụ
+6			11		3			7			1		1		1		0			0			100		//Khiên Xà
+7			5		3			7			0		1		1		0			0			100		//Mũ Da
+8			5		3			7			0		1		1		0			0			100		//Áo Da
+9			5		3			7			0		1		1		0			0			100		//Quần Da
+10			5		3			7			0		1		1		0			0			100		//Tay Da
+11			5		3			7			0		1		1		0			0			100		//Giày Da
+7			2		3			7			0		1		1		0			0			100		//Mũ Vải Thô
+8			2		3			7			0		1		1		0			0			100		//Áo Vải Thô
+9			2		3			7			0		1		1		0			0			100		//Quần Vải Thô
+10			2		3			7			0		1		1		0			0			100		//Tay Vải Thô
+11			2		3			7			0		1		1		0			0			100		//Giày Vải Thô
+7			0		3			7			0		1		1		0			0			100		//Mũ Đồng
+8			0		3			7			0		1		1		0			0			100		//Áo Đồng
+9			0		3			7			0		1		1		0			0			100		//Quần Đồng
+10			0		3			7			0		1		1		0			0			100		//Tay Đồng
+11			0		3			7			0		1		1		0			0			100		//Giày Đồng
+7			12		3			7			0		1		1		0			0			100		//Mũ Thiên Thanh
+8			12		3			7			0		1		1		0			0			100		//Áo Thiên Thanh
+9			12		3			7			0		1		1		0			0			100		//Quần Thiên Thanh
+10			12		3			7			0		1		1		0			0			100		//Tay Thiên Thanh
+11			12		3			7			0		1		1		0			0			100		//Giày Thiên Thanh
+7			13		3			7			0		1		1		0			0			100		//Mũ Ngọc Bích
+8			13		3			7			0		1		1		0			0			100		//Áo Ngọc Bích
+9			13		3			7			0		1		1		0			0			100		//Quần Ngọc Bích
+10			13		3			7			0		1		1		0			0			100		//Tay Ngọc Bích
+11			13		3			7			0		1		1		0			0			100		//Giày Ngọc Bích
+7			7		3			7			0		1		1		0			0			100		//Mũ Nhân Sư
+8			7		3			7			0		1		1		0			0			100		//Áo Nhân Sư
+9			7		3			7			0		1		1		0			0			100		//Quần Nhân Sư
+10			7		3			7			0		1		1		0			0			100		//Tay Nhân Sư
+11			7		3			7			0		1		1		0			0			100		//Giày Nhân Sư
+13			2		0			0			0		0		0		0			0			100		//Kỳ Lân
+13			8		0			0			0		0		0		0			0			100		//Nhẫn Băng
+13			9		0			0			0		0		0		0			0			100		//Nhẫn Độc
+13			12		0			0			0		0		0		0			0			100		//Dây Chuyền Sét
+13			13		0			0			0		0		0		0			0			100		//Dây Chuyền Lửa
+14			13		0			0			0		0		0		0			0			100		//Ngọc Ước Nguyện
+14			14		0			0			0		0		0		0			0			100		//Ngọc Tâm Linh
+12			15		0			0			0		0		0		0			0			100		//Ngọc Hỗn Nguyên
+end

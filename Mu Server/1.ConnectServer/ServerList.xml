@@ -8,8 +8,10 @@
 	VD: Sub 1 Common Code là 0 Thì Sub 2 Common Code Sẽ Là 1
 -->
 <ServerList>
-	<Server Code="0"  IP="127.0.0.2" Port="55901" Visible="1" Name="Sub-1 (Thường)" />
-	<Server Code="1"  IP="127.0.0.2" Port="55902" Visible="1" Name="Sub-2 (VIP)" />
-	<Server Code="2"  IP="127.0.0.2" Port="55903" Visible="1" Name="Sub-3 (Non-PK)" />
+	<Server Code="0"  IP="127.0.0.2" Port="55901" Visible="1" Name="Server 1 (Boss Events)" />
+	<Server Code="1"  IP="127.0.0.2" Port="55902" Visible="1" Name="Server 2 (Thường)" />
+	<Server Code="2"  IP="127.0.0.2" Port="55903" Visible="1" Name="Server 3 (VIP)" />
+	<Server Code="3"  IP="127.0.0.2" Port="55904" Visible="1" Name="Server 4 (Reset 0-190)" />
+	<Server Code="4"  IP="127.0.0.2" Port="55905" Visible="1" Name="Server 5 (Non-PvP)" />
 	<Server Code="19" IP="127.0.0.2" Port="55919" Visible="0" Name="GameServer_CS" />
 </ServerList>

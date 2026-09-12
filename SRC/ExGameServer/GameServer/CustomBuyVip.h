@@ -6,7 +6,10 @@
 struct BUYPREMIUM_REQ
 {
 	PSBMSG_HEAD h;
-	int	VipType;
+	// The client sends the selected package as a single byte (C1:F3:F0).
+	// Keeping this field as an int made the server read past the packet and
+	// occasionally reject a valid VIP purchase before WCoinC was charged.
+	BYTE	VipType;
 };
 
 struct CUSTOM_BUYVIP_INFO

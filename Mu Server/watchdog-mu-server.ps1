@@ -82,9 +82,11 @@ while ($true) {
     Ensure-Proc 'DataServer'      (Join-Path $base '2.DataServer\DataServer.exe')       (Join-Path $base '2.DataServer')
     Ensure-Proc 'JoinServer'      (Join-Path $base '3.JoinServer\JoinServer.exe')       (Join-Path $base '3.JoinServer')
     Ensure-Proc 'ConnectServer'   (Join-Path $base '1.ConnectServer\ConnectServer.exe') (Join-Path $base '1.ConnectServer')
-    Ensure-GameServerProc 'GameServer (Sub-1 VIP)'    (Join-Path $base '4.Sub-1\GameServer\GameServer.exe') (Join-Path $base '4.Sub-1\GameServer')
-    Ensure-GameServerProc 'GameServer (Sub-2 Thường)' (Join-Path $base '4.Sub-2\GameServer\GameServer.exe') (Join-Path $base '4.Sub-2\GameServer')
-    Ensure-GameServerProc 'GameServer (Sub-3 Non-PK)' (Join-Path $base '4.Sub-3\GameServer\GameServer.exe') (Join-Path $base '4.Sub-3\GameServer')
+    Ensure-GameServerProc 'GameServer (Server 1 Boss Events)'    (Join-Path $base '4.Sub-1\GameServer\GameServer.exe') (Join-Path $base '4.Sub-1\GameServer')
+    Ensure-GameServerProc 'GameServer (Server 2 Thường)' (Join-Path $base '4.Sub-2\GameServer\GameServer.exe') (Join-Path $base '4.Sub-2\GameServer')
+    Ensure-GameServerProc 'GameServer (Server 3 VIP)' (Join-Path $base '4.Sub-3\GameServer\GameServer.exe') (Join-Path $base '4.Sub-3\GameServer')
+    Ensure-GameServerProc 'GameServer (Server 4 Reset 0-190)' (Join-Path $base '4.Sub-4\GameServer\GameServer.exe') (Join-Path $base '4.Sub-4\GameServer')
+    Ensure-GameServerProc 'GameServer (Server 5 Non-PvP)' (Join-Path $base '4.Sub-5\GameServer\GameServer.exe') (Join-Path $base '4.Sub-5\GameServer')
     Ensure-Proc 'StartAntiServer' (Join-Path $base '6.AntiHack\StartAntiServer.exe')    (Join-Path $base '6.AntiHack')
   } catch {
     Write-Log ("Watchdog error: {0}" -f $_.Exception.Message)
@@ -100,7 +102,7 @@ while ($true) {
       (Get-Process StartAntiServer -EA SilentlyContinue)
     ) | Where-Object { $_ }
     $totalProcs = $other.Count + $gsCount
-    Write-Log ("Heartbeat OK procs={0}/7 (GS={1}/3)" -f $totalProcs, $gsCount)
+    Write-Log ("Heartbeat OK procs={0}/9 (GS={1}/5)" -f $totalProcs, $gsCount)
   }
   Start-Sleep -Seconds 8
 }

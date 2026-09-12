@@ -151,6 +151,7 @@ export default function CharactersPanel() {
           rHonHoan: Number(form.rHonHoan),
           rNewVip: Number(form.rNewVip),
           rHuyChuong: Number(form.rHuyChuong),
+          resetPointBonusApplied: Number(form.resetCount) > (selected.resetCount ?? 0),
         }),
       });
       const data = await res.json().catch(() => ({}));
@@ -194,6 +195,21 @@ export default function CharactersPanel() {
         />
       </div>
     );
+  }
+
+  function updateResetCount(value: string) {
+    const resetCount = Number(value);
+    const currentReset = selected?.resetCount ?? 0;
+    const bonus = Number.isFinite(resetCount)
+      ? Math.max(0, Math.trunc(resetCount) - currentReset) * 300
+      : 0;
+    const basePoints = selected?.levelUpPoint ?? 0;
+
+    setForm((f) => ({
+      ...f,
+      resetCount: value,
+      levelUpPoint: String(basePoints + bonus),
+    }));
   }
 
   const classOptions = (() => {
@@ -300,8 +316,22 @@ export default function CharactersPanel() {
             <h3 className="mb-2 text-sm font-semibold text-mu-gold">Chỉ số & tiến độ</h3>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {field("cLevel", "Level", { min: 1, max: 400 })}
-              {field("levelUpPoint", "Điểm cộng còn lại", { min: 0 })}
-              {field("resetCount", "Reset", { min: 0 })}
+              {field("levelUpPoint", "Điểm cộng còn lại (+300 mỗi Reset tăng)", { min: 0 })}
+              <div>
+                <label className="label" htmlFor="resetCount">
+                  Reset
+                </label>
+                <input
+                  id="resetCount"
+                  className="input"
+                  type="number"
+                  value={form.resetCount}
+                  min={0}
+                  max={200}
+                  onChange={(e) => updateResetCount(e.target.value)}
+                  required
+                />
+              </div>
               {field("masterResetCount", "Master Reset", { min: 0 })}
               {field("money", "Zen (Money)", { min: 0 })}
               {field("strength", "Strength", { min: 0, max: 65000 })}

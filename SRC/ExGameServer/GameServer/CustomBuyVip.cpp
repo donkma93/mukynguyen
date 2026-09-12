@@ -127,12 +127,6 @@ void CCustomBuyVip::BuyVip(int aIndex, BUYPREMIUM_REQ* lpMsg)
 		return;
 	}
 
-	if (lpMsg->VipType < lpObj->AccountLevel)
-	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(559));
-		return;
-	}
-
 	lpObj->BuyVip = lpMsg->VipType;
 	gCashShop.CGCashShopPointRecv(lpObj->Index);
 }
@@ -149,13 +143,13 @@ void CCustomBuyVip::BuyVipDone(LPOBJ lpObj)
 		return;
 	}
 
-	if (lpObj->BuyVip < lpObj->AccountLevel)
+	CUSTOM_BUYVIP_INFO* VipInfo = this->GetInfo(lpObj->BuyVip - 1);
+
+	if (VipInfo == 0)
 	{
-		gNotice.GCNoticeSend(lpObj->Index, 1, 0, 0, 0, 0, 0, gMessageNew.GetMessage(559));
+		lpObj->BuyVip = 0;
 		return;
 	}
-
-	CUSTOM_BUYVIP_INFO* VipInfo = this->GetInfo(lpObj->BuyVip - 1);
 
 	if (lpObj->ThisCoin[0] < VipInfo->Coin1 || lpObj->ThisCoin[1] < VipInfo->Coin2 || lpObj->ThisCoin[2] < VipInfo->Coin3)
 	{
@@ -168,7 +162,7 @@ void CCustomBuyVip::BuyVipDone(LPOBJ lpObj)
 
 	GDSetCoinSend(lpObj->Index, -(VipInfo->Coin1), -(VipInfo->Coin2), -(VipInfo->Coin3), 0, 0, "BuyVip");
 
-	GJAccountLevelSaveSend(lpObj->Index, lpObj->BuyVip, VipInfo->Days * 86400);
+	GJAccountLevelSaveSend(lpObj->Index, 1, VipInfo->Days * 86400);
 	GJAccountLevelSend(lpObj->Index);
 
 	gCashShop.CGCashShopPointRecv(lpObj->Index);

@@ -1,0 +1,35 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+0
+// NHÓM	INDEX	SỐLƯỢNG	  WCOINC
+	12	 15        0	  30000 
+end
+
+1
+//===================================================================================
+// ItemType	ItemIndex	Level	Skill   Luck	Option  Exc   Time	   Rate
+//===================================================================================
+	13		52			  0		  0		 0		  0		 0 	 	0	    100        //Linh Hồn Condor
+	13		53			  0		  0		 0		  0		 0 	 	0	    100       //Lông Vũ Condor
+	14		249	 		  0		  0		 0		  0		 0 	 	0	    100       //Ngọc Socket
+	14		55	 		  0		  0		 0		  0		 0 	 	0	    100       //Hộp Chaos Xanh
+	14		56	 		  0		  0		 0		  0		 0 	 	0	    100       //Hộp Chaos Đỏ
+	14		57	 		  0		  0		 0		  0		 0 	 	0	    100        //Hộp Chaos Tím
+	13		52			  0		  0		 0		  0		 0 	 	0	    100       //Linh Hồn Condor
+	13		53			  0		  0		 0		  0		 0 	 	0	    100        //Lông Vũ Condor
+	14		249	 		  0		  0		 0		  0		 0 	 	0	    100       //Ngọc Socket
+	14		55	 		  0		  0		 0		  0		 0 	 	0	    100       //Hộp Chaos Xanh
+	14		56	 		  0	  	  0		 0		  0		 0 	 	0	    100       //Hộp Chaos Đỏ
+	14		57	 		  0		  0		 0		  0		 0 	 	0	    100       //Hộp Chaos Tím
+
+end

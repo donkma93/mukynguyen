@@ -12,7 +12,7 @@ end
 
 1
 //Section   Type   MinLevel   MaxLevel   Skill   Luck   Option   Excellent   SetOption	    Tỉ Lệ	NameItem
-//14          11       12             0          0       0       0        0           0        100     //Hộp Kundun 5
+14          11       12             0          0       0       0        0           0        100     //Hộp Kundun 5
 
 12			15		0		   0		  0		  0		 0		  0			    0		 100	  //Ngọc Hỗn Nguyên
 14			13		0		   0		  0		  0		 0		  0			    0		 50		  //Ngọc Ước Nguyện

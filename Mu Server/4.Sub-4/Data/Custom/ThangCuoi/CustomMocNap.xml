@@ -1,0 +1,183 @@
+<!--//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Bật /Tắt
+	Firework		- Hiệu ứng pháo hoa khi nâng cấp
+	Notice			- Bật, tắt thông báo
+	
+	SizeBMD : kích cỡ hiển thị ở Client, nếu Item to thì giảm số này để thu nhỏ lại
+	Count : số lượng item
+	IndexItem,LvItem,Skill,Luck,Opt,Exc,Anc : Option Item
+	HSD : 0 là vĩnh viễn > 0 là số phút sử dụng (tính từ lúc nhận)
+	SKX,SKBonus : SocketOpt
+	DW,DK,ELF,DL,MG,SUM,RF = 1 thì class đó sẽ được nhận Item này
+-->
+<CustomMocNap Enable="0" Firework="1" Notice="3">
+	
+	<MessageInfo>
+		<Message Index="0" Text="[Mốc Nạp]Chức năng không được kích hoạt!!" />
+		<Message Index="1" Text="[Mốc Nạp]Không có thông tin Mốc Nạp" />
+		<Message Index="2" Text="Bạn cần nhận thưởng Mốc (%d) trước !!" />
+		<Message Index="3" Text="Bạn cần nạp nhiều hơn [%s] để nhận Mốc Nạp này!" />
+		<Message Index="4" Text="Bạn đã nhận thưởng mốc nạp này rồi!" />
+		<Message Index="5" Text="Chúc mừng [%s] vừa nhận thưởng mốc %s" />
+		<Message Index="6" Text="Hãy sắp xếp lại thùng đồ cá nhân !" />
+	</MessageInfo>	
+
+	<ConfigMocNap>
+		
+		<MocNap GiaTriNap="100000">
+			<CoinNhan WC="100000" WP="2111111" GP="3333223" Ruud="1123340" CoinAtm="95553349"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="2"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="32" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="33" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="34" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="35" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="36" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="200000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="300000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>	
+		
+		<MocNap GiaTriNap="400000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="500000">
+			<CoinNhan WC="100000" WP="2111111" GP="3333223" Ruud="1123340" CoinAtm="95553349"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="2"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="32" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="33" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="34" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="35" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="36" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="600000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="700000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>	
+		
+		<MocNap GiaTriNap="800000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="900000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1000000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1100000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1200000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1300000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="1400000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1500000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		<MocNap GiaTriNap="1600000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+		
+		<MocNap GiaTriNap="1700000">
+			<CoinNhan WC="1" WP="2" GP="3" Ruud="0" CoinAtm="99"/>
+			<ItemNhan>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12"  ItemID="30" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+				<Item SizeBMD="0.8"  Count="1"  ItemType="12" ItemID="31" LvItem="1"  Dur="255" Skill="0" Luck="1" Opt="7" Exc="63" Anc="0" SK1="255" SK2="255" SK3="255" SK4="255" SK5="255" SKBonus="0" HSD="0" DW="1" DK="1" ELF="1" MG="1" DL="1" SUM="1" RF="1"/>
+			</ItemNhan>
+		</MocNap>
+	</ConfigMocNap>
+	
+</CustomMocNap>
+

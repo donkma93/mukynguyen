@@ -1,0 +1,29 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//Group	Index	Level	Dur		Skill	Luck	Option	ExcOpt	Anc		JoH		Oex		Socket1	Socket2	Socket3	Socket4	Socket5	ItemName
+12		130		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+12		131		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+12		132		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+12		133		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+12		134		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+12		135		0		0		0		0		0		0		0		0		0		255		255		255		255		255		//Wing Mini
+
+12		36		0		0		1		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Cánh Cuồng Phong
+12		37		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Cánh Thiên Sứ
+12		38		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Cánh Ngũ Sắc
+12		39		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Cánh Lôi Vũ
+12		40		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Áo Choàng Đế Vương
+12		43		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Cánh Phượng Hoàng
+12		50		0		0		0		1		7		63		0		0		0		255		255		255		255		255		//Đồ Hoàn Hảo Áo Choàng Uy Quyền
+
+end

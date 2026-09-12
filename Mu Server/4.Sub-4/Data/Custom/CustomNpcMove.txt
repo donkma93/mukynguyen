@@ -1,0 +1,16 @@
+//=================================================================================================================
+//					FACEBOOK: https://www.facebook.com/mukynguyen/
+//					Zalo + SĐT : BQT MU KỶ NGUYÊN
+//					Name : MU KỶ NGUYÊN
+//=======Cung Cấp Sever Mu Online========
+//-Phiên Bản
+//+DLL Clasic Cutsom Có Đủ
+//+5.2 FPS 120 Siêu Mượt
+//======Hỗ Trợ=========
+//+Config Sever Theo Ý Muốn
+//+Dịch Vụ VPS Hosting Tên Miền Antihack
+//=================================================================================================================
+//Index   Npc	NpcMap	NpcX	NpcY	MoveMap	MoveX	MoveY	MinLevel	MaxLevel	MinReset	MaxReset	MinMReset	MaxMReset	AccountLevel	PKMove	Comment
+//0         501	0	126	143	2	222	62	50		*		*		*		*		*		0		1	//Move To Devias Teste
+//1         502	0	128	143	2	222	62	50		*		*		*		*		*		0		1	//Move To Devias Teste
+end

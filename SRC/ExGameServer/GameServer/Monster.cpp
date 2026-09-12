@@ -48,6 +48,7 @@
 #include "ExWinQuestSystem.h"
 #include "ZzzToolKit.h"
 #include "ACuoi_CastleEvent.h"
+#include "ExperienceTable.h"
 #include "ACuoi_MonsterSkill.h"
 
 CMonter gMonter;
@@ -528,7 +529,7 @@ void gObjMonsterDieGiveItem(LPOBJ lpObj,LPOBJ lpTarget)
 
 		GDCreateItemSend(lpTarget->Index,lpObj->Map,(BYTE)lpObj->X,(BYTE)lpObj->Y,ItemIndex,ItemLevel,0,ItemOption1,ItemOption2,ItemOption3,lpTarget->Index,ItemNewOption,ItemSetOption,0,0,ItemSocketOption,0xFF,0);
 	}
-	else if(lpObj->Money > 0 && (GetLargeRand()%((lpObj->MoneyRate==0)?1:lpObj->MoneyRate)) < 10)
+	else if((lpObj->Money > 0 || gServerInfo.m_MoneyValue[lpTarget->AccountLevel] > 0) && (GetLargeRand()%((lpObj->MoneyRate==0)?1:lpObj->MoneyRate)) < 10)
 	{
 		int money = ((__int64)lpObj->Money*gServerInfo.m_MoneyAmountDropRate[lpTarget->AccountLevel])/100;
 
@@ -538,6 +539,7 @@ void gObjMonsterDieGiveItem(LPOBJ lpObj,LPOBJ lpTarget)
 		}
 
 		money = ((__int64)money*lpTarget->MoneyAmountDropRate)/100;
+		money = ((__int64)money*gExperienceTable.GetMoneyDropRate(lpTarget))/100;
 
 		money = ((money>0)?money:1);	
 
@@ -674,6 +676,7 @@ bool gObjSetMonster(int aIndex,int MonsterClass)
 	lpObj->AttackType = lpInfo->AttackType;
 	lpObj->ItemRate = lpInfo->ItemRate;
 	lpObj->MoneyRate = lpInfo->MoneyRate;
+	lpObj->Money = ((lpInfo->Level > 0) ? lpInfo->Level : 1);
 	lpObj->Resistance[0] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[0]);
 	lpObj->Resistance[1] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[1]);
 	lpObj->Resistance[2] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[2]);
@@ -3215,6 +3218,7 @@ bool gObjSetBots(int aIndex,int MonsterClass)
 	lpObj->AttackType = lpInfo->AttackType;
 	lpObj->ItemRate = lpInfo->ItemRate;
 	lpObj->MoneyRate = lpInfo->MoneyRate;
+	lpObj->Money = ((lpInfo->Level > 0) ? lpInfo->Level : 1);
 	lpObj->Resistance[0] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[0]);
 	lpObj->Resistance[1] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[1]);
 	lpObj->Resistance[2] = ((lpInfo->Resistance[0]>255)?255:lpInfo->Resistance[2]);

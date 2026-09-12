@@ -14,9 +14,11 @@ $serverDefs = @(
   @{ Name = 'DataServer';         Exe = (Join-Path $base '2.DataServer\DataServer.exe') },
   @{ Name = 'JoinServer';         Exe = (Join-Path $base '3.JoinServer\JoinServer.exe') },
   @{ Name = 'ConnectServer';      Exe = (Join-Path $base '1.ConnectServer\ConnectServer.exe') },
-  @{ Name = 'Sub-1 (VIP)';        Exe = (Join-Path $base '4.Sub-1\GameServer\GameServer.exe') },
-  @{ Name = 'Sub-2 (Thường)';     Exe = (Join-Path $base '4.Sub-2\GameServer\GameServer.exe') },
-  @{ Name = 'Sub-3 (Non-PK)';     Exe = (Join-Path $base '4.Sub-3\GameServer\GameServer.exe') },
+  @{ Name = 'Server 1 (Boss Events)'; Exe = (Join-Path $base '4.Sub-1\GameServer\GameServer.exe') },
+  @{ Name = 'Server 2 (Thường)';     Exe = (Join-Path $base '4.Sub-2\GameServer\GameServer.exe') },
+  @{ Name = 'Server 3 (VIP)';        Exe = (Join-Path $base '4.Sub-3\GameServer\GameServer.exe') },
+  @{ Name = 'Server 4 (Reset 0-190)'; Exe = (Join-Path $base '4.Sub-4\GameServer\GameServer.exe') },
+  @{ Name = 'Server 5 (Non-PvP)';    Exe = (Join-Path $base '4.Sub-5\GameServer\GameServer.exe') },
   @{ Name = 'StartAntiServer';    Exe = (Join-Path $base '6.AntiHack\StartAntiServer.exe') }
 )
 
