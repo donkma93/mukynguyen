@@ -143,7 +143,7 @@ bool CNewUISystem::Create()
 		return false;
 
 	m_pNewOptionWindow = new CNewUIOptionWindow;
-	if (m_pNewOptionWindow->Create(m_pNewUIMng, (640 - 270) / 2, (430 - 266) / 2) == false)
+	if (m_pNewOptionWindow->Create(m_pNewUIMng, (640 - 270) / 2, 0) == false)
 	{
 		return false;
 	}

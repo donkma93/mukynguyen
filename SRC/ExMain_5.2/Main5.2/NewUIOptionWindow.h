@@ -98,6 +98,7 @@ namespace SEASON3B
 		int m_iRenderLevel;		
 		bool m_bRenderAllEffects;
 		int m_iFontLevel;
+		int m_iPendingResolution;
 	};
 	
 }

@@ -13,6 +13,45 @@ bool m_AutoCtrl = false;
 bool m_MiniMapOn = true;
 float MaxWVolume = 86.8f;
 
+namespace
+{
+	const int OPTION_WINDOW_WIDTH = 270;
+	const int OPTION_WINDOW_HEIGHT = 430;
+	const int RESOLUTION_COUNT = 11;
+
+	struct DisplayResolution
+	{
+		int width;
+		int height;
+	};
+
+	const DisplayResolution g_DisplayResolutions[RESOLUTION_COUNT] =
+	{
+		{ 640, 480 }, { 800, 600 }, { 1024, 768 }, { 1280, 720 },
+		{ 1366, 768 }, { 1440, 810 }, { 1600, 900 }, { 1680, 1050 },
+		{ 1920, 1080 }, { 2560, 1440 }, { 3440, 1440 },
+	};
+
+	int GetResolutionIndex(int resolution)
+	{
+		return (resolution >= 0 && resolution < RESOLUTION_COUNT) ? resolution : 2;
+	}
+
+	void SaveResolution(int resolution)
+	{
+		HKEY hKey = NULL;
+		DWORD disposition = 0;
+		if (RegCreateKeyExA(HKEY_CURRENT_USER, "SOFTWARE\\Webzen\\Mu\\Config", 0, NULL,
+			REG_OPTION_NON_VOLATILE, KEY_SET_VALUE, NULL, &hKey, &disposition) == ERROR_SUCCESS)
+		{
+			const DWORD value = (DWORD)resolution;
+			RegSetValueExA(hKey, "Resolution", 0, REG_DWORD, (const BYTE*)&value, sizeof(value));
+			RegCloseKey(hKey);
+		}
+	}
+
+}
+
 SEASON3B::CNewUIOptionWindow::CNewUIOptionWindow()
 {
 	m_pNewUIMng = NULL;
@@ -26,6 +65,7 @@ SEASON3B::CNewUIOptionWindow::CNewUIOptionWindow()
 	m_iRenderLevel = 4;
 	m_bRenderAllEffects = true;
 	m_iFontLevel = 0;
+	m_iPendingResolution = 2;
 	m_bFpsWingMotion = false;
 	m_bWidowsSD = false;
 }
@@ -66,6 +106,7 @@ void SEASON3B::CNewUIOptionWindow::ReadValueString()
 
 	m_bFpsWingMotion = (GetPrivateProfileIntA("FontConfig", "FpsWingMotion", 0, "./ACuoi.ini") != 0);
 	m_bWidowsSD = (GetPrivateProfileIntA("FontConfig", "WindowsSD", 0, "./ACuoi.ini") != 0);
+	m_iPendingResolution = GetResolutionIndex(m_Resolution);
 
 }
 void SEASON3B::CNewUIOptionWindow::SetButtonInfo()
@@ -115,23 +156,8 @@ void ChangeFontSize(BYTE a)
 		g_ConsoleDebug->Write(MCD_NORMAL, "Resolution: %d / FontHeight:%d Screen: %dx%d WideRate X:%.2f / WideRate Y:%.2f", m_Resolution, FontHeight, WindowWidth, WindowHeight, gPosWide.x_fScreenRate_x, gPosWide.x_fScreenRate_y);
 }
 
-void ChangeSize(int W, int H, float S, BYTE Resolution)
-{
-	WindowWidth = W;
-	WindowHeight = H;
-	m_Resolution = Resolution;
-	gPosWide.SetupPosScreen(S);
-	SetWindowPos(g_hWnd, 0, 0, 0, W, H, 0x116u);
-}
-
 bool SEASON3B::CNewUIOptionWindow::UpdateMouseEvent()
 {
-	//if(m_BtnSet[0].UpdateMouseEvent() == true)
-	//{
-	//	ChangeSize(1024, 576, 1.20f, 2);
-	//	return false;
-	//}
-
 	if (SEASON3B::IsRelease(VK_LBUTTON) && CheckMouseIn(m_Pos.x + 248, m_Pos.y + 5, 16, 16))
 	{
 		g_pNewUIMenuOption->Hide(SEASON3B::INTERFACE_OPTION);
@@ -252,10 +278,23 @@ bool SEASON3B::CNewUIOptionWindow::UpdateMouseEvent()
 	{
 		m_bWidowsSD = !m_bWidowsSD;
 		WritePrivateProfileStringA("FontConfig", "WindowsSD", m_bWidowsSD ? "1" : "0", "./Config.ini");
-		//SetWindowPos(g_hWnd, 0, 0, 0, 1024, 768, 0x116u);
+	}
+
+	for (int index = 0; index < RESOLUTION_COUNT; ++index)
+	{
+		const int column = index % 3;
+		const int row = index / 3;
+		const int buttonX = m_Pos.x + 25 + column * 75;
+		const int buttonY = m_Pos.y + 269 + row * 23;
+		if (SEASON3B::IsRelease(VK_LBUTTON) && CheckMouseIn(buttonX, buttonY, 70, 18))
+		{
+			m_iPendingResolution = index;
+			SaveResolution(m_iPendingResolution);
+			return false;
+		}
 	}
 		
-	if (CheckMouseIn(m_Pos.x, m_Pos.y, 270, 269) == true)
+	if (CheckMouseIn(m_Pos.x, m_Pos.y, OPTION_WINDOW_WIDTH, OPTION_WINDOW_HEIGHT) == true)
 	{
 		return false;
 	}
@@ -349,16 +388,17 @@ void SEASON3B::CNewUIOptionWindow::UnloadImages()
 
 void SEASON3B::CNewUIOptionWindow::RenderFrame()
 {
-	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_BACK, m_Pos.x + 1, m_Pos.y + 5, 268.f, 259.f);
-	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_TOP, m_Pos.x, m_Pos.y, 270.f, 64.f);
-	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_LEFT, m_Pos.x, m_Pos.y + 64.f, 21.f, 156.f);
-	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_RIGHT, m_Pos.x + 249, m_Pos.y + 64.f, 21.f, 156.f);
-	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_BOTTOM, m_Pos.x, m_Pos.y + 220.f, 270.f, 45.f);
+	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_BACK, m_Pos.x + 1, m_Pos.y + 5, 268.f, OPTION_WINDOW_HEIGHT - 6.f);
+	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_TOP, m_Pos.x, m_Pos.y, OPTION_WINDOW_WIDTH, 64.f);
+	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_LEFT, m_Pos.x, m_Pos.y + 64.f, 21.f, OPTION_WINDOW_HEIGHT - 109.f);
+	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_RIGHT, m_Pos.x + 249, m_Pos.y + 64.f, 21.f, OPTION_WINDOW_HEIGHT - 109.f);
+	RenderImage(CNewUIJewelBank::IMAGE_BASE_WINDOW_BOTTOM, m_Pos.x, m_Pos.y + OPTION_WINDOW_HEIGHT - 45.f, OPTION_WINDOW_WIDTH, 45.f);
 
 	for (int x = 0; x < MAXOPTIONNER; x++)
 	{
 		RenderImage(IMAGE_OPTION_LINE, m_Pos.x + 21, m_Pos.y + 60 + ( x * 22), 143, 2.f);
 	}
+	RenderImage(IMAGE_OPTION_LINE, m_Pos.x + 21, m_Pos.y + 247, 228, 2.f);
 }
 
 void SEASON3B::CNewUIOptionWindow::RenderContents()
@@ -369,6 +409,7 @@ void SEASON3B::CNewUIOptionWindow::RenderContents()
 	}
 
 	RenderImage(IMAGE_OPTION_POINT, m_Pos.x + 20.f, m_Pos.y + 179, 10.f, 10.f);
+	RenderImage(IMAGE_OPTION_POINT, m_Pos.x + 20.f, m_Pos.y + 252, 10.f, 10.f);
 
 	g_pRenderText->SetFont(g_hFont);
 	g_pRenderText->SetTextColor(255, 255, 255, 255);
@@ -382,6 +423,7 @@ void SEASON3B::CNewUIOptionWindow::RenderContents()
 	g_pRenderText->RenderText(m_Pos.x + 40, m_Pos.y + 157, GlobalText[3767]);
 
 	g_pRenderText->RenderText(m_Pos.x + 40, m_Pos.y + 179, GlobalText[3768]);
+	g_pRenderText->RenderText(m_Pos.x + 40, m_Pos.y + 252, "DO PHAN GIAI (MO LAI)");
 
 	if (m_bWidowsSD)
 	{
@@ -468,6 +510,30 @@ void SEASON3B::CNewUIOptionWindow::RenderButtons()
 	}
 	else {
 		RenderImage(IMAGE_OPTION_BTN_CHECK, m_Pos.x + 170, m_Pos.y + 70, 15, 15, 0, 15.f);
+	}
+
+	for (int index = 0; index < RESOLUTION_COUNT; ++index)
+	{
+		const int column = index % 3;
+		const int row = index / 3;
+		const int buttonX = m_Pos.x + 25 + column * 75;
+		const int buttonY = m_Pos.y + 269 + row * 23;
+		const DisplayResolution& resolution = g_DisplayResolutions[index];
+		char resolutionText[32];
+		sprintf_s(resolutionText, sizeof(resolutionText), "%dx%d", resolution.width, resolution.height);
+
+		RenderImage(IMAGE_OPTION_VOLUME_BACK, buttonX, buttonY, 70.f, 18.f);
+		if (index == m_iPendingResolution)
+		{
+			glColor3f(1.0f, 0.70f, 0.0f);
+			RenderImage(IMAGE_OPTION_VOLUME_COLOR, buttonX, buttonY, 70.f, 18.f);
+			glColor3f(1.0f, 1.0f, 1.0f);
+		}
+
+		g_pRenderText->SetFont(g_hFont);
+		g_pRenderText->SetTextColor(index == m_iPendingResolution ? 255 : 235, index == m_iPendingResolution ? 240 : 235, 150, 255);
+		g_pRenderText->SetBgColor(0);
+		g_pRenderText->RenderText(buttonX, buttonY + 3, resolutionText, 70, 0, RT3_SORT_CENTER);
 	}
 }
 

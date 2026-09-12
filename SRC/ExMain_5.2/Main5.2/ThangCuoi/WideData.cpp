@@ -16,42 +16,23 @@ void GetPosWide::SetupPosScreen(float a)
 
 void mPosScreen(int ACuoi)
 {
-	bool FirstLoad = (GetPrivateProfileIntA("FontConfig", "WindowsSD", 0, "./Config.ini") != 0);
-	if (FirstLoad)
+	// The UI is authored in a 640x480 virtual space.  Keep a uniform scale based
+	// on the selected height so the game can use common 4:3, 16:9, 16:10 and
+	// ultrawide display modes without stretching its controls.
+	switch (ACuoi)
 	{
-		switch (ACuoi)
-		{
-			case 0:		WindowWidth = 1024;	WindowHeight = 576;		IsScaleWideX = 1.20f;	break;
-			case 1:		WindowWidth = 1024;	WindowHeight = 576;		IsScaleWideX = 1.20f;	break;
-			case 2:		WindowWidth = 1024;	WindowHeight = 576;		IsScaleWideX = 1.20f;	break;
-			case 3:		WindowWidth = 1280;	WindowHeight = 720;		IsScaleWideX = 1.50f;	break;
-			case 4:		WindowWidth = 1366;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
-			case 5:		WindowWidth = 1440;	WindowHeight = 810;		IsScaleWideX = 1.69f;	break;
-			case 6:		WindowWidth = 1600;	WindowHeight = 900;		IsScaleWideX = 1.87f;	break;
-			case 7:		WindowWidth = 1800;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 8:		WindowWidth = 1920;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 9:		WindowWidth = 2100;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 10:	WindowWidth = 2560;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			default:	WindowWidth = 1024;	WindowHeight = 576;		IsScaleWideX = 1.20f;	break;
-		}
-	}
-	else
-	{
-		switch (ACuoi)
-		{
-			case 0:		WindowWidth = 640;	WindowHeight = 480;		IsScaleWideX = 1.20f;	break;
-			case 1:		WindowWidth = 800;	WindowHeight = 600;		IsScaleWideX = 1.25f;	break;
-			case 2:		WindowWidth = 1024;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
-			case 3:		WindowWidth = 1280;	WindowHeight = 720;		IsScaleWideX = 1.50f;	break;
-			case 4:		WindowWidth = 1366;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
-			case 5:		WindowWidth = 1440;	WindowHeight = 810;		IsScaleWideX = 1.69f;	break;
-			case 6:		WindowWidth = 1600;	WindowHeight = 900;		IsScaleWideX = 1.87f;	break;
-			case 7:		WindowWidth = 1800;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 8:		WindowWidth = 1920;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 9:		WindowWidth = 2100;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			case 10:	WindowWidth = 2560;	WindowHeight = 1012;	IsScaleWideX = 2.10f;	break;
-			default:	WindowWidth = 1024;	WindowHeight = 768;		IsScaleWideX = 1.20f;	break;
-		}
+		case 0:		WindowWidth = 640;	WindowHeight = 480;		IsScaleWideX = 1.00f;	break;
+		case 1:		WindowWidth = 800;	WindowHeight = 600;		IsScaleWideX = 1.25f;	break;
+		case 2:		WindowWidth = 1024;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
+		case 3:		WindowWidth = 1280;	WindowHeight = 720;		IsScaleWideX = 1.50f;	break;
+		case 4:		WindowWidth = 1366;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
+		case 5:		WindowWidth = 1440;	WindowHeight = 810;		IsScaleWideX = 1.6875f;	break;
+		case 6:		WindowWidth = 1600;	WindowHeight = 900;		IsScaleWideX = 1.875f;	break;
+		case 7:		WindowWidth = 1680;	WindowHeight = 1050;	IsScaleWideX = 2.1875f;	break;
+		case 8:		WindowWidth = 1920;	WindowHeight = 1080;	IsScaleWideX = 2.25f;	break;
+		case 9:		WindowWidth = 2560;	WindowHeight = 1440;	IsScaleWideX = 3.00f;	break;
+		case 10:	WindowWidth = 3440;	WindowHeight = 1440;	IsScaleWideX = 3.00f;	break;
+		default:	WindowWidth = 1024;	WindowHeight = 768;		IsScaleWideX = 1.60f;	break;
 	}
 
 	if (ACuoi >= 0)

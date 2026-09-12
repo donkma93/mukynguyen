@@ -803,77 +803,26 @@ void SEASON3B::CNewUIMainFrameWindow::RenderExperience()
 		fExp = 0.f;
 	}
 
-	float fExpBarNum = 0.f;
-	if (fExp > 0.f && fNeedExp > 0)
+	float fProgress = 0.f;
+	if (fExp > 0.f && fNeedExp > 0.f)
 	{
-		fExpBarNum = (fExp / fNeedExp) * 10.f;
+		fProgress = fExp / fNeedExp;
 	}
 
-	float fProgress = fExpBarNum;
-	fProgress = fProgress - (int)fProgress;
-
-	if (m_bExpEffect == true)
+	if (fProgress < 0.f)
 	{
-		float fPreProgress = 0.f;
-		fExp = m_dwPreExp - dwPriorExperience;
-		if (m_dwPreExp < dwPriorExperience)
-		{
-			width = fProgress * iWidth; height = 4.f;
-			RenderBitmap(IMAGE_GAUGE_EXBAR, x, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
-			glColor4f(1.f, 1.f, 1.f, 0.4f);
-			RenderColor(x, y, width, height);
-			EndRenderColor();
-		}
-		else
-		{
-			int iPreExpBarNum = 0;
-			int iExpBarNum = 0;
-			if (fExp > 0.f && fNeedExp > 0.f)
-			{
-				fPreProgress = (fExp / fNeedExp) * 10.f;
-				iPreExpBarNum = (int)fPreProgress;
-				fPreProgress = fPreProgress - (int)fPreProgress;
-			}
-
-			iExpBarNum = (int)fExpBarNum;
-
-			if (iExpBarNum > iPreExpBarNum)
-			{
-				width = fProgress * iWidth; height = 4.f;
-				RenderBitmap(IMAGE_GAUGE_EXBAR, x, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
-				glColor4f(1.f, 1.f, 1.f, 0.4f);
-				RenderColor(x, y, width, height);
-				EndRenderColor();
-			}
-			else
-			{
-				float fGapProgress = 0.f;
-				fGapProgress = fProgress - fPreProgress;
-				width = fPreProgress * iWidth; height = 4.f;
-
-				RenderBitmap(IMAGE_GAUGE_EXBAR, x, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
-
-				float sx = x + width;
-				width = fGapProgress * iWidth;
-				RenderBitmap(IMAGE_GAUGE_EXBAR, sx, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
-				glColor4f(1.f, 1.f, 1.f, 0.4f);
-				RenderColor(sx, y, width, height);
-				EndRenderColor();
-			}
-		}
+		fProgress = 0.f;
 	}
-	else
+	else if (fProgress > 1.f)
 	{
-		width = fProgress * iWidth; height = 4.f;
-		RenderBitmap(IMAGE_GAUGE_EXBAR, x, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
+		fProgress = 1.f;
 	}
 
-	int iExp = (int)fExpBarNum;
-	#if Ex700
-	SEASON3B::RenderNumber(x + 542.7f, y - 3.5f, (iExp > 10) ? 0 : iExp, 0.88f);
-#else
-SEASON3B::RenderNumber(x + 633.f, y - 4.f, iExp);
-#endif
+	width = fProgress * iWidth; height = 4.f;
+	RenderBitmap(IMAGE_GAUGE_EXBAR, x, y, width, height, 0.f, 0.f, 6.f / 8.f, 4.f / 4.f);
+
+	const __int64 currentLevelExperience = (dwExperience > dwPriorExperience) ? (dwExperience - dwPriorExperience) : 0;
+	const __int64 requiredLevelExperience = (dwNexExperience > dwPriorExperience) ? (dwNexExperience - dwPriorExperience) : 0;
 	width = iWidth; height = 4.f;
 
 	if (SEASON3B::CheckMouseIn(x, y, width, height) == true)
@@ -891,6 +840,15 @@ SEASON3B::RenderNumber(x + 633.f, y - 4.f, iExp);
 
 	RenderBitmap(IMAGE_GAUGE_BTN_12, X, Y, W, H - 1.1f, 0.0, 0.0, 0.9129598141, 0.8629598618, 0, 0, 0.0);
 
+	// Draw the value inside the main EXP frame.  The old position was only a few
+	// pixels above the bottom edge, where the frame can cover it at some resolutions.
+	char expText[96];
+	sprintf_s(expText, sizeof(expText), "EXP: %I64d / %I64d", currentLevelExperience, requiredLevelExperience);
+	g_pRenderText->SetFont(g_hFont);
+	g_pRenderText->SetTextColor(255, 230, 110, 255);
+	g_pRenderText->SetBgColor(0, 0, 0, 190);
+	g_pRenderText->RenderText((int)x, (int)y - 25, expText, (int)iWidth, 0, RT3_SORT_CENTER);
+
 	int percent = 0;
 
 	if (dwNexExperience > dwPriorExperience) 
@@ -903,6 +861,8 @@ SEASON3B::RenderNumber(x + 633.f, y - 4.f, iExp);
 	if (percent > 100) percent = 100;
 
 	SEASON3B::RenderNumber(x - 17, y - 2, percent, 0.75);
+	#else
+	SEASON3B::RenderNumber(x + 633.f, y - 4.f, (int)(fProgress * 10.f));
 	#endif
 }
 

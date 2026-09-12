@@ -1019,10 +1019,10 @@ BOOL OpenInitFile()
 		}
 		dwSize = sizeof(int);
 		if (RegQueryValueEx(hKey, "Resolution", 0, NULL, (LPBYTE)&m_Resolution, &dwSize) != ERROR_SUCCESS)
-			m_Resolution = 1;
+			m_Resolution = 2;
 
-		if (0 == m_Resolution)
-			m_Resolution = 1;
+		if (m_Resolution < 0 || m_Resolution > 10)
+			m_Resolution = 2;
 
 		if (RegQueryValueEx(hKey, "ColorDepth", 0, NULL, (LPBYTE)&m_nColorDepth, &dwSize) != ERROR_SUCCESS)
 		{
