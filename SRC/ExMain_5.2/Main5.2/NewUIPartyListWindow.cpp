@@ -79,8 +79,9 @@ void CNewUIPartyListWindow::Release()
 
 void CNewUIPartyListWindow::SetPos(int x, int y)
 {
-	//m_Pos.x = x + gPosWide.x_GetAddPos + 90;
-	m_Pos.x = x + 200;
+	// x is already expressed in the virtual screen coordinate system.
+	// Adding 200 here pushed the party list beyond the right edge after Show().
+	m_Pos.x = x;
 	m_Pos.y = y;
 
 	for (int i = 0; i < MAX_PARTYS; i++)
@@ -186,6 +187,17 @@ bool CNewUIPartyListWindow::UpdateKeyEvent()
 
 bool CNewUIPartyListWindow::Update()
 {
+	// A party is created by the server, but the legacy client only requested the
+	// member list while it was already visible.  Request at a controlled cadence
+	// so a newly formed party can become visible without opening the P window.
+	static DWORD s_dwLastPartyListRequest = 0;
+	const DWORD now = GetTickCount();
+	if (s_dwLastPartyListRequest == 0 || now - s_dwLastPartyListRequest >= 750)
+	{
+		SendRequestPartyList();
+		s_dwLastPartyListRequest = now;
+	}
+
 	if (PartyNumber <= 0)
 	{
 		m_bActive = false;
@@ -210,7 +222,6 @@ bool CNewUIPartyListWindow::Render()
 	if (!m_bActive)
 		return true;
 
-	SendRequestPartyList();
 	EnableAlphaTest();
 	glColor4f(1.f, 1.f, 1.f, 1.f);
 

@@ -36,6 +36,13 @@ void CSocketConnection::OnClientDisconnect(std::shared_ptr<olc::net::connection<
 
 		gObj[Index].Socket = INVALID_SOCKET;
 
+		// An offline personal shop intentionally disconnects the client while
+		// keeping the character active in the world for its configured duration.
+		if(gObj[Index].PShopCustomOffline != 0)
+		{
+			return;
+		}
+
 		gObjDel(Index);
 	}
 }
@@ -65,13 +72,6 @@ void CSocketConnection::ProtocolSend(uint16_t aIndex, olc::net::message<Protocol
 void CSocketConnection::DisconnectClient(uint16_t aIndex)
 {
 	DisconnectClientByIndex(aIndex);
-
-	if(OBJECT_USER_RANGE(aIndex) != 0)
-	{
-		gObj[aIndex].Socket = INVALID_SOCKET;
-
-		gObjDel(aIndex);
-	}
 }
 
 #endif

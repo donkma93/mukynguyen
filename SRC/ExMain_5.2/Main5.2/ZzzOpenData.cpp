@@ -4941,8 +4941,118 @@ void OpenMacro(char* FileName)
 	fclose(fp);
 }
 
+void SaveLocalSkillHotKeys()
+{
+	if (CharacterAttribute->Name[0] == '\0')
+	{
+		return;
+	}
+
+	CreateDirectory("Data\\Custom", NULL);
+	CreateDirectory("Data\\Custom\\ThangCuoi", NULL);
+	CreateDirectory("Data\\Custom\\ThangCuoi\\SkillHotKeys", NULL);
+
+	char fileName[MAX_PATH] = { 0 };
+	sprintf_s(fileName, "Data\\Custom\\ThangCuoi\\SkillHotKeys\\%s.bin", CharacterAttribute->Name);
+
+	FILE* file = fopen(fileName, "wb");
+	if (file == NULL)
+	{
+		return;
+	}
+
+	const DWORD signature = 0x4B48534B; // SKHK
+	const BYTE version = 1;
+	fwrite(&signature, sizeof(signature), 1, file);
+	fwrite(&version, sizeof(version), 1, file);
+
+	for (int i = 0; i < 10; ++i)
+	{
+		WORD skill = 0xFFFF;
+		const int skillIndex = g_pMainFrame->GetSkillHotKey(i);
+		if (skillIndex >= 0 && skillIndex < MAX_SKILLS && CharacterAttribute->Skill[skillIndex] != 0)
+		{
+			skill = CharacterAttribute->Skill[skillIndex];
+		}
+		fwrite(&skill, sizeof(skill), 1, file);
+	}
+
+	fclose(file);
+}
+
+bool RestoreLocalSkillHotKeys()
+{
+	if (CharacterAttribute->Name[0] == '\0')
+	{
+		return false;
+	}
+
+	char fileName[MAX_PATH] = { 0 };
+	sprintf_s(fileName, "Data\\Custom\\ThangCuoi\\SkillHotKeys\\%s.bin", CharacterAttribute->Name);
+
+	FILE* file = fopen(fileName, "rb");
+	if (file == NULL)
+	{
+		return false;
+	}
+
+	DWORD signature = 0;
+	BYTE version = 0;
+	WORD savedSkills[10] = { 0 };
+	const bool valid =
+		fread(&signature, sizeof(signature), 1, file) == 1 &&
+		fread(&version, sizeof(version), 1, file) == 1 &&
+		fread(savedSkills, sizeof(WORD), 10, file) == 10 &&
+		signature == 0x4B48534B && version == 1;
+	fclose(file);
+
+	if (valid == false)
+	{
+		return false;
+	}
+
+	bool hasSavedSkill = false;
+	int matchedSkills = 0;
+	int skillIndices[10];
+	for (int i = 0; i < 10; ++i)
+	{
+		skillIndices[i] = -1;
+		if (savedSkills[i] == 0xFFFF)
+		{
+			continue;
+		}
+
+		hasSavedSkill = true;
+		for (int j = 0; j < MAX_SKILLS; ++j)
+		{
+			if (CharacterAttribute->Skill[j] == savedSkills[i])
+			{
+				skillIndices[i] = j;
+				++matchedSkills;
+				break;
+			}
+		}
+	}
+
+	if (hasSavedSkill && matchedSkills == 0)
+	{
+		return false;
+	}
+
+	g_pMainFrame->ResetSkillHotKey();
+	for (int i = 0; i < 10; ++i)
+	{
+		if (skillIndices[i] != -1)
+		{
+			g_pMainFrame->SetSkillHotKey(i, skillIndices[i]);
+		}
+	}
+
+	return true;
+}
 void SaveOptions()
 {
+	SaveLocalSkillHotKeys();
 	// 0 ~ 19 skill hotkey
 	BYTE options[50] = { 0x00, };
 

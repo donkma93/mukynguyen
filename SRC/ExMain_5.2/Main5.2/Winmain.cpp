@@ -446,6 +446,8 @@ int g_iInactiveTime = 0;
 int g_iNoMouseTime = 0;
 int g_iInactiveWarning = 0;
 bool g_bWndActive = false;
+DWORD g_dwActivePlaySeconds = 0;
+bool g_bHealthWarningReached = false;
 bool HangulDelete = false;
 int Hangul = 0;
 bool g_bEnterPressed = false;
@@ -529,9 +531,19 @@ LONG FAR PASCAL WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 					g_pSlideHelpMgr->CreateSlideText();
 			}
 			break;
+		case PLAYTIME_HEALTH_TIMER:
+			if (g_bHealthWarningReached == false && g_bWndActive)
+			{
+				g_dwActivePlaySeconds++;
+				if (g_dwActivePlaySeconds >= (180 * 60))
+				{
+					g_bHealthWarningReached = true;
+					KillTimer(g_hWnd, PLAYTIME_HEALTH_TIMER);
+				}
+			}
+			break;
 		}
-		break;
-	case WM_USER_MEMORYHACK:
+		break;	case WM_USER_MEMORYHACK:
 		//SetTimer( g_hWnd, WINDOWMINIMIZED_TIMER, 1*1000, NULL);
 		KillGLWindow();
 		break;
@@ -1387,6 +1399,7 @@ int __stdcall APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PST
 	}
 	SetTimer(g_hWnd, HACK_TIMER, 20 * 1000, NULL);
 	SetTimer(g_hWnd, MUHELPER_TIMER, 250 /* ms */, MUHelper::CMuHelper::TimerProc);
+	SetTimer(g_hWnd, PLAYTIME_HEALTH_TIMER, 1000, NULL);
 	srand((unsigned)time(NULL));
 	for (int i = 0; i < 100; i++)
 		RandomTable[i] = rand() % 360;

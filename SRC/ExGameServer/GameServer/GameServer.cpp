@@ -460,6 +460,19 @@ LRESULT CALLBACK WndProc(HWND hWnd,UINT message,WPARAM wParam,LPARAM lParam)
 			case WM_TIMER_1000:
 				GJServerUserInfoSend();
 				ConnectServerInfoSend();
+				// Bot Online needs both database connections before it can create
+				// player objects.  The previous implementation only did this from
+				// the GameServer menu, so configured market bots disappeared after
+				// every server restart.
+				{
+					static bool botOnlineStarted = false;
+					if (botOnlineStarted == false && gJoinServerConnection.CheckState() != 0 && gDataServerConnection.CheckState() != 0)
+					{
+						BotOnline.Read(gPath.GetFullPath("Custom\\BotSystem\\BotOnline.txt"));
+						BotOnline.MakeBot();
+						botOnlineStarted = true;
+					}
+				}
 				break;
 			case WM_TIMER_2000:
 				gObjCountProc();
@@ -1184,4 +1197,3 @@ LRESULT CALLBACK Users(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 
 	return 0;
 }
-

@@ -23,6 +23,10 @@ void OpenItemTextures();
 
 void OpenSkillHotKey(char *File);
 void SaveOptions();
+
+void SaveLocalSkillHotKeys();
+
+bool RestoreLocalSkillHotKeys();
 void SaveMacro(char *FileName);
 void OpenMacro(char *FileName);
 

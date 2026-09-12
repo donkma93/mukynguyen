@@ -1833,6 +1833,58 @@ void MoveMainScene()
 	g_ConsoleDebug->UpdateMainScene();
 }
 
+extern DWORD g_dwActivePlaySeconds;
+extern bool g_bHealthWarningReached;
+
+static void RenderPlaytimeHealthWarning()
+{
+	static bool warningImageLoadAttempted = false;
+	static bool warningImageLoaded = false;
+	const int warningImage = BITMAP_INTERFACE_TEXTURE_END - 1;
+	if (g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_CHARACTER)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_INVENTORY)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_INVENTORY_EXT)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_PARTY)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_FRIEND)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_GUILDINFO)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MYQUEST)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_NPCQUEST)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_TRADE)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_STORAGE)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_STORAGE_EXT)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_NPCSHOP)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MIXINVENTORY)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MYSHOP_INVENTORY)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_PURCHASESHOP_INVENTORY)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_INGAMESHOP)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MUHELPER)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MUHELPER_EXT)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MUHELPER_SKILL_LIST)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_JEWELBANK)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_MASTER_LEVEL)
+		|| g_pNewUISystem->IsVisible(SEASON3B::INTERFACE_COMMAND))
+	{
+		return;
+	}
+	if (warningImageLoadAttempted == false)
+	{
+		warningImageLoaded = LoadBitmap("Custom\\ThangCuoi\\HealthWarning\\logo18.tga", warningImage, GL_LINEAR, GL_CLAMP_TO_EDGE);
+		warningImageLoadAttempted = true;
+	}
+	if (warningImageLoaded == false)
+	{
+		return;
+	}
+
+	const float panelWidth = 140.f;
+	const float panelHeight = 71.f;
+	const float panelX = (float)GetWindowsX() - panelWidth - 8.f;
+	const float panelY = 92.f;
+
+	EnableAlphaTest();
+	glColor4f(1.f, 1.f, 1.f, 1.f);
+	RenderBitmap(warningImage, panelX, panelY, panelWidth, panelHeight, 0.f, 0.f, 1.f, 1.f);
+}
 bool RenderMainScene()
 {
 	if (EnableMainRender == false)
@@ -2053,6 +2105,7 @@ bool RenderMainScene()
 	BeginBitmap();
 	g_pReconnect->ReconnectMainProc();
 	RenderInfomation();
+	RenderPlaytimeHealthWarning();
 
 #ifdef ENABLE_EDIT
 	RenderDebugWindow();

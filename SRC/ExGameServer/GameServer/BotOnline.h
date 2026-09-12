@@ -2,12 +2,22 @@
 #include "stdafx.h"
 
 #define MAX_BOTONLINE	100
+#define MAX_BOTONLINE_MARKET_ITEMS	24
 
 struct BotOnlineBodyItems
 {
 	int num;
 	int level;
 	int opt;
+	bool Enabled;
+};
+
+struct BotOnlineMarketItem
+{
+	int num;
+	int level;
+	int opt;
+	int price;
 	bool Enabled;
 };
 
@@ -23,6 +33,8 @@ struct BotOnlineStruct
 	BYTE Dir;
 	bool Enabled;
 	BotOnlineBodyItems body[9];
+	char ShopTitle[36];
+	BotOnlineMarketItem market[MAX_BOTONLINE_MARKET_ITEMS];
 	BYTE ItemCount;
 };
 

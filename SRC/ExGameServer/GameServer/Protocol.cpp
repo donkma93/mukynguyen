@@ -5096,7 +5096,10 @@ void RecvGetInfoChar(int aIndex, XULY_CGPACKET_VIEWITEM* lpMsg)
 
 	int bIndex = lpMsg->ThaoTac;
 
-	if (!OBJECT_USER_RANGE(bIndex))
+	// Market bots are created in the summon object range, not the normal
+	// player range.  Treat them as valid view-item targets so Alt + right
+	// click can show their equipped items just like a real character.
+	if (OBJECT_RANGE(bIndex) == 0 || (gObj[bIndex].Type != OBJECT_USER && gObj[bIndex].Type != OBJECT_BOTS) || gObj[bIndex].Connected != OBJECT_ONLINE)
 	{
 		return;
 	}

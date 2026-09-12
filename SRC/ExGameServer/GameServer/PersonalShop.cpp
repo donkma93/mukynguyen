@@ -505,6 +505,7 @@ void CPersonalShop::CGPShopBuyItemRecv(PMSG_PSHOP_BUY_ITEM_RECV* lpMsg, int aInd
 		return;
 	}
 	LPOBJ lpTarget = &gObj[bIndex];
+	const bool isMarketBot = (lpTarget->IsBot == 6);
 
 	if (lpTarget->PShopOpen == 0)
 	{
@@ -559,7 +560,7 @@ void CPersonalShop::CGPShopBuyItemRecv(PMSG_PSHOP_BUY_ITEM_RECV* lpMsg, int aInd
 		return;
 	}
 
-	if (gObjCheckMaxMoney(bIndex, lpTarget->Inventory[lpMsg->slot].m_PShopValue) == 0)
+	if (isMarketBot == false && gObjCheckMaxMoney(bIndex, lpTarget->Inventory[lpMsg->slot].m_PShopValue) == 0)
 	{
 		this->GCPShopBuyItemSend(aIndex, bIndex, 0, 8);
 		return;
@@ -595,29 +596,32 @@ void CPersonalShop::CGPShopBuyItemRecv(PMSG_PSHOP_BUY_ITEM_RECV* lpMsg, int aInd
 
 	GDCharacterInfoSaveSend(aIndex);
 
-	lpTarget->Money += lpTarget->Inventory[lpMsg->slot].m_PShopValue;
-	GCMoneySend(bIndex, lpTarget->Money);
-
-	this->GCPShopSellItemSend(bIndex, aIndex, lpMsg->slot);
-
-	gItemManager.InventoryDelItem(bIndex, lpMsg->slot);
-	gItemManager.GCItemDeleteSend(bIndex, lpMsg->slot, 1);
-
-	GDCharacterInfoSaveSend(bIndex);
-
-	if (this->CheckPersonalShop(bIndex) == 0)
+	if (isMarketBot == false)
 	{
-		lpTarget->PShopItemChange = 1;
-	}
-	else
-	{
-		lpTarget->PShopOpen = 0;
-		memset(lpTarget->PShopText, 0, sizeof(lpTarget->PShopText));
-		this->GCPShopCloseSend(bIndex, 1);
+		lpTarget->Money += lpTarget->Inventory[lpMsg->slot].m_PShopValue;
+		GCMoneySend(bIndex, lpTarget->Money);
+
+		this->GCPShopSellItemSend(bIndex, aIndex, lpMsg->slot);
+
+		gItemManager.InventoryDelItem(bIndex, lpMsg->slot);
+		gItemManager.GCItemDeleteSend(bIndex, lpMsg->slot, 1);
+
+		GDCharacterInfoSaveSend(bIndex);
+
+		if (this->CheckPersonalShop(bIndex) == 0)
+		{
+			lpTarget->PShopItemChange = 1;
+		}
+		else
+		{
+			lpTarget->PShopOpen = 0;
+			memset(lpTarget->PShopText, 0, sizeof(lpTarget->PShopText));
+			this->GCPShopCloseSend(bIndex, 1);
 
 #if CUSTOM_STORE
-		gCustomStore.OnPShopClose(lpTarget);
+			gCustomStore.OnPShopClose(lpTarget);
 #endif
+		}
 	}
 
 	lpTarget->PShopTransaction = 0;
@@ -781,7 +785,7 @@ void CPersonalShop::GCPShopViewportSend(int aIndex)
 			continue;
 		}
 
-		if(lpObj->VpPlayer[n].type != OBJECT_USER)
+		if(lpObj->VpPlayer[n].type != OBJECT_USER && lpObj->VpPlayer[n].type != OBJECT_BOTS)
 		{
 			continue;
 		}

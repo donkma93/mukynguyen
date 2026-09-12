@@ -5,6 +5,7 @@
 #include "readscript.h"
 #include "Util.h"
 #include "ItemManager.h"
+#include "PersonalShop.h"
 #include "Monster.h"
 #include "ObjectManager.h"
 #include "MuunSystem.h"
@@ -25,12 +26,19 @@ void ObjBotOnline::Read(char * FilePath)
 		}
 	}
 
+	memset(this->bot, 0, sizeof(this->bot));
+
 	for (int i = 0; i < MAX_BOTONLINE; i++)
 	{
 		this->bot[i].index = -1;
-		this->bot[i].ItemCount = 0;
 		for (int j = 0; j < 9; j++)
+		{
 			this->bot[i].body[j].num = -1;
+		}
+		for (int j = 0; j < MAX_BOTONLINE_MARKET_ITEMS; j++)
+		{
+			this->bot[i].market[j].num = -1;
+		}
 	}
 
 	int Token;
@@ -83,6 +91,7 @@ void ObjBotOnline::Read(char * FilePath)
 
 				Token = GetToken();
 				this->bot[BotNum].Dir = TokenNumber;
+				this->bot[BotNum].Enabled = true;
 
 			}
 		}
@@ -129,6 +138,72 @@ void ObjBotOnline::Read(char * FilePath)
 				Token = GetToken();
 				this->bot[BotNum].body[Slot].opt = TokenNumber;
 
+			}
+		}
+
+		// Optional market sections.  They keep Bot Online data-driven while
+		// allowing selected bots to become persistent personal-shop merchants.
+		iType = GetToken();
+		iType = TokenNumber;
+		if (iType == 3)
+		{
+			while (true)
+			{
+				Token = GetToken();
+				if (strcmp("end", TokenString) == 0)
+				{
+					break;
+				}
+
+				int BotNum = TokenNumber;
+				if (BotNum < 0 || BotNum > MAX_BOTONLINE - 1 || this->bot[BotNum].Enabled == false)
+				{
+					ErrorMessageBox("BotOnline market title error: BotIndex:%d doesn't exist", BotNum);
+					return;
+				}
+
+				Token = GetToken();
+				strncpy(this->bot[BotNum].ShopTitle, TokenString, sizeof(this->bot[BotNum].ShopTitle) - 1);
+			}
+		}
+
+		iType = GetToken();
+		iType = TokenNumber;
+		if (iType == 4)
+		{
+			while (true)
+			{
+				Token = GetToken();
+				if (strcmp("end", TokenString) == 0)
+				{
+					break;
+				}
+
+				int BotNum = TokenNumber;
+				if (BotNum < 0 || BotNum > MAX_BOTONLINE - 1 || this->bot[BotNum].Enabled == false)
+				{
+					ErrorMessageBox("BotOnline market item error: BotIndex:%d doesn't exist", BotNum);
+					return;
+				}
+				if (this->bot[BotNum].ItemCount >= MAX_BOTONLINE_MARKET_ITEMS)
+				{
+					ErrorMessageBox("BotOnline market item error: BotIndex:%d exceeds %d items", BotNum, MAX_BOTONLINE_MARKET_ITEMS);
+					return;
+				}
+
+				int ItemSlot = this->bot[BotNum].ItemCount++;
+				Token = GetToken();
+				int ItemType = TokenNumber;
+				Token = GetToken();
+				int ItemIndex = TokenNumber;
+				this->bot[BotNum].market[ItemSlot].num = GET_ITEM(ItemType, ItemIndex);
+				Token = GetToken();
+				this->bot[BotNum].market[ItemSlot].level = TokenNumber;
+				Token = GetToken();
+				this->bot[BotNum].market[ItemSlot].opt = TokenNumber;
+				Token = GetToken();
+				this->bot[BotNum].market[ItemSlot].price = TokenNumber;
+				this->bot[BotNum].market[ItemSlot].Enabled = true;
 			}
 		}
 		break;
@@ -200,6 +275,11 @@ void ObjBotOnline::MakeBot()
 {
 	for (int botNum = 0; botNum < MAX_BOTONLINE; botNum++)
 	{
+		if (this->bot[botNum].Enabled == false)
+		{
+			continue;
+		}
+
 		int result = gObjAddSummon();
 
 		if (result >= 0)
@@ -280,10 +360,53 @@ void ObjBotOnline::MakeBot()
 				}
 			}
 
+			if (this->bot[botNum].ItemCount > 0)
+			{
+				strncpy(gObj[result].PShopText, this->bot[botNum].ShopTitle, sizeof(gObj[result].PShopText) - 1);
+				gObj[result].PShopOpen = 1;
+
+				for (int i = 0; i < this->bot[botNum].ItemCount; i++)
+				{
+					if (this->bot[botNum].market[i].Enabled == false)
+					{
+						continue;
+					}
+
+					CItem item;
+					item.m_Level = this->bot[botNum].market[i].level;
+					item.m_Option1 = 0;
+					item.m_Option2 = 1;
+					item.m_Option3 = this->bot[botNum].market[i].opt;
+					item.m_Durability = 255.0f;
+					item.m_JewelOfHarmonyOption = 0;
+					item.m_ItemOptionEx = 0;
+					item.m_SocketOption[0] = 0;
+					item.m_SocketOption[1] = 0;
+					item.m_SocketOption[2] = 0;
+					item.m_SocketOption[3] = 0;
+					item.m_SocketOption[4] = 0;
+					item.Convert(this->bot[botNum].market[i].num, item.m_Option1, item.m_Option2, item.m_Option3, item.m_NewOption, item.m_SetOption, item.m_JewelOfHarmonyOption, item.m_ItemOptionEx, item.m_SocketOption, item.m_SocketOptionBonus);
+
+					// Personal shops expose only the dedicated shop slots
+					// (INVENTORY_EXT4_SIZE .. INVENTORY_FULL_SIZE).  Inserting
+					// into the normal bag made bot shops appear empty to clients.
+					int slot = gItemManager.InventoryAddItem(result, item, INVENTORY_EXT4_SIZE + i);
+					if (slot != 0xFF)
+					{
+						gObj[result].Inventory[slot].m_PShopValue = this->bot[botNum].market[i].price;
+					}
+				}
+			}
+
 			gObj[result].Inventory1 = gObj[result].Inventory;
 			gObj[result].InventoryMap1 = gObj[result].InventoryMap;
 
 			gObjectManager.CharacterMakePreviewCharSet(result);
+
+			if (gObj[result].PShopOpen != 0)
+			{
+				gPersonalShop.GCPShopTextChangeSend(result);
+			}
 
 			gObj[result].AttackType = 0;
 			gObj[result].BotSkillAttack = 0;

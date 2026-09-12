@@ -70,11 +70,12 @@ void CSMServer::ConnectChangeMapServer(MServerInfo sInfo)
 
     if ( m_bFillServerInfo && LogIn!=0 )
     {
-		DeleteSocket ();
         SaveOptions();
 		SaveMacro("Data\\Macro.txt");
 
-		::Sleep ( 20 );
+		// Wait for the skill shortcut packet to leave before closing the old connection.
+		::Sleep(50);
+		DeleteSocket();
 
         if ( CreateSocket( m_vServerInfo.m_szMapSvrIpAddress, m_vServerInfo.m_wMapSvrPort ) )
         {

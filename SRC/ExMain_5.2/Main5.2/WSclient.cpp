@@ -1280,6 +1280,11 @@ void ReceiveMagicList(BYTE* ReceiveBuffer)
 	if (Master_Skill_Bool > -1 && Skill_Bool > -1)
 		CharacterAttribute->Skill[Skill_Bool] = 0;
 
+	if (Data->ListType == 0x00)
+	{
+		RestoreLocalSkillHotKeys();
+	}
+
 	g_ConsoleDebug->Write(MCD_RECEIVE, "0x11 [ReceiveMagicList]");
 
 }
@@ -9540,6 +9545,8 @@ void ReceiveOption(const BYTE* ReceiveBuffer)
 	BYTE wChatListBoxBackAlpha = Data->ChatLogBox & 0x0F;
 
 	g_pMainFrame->SetItemHotKey(SEASON3B::HOTKEY_R, Data->KeyR + ITEM_POTION, byRLevel);
+
+	RestoreLocalSkillHotKeys();
 }
 
 void ReceiveEventChipInfomation(const BYTE* ReceiveBuffer)

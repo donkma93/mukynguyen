@@ -14,6 +14,7 @@
 #include "ZzzObject.h"
 #include "ZzzCharacter.h"
 #include "ZzzInterface.h"
+#include "ZzzOpenData.h"
 #include "ZzzInventory.h"
 #include "wsclientinline.h"
 #include "CSItemOption.h"
@@ -2087,6 +2088,7 @@ bool SEASON3B::CNewUISkillList::UpdateKeyEvent()
 				if (SEASON3B::IsPress('1' + i))
 				{
 					SetHotKey(i + 1, m_iRenderSkillInfoType);
+					SaveOptions();
 
 					return false;
 				}
@@ -2095,6 +2097,7 @@ bool SEASON3B::CNewUISkillList::UpdateKeyEvent()
 			if (SEASON3B::IsPress('0'))
 			{
 				SetHotKey(0, m_iRenderSkillInfoType);
+				SaveOptions();
 
 				return false;
 			}

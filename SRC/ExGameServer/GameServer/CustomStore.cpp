@@ -167,7 +167,9 @@ bool CCustomStore::CommandCustomStoreOffline(LPOBJ lpObj, char* arg)
 
 	lpObj->PShopCustomTime = this->m_CustomStoreTime[lpObj->AccountLevel] * 60;
 
-#if(NEW_PROTOCOL_SYSTEM==0)
+#if(NEW_PROTOCOL_SYSTEM==1)
+	CloseClient(lpObj->Index);
+#else
 	closesocket(lpObj->PerSocketContext->Socket);
 #endif
 

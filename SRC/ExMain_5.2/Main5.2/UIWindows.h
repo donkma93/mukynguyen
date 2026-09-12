@@ -18,6 +18,7 @@
 #define WARNING_TIMER	1004
 #endif
 #define MUHELPER_TIMER 1005
+#define PLAYTIME_HEALTH_TIMER 1006
 const int g_ciWindowFrameThickness = 5;
 const int g_ciWindowTitleHeight = 21;
 const int UIWND_DEFAULT = -1;
