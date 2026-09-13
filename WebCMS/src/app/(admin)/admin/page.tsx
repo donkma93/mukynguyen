@@ -65,6 +65,15 @@ export default async function AdminDashboardPage() {
           <p className="muted mt-2 text-sm">{t.admin.balancingCardHint}</p>
         </Link>
         <Link
+          href="/admin/enhancement-rates"
+          className="card p-4 transition hover:border-mu-gold/50"
+        >
+          <h2 className="panel-title">Tỉ lệ đập đồ</h2>
+          <p className="muted mt-2 text-sm">
+            Điều chỉnh Chaos Mix, tỉ lệ ngọc và Luck cho từng cấp tài khoản.
+          </p>
+        </Link>
+        <Link
           href="/admin/ops"
           className="card p-4 transition hover:border-mu-gold/50"
         >

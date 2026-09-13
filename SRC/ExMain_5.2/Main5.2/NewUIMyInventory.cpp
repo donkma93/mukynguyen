@@ -2221,6 +2221,54 @@ bool CNewUIMyInventory::HandleInventoryActions(CNewUIInventoryCtrl* targetContro
 {
 	CNewUIPickedItem* pPickedItem = CNewUIInventoryCtrl::GetPickedItem();
 
+    // Quick sell an ordinary inventory item while an NPC shop is open.
+    if (g_pNewUISystem->IsVisible(INTERFACE_NPCSHOP)
+        && (IsPress(VK_RBUTTON) || IsRelease(VK_RBUTTON) || MouseRButtonPush || MouseRButtonPop))
+    {
+        g_pMyInventory->ResetMouseRButton();
+
+        if (g_pNPCShop == nullptr
+            || g_pNPCShop->GetShopState() == SEASON3B::CNewUINPCShop::SHOP_STATE_REPAIR
+            || g_pNPCShop->IsSellingItem())
+        {
+            return false;
+        }
+
+        ITEM* pItem = targetControl->FindItemAtPt(MouseX, MouseY);
+        if (pItem == nullptr)
+        {
+            return false;
+        }
+
+        if (pItem->Jewel_Of_Harmony_Option != 0)
+        {
+            g_pChatListBox->AddText("", GlobalText[2211], SEASON3B::TYPE_ERROR_MESSAGE);
+            return false;
+        }
+
+        if (IsSellingBan(pItem))
+        {
+            g_pChatListBox->AddText("", GlobalText[668], SEASON3B::TYPE_ERROR_MESSAGE);
+            return false;
+        }
+
+        if (CharacterMachine->Gold + ItemValue(pItem) > 2000000000)
+        {
+            g_pChatListBox->AddText("", GlobalText[3148], SEASON3B::TYPE_SYSTEM_MESSAGE);
+            return false;
+        }
+
+        const int iIndex = targetControl->GetIndexByItem(pItem);
+        if (iIndex >= 0 && CNewUIInventoryCtrl::CreatePickedItem(targetControl, pItem))
+        {
+            targetControl->RemoveItem(pItem);
+            SendRequestSell(iIndex);
+            return true;
+        }
+
+        return false;
+    }
+
 	if (g_pNewUISystem->IsVisible(INTERFACE_TRADE) && IsPress(VK_RBUTTON))
 	{
 		g_pMyInventory->ResetMouseRButton();

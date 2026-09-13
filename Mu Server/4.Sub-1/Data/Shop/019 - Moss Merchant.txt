@@ -11,4 +11,10 @@
 //+Dịch Vụ VPS Hosting Tên Miền Antihack
 //=================================================================================================================
 //Group	Index	Level	Dur		Skill	Luck	Option	ExcOpt	Anc		JoH		Oex		Socket1	Socket2	Socket3	Socket4	Socket5	ItemName
+// Vé quay Moss Merchant. Khi mua, mỗi vé trả về một vũ khí ngẫu nhiên theo nhóm tương ứng.
+13	71	0	0	0	0	0	0	0	0	0	255	255	255	255	255	// Kiếm / Chùy / Giáo
+13	72	0	0	0	0	0	0	0	0	0	255	255	255	255	255	// Gậy
+13	73	0	0	0	0	0	0	0	0	0	255	255	255	255	255	// Cung Tên / Nỏ
+13	74	0	0	0	0	0	0	0	0	0	255	255	255	255	255	// Quyền Trượng
+13	75	0	0	0	0	0	0	0	0	0	255	255	255	255	255	// Khuyển
 end

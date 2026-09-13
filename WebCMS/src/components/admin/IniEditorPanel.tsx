@@ -3,13 +3,34 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import FlashMessage from "@/components/FlashMessage";
+import { getIniAccountLabel, getIniEntryLabel } from "@/lib/gs/ini-labels";
 
 type IniListItem = { name: string; slug: string; size: number; mtime: string };
-type IniEntry = { key: string; value: string; section: string };
+type IniEntry = { key: string; value: string; section: string; description?: string };
 
 type Props = {
   initialSlug?: string;
 };
+
+const fileLabels: Record<string, string> = {
+  common: "Thiết lập chung, ngọc và Luck",
+  chaosmix: "Tỉ lệ ép đồ & Chaos Mix",
+  character: "Nhân vật, level và reset",
+  command: "Lệnh trong game",
+  custom: "Tính năng tùy chỉnh",
+  event: "Sự kiện",
+  skill: "Kỹ năng",
+};
+
+function readableFileLabel(targetSlug: string, fallback = "") {
+  return fileLabels[targetSlug] || fallback || "Cấu hình GameServer";
+}
+
+function readableEntry(entry: IniEntry) {
+  const label = getIniEntryLabel(entry.key, entry.description || "");
+  const account = getIniAccountLabel(entry.key);
+  return { label, account };
+}
 
 export default function IniEditorPanel({ initialSlug }: Props) {
   const [items, setItems] = useState<IniListItem[]>([]);
@@ -78,10 +99,16 @@ export default function IniEditorPanel({ initialSlug }: Props) {
     const q = filter.trim().toLowerCase();
     if (!q) return entries;
     return entries.filter(
-      (e) =>
-        e.key.toLowerCase().includes(q) ||
-        e.value.toLowerCase().includes(q) ||
-        e.section.toLowerCase().includes(q)
+      (entry) => {
+        const { label, account } = readableEntry(entry);
+        return (
+          entry.key.toLowerCase().includes(q) ||
+          label.toLowerCase().includes(q) ||
+          (account || "").toLowerCase().includes(q) ||
+          (entry.description || "").toLowerCase().includes(q) ||
+          entry.value.toLowerCase().includes(q)
+        );
+      }
     );
   }, [entries, filter]);
 
@@ -144,7 +171,7 @@ export default function IniEditorPanel({ initialSlug }: Props) {
       <div className="card p-5 space-y-4">
         <div className="flex flex-wrap items-end gap-3">
           <div className="min-w-[220px] flex-1">
-            <label className="label">File GameServerInfo</label>
+            <label className="label">Nhóm cấu hình</label>
             <select
               className="input"
               value={slug}
@@ -152,7 +179,7 @@ export default function IniEditorPanel({ initialSlug }: Props) {
             >
               {items.map((it) => (
                 <option key={it.slug} value={it.slug}>
-                  {it.name}
+                  {readableFileLabel(it.slug, it.name)}
                 </option>
               ))}
             </select>
@@ -163,23 +190,26 @@ export default function IniEditorPanel({ initialSlug }: Props) {
               className={mode === "form" ? "btn-gold" : "btn-ghost"}
               onClick={() => setMode("form")}
             >
-              Form
+              Danh sách
             </button>
             <button
               type="button"
               className={mode === "raw" ? "btn-gold" : "btn-ghost"}
               onClick={() => setMode("raw")}
             >
-              Raw
+              Nội dung kỹ thuật
             </button>
           </div>
+          <Link href="/admin/enhancement-rates" className="btn-gold">
+            Chỉnh tỉ lệ đập đồ
+          </Link>
           <Link href="/admin/ops" className="btn-lime">
             Tới Ops / Restart
           </Link>
         </div>
 
         <p className="text-sm text-mu-muted">
-          Đang mở: <span className="text-mu-gold">{fileName || "…"}</span>
+          Đang mở: <span className="text-mu-gold">{readableFileLabel(slug, fileName)}</span>
           {loading ? " — đang tải…" : ""}
           {dirtyKeys.length > 0 && mode === "form"
             ? ` — ${dirtyKeys.length} thay đổi chưa lưu`
@@ -197,10 +227,10 @@ export default function IniEditorPanel({ initialSlug }: Props) {
         {mode === "form" ? (
           <>
             <div>
-              <label className="label">Lọc key</label>
+              <label className="label">Tìm mục cấu hình</label>
               <input
                 className="input"
-                placeholder="ví dụ: PlusItemLevelMixRate6"
+                placeholder="ví dụ: nâng cấp đồ +15 hoặc cánh cấp 2"
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
               />
@@ -209,36 +239,39 @@ export default function IniEditorPanel({ initialSlug }: Props) {
               <table className="w-full min-w-[640px] text-left text-sm">
                 <thead className="sticky top-0 bg-mu-panel text-xs uppercase tracking-wider text-mu-muted">
                   <tr>
-                    <th className="px-3 py-2">Key</th>
-                    <th className="px-3 py-2 w-[180px]">Value</th>
+                    <th className="px-3 py-2">Nội dung</th>
+                    <th className="px-3 py-2 w-[180px]">Giá trị</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filtered.map((e) => {
-                    const dirty = (draft[e.key] ?? "") !== e.value;
+                  {filtered.map((entry) => {
+                    const dirty = (draft[entry.key] ?? "") !== entry.value;
+                    const { label, account } = readableEntry(entry);
                     return (
                       <tr
-                        key={e.key}
+                        key={entry.key}
                         className={`border-t border-white/5 ${
                           dirty ? "bg-mu-gold/5" : ""
                         }`}
                       >
                         <td className="px-3 py-2 align-middle">
-                          <div className="font-mono text-[13px]">{e.key}</div>
-                          {e.section ? (
+                          <div className="font-medium text-[13px] text-white">{label}</div>
+                          {account ? (
                             <div className="text-[11px] text-mu-muted">
-                              [{e.section}]
+                              Áp dụng cho: {account}
                             </div>
+                          ) : entry.description ? (
+                            <div className="text-[11px] text-mu-muted">{entry.description}</div>
                           ) : null}
                         </td>
                         <td className="px-3 py-2">
                           <input
                             className="input font-mono"
-                            value={draft[e.key] ?? ""}
+                            value={draft[entry.key] ?? ""}
                             onChange={(ev) =>
                               setDraft((d) => ({
                                 ...d,
-                                [e.key]: ev.target.value,
+                                [entry.key]: ev.target.value,
                               }))
                             }
                           />

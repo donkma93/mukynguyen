@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "NewUINPCShop.h"
+#include "NewUIMyInventory.h"
 #include "NewUISystem.h"
 #include "NewUICommonMessageBox.h"
 #include "ZzzInventory.h"
@@ -91,6 +92,39 @@ void SEASON3B::CNewUINPCShop::SetPos(int x, int y)
 
 bool SEASON3B::CNewUINPCShop::UpdateMouseEvent()
 {
+	// The NPC shop has a higher UI layer than the player inventory. Handle the
+	// right-click here so the event cannot be consumed by another UI first.
+	if ((SEASON3B::IsPress(VK_RBUTTON) || SEASON3B::IsRelease(VK_RBUTTON))
+		&& m_bSellingItem == false)
+	{
+		CNewUIInventoryCtrl* pMyInventoryCtrl = g_pMyInventory->GetInventoryCtrl();
+		if (pMyInventoryCtrl && pMyInventoryCtrl->CheckPtInRect(MouseX, MouseY))
+		{
+			ITEM* pItem = pMyInventoryCtrl->FindItemAtPt(MouseX, MouseY);
+			if (pItem && pItem->Jewel_Of_Harmony_Option == 0 && IsSellingBan(pItem) == false)
+			{
+				if (CharacterMachine->Gold + ItemValue(pItem) <= 2000000000)
+				{
+					const int iIndex = pMyInventoryCtrl->GetIndexByItem(pItem);
+					if (iIndex >= 0 && CNewUIInventoryCtrl::CreatePickedItem(pMyInventoryCtrl, pItem))
+					{
+						pMyInventoryCtrl->RemoveItem(pItem);
+						SendRequestSell(iIndex);
+						MouseRButton = false;
+						MouseRButtonPop = false;
+						MouseRButtonPush = false;
+						return false;
+					}
+				}
+				else
+				{
+					g_pChatListBox->AddText("", GlobalText[3148], SEASON3B::TYPE_SYSTEM_MESSAGE);
+					return false;
+				}
+			}
+		}
+	}
+
 	if (m_pNewInventoryCtrl)
 	{
 		if (false == m_pNewInventoryCtrl->UpdateMouseEvent())

@@ -4948,6 +4948,25 @@ void SaveLocalSkillHotKeys()
 		return;
 	}
 
+	// A destination GameServer may briefly clear the bar while it is loading
+	// OptionData.  Do not let that transient empty state overwrite the last
+	// valid shortcut layout saved for this character.
+	bool hasAssignedSkill = false;
+	for (int i = 0; i < 10; ++i)
+	{
+		const int skillIndex = g_pMainFrame->GetSkillHotKey(i);
+		if (skillIndex >= 0 && skillIndex < MAX_SKILLS && CharacterAttribute->Skill[skillIndex] != 0)
+		{
+			hasAssignedSkill = true;
+			break;
+		}
+	}
+
+	if (hasAssignedSkill == false)
+	{
+		return;
+	}
+
 	CreateDirectory("Data\\Custom", NULL);
 	CreateDirectory("Data\\Custom\\ThangCuoi", NULL);
 	CreateDirectory("Data\\Custom\\ThangCuoi\\SkillHotKeys", NULL);

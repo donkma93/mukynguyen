@@ -90,6 +90,15 @@ void CNewUIInventoryExtension::SetPos(int x, int y)
 
 bool CNewUIInventoryExtension::UpdateMouseEvent()
 {
+	// Handle both visible close buttons before child inventory controls can consume the click.
+	if ((IsRelease(VK_LBUTTON) || MouseLButtonPop)
+		&& (CheckMouseIn(m_Pos.x + 169, m_Pos.y + 7, 13, 12)
+			|| CheckMouseIn(m_Pos.x + 13, m_Pos.y + 391, 36, 29)))
+	{
+		g_pNewUISystem->Hide(INTERFACE_INVENTORY_EXT);
+		return false;
+	}
+
 	for (int i = 0; i < CharacterAttribute->InventoryExtensions; i++)
 	{
 		if (const auto m_extension = m_extensions[i])
@@ -172,6 +181,12 @@ bool CNewUIInventoryExtension::UpdateKeyEvent()
 	if (g_pNewUISystem->IsVisible(INTERFACE_INVENTORY_EXT) == false)
 	{
 		return true;
+	}
+
+	if (IsPress(VK_ESCAPE))
+	{
+		g_pNewUISystem->Hide(INTERFACE_INVENTORY_EXT);
+		return false;
 	}
 
 	return true;

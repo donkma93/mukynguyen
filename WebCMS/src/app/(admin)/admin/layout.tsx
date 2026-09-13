@@ -21,9 +21,11 @@ export default async function AdminLayout({
     { href: "/admin/characters", label: t.admin.characters },
     { href: "/admin/hack", label: t.admin.hack },
     { href: "/admin/ops", label: t.admin.ops },
+    { href: "/admin/events", label: "Sự kiện Game" },
     { href: "/admin/gs/ini", label: t.admin.gsIni },
     { href: "/admin/gs/groups", label: t.admin.gsGroups },
     { href: "/admin/gs/balancing", label: t.admin.balancing },
+    { href: "/admin/enhancement-rates", label: "Tỉ lệ đập đồ" },
     { href: "/admin/giftcodes", label: t.admin.giftcodes },
   ];
 

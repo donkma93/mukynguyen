@@ -123,17 +123,35 @@ export function applyIniUpdates(
   return { text: serializeIni(doc), changed, missingCreated };
 }
 
-export function listIniEntries(text: string): { key: string; value: string; section: string }[] {
+export function listIniEntries(text: string): {
+  key: string;
+  value: string;
+  section: string;
+  description: string;
+}[] {
   const doc = parseIni(text);
   let section = "";
-  const out: { key: string; value: string; section: string }[] = [];
+  let description = "";
+  const out: { key: string; value: string; section: string; description: string }[] = [];
   for (const line of doc.lines) {
     if (line.kind === "section") {
       section = line.name;
       continue;
     }
+    if (line.kind === "comment") {
+      const cleaned = line.text
+        .replace(/^[=\-_*\s]+|[=\-_*\s]+$/g, "")
+        .trim();
+      if (
+        cleaned &&
+        !/^(facebook|zalo|sđt|name\s*:|phiên bản|hỗ trợ)/i.test(cleaned)
+      ) {
+        description = cleaned;
+      }
+      continue;
+    }
     if (line.kind === "key") {
-      out.push({ key: line.key, value: line.value, section });
+      out.push({ key: line.key, value: line.value, section, description });
     }
   }
   return out;

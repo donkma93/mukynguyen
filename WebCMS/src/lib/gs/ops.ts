@@ -2,11 +2,7 @@ import { execFile } from "child_process";
 import fs from "fs/promises";
 import path from "path";
 import { promisify } from "util";
-import {
-  getGameServerExe,
-  getGameServerExeDir,
-  getMuServerRoot,
-} from "@/lib/gs/paths";
+import { getMuServerRoot } from "@/lib/gs/paths";
 
 const execFileAsync = promisify(execFile);
 
@@ -90,27 +86,6 @@ Get-Process -Name '${name}' -ErrorAction SilentlyContinue | ForEach-Object {
   Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue
 }
 Start-Sleep -Milliseconds 500
-`.trim();
-  await execFileAsync(
-    "powershell.exe",
-    ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", ps],
-    { windowsHide: true, timeout: 30000 }
-  );
-}
-
-async function startGameServerOutsideJob(): Promise<void> {
-  const exe = getGameServerExe();
-  const wd = getGameServerExeDir();
-  await fs.access(exe);
-  const ps = `
-$exe = '${exe.replace(/'/g, "''")}'
-$wd = '${wd.replace(/'/g, "''")}'
-$cmd = 'cmd.exe /c start "" /MIN /D "' + $wd + '" "' + $exe + '"'
-$r = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{
-  CommandLine = $cmd
-  CurrentDirectory = $wd
-}
-if ($r.ReturnValue -ne 0) { throw "Win32_Process.Create failed: $($r.ReturnValue)" }
 `.trim();
   await execFileAsync(
     "powershell.exe",
@@ -211,7 +186,7 @@ if ($ok) { Write-Output 'OK' } else { Write-Output 'POST_FAILED' }
       };
     }
     return { ok: false, message: `Reload Character thất bại (${code || "unknown"}).` };
-  } catch (e) {
+  } catch {
     return {
       ok: false,
       message: "Reload Character thất bại",
@@ -232,12 +207,10 @@ export async function restartServers(scope: RestartScope): Promise<{
 
   const lines: string[] = [];
   if (scope === "gameserver") {
-    lines.push("Stopping GameServer...");
+    lines.push("Stopping all GameServer processes...");
     await stopProcessByName("GameServer");
-    lines.push("Starting GameServer...");
-    await startGameServerOutsideJob();
-    // give it a moment to appear
-    await new Promise((r) => setTimeout(r, 2000));
+    lines.push("Running start-all.ps1 to start every GameServer...");
+    lines.push(await runMuScript("start-all.ps1", 180000));
   } else {
     lines.push("Running stop-all.ps1...");
     try {

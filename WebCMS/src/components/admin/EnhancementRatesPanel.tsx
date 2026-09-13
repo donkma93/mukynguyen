@@ -127,7 +127,6 @@ export default function EnhancementRatesPanel() {
                   <tr key={`${entry.source}:${entry.key}`}>
                     <td>
                       <div className="font-medium text-white">{entry.label}</div>
-                      <div className="mt-0.5 font-mono text-xs text-mu-muted">{entry.key}</div>
                     </td>
                     {entry.rates.map((rate, level) => (
                       <td key={level}>

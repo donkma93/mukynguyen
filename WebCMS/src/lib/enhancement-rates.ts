@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { getIniEntryLabel } from "@/lib/gs/ini-labels";
 import { getGsIniRoot } from "@/lib/gs/paths";
 
 export type RateSource = "chaos" | "common";
@@ -83,7 +84,7 @@ function parseRates(source: RateSource, content: string): EnhancementRate[] {
     const [, key, levelText, valueText] = match;
     const level = Number(levelText);
     const existing = found.get(key) ?? {
-      label: latestComment || friendlyKey(key),
+      label: getIniEntryLabel(key, latestComment || friendlyKey(key)),
       rates: [undefined, undefined, undefined, undefined],
     };
     existing.rates[level] = Number(valueText);

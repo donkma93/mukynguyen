@@ -1,6 +1,6 @@
 import IniEditorPanel from "@/components/admin/IniEditorPanel";
 
-export const metadata = { title: "GS INI" };
+export const metadata = { title: "Cấu hình GameServer" };
 
 type Props = {
   searchParams?: Promise<{ slug?: string }>;
@@ -13,10 +13,10 @@ export default async function AdminGsIniPage({ searchParams }: Props) {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="section-title">Cấu hình GS (INI)</h1>
+        <h1 className="section-title">Cấu hình GameServer</h1>
         <p className="muted mt-1">
-          Sửa GameServerInfo (ChaosMix, Common, Event…). Lưu sẽ backup file; cần
-          Restart GS để áp dụng.
+          Khu vực nâng cao để chỉnh sự kiện, kỹ năng và quy tắc máy chủ. Nếu cần đổi
+          tỉ lệ ép đồ, hãy dùng mục Tỉ lệ đập đồ để thao tác đơn giản hơn.
         </p>
       </div>
       <IniEditorPanel initialSlug={initialSlug} />

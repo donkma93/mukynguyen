@@ -1,0 +1,76 @@
+const labels: Record<string, string> = {
+  ChaosItemMixRate: "Quay vũ khí Chaos",
+  DevilSquareMixRate1: "Vé Quảng Trường Quỷ tầng 1",
+  DevilSquareMixRate2: "Vé Quảng Trường Quỷ tầng 2",
+  DevilSquareMixRate3: "Vé Quảng Trường Quỷ tầng 3",
+  DevilSquareMixRate4: "Vé Quảng Trường Quỷ tầng 4",
+  DevilSquareMixRate5: "Vé Quảng Trường Quỷ tầng 5",
+  DevilSquareMixRate6: "Vé Quảng Trường Quỷ tầng 6",
+  DevilSquareMixRate7: "Vé Quảng Trường Quỷ tầng 7",
+  PlusItemLevelMixRate1: "Nâng cấp đồ lên +10",
+  PlusItemLevelMixRate2: "Nâng cấp đồ lên +11",
+  PlusItemLevelMixRate3: "Nâng cấp đồ lên +12",
+  PlusItemLevelMixRate4: "Nâng cấp đồ lên +13",
+  PlusItemLevelMixRate5: "Nâng cấp đồ lên +14",
+  PlusItemLevelMixRate6: "Nâng cấp đồ lên +15",
+  DinorantMixRate: "Quay Quái Điểu",
+  FruitMixRate: "Quay Trái Cây",
+  Wing1MixRate: "Quay Cánh cấp 1",
+  Wing2MixRate: "Quay Cánh cấp 2",
+  Wing3MixRate: "Quay Cánh cấp 3",
+  BloodCastleMixRate1: "Vé Huyết Lâu tầng 1",
+  BloodCastleMixRate2: "Vé Huyết Lâu tầng 2",
+  BloodCastleMixRate3: "Vé Huyết Lâu tầng 3",
+  BloodCastleMixRate4: "Vé Huyết Lâu tầng 4",
+  BloodCastleMixRate5: "Vé Huyết Lâu tầng 5",
+  BloodCastleMixRate6: "Vé Huyết Lâu tầng 6",
+  BloodCastleMixRate7: "Vé Huyết Lâu tầng 7",
+  BloodCastleMixRate8: "Vé Huyết Lâu tầng 8",
+  PetMixRate: "Quay Chiến Mã / Thú Tinh",
+  PieceOfHornMixRate: "Quay Mảnh Sừng Sói",
+  BrokenHornMixRate: "Quay Sừng Gãy",
+  HornOfFenrirMixRate: "Quay Sói thường",
+  HornOfFenrirUpgradeMixRate: "Nâng cấp Sói tấn công / phòng thủ",
+  HornOfFenrirGoldMixRate: "Quay Sói Hoàng Kim",
+  ShieldPotionMixRate1: "Pha chế bình SD cấp 1",
+  ShieldPotionMixRate2: "Pha chế bình SD cấp 2",
+  ShieldPotionMixRate3: "Pha chế bình SD cấp 3",
+  JewelOfHarmonyItemPurityMixRate: "Lọc thuộc tính Đá Tạo Hóa",
+  JewelOfHarmonyItemSmeltMixRate1: "Tinh luyện Đá Tạo Hóa cấp 1",
+  JewelOfHarmonyItemSmeltMixRate2: "Tinh luyện Đá Tạo Hóa cấp 2",
+  JewelOfHarmonyItemRestoreMixRate: "Khôi phục thuộc tính Đá Tạo Hóa",
+  Item380MixRate1: "Tạo vật phẩm cấp 380 (công thức 1)",
+  Item380MixRate2: "Tạo vật phẩm cấp 380 (công thức 2)",
+  IllusionTempleMixRate1: "Vé Đền Ảo Ảnh tầng 1",
+  IllusionTempleMixRate2: "Vé Đền Ảo Ảnh tầng 2",
+  IllusionTempleMixRate3: "Vé Đền Ảo Ảnh tầng 3",
+  IllusionTempleMixRate4: "Vé Đền Ảo Ảnh tầng 4",
+  IllusionTempleMixRate5: "Vé Đền Ảo Ảnh tầng 5",
+  IllusionTempleMixRate6: "Vé Đền Ảo Ảnh tầng 6",
+  FeatherOfCondorMixRate: "Quay Lông Vũ Condor",
+  SocketItemCreateSeedMixRate: "Tạo hạt nguyên tố Socket",
+  SocketItemCreateSeedSphereMixRate: "Ép hạt nguyên tố vào khuôn Socket",
+  LuckyItemRefineMixRate1: "Tinh luyện vật phẩm Lucky (công thức 1)",
+  LuckyItemRefineMixRate2: "Tinh luyện vật phẩm Lucky (công thức 2)",
+  SoulSuccessRate: "Đập Ngọc Tâm Linh",
+  LifeSuccessRate: "Đập Ngọc Sinh Mệnh",
+  HarmonySuccessRate: "Đập Đá Tạo Hóa",
+  SmeltStoneSuccessRate1: "Đập Đá Tinh Luyện (loại 1)",
+  SmeltStoneSuccessRate2: "Đập Đá Tinh Luyện (loại 2)",
+  AddLuckSuccessRate1: "% cộng thêm khi đập Soul có dòng Luck",
+  AddLuckSuccessRate2: "% cộng thêm ở Chaos Mix khi đồ có dòng Luck",
+  FruitAddPointSuccessRate: "Dùng Trái Cây cộng điểm",
+  FruitSubPointSuccessRate: "Dùng Trái Cây trừ điểm",
+};
+
+const accountLabels = ["Thường", "VIP 1", "VIP 2", "VIP 3"] as const;
+
+export function getIniEntryLabel(key: string, fallback = "") {
+  const baseKey = key.replace(/_AL[0-3]$/, "");
+  return labels[baseKey] || fallback || baseKey.replace(/([a-z])([A-Z])/g, "$1 $2");
+}
+
+export function getIniAccountLabel(key: string) {
+  const match = key.match(/_AL([0-3])$/);
+  return match ? accountLabels[Number(match[1])] : null;
+}
