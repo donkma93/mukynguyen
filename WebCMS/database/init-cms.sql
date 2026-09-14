@@ -13,6 +13,16 @@ CREATE TABLE cms.admins (
 );
 GO
 
+IF OBJECT_ID(N'cms.login_activity', N'U') IS NULL
+CREATE TABLE cms.login_activity (
+  id BIGINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  account VARCHAR(10) NOT NULL,
+  ip_address VARCHAR(64) NOT NULL,
+  device NVARCHAR(160) NOT NULL,
+  logged_in_at DATETIME NOT NULL CONSTRAINT DF_cms_login_activity_logged_in_at DEFAULT GETDATE()
+);
+GO
+
 IF OBJECT_ID(N'cms.posts', N'U') IS NULL
 CREATE TABLE cms.posts (
   id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
@@ -162,6 +172,8 @@ GO
 
 IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_cms_posts_published_created')
   CREATE INDEX IX_cms_posts_published_created ON cms.posts (is_published, created_at DESC);
+IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_cms_login_activity_account_time')
+  CREATE INDEX IX_cms_login_activity_account_time ON cms.login_activity (account, logged_in_at DESC);
 IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_cms_topup_requests_account')
   CREATE INDEX IX_cms_topup_requests_account ON cms.topup_requests (account, created_at DESC);
 IF NOT EXISTS (SELECT 1 FROM sys.indexes WHERE name = N'IX_cms_topup_requests_status')

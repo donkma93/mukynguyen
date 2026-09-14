@@ -19,16 +19,36 @@ function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+  async function resolvePublicIp(): Promise<string | undefined> {
+    try {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_IP_LOOKUP_URL || "https://api64.ipify.org?format=json",
+        {
+          cache: "no-store",
+          signal: AbortSignal.timeout(2500),
+        }
+      );
+      if (!response.ok) return undefined;
+      const data = (await response.json()) as { ip?: unknown };
+      return typeof data.ip === "string" ? data.ip : undefined;
+    } catch {
+      // A blocked lookup must never prevent the player from signing in.
+      return undefined;
+    }
+  }
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
     setLoading(true);
     setError(null);
     try {
+      const publicIp = await resolvePublicIp();
       const res = await signIn("credentials", {
         account,
         username: account,
         password,
         kind,
+        publicIp,
         redirect: false,
       });
       if (!res || res.error) {

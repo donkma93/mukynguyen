@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["msnodesqlv8", "mssql"],
+  allowedDevOrigins: ["127.0.0.2"],
   async headers() {
     const isProd = process.env.NODE_ENV === "production";
     const base: { key: string; value: string }[] = [

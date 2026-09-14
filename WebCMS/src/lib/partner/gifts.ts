@@ -4,7 +4,6 @@ import { getPool, sql } from "@/lib/db";
 import { queueItemDelivery } from "@/lib/admin-deliveries";
 import {
   addCoins,
-  findAccount,
   getCharacterByName,
 } from "@/lib/game";
 import {
@@ -539,18 +538,16 @@ export async function claimPartnerCode(input: {
 
 export async function grantHighlight(input: {
   partnerAccount: string;
-  targetAccount: string;
   characterName: string;
+  note?: string;
 }) {
   const partner = await requireActivePartner(input.partnerAccount);
-  const target = normalizeAccount(input.targetAccount);
+  const character = await getCharacterByName(input.characterName.trim());
+  if (!character) throw new Error("Nhân vật không tồn tại");
+  const target = normalizeAccount(character.AccountID);
   if (target === partner.account) {
     throw new Error("Không thể tự phát Highlight cho chính mình");
   }
-  const targetAcc = await findAccount(target);
-  if (!targetAcc) throw new Error("Tài khoản nhận không tồn tại");
-
-  const character = await assertCharacterOwned(input.characterName, target);
   if (await hasHighlightToday(target)) {
     throw new Error("Tài khoản này đã nhận Highlight hôm nay");
   }
@@ -592,6 +589,11 @@ export async function grantHighlight(input: {
       .input("wc", sql.Int, coins.wc)
       .input("wp", sql.Int, coins.wp)
       .input("wg", sql.Int, coins.wg)
+      .input(
+        "note",
+        sql.NVarChar(300),
+        input.note?.trim().slice(0, 300) || "Phát Highlight trực tiếp"
+      )
       .query(`
         INSERT INTO cms.partner_claims (
           partner_account, package_id, session_id, claimer_account,
@@ -599,7 +601,7 @@ export async function grantHighlight(input: {
         )
         VALUES (
           @partner, @packageId, @sessionId, @claimer,
-          @character, @wc, @wp, @wg, N'highlight-direct', GETDATE()
+          @character, @wc, @wp, @wg, @note, GETDATE()
         )
       `);
 

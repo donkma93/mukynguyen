@@ -38,6 +38,7 @@ type ClaimRow = {
   wc: number;
   wp: number;
   wg: number;
+  note?: string | null;
   claimedAt: string | Date;
 };
 
@@ -71,8 +72,8 @@ export default function PartnerPanel() {
   const [message, setMessage] = useState<string | null>(null);
   const [data, setData] = useState<MeResponse | null>(null);
   const [lastCode, setLastCode] = useState<string | null>(null);
-  const [targetAccount, setTargetAccount] = useState("");
   const [characterName, setCharacterName] = useState("");
+  const [giftNote, setGiftNote] = useState("");
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -132,8 +133,8 @@ export default function PartnerPanel() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          targetAccount,
           characterName,
+          note: giftNote,
         }),
       });
       const json = await res.json().catch(() => ({}));
@@ -142,8 +143,8 @@ export default function PartnerPanel() {
         return;
       }
       setMessage(json.message || "Đã phát Highlight");
-      setTargetAccount("");
       setCharacterName("");
+      setGiftNote("");
       await load();
     } catch {
       setError("Không thể kết nối máy chủ.");
@@ -173,12 +174,16 @@ export default function PartnerPanel() {
           Hạng: <span className="text-mu-gold">{rem.caps.labelVi}</span> · Account:{" "}
           <span className="text-mu-lime">{data.partner?.account}</span>
         </p>
+        <p className="mt-3 rounded-lg border border-white/10 bg-black/20 p-3 text-sm text-gray-300">
+          Đây là hạn mức quà được phát trong tháng. Số trước dấu <strong>/</strong> là số còn lại,
+          số sau là tổng hạn mức tháng; hạn mức sẽ làm mới vào đầu tháng tiếp theo.
+        </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          <Stat label="WC còn" value={`${rem.wc}/${rem.caps.wc}`} />
-          <Stat label="WP còn" value={`${rem.wp}/${rem.caps.wp}`} />
-          <Stat label="WG còn" value={`${rem.wg}/${rem.caps.wg}`} />
-          <Stat label="Live còn" value={`${rem.liveSessions}/${rem.caps.liveSessions}`} />
-          <Stat label="Highlight còn" value={`${rem.highlight}/${rem.caps.highlight}`} />
+          <Stat label="WC còn / hạn mức" value={`${rem.wc}/${rem.caps.wc}`} />
+          <Stat label="WP còn / hạn mức" value={`${rem.wp}/${rem.caps.wp}`} />
+          <Stat label="WG còn / hạn mức" value={`${rem.wg}/${rem.caps.wg}`} />
+          <Stat label="Live còn / hạn mức" value={`${rem.liveSessions}/${rem.caps.liveSessions}`} />
+          <Stat label="Highlight còn / hạn mức" value={`${rem.highlight}/${rem.caps.highlight}`} />
         </div>
       </div>
 
@@ -233,22 +238,12 @@ export default function PartnerPanel() {
         </div>
 
         <form onSubmit={onHighlight} className="card space-y-3 p-4 md:p-6">
-          <h2 className="panel-title">Phát Highlight</h2>
+          <h2 className="panel-title">Phát quà Highlight</h2>
           <p className="muted text-sm">
-            WC 100 + WP 200 + Bless/Soul ×3 + Life ×1. Không tự phát cho chính mình. Tối đa 5 /
-            phiên Live.
+            WC 100 + WP 200 + Bless/Soul ×3 + Life ×1. Chỉ cần nhập tên nhân vật: hệ thống tự
+            tìm tài khoản để cộng coin và đưa vật phẩm vào đúng nhân vật. Tối đa 5 phần quà / phiên
+            Live.
           </p>
-          <div>
-            <label className="label">Tài khoản nhận</label>
-            <input
-              className="input"
-              value={targetAccount}
-              onChange={(e) => setTargetAccount(e.target.value)}
-              required
-              minLength={4}
-              maxLength={10}
-            />
-          </div>
           <div>
             <label className="label">Nhân vật nhận</label>
             <input
@@ -259,8 +254,18 @@ export default function PartnerPanel() {
               maxLength={10}
             />
           </div>
+          <div>
+            <label className="label">Mô tả phát quà (không bắt buộc)</label>
+            <input
+              className="input"
+              value={giftNote}
+              onChange={(e) => setGiftNote(e.target.value)}
+              maxLength={300}
+              placeholder="Ví dụ: Quà minigame tuần 1"
+            />
+          </div>
           <button type="submit" className="btn-gold" disabled={busy || rem.highlight <= 0}>
-            {busy ? "Đang phát..." : "Phát Highlight"}
+            {busy ? "Đang phát..." : "Phát quà Highlight"}
           </button>
         </form>
       </div>
@@ -302,7 +307,7 @@ export default function PartnerPanel() {
       </div>
 
       <div className="card p-4 md:p-6">
-        <h2 className="panel-title mb-3">Lịch sử phát / nhận</h2>
+        <h2 className="panel-title mb-3">Lịch sử phát quà</h2>
         <div className="table-wrap">
           <table className="data-table">
             <thead>
@@ -311,13 +316,14 @@ export default function PartnerPanel() {
                 <th>Account</th>
                 <th>Nhân vật</th>
                 <th>Coin</th>
+                <th>Mô tả</th>
                 <th>Thời gian</th>
               </tr>
             </thead>
             <tbody>
               {(data.claims || []).length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="text-mu-muted">
+                  <td colSpan={6} className="text-mu-muted">
                     Chưa có giao dịch.
                   </td>
                 </tr>
@@ -333,6 +339,7 @@ export default function PartnerPanel() {
                       {c.wg ? `${c.wg}WG` : ""}
                       {!c.wc && !c.wp && !c.wg ? "—" : ""}
                     </td>
+                    <td>{c.note || "—"}</td>
                     <td>{fmtDate(c.claimedAt)}</td>
                   </tr>
                 ))

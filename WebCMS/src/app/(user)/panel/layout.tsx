@@ -25,6 +25,7 @@ export default async function PanelLayout({
   }
   const nav = [
     { href: "/panel", label: t.panel.overview },
+    { href: "/panel/login-history", label: t.panel.loginHistory },
     { href: "/panel/giftcode", label: t.panel.giftcode },
     ...(showPartner ? [{ href: "/panel/partner", label: t.panel.partner }] : []),
     { href: "/panel/password", label: t.panel.password },

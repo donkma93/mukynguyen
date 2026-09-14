@@ -43,8 +43,8 @@ export async function POST(req: Request) {
 
     const result = await grantHighlight({
       partnerAccount: session.user.id,
-      targetAccount: parsed.data.targetAccount,
       characterName: parsed.data.characterName,
+      note: parsed.data.note,
     });
 
     return NextResponse.json({

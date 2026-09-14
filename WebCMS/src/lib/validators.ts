@@ -49,8 +49,8 @@ export const partnerClaimSchema = z.object({
 });
 
 export const partnerHighlightSchema = z.object({
-  targetAccount: accountSchema,
   characterName: characterNameSchema,
+  note: z.string().trim().max(300, "Mô tả tối đa 300 ký tự").optional(),
 });
 
 export const partnerUpsertSchema = z.object({

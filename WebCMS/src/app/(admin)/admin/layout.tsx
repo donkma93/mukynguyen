@@ -18,6 +18,7 @@ export default async function AdminLayout({
   const nav = [
     { href: "/admin", label: t.admin.dashboard },
     { href: "/admin/accounts", label: t.admin.accounts },
+    { href: "/admin/login-history", label: "Lịch sử đăng nhập" },
     { href: "/admin/characters", label: t.admin.characters },
     { href: "/admin/hack", label: t.admin.hack },
     { href: "/admin/ops", label: t.admin.ops },

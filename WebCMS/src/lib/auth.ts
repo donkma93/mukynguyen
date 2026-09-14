@@ -8,6 +8,8 @@ import {
   RATE_LIMITS,
   recordAuthFailure,
 } from "@/lib/security/rate-limit";
+import { describeDevice, recordLoginActivity } from "@/lib/login-activity";
+import { getClientIp, getUserAgent, publicIp } from "@/lib/security/client-ip";
 
 function loginLockKey(kind: string, identity: string) {
   return `login:${kind}:${identity.trim().toLowerCase()}`;
@@ -27,8 +29,9 @@ export const authOptions: NextAuthOptions = {
         account: { label: "Account", type: "text" },
         username: { label: "Username", type: "text" },
         password: { label: "Password", type: "password" },
+        publicIp: { label: "Public IP", type: "text" },
       },
-      async authorize(credentials) {
+      async authorize(credentials, request) {
         const kind = (credentials?.kind || "user").toLowerCase();
         const password = credentials?.password || "";
         if (!password) return null;
@@ -77,6 +80,19 @@ export const authOptions: NextAuthOptions = {
           throw new Error(result.reason);
         }
         clearRateLimitKey(lockKey);
+        try {
+          await recordLoginActivity({
+            account: result.account,
+            // A proxy/CDN IP is preferred; direct local development can fall back
+            // to the public IP resolved by the player's browser.
+            ipAddress: getClientIp(request) !== "unknown"
+              ? getClientIp(request)
+              : publicIp(credentials?.publicIp) || "unknown",
+            device: describeDevice(getUserAgent(request)),
+          });
+        } catch {
+          // Login must remain available if the audit table/database is temporarily unavailable.
+        }
         return {
           id: result.account,
           name: result.account,

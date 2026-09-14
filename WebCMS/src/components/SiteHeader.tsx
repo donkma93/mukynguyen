@@ -23,7 +23,7 @@ export default async function SiteHeader() {
             alt={t.brand.name}
             width={40}
             height={40}
-            className="rounded-full"
+            className="rounded-lg ring-1 ring-mu-gold/45 shadow-[0_0_12px_rgba(212,175,55,0.3)]"
           />
           <div className="leading-tight">
             <div className="font-display text-base font-bold text-mu-gold sm:text-lg">
