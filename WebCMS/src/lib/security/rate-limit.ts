@@ -160,6 +160,18 @@ export const RATE_LIMITS = {
     lockoutMs: 0,
     message: "Quá nhiều lần nhập giftcode. Thử lại sau ít phút.",
   },
+  partnerClaim: {
+    limit: 10,
+    windowMs: 60 * 1000,
+    lockoutMs: 0,
+    message: "Quá nhiều lần nhận quà đối tác. Thử lại sau ít phút.",
+  },
+  partnerHighlight: {
+    limit: 20,
+    windowMs: 60 * 1000,
+    lockoutMs: 0,
+    message: "Quá nhiều lần phát Highlight. Thử lại sau ít phút.",
+  },
   captcha: {
     limit: 20,
     windowMs: 60 * 1000,

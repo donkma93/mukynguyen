@@ -208,6 +208,23 @@ export async function claimGiftcode(account: string, code: string) {
       throw new Error("Giftcode đã hết lượt sử dụng");
     }
 
+    // Partner live/newbie codes must be claimed via /api/partner/claim (items + budget).
+    try {
+      const partnerCode = await new sql.Request(tx)
+        .input("code", sql.NVarChar(32), normalized)
+        .query(`
+          SELECT TOP 1 id FROM cms.partner_sessions WHERE code = @code
+        `);
+      if (partnerCode.recordset[0]) {
+        throw new Error(
+          "Đây là mã quà đối tác — hãy nhận ở mục Quà đối tác và chọn nhân vật"
+        );
+      }
+    } catch (e) {
+      if (e instanceof Error && e.message.includes("Quà đối tác")) throw e;
+      // partner_sessions may not exist yet on older DBs before ensurePartnerSchema
+    }
+
     const claimed = await new sql.Request(tx)
       .input("gid", sql.Int, Number(row.id))
       .input("account", sql.VarChar(10), acc)

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getServerAuthSession } from "@/lib/auth";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
 import { getLocale } from "@/lib/i18n/locale";
+import { isActivePartner } from "@/lib/partner/partners";
 
 export default async function PanelLayout({
   children,
@@ -14,9 +15,18 @@ export default async function PanelLayout({
 
   const locale = await getLocale();
   const t = getDictionary(locale);
+  let showPartner = false;
+  if (session.user.role === "user" && session.user.id) {
+    try {
+      showPartner = await isActivePartner(session.user.id);
+    } catch {
+      showPartner = false;
+    }
+  }
   const nav = [
     { href: "/panel", label: t.panel.overview },
     { href: "/panel/giftcode", label: t.panel.giftcode },
+    ...(showPartner ? [{ href: "/panel/partner", label: t.panel.partner }] : []),
     { href: "/panel/password", label: t.panel.password },
   ];
 

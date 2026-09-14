@@ -35,6 +35,7 @@ export function getPublicDictionary(locale: Locale): Dictionary {
       gsGroups: "",
       balancing: "",
       giftcodes: "",
+      partners: "",
       dashboardTitle: "",
       dashboardSubtitle: "",
       online: "",

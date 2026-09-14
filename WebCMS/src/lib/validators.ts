@@ -36,3 +36,25 @@ export const loginSchema = z.object({
 export const giftcodeSchema = z.object({
   code: z.string().trim().min(3).max(32),
 });
+
+export const characterNameSchema = z
+  .string()
+  .trim()
+  .min(1, "Thiếu tên nhân vật")
+  .max(10, "Tên nhân vật tối đa 10 ký tự");
+
+export const partnerClaimSchema = z.object({
+  code: z.string().trim().min(3).max(32),
+  characterName: characterNameSchema,
+});
+
+export const partnerHighlightSchema = z.object({
+  targetAccount: accountSchema,
+  characterName: characterNameSchema,
+});
+
+export const partnerUpsertSchema = z.object({
+  account: accountSchema,
+  tier: z.enum(["new", "stable", "top"]),
+  isActive: z.boolean().optional(),
+});

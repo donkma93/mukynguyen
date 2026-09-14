@@ -27,6 +27,7 @@ export default async function AdminLayout({
     { href: "/admin/gs/balancing", label: t.admin.balancing },
     { href: "/admin/enhancement-rates", label: "Tỉ lệ đập đồ" },
     { href: "/admin/giftcodes", label: t.admin.giftcodes },
+    { href: "/admin/partners", label: t.admin.partners },
   ];
 
   return (

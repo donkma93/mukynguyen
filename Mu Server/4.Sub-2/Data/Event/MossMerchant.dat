@@ -17,7 +17,7 @@
 *        *       *     *     14     0        0
 *        *       *     *     20     0        0
 2026     9       13    *     20     31       0	// Lịch test một lần
-2026     9       13    *     21     48       0     // WebCMS TEST
+2026     9       14    *     13     56       0     // WebCMS TEST
 end
 1
 //Index   Group   Option0   Option1   Option2   Option3   Option4   Option5   Option6   GambleRate   Comment
