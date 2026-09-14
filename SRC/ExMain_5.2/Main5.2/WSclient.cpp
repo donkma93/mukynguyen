@@ -5884,7 +5884,8 @@ void ReceiveModifyItem(const BYTE* ReceiveBuffer)
 	}
 	else if (GambleSystem::Instance().IsGambleShop())
 	{
-
+		g_pNPCShop->ReceiveMossReward(Data->Item);
+		PlayBuffer(SOUND_GET_ITEM01);
 	}
 	else
 	{
@@ -6130,6 +6131,13 @@ void ReceiveSell(const BYTE* ReceiveBuffer)
 	else
 	{
 		SEASON3B::CNewUIInventoryCtrl::BackupPickedItem();
+	}
+
+	// A rejected sale also needs to release the NPC-shop input lock. Without
+	// this, a high-value item confirmed with OK remains stuck in sell mode.
+	if (g_pNPCShop)
+	{
+		g_pNPCShop->SetSellingItem(false);
 	}
 }
 

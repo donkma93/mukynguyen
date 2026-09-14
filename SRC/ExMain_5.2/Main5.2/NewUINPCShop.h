@@ -59,6 +59,13 @@ namespace SEASON3B
 		DWORD m_dwStandbyItemKey;
 
 		bool m_bSellingItem;
+
+		int m_iMossSelection;
+		bool m_bMossPending;
+		bool m_bMossHasReward;
+		bool m_bMossTimedOut;
+		DWORD m_dwMossRequestTime;
+		ITEM m_MossReward;
 		
 	public:
 		CNewUINPCShop();
@@ -99,6 +106,8 @@ namespace SEASON3B
 
 		void SetSellingItem(bool bFlag);
 		bool IsSellingItem();
+		bool BeginMossPurchase();
+		void ReceiveMossReward(BYTE* pbyItemPacket);
 
 	private:
 		void Init();
@@ -114,6 +123,11 @@ namespace SEASON3B
 		void RenderTexts();
 		void RenderButton();
 		void RenderRepairMoney();
+		void ResetMoss();
+		int GetMossItemCount();
+		ITEM* GetMossItem(int index);
+		bool UpdateMossMouseEvent();
+		void RenderMoss();
 	};
 }
 

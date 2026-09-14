@@ -2441,6 +2441,9 @@ bool SEASON3B::CHighValueItemCheckMsgBoxLayout::SetLayout()
 	if (pItem)
 	{
 		pMsgBox->Set3DItem(pItem);
+		// Preserve the original inventory slot before the confirmation dialog
+		// takes focus. The picked item can no longer be relied on at OK time.
+		pMsgBox->SetItemValue(pPickedItem->GetSourceLinealPos() + 1);
 	}
 
 	pMsgBox->AddMsg(GlobalText[536], RGBA(255, 0, 0, 255), MSGBOX_FONT_BOLD);
@@ -2455,20 +2458,14 @@ bool SEASON3B::CHighValueItemCheckMsgBoxLayout::SetLayout()
 
 CALLBACK_RESULT SEASON3B::CHighValueItemCheckMsgBoxLayout::OkBtnDown(class CNewUIMessageBoxBase* pOwner, const leaf::xstreambuf& xParam)
 {
-	CNewUIPickedItem* pPickedItem = CNewUIInventoryCtrl::GetPickedItem();
+	CNewUI3DItemCommonMsgBox* pMsgBox = GetMsgBox();
+	int iSourceIndex = pMsgBox ? (pMsgBox->GetItemValue() - 1) : -1;
 
-	int iSourceIndex = -1;
-
-	if (pPickedItem)
+	if (iSourceIndex < 0)
 	{
-		if (pPickedItem->GetOwnerInventory() == g_pMyInventory->GetInventoryCtrl())
-		{
+		CNewUIPickedItem* pPickedItem = CNewUIInventoryCtrl::GetPickedItem();
+		if (pPickedItem)
 			iSourceIndex = pPickedItem->GetSourceLinealPos();
-		}
-		else
-		{
-			iSourceIndex = pPickedItem->GetSourceLinealPos();
-		}
 	}
 
 	if (iSourceIndex != -1)
@@ -3538,7 +3535,7 @@ CALLBACK_RESULT SEASON3B::CGambleBuyMsgBoxLayout::OkBtnDown(class CNewUIMessageB
 	GambleSystem& gambleSys = GambleSystem::Instance();
 	LPBUYITEMINFO pItemInfo = NULL;
 
-	if (gambleSys.IsGambleShop())
+	if (gambleSys.IsGambleShop() && g_pNPCShop->BeginMossPurchase())
 	{
 		pItemInfo = gambleSys.GetBuyItemInfo();
 		SendRequestBuy(pItemInfo->ItemIndex, pItemInfo->ItemCost);

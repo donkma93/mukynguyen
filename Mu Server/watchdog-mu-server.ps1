@@ -37,12 +37,7 @@ function Test-HelperRunning([string]$scriptName) {
 }
 
 function Ensure-LocalDb {
-  try {
-    $localDb = Get-Command sqllocaldb -ErrorAction Stop
-    & $localDb.Source start MSSQLLocalDB | Out-Null
-  } catch {
-    Write-Log ("LocalDB start warn: {0}" -f $_.Exception.Message)
-  }
+  & (Join-Path $base 'initialize-localdb-odbc.ps1')
 }
 
 function Ensure-Proc([string]$name, [string]$exe, [string]$wd) {

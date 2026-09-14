@@ -23,8 +23,8 @@ npm run dev
 
 Mở trình duyệt:
 
-- http://127.0.0.2:3000
-- http://localhost:3000
+- http://127.0.0.2:5000
+- http://localhost:5000
 
 ## Tài khoản
 
@@ -73,7 +73,7 @@ Xem mẫu đầy đủ: [`.env.example`](./.env.example).
 ```env
 MSSQL_CONNECTION_STRING=DSN=MuThangCuoi;
 NEXTAUTH_SECRET=change-me-to-a-long-random-string-32+
-NEXTAUTH_URL=http://127.0.0.2:3000
+NEXTAUTH_URL=http://127.0.0.2:5000
 ADMIN_BOOTSTRAP_USER=admin
 ADMIN_BOOTSTRAP_PASS=change-this-password
 TURNSTILE_SITE_KEY=
@@ -97,7 +97,7 @@ GS_OPS_ENABLED=false
 ```powershell
 npm run test:security
 # Khi web đang chạy + DB:
-$env:RUN_INTEGRATION=1; $env:BASE_URL="http://localhost:3000"; npm run test:integration
+$env:RUN_INTEGRATION=1; $env:BASE_URL="http://localhost:5000"; npm run test:integration
 ```
 
 Checklist trước khi public: [`scripts/security-checklist.md`](./scripts/security-checklist.md).
@@ -106,8 +106,8 @@ Checklist trước khi public: [`scripts/security-checklist.md`](./scripts/secur
 
 `Client/Data/Launcher/index.html` đã trỏ:
 
-- Trang Chủ → `http://127.0.0.2:3000/`
-- Đăng Ký → `http://127.0.0.2:3000/register`
+- Trang Chủ → `http://127.0.0.2:5000/`
+- Đăng Ký → `http://127.0.0.2:5000/register`
 
 ## Lưu ý
 

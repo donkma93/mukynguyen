@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 const enabled = process.env.RUN_INTEGRATION === "1";
-const base = (process.env.BASE_URL || "http://localhost:3000").replace(/\/$/, "");
+const base = (process.env.BASE_URL || "http://localhost:5000").replace(/\/$/, "");
 
 describe.skipIf(!enabled)("HTTP integration: admin forbidden without auth", () => {
   const paths = [

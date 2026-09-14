@@ -11,7 +11,7 @@ try {
   } elseif ($sqlService) {
     Write-Host "SQL Server Express dang chay." -ForegroundColor Green
   } else {
-    Write-Host "Khong thay MSSQL`$SQLEXPRESS — dung DSN MuThangCuoi trong .env.local." -ForegroundColor DarkYellow
+    Write-Host "Khong thay MSSQL`$SQLEXPRESS - dung DSN MuThangCuoi trong .env.local." -ForegroundColor DarkYellow
   }
 } catch {
   Write-Host "Khong start duoc SQL Express. Tiep tuc Next.js..." -ForegroundColor DarkYellow
@@ -22,5 +22,5 @@ if (-not (Test-Path ".\node_modules")) {
   npm install
 }
 
-Write-Host "Chay Next.js: http://0.0.0.0:3000" -ForegroundColor Green
-npm run dev -- -H 0.0.0.0 -p 3000
+Write-Host "Chay Next.js: http://localhost:5000" -ForegroundColor Green
+npm run dev

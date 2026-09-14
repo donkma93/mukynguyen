@@ -85,68 +85,9 @@ function Ensure-Helper([string]$scriptName) {
 }
 
 Write-StartLog '==> Mu ThangCuoi start-all'
-Write-StartLog 'SQL Server Express...'
-try {
-  $sqlService = Get-Service -Name 'MSSQL$SQLEXPRESS' -ErrorAction Stop
-  if ($sqlService.Status -ne 'Running') {
-    Start-Service -Name 'MSSQL$SQLEXPRESS'
-    $sqlService.Refresh()
-  }
-  Write-StartLog ("MSSQL`$SQLEXPRESS is {0}" -f $sqlService.Status)
-} catch {
-  Write-StartLog ("SQL Express warn: {0}" -f $_.Exception.Message)
-}
-
-function Set-UserOdbcDsnSqlExpress([string]$dsnName, [string]$database = 'MuThangCuoi') {
-  $server = '.\SQLEXPRESS'
-  $driverName = 'SQL Server'
-  $driverDll64 = 'C:\Windows\System32\SQLSRV32.dll'
-  $driverDll32 = 'C:\Windows\SysWOW64\SQLSRV32.dll'
-  try {
-    $existing = Get-OdbcDsn -Name $dsnName -DsnType User -ErrorAction SilentlyContinue
-    if (-not $existing) {
-      Add-OdbcDsn -Name $dsnName -DriverName $driverName -DsnType User -SetPropertyValue @(
-        "Server=$server",
-        "Database=$database",
-        "Trusted_Connection=Yes",
-        "Description=$dsnName"
-      ) -ErrorAction Stop
-      Write-StartLog ("Created ODBC User DSN: {0} -> {1} ({2})" -f $dsnName, $server, $database)
-    } else {
-      Set-OdbcDsn -Name $dsnName -DsnType User -SetPropertyValue @(
-        "Server=$server",
-        "Database=$database",
-        "Trusted_Connection=Yes"
-      ) -ErrorAction SilentlyContinue
-      Write-StartLog ("Updated ODBC User DSN: {0} -> {1} ({2})" -f $dsnName, $server, $database)
-    }
-  } catch {
-    Write-StartLog ("ODBC check notice for {0}: {1}" -f $dsnName, $_.Exception.Message)
-  }
-
-  # DataServer/JoinServer are 32-bit; keep Wow6432Node User DSN in sync.
-  try {
-    $wowIni = 'HKCU:\Software\Wow6432Node\ODBC\ODBC.INI'
-    $wowDsn = Join-Path $wowIni $dsnName
-    $wowSources = Join-Path $wowIni 'ODBC Data Sources'
-    if (-not (Test-Path $wowIni)) { New-Item $wowIni -Force | Out-Null }
-    if (-not (Test-Path $wowSources)) { New-Item $wowSources -Force | Out-Null }
-    if (-not (Test-Path $wowDsn)) { New-Item $wowDsn -Force | Out-Null }
-    $dll = if (Test-Path $driverDll32) { $driverDll32 } else { $driverDll64 }
-    New-ItemProperty -Path $wowDsn -Name 'Driver' -Value $dll -PropertyType String -Force | Out-Null
-    New-ItemProperty -Path $wowDsn -Name 'Server' -Value $server -PropertyType String -Force | Out-Null
-    New-ItemProperty -Path $wowDsn -Name 'Database' -Value $database -PropertyType String -Force | Out-Null
-    New-ItemProperty -Path $wowDsn -Name 'Trusted_Connection' -Value 'Yes' -PropertyType String -Force | Out-Null
-    New-ItemProperty -Path $wowDsn -Name 'Description' -Value $dsnName -PropertyType String -Force | Out-Null
-    New-ItemProperty -Path $wowSources -Name $dsnName -Value $driverName -PropertyType String -Force | Out-Null
-  } catch {
-    Write-StartLog ("ODBC 32-bit DSN notice for {0}: {1}" -f $dsnName, $_.Exception.Message)
-  }
-}
-
-Write-StartLog 'Checking ODBC DSNs (SQLEXPRESS)...'
-Set-UserOdbcDsnSqlExpress 'MuThangCuoi' 'MuThangCuoi'
-Set-UserOdbcDsnSqlExpress 'MuOnline' 'MuThangCuoi'
+Write-StartLog 'Checking MuThangCuoi on MSSQLLocalDB and refreshing ODBC DSNs...'
+& (Join-Path $base 'initialize-localdb-odbc.ps1')
+Write-StartLog 'LocalDB connection verified; ODBC DSNs point to the current instance pipe.'
 
 Start-Sleep -Seconds 1
 

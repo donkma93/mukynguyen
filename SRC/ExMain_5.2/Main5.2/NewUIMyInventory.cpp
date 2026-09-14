@@ -461,7 +461,7 @@ bool CNewUIMyInventory::UpdateMouseEvent()
 		return false;
 
 	CNewUIPickedItem* pPickedItem = CNewUIInventoryCtrl::GetPickedItem();
-	if (pPickedItem && SEASON3B::IsPress(VK_LBUTTON) && CheckMouseIn(0, 0, GetScreenWidth(), (GetWindowsY() - 51)))
+	if (pPickedItem && SEASON3B::IsRelease(VK_LBUTTON) && CheckMouseIn(0, 0, GetScreenWidth(), (GetWindowsY() - 51)))
 	{
 		if (g_pNewUISystem->IsVisible(INTERFACE_NPCSHOP) == true
 			|| g_pNewUISystem->IsVisible(INTERFACE_TRADE) == true
@@ -2258,10 +2258,17 @@ bool CNewUIMyInventory::HandleInventoryActions(CNewUIInventoryCtrl* targetContro
             return false;
         }
 
+        const bool bHighValueItem = IsHighValueItem(pItem);
         const int iIndex = targetControl->GetIndexByItem(pItem);
         if (iIndex >= 0 && CNewUIInventoryCtrl::CreatePickedItem(targetControl, pItem))
         {
             targetControl->RemoveItem(pItem);
+            if (bHighValueItem)
+            {
+                SEASON3B::CreateMessageBox(MSGBOX_LAYOUT_CLASS(SEASON3B::CHighValueItemCheckMsgBoxLayout));
+                CNewUIInventoryCtrl::GetPickedItem()->HidePickedItem();
+                return true;
+            }
             SendRequestSell(iIndex);
             return true;
         }
